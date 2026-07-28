@@ -1,0 +1,98 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+env/
+.pnp/
+.pnp.js
+
+# Build and framework output
+.next/
+.nuxt/
+.svelte-kit/
+dist/
+build/
+coverage/
+.vercel/
+.netlify/
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+credentials.json
+token.json
+**/credentials.json
+**/token.json
+*credentials*.json
+*token*.json
+secrets/
+secrets.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.jks
+*.keystore
+credentials.json
+service-account*.json
+
+# Supabase local state and generated files
+supabase/.branches/
+supabase/.temp/
+supabase/.env
+supabase/.env.*
+supabase/functions/.env
+supabase/functions/.env.*
+
+# Logs and runtime data
+*.log
+logs/
+tmp/
+temp/
+*.pid
+*.pid.lock
+
+# Test and tooling caches
+.cache/
+.turbo/
+.eslintcache
+.parcel-cache/
+.pytest_cache/
+.mypy_cache/
+__pycache__/
+*.pyc
+*.py[cod]
+
+# Editors and operating systems
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local database and backup files
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.backup
+
+# Terraform and infrastructure secrets
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+
+# Miscellaneous local files
+*.local
+*.orig
+*.rej
