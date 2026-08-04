@@ -1,0 +1,1 @@
+export default function Loading() { return <main className="devLoading" aria-label="Loading media library"><div /><div /><section>{Array.from({ length: 8 }, (_, index) => <article key={index}><i /><span /><span /></article>)}</section></main>; }

@@ -1,5 +1,8 @@
 export async function register() {
   if (process.env.NEXT_RUNTIME !== "nodejs" || process.env.NEXT_PHASE === "phase-production-build") return;
+  // The isolated local media-library workflow does not initialize Firebase.
+  // Production and ordinary development startup retain the strict preflight.
+  if (process.env.NODE_ENV === "development" && process.env.KDI_LIBRARY_DEV_BYPASS === "true") return;
   try {
     const credentials = await import("./app/lib/firebase/admin-credentials");
     const admin = await import("./app/lib/firebase/admin");

@@ -1,7 +1,8 @@
-import type { NextRequest } from "next/server";
+import { NextResponse, type NextRequest } from "next/server";
 import { updateSession } from "./app/lib/supabase/proxy";
 
 export async function proxy(request: NextRequest) {
+  if ((request.nextUrl.pathname === "/dev/library" || request.nextUrl.pathname.startsWith("/dev/library/") || request.nextUrl.pathname.startsWith("/api/dev/library/")) && !(process.env.NODE_ENV === "development" && process.env.KDI_LIBRARY_DEV_BYPASS === "true")) return new NextResponse("Not Found", { status: 404, headers: { "Cache-Control": "private, no-store" } });
   return updateSession(request);
 }
 
