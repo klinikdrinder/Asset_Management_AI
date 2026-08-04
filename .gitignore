@@ -8,6 +8,7 @@ env/
 
 # Build and framework output
 .next/
+out/
 .nuxt/
 .svelte-kit/
 dist/
@@ -17,6 +18,7 @@ coverage/
 .netlify/
 
 # Local environment files and secrets
+.secrets/
 .env
 .env.*
 !.env.example
@@ -39,6 +41,10 @@ secrets.*
 *.keystore
 credentials.json
 service-account*.json
+service-account.json
+google-credentials.json
+firebase-admin.json
+supabase-credentials.json
 
 # Supabase local state and generated files
 supabase/.branches/
@@ -51,6 +57,7 @@ supabase/functions/.env.*
 # Logs and runtime data
 *.log
 logs/
+.logs/
 tmp/
 temp/
 *.pid
@@ -60,6 +67,7 @@ temp/
 .cache/
 .turbo/
 .eslintcache
+*.tsbuildinfo
 .parcel-cache/
 .pytest_cache/
 .mypy_cache/
@@ -72,6 +80,8 @@ __pycache__/
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.example.json
+dashboard/.git/
+dashboard/.git.local-backup/
 *.swp
 *.swo
 .DS_Store

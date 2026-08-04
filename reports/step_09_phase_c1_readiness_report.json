@@ -1,0 +1,246 @@
+{
+  "phase": "STEP_9_PHASE_C1",
+  "status": "READY_FOR_PHASE_C2_WITH_WARNINGS",
+  "generated_at_utc": "2026-07-30T05:50:29.1059273Z",
+  "inputs": {
+    "phase_b5_report": {
+      "path": "reports/step_09_phase_b5_completion_report.json",
+      "status": "COMPLETED",
+      "json_valid": true
+    },
+    "phase_b6_report": {
+      "path": "reports/step_09_phase_b6_reconciliation_report.json",
+      "status": "PASS",
+      "json_valid": true
+    },
+    "source_files_total": 886,
+    "eligible_hashed_inputs": 878,
+    "excluded_inputs": 8,
+    "unresolved_eligible_inputs": 0,
+    "active_claims": 0,
+    "sha256_populated": 878,
+    "approved_sha256_algorithm": 878,
+    "byte_counts_matched": 878
+  },
+  "canonical_hash_identity": {
+    "conceptual_identity": [
+      "hash_algorithm",
+      "complete_content_hash"
+    ],
+    "deployed_identity": [
+      "content_hash"
+    ],
+    "deployed_implication": "Safe for this population because every canonicalization input uses SHA-256; adding another algorithm requires a composite database uniqueness change first.",
+    "filename_is_identity": false,
+    "path_is_identity": false,
+    "size_is_identity": false
+  },
+  "schema_readiness": {
+    "repository_schema_confidence": "HIGH",
+    "deployed_column_verification": "CONFIRMED_BY_PRIOR_READ_ONLY_PHASE_B2_VERIFICATION",
+    "deployed_constraint_introspection": "NOT_AVAILABLE_THROUGH_POSTGREST",
+    "assets": {
+      "content_hash_column": true,
+      "hash_algorithm_column": false,
+      "hash_algorithm_storage": "metadata.hash_algorithm",
+      "content_hash_unique_index": "assets_content_hash_unique: partial UNIQUE(content_hash) WHERE content_hash IS NOT NULL",
+      "updated_at_trigger": true,
+      "canonical_source_foreign_key": false,
+      "canonical_source_storage": "metadata.canonical_source_file_id",
+      "duplicate_count_column": false,
+      "source_count_column": false,
+      "count_policy": "Derive counts from asset_sources; do not maintain denormalized counters during Phase C2."
+    },
+    "asset_sources": {
+      "asset_foreign_key": true,
+      "source_file_foreign_key": true,
+      "unique_asset_source_pair": true,
+      "unique_source_file": true,
+      "updated_at_trigger": true
+    },
+    "source_files": {
+      "modified_by_canonicalization": false,
+      "identity_and_paths_preserved": true
+    },
+    "database_uniqueness_is_final_concurrency_authority": true,
+    "production_counts_before_phase_c2": {
+      "assets": 0,
+      "asset_sources": 0
+    }
+  },
+  "deterministic_metadata_selection": {
+    "representative_order": [
+      "source_folder_id",
+      "google_file_id",
+      "source_file_id"
+    ],
+    "filename_based_preference": false,
+    "asset_fields_from_representative": [
+      "file_name",
+      "mime_type",
+      "file_extension",
+      "size_bytes"
+    ],
+    "asset_initial_upload_status": "PENDING",
+    "metadata_fields": [
+      "hash_algorithm",
+      "canonical_source_file_id",
+      "media_category",
+      "canonicalization_rule"
+    ],
+    "alternative_source_metadata_preserved_in": "source_files and asset_sources",
+    "best_version_selected": false
+  },
+  "implementation": {
+    "status": "IMPLEMENTED_LOCALLY_NOT_EXECUTED_AGAINST_PRODUCTION",
+    "module": "src/kdi_media/step9_canonicalization.py",
+    "test_module": "tests/test_step9_canonicalization.py",
+    "group_builder": "build_canonical_groups",
+    "executor": "canonicalize_groups",
+    "production_adapter": "SupabaseCanonicalRepository",
+    "properties": {
+      "hash_only_input_validation": true,
+      "deterministic_grouping": true,
+      "conflict_safe_asset_reuse": true,
+      "conflict_safe_relationship_reuse": true,
+      "idempotent_rerun": true,
+      "group_failure_isolation": true,
+      "checkpoint_callback_per_group": true,
+      "resumable_after_partial_group": true,
+      "source_files_writes": false,
+      "google_drive_operations": false,
+      "hashing_operations": false,
+      "destination_copy_operations": false
+    },
+    "safe_unit": "Each asset/link insert is independently database-constrained. A partially linked group is safe to resume because reruns reuse the unique asset and existing source links.",
+    "concurrency_control": "Insert first; on database unique violation, read and validate the winning asset or relationship. No application-only check-then-insert decision is used."
+  },
+  "tests": {
+    "canonicalization_tests_added": 17,
+    "combined_step9_tests_passed": 40,
+    "tests_failed": 0,
+    "compilation": "PASS",
+    "coverage": [
+      "one unique hash",
+      "matching hashes",
+      "cross-source matching hashes",
+      "different filenames with matching hash",
+      "identical filenames with different hashes",
+      "idempotent asset rerun",
+      "idempotent relationship rerun",
+      "interrupted-run resume",
+      "concurrent-equivalent asset reuse",
+      "malformed hash rejection",
+      "non-HASHED exclusion",
+      "SKIP exclusion",
+      "stable representative",
+      "source identity preservation",
+      "checkpointing",
+      "no Drive dependency",
+      "no destination upload dependency"
+    ]
+  },
+  "production_preview": {
+    "mode": "READ_ONLY_SUPABASE_REST",
+    "hashed_source_occurrences": 878,
+    "unique_hash_groups": 878,
+    "singleton_groups": 878,
+    "duplicate_groups": 0,
+    "duplicate_occurrences_beyond_canonical": 0,
+    "occurrences_in_duplicate_groups": 0,
+    "largest_duplicate_group": 1,
+    "cross_source_duplicate_groups": 0,
+    "cross_source_duplicate_occurrences": 0,
+    "estimated_assets_to_create": 878,
+    "estimated_asset_sources_to_create": 878,
+    "source_occurrences": {
+      "ALL_PATIENT_REVIEW": 292,
+      "NUSHAD_RAW_VIDEO": 585,
+      "MARKETING_CONSENTED": 1
+    },
+    "extension_distribution": {
+      "jpg": 251,
+      "jpeg": 39,
+      "mov": 1,
+      "mp4": 584,
+      "pdf": 2,
+      "pptx": 1
+    },
+    "production_assets_created": 0,
+    "production_asset_sources_created": 0,
+    "complete_hash_values_in_report": false
+  },
+  "phase_c2_execution_strategy": {
+    "initial_concurrency": 1,
+    "recommended_group_batch_size": 50,
+    "checkpoint_interval_groups": 1,
+    "progress_interval_groups": 50,
+    "selection_order": [
+      "hash_algorithm",
+      "content_hash"
+    ],
+    "preconditions": [
+      "Reconfirm 878 HASHED SHA-256 inputs and zero unresolved eligible rows.",
+      "Reconfirm assets and asset_sources remain empty for the initial run, or reconcile existing rows for a resume.",
+      "Run a controlled first batch before approving automatic continuation."
+    ],
+    "stop_conditions": [
+      "An existing content_hash resolves to conflicting hash-algorithm metadata.",
+      "A source_file is already linked to a different asset.",
+      "Any source_files business field changes.",
+      "Created asset count exceeds processed unique hash groups.",
+      "Created relationship count exceeds processed source occurrences.",
+      "A database uniqueness constraint is absent or does not control concurrency.",
+      "Any Google Drive, hashing, or destination-copy operation is invoked.",
+      "Reconciliation arithmetic fails."
+    ],
+    "reconciliation": [
+      "One asset per unique complete hash.",
+      "One asset_sources row per HASHED source occurrence.",
+      "Every relationship points to the asset for its hash.",
+      "No source_file is linked more than once.",
+      "No source_files rows are modified.",
+      "Assets and relationships created or reused equal checkpoint totals."
+    ],
+    "rollback_and_resume": "Do not roll back successful groups. Stop on conflict, preserve database-constrained results, correct the cause under separate approval, and resume idempotently from group checkpoints."
+  },
+  "warnings": [
+    {
+      "classification": "NONBLOCKING_WARNING",
+      "code": "ASSET_HASH_ALGORITHM_NOT_A_COLUMN",
+      "detail": "Assets are unique by content_hash only. This is safe for the current all-SHA-256 population but not for future mixed algorithms."
+    },
+    {
+      "classification": "NONBLOCKING_WARNING",
+      "code": "DEPLOYED_INDEX_INTROSPECTION_LIMITED",
+      "detail": "PostgREST cannot independently enumerate deployed indexes. Repository migrations and prior deployed column verification support the readiness finding; database uniqueness must be observed during the controlled first write batch."
+    },
+    {
+      "classification": "INFORMATIONAL",
+      "code": "NO_EXACT_DUPLICATES_OBSERVED",
+      "detail": "All 878 complete SHA-256 values are unique, so the current preview has no duplicate groups."
+    }
+  ],
+  "blockers": [],
+  "readiness_for_phase_c2": "READY_WITH_EXPLICIT_APPROVAL",
+  "validation": {
+    "json": "PASS",
+    "required_fields": "PASS",
+    "count_arithmetic": "PASS",
+    "secret_scan": "PASS"
+  },
+  "safety": {
+    "production_canonicalization_executed": false,
+    "production_assets_created": false,
+    "production_asset_sources_created": false,
+    "google_drive_content_downloaded": false,
+    "hashes_recalculated": false,
+    "source_files_modified": false,
+    "google_drive_modified": false,
+    "direct_sql_executed": false,
+    "migration_created_or_applied": false,
+    "step_10_started": false,
+    "commit_or_push": false,
+    "secrets_exposed": false
+  }
+}

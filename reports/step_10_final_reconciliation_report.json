@@ -1,0 +1,66 @@
+{
+  "phase": "STEP_10_FINAL_RECONCILIATION",
+  "verdict": "STEP_10_COMPLETE_READY_FOR_STEP_11",
+  "worker_resume": {
+    "existing_worker_found": true,
+    "existing_worker_healthy": true,
+    "second_worker_started": false,
+    "starting_completed_production": 350,
+    "starting_remaining_production": 520,
+    "resumed_batches_observed": 11,
+    "newly_uploaded_after_resume": 520
+  },
+  "first_run": {
+    "batches": 18,
+    "production_attempted": 870,
+    "production_uploaded": 870,
+    "pilot_uploaded": 8,
+    "response_loss_recoveries": 0,
+    "retries": 0,
+    "exceptions": 0,
+    "bytes_transferred": 5324906085,
+    "per_category": {
+      "Images": 287,
+      "Videos": 582,
+      "Documents": 1
+    }
+  },
+  "idempotent_rerun": {
+    "eligible_rows": 0,
+    "already_verified_non_pilot": 870,
+    "batches": 0,
+    "new_files": 0,
+    "drive_files_verified": 878,
+    "duplicate_identities": 0,
+    "pilot_destination_ids_stable": true
+  },
+  "final_supabase": {
+    "source_files": 886,
+    "assets": 878,
+    "asset_sources": 878,
+    "asset_destinations": 878,
+    "verified_rows": 878,
+    "destination_ids": 878,
+    "active_claims": 0,
+    "active_leases": 0,
+    "retry_scheduled": 0,
+    "terminal_failures": 0,
+    "orphan_asset_sources": 0
+  },
+  "final_drive": {
+    "corresponding_files": 878,
+    "metadata_verified": 878,
+    "byte_verified": 878,
+    "full_hash_verified_sample": 6,
+    "missing_identities": 0,
+    "duplicate_identities": 0,
+    "spool_files": 0
+  },
+  "step9_reconciliation": {
+    "hashed_sources": 878,
+    "counts_stable": true,
+    "source_files_modified": false,
+    "status": "PASS"
+  },
+  "unresolved_exceptions": []
+}

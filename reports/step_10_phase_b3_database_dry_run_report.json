@@ -1,0 +1,137 @@
+{
+  "controlled_row_count": 3,
+  "controlled_rows": [
+    {
+      "asset_id": "638502d3-b5cd-4dcc-920e-c8df835d419b",
+      "destination_filename": "asset__638502d3.mp4",
+      "lifecycle_id": "00185a0a-e4ca-5691-a7b0-6b8ec0a449c7",
+      "state": "NOT_STARTED"
+    },
+    {
+      "asset_id": "a26b9354-902d-4394-a54f-467e7e8954f5",
+      "destination_filename": "asset__a26b9354.mp4",
+      "lifecycle_id": "002d8a2c-998a-5972-b77a-ca7fd3fe4544",
+      "state": "NOT_STARTED"
+    },
+    {
+      "asset_id": "406b9cfb-0bcf-4f9a-bfc0-1417ef22a026",
+      "destination_filename": "asset__406b9cfb.mp4",
+      "lifecycle_id": "007e51f3-ac88-5d92-8638-74334bc4a725",
+      "state": "NOT_STARTED"
+    }
+  ],
+  "database_only": true,
+  "database_writes": 0,
+  "destination_scope_configured": true,
+  "drive_clients_constructed": 0,
+  "drive_operations": 0,
+  "drive_requests": 0,
+  "expected_canonical_count": 878,
+  "expected_preexisting_destination_count": 0,
+  "final_reconciliation": {
+    "active_claims": 0,
+    "active_leases": 0,
+    "asset_destinations": 878,
+    "canonical_assets_without_lifecycle_rows": 0,
+    "clean": true,
+    "destination_file_ids": 0,
+    "duplicate_lifecycle_rows": 0,
+    "lifecycle_rows_outside_canonical_set": 0,
+    "not_started": 878,
+    "outside_destination_scope": 0,
+    "retry_scheduled": 0,
+    "source_hash_verified": 878,
+    "terminal_failures": 0,
+    "uploaded_rows": 0,
+    "verified_rows": 0
+  },
+  "mode": "DATABASE_ONLY_EXECUTION",
+  "outside_baseline": "b318bbe6c924f7f6",
+  "phase": "STEP_10_PHASE_B3",
+  "preflight": {
+    "active_claims": 0,
+    "active_leases": 0,
+    "asset_destinations": 0,
+    "asset_sources": 878,
+    "assets": 878,
+    "canonical_candidates": 878,
+    "destination_file_ids": 0,
+    "orphan_relationships": 0,
+    "uploaded_rows": 0,
+    "verified_rows": 0
+  },
+  "primary_failure": null,
+  "report_path": "reports\\step_10_phase_b3_database_dry_run_report.json",
+  "restoration": {
+    "failed_rows": 0,
+    "restored_rows": 3
+  },
+  "restoration_failure": null,
+  "results": {
+    "active_lease_protection": true,
+    "audit": {
+      "payloads_sanitized": true,
+      "required_events_present": [
+        "CLAIM_RECOVERED",
+        "CLAIM_RELEASED",
+        "CLAIM_RENEWED",
+        "LIFECYCLE_INITIALIZED"
+      ]
+    },
+    "empty_allowlist": {
+      "changed": 0,
+      "claimed": 0
+    },
+    "exact_allowlist": {
+      "claimed": 3,
+      "outside_changed": 0,
+      "outside_digest_stable": true
+    },
+    "expired_lease_recovery": true,
+    "first_initialization": {
+      "changed": 0,
+      "inserted": 878,
+      "rejected": 0,
+      "reused": 0
+    },
+    "null_allowlist": {
+      "claimed": 1,
+      "released": true
+    },
+    "release": true,
+    "renewal": true,
+    "retry_scheduling": {
+      "bounded_max_attempts": 5,
+      "uploaded": false,
+      "verified": false
+    },
+    "second_initialization": {
+      "changed": 0,
+      "inserted": 0,
+      "rejected": 0,
+      "reused": 878
+    },
+    "terminal_completed_protection": "STATIC_DEPLOYED_RPC_CONTRACT",
+    "wrong_owner_release_rejected": true,
+    "wrong_owner_renewal_rejected": true
+  },
+  "stages": [
+    "preflight",
+    "initialization",
+    "idempotency",
+    "allowlists",
+    "lifecycle",
+    "audit",
+    "restoration",
+    "final_reconciliation"
+  ],
+  "step9_reconciliation": {
+    "asset_sources": 878,
+    "assets": 878,
+    "canonical_candidates": 878,
+    "identity_digest": "b6c4ca03e5a4ff36",
+    "source_files": 886,
+    "unchanged": true
+  },
+  "verdict": "READY_FOR_LIMITED_PRODUCTION_PILOT"
+}

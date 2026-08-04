@@ -1,0 +1,55 @@
+{
+  "working_directory": "C:\\Users\\Public\\Asset_Management_AI",
+  "migration_inspected": "supabase/migrations/202608030001_add_individual_app_user_auth.sql",
+  "migration_applied": false,
+  "original_verifier_deficiencies": [
+    "Only catalog presence, broad write grants, and a short privileged-RPC name list were checked",
+    "Documented anonymous, unapproved, Staff, Admin, disabled, and spoofed-claim scenarios were comments rather than executable tests",
+    "Column, constraint, foreign-key, index, view-security, helper search_path, and RLS behavior checks were incomplete",
+    "No synthetic auth identities or request-claim simulation existed",
+    "No transaction-scoped behavior comparison against live read-only row counts existed"
+  ],
+  "identity_scenarios_added": [
+    "anonymous",
+    "unapproved authenticated",
+    "active STAFF with clinical/download permissions",
+    "active STAFF without clinical/download permissions",
+    "active ADMIN",
+    "disabled STAFF",
+    "disabled ADMIN",
+    "STAFF with spoofed ADMIN metadata"
+  ],
+  "objects_covered": {
+    "identity": ["public.app_role", "public.approved_app_users", "public.app_users"],
+    "staff_library": ["public.source_folder_summary", "public.source_folders", "public.source_files", "public.assets", "public.asset_sources", "public.asset_destinations"],
+    "admin_operations": ["public.sync_runs", "public.scan_runs", "public.migration_events"],
+    "authorization_helpers": ["private.is_active_app_user", "private.has_app_role", "private.can_view_clinical_media", "private.can_download_media", "public.link_current_app_user"],
+    "privileged_rpcs": ["public.claim_source_file_hash", "public.renew_source_file_hash_claim", "public.claim_asset_destinations", "public.renew_asset_destination_claim", "public.release_asset_destination_claim", "public.set_step10_migration_event_legacy_status"]
+  },
+  "transactional_isolation_result": "PASS: one outer BEGIN/ROLLBACK; temporary identities use generated UUIDs and example.invalid addresses; auth/app rows are rolled back",
+  "production_mutation_scan": "PASS: no INSERT, UPDATE, DELETE, or TRUNCATE targets production source, media, scan, sync, or migration tables",
+  "sql_validation_result": {
+    "lexical_structure": "PASS",
+    "balanced_parentheses_strings_and_dollar_quotes": "PASS",
+    "outer_begin_rollback": "PASS",
+    "referenced_object_static_mapping": "PASS",
+    "database_parse": "NOT_RUN_NO_LOCAL_POSTGRESQL_PARSER",
+    "migration_execution": "NOT_RUN_BY_REQUIREMENT"
+  },
+  "repository_test_results": {
+    "unit": "PASS_53_OF_53",
+    "typescript": "PASS",
+    "eslint": "PASS",
+    "git_diff_check": "PASS",
+    "secret_scan": "PASS_CHANGED_FILES_NO_MATCHES"
+  },
+  "files_changed": [
+    "supabase/verification/verify_individual_app_user_auth.sql",
+    "reports/individual_user_auth_verifier_hardening_report.json"
+  ],
+  "remaining_blockers": [
+    "Verifier must be executed against the target database after the staged migration is applied in a separately authorized deployment task",
+    "Google OAuth activation and live identity validation remain separate external activation work"
+  ],
+  "final_verdict": "INDIVIDUAL_AUTH_VERIFIER_HARDENED"
+}

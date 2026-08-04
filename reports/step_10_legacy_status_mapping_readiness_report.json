@@ -1,0 +1,90 @@
+{
+  "phase": "STEP_10_LEGACY_STATUS_MAPPING_REPAIR",
+  "generated_on": "2026-07-31",
+  "verdict": "READY_FOR_MANUAL_STEP_10_STATUS_FIX_DEPLOYMENT",
+  "root_cause": "UPLOAD_STARTED uses event_status INFO. The deployed required legacy migration_events.status CHECK accepts neither INFO nor the prior fallback PENDING, so the compatibility trigger failed before source download or transfer.",
+  "deployed_vocabulary_evidence": {
+    "catalog_visibility_from_application": false,
+    "confirmed_accepted": [
+      "SUCCESS"
+    ],
+    "confirmed_rejected": [
+      "INFO",
+      "PENDING"
+    ],
+    "complete_vocabulary": "Returned by the post-deployment verifier as deployed_legacy_status_vocabulary"
+  },
+  "repair": {
+    "migration": "supabase/migrations/202607310003_fix_step10_legacy_status_mapping.sql",
+    "verification": "supabase/verification/verify_step10_legacy_status_mapping.sql",
+    "constraint_strategy": "Catalog-derive exactly one validated single-column status membership CHECK, preserve every existing literal, add only missing canonical INFO/SUCCESS/WARNING/ERROR literals, and recreate the same named strict CHECK in one transaction.",
+    "mapping": {
+      "INFO": "INFO",
+      "SUCCESS": "SUCCESS",
+      "WARNING": "WARNING",
+      "ERROR": "ERROR"
+    },
+    "event_type_constraint_changed": false,
+    "event_status_constraint_changed": false,
+    "status_nullable": false,
+    "step9_changed": false,
+    "asset_destinations_schema_changed": false
+  },
+  "covered_event_types": [
+    "LIFECYCLE_INITIALIZED",
+    "UPLOAD_QUEUED",
+    "UPLOAD_CLAIMED",
+    "CLAIM_RENEWED",
+    "CLAIM_RELEASED",
+    "CLAIM_RECOVERED",
+    "UPLOAD_STARTED",
+    "UPLOAD_CREATED",
+    "UPLOAD_RECOVERED",
+    "UPLOAD_VERIFIED",
+    "UPLOAD_FAILED",
+    "UPLOAD_RETRY_SCHEDULED",
+    "SOURCE_CHANGED",
+    "SOURCE_NOT_FOUND",
+    "SOURCE_ACCESS_DENIED",
+    "DESTINATION_ACCESS_DENIED",
+    "DESTINATION_CONFLICT",
+    "MANUAL_REVIEW_REQUIRED"
+  ],
+  "validation": {
+    "targeted_tests": "233 passed, 37 subtests passed",
+    "full_suite": "369 passed, 69 subtests passed",
+    "python_compilation": "PASS",
+    "sql_static_contract_tests": "PASS",
+    "secret_scan": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "deployment": {
+    "authorized_direct_repository_path": false,
+    "deployed": false,
+    "verification_marker_observed": false,
+    "manual_step_1": "Open the intended Supabase project SQL Editor and execute the complete contents of supabase/migrations/202607310003_fix_step10_legacy_status_mapping.sql as one block.",
+    "manual_step_2": "Execute the complete contents of supabase/verification/verify_step10_legacy_status_mapping.sql as one block.",
+    "required_marker": "STEP_10_LEGACY_STATUS_MAPPING_VERIFIED",
+    "stop_condition": "Do not reconcile or rerun the pilot unless the required marker is returned without exception."
+  },
+  "pilot": {
+    "rerun_performed": false,
+    "reason": "The new migration has not been deployed and verified.",
+    "current_pilot_rows": {
+      "QUEUED": 8,
+      "attempt_count_1": 8,
+      "active_claims": 0,
+      "active_leases": 0,
+      "retry_schedules": 0,
+      "destination_file_ids": 0,
+      "drive_identities": 0,
+      "spool_files": 0
+    },
+    "non_pilot_rows": {
+      "NOT_STARTED": 870,
+      "SOURCE_HASH_VERIFIED": 870,
+      "destination_file_ids": 0
+    }
+  },
+  "next_action": "Manually deploy and verify the migration. In the following task, reconcile the eight QUEUED pre-transfer rows through repository-supported lifecycle operations, then run the approved exact-eight pilot command."
+}

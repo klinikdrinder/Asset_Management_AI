@@ -1,0 +1,399 @@
+{
+  "phase": "STEP_10_PHASE_B1",
+  "status": "IMPLEMENTATION_COMPLETE",
+  "working_directory": "C:\\Users\\Public\\Asset_Management_AI",
+  "generated_at_utc": "2026-07-30T08:19:19.5832445Z",
+  "step_9_baseline_validation": {
+    "status": "PASS",
+    "source_files": 886,
+    "canonical_assets": 878,
+    "asset_sources": 878,
+    "excluded_source_files": 8,
+    "step_9_result": "PASS",
+    "production_counts_unchanged": true
+  },
+  "destination_configuration_validation": {
+    "status": "PASS",
+    "name": "KDI Master",
+    "folder_id": "1CdmowWV5TAk5R9D5yl2cOT8Plx3ihZgl",
+    "context": "MY_DRIVE_FOLDER",
+    "authenticated_account": "kdimediaautomation@gmail.com",
+    "can_add_children": true
+  },
+  "credential_profile_validation": {
+    "status": "PASS",
+    "source_profile": "source_readonly",
+    "source_scope": "https://www.googleapis.com/auth/drive.readonly",
+    "destination_profile": "destination_write",
+    "destination_scope": "https://www.googleapis.com/auth/drive",
+    "token_paths_distinct": true,
+    "source_token_unchanged": true,
+    "source_profile_required_for_source_reads": true,
+    "destination_profile_required_for_destination_writes": true
+  },
+  "migration_path": "supabase/migrations/202607300002_add_step10_asset_destinations.sql",
+  "migration_created": true,
+  "migration_applied": false,
+  "deployed_asset_destinations_state": "NOT_DEPLOYED",
+  "schema_design_summary": {
+    "table": "asset_destinations",
+    "purpose": "One durable Step 10 lifecycle per canonical asset and destination root",
+    "foreign_keys": [
+      "asset_id -> assets.id",
+      "selected_source_file_id -> source_files.id"
+    ],
+    "primary_uniqueness": "UNIQUE(asset_id, destination_folder_id)",
+    "idempotency_uniqueness": "UNIQUE(idempotency_key)",
+    "destination_file_uniqueness": "Partial UNIQUE(destination_folder_id, destination_google_file_id) when file ID is non-null",
+    "migration_events_link": "migration_events.asset_destination_id",
+    "updated_at_trigger": true,
+    "rls_enabled": true,
+    "authenticated_access": "Read-only with existing kdi_media_access application claim",
+    "service_role_access": "Lifecycle writes and RPC execution",
+    "production_rows_seeded": 0
+  },
+  "state_storage_model": "assets -> asset_destinations -> migration_events",
+  "lifecycle_statuses": [
+    "NOT_STARTED",
+    "QUEUED",
+    "CLAIMED",
+    "UPLOADING",
+    "UPLOADED",
+    "VERIFIED",
+    "FAILED_RETRYABLE",
+    "FAILED_PERMANENT",
+    "SOURCE_CHANGED",
+    "SOURCE_NOT_FOUND",
+    "SOURCE_ACCESS_DENIED",
+    "DESTINATION_ACCESS_DENIED",
+    "DESTINATION_CONFLICT",
+    "MANUAL_REVIEW_REQUIRED"
+  ],
+  "verification_levels": [
+    "NONE",
+    "SOURCE_HASH_VERIFIED",
+    "TRANSFER_BYTE_COUNT_VERIFIED",
+    "DESTINATION_METADATA_VERIFIED",
+    "PROVIDER_CHECKSUM_VERIFIED",
+    "DESTINATION_SHA256_VERIFIED"
+  ],
+  "claim_and_lease_design": {
+    "database_functions_created_in_migration": [
+      "claim_asset_destinations",
+      "renew_asset_destination_claim",
+      "release_asset_destination_claim"
+    ],
+    "deployed": false,
+    "atomic_batch_claim": true,
+    "maximum_batch_size": 100,
+    "database_time": true,
+    "skip_locked": true,
+    "active_lease_rejection": true,
+    "expired_lease_recovery": true,
+    "renewal": true,
+    "release": true,
+    "verified_rows_claimable": false,
+    "terminal_failures_claimable": false,
+    "maximum_attempts": 5
+  },
+  "retry_design": {
+    "maximum_attempts": 5,
+    "delays_seconds": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "jitter": true,
+    "retry_after_supported": true,
+    "persistent_attempt_count": true,
+    "per_asset_isolation": true,
+    "retryable_http_statuses": [
+      429,
+      500,
+      502,
+      503,
+      504
+    ],
+    "permanent_or_manual_review_states": [
+      "SOURCE_NOT_FOUND",
+      "SOURCE_ACCESS_DENIED",
+      "DESTINATION_ACCESS_DENIED",
+      "SOURCE_CHANGED",
+      "DESTINATION_CONFLICT",
+      "MANUAL_REVIEW_REQUIRED",
+      "INVALID_CANONICAL_STATE"
+    ]
+  },
+  "audit_design": {
+    "append_only_table": "migration_events",
+    "per_chunk_events": false,
+    "sanitized_details": true,
+    "event_types": [
+      "UPLOAD_QUEUED",
+      "UPLOAD_CLAIMED",
+      "UPLOAD_STARTED",
+      "UPLOAD_CREATED",
+      "UPLOAD_RECOVERED",
+      "UPLOAD_VERIFIED",
+      "UPLOAD_FAILED",
+      "UPLOAD_RETRY_SCHEDULED",
+      "SOURCE_CHANGED",
+      "SOURCE_NOT_FOUND",
+      "SOURCE_ACCESS_DENIED",
+      "DESTINATION_ACCESS_DENIED",
+      "DESTINATION_CONFLICT",
+      "MANUAL_REVIEW_REQUIRED"
+    ]
+  },
+  "source_selection_implementation": {
+    "module": "src/kdi_media/step10_upload.py",
+    "symbol": "select_canonical_source",
+    "preferred_source": "Step 9 canonical_source_file_id when still valid",
+    "fallback_order": [
+      "source_folder_id",
+      "google_file_id",
+      "source_file_id"
+    ],
+    "filename_used_for_selection": false,
+    "excluded_and_unhashed_sources_ignored": true,
+    "representative_change_after_attempt": "Rejected as destination conflict"
+  },
+  "routing_implementation": {
+    "images": [
+      "jpg",
+      "jpeg",
+      "png",
+      "webp"
+    ],
+    "videos": [
+      "mp4",
+      "mov"
+    ],
+    "documents": [
+      "pdf",
+      "pptx"
+    ],
+    "other_classification_folders": false
+  },
+  "naming_implementation": {
+    "default": "asset__<8-character-asset-uuid-prefix>.<approved-extension>",
+    "conservative_fallback_enabled": true,
+    "safe_stem_feature_flag_default": false,
+    "unicode_normalization": "NFC",
+    "invalid_character_replacement": true,
+    "empty_and_reserved_name_fallback": true,
+    "duplicate_extension_handling": true,
+    "trailing_dot_handling": true,
+    "deterministic_truncation": true,
+    "maximum_filename_length": 120,
+    "full_hash_in_filename": false,
+    "source_renamed": false
+  },
+  "destination_identity_implementation": {
+    "idempotency_key_material": [
+      "asset UUID",
+      "destination root ID",
+      "migration version"
+    ],
+    "app_properties": [
+      "kdi_asset_id",
+      "kdi_destination_record_id",
+      "kdi_migration_version"
+    ],
+    "full_hash_in_app_properties": false,
+    "response_lost_recovery": "Search exact parent and all stable appProperties before any create",
+    "duplicate_marker_matches": "MANUAL_REVIEW_REQUIRED",
+    "silent_overwrite": false
+  },
+  "transfer_implementation": {
+    "module": "src/kdi_media/step10_upload.py",
+    "worker": "Step10UploadWorker",
+    "adapter": "DriveResumableTransfer",
+    "primary_method": "source_readonly streamed download -> destination_write resumable upload",
+    "resumable": true,
+    "default_chunk_size_bytes": 8388608,
+    "full_file_loaded_in_memory": false,
+    "source_modified": false,
+    "server_side_copy_implemented": false
+  },
+  "memory_strategy": "Bounded Drive download chunks and resumable upload chunks",
+  "temporary_file_strategy": {
+    "used": true,
+    "reason": "Google MediaFileUpload requires seekable input for reliable resumable upload",
+    "location": "Caller-provided project-approved temporary directory",
+    "maximum_expected_spool_per_worker": "One complete asset plus small filesystem overhead",
+    "cleanup": "finally block after success or failure",
+    "paths_logged": false,
+    "unbounded_storage": false
+  },
+  "source_preflight": {
+    "implemented": true,
+    "credential_profile": "source_readonly",
+    "fields": [
+      "Google file ID",
+      "size",
+      "MIME type",
+      "modified time",
+      "version or revision",
+      "trashed state",
+      "accessibility",
+      "successful Step 9 SHA-256"
+    ],
+    "changed_source_action": "SOURCE_CHANGED and rehash required"
+  },
+  "destination_verification": {
+    "implemented": true,
+    "fields": [
+      "destination file ID",
+      "parent",
+      "trashed state",
+      "size",
+      "MIME type",
+      "filename",
+      "appProperties identity"
+    ],
+    "provider_md5_equated_to_sha256": false,
+    "optional_destination_sha256": {
+      "implemented": true,
+      "default_enabled": false,
+      "requires_explicit_destination_write profile": true,
+      "streamed": true
+    }
+  },
+  "destination_root_guard": {
+    "implemented": true,
+    "approved_root_id": "1CdmowWV5TAk5R9D5yl2cOT8Plx3ihZgl",
+    "category_children": [
+      "Images",
+      "Videos",
+      "Documents"
+    ],
+    "production_folders_created": 0,
+    "create_outside_approved_root": "Rejected",
+    "delete_move_trash_permission_methods": false
+  },
+  "cli_scripts": [
+    {
+      "path": "scripts/run_step10_upload_worker.py",
+      "default": "Dry argument-validation mode with zero network and database calls",
+      "requires_execute": true,
+      "requires_limit": true,
+      "supports_asset_id": true,
+      "requires_destination_confirmation": true,
+      "requires_explicit_profiles": true,
+      "checks_migration_before_credentials_or Drive": true
+    },
+    {
+      "path": "scripts/authorize_step10_destination.py",
+      "purpose": "Previously approved isolated destination credential authorization and metadata verification"
+    }
+  ],
+  "pilot_manifest_path": "reports/step_10_phase_b1_pilot_manifest.json",
+  "pilot_manifest": {
+    "status": "PREPARED_NOT_EXECUTED",
+    "candidate_count": 8,
+    "format_summary": {
+      "jpeg": 3,
+      "mp4": 3,
+      "pdf": 1,
+      "pptx": 1
+    },
+    "source_folder_count": 3,
+    "enhanced_sha256_candidates": 2,
+    "fallback_names_only": true,
+    "production_media_downloaded": false,
+    "production_files_uploaded": false
+  },
+  "tests": {
+    "targeted_step10_tests": 51,
+    "full_suite_tests_passed": 197,
+    "subtests_passed": 51,
+    "tests_failed": 0,
+    "production_calls_in_tests": 0
+  },
+  "compilation_result": "PASS",
+  "static_validation_result": {
+    "status": "PASS",
+    "migration_required_fields": "PASS",
+    "migration_constraints_indexes_rls_rpcs": "PASS",
+    "migration_no_seed_delete_truncate": "PASS",
+    "module_no_delete_trash_permissions_source_updates": "PASS",
+    "manifest_json_and_current_relationships": "PASS",
+    "production_migration_unapplied": "CONFIRMED"
+  },
+  "files_changed": [
+    "supabase/migrations/202607300002_add_step10_asset_destinations.sql",
+    "src/kdi_media/step10_upload.py",
+    "scripts/run_step10_upload_worker.py",
+    "tests/test_step10_migration.py",
+    "tests/test_step10_upload.py",
+    "tests/test_step10_cli.py",
+    "reports/step_10_phase_b1_pilot_manifest.json",
+    "reports/step_10_phase_b1_implementation_report.json"
+  ],
+  "blockers": [],
+  "warnings": [
+    {
+      "code": "MIGRATION_REVIEW_REQUIRED",
+      "detail": "The migration has only static/local validation and must be reviewed before application."
+    },
+    {
+      "code": "CONTROLLED_TEMPORARY_SPOOL",
+      "detail": "Each active worker requires temporary disk capacity for one complete asset; the current largest candidate is 87842167 bytes."
+    },
+    {
+      "code": "PRODUCTION_EXECUTION_GATE",
+      "detail": "The CLI deliberately refuses production orchestration after its schema probe until migration review, application, deployed verification, and database-only dry-run approvals are complete."
+    },
+    {
+      "code": "DESTINATION_SCOPE_GUARD",
+      "detail": "The dedicated destination credential has Drive scope and must remain restricted to root-guarded Step 10 operations."
+    }
+  ],
+  "readiness_for_migration_review": "READY_FOR_MIGRATION_REVIEW_WITH_WARNINGS",
+  "readiness_for_migration_application": "NOT_READY_REVIEW_REQUIRED",
+  "readiness_for_database_only_dry_run": "NOT_READY_MIGRATION_NOT_APPLIED",
+  "readiness_for_production_pilot": "NOT_READY_MIGRATION_NOT_APPLIED",
+  "production_data_changed": false,
+  "production_media_downloaded": false,
+  "production_files_uploaded": false,
+  "destination_folders_created": false,
+  "destination_test_files_created": false,
+  "secrets_printed": false,
+  "validation": {
+    "json": "PASS",
+    "required_fields": "PASS",
+    "non_negative_counts": "PASS",
+    "readiness_values": "PASS",
+    "pilot_manifest": "PASS",
+    "secret_scan": "PASS",
+    "safety": "PASS"
+  },
+  "safety_confirmation": {
+    "supabase_production_operations_read_only": true,
+    "no_direct_sql_executed": true,
+    "step10_migration_created_not_applied": true,
+    "no_production_lifecycle_rows_initialized": true,
+    "no_production_asset_claimed": true,
+    "no_production_google_drive_media_downloaded": true,
+    "no_production_file_uploaded_or_copied": true,
+    "no_production_destination_folder_created": true,
+    "no_destination_test_file_created": true,
+    "no_source_google_drive_object_or_permission_modified": true,
+    "no_kdi_master_object_modified": true,
+    "source_readonly_token_not_replaced_or_broadened": true,
+    "destination_write_token_remained_isolated": true,
+    "no_step9_sha256_modified": true,
+    "no_canonical_asset_relationship_modified": true,
+    "no_take_skip_decision_modified": true,
+    "no_source_identity_modified": true,
+    "no_secrets_or_credentials_printed": true,
+    "no_unrelated_source_code_changes": true,
+    "no_commit_or_push": true,
+    "production_pilot_not_started": true,
+    "full_step10_migration_not_started": true,
+    "step11_not_started": true
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "site-creator-vinext-starter",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "npm run unit && npm run build",
+    "unit": "cross-env NODE_OPTIONS=--conditions=react-server tsx --test tests/dashboard-utils.test.ts tests/environment.test.ts tests/folder-explorer.test.ts tests/media-library.test.ts tests/media-repository.test.ts tests/authentication.test.ts tests/firebase-admin-credentials.test.ts tests/dev-preview.test.ts tests/simplified-frontend.test.ts tests/live-library.test.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "firebase:preflight": "cross-env NODE_OPTIONS=--conditions=react-server tsx scripts/firebase-admin-preflight.ts",
+    "supabase:preflight": "cross-env NODE_OPTIONS=--conditions=react-server tsx scripts/supabase-trusted-client-preflight.ts",
+    "library:reconcile": "cross-env NODE_OPTIONS=--conditions=react-server tsx scripts/library-reconciliation.ts",
+    "db:generate": "drizzle-kit generate"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.4",
+    "@supabase/supabase-js": "^2.111.0",
+    "drizzle-orm": "0.45.2",
+    "firebase": "^12.17.0",
+    "firebase-admin": "^14.2.0",
+    "next": "^16.2.12",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.37.1",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "@vitejs/plugin-rsc": "0.5.26",
+    "cross-env": "7.0.3",
+    "drizzle-kit": "0.31.10",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "react-server-dom-webpack": "19.2.6",
+    "tailwindcss": "4.2.1",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vinext": "0.0.50",
+    "vite": "8.0.13",
+    "wrangler": "4.92.0"
+  },
+  "type": "module",
+  "overrides": {
+    "postcss": "8.5.25",
+    "sharp": "0.35.3"
+  }
+}

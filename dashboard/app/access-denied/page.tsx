@@ -1,0 +1,3 @@
+import Link from"next/link";
+export const dynamic = "force-dynamic";
+export default function AccessDeniedPage(){return <main className="authPage"><section className="authCard"><Link className="authBrand" href="/"><span>KDI</span><div>Central Media<small>Library</small></div></Link><div className="authKicker">ACCESS RESTRICTED</div><h1>Access denied</h1><p>This Google account is not approved for the KDI Central Media Library, or the account has been disabled.</p><div className="authActions"><a className="googleButton" href="/auth/signout">Use another account</a><Link href="/">Return home</Link></div></section></main>}

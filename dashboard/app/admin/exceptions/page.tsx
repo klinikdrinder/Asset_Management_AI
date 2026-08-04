@@ -1,0 +1,1 @@
+import{requireProtectedPage}from"../../auth";import{AdminReport}from"../../admin-report";export default async function Page(){await requireProtectedPage("ADMIN");return <AdminReport section="exceptions"/>}

@@ -1,0 +1,76 @@
+{
+  "phase": "STEP_9_PHASE_B6_RECONCILIATION",
+  "status": "PASS",
+  "generated_at_utc": "2026-07-30T05:40:35.993562+00:00",
+  "inventory": {
+    "total_source_files": 886,
+    "original_eligible": 878,
+    "excluded": 8,
+    "duplicate_source_identities": 0
+  },
+  "eligible_outcomes": {
+    "HASHED": 878,
+    "SOURCE_CHANGED": 0,
+    "RETRYABLE_FAILURE": 0,
+    "PERMANENT_FAILURE": 0,
+    "OTHER_APPROVED_FINAL_OUTCOMES": 0
+  },
+  "successful_hash_integrity": {
+    "rows": 878,
+    "sha256_populated": 878,
+    "approved_algorithm": 878,
+    "byte_count_match": 878,
+    "completion_timestamp_present": 878,
+    "failure_state_clear": 878,
+    "metadata_snapshot_present": 878
+  },
+  "excluded_integrity": {
+    "excluded_hashed": 0,
+    "reason_distribution": {
+      "GOOGLE_NATIVE_FILE": 6,
+      "UNSUPPORTED_EXTENSION": 2
+    }
+  },
+  "claims_and_relations": {
+    "active_claims": 0,
+    "assets": 0,
+    "asset_sources": 0
+  },
+  "reconciliation": {
+    "eligible_equation": "878 = HASHED + SOURCE_CHANGED + RETRYABLE_FAILURE + PERMANENT_FAILURE + OTHER",
+    "eligible_equation_valid": true,
+    "inventory_equation": "886 = 878 eligible + 8 excluded",
+    "inventory_equation_valid": true,
+    "non_negative_counts": true
+  },
+  "idempotency_readonly_assessment": {
+    "completed_hashed_would_skip": 878,
+    "completed_rows_would_download": 0,
+    "attempt_increases": 0,
+    "hash_changes": 0,
+    "active_claims": 0,
+    "pass": true
+  },
+  "readiness_for_phase_c": "READY_WITH_EXPLICIT_APPROVAL",
+  "validation": {
+    "json": "PASS",
+    "inventory_arithmetic": "PASS",
+    "eligible_outcome_arithmetic": "PASS",
+    "hash_integrity": "PASS",
+    "idempotency": "PASS",
+    "secret_scan": "PASS",
+    "full_sha256_values_in_report": false,
+    "tests_passed": 64,
+    "subtests_passed": 32,
+    "tests_failed": 0
+  },
+  "safety": {
+    "read_only_reconciliation": true,
+    "no_drive_download": true,
+    "no_database_writes": true,
+    "no_assets_created": true,
+    "no_asset_sources_created": true,
+    "no_phase_c_started": true,
+    "no_commit_or_push": true
+  }
+}

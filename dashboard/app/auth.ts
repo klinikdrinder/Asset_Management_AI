@@ -1,0 +1,27 @@
+import "server-only";
+import { redirect } from "next/navigation";
+import { profileForFirebaseUid } from "./lib/auth-profile";
+import { verifyFirebaseSession } from "./lib/firebase/session";
+import { createClient } from "./lib/supabase/server";
+import { getPreviewRole } from "./lib/dev-preview";
+export type AppRole="STAFF"|"ADMIN";
+export type AppUser={userId:string;firebaseUid:string|null;email:string;displayName:string;role:AppRole;isActive:boolean;canViewClinical:boolean;canDownload:boolean};
+export class AuthenticationRequired extends Error{} export class AuthorizationDenied extends Error{}
+export async function getCurrentAppUser():Promise<AppUser|null>{
+  const preview=await getPreviewRole();if(preview)return{userId:"preview-only",firebaseUid:null,email:"preview@preview.invalid",displayName:"Frontend Preview User",role:preview,isActive:true,canViewClinical:preview==="ADMIN",canDownload:preview==="ADMIN"};
+  const identity=await verifyFirebaseSession();
+  if(identity?.uid&&identity.email){const p=await profileForFirebaseUid(identity.uid);if(!p||p.email!==identity.email.trim().toLowerCase())return null;return{userId:p.user_id,firebaseUid:p.firebase_uid,email:p.email,displayName:p.email.split("@")[0].slice(0,40),role:p.role,isActive:p.is_active,canViewClinical:p.can_view_clinical,canDownload:p.can_download}}
+  // Temporary rollback path: retain the deployed Supabase website OAuth until
+  // Firebase live acceptance succeeds.
+  const supabase=await createClient(),{data:{user}}=await supabase.auth.getUser();
+  if(!user?.id||!user.email)return null;
+  const{data:p}=await supabase.from("app_users").select("user_id,email,role,is_active,can_view_clinical,can_download,firebase_uid").eq("user_id",user.id).maybeSingle();
+  if(!p)return null;return{userId:p.user_id,firebaseUid:p.firebase_uid??null,email:p.email,displayName:p.email.split("@")[0].slice(0,40),role:p.role as AppRole,isActive:p.is_active===true,canViewClinical:p.can_view_clinical===true,canDownload:p.can_download===true};
+}
+export async function requireActiveAppUser(){const u=await getCurrentAppUser();if(!u)throw new AuthenticationRequired("Authentication required");if(!u.isActive)throw new AuthorizationDenied("Access denied");return u}
+export async function requireStaffOrAdmin(){const u=await requireActiveAppUser();if(u.role!=="STAFF"&&u.role!=="ADMIN")throw new AuthorizationDenied("Access denied");return u}
+export async function requireAdmin(){const u=await requireActiveAppUser();if(u.role!=="ADMIN")throw new AuthorizationDenied("Access denied");return u}
+export async function requireClinicalPermission(){const u=await requireStaffOrAdmin();if(!u.canViewClinical)throw new AuthorizationDenied("Access denied");return u}
+export async function requireDownloadPermission(){const u=await requireStaffOrAdmin();if(!u.canDownload)throw new AuthorizationDenied("Access denied");return u}
+export async function requireProtectedPage(role:"STAFF_OR_ADMIN"|"ADMIN"="STAFF_OR_ADMIN"){try{return role==="ADMIN"?await requireAdmin():await requireStaffOrAdmin()}catch(e){if(e instanceof AuthorizationDenied)redirect("/access-denied");redirect("/login")}}
+export function maskEmail(email:string){const[name,domain]=email.split("@");return`${name.slice(0,2)}***@${domain??"account"}`}

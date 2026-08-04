@@ -1,0 +1,1 @@
+import{requireProtectedPage}from"../auth";import{AdminOverview}from"../admin-panel";import{getPreviewRole}from"../lib/dev-preview";import{PreviewOverview}from"../preview/preview-admin-overview";export default async function Page(){await requireProtectedPage("ADMIN");return await getPreviewRole()?<PreviewOverview/>:<AdminOverview/>}

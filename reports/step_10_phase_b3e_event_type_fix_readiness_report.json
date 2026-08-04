@@ -1,0 +1,128 @@
+{
+  "phase": "STEP_10_PHASE_B3E_EVENT_TYPE_FIX_READINESS",
+  "run_date": "2026-07-31",
+  "working_directory": "C:\\Users\\Public\\Asset_Management_AI",
+  "verdict": "READY_TO_DEPLOY_STEP_10_EVENT_TYPE_FIX",
+  "root_cause": {
+    "classification": "DEPLOYED_SCHEMA_LEGACY_CHECK_CONSTRAINT_DEFECT",
+    "constraint": "public.migration_events.migration_events_event_type_check",
+    "summary": "The deployed strict legacy event_type CHECK rejects LIFECYCLE_INITIALIZED and therefore rolls back the first Step 10 lifecycle insert."
+  },
+  "existing_contract": {
+    "column": "public.migration_events.event_type",
+    "constraint_name": "migration_events_event_type_check",
+    "shape_required_by_migration": "Validated, single-column strict membership expression using equality with ANY/ARRAY or an OR chain of equality literals.",
+    "vocabulary_source": "pg_constraint.conbin resolved with pg_get_expr during deployment.",
+    "local_catalog_visibility": "The live vocabulary is not exposed through PostgREST.",
+    "preservation": "Every catalog-extracted legacy literal is unioned into the replacement CHECK. The original legacy set is stored in the constraint comment and returned by the verifier.",
+    "unsupported_shape_behavior": "Migration aborts before dropping the constraint."
+  },
+  "step10_event_vocabulary": [
+    {"event_type": "LIFECYCLE_INITIALIZED", "classification": "SUCCESS", "stage": "B3 initialization"},
+    {"event_type": "UPLOAD_QUEUED", "classification": "INFO", "stage": "pilot or full upload"},
+    {"event_type": "UPLOAD_CLAIMED", "classification": "INFO", "stage": "pilot or full upload"},
+    {"event_type": "CLAIM_RENEWED", "classification": "SUCCESS", "stage": "B3, pilot or full upload"},
+    {"event_type": "CLAIM_RELEASED", "classification": "SUCCESS", "stage": "B3, pilot or full upload"},
+    {"event_type": "CLAIM_RECOVERED", "classification": "SUCCESS", "stage": "B3, pilot or full upload"},
+    {"event_type": "UPLOAD_STARTED", "classification": "INFO", "stage": "pilot or full upload"},
+    {"event_type": "UPLOAD_CREATED", "classification": "SUCCESS", "stage": "pilot or full upload"},
+    {"event_type": "UPLOAD_RECOVERED", "classification": "SUCCESS", "stage": "pilot or full upload"},
+    {"event_type": "UPLOAD_VERIFIED", "classification": "SUCCESS", "stage": "pilot or full upload"},
+    {"event_type": "UPLOAD_FAILED", "classification": "ERROR", "stage": "pilot or full upload"},
+    {"event_type": "UPLOAD_RETRY_SCHEDULED", "classification": "WARNING", "stage": "B3, pilot or full upload"},
+    {"event_type": "SOURCE_CHANGED", "classification": "ERROR", "stage": "pilot or full upload"},
+    {"event_type": "SOURCE_NOT_FOUND", "classification": "ERROR", "stage": "pilot or full upload"},
+    {"event_type": "SOURCE_ACCESS_DENIED", "classification": "ERROR", "stage": "pilot or full upload"},
+    {"event_type": "DESTINATION_ACCESS_DENIED", "classification": "ERROR", "stage": "pilot or full upload"},
+    {"event_type": "DESTINATION_CONFLICT", "classification": "ERROR", "stage": "pilot or full upload"},
+    {"event_type": "MANUAL_REVIEW_REQUIRED", "classification": "WARNING", "stage": "pilot, full upload or manual review"}
+  ],
+  "vocabulary_generation": {
+    "dynamic_event_types": false,
+    "python_source": "src/kdi_media/step10_upload.py::AUDIT_EVENT_TYPES",
+    "sql_success_sources": [
+      "public.log_asset_destination_initialized",
+      "public.renew_asset_destination_claim",
+      "public.release_asset_destination_claim",
+      "public.claim_asset_destinations expired-claim recovery CTE"
+    ],
+    "exact_registry_match_tested": true
+  },
+  "migration": {
+    "path": "supabase/migrations/202607310002_extend_step10_event_type_contract.sql",
+    "forward_only": true,
+    "transactional": true,
+    "idempotent": true,
+    "strict_replacement": "event_type = ANY(ARRAY[legacy union Step 10])",
+    "constraint_gap_visible_to_other_sessions": false,
+    "tables_or_columns_changed": [],
+    "rls_grants_indexes_foreign_keys_changed": [],
+    "status_mapping_changed": false,
+    "claim_lease_allowlist_scope_changed": false
+  },
+  "verification": {
+    "path": "supabase/verification/verify_step10_event_type_fix.sql",
+    "success_marker": "STEP_10_EVENT_TYPE_FIX_VERIFIED",
+    "read_only": true,
+    "checks": [
+      "named validated single-column strict CHECK",
+      "all 18 fixed Step 10 values present",
+      "all preserved legacy values present",
+      "arbitrary invalid event absent from strict vocabulary",
+      "legacy status helper and trigger unchanged",
+      "event_status CHECK unchanged",
+      "asset_destinations remains 0",
+      "Step 9 remains 886/878/878 with zero orphan relationships"
+    ]
+  },
+  "validation": {
+    "targeted_tests_passed": 154,
+    "targeted_tests_failed": 0,
+    "targeted_subtests_passed": 24,
+    "full_suite_passed": 300,
+    "full_suite_failed": 0,
+    "full_suite_subtests_passed": 56,
+    "python_compilation": "PASS",
+    "static_sql_validation": "PASS",
+    "secret_scan": "PASS",
+    "deployed_migrations_unchanged": true
+  },
+  "production_state": {
+    "source_files": 886,
+    "assets": 878,
+    "asset_sources": 878,
+    "canonical_candidates": 878,
+    "asset_destinations": 0,
+    "active_claims": 0,
+    "active_leases": 0,
+    "uploaded_rows": 0,
+    "verified_rows": 0,
+    "destination_file_ids": 0,
+    "retry_scheduled_rows": 0,
+    "production_mutated": false
+  },
+  "corrective_scope_exclusions": {
+    "asset_destinations_schema": "UNCHANGED",
+    "source_files_assets_asset_sources": "UNCHANGED",
+    "claim_lease_allowlist_retry_destination_scope_rpcs": "UNCHANGED",
+    "upload_worker_transfer_logic": "UNCHANGED",
+    "oauth_drive_configuration": "UNCHANGED"
+  },
+  "deployment": {
+    "deployed": false,
+    "method": "Manual Supabase SQL Editor",
+    "step_1": "Execute the complete contents of supabase/migrations/202607310002_extend_step10_event_type_contract.sql.",
+    "step_2": "Execute the complete contents of supabase/verification/verify_step10_event_type_fix.sql.",
+    "required_result": "STEP_10_EVENT_TYPE_FIX_VERIFIED"
+  },
+  "next_b3_command": "$env:PYTHONPATH='src'; .\\.venv\\Scripts\\python.exe scripts/run_step10_b3_database_dry_run.py --execute-database-tests --database-only --drive-operations-disabled --expected-canonical-count 878 --expected-preexisting-destination-count 0 --controlled-row-count 3 --destination-folder-id 1CdmowWV5TAk5R9D5yl2cOT8Plx3ihZgl --report-path reports/step_10_phase_b3_database_dry_run_report.json",
+  "remaining_warnings": [
+    "The exact live legacy vocabulary must be read from the verification result because PostgREST does not expose pg_constraint expressions.",
+    "Do not rerun B3 until the migration is deployed and STEP_10_EVENT_TYPE_FIX_VERIFIED is returned."
+  ],
+  "application_code_changed": false,
+  "production_b3_rerun": false,
+  "drive_operations": 0,
+  "commit_created": false,
+  "push_performed": false
+}

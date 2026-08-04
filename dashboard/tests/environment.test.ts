@@ -1,0 +1,11 @@
+import test from "node:test";import assert from "node:assert/strict";import{validateDashboardEnvironment}from"../app/environment";
+function jwt(p:Record<string,unknown>){return`x.${Buffer.from(JSON.stringify(p)).toString("base64url")}.x`}
+const base={NEXT_PUBLIC_SUPABASE_URL:"https://wcqqjpndlwsvatjuqnol.supabase.co",NEXT_PUBLIC_SUPABASE_ANON_KEY:jwt({role:"anon"}),SUPABASE_DASHBOARD_ACCESS_TOKEN:jwt({aud:"authenticated",sub:"u",exp:Date.now()/1000+1000,iss:"https://wcqqjpndlwsvatjuqnol.supabase.co/auth/v1",app_metadata:{kdi_media_reader:"true",kdi_media_access:true}})};
+test("accepts exact restricted reader claims",()=>assert.doesNotThrow(()=>validateDashboardEnvironment(base)));
+test("rejects missing variables",()=>assert.throws(()=>validateDashboardEnvironment({}),/not configured/));
+test("rejects malformed URL",()=>assert.throws(()=>validateDashboardEnvironment({...base,NEXT_PUBLIC_SUPABASE_URL:"nope"}),/invalid/));
+test("rejects incorrect key",()=>assert.throws(()=>validateDashboardEnvironment({...base,NEXT_PUBLIC_SUPABASE_ANON_KEY:jwt({role:"service_role"})}),/legacy anon/));
+test("rejects expired token",()=>assert.throws(()=>validateDashboardEnvironment({...base,SUPABASE_DASHBOARD_ACCESS_TOKEN:jwt({aud:"authenticated",sub:"u",exp:1,iss:base.NEXT_PUBLIC_SUPABASE_URL+"/auth/v1",app_metadata:{kdi_media_reader:"true",kdi_media_access:true}})}),/expired/));
+test("rejects missing reader claim",()=>assert.throws(()=>validateDashboardEnvironment({...base,SUPABASE_DASHBOARD_ACCESS_TOKEN:jwt({aud:"authenticated",sub:"u",exp:Date.now()/1000+100,iss:base.NEXT_PUBLIC_SUPABASE_URL+"/auth/v1",app_metadata:{kdi_media_access:true}})}),/reader claim/));
+test("rejects incorrect claim type",()=>assert.throws(()=>validateDashboardEnvironment({...base,SUPABASE_DASHBOARD_ACCESS_TOKEN:jwt({aud:"authenticated",sub:"u",exp:Date.now()/1000+100,iss:base.NEXT_PUBLIC_SUPABASE_URL+"/auth/v1",app_metadata:{kdi_media_reader:true,kdi_media_access:true}})}),/reader claim/));
+test("rejects wrong project token",()=>assert.throws(()=>validateDashboardEnvironment({...base,SUPABASE_DASHBOARD_ACCESS_TOKEN:jwt({aud:"authenticated",sub:"u",exp:Date.now()/1000+100,iss:"https://other.supabase.co/auth/v1",app_metadata:{kdi_media_reader:"true",kdi_media_access:true}})}),/different project/));

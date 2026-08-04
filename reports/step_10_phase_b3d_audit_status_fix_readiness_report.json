@@ -1,0 +1,142 @@
+{
+  "phase": "STEP_10_PHASE_B3D_AUDIT_STATUS_FIX_READINESS",
+  "run_date": "2026-07-31",
+  "working_directory": "C:\\Users\\Public\\Asset_Management_AI",
+  "verdict": "READY_TO_DEPLOY_STEP_10_AUDIT_FIX",
+  "root_cause": {
+    "classification": "DEPLOYED_SCHEMA_MIGRATION_CONTRACT_DEFECT",
+    "summary": "The deployed migration_events table retains a required legacy status column without a default. Step 10 audit inserts supplied canonical event_status but omitted legacy status, so LIFECYCLE_INITIALIZED failed and rolled back initialization."
+  },
+  "migration_events_contract": {
+    "required_columns_from_live_openapi": [
+      "id",
+      "event_type",
+      "status",
+      "attempt_number",
+      "event_details",
+      "created_at",
+      "event_status",
+      "details",
+      "occurred_at",
+      "updated_at"
+    ],
+    "legacy_status_required": true,
+    "legacy_status_default_exposed": false,
+    "event_status_required": true,
+    "event_status_default": "INFO",
+    "event_status_allowed": [
+      "INFO",
+      "SUCCESS",
+      "WARNING",
+      "ERROR"
+    ],
+    "details_required_object": true,
+    "asset_destination_foreign_key": "ON DELETE SET NULL",
+    "rls_enabled": true,
+    "service_role_insert_grant": true
+  },
+  "status_mapping": {
+    "method": "Resolve the existing legacy status CHECK from pg_catalog for the status column only; do not replace or weaken it.",
+    "SUCCESS": ["SUCCESS", "COMPLETED"],
+    "ERROR": ["ERROR", "FAILED"],
+    "WARNING": ["WARNING", "SKIPPED"],
+    "INFO": ["INFO", "PENDING"],
+    "selection": "Prefer the same canonical value when allowed, otherwise use the existing legacy semantic equivalent. Abort when neither is permitted.",
+    "no_legacy_check": "Use the canonical event_status because status is required text without a restricted vocabulary."
+  },
+  "affected_audit_paths": {
+    "deployed_sql_success_paths": [
+      "LIFECYCLE_INITIALIZED",
+      "CLAIM_RENEWED",
+      "CLAIM_RELEASED",
+      "CLAIM_RECOVERED"
+    ],
+    "step10_application_registry_paths": [
+      "UPLOAD_QUEUED",
+      "UPLOAD_CLAIMED",
+      "UPLOAD_STARTED",
+      "UPLOAD_CREATED",
+      "UPLOAD_RECOVERED",
+      "UPLOAD_VERIFIED",
+      "UPLOAD_FAILED",
+      "UPLOAD_RETRY_SCHEDULED",
+      "SOURCE_CHANGED",
+      "SOURCE_NOT_FOUND",
+      "SOURCE_ACCESS_DENIED",
+      "DESTINATION_ACCESS_DENIED",
+      "DESTINATION_CONFLICT",
+      "MANUAL_REVIEW_REQUIRED"
+    ],
+    "rejected_operations": "Continue to create no success audit row.",
+    "payloads_changed": false
+  },
+  "corrective_scope": {
+    "migration": "supabase/migrations/202607310001_fix_step10_migration_events_status.sql",
+    "helper_function": "public.set_step10_migration_event_legacy_status()",
+    "trigger": "migration_events_set_step10_legacy_status",
+    "trigger_timing": "BEFORE INSERT",
+    "scope_guard": "Recognized Step 10 event_type with non-null asset_destination_id",
+    "tables_altered": [],
+    "constraints_changed": [],
+    "lifecycle_rpcs_replaced": [],
+    "step9_objects_changed": [],
+    "drive_or_oauth_objects_changed": []
+  },
+  "verification": {
+    "sql": "supabase/verification/verify_step10_audit_status_fix.sql",
+    "checks": [
+      "helper function definition",
+      "enabled BEFORE INSERT trigger",
+      "required legacy status column",
+      "canonical event_status default and CHECK",
+      "safe successful legacy status mapping",
+      "required Step 10 event coverage",
+      "asset_destinations remains 0",
+      "Step 9 remains 886/878/878 with zero orphan relationships"
+    ]
+  },
+  "validation": {
+    "targeted_tests_passed": 130,
+    "targeted_tests_failed": 0,
+    "targeted_subtests_passed": 21,
+    "full_suite_passed": 276,
+    "full_suite_failed": 0,
+    "full_suite_subtests_passed": 53,
+    "python_compilation": "PASS",
+    "static_sql_validation": "PASS",
+    "secret_scan": "PASS",
+    "original_step10_migration_002_sha256": "92531a14d45bdf7e6569c1966d17ff95416a408344940a2555fa39fcf89e0758",
+    "original_step10_migration_003_sha256": "b0202af50e4f5e510d4bec9140a0be208ad1b4262f0920e7911ec0bef100f9ef"
+  },
+  "production_state": {
+    "source_files": 886,
+    "assets": 878,
+    "asset_sources": 878,
+    "canonical_candidates": 878,
+    "asset_destinations": 0,
+    "active_claims": 0,
+    "active_leases": 0,
+    "uploaded_rows": 0,
+    "verified_rows": 0,
+    "destination_file_ids": 0,
+    "retry_scheduled_rows": 0,
+    "production_mutated": false
+  },
+  "deployment": {
+    "deployed": false,
+    "method": "Manual Supabase SQL Editor",
+    "step_1": "Execute the complete contents of supabase/migrations/202607310001_fix_step10_migration_events_status.sql.",
+    "step_2": "Execute the complete contents of supabase/verification/verify_step10_audit_status_fix.sql.",
+    "required_verification_result": "STEP_10_AUDIT_STATUS_FIX_VERIFIED"
+  },
+  "next_b3_command": "$env:PYTHONPATH='src'; .\\.venv\\Scripts\\python.exe scripts/run_step10_b3_database_dry_run.py --execute-database-tests --database-only --drive-operations-disabled --expected-canonical-count 878 --expected-preexisting-destination-count 0 --controlled-row-count 3 --destination-folder-id 1CdmowWV5TAk5R9D5yl2cOT8Plx3ihZgl --report-path reports/step_10_phase_b3_database_dry_run_report.json",
+  "remaining_warnings": [
+    "Catalog CHECK definitions are not exposed by PostgREST. The migration resolves the deployed legacy vocabulary inside PostgreSQL and fails closed if no semantic mapping exists.",
+    "The migration must be deployed and the read-only verifier must pass before Phase B3 is rerun."
+  ],
+  "application_code_changed": false,
+  "production_b3_rerun": false,
+  "drive_operations": 0,
+  "commit_created": false,
+  "push_performed": false
+}

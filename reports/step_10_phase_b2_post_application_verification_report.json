@@ -1,0 +1,303 @@
+{
+  "phase": "STEP_10_PHASE_B2_POST_APPLICATION_VERIFICATION",
+  "working_directory": "C:\\Users\\Public\\Asset_Management_AI",
+  "migration_path": "supabase/migrations/202607300002_add_step10_asset_destinations.sql",
+  "migration_repository_sha256": "92531a14d45bdf7e6569c1966d17ff95416a408344940a2555fa39fcf89e0758",
+  "migration_file_exists": true,
+  "migration_matches_reviewed_repository_version": true,
+  "migration_detected_as_deployed": true,
+  "deployment_evidence": {
+    "asset_destinations_rest_resource_present": true,
+    "migration_events_rest_resource_present": true,
+    "source_files_rest_resource_present": true,
+    "assets_rest_resource_present": true,
+    "asset_sources_rest_resource_present": true,
+    "claim_rpc_exposed": true,
+    "renew_rpc_exposed": true,
+    "release_rpc_exposed": true
+  },
+  "asset_destinations_table_present": true,
+  "asset_destinations_row_count": 0,
+  "unexpected_lifecycle_rows": false,
+  "column_verification": {
+    "verdict": "PASS",
+    "expected_count": 36,
+    "observed_count": 36,
+    "missing": [],
+    "unexpected": [],
+    "retry_schedule_column": "next_retry_at",
+    "columns": [
+      "id",
+      "asset_id",
+      "selected_source_file_id",
+      "destination_folder_id",
+      "destination_drive_id",
+      "destination_google_file_id",
+      "destination_url",
+      "destination_filename",
+      "destination_relative_path",
+      "migration_version",
+      "idempotency_key",
+      "upload_status",
+      "verification_level",
+      "expected_bytes",
+      "transferred_bytes",
+      "destination_reported_bytes",
+      "source_sha256",
+      "provider_checksum_type",
+      "provider_checksum_value",
+      "upload_attempt_count",
+      "last_attempt_at",
+      "next_retry_at",
+      "upload_started_at",
+      "upload_completed_at",
+      "verified_at",
+      "retryable",
+      "failure_code",
+      "failure_reason",
+      "source_metadata_snapshot",
+      "destination_metadata_snapshot",
+      "claim_owner",
+      "claim_started_at",
+      "claim_expires_at",
+      "claim_renewed_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "type_verification": {
+    "verdict": "PASS",
+    "uuid_columns": [
+      "id",
+      "asset_id",
+      "selected_source_file_id"
+    ],
+    "text_columns": [
+      "destination_folder_id",
+      "destination_drive_id",
+      "destination_google_file_id",
+      "destination_url",
+      "destination_filename",
+      "destination_relative_path",
+      "migration_version",
+      "idempotency_key",
+      "upload_status",
+      "verification_level",
+      "source_sha256",
+      "provider_checksum_type",
+      "provider_checksum_value",
+      "failure_code",
+      "failure_reason",
+      "claim_owner"
+    ],
+    "bigint_columns": [
+      "expected_bytes",
+      "transferred_bytes",
+      "destination_reported_bytes"
+    ],
+    "integer_columns": [
+      "upload_attempt_count"
+    ],
+    "boolean_columns": [
+      "retryable"
+    ],
+    "jsonb_columns": [
+      "source_metadata_snapshot",
+      "destination_metadata_snapshot"
+    ],
+    "timestamptz_columns": [
+      "last_attempt_at",
+      "next_retry_at",
+      "upload_started_at",
+      "upload_completed_at",
+      "verified_at",
+      "claim_started_at",
+      "claim_expires_at",
+      "claim_renewed_at",
+      "created_at",
+      "updated_at"
+    ],
+    "byte_counts_support_current_workload": true,
+    "zero_byte_values_supported_by_repository_constraint": true
+  },
+  "foreign_key_verification": {
+    "verdict": "PASS_WITH_METADATA_LIMITATION",
+    "asset_id_target_exposed": "assets.id",
+    "selected_source_file_id_target_exposed": "source_files.id",
+    "target_types_match": true,
+    "reviewed_delete_behavior": "ON DELETE RESTRICT",
+    "delete_behavior_independently_visible_through_postgrest": false
+  },
+  "uniqueness_verification": {
+    "verdict": "REPOSITORY_VERIFIED_DEPLOYED_CATALOG_UNCONFIRMED",
+    "asset_destination_identity": "UNIQUE(asset_id, destination_folder_id)",
+    "destination_google_file_id": "globally unique when non-null",
+    "multiple_null_destination_file_ids_allowed": true,
+    "idempotency_key_unique": true,
+    "postgrest_exposes_index_definitions": false
+  },
+  "lifecycle_constraint_verification": {
+    "verdict": "WORKER_AND_REPOSITORY_MATCH_DEPLOYED_CHECK_BODIES_UNCONFIRMED",
+    "upload_statuses_match_worker": true,
+    "verification_levels_match_worker": true,
+    "verified_evidence_constraint_in_repository": true,
+    "zero_byte_values_allowed_in_repository": true,
+    "retry_recovery_states_supported_in_repository": true,
+    "postgrest_exposes_check_constraint_bodies": false
+  },
+  "index_verification": {
+    "verdict": "REPOSITORY_VERIFIED_DEPLOYED_CATALOG_UNCONFIRMED",
+    "reviewed_indexes": [
+      "asset_destinations_upload_status_idx",
+      "asset_destinations_verification_level_idx",
+      "asset_destinations_retryable_idx",
+      "asset_destinations_retry_schedule_idx",
+      "asset_destinations_claim_expiry_idx",
+      "asset_destinations_asset_id_idx",
+      "asset_destinations_source_file_id_idx",
+      "asset_destinations_folder_id_idx",
+      "asset_destinations_google_file_id_idx",
+      "asset_destinations_google_file_id_unique"
+    ],
+    "postgrest_exposes_index_definitions": false
+  },
+  "trigger_verification": {
+    "verdict": "REPOSITORY_VERIFIED_DEPLOYED_CATALOG_UNCONFIRMED",
+    "reviewed_trigger": "asset_destinations_set_updated_at",
+    "reviewed_function": "public.set_updated_at",
+    "postgrest_exposes_trigger_definitions": false
+  },
+  "rls_verification": {
+    "verdict": "REPOSITORY_VERIFIED_DEPLOYED_CATALOG_UNCONFIRMED",
+    "reviewed_rls_enabled": true,
+    "reviewed_authenticated_policy": "asset_destinations_authorized_read",
+    "reviewed_anonymous_or_public_write_access": false,
+    "postgrest_exposes_rls_policy_definitions": false
+  },
+  "function_verification": {
+    "verdict": "SIGNATURES_PASS_BODIES_UNCONFIRMED",
+    "claim_asset_destinations": {
+      "present": true,
+      "arguments": [
+        "requested_claim_owner",
+        "requested_lease_seconds",
+        "requested_limit"
+      ],
+      "required_arguments": [
+        "requested_claim_owner"
+      ]
+    },
+    "renew_asset_destination_claim": {
+      "present": true,
+      "arguments": [
+        "requested_asset_destination_id",
+        "requested_claim_owner",
+        "requested_lease_seconds"
+      ],
+      "required_arguments": [
+        "requested_asset_destination_id",
+        "requested_claim_owner"
+      ]
+    },
+    "release_asset_destination_claim": {
+      "present": true,
+      "arguments": [
+        "requested_asset_destination_id",
+        "requested_claim_owner"
+      ],
+      "required_arguments": [
+        "requested_asset_destination_id",
+        "requested_claim_owner"
+      ]
+    },
+    "functions_invoked": false,
+    "reviewed_database_time_logic": true,
+    "reviewed_bounded_batch_support": true,
+    "reviewed_deterministic_ordering": true,
+    "reviewed_active_lease_protection": true,
+    "reviewed_expired_lease_recovery": true,
+    "reviewed_terminal_state_exclusion": true,
+    "reviewed_owner_protected_renewal_and_release": true,
+    "postgrest_exposes_function_bodies": false
+  },
+  "function_permission_verification": {
+    "verdict": "REPOSITORY_VERIFIED_DEPLOYED_CATALOG_UNCONFIRMED",
+    "reviewed_security_mode": "SECURITY INVOKER",
+    "reviewed_fixed_search_path": true,
+    "reviewed_execute_role": "service_role",
+    "reviewed_public_anon_authenticated_execute_revoked": true,
+    "postgrest_exposes_function_acl_or_security_mode": false
+  },
+  "worker_schema_contract_verification": {
+    "verdict": "PASS",
+    "table_name_matches": true,
+    "column_names_match": true,
+    "status_values_match": true,
+    "verification_values_match": true,
+    "rpc_names_match": true,
+    "rpc_argument_names_match": true,
+    "targeted_tests_passed": 54,
+    "targeted_tests_failed": 0,
+    "targeted_subtests_passed": 19,
+    "compilation_result": "PASS"
+  },
+  "step_9_baseline_reconciliation": {
+    "verdict": "PASS",
+    "source_files": 886,
+    "successfully_hashed_eligible_source_files": 878,
+    "sha256_populated": 878,
+    "approved_sha256_algorithm": 878,
+    "expected_observed_byte_matches": 878,
+    "assets": 878,
+    "asset_sources": 878,
+    "exact_duplicate_groups": 0,
+    "excluded_source_files": 8,
+    "unlinked_hashed_source_files": 0,
+    "orphan_assets": 0,
+    "orphan_asset_sources": 0,
+    "duplicate_source_identities": 0,
+    "active_hash_claims": 0,
+    "take_ready": 878,
+    "skip_skipped": 8,
+    "aggregate_hash_or_relationship_drift_detected": false,
+    "individual_pre_application_hash_snapshot_available": false
+  },
+  "validation_checks": {
+    "local_tests_passed": 54,
+    "local_tests_failed": 0,
+    "local_subtests_passed": 19,
+    "compilation": "PASS",
+    "deployed_api_checks": "PASS",
+    "step9_reconciliation": "PASS"
+  },
+  "production_data_changed_during_verification": false,
+  "direct_sql_modification_executed": false,
+  "direct_sql_executed": false,
+  "migration_applied_or_reapplied_by_codex": false,
+  "blockers": [],
+  "warnings": [
+    "The approved PostgREST read-only interface exposes tables, columns, foreign-key targets, and RPC signatures, but not deployed index definitions, check-constraint bodies, trigger definitions, RLS policies, grants, function bodies, security mode, or search_path.",
+    "Before a production upload pilot, those catalog-only objects should receive a separately approved read-only catalog verification or be verified during the controlled database-only lifecycle dry run where behavior can be tested without Drive operations.",
+    "Step 9 aggregate state and relationship integrity match the pre-application baseline, but no per-row pre-application SHA-256 snapshot exists for a byte-for-byte historical comparison."
+  ],
+  "readiness_for_database_only_initialization_and_dry_run": "READY_FOR_DATABASE_ONLY_INITIALIZATION_AND_DRY_RUN_WITH_WARNINGS",
+  "readiness_for_production_pilot": "NOT_READY_DATABASE_DRY_RUN_REQUIRED",
+  "safety_confirmation": {
+    "supabase_production_verification_read_only": true,
+    "migration_not_applied_or_reapplied_by_codex": true,
+    "lifecycle_rows_not_initialized": true,
+    "production_assets_not_claimed": true,
+    "production_drive_media_not_downloaded": true,
+    "production_files_not_uploaded_or_copied": true,
+    "destination_folder_or_test_file_not_created": true,
+    "step9_sha256_not_modified": true,
+    "canonical_asset_relationships_not_modified": true,
+    "take_skip_decisions_not_modified": true,
+    "source_identities_not_modified": true,
+    "secrets_not_printed": true,
+    "commit_not_created": true,
+    "push_not_performed": true,
+    "production_pilot_not_started": true,
+    "step11_not_started": true
+  }
+}

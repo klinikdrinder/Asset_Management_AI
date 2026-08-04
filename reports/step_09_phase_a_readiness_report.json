@@ -1,0 +1,587 @@
+{
+  "phase": "STEP_9_PHASE_A",
+  "working_directory": "C:\\Users\\Public\\Asset_Management_AI",
+  "status": "BLOCKED_SCHEMA",
+  "generated_at_utc": "2026-07-30T03:36:33.051951+00:00",
+  "scope": {
+    "immutable_source_folder_ids": [
+      "42affe18-4e7b-4333-87fe-7158c410c072",
+      "84a6b92b-e075-4f4b-9384-9b6a99acb51e",
+      "24bec9f0-7325-4706-896b-6d594daeaef2"
+    ],
+    "all_other_sources_excluded": true,
+    "google_drive_calls": 0
+  },
+  "sources_included": [
+    {
+      "source_folder_id": "42affe18-4e7b-4333-87fe-7158c410c072",
+      "google_folder_id": "1kYX3KIEFkerRMrTvZk2zPpVaFQoCLE4v",
+      "active": true,
+      "stored_folder_name": "ALL PATIENT REVIEW",
+      "normalized_folder_name": "all patient review",
+      "processing_enabled": true,
+      "scan_status": "COMPLETED",
+      "completion_status": "COMPLETED",
+      "accessibility_status": "ACCESSIBLE",
+      "configuration_warning": null,
+      "expected_inventory": 300,
+      "observed_inventory": 300,
+      "difference": 0,
+      "classification_counts": {
+        "ELIGIBLE": 292,
+        "ALREADY_HASHED_SUCCESSFULLY": 0,
+        "EXCLUDED_DECISION": 8,
+        "EXCLUDED_NOT_READY": 0,
+        "EXCLUDED_INACCESSIBLE": 0,
+        "EXCLUDED_UNSUPPORTED": 0,
+        "EXCLUDED_NOT_A_FILE": 0,
+        "EXCLUDED_INVALID_GOOGLE_FILE_ID": 0,
+        "EXCLUDED_TRASHED": 0,
+        "EXCLUDED_OTHER": 0,
+        "INVALID_OR_AMBIGUOUS_STATE": 0
+      }
+    },
+    {
+      "source_folder_id": "84a6b92b-e075-4f4b-9384-9b6a99acb51e",
+      "google_folder_id": "1J7rUY-n4oVFqwY07jXOwwu_wFo8jeCsI",
+      "active": true,
+      "stored_folder_name": "Nushad Raw Video",
+      "normalized_folder_name": "nushad raw video",
+      "processing_enabled": true,
+      "scan_status": "COMPLETED",
+      "completion_status": "COMPLETED",
+      "accessibility_status": "ACCESSIBLE",
+      "configuration_warning": null,
+      "expected_inventory": 585,
+      "observed_inventory": 585,
+      "difference": 0,
+      "classification_counts": {
+        "ELIGIBLE": 585,
+        "ALREADY_HASHED_SUCCESSFULLY": 0,
+        "EXCLUDED_DECISION": 0,
+        "EXCLUDED_NOT_READY": 0,
+        "EXCLUDED_INACCESSIBLE": 0,
+        "EXCLUDED_UNSUPPORTED": 0,
+        "EXCLUDED_NOT_A_FILE": 0,
+        "EXCLUDED_INVALID_GOOGLE_FILE_ID": 0,
+        "EXCLUDED_TRASHED": 0,
+        "EXCLUDED_OTHER": 0,
+        "INVALID_OR_AMBIGUOUS_STATE": 0
+      }
+    },
+    {
+      "source_folder_id": "24bec9f0-7325-4706-896b-6d594daeaef2",
+      "google_folder_id": "1TkV6WEH5ymgqZmU7WgYFwYeZUxGYkEUt",
+      "active": true,
+      "stored_folder_name": "Photo/Video for Marketing (Consented by patient)",
+      "normalized_folder_name": "photo/video for marketing (consented by patient)",
+      "processing_enabled": true,
+      "scan_status": "COMPLETED",
+      "completion_status": "COMPLETED",
+      "accessibility_status": "ACCESSIBLE",
+      "configuration_warning": null,
+      "expected_inventory": 1,
+      "observed_inventory": 1,
+      "difference": 0,
+      "classification_counts": {
+        "ELIGIBLE": 1,
+        "ALREADY_HASHED_SUCCESSFULLY": 0,
+        "EXCLUDED_DECISION": 0,
+        "EXCLUDED_NOT_READY": 0,
+        "EXCLUDED_INACCESSIBLE": 0,
+        "EXCLUDED_UNSUPPORTED": 0,
+        "EXCLUDED_NOT_A_FILE": 0,
+        "EXCLUDED_INVALID_GOOGLE_FILE_ID": 0,
+        "EXCLUDED_TRASHED": 0,
+        "EXCLUDED_OTHER": 0,
+        "INVALID_OR_AMBIGUOUS_STATE": 0
+      }
+    }
+  ],
+  "inventory_reconciliation": {
+    "expected_total": 886,
+    "observed_total": 886,
+    "difference": 0,
+    "per_source": [
+      {
+        "source_folder_id": "42affe18-4e7b-4333-87fe-7158c410c072",
+        "expected": 300,
+        "observed": 300,
+        "difference": 0,
+        "eligible": 292,
+        "already_completed": 0,
+        "excluded": 8,
+        "invalid_or_ambiguous": 0,
+        "arithmetic_valid": true
+      },
+      {
+        "source_folder_id": "84a6b92b-e075-4f4b-9384-9b6a99acb51e",
+        "expected": 585,
+        "observed": 585,
+        "difference": 0,
+        "eligible": 585,
+        "already_completed": 0,
+        "excluded": 0,
+        "invalid_or_ambiguous": 0,
+        "arithmetic_valid": true
+      },
+      {
+        "source_folder_id": "24bec9f0-7325-4706-896b-6d594daeaef2",
+        "expected": 1,
+        "observed": 1,
+        "difference": 0,
+        "eligible": 1,
+        "already_completed": 0,
+        "excluded": 0,
+        "invalid_or_ambiguous": 0,
+        "arithmetic_valid": true
+      }
+    ],
+    "combined": {
+      "inventory_count": 886,
+      "eligible_count": 878,
+      "already_completed_count": 0,
+      "excluded_count": 8,
+      "invalid_or_ambiguous_count": 0,
+      "arithmetic_valid": true
+    }
+  },
+  "eligibility_predicate": {
+    "rule_version": "step8.v1",
+    "ordered_fields": [
+      {
+        "field": "source_folder_id",
+        "accepted": "three immutable UUIDs",
+        "null_handling": "invalid",
+        "source": "approved scope",
+        "unexpected": "INVALID_OR_AMBIGUOUS_STATE"
+      },
+      {
+        "field": "valid asset relationship/hash",
+        "accepted": "absent",
+        "null_handling": "not completed",
+        "source": "assets schema",
+        "unexpected": "ALREADY_HASHED_SUCCESSFULLY"
+      },
+      {
+        "field": "trashed",
+        "accepted": false,
+        "null_handling": "invalid",
+        "source": "schema/rules",
+        "unexpected": "EXCLUDED_TRASHED"
+      },
+      {
+        "field": "processing_status",
+        "accepted": "READY",
+        "null_handling": "invalid",
+        "source": "approved predicate",
+        "unexpected": "EXCLUDED_INACCESSIBLE or EXCLUDED_NOT_READY"
+      },
+      {
+        "field": "decision",
+        "accepted": "TAKE",
+        "null_handling": "invalid",
+        "source": "step8.v1",
+        "unexpected": "EXCLUDED_DECISION"
+      },
+      {
+        "field": "item type",
+        "accepted": "file",
+        "null_handling": "canonical validation",
+        "source": "step8.v1",
+        "unexpected": "EXCLUDED_NOT_A_FILE"
+      },
+      {
+        "field": "google_file_id",
+        "accepted": "non-empty",
+        "null_handling": "excluded",
+        "source": "identity",
+        "unexpected": "EXCLUDED_INVALID_GOOGLE_FILE_ID"
+      },
+      {
+        "field": "is_missing",
+        "accepted": false,
+        "null_handling": "invalid",
+        "source": "schema/rules",
+        "unexpected": "EXCLUDED_OTHER"
+      },
+      {
+        "field": "extension/MIME/size/policy",
+        "accepted": "TAKE; migration and duplicate flags true",
+        "null_handling": "safe rejection",
+        "source": "rules.py",
+        "unexpected": "EXCLUDED_UNSUPPORTED"
+      }
+    ]
+  },
+  "eligible_counts": {
+    "per_source": {
+      "42affe18-4e7b-4333-87fe-7158c410c072": 292,
+      "84a6b92b-e075-4f4b-9384-9b6a99acb51e": 585,
+      "24bec9f0-7325-4706-896b-6d594daeaef2": 1
+    },
+    "combined": 878
+  },
+  "exclusions": {
+    "combined_by_primary_category": {
+      "ALREADY_HASHED_SUCCESSFULLY": 0,
+      "EXCLUDED_DECISION": 8,
+      "EXCLUDED_NOT_READY": 0,
+      "EXCLUDED_INACCESSIBLE": 0,
+      "EXCLUDED_UNSUPPORTED": 0,
+      "EXCLUDED_NOT_A_FILE": 0,
+      "EXCLUDED_INVALID_GOOGLE_FILE_ID": 0,
+      "EXCLUDED_TRASHED": 0,
+      "EXCLUDED_OTHER": 0,
+      "INVALID_OR_AMBIGUOUS_STATE": 0
+    },
+    "canonical_reason_detail": {
+      "GOOGLE_NATIVE_FILE": 6,
+      "UNSUPPORTED_EXTENSION_HEIC": 2
+    },
+    "mutually_exclusive": true
+  },
+  "schema_readiness": {
+    "result": "BLOCKED_SCHEMA",
+    "reason": "Durable per-file SHA-256 algorithm/completion/attempt/preflight/claim state is absent.",
+    "gates": {
+      "three_source_uuids_confirmed": true,
+      "exact_eligibility_predicate_confirmed": true,
+      "eligible_counts_reconciled": true,
+      "successful_hash_state_identified": true,
+      "streaming_download_capability_identified": false,
+      "bounded_retry_behavior_identified": false,
+      "source_change_detection_defined": true,
+      "canonical_asset_uniqueness": "REPOSITORY_CONFIRMED_PRODUCTION_NOT_DIRECTLY_VERIFIED",
+      "asset_sources_uniqueness": "REPOSITORY_CONFIRMED_PRODUCTION_NOT_DIRECTLY_VERIFIED",
+      "no_unresolved_schema_mismatch": false,
+      "marketing_anomaly_recorded": true
+    }
+  },
+  "repository_schema": {
+    "confidence": "HIGH",
+    "source_files": {
+      "identity": "UNIQUE(source_folder_id,google_file_id)",
+      "md5_checksum": "provider MD5, not canonical SHA-256",
+      "statuses": [
+        "DISCOVERED",
+        "QUEUED",
+        "HASHING",
+        "READY",
+        "DUPLICATE",
+        "UPLOADING",
+        "UPLOADED",
+        "SKIPPED",
+        "FAILED",
+        "INACCESSIBLE"
+      ],
+      "missing": [
+        "sha256",
+        "hash_algorithm",
+        "HASHED/source-change states",
+        "attempt/timestamp",
+        "observed bytes",
+        "preflight snapshot",
+        "lease"
+      ]
+    },
+    "assets": {
+      "content_hash": "64-hex SHA-256",
+      "unique": "partial UNIQUE(content_hash)",
+      "hash_algorithm": false
+    },
+    "asset_sources": {
+      "foreign_keys": true,
+      "unique": [
+        "asset_id,source_file_id",
+        "source_file_id"
+      ]
+    },
+    "jobs": {
+      "sync_runs": true,
+      "scan_runs": true,
+      "migration_events": true,
+      "hash_job": false
+    }
+  },
+  "production_schema": {
+    "method": "Supabase REST SELECT only",
+    "observed_rows": {
+      "source_folders_in_scope": 3,
+      "source_files_in_scope": 886,
+      "assets": 0,
+      "asset_sources": 0
+    },
+    "selected_column_compatibility": "PASS",
+    "constraints": "not observable through approved REST",
+    "confidence": "HIGH rows/columns; LOW constraints"
+  },
+  "schema_differences": [
+    {
+      "area": "deployed constraints",
+      "finding": "not directly verified; SQL prohibited",
+      "classification": "UNRESOLVED_VERIFICATION_GAP",
+      "confidence": "LOW"
+    },
+    {
+      "area": "Phase B hash state",
+      "finding": "durable state absent",
+      "classification": "REQUIRED_DESIGN_GAP",
+      "confidence": "HIGH"
+    },
+    {
+      "area": "asset uniqueness",
+      "finding": "content_hash unique lacks algorithm",
+      "classification": "ALGORITHM_AGILITY_GAP",
+      "confidence": "HIGH"
+    }
+  ],
+  "reusable_implementation": [
+    "Read-only Google OAuth/service construction",
+    "Drive folder/file metadata listing",
+    "Canonical format and duplicate-detection eligibility policy",
+    "Supabase source-file reads and identity upserts",
+    "Source-level JSON checkpoints and bounded retry utility",
+    "Report-file SHA-256 helper demonstrates chunked hashlib usage for local reports",
+    "Legacy MD5-plus-size duplicate lookup (not suitable as Step 9 canonical algorithm)",
+    {
+      "path": "src/kdi_media/supabase_store.py",
+      "symbol": "find_exact_duplicate",
+      "purpose": "legacy MD5+size lookup",
+      "readiness": "UNSAFE_FOR_STEP_9",
+      "concerns": "not approved SHA-256"
+    },
+    {
+      "path": "repository-wide",
+      "symbol": "Drive media streaming downloader",
+      "purpose": "complete byte stream",
+      "readiness": "MISSING",
+      "concerns": "no get_media path"
+    },
+    {
+      "path": "repository-wide",
+      "symbol": "asset/link persistence",
+      "purpose": "Phase C canonicalization",
+      "readiness": "MISSING",
+      "concerns": "no conflict-safe transaction method"
+    }
+  ],
+  "missing_components": [
+    "Drive get_media streaming download function",
+    "MediaIoBaseDownload or equivalent chunk loop",
+    "Complete-file SHA-256 media hasher",
+    "Persistent partial-download/resume implementation",
+    "Drive 429/5xx/Retry-After classifier with jitter",
+    "Per-file hash claim/lease and attempt checkpoint",
+    "Canonical assets upsert and asset_sources creation methods",
+    "Transactional concurrency-safe ORIGINAL/DUPLICATE relationship assignment",
+    "Step 9 orchestration and reconciliation commands/tests",
+    "durable per-file claim/hash/attempt schema",
+    "metadata preflight/postflight comparator",
+    "Step 9 tests"
+  ],
+  "google_drive_handling": {
+    "phase_a_calls": 0,
+    "ordinary_files": "future metadata preflight then get_media chunk stream; not called",
+    "supported": [
+      "jpg",
+      "jpeg",
+      "png",
+      "webp",
+      "mp4",
+      "mov",
+      "pdf",
+      "pptx"
+    ],
+    "google_native": "never silently export/hash",
+    "shortcuts": "never silently follow",
+    "large_videos": "bounded chunks; never whole file in memory",
+    "partial": "never success",
+    "inaccessible": "SOURCE_ACCESS_DENIED",
+    "missing": "SOURCE_NOT_FOUND",
+    "trashed": "SOURCE_TRASHED",
+    "shared_drive": "supportsAllDrives/context when applicable",
+    "preflight_metadata": [
+      "id",
+      "mimeType",
+      "size",
+      "modifiedTime",
+      "createdTime",
+      "trashed",
+      "version/revision",
+      "shortcutDetails",
+      "capabilities.canDownload",
+      "accessibility",
+      "provider checksum auxiliary only"
+    ]
+  },
+  "marketing_source_anomaly": {
+    "source_folder_id": "24bec9f0-7325-4706-896b-6d594daeaef2",
+    "reported_folders_scanned": 90,
+    "files_discovered": 1,
+    "status": "FLAGGED_NO_RESCAN"
+  },
+  "sha256_streaming_workflow": {
+    "algorithm": "SHA-256 complete-file",
+    "chunk_size": {
+      "default_bytes": 8388608,
+      "range_bytes": [
+        1048576,
+        33554432
+      ]
+    },
+    "steps": [
+      "durable claim",
+      "metadata preflight",
+      "stream chunks and hash/count",
+      "require EOF",
+      "validate reliable expected size",
+      "postflight metadata",
+      "atomic success"
+    ],
+    "rules": [
+      "partial never success",
+      "name/path/size never determine duplicate",
+      "same hash can share asset",
+      "different hashes stay separate"
+    ]
+  },
+  "source_change_detection": {
+    "pre_and_postflight": true,
+    "handling": {
+      "modified_time": "SOURCE_CHANGED",
+      "size": "SOURCE_CHANGED",
+      "MIME": "SOURCE_CHANGED/re-evaluate",
+      "missing": "SOURCE_NOT_FOUND",
+      "access": "SOURCE_ACCESS_DENIED",
+      "trashed": "SOURCE_TRASHED",
+      "same ID replacement": "size/time/version/postflight",
+      "revision": "SOURCE_CHANGED"
+    }
+  },
+  "database_write_workflow": {
+    "phase_b": [
+      "claim",
+      "preflight",
+      "stream/hash",
+      "validate",
+      "store hash/algorithm/status/observed metadata/attempt",
+      "no assets/links"
+    ],
+    "phase_c": [
+      "consume stored hashes",
+      "conflict-safe asset reuse/create",
+      "one link per source file",
+      "no Drive download"
+    ],
+    "equivalent_statuses": [
+      "HASHING",
+      "FAILED",
+      "INACCESSIBLE",
+      "READY",
+      "DUPLICATE"
+    ],
+    "missing_statuses": [
+      "NOT_STARTED",
+      "HASHED",
+      "FAILED_RETRYABLE",
+      "FAILED_PERMANENT",
+      "SOURCE_CHANGED",
+      "SOURCE_NOT_FOUND",
+      "SOURCE_ACCESS_DENIED",
+      "SOURCE_TRASHED"
+    ]
+  },
+  "idempotency_strategy": {
+    "preserve_success": true,
+    "individual_retry": true,
+    "database_uniqueness_final_control": true,
+    "application_check_then_insert_only": false,
+    "recommended": [
+      "UNIQUE(hash_algorithm,content_hash)",
+      "UNIQUE(source_file_id)"
+    ],
+    "current": "UNIQUE(content_hash), no algorithm"
+  },
+  "retry_and_checkpoint_strategy": {
+    "retryable": [
+      "timeout",
+      "reset",
+      "429",
+      "5xx"
+    ],
+    "permanent": [
+      "permission",
+      "not found",
+      "trashed",
+      "cannot download",
+      "unsupported native/shortcut",
+      "source changed"
+    ],
+    "schedule": "exponential with jitter, max 5, respect Retry-After",
+    "durable": [
+      "attempt_count",
+      "last/next attempt",
+      "failure code/reason",
+      "lease",
+      "snapshot",
+      "bytes"
+    ],
+    "resume": "preserve successes; retry one file; restart unless safe range/hash state"
+  },
+  "recommended_execution_phases": [
+    "approve schema",
+    "implement/test locally",
+    "Phase B preview",
+    "Phase B controlled hashing/batches",
+    "Phase B reconcile",
+    "Phase C controlled canonicalization",
+    "Phase C reconcile"
+  ],
+  "required_changes": [
+    {
+      "classification": "REQUIRED_BEFORE_PHASE_B",
+      "change": "durable hash/algorithm/status/attempt/preflight/claim schema"
+    },
+    {
+      "classification": "REQUIRED_BEFORE_PHASE_B",
+      "change": "Drive stream SHA-256 worker with EOF/byte validation"
+    },
+    {
+      "classification": "REQUIRED_BEFORE_PHASE_B",
+      "change": "source-change and retry handling"
+    },
+    {
+      "classification": "RECOMMENDED_BEFORE_PHASE_B",
+      "change": "hash jobs/attempts model and deployed-constraint verification"
+    },
+    {
+      "classification": "OPTIONAL_OPTIMIZATION",
+      "change": "size-aware scheduling/resource caps"
+    },
+    {
+      "classification": "FUTURE_ENHANCEMENT",
+      "change": "algorithm agility/secondary hashes"
+    }
+  ],
+  "blockers": [
+    "approve schema design/migration",
+    "implement/test safe streaming hashing and retries",
+    "verify deployed uniqueness before concurrency"
+  ],
+  "safety_confirmation": {
+    "supabase_operations_were_read_only": true,
+    "google_drive_content_was_not_downloaded": true,
+    "checksums_were_not_calculated": true,
+    "assets_or_asset_sources_were_not_created": true,
+    "source_files_records_were_not_modified": true,
+    "source_folders_records_were_not_modified": true,
+    "google_drive_file_folder_metadata_or_permission_was_not_modified": true,
+    "direct_sql_was_not_executed": true,
+    "migration_was_not_created_changed_or_executed": true,
+    "production_data_was_not_modified": true,
+    "secrets_or_credentials_were_not_printed": true,
+    "commit_or_push_did_not_occur": true,
+    "step_9_phase_b_was_not_started": true
+  }
+}

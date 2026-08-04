@@ -1,0 +1,65 @@
+{
+  "working_directory": "C:\\Users\\Public\\Asset_Management_AI",
+  "exact_leaking_object": "public.source_folder_summary",
+  "protected_rows_observed": "ONE_OR_MORE_SUMMARY_ROWS_NO_CONTENT_INSPECTED",
+  "proven_cause": "The security-invoker Staff view had a direct authenticated SELECT grant and relied only on underlying permissive RLS policies. Its definition lacked an auth.uid-bound active app_users predicate while legacy shared-reader policies remain staged. The verifier proved the resulting unapproved view visibility.",
+  "excluded_causes": {
+    "missing_security_invoker": "EXCLUDED_BY_VERIFIER_SCHEMA_CATALOG_PASS",
+    "view_owner_bypass": "EXCLUDED_BY_SECURITY_INVOKER_CATALOG_CHECK",
+    "security_definer_called_by_view": "NONE_IN_VIEW_DEFINITION",
+    "frontend_column_contract": "UNCHANGED"
+  },
+  "original_migration_deployment_status": "CONFIRMED_BY_VERIFIER_REACHING_BEHAVIOR_TESTS_AFTER_SCHEMA_CATALOG_PASS",
+  "migration_history_status": "NOT_ACCESSIBLE_WITH_AVAILABLE_TOOLS",
+  "fix_migration_filepath": "supabase/migrations/202608030002_fix_staff_view_rls_enforcement.sql",
+  "view_security_before": {
+    "security_invoker": true,
+    "security_barrier": false,
+    "explicit_active_app_user_gate": false
+  },
+  "view_security_after": {
+    "security_invoker": true,
+    "security_barrier": true,
+    "explicit_active_app_user_gate": true
+  },
+  "grants_before": {
+    "anon_select": false,
+    "authenticated_select": true,
+    "service_role_select": true
+  },
+  "grants_after": {
+    "public_select": false,
+    "anon_select": false,
+    "authenticated_select": true,
+    "service_role_select": true
+  },
+  "underlying_rls_status": "ENABLED_AND_CATALOG_VERIFIED; INDIVIDUAL ACTIVE-USER POLICIES AND STAGED LEGACY READER POLICIES PRESENT",
+  "anonymous_result": "PENDING_FIX_DEPLOYMENT_AND_VERIFIER_RERUN",
+  "unapproved_user_result": "PENDING_FIX_DEPLOYMENT_AND_VERIFIER_RERUN",
+  "staff_result": "PENDING_FIX_DEPLOYMENT_AND_VERIFIER_RERUN",
+  "admin_result": "PENDING_FIX_DEPLOYMENT_AND_VERIFIER_RERUN",
+  "disabled_user_result": "PENDING_FIX_DEPLOYMENT_AND_VERIFIER_RERUN",
+  "spoofing_result": "PENDING_FIX_DEPLOYMENT_AND_VERIFIER_RERUN",
+  "write_denial_result": "STATIC_FIX_SCAN_PASS_NO_PRODUCTION_DML",
+  "verifier_result": "UPDATED_WITH_OBJECT_IDENTITY_EXPECTED_COUNT_ACTUAL_COUNT_DIAGNOSTICS; LIVE_RERUN_PENDING",
+  "tests_and_build": {
+    "unit": "PASS_53_OF_53",
+    "typescript": "PASS",
+    "eslint": "PASS",
+    "production_build": "PASS",
+    "git_diff_check": "PASS_WITH_EXISTING_LINE_ENDING_WARNINGS",
+    "sql_lexical_and_safety_scan": "PASS",
+    "secret_scan": "PASS_283_SOURCE_FILES_ZERO_SECRET_VALUE_MATCHES"
+  },
+  "production_data_integrity": "NO_PRODUCTION_TABLE_DML_OR_GOOGLE_DRIVE_OPERATION_PERFORMED",
+  "files_changed": [
+    "supabase/migrations/202608030002_fix_staff_view_rls_enforcement.sql",
+    "supabase/verification/verify_individual_app_user_auth.sql",
+    "reports/individual_user_auth_view_leak_repair_report.json"
+  ],
+  "remaining_blockers": [
+    "Execute only 202608030002_fix_staff_view_rls_enforcement.sql in the Supabase SQL Editor",
+    "Then execute the complete verify_individual_app_user_auth.sql and provide the sanitized category output or first failure"
+  ],
+  "final_verdict": "RBAC_STAFF_VIEW_FIX_READY_FOR_SQL_EDITOR"
+}

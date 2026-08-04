@@ -1,0 +1,1 @@
+export default function Loading(){return <main className="authPage"><section className="authCard" role="status" aria-live="polite"><span className="authKicker">CENTRAL MEDIA LIBRARY</span><h1>Loading files…</h1><p>Retrieving your permitted media records.</p></section></main>}

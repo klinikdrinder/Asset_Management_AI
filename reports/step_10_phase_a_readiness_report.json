@@ -1,0 +1,709 @@
+{
+  "phase": "STEP_10_PHASE_A",
+  "working_directory": "C:\\Users\\Public\\Asset_Management_AI",
+  "generated_at_utc": "2026-07-30T06:59:35.3706950Z",
+  "step_9_validation": {
+    "status": "PASS",
+    "phase_c2_report": "reports/step_09_phase_c2_canonicalization_report.json",
+    "final_reconciliation_report": "reports/step_09_final_reconciliation_report.json",
+    "reports_valid_json": true,
+    "source_files": 886,
+    "successfully_hashed_eligible_source_files": 878,
+    "canonical_assets": 878,
+    "asset_sources": 878,
+    "duplicate_groups": 0,
+    "duplicate_occurrences": 0,
+    "excluded_source_files": 8,
+    "unlinked_hashed_source_files": 0,
+    "orphan_assets": 0,
+    "orphan_asset_sources": 0,
+    "final_step_9_result": "PASS",
+    "inventory_equation": "886 = 878 + 8",
+    "inventory_equation_valid": true,
+    "canonical_relationship_equation": "878 = 878",
+    "canonical_relationship_equation_valid": true
+  },
+  "expected_asset_population": 878,
+  "observed_asset_population": 878,
+  "population_reconciliation": {
+    "difference": 0,
+    "candidate_assets": 878,
+    "already_uploaded_or_verified": 0,
+    "blocked_from_upload": 0,
+    "assets_without_valid_source_occurrence": 0,
+    "assets_with_inconsistent_state": 0,
+    "excluded_source_files_selected": 0,
+    "pdf_assets_included": 2,
+    "pptx_assets_included": 1,
+    "all_canonical_assets_accounted_for": true,
+    "candidate_predicate": {
+      "asset_exists": true,
+      "complete_valid_sha256": true,
+      "valid_asset_source_relationship_required": true,
+      "linked_source_hash_status": "HASHED",
+      "linked_source_hash_algorithm": "SHA-256",
+      "linked_source_decision": "TAKE",
+      "linked_source_processing_status": "READY",
+      "linked_source_not_trashed_or_missing": true,
+      "asset_not_completed_or_verified": true,
+      "asset_not_terminally_blocked": true
+    }
+  },
+  "destination_identification": {
+    "identified": false,
+    "configuration_key": "DESTINATION_FOLDER_ID",
+    "configured_value_state": "PLACEHOLDER",
+    "stable_folder_id_confirmed": false,
+    "approved_destination_count": 0,
+    "destination_name_used_as_identity": false,
+    "blocker": "A real stable Google Drive folder ID for KDI Master is not configured."
+  },
+  "destination_drive_context": "UNKNOWN",
+  "destination_metadata_verification": {
+    "performed": false,
+    "result": "NOT_PERFORMED_INVALID_CONFIGURATION",
+    "exists": null,
+    "is_folder": null,
+    "folder_name": null,
+    "folder_id_confirmed": false,
+    "shared_drive_id": null,
+    "not_trashed": null,
+    "parent_context": null,
+    "capabilities": {},
+    "metadata_write_capability_status": "METADATA_WRITE_CAPABILITY_NOT_CONFIRMED",
+    "test_file_created": false
+  },
+  "destination_step10_state": "UNKNOWN",
+  "destination_prior_content_inspection": {
+    "performed": false,
+    "recursive_listing": false,
+    "immediate_identity_marker_listing": false,
+    "step10_marker_matches": null,
+    "unmatched_files": null,
+    "destination_identity_gap": "UNVERIFIED_UNTIL_DESTINATION_ID_IS_CONFIGURED"
+  },
+  "authenticated_account": "kdimediaautomation@gmail.com",
+  "source_oauth_scope": "https://www.googleapis.com/auth/drive.readonly",
+  "destination_authentication_design": {
+    "readiness": "REQUIRES_SEPARATE_DESTINATION_WRITE_CREDENTIAL",
+    "existing_source_profile": "source_readonly",
+    "existing_source_profile_preserved": true,
+    "existing_source_token_broadened": false,
+    "separate_profile_names_supported_by_design": [
+      "source_readonly",
+      "destination_write",
+      "migration_copy"
+    ],
+    "current_legacy_migration_token_available": false,
+    "recommended_model": "Keep the current source_readonly credential and add a separate destination_write credential. Stream source bytes through the read-only service into a resumable upload created by the destination service.",
+    "alternative_model": "Use a dedicated migration_copy credential only if it is explicitly authorized to read the approved source folders and create files in the approved KDI Master destination.",
+    "future_authentication_action": "Configure the real destination folder ID and separate destination credential/token paths. Authorize drive.file only if KDI Master is explicitly granted to the application; otherwise authorize a dedicated migration-only drive scope. Do not change the source_readonly token."
+  },
+  "required_destination_scope": "Prefer https://www.googleapis.com/auth/drive.file when the pre-existing destination folder is explicitly granted to the application; otherwise use a separate migration-only credential with https://www.googleapis.com/auth/drive.",
+  "schema_readiness": {
+    "status": "REQUIRES_MIGRATION",
+    "deployed_assets_fields": [
+      "content_hash",
+      "checksum_sha256",
+      "file_name",
+      "mime_type",
+      "file_extension",
+      "size_bytes",
+      "upload_status",
+      "migration_status",
+      "master_google_file_id",
+      "master_google_folder_id",
+      "master_url",
+      "upload_attempts",
+      "last_upload_error",
+      "last_verified_at",
+      "metadata",
+      "created_at",
+      "updated_at"
+    ],
+    "deployed_asset_sources_fields": [
+      "asset_id",
+      "source_file_id",
+      "relationship_type",
+      "is_first_discovered_source",
+      "created_at",
+      "updated_at"
+    ],
+    "deployed_migration_events": true,
+    "deployed_asset_destinations": false,
+    "deployed_asset_upload_state": false,
+    "deployed_upload_jobs": false,
+    "existing_assets_state_is_insufficient": true,
+    "missing_required_capabilities": [
+      "one lifecycle record per asset and destination",
+      "selected source_file_id",
+      "destination folder and Shared Drive identity",
+      "deterministic destination path and filename",
+      "separate upload status and verification level",
+      "expected, transferred, and destination-reported byte counts",
+      "source and destination metadata snapshots",
+      "persistent sanitized retry state",
+      "atomic claim and renewable lease",
+      "destination application identity",
+      "unique asset and destination constraint",
+      "database claim RPC"
+    ],
+    "migration_events_as_sole_state_authority": false,
+    "migration_events_role": "Append-only audit history",
+    "repository_constraints_verified": [
+      "assets unique complete content hash",
+      "asset_sources unique source_file_id",
+      "asset_sources foreign keys to assets and source_files"
+    ],
+    "deployed_constraint_introspection_limit": "PostgREST exposes fields but not full index definitions; Step 9 constraint behavior was proven during canonicalization."
+  },
+  "recommended_state_storage": {
+    "architecture": "assets -> asset_destinations -> migration_events",
+    "table": "asset_destinations",
+    "reason": "A dedicated destination lifecycle supports multiple destinations, durable claims, honest verification levels, and idempotent recovery without overloading canonical assets or append-only events.",
+    "unique_constraint": "UNIQUE(asset_id, destination_folder_id)",
+    "foreign_keys": [
+      "asset_id -> assets.id",
+      "selected_source_file_id -> source_files.id"
+    ],
+    "required_fields": [
+      "asset_id",
+      "selected_source_file_id",
+      "destination_folder_id",
+      "destination_shared_drive_id",
+      "destination_google_file_id",
+      "destination_url",
+      "destination_filename",
+      "destination_relative_path",
+      "upload_status",
+      "verification_level",
+      "expected_bytes",
+      "transferred_bytes",
+      "destination_reported_bytes",
+      "source_sha256",
+      "provider_checksum_metadata",
+      "upload_attempt_count",
+      "last_attempt_at",
+      "completed_at",
+      "failure_code",
+      "failure_reason",
+      "retryable",
+      "source_metadata_snapshot",
+      "destination_metadata_snapshot",
+      "claim_owner",
+      "claim_started_at",
+      "claim_expires_at",
+      "claim_renewed_at",
+      "created_at",
+      "updated_at"
+    ],
+    "upload_statuses": [
+      "NOT_STARTED",
+      "QUEUED",
+      "UPLOADING",
+      "UPLOADED",
+      "FAILED_RETRYABLE",
+      "FAILED_PERMANENT",
+      "SOURCE_CHANGED",
+      "SOURCE_NOT_FOUND",
+      "SOURCE_ACCESS_DENIED",
+      "DESTINATION_ACCESS_DENIED",
+      "DESTINATION_CONFLICT",
+      "MANUAL_REVIEW_REQUIRED"
+    ],
+    "verification_levels": [
+      "NONE",
+      "SOURCE_HASH_VERIFIED",
+      "TRANSFER_BYTE_COUNT_VERIFIED",
+      "DESTINATION_METADATA_VERIFIED",
+      "PROVIDER_CHECKSUM_VERIFIED",
+      "DESTINATION_SHA256_VERIFIED"
+    ],
+    "destination_sha256_rule": "Use DESTINATION_SHA256_VERIFIED only after destination content has actually been read completely and hashed."
+  },
+  "migration_required": true,
+  "canonical_source_selection": {
+    "status": "READY",
+    "rule": "Use assets.metadata.canonical_source_file_id when its asset_sources relationship remains valid and the source is TAKE, READY, HASHED with matching SHA-256 and unchanged metadata. Otherwise choose the minimum tuple (source_folder_id, google_file_id, source_file_id).",
+    "filename_used_for_selection": false,
+    "assets_with_exactly_one_valid_representative": 878,
+    "assets_with_multiple_valid_representatives": 0,
+    "assets_without_valid_representative": 0,
+    "representatives_by_source_folder": {
+      "ALL PATIENT REVIEW": 292,
+      "Nushad Raw Video": 585,
+      "Photo/Video for Marketing (Consented by patient)": 1
+    },
+    "excluded_step9_sources_selected": 0,
+    "active_attempt_representative_switch": "PROHIBITED",
+    "representative_change_requirements": [
+      "durable state update",
+      "audit event",
+      "new source metadata preflight",
+      "complete hash consistency confirmation"
+    ]
+  },
+  "workload_profile": {
+    "candidate_assets": 878,
+    "by_source": {
+      "ALL PATIENT REVIEW": 292,
+      "Nushad Raw Video": 585,
+      "Photo/Video for Marketing (Consented by patient)": 1
+    },
+    "by_extension": {
+      "jpg": 251,
+      "jpeg": 39,
+      "png": 0,
+      "webp": 0,
+      "mp4": 584,
+      "mov": 1,
+      "pdf": 2,
+      "pptx": 1
+    },
+    "by_mime_group": {
+      "image": 290,
+      "video": 585,
+      "application": 3
+    },
+    "images": 290,
+    "videos": 585,
+    "documents": 3,
+    "total_expected_bytes": 5348679315,
+    "size_bands": {
+      "LT_1_MIB": 89,
+      "1_TO_LT_10_MIB": 660,
+      "10_TO_LT_50_MIB": 127,
+      "50_TO_LT_100_MIB": 2,
+      "GE_100_MIB": 0
+    },
+    "smallest_asset_bytes": 52265,
+    "median_asset_bytes": 4708399,
+    "largest_asset_bytes": 87842167,
+    "zero_byte_assets": 0,
+    "missing_size_assets": 0,
+    "unreliable_size_assets": 0,
+    "missing_mime_assets": 0,
+    "source_metadata_inconsistencies": 0,
+    "content_downloaded_for_profile": false
+  },
+  "destination_structure": {
+    "existing_approved_structure_verified": false,
+    "recommendation": [
+      "KDI Master/Images/",
+      "KDI Master/Videos/",
+      "KDI Master/Documents/"
+    ],
+    "documents_rule": "Only approved PDF and PPTX assets use Documents.",
+    "ai_classification_folders": false,
+    "patient_treatment_doctor_or_campaign_folders": false,
+    "folders_created": false
+  },
+  "destination_naming_rule": {
+    "preferred": "<sanitized-non-sensitive-original-stem>__<short-stable-asset-id>.<extension>",
+    "fallback": "asset__<short-stable-asset-id>.<extension>",
+    "pilot_policy": "Use fallback names because no approved sensitive-name detector exists yet.",
+    "stable_suffix_source": "Canonical asset UUID, initially 8 hexadecimal characters; detect collisions before upload and deterministically extend to 12 characters if required.",
+    "full_content_hash_used": false,
+    "source_path_used": false,
+    "sensitive_identifiers_allowed": false,
+    "unicode_normalization": "NFC",
+    "invalid_characters": "Replace control characters, slash, and backslash with hyphen; collapse repeated separators and whitespace.",
+    "leading_trailing_rule": "Trim whitespace and trailing dots.",
+    "reserved_name_rule": "Windows device names and empty, dot-only, unsafe, or ambiguous stems use the fallback.",
+    "duplicate_extension_rule": "Remove a terminal extension from the stem before appending the canonical lowercase extension once.",
+    "maximum_filename_length": 120,
+    "truncation_rule": "Truncate only the sanitized stem, preserving the complete suffix and extension.",
+    "silent_overwrite": false
+  },
+  "destination_identity_strategy": {
+    "database_authority": "asset_destinations",
+    "provider_identity": "Persisted destination Google file ID",
+    "path_identity": "Deterministic relative path",
+    "drive_app_properties": [
+      "kdi_asset_id",
+      "kdi_migration_version",
+      "kdi_destination_record_id"
+    ],
+    "filename_only_identity": false,
+    "current_repository_app_properties_support": "REUSABLE_WITH_CHANGES",
+    "current_markers": [
+      "kdiSourceGoogleFileId",
+      "kdiSourceFolderId"
+    ],
+    "required_canonical_markers_missing": true,
+    "ambiguous_creation_recovery": "Before creating, search the approved destination parent by kdi_asset_id and migration version. Reconcile exactly one match; treat zero as safe to create and multiple matches as DESTINATION_CONFLICT.",
+    "rerun_rules": {
+      "verified_match": "SKIP",
+      "database_record_but_file_missing": "DESTINATION_CONFLICT or recovery state",
+      "provider_marker_match_but_database_missing": "Reconcile and reuse",
+      "database_identity_mismatch": "MANUAL_REVIEW_REQUIRED",
+      "failed_without_created_file": "Retry according to policy",
+      "uncertain_create_outcome": "Search stable appProperties before any new create"
+    }
+  },
+  "transfer_method_evaluation": {
+    "existing_components": [
+      {
+        "path": "src/kdi_media/google_drive.py",
+        "symbol": "create_readonly_drive_service and metadata helpers",
+        "classification": "PRODUCTION_READY",
+        "purpose": "Strict source read-only authentication and metadata access"
+      },
+      {
+        "path": "src/kdi_media/step9_hashing.py",
+        "symbol": "iter_drive_content and read_drive_snapshot",
+        "classification": "REUSABLE_WITH_CHANGES",
+        "purpose": "Bounded source content streaming and metadata snapshots"
+      },
+      {
+        "path": "src/kdi_media/drive_client.py",
+        "symbol": "copy_file and find_existing_copy",
+        "classification": "UNSAFE",
+        "purpose": "Legacy source-level server-side copy with broad credential and non-canonical identity markers"
+      },
+      {
+        "path": "src/kdi_media/google_auth.py",
+        "symbol": "authenticate",
+        "classification": "UNSAFE",
+        "purpose": "Legacy broad Drive token flow that is not separated by named source/destination roles"
+      },
+      {
+        "path": "src/kdi_media/workflow.py",
+        "symbol": "_process_file",
+        "classification": "UNSAFE",
+        "purpose": "Legacy source_file-level copy and destination state; not canonical-asset lifecycle"
+      },
+      {
+        "path": "repository",
+        "symbol": "resumable destination uploader",
+        "classification": "MISSING",
+        "purpose": "Separate-credential resumable upload with canonical appProperties"
+      }
+    ],
+    "server_side_copy": {
+      "current_viability": "NOT_VIABLE_WITH_CURRENT_CREDENTIALS",
+      "reason": "The only working source credential is exactly drive.readonly and cannot create destination files; the configured legacy broad token file does not exist.",
+      "shared_drive_and_cross_account": "Requires destination metadata, permissions, copy restrictions, ownership, and parent-placement verification after a real destination ID is configured.",
+      "app_properties_supported_by_api": true,
+      "repository_implementation_canonical_ready": false,
+      "large_file_behavior": "Provider-side transfer avoids worker bandwidth but creation outcome and verification still require durable identity recovery."
+    },
+    "streamed_resumable_upload": {
+      "current_viability": "DESIGN_READY_CREDENTIAL_AND_WORKER_MISSING",
+      "separate_credentials_supported": true,
+      "entire_file_loaded_in_memory": false,
+      "bounded_chunk_pipeline": true,
+      "local_temporary_storage": "Not required for a live bounded stream, but encrypted temporary spooling is recommended for durable resumable recovery without re-downloading the source after worker restart.",
+      "large_video_support": true,
+      "verification": "Persist session state, transferred bytes, destination metadata, and stable appProperties; compare expected and destination sizes.",
+      "quota_and_runtime": "Worker bandwidth and both Drive API quotas apply."
+    },
+    "unresolved_capability_questions": [
+      "Real KDI Master folder ID and Drive context",
+      "Destination account permissions and canAddChildren capability",
+      "Whether drive.file can access the pre-existing destination folder",
+      "Shared Drive restrictions and ownership behavior",
+      "Whether the destination already contains Step 10 appProperties markers"
+    ],
+    "pilot_verification_required": true
+  },
+  "selected_primary_transfer_method": "READONLY_STREAMED_SOURCE_DOWNLOAD_TO_RESUMABLE_DESTINATION_UPLOAD",
+  "fallback_transfer_method": "SERVER_SIDE_GOOGLE_DRIVE_COPY_WITH_A_SEPARATE_APPROVED_MIGRATION_CREDENTIAL",
+  "source_change_strategy": {
+    "preflight_fields": [
+      "Google file ID",
+      "modified time",
+      "size",
+      "MIME type",
+      "version or revision",
+      "trashed state",
+      "accessibility"
+    ],
+    "comparison_baseline": "Successful Step 9 hash metadata snapshot",
+    "changed_source_action": "Do not upload; record SOURCE_CHANGED and require successful rehash before retry.",
+    "silent_changed_content_upload": false,
+    "post_transfer_source_metadata_check": true
+  },
+  "destination_verification_strategy": {
+    "normal_full_migration": [
+      "TRANSFER_BYTE_COUNT_VERIFIED",
+      "DESTINATION_METADATA_VERIFIED"
+    ],
+    "enhanced_pilot": [
+      "DESTINATION_METADATA_VERIFIED",
+      "DESTINATION_SHA256_VERIFIED for at least one small image and one moderate video"
+    ],
+    "uncertain_transfer_recovery": "Search stable appProperties, verify parent, non-trashed state, size, MIME type, and application identity before reconciling.",
+    "server_side_copy": "Verify returned or recovered ID, parent, appProperties, size, MIME type, and provider checksum when available.",
+    "streamed_resumable_upload": "Verify EOF, transferred byte count, destination-reported size, parent, MIME type, and appProperties.",
+    "provider_checksum_rule": "Diagnostic or additional verification only unless algorithm and complete-content semantics are explicitly equivalent.",
+    "all_878_destination_redownload_required": false
+  },
+  "claim_and_lease_design": {
+    "database_authority": "asset_destinations",
+    "atomic_claim_rpc_required": true,
+    "claim_key": [
+      "asset_id",
+      "destination_folder_id"
+    ],
+    "active_unexpired_lease_action": "SKIP",
+    "expired_lease_action": "Atomically recover and increment persistent attempt state",
+    "renewal_supported": true,
+    "release_on_final_outcome": true,
+    "worker_crash_recovery": true,
+    "permanent_locks_allowed": false,
+    "concurrency_constraint": "UNIQUE(asset_id, destination_folder_id)"
+  },
+  "retry_design": {
+    "maximum_attempts": 5,
+    "base_delays_seconds": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "jitter": "Bounded random jitter applied to each exponential delay",
+    "retry_after": "Respect provider Retry-After when present",
+    "attempts_persisted": true,
+    "retryable_and_permanent_separated": true,
+    "per_asset_failure_isolation": true,
+    "uncontrolled_duplicate_creation_prevented_by": [
+      "database uniqueness",
+      "stable appProperties recovery search",
+      "persisted resumable session state",
+      "destination conflict state"
+    ]
+  },
+  "audit_event_design": {
+    "authority": "migration_events append-only audit log",
+    "event_types": [
+      "UPLOAD_CLAIMED",
+      "UPLOAD_STARTED",
+      "UPLOAD_CREATED",
+      "UPLOAD_VERIFIED",
+      "UPLOAD_FAILED",
+      "UPLOAD_RETRY_SCHEDULED",
+      "SOURCE_CHANGED",
+      "DESTINATION_CONFLICT",
+      "DESTINATION_RECOVERED",
+      "MANUAL_REVIEW_REQUIRED"
+    ],
+    "per_chunk_events": false,
+    "sanitized_details_only": true,
+    "prohibited_event_data": [
+      "credentials",
+      "tokens",
+      "authorization headers",
+      "raw request dumps",
+      "signed URLs"
+    ]
+  },
+  "pilot_candidates": [
+    {
+      "asset_uuid": "e447839d-b034-4936-a1ad-b51b9ccf3739",
+      "selected_source_file_uuid": "1f9985f2-3c87-444e-a135-020b68e4010d",
+      "source_folder_name": "ALL PATIENT REVIEW",
+      "extension": "jpeg",
+      "mime_type": "image/jpeg",
+      "expected_size": 52265,
+      "proposed_destination_relative_path": "Images/asset__e447839d.jpeg",
+      "proposed_destination_filename": "asset__e447839d.jpeg",
+      "transfer_method": "STREAMED_RESUMABLE_UPLOAD",
+      "verification_level": "DESTINATION_SHA256_VERIFIED",
+      "reason_selected": "Small image for enhanced destination hash verification"
+    },
+    {
+      "asset_uuid": "ebbb9b67-7ef6-410e-bad8-a8533da2f3c2",
+      "selected_source_file_uuid": "9046e3af-e5d6-44d4-9cd7-ef05da72dd9f",
+      "source_folder_name": "ALL PATIENT REVIEW",
+      "extension": "jpeg",
+      "mime_type": "image/jpeg",
+      "expected_size": 57050,
+      "proposed_destination_relative_path": "Images/asset__ebbb9b67.jpeg",
+      "proposed_destination_filename": "asset__ebbb9b67.jpeg",
+      "transfer_method": "STREAMED_RESUMABLE_UPLOAD",
+      "verification_level": "DESTINATION_METADATA_VERIFIED",
+      "reason_selected": "Second small image"
+    },
+    {
+      "asset_uuid": "22d88baf-3ba6-489a-99ec-6ba8548684a3",
+      "selected_source_file_uuid": "e89b6bd5-6d4f-41a1-83bf-55d351793043",
+      "source_folder_name": "ALL PATIENT REVIEW",
+      "extension": "jpeg",
+      "mime_type": "image/jpeg",
+      "expected_size": 62401,
+      "proposed_destination_relative_path": "Images/asset__22d88baf.jpeg",
+      "proposed_destination_filename": "asset__22d88baf.jpeg",
+      "transfer_method": "STREAMED_RESUMABLE_UPLOAD",
+      "verification_level": "DESTINATION_METADATA_VERIFIED",
+      "reason_selected": "Third image for deterministic naming coverage"
+    },
+    {
+      "asset_uuid": "a9c4cf6f-c86c-4d9d-8a6d-2a815fe211bd",
+      "selected_source_file_uuid": "1533be89-99eb-42e5-a43f-2f3ed5c97c78",
+      "source_folder_name": "Nushad Raw Video",
+      "extension": "mp4",
+      "mime_type": "video/mp4",
+      "expected_size": 79492,
+      "proposed_destination_relative_path": "Videos/asset__a9c4cf6f.mp4",
+      "proposed_destination_filename": "asset__a9c4cf6f.mp4",
+      "transfer_method": "STREAMED_RESUMABLE_UPLOAD",
+      "verification_level": "DESTINATION_METADATA_VERIFIED",
+      "reason_selected": "Small video transfer coverage"
+    },
+    {
+      "asset_uuid": "2f81c26a-eb3b-4dbb-9325-a0da9eaf526f",
+      "selected_source_file_uuid": "96a6f6bb-8383-49e0-a0e9-88ae31b1fd1e",
+      "source_folder_name": "Nushad Raw Video",
+      "extension": "mp4",
+      "mime_type": "video/mp4",
+      "expected_size": 94294,
+      "proposed_destination_relative_path": "Videos/asset__2f81c26a.mp4",
+      "proposed_destination_filename": "asset__2f81c26a.mp4",
+      "transfer_method": "STREAMED_RESUMABLE_UPLOAD",
+      "verification_level": "DESTINATION_METADATA_VERIFIED",
+      "reason_selected": "Second small video"
+    },
+    {
+      "asset_uuid": "0c21340a-3688-428e-960a-6d278aead7da",
+      "selected_source_file_uuid": "f78da463-537e-4f68-a1f4-759ccca9f962",
+      "source_folder_name": "Nushad Raw Video",
+      "extension": "mp4",
+      "mime_type": "video/mp4",
+      "expected_size": 15766714,
+      "proposed_destination_relative_path": "Videos/asset__0c21340a.mp4",
+      "proposed_destination_filename": "asset__0c21340a.mp4",
+      "transfer_method": "STREAMED_RESUMABLE_UPLOAD",
+      "verification_level": "DESTINATION_SHA256_VERIFIED",
+      "reason_selected": "Moderately sized video for enhanced destination hash verification"
+    },
+    {
+      "asset_uuid": "7cdfa4c6-d5ba-4432-a9cb-c66d9329a529",
+      "selected_source_file_uuid": "3fa31670-8433-4de8-ab77-ffdd6e24b6c3",
+      "source_folder_name": "Photo/Video for Marketing (Consented by patient)",
+      "extension": "pdf",
+      "mime_type": "application/pdf",
+      "expected_size": 4092577,
+      "proposed_destination_relative_path": "Documents/asset__7cdfa4c6.pdf",
+      "proposed_destination_filename": "asset__7cdfa4c6.pdf",
+      "transfer_method": "STREAMED_RESUMABLE_UPLOAD",
+      "verification_level": "DESTINATION_METADATA_VERIFIED",
+      "reason_selected": "Approved PDF and third source-folder coverage"
+    },
+    {
+      "asset_uuid": "3bcdd832-b504-4641-9729-0d965e01411a",
+      "selected_source_file_uuid": "e7339238-1d9e-4cf2-bbc2-bdd77f7440ba",
+      "source_folder_name": "ALL PATIENT REVIEW",
+      "extension": "pptx",
+      "mime_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "expected_size": 3568437,
+      "proposed_destination_relative_path": "Documents/asset__3bcdd832.pptx",
+      "proposed_destination_filename": "asset__3bcdd832.pptx",
+      "transfer_method": "STREAMED_RESUMABLE_UPLOAD",
+      "verification_level": "DESTINATION_METADATA_VERIFIED",
+      "reason_selected": "Approved PPTX and Documents routing coverage"
+    }
+  ],
+  "pilot_success_criteria": [
+    "Every source metadata preflight passes.",
+    "Exactly one destination file exists per pilot asset.",
+    "Stable canonical appProperties are recorded.",
+    "Transferred bytes or provider-copy result reconcile.",
+    "Destination size, MIME type, parent, non-trashed state, and application identity verify.",
+    "Selected image and video destination SHA-256 checks pass.",
+    "Destination file ID and URL persist in asset_destinations.",
+    "No duplicate destination file exists.",
+    "No active upload claim remains.",
+    "Source files and Step 9 hashes remain unchanged.",
+    "A rerun skips verified assets.",
+    "Ambiguous creation outcome recovers without duplication.",
+    "Non-pilot assets remain unchanged.",
+    "All pilot lifecycle events are auditable.",
+    "PDF and PPTX route only to Documents.",
+    "No patient-identifying destination filename is created."
+  ],
+  "documentation_scope_difference": {
+    "status": "NONBLOCKING_DOCUMENTATION_WARNING",
+    "current_operational_source_of_truth": "The central Step 8 format policy and successfully canonicalized Step 9 population",
+    "pdf_and_pptx_current_scope": "Included for inventory, migration, and duplicate detection",
+    "older_legacy_difference": "Older workflow prose and code describe a media/source-file copy pipeline and MD5-based duplication. They must not be used to exclude approved PDF or PPTX assets or drive Step 10 canonical migration.",
+    "pdf_or_pptx_silently_excluded": false
+  },
+  "unresolved_questions": [
+    "What is the approved stable Google folder ID for KDI Master?",
+    "Is KDI Master in My Drive, a Shared Drive root, or a folder inside a Shared Drive?",
+    "Which account owns the separate destination-write credential?",
+    "Can the pre-existing destination folder be explicitly granted under drive.file, or is a dedicated drive-scoped migration credential required?",
+    "Does the destination already contain files with prior Step 10 identity markers?",
+    "Does an approved Images/Videos/Documents structure already exist?"
+  ],
+  "blockers": [
+    {
+      "code": "DESTINATION_FOLDER_ID_PLACEHOLDER",
+      "classification": "BLOCKING",
+      "required_action": "Configure and approve the stable KDI Master Google Drive folder ID before metadata verification or implementation approval."
+    },
+    {
+      "code": "DESTINATION_WRITE_CREDENTIAL_MISSING",
+      "classification": "BLOCKING_FOR_PILOT",
+      "required_action": "Create a separate destination-write OAuth profile after approving the destination and minimum scope."
+    },
+    {
+      "code": "DESTINATION_LIFECYCLE_SCHEMA_MISSING",
+      "classification": "BLOCKING_FOR_PILOT",
+      "required_action": "Review and approve a Phase B1 asset_destinations migration and atomic claim design."
+    }
+  ],
+  "readiness_for_step10_implementation": "BLOCKED_DESTINATION_CONFIGURATION",
+  "readiness_for_limited_production_pilot": "NOT_READY_IMPLEMENTATION_NOT_COMPLETED",
+  "recommended_next_approval_gate": [
+    "Human review of the Step 10 Phase A report",
+    "Approval of the destination identity and OAuth design",
+    "Approval of the state-storage design",
+    "Approval of the primary and fallback transfer methods",
+    "Step 10 Phase B1 migration and worker implementation",
+    "Migration review and controlled application",
+    "Read-only deployed-schema verification",
+    "Database-only claim and lifecycle dry run",
+    "Limited production upload pilot",
+    "Pilot reconciliation before full upload"
+  ],
+  "production_data_changed": false,
+  "production_media_downloaded": false,
+  "production_files_uploaded": false,
+  "destination_test_file_created": false,
+  "migration_created": false,
+  "migration_applied": false,
+  "validation": {
+    "json": "PASS",
+    "required_top_level_keys": "PASS",
+    "non_negative_counts": "PASS",
+    "population_reconciliation": "PASS",
+    "pilot_format_validation": "PASS",
+    "safety_validation": "PASS",
+    "secret_scan": "PASS"
+  },
+  "safety_confirmation": {
+    "supabase_production_operations_read_only": true,
+    "no_direct_sql_executed": true,
+    "no_migration_created": true,
+    "no_migration_applied": true,
+    "no_production_data_modified": true,
+    "no_production_google_drive_media_downloaded": true,
+    "no_production_file_uploaded_or_copied": true,
+    "no_destination_test_file_created": true,
+    "no_source_google_drive_object_or_permission_modified": true,
+    "no_kdi_master_object_modified": true,
+    "no_step9_hash_changed": true,
+    "no_canonical_asset_relationship_changed": true,
+    "no_take_skip_decision_changed": true,
+    "no_broader_oauth_scope_requested": true,
+    "no_source_token_replaced": true,
+    "no_secrets_or_credentials_printed": true,
+    "no_unrelated_source_code_changes": true,
+    "no_commit_or_push": true,
+    "step10_phase_b_not_started": true,
+    "step11_not_started": true
+  }
+}

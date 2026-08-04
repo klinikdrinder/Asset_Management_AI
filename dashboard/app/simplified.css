@@ -1,0 +1,14 @@
+.backLink{display:inline-block;margin-bottom:18px;color:#315a82;font-size:13px;font-weight:800}
+.assetDetail{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(300px,.8fr);gap:22px}
+.assetPreview{min-height:560px;display:grid;place-items:center;border:1px solid #dce4ec;border-radius:16px;background:#e9f1f8;color:#43698f;font-size:13px;font-weight:900;letter-spacing:.13em}
+.assetPreview.video{background:#e9edf3;color:#4d5969}
+.assetInfo{padding:28px;border:1px solid #dce4ec;border-radius:16px;background:#fff}
+.assetInfo h1{margin:14px 0 10px;font-size:27px;line-height:1.15}
+.assetDescription{color:#69798b;line-height:1.5}
+.assetInfo dl{margin:26px 0}
+.assetInfo dl div{display:grid;grid-template-columns:90px 1fr;gap:15px;padding:11px 0;border-bottom:1px solid #e9edf2;font-size:12px}
+.assetInfo dt{color:#788697}.assetInfo dd{margin:0;font-weight:800;overflow-wrap:anywhere}
+.primaryLink{display:inline-block;padding:11px 18px;border-radius:9px;background:#173d69;color:#fff;font-size:13px;font-weight:800}
+.assetInfo button{padding:11px 18px;border:0;border-radius:9px}
+.simpleAssetCard:focus-visible,.primaryLink:focus-visible,.backLink:focus-visible{outline:3px solid #719ac4;outline-offset:3px}
+@media(max-width:760px){.assetDetail{grid-template-columns:1fr}.assetPreview{min-height:330px}.assetInfo{padding:20px}}

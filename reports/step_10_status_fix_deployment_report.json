@@ -1,0 +1,27 @@
+{
+  "connection_attempts": [],
+  "database_only": true,
+  "deployed": true,
+  "diagnostic_only": false,
+  "fresh_reverification_attempt": {
+    "deployed_state_changed": false,
+    "failure": "No PostgreSQL connection candidates are configured without an interactive database password",
+    "verdict": "BLOCKED_DATABASE_ENDPOINT_CONFIGURATION"
+  },
+  "migration": "supabase\\migrations\\202607310004_fix_step10_exact_legacy_status_contract.sql",
+  "migration_sha256": "c9d23c8e472b1992e3bf7f7b6d00f88bb36da2509b723307da04ba2d988e35f8",
+  "ssl_required": true,
+  "successful_endpoint": {
+    "connect_timeout_seconds": 5,
+    "database": "postgres",
+    "endpoint_type": "session_pooler",
+    "host": "aws-0-ap-southeast-1.pooler.supabase.com",
+    "port": 5432,
+    "sslmode": "require",
+    "username_pattern": "postgres.[project-ref]"
+  },
+  "unrelated_migrations_applied": 0,
+  "verdict": "DEPLOYED_AND_VERIFIED",
+  "verification_marker": "STEP_10_LEGACY_STATUS_MAPPING_VERIFIED",
+  "verifier": "supabase\\verification\\verify_step10_legacy_status_mapping.sql"
+}

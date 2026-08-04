@@ -1,0 +1,2 @@
+"use client";
+export default function LibraryError({ reset }: { error: Error & { digest?: string }; reset: () => void }) { return <main className="authPage"><section className="authCard" role="alert"><span className="authKicker">MEDIA LIBRARY</span><h1>Database unavailable</h1><p>The secure library could not be loaded. Your access has not changed.</p><button className="googleButton" onClick={reset}>Try again</button></section></main>; }

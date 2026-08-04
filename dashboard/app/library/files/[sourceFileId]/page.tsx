@@ -1,0 +1,1 @@
+import{requireProtectedPage}from"../../../auth";import{SimplifiedAssetDetail}from"../../../simplified-asset-detail";export default async function Page({params}:{params:Promise<{sourceFileId:string}>}){await requireProtectedPage();return <SimplifiedAssetDetail id={(await params).sourceFileId}/>}

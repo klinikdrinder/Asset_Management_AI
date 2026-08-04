@@ -1,0 +1,3 @@
+import{NextRequest,NextResponse}from"next/server";import{DEV_PREVIEW_COOKIE,previewEnabled,type PreviewRole}from"../lib/dev-preview";
+export const runtime="nodejs";export const dynamic="force-dynamic";
+export function GET(request:NextRequest){if(!previewEnabled(request.nextUrl.hostname))return new NextResponse("Not Found",{status:404});const role:PreviewRole=request.nextUrl.searchParams.get("role")==="ADMIN"?"ADMIN":"STAFF",response=NextResponse.redirect(new URL(role==="ADMIN"?"/admin":"/library",request.url));response.cookies.set(DEV_PREVIEW_COOKIE,role,{httpOnly:true,sameSite:"strict",secure:false,path:"/",maxAge:14400});response.headers.set("Cache-Control","private, no-store");return response}

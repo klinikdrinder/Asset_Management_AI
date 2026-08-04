@@ -1,0 +1,72 @@
+{
+  "working_directory": "C:\\Users\\Public\\Asset_Management_AI",
+  "target_supabase_project": {
+    "expected": "wcqqjpndlwsvatjuqnol",
+    "configured_public_url_reference": "wcqqjpndlwsvatjuqnol",
+    "verified": true
+  },
+  "deployment_method": "NOT_AVAILABLE",
+  "deployment_environment": {
+    "supabase_cli": "NOT_INSTALLED",
+    "repository_link": "NOT_CONFIGURED",
+    "psql": "NOT_INSTALLED",
+    "psycopg": "AVAILABLE",
+    "project_bound_database_credential": "NOT_AVAILABLE",
+    "authenticated_management_workflow": "NOT_AVAILABLE",
+    "existing_helper": "PRESENT_BUT_HARD_GATED_TO_UNRELATED_STEP10_MIGRATION"
+  },
+  "migration_review": {
+    "transactional": true,
+    "forward_only": true,
+    "uses_auth_uid": true,
+    "creates_staff_admin_role_model": true,
+    "creates_approved_app_users_and_app_users": true,
+    "application_writes_denied": true,
+    "anonymous_denial_preserved": true,
+    "legacy_reader_policies_preserved": true,
+    "security_definer_search_paths_explicit": true,
+    "unsafe_public_execute_revoked": true,
+    "production_media_or_operational_dml_statements": 0,
+    "google_drive_operations": 0,
+    "safe_for_single_application": true
+  },
+  "migration_applied": false,
+  "migration_history_result": "NOT_CHECKED_DATABASE_ACCESS_REQUIRED",
+  "public_schema_probe": {
+    "app_users": "HTTP_404",
+    "approved_app_users": "HTTP_404",
+    "conclusion": "MIGRATION_NOT_DEPLOYED"
+  },
+  "verifier_execution": "NOT_RUN_MIGRATION_ABSENT_AND_DATABASE_ACCESS_REQUIRED",
+  "anonymous_result": "NOT_RUN",
+  "unapproved_user_result": "NOT_RUN",
+  "staff_result": "NOT_RUN",
+  "admin_result": "NOT_RUN",
+  "disabled_user_result": "NOT_RUN",
+  "role_spoofing_result": "NOT_RUN",
+  "write_denial_result": "NOT_RUN",
+  "privileged_rpc_result": "NOT_RUN",
+  "transaction_rollback_result": "NOT_RUN",
+  "synthetic_cleanup_result": "NOT_RUN_NO_SYNTHETIC_IDENTITIES_CREATED",
+  "production_counts": {
+    "before": "NOT_AVAILABLE_WITHOUT_AUTHENTICATED_DATABASE_ACCESS",
+    "after": "NOT_APPLICABLE_NO_DEPLOYMENT_OCCURRED"
+  },
+  "production_data_change_result": "NO_DATABASE_WRITE_OR_FILE_OPERATION_PERFORMED",
+  "tests": {
+    "unit": "PASS_53_OF_53",
+    "typescript": "PASS",
+    "eslint": "PASS",
+    "git_diff_check": "PASS_WITH_EXISTING_LINE_ENDING_WARNINGS"
+  },
+  "build": "PASS",
+  "security_scan": "PASS_281_SOURCE_FILES_ZERO_SECRET_VALUE_MATCHES",
+  "files_changed": [
+    "reports/individual_user_auth_deployment_report.json"
+  ],
+  "remaining_blockers": [
+    "A secure project-bound PostgreSQL credential or authenticated Supabase CLI session is required",
+    "Pre-deployment counts, migration history, deployment, verifier execution, rollback proof, and post-deployment counts require that database access"
+  ],
+  "final_verdict": "AUTH_RBAC_DATABASE_ACCESS_REQUIRED"
+}

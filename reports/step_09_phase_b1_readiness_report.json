@@ -1,0 +1,175 @@
+{
+  "phase": "STEP_9_PHASE_B1",
+  "phase_a_report": "reports/step_09_phase_a_readiness_report.json",
+  "phase_a_status_confirmed": "BLOCKED_SCHEMA",
+  "status": "READY_FOR_MIGRATION_REVIEW",
+  "selected_schema_design": {
+    "model": "extend source_files with a one-to-one hashing lifecycle",
+    "rationale": "A hash result belongs to one source occurrence. Canonical assets and duplicate relationships remain separate Phase C records.",
+    "lifecycle_states": [
+      "NOT_STARTED",
+      "QUEUED",
+      "HASHING",
+      "HASHED",
+      "FAILED_RETRYABLE",
+      "FAILED_PERMANENT",
+      "SOURCE_CHANGED",
+      "SOURCE_NOT_FOUND",
+      "SOURCE_ACCESS_DENIED",
+      "SOURCE_TRASHED"
+    ],
+    "hash_algorithm": "SHA-256",
+    "separate_attempt_history_table": "RECOMMENDED_LATER_NOT_REQUIRED_FOR_B1"
+  },
+  "migration_path": "supabase/migrations/202607300001_add_step9_hashing_state.sql",
+  "migration_applied": false,
+  "files_created": [
+    "supabase/migrations/202607300001_add_step9_hashing_state.sql",
+    "src/kdi_media/step9_hashing.py",
+    "scripts/verify_step9_constraints_readonly.py",
+    "tests/test_step9_hashing.py",
+    "reports/step_09_phase_b1_readiness_report.json"
+  ],
+  "files_modified_by_phase_b1": [],
+  "hashing_worker": {
+    "implemented": true,
+    "module": "src/kdi_media/step9_hashing.py",
+    "ordinary_drive_files_only": true,
+    "complete_file_sha256": true,
+    "incremental_hashing": true,
+    "eof_required": true,
+    "expected_byte_validation": true,
+    "partial_download_rejected": true,
+    "whole_file_loaded_in_memory": false,
+    "creates_assets": false,
+    "creates_asset_sources": false
+  },
+  "chunk_strategy": {
+    "default_bytes": 8388608,
+    "minimum_bytes": 262144,
+    "configurable": true,
+    "memory_bound": "one content chunk per active worker plus library overhead"
+  },
+  "source_change_detection": {
+    "implemented": true,
+    "preflight": true,
+    "postflight": true,
+    "compared_fields": [
+      "Google file ID",
+      "MIME type",
+      "size",
+      "modified time",
+      "Drive version",
+      "head revision where available"
+    ],
+    "explicit_outcomes": [
+      "SOURCE_CHANGED",
+      "SOURCE_NOT_FOUND",
+      "SOURCE_ACCESS_DENIED",
+      "SOURCE_TRASHED"
+    ],
+    "google_native_export": false,
+    "provider_md5_is_canonical": false
+  },
+  "retry_behavior": {
+    "implemented": true,
+    "default_backoff_seconds": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "jitter": true,
+    "retry_after_respected": true,
+    "attempt_limit_bounded": true,
+    "attempt_count_persisted": true,
+    "retryable": [
+      "HTTP 429",
+      "HTTP 5xx",
+      "transient stream failure",
+      "partial or byte-mismatched stream"
+    ],
+    "permanent": [
+      "not found",
+      "access denied",
+      "trashed",
+      "canDownload=false",
+      "unsupported Google-native item",
+      "source changed"
+    ]
+  },
+  "claim_lease_behavior": {
+    "implemented": true,
+    "database_authority": "claim_source_file_hash RPC",
+    "active_claim_protected": true,
+    "expired_claim_recoverable": true,
+    "lease_bounds_seconds": [
+      30,
+      3600
+    ],
+    "default_lease_seconds": 900,
+    "lease_renewal": "renew_source_file_hash_claim RPC during long streams",
+    "conditional_completion": "source file ID, HASHING status, and claim owner must still match"
+  },
+  "tests": {
+    "test_file": "tests/test_step9_hashing.py",
+    "coverage": [
+      "small file",
+      "multi-chunk file",
+      "empty stream",
+      "partial stream",
+      "byte-count mismatch",
+      "source changed before hashing",
+      "source changed during hashing",
+      "missing file",
+      "access denied",
+      "trashed file",
+      "retryable failure",
+      "permanent failure",
+      "retry exhaustion",
+      "completed rerun skip",
+      "expired claim recovery",
+      "active claim exclusion",
+      "same and different stream hashes",
+      "incremental memory behavior",
+      "long-stream lease renewal"
+    ],
+    "tests_passed": 81,
+    "subtests_passed": 32,
+    "tests_failed": 0,
+    "compilation": "PASS",
+    "static_diff_check": "PASS"
+  },
+  "deployed_constraints_verification": {
+    "prepared_command": "python scripts/verify_step9_constraints_readonly.py --execute-readonly",
+    "executed_against_production": false,
+    "repository_assets_constraint": "partial UNIQUE(content_hash) WHERE content_hash IS NOT NULL",
+    "repository_asset_sources_constraint": "UNIQUE(source_file_id)",
+    "postgrest_limitation": "Zero-row REST probes confirm columns but do not prove deployed indexes or constraints.",
+    "status": "PENDING_APPROVED_READ_ONLY_VERIFICATION"
+  },
+  "unresolved_blockers": [
+    "Migration requires review and explicit approval before application.",
+    "Deployed hashing columns and canonicalization constraints are not yet verified.",
+    "No production hashing pilot may run until migration application and post-application verification are approved.",
+    "Phase C conflict-safe canonicalization remains intentionally unimplemented."
+  ],
+  "readiness": {
+    "migration_review": "READY",
+    "limited_hashing_pilot": "NOT_READY_UNTIL_MIGRATION_APPROVED_APPLIED_AND_VERIFIED"
+  },
+  "safety_confirmation": {
+    "migration_applied": false,
+    "production_data_changed": false,
+    "production_hashing_performed": false,
+    "production_drive_media_downloaded": false,
+    "google_drive_modified": false,
+    "production_assets_created": false,
+    "production_asset_sources_created": false,
+    "direct_sql_executed": false,
+    "phase_c_started": false,
+    "secrets_exposed": false,
+    "commit_or_push_occurred": false
+  }
+}

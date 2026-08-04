@@ -1,0 +1,182 @@
+{
+  "phase": "STEP_10_PHASE_B3A_CORRECTIVE_IMPLEMENTATION",
+  "working_directory": "C:\\Users\\Public\\Asset_Management_AI",
+  "status": "READY_FOR_CORRECTIVE_MIGRATION_REVIEW_WITH_WARNINGS",
+  "migration_path": "supabase/migrations/202607300003_fix_step10_b3_controls.sql",
+  "migration_created": true,
+  "migration_applied": false,
+  "sql_executed": false,
+  "b2_migration": {
+    "path": "supabase/migrations/202607300002_add_step10_asset_destinations.sql",
+    "modified": false,
+    "sha256_matches_reviewed_version": true
+  },
+  "scoped_claim_allowlist": {
+    "implemented": true,
+    "parameter": "requested_asset_destination_ids uuid[] default null",
+    "null_allowlist": "preserves normal production candidate selection",
+    "empty_allowlist": "matches zero candidate IDs",
+    "supplied_allowlist": "candidate id must equal any supplied UUID",
+    "rows_outside_allowlist_claimable": false,
+    "active_lease_protection_preserved": true,
+    "retry_schedule_protection_preserved": true,
+    "maximum_attempts": 5,
+    "verified_excluded": true,
+    "permanent_failures_excluded": true,
+    "manual_review_excluded": true,
+    "destination_conflict_excluded": true,
+    "bounded_batch_range": "1..100",
+    "owner_validation_preserved": true,
+    "deterministic_ordering_preserved": true,
+    "atomic_skip_locked_claim": true
+  },
+  "initializer_evidence": {
+    "implemented": true,
+    "upload_status": "NOT_STARTED",
+    "verification_level": "SOURCE_HASH_VERIFIED",
+    "canonical_source_sha256_persisted": true,
+    "expected_bytes_persisted": true,
+    "deterministic_selected_source_file_id": true,
+    "deterministic_destination_filename_and_path": true,
+    "deterministic_idempotency_key": true,
+    "source_metadata_snapshot_populated": true,
+    "source_snapshot_fields": [
+      "source_file_id",
+      "source_folder_id",
+      "hash_algorithm",
+      "expected_bytes",
+      "mime_type",
+      "file_extension",
+      "drive_modified_at",
+      "drive_version"
+    ],
+    "patient_filename_in_snapshot": false,
+    "google_file_id_in_snapshot": false,
+    "duplicate_sha256_in_snapshot": false,
+    "upload_attempt_count": 0,
+    "destination_identity_initially_absent": true,
+    "claim_initially_absent": true,
+    "failure_state_initially_absent": true,
+    "media_download_required": false,
+    "rehash_required": false,
+    "idempotent_input_generation": true
+  },
+  "audit_coverage": {
+    "implemented": true,
+    "events": [
+      "LIFECYCLE_INITIALIZED",
+      "CLAIM_RENEWED",
+      "CLAIM_RELEASED",
+      "CLAIM_RECOVERED"
+    ],
+    "initialization_event_mechanism": "AFTER INSERT trigger",
+    "initialization_rerun_spam_prevented": true,
+    "renewal_event_only_after_success": true,
+    "release_event_only_after_success": true,
+    "recovery_event_only_for_expired CLAIMED or UPLOADING state": true,
+    "wrong_owner_success_event": false,
+    "failed_operation_success_event": false,
+    "per_chunk_events": false,
+    "payloads_sanitized_and_bounded": true,
+    "secret_bearing_fields_present": false
+  },
+  "function_security": {
+    "security_mode": "SECURITY INVOKER",
+    "fixed_empty_search_path": true,
+    "claim_execute_role": "service_role",
+    "renew_execute_role": "service_role",
+    "release_execute_role": "service_role",
+    "public_anon_authenticated_execute_revoked": true
+  },
+  "migration_safety": {
+    "single_transaction": true,
+    "rerunnable": true,
+    "old_unscoped_signature_removed_narrowly": true,
+    "unrelated_drop_or_alter": false,
+    "automatic_lifecycle_initialization": false,
+    "production_rows_modified_on_application": false,
+    "broad_exception_swallowing": false
+  },
+  "worker_contract": {
+    "repository_allowlist_argument": "allowed_ids",
+    "rpc_argument": "requested_asset_destination_ids",
+    "null_and_empty_semantics_preserved": true,
+    "invalid_uuid_rejected_before_rpc": true,
+    "cli_allowlist_option": "--asset-destination-id",
+    "audit_registry_updated": true,
+    "production_execution_default": "gated"
+  },
+  "files_created": [
+    "supabase/migrations/202607300003_fix_step10_b3_controls.sql",
+    "tests/test_step10_b3_controls.py",
+    "reports/step_10_phase_b3a_corrective_implementation_report.json"
+  ],
+  "files_modified": [
+    "src/kdi_media/step10_upload.py",
+    "scripts/run_step10_upload_worker.py",
+    "tests/test_step10_upload.py",
+    "tests/test_step10_cli.py"
+  ],
+  "test_coverage": {
+    "null_allowlist": true,
+    "empty_allowlist": true,
+    "exact_three_row_allowlist": true,
+    "outside_allowlist_excluded": true,
+    "active_scoped_lease_protection": true,
+    "expired_scoped_claim_recovery": true,
+    "terminal_allowlisted_rows_excluded": true,
+    "retry_not_due_excluded": true,
+    "maximum_attempt_rows_excluded": true,
+    "source_hash_verified_initialization": true,
+    "populated_nonsecret_source_snapshot": true,
+    "initialization_idempotency": true,
+    "initialization_audit_once": true,
+    "successful_renewal_audit": true,
+    "wrong_owner_renewal_no_success_audit": true,
+    "successful_release_audit": true,
+    "wrong_owner_release_no_success_audit": true,
+    "expired_recovery_audit": true,
+    "worker_rpc_signature_agreement": true
+  },
+  "targeted_tests": {
+    "passed": 71,
+    "failed": 0,
+    "subtests_passed": 19
+  },
+  "full_suite": {
+    "passed": 217,
+    "failed": 0,
+    "subtests_passed": 51
+  },
+  "compilation_result": "PASS",
+  "migration_static_validation": "PASS",
+  "secret_scan_result": "PASS",
+  "json_validation_result": "PASS",
+  "production_data_modified": false,
+  "asset_destinations_initialized": false,
+  "production_assets_claimed": false,
+  "google_drive_accessed": false,
+  "production_media_downloaded": false,
+  "production_files_uploaded_or_copied": false,
+  "destination_folders_created": false,
+  "production_pilot_started": false,
+  "blockers": [],
+  "warnings": [
+    "The corrective SQL received static validation only and has not been parsed or executed by the deployed PostgreSQL server.",
+    "The initialization audit trigger depends on the applying backend retaining insert permission on migration_events; controlled post-application metadata verification should confirm the trigger and function deployment before B3 is rerun."
+  ],
+  "readiness": "READY_FOR_CORRECTIVE_MIGRATION_REVIEW_WITH_WARNINGS",
+  "safety_confirmation": {
+    "migration_not_applied": true,
+    "sql_not_executed": true,
+    "asset_destinations_not_initialized": true,
+    "production_assets_not_claimed": true,
+    "production_supabase_data_not_modified": true,
+    "google_drive_not_accessed": true,
+    "files_not_uploaded_or_copied": true,
+    "production_pilot_not_started": true,
+    "commit_not_created": true,
+    "push_not_performed": true,
+    "secrets_not_exposed": true
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "phase": "STEP_10_PHASE_B2",
+  "working_directory": "C:\\Users\\Public\\Asset_Management_AI",
+  "baseline_validation": {
+    "status": "PASS",
+    "reports_validated": 5,
+    "step_9_result": "PASS",
+    "source_files": 886,
+    "hashed_source_files": 878,
+    "canonical_assets": 878,
+    "asset_sources": 878,
+    "asset_destinations_deployed": false,
+    "asset_destinations_rows": 0,
+    "destination_folder_id_matches_approved_value": true,
+    "credential_isolation_passed": true,
+    "production_files_uploaded": 0,
+    "pilot_candidates": 8
+  },
+  "migration_path": "supabase/migrations/202607300002_add_step10_asset_destinations.sql",
+  "migration_applied": false,
+  "migration_review": {
+    "verdict": "PASS_WITH_WARNINGS",
+    "repository_ordering_valid": true,
+    "transaction_wrapped": true,
+    "step10_scope_only": true,
+    "initializes_production_rows": false,
+    "modifies_step9_tables_or_data": false,
+    "destructive_unrelated_operations": false
+  },
+  "schema_compatibility": {
+    "verdict": "PASS",
+    "asset_id_type": "uuid",
+    "selected_source_file_id_type": "uuid",
+    "timestamps": "timestamptz",
+    "snapshots": "jsonb",
+    "byte_counts": "bigint",
+    "updated_at_function_reused": "public.set_updated_at",
+    "repository_and_read_only_deployed_types_agree": true
+  },
+  "foreign_key_review": {
+    "verdict": "PASS",
+    "asset_id": "assets(id) ON DELETE RESTRICT",
+    "selected_source_file_id": "source_files(id) ON DELETE RESTRICT",
+    "migration_event_destination_reference": "asset_destinations(id) ON DELETE SET NULL",
+    "dangerous_cascade_found": false
+  },
+  "uniqueness_review": {
+    "verdict": "PASS",
+    "asset_destination_identity": "UNIQUE(asset_id, destination_folder_id)",
+    "idempotency_key_unique": true,
+    "destination_google_file_id": "globally unique when non-null",
+    "multiple_null_destination_file_ids_allowed": true,
+    "database_is_final_concurrency_authority": true
+  },
+  "lifecycle_constraint_review": {
+    "verdict": "PASS",
+    "worker_migration_statuses_identical": true,
+    "worker_migration_verification_levels_identical": true,
+    "status_and_verification_are_separate": true,
+    "zero_byte_files_allowed": true,
+    "non_negative_counts_enforced": true,
+    "verified_requires_destination_identity": true,
+    "verified_requires_completion_and_verification_timestamps": true,
+    "verified_requires_destination_evidence_level": true,
+    "precreation_destination_identity_not_required": true,
+    "retryable_failures_retain_sanitized_diagnostics": true
+  },
+  "claim_rpc_review": {
+    "verdict": "PASS",
+    "atomic_claim": true,
+    "uses_database_time": true,
+    "uses_skip_locked": true,
+    "maximum_batch_size": 100,
+    "maximum_attempts": 5,
+    "nonempty_worker_required": true,
+    "lease_seconds_range": "30..3600",
+    "active_lease_rejected": true,
+    "expired_lease_recovery": true,
+    "retry_schedule_persisted": true,
+    "retry_due_time_enforced": true,
+    "deterministic_ordering": true,
+    "terminal_states_excluded": true,
+    "renewal_requires_current_owner_and_live_lease": true,
+    "release_requires_current_owner": true,
+    "claim_result_minimized": true
+  },
+  "rls_review": {
+    "verdict": "PASS",
+    "rls_enabled": true,
+    "public_and_anon_access_revoked": true,
+    "authenticated_write_access_revoked": true,
+    "authorized_authenticated_read_matches_repository_convention": true,
+    "backend_service_role_write_model": true,
+    "security_weakened": false
+  },
+  "security_definer_review": {
+    "verdict": "PASS",
+    "security_definer_used": false,
+    "security_mode": "SECURITY INVOKER",
+    "fixed_search_path": true,
+    "execute_granted_only_to_service_role": true
+  },
+  "migration_rerun_safety": {
+    "verdict": "PASS_WITH_WARNING",
+    "single_transaction": true,
+    "successful_second_application_safe_for_matching_schema": true,
+    "interruption_rolls_back_transaction": true,
+    "existing_functions_replaced_deterministically": true,
+    "broad_exception_swallowing": false,
+    "destructive_table_drop": false,
+    "divergent_preexisting_schema_behavior": "fail-fast; not self-healing",
+    "current_precondition": "asset_destinations is not deployed"
+  },
+  "worker_migration_contract": {
+    "verdict": "PASS",
+    "table_name_matches": true,
+    "columns_match": true,
+    "statuses_match": true,
+    "verification_levels_match": true,
+    "rpc_names_match": true,
+    "rpc_arguments_match": true,
+    "retry_schedule_matches": true,
+    "timestamps_are_iso_utc_in_application_and_database-time_in_claims": true,
+    "step9_mutations_present": false,
+    "drive_operations_on_import": false
+  },
+  "initialization_review": {
+    "verdict": "PASS",
+    "idempotent_upsert_key": "idempotency_key",
+    "deterministic_lifecycle_id": true,
+    "requires_canonical_asset_relationship": true,
+    "requires_hashed_sha256_source": true,
+    "requires_supported_eligible_source": true,
+    "selected_source_belongs_to_asset": true,
+    "google_native_and_heic_excluded": true,
+    "media_content_read": false,
+    "production_initialization_executed": false
+  },
+  "drive_root_guard_review": {
+    "verdict": "PASS_WITH_WARNING",
+    "approved_root_fixed": true,
+    "creation_outside_root_rejected": true,
+    "approved_child_parent_required": true,
+    "delete_trash_permission_or_source_mutation_calls": false,
+    "app_properties_identity": [
+      "kdi_asset_id",
+      "kdi_destination_record_id",
+      "kdi_migration_version"
+    ],
+    "response_lost_reconciliation_before_create": true,
+    "duplicate_identity_matches_require_manual_review": true
+  },
+  "credential_isolation_review": {
+    "verdict": "PASS",
+    "source_profile": "source_readonly",
+    "source_scope": "drive.readonly",
+    "destination_profile": "destination_write",
+    "profiles_explicitly_required_by_cli": true,
+    "source_token_replaced_or_broadened": false,
+    "destination_profile_used_for_source_scan_or_hash": false
+  },
+  "temporary_spool_review": {
+    "verdict": "PASS_WITH_WARNING",
+    "controlled_temporary_location": true,
+    "random_non_sensitive_name": true,
+    "cleanup_after_success": true,
+    "cleanup_after_handled_failure": true,
+    "one_complete_file_per_worker_bound": true,
+    "full_file_loaded_in_memory": false,
+    "crash_orphan_cleanup_requires_operational_preflight": true
+  },
+  "pilot_manifest_review": {
+    "verdict": "PASS",
+    "candidate_count": 8,
+    "format_counts": {
+      "jpeg": 3,
+      "mp4": 3,
+      "pdf": 1,
+      "pptx": 1
+    },
+    "source_folder_count": 3,
+    "enhanced_sha256_candidates": 2,
+    "enhanced_mix": "one JPEG and one MP4",
+    "canonical_and_hashed": true,
+    "valid_asset_sources_relationships": true,
+    "conservative_fallback_names": true,
+    "routing_valid": true,
+    "excluded_formats_present": false,
+    "largest_inventory_asset_selected": false,
+    "media_accessed_during_review": false
+  },
+  "changes_made": [
+    {
+      "file": "supabase/migrations/202607300002_add_step10_asset_destinations.sql",
+      "summary": "Changed canonical foreign keys to ON DELETE RESTRICT; made non-null destination Google file IDs globally unique; strengthened VERIFIED evidence constraints; added durable retry scheduling and deterministic due-order claiming; qualified claim columns; narrowed claim results."
+    },
+    {
+      "file": "src/kdi_media/step10_upload.py",
+      "summary": "Added canonical lifecycle initialization preparation and durable next_retry_at handling."
+    },
+    {
+      "file": "scripts/run_step10_upload_worker.py",
+      "summary": "Made both credential profile selections explicit CLI requirements."
+    },
+    {
+      "file": "tests/test_step10_migration.py",
+      "summary": "Expanded foreign-key, uniqueness, lifecycle, retry schedule, RPC return, and worker-contract coverage."
+    },
+    {
+      "file": "tests/test_step10_upload.py",
+      "summary": "Added deterministic lifecycle initialization filtering and rerun coverage."
+    },
+    {
+      "file": "tests/test_step10_cli.py",
+      "summary": "Added explicit credential-profile requirement coverage."
+    }
+  ],
+  "tests_passed": 200,
+  "tests_failed": 0,
+  "test_subtests_passed": 51,
+  "targeted_tests_passed": 54,
+  "targeted_tests_failed": 0,
+  "targeted_subtests_passed": 19,
+  "compilation_result": "PASS",
+  "static_validation_result": "PASS",
+  "secret_scan_result": "PASS",
+  "blockers": [],
+  "warnings": [
+    "The unapplied migration has static and contract validation only; server-side parsing and deployed-object verification belong to the controlled application gate.",
+    "A divergent pre-existing partial asset_destinations schema fails fast rather than being self-healed; the read-only baseline confirms the table is currently absent.",
+    "A process crash can leave a temporary spool artifact; the controlled pilot should include a preflight cleanup check for the dedicated temporary location.",
+    "The destination credential has a broad migration-only Drive scope; the application root guard and explicit credential isolation remain mandatory."
+  ],
+  "readiness_for_migration_application": "READY_FOR_CONTROLLED_MIGRATION_APPLICATION_WITH_WARNINGS",
+  "readiness_for_database_only_dry_run": "NOT_READY_MIGRATION_NOT_APPLIED",
+  "readiness_for_production_pilot": "NOT_READY_MIGRATION_NOT_APPLIED",
+  "production_data_changed": false,
+  "direct_sql_executed": false,
+  "migration_applied_confirmation": false,
+  "production_media_downloaded": false,
+  "production_files_uploaded": false,
+  "destination_folders_created": false,
+  "secrets_printed": false,
+  "safety_confirmation": {
+    "supabase_production_operations_read_only": true,
+    "direct_sql_not_executed": true,
+    "migration_not_applied": true,
+    "production_lifecycle_rows_not_initialized": true,
+    "production_assets_not_claimed": true,
+    "production_drive_media_not_downloaded": true,
+    "production_files_not_uploaded_or_copied": true,
+    "production_destination_folders_not_created": true,
+    "destination_test_file_not_created": true,
+    "source_drive_not_modified": true,
+    "kdi_master_not_modified": true,
+    "source_readonly_unchanged": true,
+    "destination_write_isolated": true,
+    "step9_hashes_unchanged": true,
+    "canonical_relationships_unchanged": true,
+    "take_skip_decisions_unchanged": true,
+    "source_identities_unchanged": true,
+    "secrets_not_printed": true,
+    "unrelated_source_code_unchanged": true,
+    "commit_not_created": true,
+    "push_not_performed": true,
+    "production_pilot_not_started": true,
+    "full_step10_migration_not_started": true,
+    "step11_not_started": true
+  }
+}

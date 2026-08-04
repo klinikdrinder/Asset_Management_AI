@@ -1,0 +1,1 @@
+import{requireProtectedPage}from"../../auth";import{FilesPage}from"../../library-ui";export default async function Page({searchParams}:{searchParams:Promise<Record<string,string|undefined>>}){await requireProtectedPage("ADMIN");return <FilesPage admin query={await searchParams}/>}

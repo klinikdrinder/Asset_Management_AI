@@ -1,0 +1,238 @@
+{
+  "cleanup": {
+    "released_claims": 0,
+    "spool_files_remaining": 0
+  },
+  "cleanup_failure": null,
+  "database_writes": 0,
+  "destination_profile": "destination_write",
+  "destination_root_configured": true,
+  "drive_clients_constructed": 0,
+  "drive_requests": 0,
+  "drive_transfer_authorized": true,
+  "final_reconciliation": {
+    "active_claims": 0,
+    "active_leases": 0,
+    "clean": true,
+    "destination_file_ids": 8,
+    "non_pilot_not_started": 870,
+    "outside_digest_stable": true,
+    "pilot_verified": 8,
+    "retry_scheduled": 0,
+    "second_run_new_files": 0,
+    "step9_unchanged": true
+  },
+  "first_run": [
+    {
+      "asset_id": "e447839d-b034-4936-a1ad-b51b9ccf3739",
+      "bytes": 52265,
+      "category": "Images",
+      "destination_file_id": "1Oo0Cx6QLK4lEBpNgnen5UsBfFCGzdppY",
+      "filename": "asset__e447839d.jpeg",
+      "lifecycle_id": "22f13a61-ce0b-5e5c-97ae-ec5d5ed75ca8",
+      "outcome": "RECOVERED",
+      "verification_level": "DESTINATION_SHA256_VERIFIED"
+    },
+    {
+      "asset_id": "ebbb9b67-7ef6-410e-bad8-a8533da2f3c2",
+      "bytes": 57050,
+      "category": "Images",
+      "destination_file_id": "11CSChaB5CKL6ynmAra6V__R3yceixF8S",
+      "filename": "asset__ebbb9b67.jpeg",
+      "lifecycle_id": "4dcae399-6183-5655-9eda-fcbee987ace6",
+      "outcome": "UPLOADED",
+      "verification_level": "DESTINATION_METADATA_VERIFIED"
+    },
+    {
+      "asset_id": "22d88baf-3ba6-489a-99ec-6ba8548684a3",
+      "bytes": 62401,
+      "category": "Images",
+      "destination_file_id": "1dpI07RAOwfDJt68jk_ucoPc0wwGBOvzQ",
+      "filename": "asset__22d88baf.jpeg",
+      "lifecycle_id": "eafcea6b-add3-5f74-affa-960e2f59202d",
+      "outcome": "UPLOADED",
+      "verification_level": "DESTINATION_METADATA_VERIFIED"
+    },
+    {
+      "asset_id": "a9c4cf6f-c86c-4d9d-8a6d-2a815fe211bd",
+      "bytes": 79492,
+      "category": "Videos",
+      "destination_file_id": "1eCYfB_s4wjUI_6p_7VQMINGi5VxavXqB",
+      "filename": "asset__a9c4cf6f.mp4",
+      "lifecycle_id": "b6be7383-bf2a-5bc5-8e3a-b78e2dc99542",
+      "outcome": "UPLOADED",
+      "verification_level": "DESTINATION_METADATA_VERIFIED"
+    },
+    {
+      "asset_id": "2f81c26a-eb3b-4dbb-9325-a0da9eaf526f",
+      "bytes": 94294,
+      "category": "Videos",
+      "destination_file_id": "1w6g62rXBi40Cj3TIIyFFnm0kpIFxvdZO",
+      "filename": "asset__2f81c26a.mp4",
+      "lifecycle_id": "63c5c549-d1eb-5631-84b2-ee598fdfff6d",
+      "outcome": "UPLOADED",
+      "verification_level": "DESTINATION_METADATA_VERIFIED"
+    },
+    {
+      "asset_id": "0c21340a-3688-428e-960a-6d278aead7da",
+      "bytes": 15766714,
+      "category": "Videos",
+      "destination_file_id": "1uvTLavjsg75x52BzkFM-mV8USqGzIxWO",
+      "filename": "asset__0c21340a.mp4",
+      "lifecycle_id": "dc5f2e36-b551-5d79-8f83-216fb3255f73",
+      "outcome": "UPLOADED",
+      "verification_level": "DESTINATION_SHA256_VERIFIED"
+    },
+    {
+      "asset_id": "7cdfa4c6-d5ba-4432-a9cb-c66d9329a529",
+      "bytes": 4092577,
+      "category": "Documents",
+      "destination_file_id": "1S91dvNLEF5QsYJHf35YWMwqyaW134x11",
+      "filename": "asset__7cdfa4c6.pdf",
+      "lifecycle_id": "14c75c65-80fb-5c3f-bfa6-ad9eb9b34e70",
+      "outcome": "UPLOADED",
+      "verification_level": "DESTINATION_METADATA_VERIFIED"
+    },
+    {
+      "asset_id": "3bcdd832-b504-4641-9729-0d965e01411a",
+      "bytes": 3568437,
+      "category": "Documents",
+      "destination_file_id": "1eHKTm8fsYP9y2DGC70V3zt24x0r1fbn8",
+      "filename": "asset__3bcdd832.pptx",
+      "lifecycle_id": "5ba81db2-d1e7-5f45-b7a1-05a60b61b6de",
+      "outcome": "UPLOADED",
+      "verification_level": "DESTINATION_METADATA_VERIFIED"
+    }
+  ],
+  "combined_execution_history": {
+    "initial_attempt": {
+      "exit_code": 1,
+      "new_destination_identities": 1,
+      "result": "RESPONSE_LOSS_AFTER_DRIVE_CREATE",
+      "spool_cleanup": "RECOVERED_AFTER_EXACT_PATH_VALIDATION"
+    },
+    "resume_attempt": {
+      "new_destination_identities": 7,
+      "orchestrator_completed": true,
+      "report_verdict": "READY_FOR_FULL_STEP_10_PRODUCTION_UPLOAD",
+      "shell_observer_exit_code": 124
+    },
+    "total_first_pass_destination_identities": 8
+  },
+  "format_mix": {
+    "jpeg": 3,
+    "mp4": 3,
+    "pdf": 1,
+    "pptx": 1
+  },
+  "mode": "LIVE_EXACT_EIGHT",
+  "non_pilot_count": 870,
+  "phase": "STEP_10_LIMITED_PRODUCTION_PILOT",
+  "pilot_count": 8,
+  "pilot_lifecycle_ids": [
+    "14c75c65-80fb-5c3f-bfa6-ad9eb9b34e70",
+    "22f13a61-ce0b-5e5c-97ae-ec5d5ed75ca8",
+    "4dcae399-6183-5655-9eda-fcbee987ace6",
+    "5ba81db2-d1e7-5f45-b7a1-05a60b61b6de",
+    "63c5c549-d1eb-5631-84b2-ee598fdfff6d",
+    "b6be7383-bf2a-5bc5-8e3a-b78e2dc99542",
+    "dc5f2e36-b551-5d79-8f83-216fb3255f73",
+    "eafcea6b-add3-5f74-affa-960e2f59202d"
+  ],
+  "preflight": {
+    "largest_pilot_bytes": 15766714,
+    "non_pilot_rows": 870,
+    "outside_digest": "e2f06c87880e5c96",
+    "pilot_rows": 8,
+    "spool_capacity_sufficient": true
+  },
+  "primary_failure": null,
+  "source_changed_reconciliation": {
+    "asset_identity_changed": false,
+    "attempt_count_before_resume": 2,
+    "byte_count_match": true,
+    "cause": "timestamp_format_false_positive",
+    "lifecycle_id": "22f13a61-ce0b-5e5c-97ae-ec5d5ed75ca8",
+    "manifest_changed": false,
+    "non_pilot_rows_changed": 0,
+    "rehash_relationship": "MATCH",
+    "source_file_id": "1f9985f2-3c87-444e-a135-020b68e4010d",
+    "step9_counts": {
+      "asset_sources": 878,
+      "assets": 878,
+      "source_files": 886
+    }
+  },
+  "report_path": "reports\\step_10_limited_production_pilot_report.json",
+  "retry_reconciliation": {
+    "audit_event": "UPLOAD_QUEUED",
+    "audit_status": "INFO",
+    "destination_identities_before_retry": 1,
+    "preserved_attempt_count": 3,
+    "prior_status": "QUEUED",
+    "rows": 8
+  },
+  "second_run": [
+    {
+      "destination_file_id": "1Oo0Cx6QLK4lEBpNgnen5UsBfFCGzdppY",
+      "lifecycle_id": "22f13a61-ce0b-5e5c-97ae-ec5d5ed75ca8",
+      "new_files": 0,
+      "outcome": "SKIPPED_VERIFIED"
+    },
+    {
+      "destination_file_id": "11CSChaB5CKL6ynmAra6V__R3yceixF8S",
+      "lifecycle_id": "4dcae399-6183-5655-9eda-fcbee987ace6",
+      "new_files": 0,
+      "outcome": "SKIPPED_VERIFIED"
+    },
+    {
+      "destination_file_id": "1dpI07RAOwfDJt68jk_ucoPc0wwGBOvzQ",
+      "lifecycle_id": "eafcea6b-add3-5f74-affa-960e2f59202d",
+      "new_files": 0,
+      "outcome": "SKIPPED_VERIFIED"
+    },
+    {
+      "destination_file_id": "1eCYfB_s4wjUI_6p_7VQMINGi5VxavXqB",
+      "lifecycle_id": "b6be7383-bf2a-5bc5-8e3a-b78e2dc99542",
+      "new_files": 0,
+      "outcome": "SKIPPED_VERIFIED"
+    },
+    {
+      "destination_file_id": "1w6g62rXBi40Cj3TIIyFFnm0kpIFxvdZO",
+      "lifecycle_id": "63c5c549-d1eb-5631-84b2-ee598fdfff6d",
+      "new_files": 0,
+      "outcome": "SKIPPED_VERIFIED"
+    },
+    {
+      "destination_file_id": "1uvTLavjsg75x52BzkFM-mV8USqGzIxWO",
+      "lifecycle_id": "dc5f2e36-b551-5d79-8f83-216fb3255f73",
+      "new_files": 0,
+      "outcome": "SKIPPED_VERIFIED"
+    },
+    {
+      "destination_file_id": "1S91dvNLEF5QsYJHf35YWMwqyaW134x11",
+      "lifecycle_id": "14c75c65-80fb-5c3f-bfa6-ad9eb9b34e70",
+      "new_files": 0,
+      "outcome": "SKIPPED_VERIFIED"
+    },
+    {
+      "destination_file_id": "1eHKTm8fsYP9y2DGC70V3zt24x0r1fbn8",
+      "lifecycle_id": "5ba81db2-d1e7-5f45-b7a1-05a60b61b6de",
+      "new_files": 0,
+      "outcome": "SKIPPED_VERIFIED"
+    }
+  ],
+  "source_profile": "source_readonly",
+  "spool_files": 0,
+  "validation": {
+    "full_pytest": {
+      "passed": 395,
+      "subtests_passed": 74
+    },
+    "git_diff_check": "PASS_WITH_LINE_ENDING_WARNINGS",
+    "json_validation": "PASS",
+    "python_compilation": "PASS",
+    "secret_scan_match_files": 0
+  },
+  "verdict": "READY_FOR_FULL_STEP_10_PRODUCTION_UPLOAD"
+}
