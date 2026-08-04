@@ -12,14 +12,14 @@ function Preview({ asset, close }: { asset: MediaAsset; close: () => void }) {
   const [state, setState] = useState<"loading" | "ready" | "error">(() => asset.category === "other" || (asset.category === "document" && asset.extension?.toLowerCase() !== "pdf") ? "ready" : "loading");
   return <div className="devModalBody"><header><div><small>{asset.category.toUpperCase()} PREVIEW</small><h2 title={asset.filename}>{asset.filename}</h2></div><button onClick={close} aria-label="Close preview">×</button></header><div className={`devPreviewStage ${state}`}>
     {state === "loading" && <div className="devPreviewLoading" role="status">Preparing preview…</div>}
-    {asset.category === "image" ? <img src={src} alt={asset.filename} onLoad={() => setState("ready")} onError={() => setState("error")} /> : asset.category === "video" ? <video src={src} controls autoPlay onCanPlay={() => setState("ready")} onError={() => setState("error")} /> : asset.extension?.toLowerCase() === "pdf" ? <object data={src} type="application/pdf" onLoad={() => setState("ready")}><p>PDF preview is unavailable.</p></object> : <div className="devUnsupported"><strong>{asset.extension?.toUpperCase() || "FILE"}</strong><p>This format does not support an in-browser preview.</p></div>}
+    {asset.category === "image" ? <img src={src} alt={asset.filename} decoding="async" onLoad={() => setState("ready")} onError={() => setState("error")} /> : asset.category === "video" ? <video src={src} controls preload="metadata" onCanPlay={() => setState("ready")} onError={() => setState("error")} /> : asset.extension?.toLowerCase() === "pdf" ? <object data={src} type="application/pdf" onLoad={() => setState("ready")}><p>PDF preview is unavailable.</p></object> : <div className="devUnsupported"><strong>{asset.extension?.toUpperCase() || "FILE"}</strong><p>This format does not support an in-browser preview.</p></div>}
     {state === "error" && <div className="devPreviewError" role="alert"><b>Preview unavailable</b><span>The original file is still available to download.</span></div>}
   </div></div>;
 }
 
 function Card({ asset, view, preview, download }: { asset: MediaAsset; view: "grid" | "list"; preview: () => void; download: () => void }) {
   return <article className={`devAssetCard ${view}`}><button className={`devAssetArt ${asset.category}`} onClick={preview} disabled={!asset.canPreview} aria-label={`Preview ${asset.filename}`}>
-    {asset.category === "image" && asset.previewUrl ? <img src={asset.previewUrl} alt="" loading="lazy" /> : <span>{asset.category === "video" ? "▶" : asset.category === "document" ? "DOC" : "FILE"}</span>}
+    <span aria-hidden="true">{asset.category === "image" ? "IMG" : asset.category === "video" ? "▶" : asset.category === "document" ? "DOC" : "FILE"}</span>
   </button><div className="devAssetInfo"><div className="devAssetTag"><span>{asset.extension?.toUpperCase() || "FILE"}</span><b>{asset.category}</b></div><h2 title={asset.filename}>{asset.filename}</h2><p>{formatBytes(asset.sizeBytes)} · {formatDate(asset.modifiedAt)}</p><small title={asset.sourceFolder}>{asset.sourceFolder}</small><div className="devAssetActions"><button onClick={preview} disabled={!asset.canPreview}>Preview</button><button onClick={download} disabled={!asset.canDownload}>Download</button></div></div></article>;
 }
 
