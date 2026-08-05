@@ -29,7 +29,7 @@ EXPECTED_AUTOMATION_ACCOUNT = "kdimediaautomation@gmail.com"
 FOLDER_MIME_TYPE = "application/vnd.google-apps.folder"
 ITEM_FIELDS = (
     "id,name,mimeType,fileExtension,size,createdTime,modifiedTime,"
-    "parents,driveId,webViewLink"
+    "parents,driveId,webViewLink,md5Checksum"
 )
 LIST_FIELDS = f"nextPageToken,files({ITEM_FIELDS})"
 FOLDER_CLASSIFICATION = "folder"
@@ -88,6 +88,7 @@ class DriveItem:
     created_time: str | None
     modified_time: str | None
     size: int | None
+    md5_checksum: str | None
     parents: tuple[str, ...]
     drive_id: str | None
     web_view_link: str | None
@@ -114,6 +115,7 @@ class DriveItem:
             created_time=_optional_text(value.get("createdTime")),
             modified_time=_optional_text(value.get("modifiedTime")),
             size=size,
+            md5_checksum=_optional_text(value.get("md5Checksum")),
             parents=tuple(str(parent) for parent in value.get("parents") or ()),
             drive_id=_optional_text(value.get("driveId")),
             web_view_link=_optional_text(value.get("webViewLink")),
@@ -143,6 +145,7 @@ class RecursiveScanItem:
     size: int | None
     created_time: str | None
     modified_time: str | None
+    md5_checksum: str | None
     parent_folder_id: str
     relative_folder_path: str
     web_view_link: str | None
@@ -612,6 +615,9 @@ def scan_folder_recursive(
                             modified_time=_optional_text(
                                 raw_item.get("modifiedTime")
                             ),
+                            md5_checksum=_optional_text(
+                                raw_item.get("md5Checksum")
+                            ),
                             parent_folder_id=folder_id,
                             relative_folder_path=folder_path,
                             web_view_link=None,
@@ -645,6 +651,7 @@ def scan_folder_recursive(
                         size=item.size,
                         created_time=item.created_time,
                         modified_time=item.modified_time,
+                        md5_checksum=item.md5_checksum,
                         parent_folder_id=folder_id,
                         relative_folder_path=item_folder_path,
                         web_view_link=item.web_view_link,
@@ -819,6 +826,7 @@ def _inaccessible_scan_item(
         size=item.size,
         created_time=item.created_time,
         modified_time=item.modified_time,
+        md5_checksum=item.md5_checksum,
         parent_folder_id=parent_folder_id,
         relative_folder_path=relative_folder_path,
         web_view_link=item.web_view_link,
