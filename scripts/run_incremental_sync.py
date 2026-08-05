@@ -1,35 +1,107 @@
-"""Step 14 command guard and environment preflight.
+"""Step 14 daily incremental synchronization command."""
 
-Live execution stays fail-closed until the Step 14 migration is deployed and
-the production adapter is explicitly verified.  It never silently falls back
-to the legacy full migration command.
-"""
 from __future__ import annotations
-import argparse, json, os, sys
-from datetime import datetime, timezone
+
+import argparse
+import json
+import os
 from pathlib import Path
+import sys
 
-ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT/"src"))
-from kdi_media.incremental_sync import write_json_report
+from dotenv import load_dotenv
+from supabase import create_client
 
-REQUIRED=("SUPABASE_URL","SUPABASE_SERVICE_ROLE_KEY","GOOGLE_DRIVE_CREDENTIALS_FILE","GOOGLE_DRIVE_TOKEN_FILE","GOOGLE_DRIVE_DESTINATION_TOKEN_FILE")
 
-def main(argv=None):
-    parser=argparse.ArgumentParser(description="KDI Step 14 incremental synchronization")
-    parser.add_argument("sync",nargs="?",default="sync")
-    parser.add_argument("--incremental",action="store_true",required=True)
-    parser.add_argument("--dry-run",action="store_true")
-    parser.add_argument("--source-id")
-    parser.add_argument("--run-id")
-    parser.add_argument("--trigger",choices=("manual","scheduled"),default="manual")
-    args=parser.parse_args(argv)
-    missing=[name for name in REQUIRED if not os.getenv(name,"").strip()]
-    stamp=datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    report={"run_type":"incremental_sync","trigger_type":args.trigger,"dry_run":args.dry_run,"started_at":datetime.now(timezone.utc).isoformat(),"status":"BLOCKED_CONFIGURATION" if missing else "BLOCKED_NOT_VERIFIED","missing_environment":missing,"message":"Production Step 14 adapter has not passed controlled tests A-J; no source or destination changes were made."}
-    path=ROOT/"reports"/"step-14"/f"incremental-sync-{stamp}.json"
-    write_json_report(path,report)
-    print(json.dumps({"status":report["status"],"dry_run":args.dry_run,"report":str(path),"missing_environment":missing}))
-    return 2
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
 
-if __name__=="__main__": raise SystemExit(main())
+from kdi_media.daily_sync import IncrementalSyncRunner
+from kdi_media.google_drive import (
+    create_destination_write_drive_service,
+    create_readonly_drive_service,
+)
+from kdi_media.production_sync_adapter import ProductionSyncAdapter
+from kdi_media.step9_hashing import RetryableHashingError, iter_drive_content
+from kdi_media.step10_production import APPROVED_ROOT
+
+
+def parser() -> argparse.ArgumentParser:
+    result = argparse.ArgumentParser(description="KDI Step 14 incremental synchronization")
+    result.add_argument("sync", nargs="?", default="sync")
+    result.add_argument("--incremental", action="store_true", required=True)
+    result.add_argument("--dry-run", action="store_true")
+    result.add_argument("--source-id", action="append")
+    result.add_argument("--run-id")
+    result.add_argument("--trigger", choices=("manual", "scheduled"), default="manual")
+    result.add_argument("--controlled-transient-hash-once", action="store_true", help=argparse.SUPPRESS)
+    return result
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = parser().parse_args(argv)
+    load_dotenv(ROOT / ".env")
+    try:
+        client = create_client(_required("SUPABASE_URL"), _required("SUPABASE_SERVICE_ROLE_KEY"))
+        source_service = create_readonly_drive_service()
+
+        def adapter_factory() -> ProductionSyncAdapter:
+            destination_service = create_destination_write_drive_service()
+            root_id = os.getenv("DESTINATION_FOLDER_ID", "").strip() or APPROVED_ROOT
+            if root_id != APPROVED_ROOT:
+                raise RuntimeError("Configured destination is not the approved KDI Master root")
+            content_reader = iter_drive_content
+            if args.controlled_transient_hash_once:
+                if args.source_id != ["0e24d6b7-0429-461c-87b4-75471c759e4f"]:
+                    raise RuntimeError("Controlled failure hook is restricted to the approved Step 14 fixture")
+                attempts = {"count": 0}
+                def controlled_reader(service, file_id, *, chunk_size):
+                    attempts["count"] += 1
+                    if attempts["count"] == 1:
+                        raise RetryableHashingError("Controlled one-time transient hash failure")
+                    return iter_drive_content(service, file_id, chunk_size=chunk_size)
+                content_reader = controlled_reader
+            return ProductionSyncAdapter(
+                client=client,
+                source_service=source_service,
+                destination_service=destination_service,
+                destination_root_id=root_id,
+                spool_root=ROOT / "tmp" / "step14-production-spool",
+                hash_content_reader=content_reader,
+            )
+
+        runner = IncrementalSyncRunner(
+            client=client,
+            source_service=source_service,
+            adapter_factory=adapter_factory,
+            report_root=ROOT / "reports" / "step-14",
+        )
+        report = runner.run(
+            dry_run=args.dry_run,
+            trigger=args.trigger,
+            source_ids=args.source_id,
+            run_id=args.run_id,
+        )
+    except Exception as exc:
+        print(json.dumps({"status": "FAILED_CONFIGURATION_OR_PREFLIGHT", "error": _safe(exc)}))
+        return 2
+    print(json.dumps({
+        "run_id": report["run_id"], "status": report["status"],
+        "dry_run": report["dry_run"], "report": report.get("report_path"),
+        "totals": report["totals"], "reconciliation": report.get("reconciliation"),
+    }, sort_keys=True))
+    return 0 if report["status"] in {"COMPLETED", "DRY_RUN_RECONCILED", "OVERLAP_REJECTED"} else 1
+
+
+def _required(name: str) -> str:
+    value = os.getenv(name, "").strip()
+    if not value:
+        raise RuntimeError(f"Missing required configuration: {name}")
+    return value
+
+
+def _safe(exc: BaseException) -> str:
+    return " ".join(str(exc).replace("\r", " ").replace("\n", " ").split())[:500]
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

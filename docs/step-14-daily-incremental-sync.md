@@ -1,129 +1,126 @@
 # Step 14 — Daily Incremental Synchronization
 
-## Current status
+## Status
 
-BLOCKED after migration and fail-closed as of 2026-08-05. Migration
-`202608050001` is deployed. The classifier, reconciliation primitive, bounded
-retry helper, report writer, durable lock RPCs, command guard, and Windows
-wrapper are implemented and unit-tested. The production adapter is not yet
-complete for NEW and CHANGED files, so the task is not scheduled.
+COMPLETE on 2026-08-05 for production project `wcqqjpndlwsvatjuqnol`.
+Migration `202608050001` remains deployed and unchanged. The production adapter,
+controlled live Tests 1–10, final reconciliation, Windows scheduled task, and
+manual scheduled-task execution all passed.
 
-The CLI confirmed the linked project is exactly `wcqqjpndlwsvatjuqnol`
-(`asset_management_ai`). Migration history and dry-run preview showed only the
-Step 14 migration pending; deployment succeeded. Post-deployment verification
-confirmed source_folders=3, source_files=886, assets=878, asset_sources=878,
-and asset_destinations=878. The checkpoint columns are present and the new lock
-table is empty.
+The controlled source `0e24d6b7-0429-461c-87b4-75471c759e4f` is disabled after
+testing. The original three employee sources are the only active sources.
 
-A forced read-only scan reached all three sources and reconciled
-1 + 300 + 585 = 886 identities with zero scan errors. All 886 classify
-UNCHANGED after normalizing equivalent UTC timestamp representations. No live
-NEW or CHANGED item was available, so the mutation-path A–J tests remain
-incomplete.
+## Existing pipeline entry points reused
 
-## Architecture and reused components
+Step 14 orchestrates the existing implementations; it does not reimplement
+their algorithms:
 
-Google Drive metadata scanning remains in `kdi_media.google_drive`; its selected
-fields now include provider MD5 when available. `kdi_media.rules` remains the
-only TAKE/SKIP policy. Content hashing and retry leases remain in
-`kdi_media.step9_hashing`, canonical SHA-256 grouping and conflict-safe
-asset/source linking remain in `kdi_media.step9_canonicalization`, and verified
-resumable uploads remain in `kdi_media.step10_upload`. Existing `sync_runs`,
-`scan_runs`, `source_files`, `assets`, `asset_sources`, `asset_destinations`, and
-`migration_events` remain authoritative.
+- Step 8 decision: `kdi_media.rules.evaluate_file(FileRuleInput)`.
+- Step 9 SHA-256 and leases: `Step9HashWorker.process`,
+  `SupabaseHashRepository`, `read_drive_snapshot`, and `iter_drive_content`.
+- Existing SHA-256 asset lookup: `assets.content_hash`, followed by
+  `SupabaseCanonicalRepository.create_or_reuse_asset` under the deployed unique
+  constraint.
+- Canonical grouping/creation: `build_canonical_groups` and
+  `SupabaseCanonicalRepository`.
+- Source relationship creation: `create_or_reuse_link`; CHANGED rows use the
+  deployed one-current-link constraint and append an audit event before moving
+  the current relationship. The previous asset and destination remain.
+- Destination category: `route_category` and `resolve_category_folder`.
+- Deterministic lifecycle creation: `prepare_lifecycle_initialization` and
+  `SupabaseStep10Repository.initialize`.
+- Claims/recovery: `claim_batch`, `renew`, `release`, `fail`, deployed claim
+  RPCs, deterministic idempotency keys, and Drive app properties.
+- Resumable upload: `DriveResumableTransfer` through
+  `Step10UploadWorker.process`.
+- Verification/recovery lookup: `lookup_destination_identity`,
+  `verify_destination_metadata`, and the worker's `RECOVER` path.
+- Migration events: `SupabaseStep10Repository.append_event` plus deployed
+  Step 10 triggers.
+- Reconciliation: `kdi_media.incremental_sync.reconcile` and durable
+  `sync_runs`/`scan_runs` totals.
 
-Step 14 adds only checkpoint columns to `source_files` and a project-wide
-`synchronization_locks` row. Lock acquisition is atomic through
-`acquire_synchronization_lock`; a different owner receives false. A lease of
-60–21,600 seconds permits controlled stale-lock recovery. Release requires the
-same run ID.
+The former stop was `scripts/run_incremental_sync.py`: it wrote
+`BLOCKED_NOT_VERIFIED` and exited 2 without invoking any of these entry points.
+It now constructs `IncrementalSyncRunner`, which scans/classifies and delegates
+only NEW/CHANGED rows to `ProductionSyncAdapter`.
 
-## Incremental comparison
+## Adapter behavior
 
-The stable key is `(source_folder_id, google_file_id)`. Modified time, size,
-MIME type, and available MD5 are compared before content is read. Outcomes are
-NEW, CHANGED, UNCHANGED, INACCESSIBLE, and REMOVED_FROM_SOURCE. Missing provider
-MD5 alone does not imply change. UNCHANGED content with trusted completed state
-never reaches hashing or upload. Missing IDs are recorded only; originals and
-master files are never deleted.
+`ProductionSyncAdapter` accepts a run ID, source-folder row, persisted
+source-file row, Drive metadata, NEW/CHANGED classification, and dry-run flag.
+Its outcomes are UNCHANGED, SKIPPED, REUSED_EXISTING_ASSET,
+UPLOADED_AND_VERIFIED, FAILED_RETRYABLE, and FAILED_FINAL.
 
-NEW and CHANGED items must pass the existing Step 8 rules, then the existing
-leased SHA-256 worker. `SupabaseCanonicalRepository` reuses an asset on SHA-256
-conflict and its source-link uniqueness prevents repeated relationships. Only a
-new canonical asset may enter the Step 10 destination lifecycle, whose
-idempotency key, Google app properties, claims, bounded attempts, recovery
-lookup, and verification prevent repeat master files.
+NEW files are evaluated by Step 8, hashed by Step 9, canonicalized, linked, and
+uploaded only when the SHA-256 is unique. Existing assets gain one idempotent
+source link and no destination upload.
 
-## Run lifecycle, checkpoint, retry, and reconciliation
+CHANGED files record prior asset/hash/version context, reset only current hash
+state, re-run Steps 8–10, and move the one current source relationship after
+the new canonical result is durable. Previous asset and verified destination
+rows are never overwritten or deleted.
 
-A production run must create `sync_runs` with run type `DAILY_SYNC` and metadata
-`run_type=incremental_sync`, trigger, dry-run flag, expanded counters, lock
-events, and final reconciliation. Each source uses a `scan_runs` row. Each file
-stores classification, processing status, attempt count (maximum five), retry
-eligibility, sanitized last failure, and last success. Completed file states are
-resume boundaries. Existing Step 9/10 leases remain the content/upload resume
-boundaries.
+Dry-run performs metadata scanning, classification, rules, reporting, and
+reconciliation only. It creates no runs, scans, locks, checkpoints, hashes,
+assets, relationships, destinations, uploads, or paid-service calls.
 
-Transient Drive 429/5xx, timeouts, and temporary database failures use at most
-five attempts with 1, 2, 4, and 8 second exponential delays plus bounded jitter.
-Permanent access/validation failures are not retried indefinitely.
-
-Every relevant file must end as unchanged, skipped with reason, linked exact
-duplicate, uploaded and verified, failed, awaiting retry, inaccessible, or
-removed-record-only. Failures/retries/inaccessibility keep reconciliation from
-being clean and prevent a successful run verdict.
+Resume is database-authoritative. Persisted HASHED state is reused; canonical
+and relationship uniqueness reconciles database-write-before-crash cases;
+deterministic lifecycle IDs and Drive app properties recover upload-before-
+verification cases; expired claims and synchronization locks are recoverable.
 
 ## Commands
 
-The current command is intentionally a non-zero fail-closed guard until the
-production adapter and tests A–J pass:
-
 ```powershell
+# Live all active sources
 .\.venv\Scripts\python.exe -m scripts.run_incremental_sync sync --incremental
+
+# Metadata-only dry run
 .\.venv\Scripts\python.exe -m scripts.run_incremental_sync sync --incremental --dry-run
+
+# One approved source
+.\.venv\Scripts\python.exe -m scripts.run_incremental_sync sync --incremental --source-id UUID
 ```
 
-Optional future routing flags are `--source-id`, `--run-id`, and `--trigger`.
-JSON reports are written to `reports/step-14/`; scheduled logs go to
-`reports/step-14/logs/`. No secrets are included.
+Reports are written to `reports/step-14/`. Scheduled logs are written to
+`reports/step-14/logs/`. Errors and event details are sanitized.
 
-## Windows Task Scheduler (not enabled)
+## Windows Task Scheduler
 
-Target: 21:00 Asia/Kuala_Lumpur (UTC+08:00), equivalent to 13:00 UTC. Windows
-uses the machine timezone, so confirm it before creating a local 21:00 trigger.
-After—and only after—A–J pass, an administrator may run:
+Task: `KDI-Central-Media-Daily-Incremental-Sync`
+
+- Trigger: daily at 21:00 Singapore Standard Time (UTC+08:00), equivalent to
+  21:00 Asia/Kuala_Lumpur.
+- Action: non-interactive PowerShell running
+  `scripts/run_daily_incremental_sync.ps1`.
+- Multiple instances: IgnoreNew.
+- Start when available: enabled.
+- Battery execution: enabled.
+- Execution limit: three hours.
+- Principal: current Windows user, Interactive logon, Limited run level.
+- Next verified run: `2026-08-05T21:00:00+08:00`.
+
+The manual Scheduler trigger at `2026-08-05T11:53:43+08:00` returned exit code
+0, logged clean run `76a9bb8d-90c6-4b30-9e2e-e70737d17933`, reconciled 886
+UNCHANGED files, and released the lock.
+
+Disable without deleting:
 
 ```powershell
-$action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument '-NoProfile -NonInteractive -ExecutionPolicy Bypass -File "C:\Users\Public\Asset_Management_AI\scripts\run_daily_incremental_sync.ps1"'
-$trigger = New-ScheduledTaskTrigger -Daily -At '21:00'
-Register-ScheduledTask -TaskName 'KDI-Central-Media-Daily-Incremental-Sync' -Action $action -Trigger $trigger -Description 'KDI daily incremental sync at 21:00 Asia/Kuala_Lumpur'
+Disable-ScheduledTask -TaskName 'KDI-Central-Media-Daily-Incremental-Sync'
 ```
 
-Manual fallback is the first command above. Disable with
-`Disable-ScheduledTask -TaskName 'KDI-Central-Media-Daily-Incremental-Sync'`;
-remove with `Unregister-ScheduledTask ...` only after explicit approval. The
-wrapper validates the project virtual environment, sets the working directory,
-captures logs, and propagates the worker exit code.
+## Verification summary
 
-## Security and troubleshooting
+- Tracked tests: 433 passed plus 74 subtests.
+- Initial and final original-source live runs: 886 UNCHANGED, zero uploads,
+  zero contradictions, zero scan errors.
+- Unique, exact-duplicate, CHANGED, SKIP, transient retry, interruption/resume,
+  overlap rejection, owner release, and stale-lock recovery all passed live.
+- Controlled final counts: 4 source folders (three active), 890 source files,
+  881 assets, 881 relationships, and 881 destinations.
+- Lock table after every final check: zero rows.
 
-Environment variables and existing ignored OAuth files remain the only secret
-sources. Never place service-role keys or tokens in task arguments. RLS and
-frontend authentication are unchanged. A status of `BLOCKED_CONFIGURATION`
-means required variable names were absent; `BLOCKED_NOT_VERIFIED` means the
-adapter/A–J gate remains incomplete. Both guarantee no Drive or database write.
-
-## Test evidence
-
-On 2026-08-05 the repository Python suite passed: 423 tests and 74 subtests;
-the focused Step 14 suite contributed 8 tests. It covers the five metadata
-classifications (including removed recording), trusted unchanged short-circuit,
-bounded retry, outcome reconciliation/idempotence checks, atomic JSON report
-writing, and static durable-lock/checkpoint contracts. Live A–J tests were not
-completed. The live baseline/no-change checks passed, but no live
-upload/idempotency claim is made and the schedule remains absent.
-
-An unscoped `pytest` also collected legacy generated tests under ignored
-`tmp/`; 436 passed and 7 failed because the managed sandbox denied those tests
-write access to `tmp/dashboard_session_status.json`. The authoritative tracked
-`tests/` suite passed completely.
+See `reports/step-14-completion-report.md` for exact controlled filenames,
+Drive IDs, hashes, database IDs, run IDs, and destination IDs.

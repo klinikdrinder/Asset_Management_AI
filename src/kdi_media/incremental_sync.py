@@ -26,6 +26,7 @@ TRUSTED_COMPLETE_STATES = frozenset({"HASHED", "DUPLICATE", "UPLOADED", "VERIFIE
 RECONCILIATION_OUTCOMES = frozenset({
     "UNCHANGED", "SKIPPED", "LINKED_DUPLICATE", "UPLOADED_VERIFIED",
     "FAILED", "AWAITING_RETRY", "INACCESSIBLE", "REMOVED_FROM_SOURCE",
+    "PLANNED",
 })
 SECRET_PATTERN = re.compile(
     r"(?i)(access[_ -]?token|refresh[_ -]?token|service[_ -]?role|password|authorization)\s*[:=]\s*\S+"
@@ -118,7 +119,10 @@ class RunTotals:
     files_skipped: int = 0
     files_hashed: int = 0
     exact_duplicates_found: int = 0
+    unique_assets_created: int = 0
+    relationships_created_or_reused: int = 0
     unique_files_uploaded: int = 0
+    verified_destinations: int = 0
     existing_assets_reused: int = 0
     failed_files: int = 0
     retried_files: int = 0
