@@ -36,7 +36,17 @@ function Wait-Http([string]$uri, [int[]]$accepted, [int]$seconds = 30) {
 }
 function Restart-Production {
     Stop-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
-    for($i=0;$i -lt 20;$i++){ if(-not (Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue)){break}; Start-Sleep -Milliseconds 500 }
+    for($i=0;$i -lt 6;$i++){ if(-not (Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue)){break}; Start-Sleep -Milliseconds 500 }
+    $listeners = @(Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue)
+    foreach($listener in $listeners){
+        $process = Get-CimInstance Win32_Process -Filter "ProcessId=$($listener.OwningProcess)" -ErrorAction SilentlyContinue
+        if($process.Name -ne "node.exe" -or $process.CommandLine -notmatch 'next.*start'){
+            throw "Port 3000 is occupied by a process that is not the KDI production server."
+        }
+        Stop-Process -Id $listener.OwningProcess -Force
+    }
+    for($i=0;$i -lt 20;$i++){ if(-not (Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue)){break}; Start-Sleep -Milliseconds 250 }
+    if(Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue){throw "Production port 3000 did not stop cleanly."}
     Start-ScheduledTask -TaskName $TaskName
 }
 

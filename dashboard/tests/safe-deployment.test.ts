@@ -20,6 +20,8 @@ test("candidate build and deployment keep staging and production ports separate"
   assert.match(deploy, /FileMode\]::CreateNew/);
   assert.match(deploy, /previous-release\.txt/);
   assert.match(deploy, /rollback/i);
+  assert.match(deploy, /process\.Name -ne "node\.exe"/);
+  assert.match(deploy, /CommandLine -notmatch 'next\.\*start'/);
 });
 
 test("health endpoint reports only a generic result", () => {
