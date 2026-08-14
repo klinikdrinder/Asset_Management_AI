@@ -15,7 +15,8 @@ test("candidate build and deployment keep staging and production ports separate"
   const build = read("../scripts/build-kdi-candidate.ps1");
   const deploy = read("../scripts/deploy-kdi-candidate.ps1");
   assert.match(build, /3001/);
-  assert.doesNotMatch(build, /Stop-ScheduledTask|Stop-Process/);
+  assert.doesNotMatch(build, /Stop-ScheduledTask|LocalPort 3000/);
+  assert.match(build, /LocalPort \$StagingPort/);
   assert.match(deploy, /FileMode\]::CreateNew/);
   assert.match(deploy, /previous-release\.txt/);
   assert.match(deploy, /rollback/i);

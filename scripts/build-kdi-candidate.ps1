@@ -18,6 +18,17 @@ New-Item -ItemType Directory -Force -Path $logRoot | Out-Null
 $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
 $logFile = Join-Path $logRoot "candidate-$timestamp.log"
 
+# A prior candidate may still be serving on the staging-only port. Stop only
+# that listener so npm can refresh staging dependencies; never touch port 3000.
+$stagingListeners = @(Get-NetTCPConnection -LocalPort $StagingPort -State Listen -ErrorAction SilentlyContinue)
+foreach ($listener in $stagingListeners) {
+    $process = Get-CimInstance Win32_Process -Filter "ProcessId=$($listener.OwningProcess)" -ErrorAction SilentlyContinue
+    if ($process.CommandLine -notmatch 'next.*start' -or $process.CommandLine -notmatch "(?:-p|--port)\s+$StagingPort") {
+        throw "Port $StagingPort is occupied by a process that is not the KDI staging server."
+    }
+    Stop-Process -Id $listener.OwningProcess -Force
+}
+
 function Write-DeploymentLog([string]$message) {
     $line = "[$(Get-Date -Format o)] $message"
     $line | Tee-Object -FilePath $logFile -Append
