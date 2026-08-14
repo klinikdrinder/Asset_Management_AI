@@ -58,6 +58,12 @@ if (Test-Path -LiteralPath $liveData) {
 } else {
     throw "Required local semantic test manifests are unavailable."
 }
+$liveFfmpeg = Join-Path $liveRoot ".tools\ffmpeg\bin"
+$candidateFfmpeg = Join-Path $WorkspaceRoot ".tools\ffmpeg\bin"
+if (Test-Path -LiteralPath (Join-Path $liveFfmpeg "ffmpeg.exe")) {
+    New-Item -ItemType Directory -Force -Path $candidateFfmpeg | Out-Null
+    Copy-Item -Path (Join-Path $liveFfmpeg "*.exe") -Destination $candidateFfmpeg -Force
+}
 
 Push-Location $dashboard
 try {
@@ -68,11 +74,7 @@ try {
     $python = Join-Path $liveRoot ".venv\Scripts\python.exe"
     if (-not (Test-Path -LiteralPath $python)) { throw "Python virtual environment is unavailable." }
     $oldPythonPath = $env:PYTHONPATH
-    $oldFfmpeg = $env:KDI_FFMPEG_PATH
-    $oldFfprobe = $env:KDI_FFPROBE_PATH
     $env:PYTHONPATH = "$(Join-Path $WorkspaceRoot 'src');$WorkspaceRoot"
-    $env:KDI_FFMPEG_PATH = Join-Path $liveRoot ".tools\ffmpeg\bin\ffmpeg.exe"
-    $env:KDI_FFPROBE_PATH = Join-Path $liveRoot ".tools\ffmpeg\bin\ffprobe.exe"
     $backendTests = @(
         "tests/test_ai_provider_connectivity.py", "tests/test_image_input.py",
         "tests/test_local_ai_pilot_preflight.py", "tests/test_manual_semantic_pilot.py",
@@ -89,8 +91,6 @@ try {
     }
     finally {
         $env:PYTHONPATH = $oldPythonPath
-        $env:KDI_FFMPEG_PATH = $oldFfmpeg
-        $env:KDI_FFPROBE_PATH = $oldFfprobe
     }
 
     Invoke-Checked "NEXT_BUILD" { npm.cmd run build }
