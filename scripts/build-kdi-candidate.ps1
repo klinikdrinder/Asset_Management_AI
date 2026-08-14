@@ -25,8 +25,15 @@ function Write-DeploymentLog([string]$message) {
 
 function Invoke-Checked([string]$label, [scriptblock]$command) {
     Write-DeploymentLog "$label START"
-    & $command 2>&1 | Tee-Object -FilePath $logFile -Append
-    if ($LASTEXITCODE -ne 0) { throw "$label failed with exit code $LASTEXITCODE" }
+    $savedPreference = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        & $command 2>&1 | Tee-Object -FilePath $logFile -Append
+        $exitCode = $LASTEXITCODE
+    } finally {
+        $ErrorActionPreference = $savedPreference
+    }
+    if ($exitCode -ne 0) { throw "$label failed with exit code $exitCode" }
     Write-DeploymentLog "$label PASS"
 }
 
