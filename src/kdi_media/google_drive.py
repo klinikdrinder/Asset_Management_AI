@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 from google.auth.exceptions import RefreshError
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
+from google.oauth2 import service_account
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import Resource, build
 from googleapiclient.errors import HttpError
@@ -383,6 +384,30 @@ def create_readonly_drive_service(
     except Exception as exc:
         raise GoogleDriveAuthenticationError(
             "Authenticated Google Drive service could not be created"
+        ) from exc
+
+
+def create_service_account_readonly_drive_service(
+    credentials_path: str | Path | None = None,
+) -> Resource:
+    """Create the permanent KDI Master reader from a service-account key."""
+    configured = credentials_path or os.environ.get(
+        "GOOGLE_DRIVE_SERVICE_ACCOUNT_CREDENTIALS_PATH",
+        r"C:\Users\Public\Asset_Management_AI\.secrets\kdi-media-reader.json",
+    )
+    path = Path(configured).expanduser()
+    if not path.is_file():
+        raise GoogleDriveConfigurationError(
+            "Google Drive service-account credentials file is missing"
+        )
+    try:
+        credentials = service_account.Credentials.from_service_account_file(
+            str(path), scopes=list(DRIVE_READONLY_SCOPES)
+        )
+        return build("drive", "v3", credentials=credentials, cache_discovery=False)
+    except Exception as exc:
+        raise GoogleDriveAuthenticationError(
+            "Google Drive service-account authentication failed"
         ) from exc
 
 

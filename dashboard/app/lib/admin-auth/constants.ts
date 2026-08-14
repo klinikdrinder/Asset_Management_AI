@@ -1,0 +1,1 @@
+export const ADMIN_SESSION_COOKIE="kdi_admin_session";export const SHORT_SESSION_SECONDS=12*60*60;export const REMEMBER_SESSION_SECONDS=30*24*60*60;export const LOGIN_FAILURE_LIMIT=5;export const LOCKOUT_MINUTES=15;export const PASSWORD_MIN_LENGTH=12;

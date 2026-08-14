@@ -17,7 +17,7 @@ function mapAsset(row: Json): MediaAsset {
   const verified = values(row.asset_destinations).find((item) => item.upload_status === "VERIFIED" && item.destination_google_file_id) ?? null;
   const extension = text(row.file_extension), mimeType = text(row.mime_type), id = String(row.id);
   const category = classifyMedia(mimeType, extension);
-  return { id, sourceFileId: text(link.source_file_id), filename: String(row.file_name || "File"), extension, mimeType, category, sizeBytes: row.size_bytes == null ? null : Number(row.size_bytes), createdAt: null, modifiedAt: text(row.updated_at), sourceFolder: String(folder.source_name || "Central library"), storageDestination: verified ? "google-drive" : null, migrationStatus: String(verified?.upload_status || "NOT_STARTED"), verificationStatus: verified ? "VERIFIED" : "NONE", canPreview: Boolean(verified), canDownload: Boolean(verified), previewUrl: verified ? `/api/dev/library/media/${id}/preview` : null, downloadUrl: verified ? `/api/dev/library/media/${id}/download` : null, thumbnailUrl: verified && (category === "image" || category === "video") ? `/api/dev/library/media/${id}/thumbnail` : null };
+  return { id, sourceFileId: text(link.source_file_id), filename: String(row.file_name || "File"), extension, mimeType, category, sizeBytes: row.size_bytes == null ? null : Number(row.size_bytes), createdAt: null, modifiedAt: text(row.updated_at), sourceFolder: String(folder.source_name || "Central library"), storageDestination: verified ? "google-drive" : null, migrationStatus: String(verified?.upload_status || "NOT_STARTED"), verificationStatus: verified ? "VERIFIED" : "NONE", canPreview: Boolean(verified), canDownload: Boolean(verified), previewUrl: verified ? `/api/dev/library/media/${id}/preview` : null, downloadUrl: verified ? `/api/dev/library/media/${id}/download` : null, thumbnailUrl: verified && (category === "image" || category === "video") ? `/api/dev/library/media/${id}/thumbnail` : null, shortCaption: null, matchPercent: null };
 }
 function sorting(sort: MediaSort): { column: string; ascending: boolean } { if (sort === "oldest") return { column: "updated_at", ascending: true }; if (sort === "smallest") return { column: "size_bytes", ascending: true }; if (sort === "largest") return { column: "size_bytes", ascending: false }; return { column: "updated_at", ascending: false }; }
 export async function getDevMediaAssets(input: Record<string, string | undefined> = {}): Promise<MediaPage> {
@@ -44,12 +44,6 @@ export async function getDevMediaAsset(id: string): Promise<MediaAsset | null> {
   return data ? mapAsset(data as unknown as Json) : null;
 }
 
-export async function getDevAuthorizedMediaRecord(id: string) {
-  assertDevAccess();
-  if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id)) return null;
-  const { data, error } = await createServiceClient().from("assets").select("id,file_name,mime_type,file_extension,size_bytes,asset_destinations!inner(selected_source_file_id,destination_google_file_id,destination_filename,upload_status)").eq("id", id).eq("asset_destinations.upload_status", "VERIFIED").maybeSingle();
-  if (error || !data) return null;
-  const row = data as unknown as Json, destination = values(row.asset_destinations)[0];
-  if (!destination?.destination_google_file_id) return null;
-  return { sourceFileId: String(destination.selected_source_file_id), destinationFileId: String(destination.destination_google_file_id), destinationFilename: String(destination.destination_filename || row.file_name || "download"), filename: String(row.file_name || destination.destination_filename || "download"), mime: String(row.mime_type || "application/octet-stream"), extension: String(row.file_extension || ""), size: Number(row.size_bytes || 0) };
-}
+// Canonical Drive-media resolution for the development bypass lives in
+// media-service.ts -> lib/media/resolve-location.ts (shared with
+// production), not here.

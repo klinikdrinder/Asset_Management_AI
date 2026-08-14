@@ -5,7 +5,9 @@ import { FIREBASE_SUPABASE_TOKEN_COOKIE } from "../../../lib/library/authenticat
 export const runtime = "nodejs";
 
 export async function POST(request: NextRequest) {
-  if (request.headers.get("origin") !== request.nextUrl.origin) {
+  let sameOrigin=false;
+  try{sameOrigin=new URL(request.headers.get("origin")??"").host===request.headers.get("host")}catch{}
+  if (!sameOrigin) {
     return NextResponse.json({ status: "denied" }, { status: 403 });
   }
   const response = NextResponse.json({ status: "signed_out" });

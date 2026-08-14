@@ -1,0 +1,26 @@
+[Unit]
+Description=KDI Dedicated Local AI Semantic Worker
+After=network-online.target ollama.service
+Wants=network-online.target
+Requires=ollama.service
+
+[Service]
+Type=simple
+User=kdi-ai-worker
+Group=kdi-ai-worker
+WorkingDirectory=/opt/kdi-asset-management
+EnvironmentFile=/etc/kdi-semantic-worker/worker.env
+ExecStartPre=/opt/kdi-asset-management/.venv/bin/python -m kdi_media.semantic_worker --preflight --benchmark-manifest /opt/kdi-asset-management/data/semantic_local_automatic_pilot_20.json
+ExecStart=/opt/kdi-asset-management/.venv/bin/python -m kdi_media.semantic_worker --poll --benchmark-manifest /opt/kdi-asset-management/data/semantic_local_automatic_pilot_20.json --staging-only --confirm-clinical-local-processing --concurrency 1
+Restart=on-failure
+RestartSec=15
+TimeoutStopSec=330
+KillSignal=SIGTERM
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/kdi-semantic-worker /var/tmp/kdi-local-ai
+
+[Install]
+WantedBy=multi-user.target

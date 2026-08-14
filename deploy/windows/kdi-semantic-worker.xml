@@ -1,0 +1,15 @@
+<service>
+  <id>KDISemanticWorker</id>
+  <name>KDI Dedicated Semantic Worker</name>
+  <description>Local-only semantic indexing worker; installed under a restricted service account.</description>
+  <executable>C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</executable>
+  <arguments>-NoProfile -NonInteractive -ExecutionPolicy AllSigned -File C:\KDIWorker\Asset_Management_AI\deploy\windows\run-kdi-semantic-worker.ps1</arguments>
+  <workingdirectory>C:\KDIWorker\Asset_Management_AI</workingdirectory>
+  <startmode>Automatic</startmode>
+  <onfailure action="restart" delay="15 sec" />
+  <stoptimeout>330 sec</stoptimeout>
+  <log mode="roll-by-size">
+    <sizeThreshold>10485760</sizeThreshold>
+    <keepFiles>10</keepFiles>
+  </log>
+</service>

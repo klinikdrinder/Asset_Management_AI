@@ -1,0 +1,1 @@
+import{NextResponse}from"next/server";import{audit,currentAdmin,revokeCurrentSession}from"../../../lib/admin-auth/session";export async function POST(){const a=await currentAdmin();await revokeCurrentSession();if(a)await audit("sign_out",a.id);return NextResponse.json({ok:true})}
