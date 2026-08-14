@@ -118,6 +118,8 @@ try {
     Write-DeploymentLog "STAGING_SMOKE PASS port=$StagingPort"
 
     $env:KDI_BASE_URL = "http://127.0.0.1:$StagingPort"
+    $savedNodeOptions = $env:NODE_OPTIONS
+    $env:NODE_OPTIONS = "--conditions=react-server"
     $savedPreference = $ErrorActionPreference
     $ErrorActionPreference = "Continue"
     try {
@@ -125,6 +127,7 @@ try {
         $acceptanceExit = $LASTEXITCODE
     } finally {
         $ErrorActionPreference = $savedPreference
+        $env:NODE_OPTIONS = $savedNodeOptions
     }
     if ($acceptanceExit -ne 0 -or $acceptance -match '"FAIL"') { throw "Runtime acceptance failed." }
     Write-DeploymentLog "RUNTIME_ACCEPTANCE PASS"
