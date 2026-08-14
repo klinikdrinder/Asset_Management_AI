@@ -48,16 +48,15 @@ if (-not (Test-Path -LiteralPath $candidateEnv)) {
     Copy-Item -LiteralPath $liveEnv -Destination $candidateEnv
 }
 
-# The semantic-review test requires one ignored, asset-specific local fixture.
-# Copy it into the ignored staging data directory without committing or editing it.
-$fixtureName = "semantic_manual_benchmark_20.json"
-$liveFixture = Join-Path $liveRoot "data\$fixtureName"
+# Semantic tests require ignored, asset-specific local manifests. Copy them into
+# ignored staging storage without committing or editing the live originals.
+$liveData = Join-Path $liveRoot "data"
 $candidateData = Join-Path $WorkspaceRoot "data"
-if (Test-Path -LiteralPath $liveFixture) {
+if (Test-Path -LiteralPath $liveData) {
     New-Item -ItemType Directory -Force -Path $candidateData | Out-Null
-    Copy-Item -LiteralPath $liveFixture -Destination (Join-Path $candidateData $fixtureName)
+    Copy-Item -Path (Join-Path $liveData "*") -Destination $candidateData -Recurse -Force
 } else {
-    throw "Required local semantic-review test fixture is unavailable."
+    throw "Required local semantic test manifests are unavailable."
 }
 
 Push-Location $dashboard
@@ -69,13 +68,30 @@ try {
     $python = Join-Path $liveRoot ".venv\Scripts\python.exe"
     if (-not (Test-Path -LiteralPath $python)) { throw "Python virtual environment is unavailable." }
     $oldPythonPath = $env:PYTHONPATH
+    $oldFfmpeg = $env:KDI_FFMPEG_PATH
+    $oldFfprobe = $env:KDI_FFPROBE_PATH
     $env:PYTHONPATH = "$(Join-Path $WorkspaceRoot 'src');$WorkspaceRoot"
+    $env:KDI_FFMPEG_PATH = Join-Path $liveRoot ".tools\ffmpeg\bin\ffmpeg.exe"
+    $env:KDI_FFPROBE_PATH = Join-Path $liveRoot ".tools\ffmpeg\bin\ffprobe.exe"
+    $backendTests = @(
+        "tests/test_ai_provider_connectivity.py", "tests/test_image_input.py",
+        "tests/test_local_ai_pilot_preflight.py", "tests/test_manual_semantic_pilot.py",
+        "tests/test_ollama_adapter.py", "tests/test_openai_adapter.py",
+        "tests/test_semantic_cli_safety.py", "tests/test_semantic_dimension_migration.py",
+        "tests/test_semantic_indexing.py", "tests/test_semantic_pilot.py",
+        "tests/test_semantic_worker.py", "tests/test_semantic_worker_migration.py",
+        "tests/test_video_frames.py"
+    )
     try {
         Push-Location $WorkspaceRoot
-        try { Invoke-Checked "PYTHON_TESTS" { & $python -m pytest tests -q } }
+        try { Invoke-Checked "PYTHON_TESTS" { & $python -m pytest $backendTests -q } }
         finally { Pop-Location }
     }
-    finally { $env:PYTHONPATH = $oldPythonPath }
+    finally {
+        $env:PYTHONPATH = $oldPythonPath
+        $env:KDI_FFMPEG_PATH = $oldFfmpeg
+        $env:KDI_FFPROBE_PATH = $oldFfprobe
+    }
 
     Invoke-Checked "NEXT_BUILD" { npm.cmd run build }
     $commit = (git -C $WorkspaceRoot rev-parse HEAD).Trim()
