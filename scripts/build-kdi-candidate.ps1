@@ -48,6 +48,18 @@ if (-not (Test-Path -LiteralPath $candidateEnv)) {
     Copy-Item -LiteralPath $liveEnv -Destination $candidateEnv
 }
 
+# The semantic-review test requires one ignored, asset-specific local fixture.
+# Copy it into the ignored staging data directory without committing or editing it.
+$fixtureName = "semantic_manual_benchmark_20.json"
+$liveFixture = Join-Path $liveRoot "data\$fixtureName"
+$candidateData = Join-Path $WorkspaceRoot "data"
+if (Test-Path -LiteralPath $liveFixture) {
+    New-Item -ItemType Directory -Force -Path $candidateData | Out-Null
+    Copy-Item -LiteralPath $liveFixture -Destination (Join-Path $candidateData $fixtureName)
+} else {
+    throw "Required local semantic-review test fixture is unavailable."
+}
+
 Push-Location $dashboard
 try {
     Invoke-Checked "NPM_CI" { npm.cmd ci }

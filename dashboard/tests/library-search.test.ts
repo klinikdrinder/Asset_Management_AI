@@ -131,7 +131,7 @@ test("dashboard env example documents only the query-embedding vars it actually 
 
 test("historical 1536 migration is unchanged and corrective migration standardizes vectors on 1024", () => {
   assert.equal(
-    createHash("sha256").update(migration).digest("hex").toUpperCase(),
+    createHash("sha256").update(migration.replace(/\r\n/g, "\n")).digest("hex").toUpperCase(),
     "BDDB7B390B54793AA6412B4DC2FAD60CF14B1EAED879C843EB1EE8979A2021D0",
   );
   assert.match(migration, /embedding public\.vector\(1536\) not null/);
