@@ -69,8 +69,12 @@ try {
     $python = Join-Path $liveRoot ".venv\Scripts\python.exe"
     if (-not (Test-Path -LiteralPath $python)) { throw "Python virtual environment is unavailable." }
     $oldPythonPath = $env:PYTHONPATH
-    $env:PYTHONPATH = Join-Path $WorkspaceRoot "src"
-    try { Invoke-Checked "PYTHON_TESTS" { & $python -m pytest (Join-Path $WorkspaceRoot "tests") -q } }
+    $env:PYTHONPATH = "$(Join-Path $WorkspaceRoot 'src');$WorkspaceRoot"
+    try {
+        Push-Location $WorkspaceRoot
+        try { Invoke-Checked "PYTHON_TESTS" { & $python -m pytest tests -q } }
+        finally { Pop-Location }
+    }
     finally { $env:PYTHONPATH = $oldPythonPath }
 
     Invoke-Checked "NEXT_BUILD" { npm.cmd run build }
