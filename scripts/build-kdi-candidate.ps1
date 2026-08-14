@@ -118,8 +118,15 @@ try {
     Write-DeploymentLog "STAGING_SMOKE PASS port=$StagingPort"
 
     $env:KDI_BASE_URL = "http://127.0.0.1:$StagingPort"
-    $acceptance = (& npm.cmd exec -- tsx scripts/runtime-acceptance.ts 2>&1 | Tee-Object -FilePath $logFile -Append) -join "`n"
-    if ($LASTEXITCODE -ne 0 -or $acceptance -match '"FAIL"') { throw "Runtime acceptance failed." }
+    $savedPreference = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        $acceptance = (& npm.cmd exec -- tsx scripts/runtime-acceptance.ts 2>&1 | Tee-Object -FilePath $logFile -Append) -join "`n"
+        $acceptanceExit = $LASTEXITCODE
+    } finally {
+        $ErrorActionPreference = $savedPreference
+    }
+    if ($acceptanceExit -ne 0 -or $acceptance -match '"FAIL"') { throw "Runtime acceptance failed." }
     Write-DeploymentLog "RUNTIME_ACCEPTANCE PASS"
 
     $manifest = [ordered]@{
