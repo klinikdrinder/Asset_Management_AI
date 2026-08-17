@@ -15,3 +15,11 @@ export async function profileForFirebaseUid(uid: string): Promise<DatabaseProfil
   if (error || !data) return null;
   return data as DatabaseProfile;
 }
+
+export async function profileForEmail(email: string): Promise<DatabaseProfile | null> {
+  const { data, error } = await createServiceClient().from("app_users")
+    .select("user_id,email,role,management_role,is_active,can_view_clinical,can_download,firebase_uid")
+    .eq("email", email.trim().toLowerCase()).maybeSingle();
+  if (error || !data) return null;
+  return data as DatabaseProfile;
+}

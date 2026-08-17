@@ -1,6 +1,6 @@
 import "server-only";
 import { redirect } from "next/navigation";
-import { profileForFirebaseUid } from "./lib/auth-profile";
+import { profileForEmail, profileForFirebaseUid } from "./lib/auth-profile";
 import { verifyFirebaseSession } from "./lib/firebase/session";
 import { createClient } from "./lib/supabase/server";
 import { getPreviewRole } from "./lib/dev-preview";
@@ -12,7 +12,12 @@ export type AppUser={userId:string;firebaseUid:string|null;email:string;displayN
 export class AuthenticationRequired extends Error{} export class AuthorizationDenied extends Error{}
 export async function getCurrentAppUser():Promise<AppUser|null>{
   if(await isLocalAuthBypassActive())return{userId:"local-auth-bypass",firebaseUid:null,email:"local@localhost.invalid",displayName:"Local KDI User",role:"ADMIN",managementRole:"super_admin",isActive:true,canViewClinical:true,canDownload:true};
-  const admin=await currentAdmin();if(admin)return{userId:admin.id,firebaseUid:null,email:admin.email,displayName:admin.fullName,role:"ADMIN",managementRole:"super_admin",isActive:admin.isActive,canViewClinical:true,canDownload:true};
+  const admin=await currentAdmin();
+  if(admin){
+    const p=await profileForEmail(admin.email);
+    if(!p||p.management_role!=="super_admin")return null;
+    return{userId:p.user_id,firebaseUid:p.firebase_uid,email:p.email,displayName:admin.fullName,role:p.role,managementRole:p.management_role,isActive:admin.isActive&&p.is_active,canViewClinical:p.can_view_clinical,canDownload:p.can_download};
+  }
   const preview=await getPreviewRole();if(preview)return{userId:"preview-only",firebaseUid:null,email:"preview@preview.invalid",displayName:"Frontend Preview User",role:preview,managementRole:preview==="ADMIN"?"admin":"user",isActive:true,canViewClinical:preview==="ADMIN",canDownload:preview==="ADMIN"};
   const identity=await verifyFirebaseSession();
   if(identity?.uid&&identity.email){const p=await profileForFirebaseUid(identity.uid);if(!p||p.email!==identity.email.trim().toLowerCase())return null;return{userId:p.user_id,firebaseUid:p.firebase_uid,email:p.email,displayName:p.email.split("@")[0].slice(0,40),role:p.role,managementRole:p.management_role,isActive:p.is_active,canViewClinical:p.can_view_clinical,canDownload:p.can_download}}
