@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { applicationOrigin, safeReturnPath } from "../../lib/supabase/config";
 import { copyResponseCookies, createRouteClient } from "../../lib/supabase/route-client";
 import { recordAuthDiagnostic, sanitizedAuthError } from "./diagnostics";
+import { createServiceClient } from "../../lib/supabase/service";
 
 export const dynamic = "force-dynamic";
 
@@ -33,14 +34,23 @@ export async function GET(request: NextRequest) {
   const { data: { user }, error: userError } = await supabase.auth.getUser();
   if (!user && !userError) return await callbackFailure(origin, "session_not_created", cookieResponse);
   const googleIdentity = user?.identities?.find((identity) => identity.provider === "google");
-  const verified = Boolean(user?.email_confirmed_at) && googleIdentity?.identity_data?.email_verified === true;
+  const isGoogleIdentity = Boolean(googleIdentity);
+  const verified = Boolean(user?.email_confirmed_at) && (!isGoogleIdentity || googleIdentity?.identity_data?.email_verified === true);
   if (userError || !user?.email || !verified) {
     console.warn("KDI_AUTH_CALLBACK", { reason: "user_lookup_failed" });
     await supabase.auth.signOut({ scope: "local" });
     return await callbackFailure(origin, "user_lookup_failed", cookieResponse, sanitizedAuthError(userError));
   }
+  if (next === "/auth/reset-password") {
+    return copyResponseCookies(cookieResponse, NextResponse.redirect(new URL(next, origin)));
+  }
+  if (next === "/auth/setup-password") {
+    const { data: invitation } = await createServiceClient().from("user_invitations").select("id").eq("auth_user_id", user.id).eq("status", "pending").maybeSingle();
+    if (!invitation) return await callbackFailure(origin, "profile_not_linked", cookieResponse);
+    return copyResponseCookies(cookieResponse, NextResponse.redirect(new URL(next, origin)));
+  }
   const { error: linkError } = await supabase.rpc("link_current_app_user");
-  const { data: profile } = await supabase.from("app_users").select("role,is_active").eq("user_id", user.id).maybeSingle();
+  const { data: profile } = await supabase.from("app_users").select("role,management_role,is_active").eq("user_id", user.id).maybeSingle();
   if (linkError || !profile) {
     await supabase.auth.signOut({ scope: "local" });
     return await callbackFailure(origin, "profile_not_linked", cookieResponse, sanitizedAuthError(linkError));
@@ -53,8 +63,9 @@ export async function GET(request: NextRequest) {
     await supabase.auth.signOut({ scope: "local" });
     return await callbackFailure(origin, "insufficient_role", cookieResponse);
   }
-  const requested = next.startsWith("/admin") && profile.role !== "ADMIN" ? "/library" : next;
-  const landing = requested === "/library" && profile.role === "ADMIN" ? "/admin" : requested;
+  const administrative = profile.management_role === "super_admin" || profile.management_role === "admin";
+  const requested = next.startsWith("/admin") && !administrative ? "/library" : next;
+  const landing = requested === "/library" && administrative ? "/admin" : requested;
   console.info("KDI_AUTH_CALLBACK", { reason: "success", role: profile.role });
   const result = copyResponseCookies(cookieResponse, NextResponse.redirect(new URL(landing, origin)));
   await recordAuthDiagnostic({ stage: "authorization", reason: "success_admin_or_staff", status: 307, cookieNames: result.cookies.getAll().map((x) => x.name), redirectPath: landing });
