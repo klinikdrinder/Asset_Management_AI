@@ -36,6 +36,13 @@ export async function authorizedMedia(assetId: string, operation: MediaOperation
   const user = download ? await requireDownloadPermission() : await requireStaffOrAdmin();
   const location = await resolveAssetMediaLocation(assetId, operation, fetchProductionAssetRow);
   if (!location) throw new Error("Not found");
+  if (download) {
+    const { data: allowed, error } = await createServiceClient().rpc("can_user_download_asset_for", {
+      p_user_id: user.userId,
+      p_asset_id: assetId,
+    });
+    if (error || allowed !== true) throw new AuthorizationDenied("Access denied");
+  }
   return { location, user };
 }
 
