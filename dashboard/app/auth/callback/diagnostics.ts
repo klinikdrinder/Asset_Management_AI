@@ -13,7 +13,7 @@ export function sanitizedAuthError(error: unknown) {
 }
 
 export async function recordAuthDiagnostic(entry: Diagnostic) {
-  const directory = process.env.KDI_AUTH_LOG_DIR || path.join("C:\\Users\\Public\\Asset_Management_AI\\dashboard", ".logs");
+  const directory = process.env.KDI_AUTH_LOG_DIR || path.join("D:\\Asset_Management_AI\\dashboard", ".logs");
   const line = JSON.stringify({ timestamp: new Date().toISOString(), stage: safe(entry.stage), reason: safe(entry.reason), status: entry.status, cookieNames: [...new Set(entry.cookieNames ?? [])].filter((name) => /^sb-[a-z0-9-]+-auth-token/.test(name)), errorCode: safe(entry.errorCode), errorClass: safe(entry.errorClass), errorMessage: safe(entry.errorMessage), redirectPath: entry.redirectPath?.startsWith("/") ? entry.redirectPath.split("?")[0] : "none" }) + "\n";
   try {
     const response = await fetch("http://127.0.0.1:3001/auth-callback", { method: "POST", headers: { "Content-Type": "application/json" }, body: line, signal: AbortSignal.timeout(1_000) });

@@ -21,7 +21,7 @@ export class FirebaseAdminCredentialError extends Error {
 type ResolverOptions = { env?: Record<string, string | undefined>; cwd?: string; fallbackPaths?: string[]; expectedProjectId?: string };
 type ServiceAccountShape = { type?: unknown; project_id?: unknown; client_email?: unknown; private_key?: unknown };
 
-const APPROVED_CREDENTIAL_PATH = "C:\\Users\\Public\\Asset_Management_AI\\.secrets\\firebase-admin.json";
+const APPROVED_CREDENTIAL_PATH = "D:\\Asset_Management_AI\\.secrets\\firebase-admin.json";
 
 function approvedCandidates(cwd: string) {
   return [APPROVED_CREDENTIAL_PATH, path.resolve(cwd, "..", ".secrets", "firebase-admin.json")];

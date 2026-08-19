@@ -5,12 +5,12 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import { FirebaseAdminCredentialError, createExplicitFirebaseAdminCredential, resolveFirebaseAdminCredentialPath } from "../app/lib/firebase/admin-credentials";
 
-const approved = "C:\\Users\\Public\\Asset_Management_AI\\.secrets\\firebase-admin.json";
+const approved = "D:\\Asset_Management_AI\\.secrets\\firebase-admin.json";
 const emptyEnv = {} as NodeJS.ProcessEnv;
 function safeCode(code: string) { return (error: unknown) => error instanceof FirebaseAdminCredentialError && error.code === code; }
 
 test("absolute configured credential resolves", () => assert.equal(resolveFirebaseAdminCredentialPath({ env: { GOOGLE_APPLICATION_CREDENTIALS: approved }, fallbackPaths: [] }), approved));
-test("relative configured credential resolves from cwd", () => assert.equal(resolveFirebaseAdminCredentialPath({ env: { GOOGLE_APPLICATION_CREDENTIALS: ".secrets\\firebase-admin.json" }, cwd: "C:\\Users\\Public\\Asset_Management_AI", fallbackPaths: [] }), approved));
+test("relative configured credential resolves from cwd", () => assert.equal(resolveFirebaseAdminCredentialPath({ env: { GOOGLE_APPLICATION_CREDENTIALS: ".secrets\\firebase-admin.json" }, cwd: "D:\\Asset_Management_AI", fallbackPaths: [] }), approved));
 test("approved fallback resolves without terminal environment", () => assert.equal(resolveFirebaseAdminCredentialPath({ env: emptyEnv }), approved));
 test("invalid configured path fails closed", () => assert.throws(() => resolveFirebaseAdminCredentialPath({ env: { GOOGLE_APPLICATION_CREDENTIALS: "missing.json" }, fallbackPaths: [approved] }), safeCode("firebase_admin_credentials_unavailable")));
 test("missing configured and fallback paths fail closed", () => assert.throws(() => resolveFirebaseAdminCredentialPath({ env: emptyEnv, fallbackPaths: [] }), safeCode("firebase_admin_credentials_unavailable")));

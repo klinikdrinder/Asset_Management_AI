@@ -19,7 +19,7 @@ from urllib.parse import parse_qsl, quote, urlencode, urlparse, urlunparse
 from dotenv import load_dotenv
 
 
-WORKSPACE = Path(r"C:\Users\Public\Asset_Management_AI")
+WORKSPACE = Path(r"D:\Asset_Management_AI")
 MIGRATION = Path("supabase/migrations/202607310004_fix_step10_exact_legacy_status_contract.sql")
 VERIFIER = Path("supabase/verification/verify_step10_legacy_status_mapping.sql")
 MARKER = "STEP_10_LEGACY_STATUS_MAPPING_VERIFIED"

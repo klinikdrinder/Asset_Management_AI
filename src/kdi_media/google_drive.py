@@ -393,7 +393,7 @@ def create_service_account_readonly_drive_service(
     """Create the permanent KDI Master reader from a service-account key."""
     configured = credentials_path or os.environ.get(
         "GOOGLE_DRIVE_SERVICE_ACCOUNT_CREDENTIALS_PATH",
-        r"C:\Users\Public\Asset_Management_AI\.secrets\kdi-media-reader.json",
+        r"D:\Asset_Management_AI\.secrets\kdi-media-reader.json",
     )
     path = Path(configured).expanduser()
     if not path.is_file():
