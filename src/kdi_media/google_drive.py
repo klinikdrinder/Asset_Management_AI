@@ -394,6 +394,23 @@ def create_service_account_readonly_drive_service(
     return create_service_account_drive_service(credentials_path, DRIVE_READONLY_SCOPES)
 
 
+# Repository root derived from this module's location
+# (src/kdi_media/google_drive.py -> src -> repository root), so credential
+# resolution stays valid regardless of where the project is cloned.
+_PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+
+def default_service_account_credentials_path() -> Path:
+    """Portable repository-relative default for the read-only Drive key.
+
+    Resolved from this module's location rather than a machine-specific absolute
+    path. An explicit ``credentials_path`` argument or the
+    ``GOOGLE_DRIVE_SERVICE_ACCOUNT_CREDENTIALS_PATH`` environment variable always
+    takes precedence over this default.
+    """
+    return _PROJECT_ROOT / ".secrets" / "kdi-media-reader.json"
+
+
 def create_service_account_write_drive_service(
     credentials_path: str | Path | None = None,
 ) -> Resource:
@@ -406,9 +423,10 @@ def create_service_account_drive_service(
     scopes: tuple[str, ...] = DRIVE_READONLY_SCOPES,
 ) -> Resource:
     """Create a non-interactive backend Drive service for explicit scopes."""
-    configured = credentials_path or os.environ.get(
-        "GOOGLE_DRIVE_SERVICE_ACCOUNT_CREDENTIALS_PATH",
-        r"D:\Asset_Management_AI\.secrets\kdi-media-reader.json",
+    configured = (
+        credentials_path
+        or os.environ.get("GOOGLE_DRIVE_SERVICE_ACCOUNT_CREDENTIALS_PATH")
+        or default_service_account_credentials_path()
     )
     path = Path(configured).expanduser()
     if not path.is_file():

@@ -21,10 +21,13 @@ export class FirebaseAdminCredentialError extends Error {
 type ResolverOptions = { env?: Record<string, string | undefined>; cwd?: string; fallbackPaths?: string[]; expectedProjectId?: string };
 type ServiceAccountShape = { type?: unknown; project_id?: unknown; client_email?: unknown; private_key?: unknown };
 
-const APPROVED_CREDENTIAL_PATH = "D:\\Asset_Management_AI\\.secrets\\firebase-admin.json";
-
+// Portable approved fallback: the repository-relative `.secrets` directory,
+// resolved from the running process's working directory (the dashboard package,
+// whose parent is the repository root). No machine-specific absolute path is
+// embedded, so the allowlisted lookup travels with the clone. An explicit
+// GOOGLE_APPLICATION_CREDENTIALS value still takes precedence in the resolver.
 function approvedCandidates(cwd: string) {
-  return [APPROVED_CREDENTIAL_PATH, path.resolve(cwd, "..", ".secrets", "firebase-admin.json")];
+  return [path.resolve(cwd, "..", ".secrets", "firebase-admin.json")];
 }
 
 function readableRegularFile(candidate: string) {

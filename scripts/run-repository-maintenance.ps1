@@ -1,7 +1,10 @@
 [CmdletBinding()]
 param([switch]$DryRun)
 $ErrorActionPreference = 'Stop'
-$root = 'D:\Asset_Management_AI'
+# Portable project root: derived from this script's own location (scripts\ ->
+# repository root) so the task works for any clone location on any machine.
+$scriptDir = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
+$root = Split-Path -Parent $scriptDir
 $python = Join-Path $root '.venv\Scripts\python.exe'
 $logRoot = Join-Path $root 'reports\semantic-search\rollout\phase-04\scheduler-logs'
 New-Item -ItemType Directory -Force -Path $logRoot | Out-Null
