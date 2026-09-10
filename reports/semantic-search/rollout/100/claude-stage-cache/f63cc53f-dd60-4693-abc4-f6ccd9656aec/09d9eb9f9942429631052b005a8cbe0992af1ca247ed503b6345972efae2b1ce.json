@@ -1,0 +1,170 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0555.MP4",
+      "evidence": [
+        "filename IMG_0555.MP4, duration 8.9s, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clinical scene",
+      "evidence": [
+        "one scene spanning 0-8.9s with two keyframes showing same setup"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short single scene, no cuts",
+      "evidence": [
+        "scene_index 0, start 0.0 to end 8.9 seconds"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and patient",
+      "evidence": [
+        "person in teal scrubs labeled 'DR LEW KAR' performing task; reclined person wearing eye shields is the patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in scrubs and mask; patient with glasses and eye shields",
+      "evidence": [
+        "practitioner wears teal scrub top, surgical mask, tinted safety glasses, gloves, smartwatch",
+        "patient is an older man with glasses, metal eye shields, hairnet, purple towel around neck"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial area including forehead, eyes, nose",
+      "evidence": [
+        "visible facial skin, forehead, nose, eye region covered by metal shields"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure using handheld device",
+      "evidence": [
+        "handheld probe emitting light near patient's forehead, no procedure name stated in text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device applied to forehead skin",
+      "evidence": [
+        "practitioner holds device tip against patient's forehead with visible light glow in both frames"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner treating reclined patient",
+      "evidence": [
+        "practitioner leaning over patient, one hand holding device, other hand steadying patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Skin appears wet/glossy with light glow at contact point",
+      "evidence": [
+        "visible sheen on patient's cheek and forehead, bright yellow-white light at device tip"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room",
+      "evidence": [
+        "plain light background, medical draping, hairnet, towel suggest clinic setting"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld vertical video",
+      "evidence": [
+        "vertical framing, close shot of face and hands, consistent camera angle across frames"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered, practitioner upper frame",
+      "evidence": [
+        "patient's face fills lower/center frame, practitioner positioned above performing action"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech content provided",
+      "evidence": [
+        "spoken_content list is empty"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text on scrub top reads 'DR LEW KAR'",
+      "evidence": [
+        "visible embroidered text 'DR LEW KAR' on practitioner's scrub top"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Possible promotional clinic content",
+      "evidence": [
+        "named practitioner branding visible but no explicit marketing text or caption supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts a facial skin treatment session",
+      "evidence": [
+        "visual sequence shows device application to face with protective gear in clinical setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a text-searchable layer for this data",
+      "evidence": []
+    }
+  ],
+  "narrative": "A practitioner in teal scrubs, safety glasses, and a mask uses a handheld laser device on the face of a reclined male patient wearing protective eye shields. The patient's skin appears wet/glistening under a bright light near the forehead area during the session.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "f63cc53f-dd60-4693-abc4-f6ccd9656aec",
+  "image_count": 2
+}

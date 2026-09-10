@@ -1,0 +1,176 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1383.MP4, scene 31",
+      "evidence": [
+        "asset_id 162b99eb-d4d9-4143-a857-deb1af98d3ff, filename IMG_1383.MP4, scene_index 31"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single keyframe from a 23-second clinical video",
+      "evidence": [
+        "technical.duration_seconds 23.09, keyframes_supplied 1, decoded_locally true"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short scene segment near start of clip (19.7-19.867s)",
+      "evidence": [
+        "start_seconds 19.7, end_seconds 19.867 within duration 23.09s"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining patient and gloved practitioner",
+      "evidence": [
+        "face of a person lying back fills most of frame",
+        "gloved hand and forearm with wristwatch entering frame from above holding an instrument"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up of face, eyebrow, and cheek skin",
+      "evidence": [
+        "visible eyebrow, nose, cheek and jaw skin texture",
+        "skin appears glossy/moist on cheek area"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial region: eye area, cheek, nose",
+      "evidence": [
+        "metal eye shield positioned over the eye",
+        "cheek, nose, and mouth visible in frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not specified in supplied text",
+      "evidence": [
+        "no readable_text_detected or spoken_content naming any procedure",
+        "gloves, eye shield, and a metal pen-like instrument alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instrument tip held against/near cheek skin",
+      "evidence": [
+        "metal pen-shaped device tip touching or hovering just above the cheek surface",
+        "gloved fingers stabilizing the patient's jaw/chin"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner administering care to reclining patient",
+      "evidence": [
+        "gloved hand actively positioning device near patient's face while other fingers brace the chin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Mild skin redness and glossy/wet appearance on cheek",
+      "evidence": [
+        "pinkish flush and shine visible across the cheek and jaw area in the keyframe"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room setup",
+      "evidence": [
+        "blue surgical drape covering surface",
+        "clear bowl with liquid in background",
+        "green cloth near bottom edge suggesting a treatment table setting"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme close-up, handheld point-of-view style shot",
+      "evidence": [
+        "tight framing on face and instrument filling most of the 1280x720 frame"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face oriented diagonally, instrument entering from right",
+      "evidence": [
+        "patient's face angled diagonally across frame with instrument and gloved hand occupying right side"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech content provided",
+      "evidence": [
+        "spoken_content is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators identifiable from this frame",
+      "evidence": [
+        "no logos, captions, or promotional overlays present in the keyframe or supplied text"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical care moment between practitioner and patient",
+      "evidence": [
+        "gloved hand applying an instrument to a reclining patient's face within a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A close-up video frame shows a person lying back with a metal eye shield over one eye while a gloved hand holds a metal pen-shaped device near their cheek. A blue surgical drape, a bowl, and a smartwatch on the practitioner's wrist are visible in the clinical setting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "162b99eb-d4d9-4143-a857-deb1af98d3ff",
+  "image_count": 1
+}

@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video asset, single scene, two sampled keyframes",
+      "evidence": [
+        "filename IMG_0911.MP4, duration 19.1s, 1280x720, h264, decoded locally with audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clinic-setting clip",
+      "evidence": [
+        "one canonical scene across the 19.1s video with two sampled keyframes showing a consistent setting and subjects"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, no cuts detected",
+      "evidence": [
+        "canonical_scenes=1, scene_index=0 covering the full duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining patient and a clinician attending them",
+      "evidence": [
+        "person reclining in chair with eyes closed; second person in blue scrubs with a lanyard/badge standing over them holding a device to the forehead area"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining man with short dark hair/beard; clinician in blue scrubs",
+      "evidence": [
+        "reclining individual has short dark hair, beard stubble, eyes closed; standing individual wears blue scrub top, dark hair tied back, wristwatch, bead bracelet, and a badge on a lanyard"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forehead, hairline, and facial area visible",
+      "evidence": [
+        "the reclining person's face, forehead, and hairline are visible and in contact with the handheld device"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "a handheld metallic device is held to the forehead/hairline but no procedure name is present in supplied text or on-screen; per-scene result also marks TREATMENT_PROCEDURE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applies handheld device to forehead",
+      "evidence": [
+        "standing person holds a small cylindrical metallic instrument in contact with the reclining person's forehead/hairline"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-patient interaction",
+      "evidence": [
+        "one person positioned above and actively working on the other person's forehead area, consistent with a caregiver-patient spatial relationship"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld instrument in contact with skin, no visible markings or lesions described",
+      "evidence": [
+        "metallic handheld device tip touching forehead/hairline skin surface visible in keyframe"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Indoor room, setting type unclear",
+      "evidence": [
+        "horizontal blinds and a treatment chair are visible but no signage or other detail confirms a specific facility type; per-scene result lists ENVIRONMENT as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static close-up vertical framing",
+      "evidence": [
+        "vertical frame tightly composed on the reclining person's face and the clinician's hands/torso, camera appears fixed"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject centered, clinician's hands and device in foreground",
+      "evidence": [
+        "reclining face fills the lower-center frame while the clinician's torso and hands occupy the upper portion, device positioned centrally at the forehead"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, but transcript_state is NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended usage not determinable",
+      "evidence": [
+        "no captions, branding, or usage context supplied; per-scene result lists MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinic treatment moment with patient reclined",
+      "evidence": [
+        "consistent visual narrative of a clinician performing a hands-on procedure on a reclined, eyes-closed patient in a clinic-like room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual synthesis",
+      "evidence": [
+        "per-scene result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE for this asset type"
+      ]
+    }
+  ],
+  "narrative": "A person reclines in a treatment chair with eyes closed while a clinician in blue scrubs holds a small metallic handheld device against their forehead/hairline area. The room appears to be a clinic space with horizontal blinds visible behind them, and a folded towel and drapes are arranged nearby.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "b79c659c-c5fe-438c-8c46-10d1542b3301",
+  "image_count": 1
+}

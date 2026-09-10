@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scene 0 from supplied MP4 asset",
+      "evidence": [
+        "Supplied metadata identifies asset_id 1f5a0adb-10eb-4988-ade0-a013c93e95c4, filename IMG_1937.MP4, scene_index 0, and two representative keyframes."
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up treatment-room interaction",
+      "evidence": [
+        "Both frames show one person reclining while another operates a handheld device near the person's cheek."
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene with similar framing",
+      "evidence": [
+        "Metadata defines one scene from 0.0 to 42.033 seconds, and both keyframes show the same people and ongoing activity."
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and reclining recipient",
+      "evidence": [
+        "The standing person wears protective equipment and handles the device, while the other person reclines with eye shields."
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked operator and eye-shielded recipient",
+      "evidence": [
+        "The operator has dark tied-back hair, coral clothing, a blue mask, green eyewear, and a wristwatch; the reclining person has dark hair and white eye shields."
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face and cheek treatment area visible",
+      "evidence": [
+        "The reclining person's face, nose, mouth, chin, and cheek are visible, with the device positioned beside the cheek."
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure cannot be identified",
+      "evidence": [
+        "A handheld device is applied near the cheek, but neither the supplied text nor visible imagery names a procedure."
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held against cheek while face is steadied",
+      "evidence": [
+        "The operator holds the device at the reclining person's cheek and uses the other hand to steady the face."
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Care-provider interaction",
+      "evidence": [
+        "One person actively attends to the reclining person using equipment in a treatment setting."
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small visible facial blemishes",
+      "evidence": [
+        "Several small spots or blemishes are visible on the reclining person's cheek and chin; no diagnosis is established visually."
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Plain indoor treatment room",
+      "evidence": [
+        "The scene contains a treatment bed or chair, blue covering, overhead equipment, a light wall, and a blanket."
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up video framing",
+      "evidence": [
+        "Both portrait-oriented keyframes closely frame the operator, recipient, and handheld device."
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operator above, recipient diagonally reclined",
+      "evidence": [
+        "The operator occupies the upper-left and central frame, while the recipient extends diagonally across the lower half and the device enters from the right."
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content supplied",
+      "evidence": [
+        "The supplied spoken_content array is empty, although metadata indicates an audio stream is present."
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable visible text detected",
+      "evidence": [
+        "The supplied readable_text_detected array is empty, and no legible text appears in the keyframes."
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended promotional use cannot be determined",
+      "evidence": [
+        "The frames document a treatment-room interaction but contain no visible branding, offer, call to action, or stated usage context."
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A practitioner attends to a reclining person's cheek",
+      "evidence": [
+        "Across both keyframes, a protected operator positions a handheld device at the cheek of a person wearing eye shields."
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "practitioner, reclining person, cheek device, eye shields, treatment room",
+      "evidence": [
+        "These searchable concepts directly correspond to the people, equipment, anatomy, and setting visible in both keyframes."
+      ]
+    }
+  ],
+  "narrative": "Two representative frames show a masked practitioner in coral clothing and green protective eyewear holding a handheld device against the cheek of a reclined person wearing eye shields. The person lies under a textured blanket on a blue-covered support in a plain treatment-room setting.",
+  "provider": "codex_cli",
+  "model": "codex-default",
+  "asset_id": "1f5a0adb-10eb-4988-ade0-a013c93e95c4",
+  "image_count": 2
+}

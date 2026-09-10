@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset IMG_0952.MP4",
+      "evidence": [
+        "Asset metadata filename IMG_0952.MP4, duration 9.9s, 1280x720"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall purpose of clip unclear beyond single scene",
+      "evidence": [
+        "Only one scene/keyframe set provided, no broader context given"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene of device application",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved practitioner and reclining patient",
+      "evidence": [
+        "Gloved hands operating handpiece on person's face who lies passively with eyes closed"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient with dark hair, earring, eyes closed",
+      "evidence": [
+        "Visible dark hair, small stud earring, closed eyes, gel on cheek/jaw"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, jawline, cheek, neck visible",
+      "evidence": [
+        "Image shows lower face, jawline, cheek and neck area being treated"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not confirmed by text",
+      "evidence": [
+        "Device labeled Ultraformer L4-4.5 visible but no named clinical procedure provided in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handpiece pressed against jaw with gel",
+      "evidence": [
+        "Gloved hand holding and pressing device onto gel-covered jawline"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner treating patient directly",
+      "evidence": [
+        "Physical contact between gloved hand/device and patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Ultrasound gel and device markings visible",
+      "evidence": [
+        "Clear gel layer on cheek/jaw, device labeled 'ULTRAFORMER L4-4.5'"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting likely clinical but unconfirmed",
+      "evidence": [
+        "Blue disposable bed cover and cable suggest clinic, but no explicit environment text provided"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld shot from above",
+      "evidence": [
+        "Tight framing on face and device from an elevated angle"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device and hands dominate upper frame, face lower frame",
+      "evidence": [
+        "Handpiece and gloved hands occupy top half, patient's face occupies bottom half of image"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected in audio",
+      "evidence": [
+        "transcript_state: NO_SPEECH",
+        "audio_state: AUDIO_PRESENT but no speech content"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device text 'ULTRAFORMER L4-4.5' visible",
+      "evidence": [
+        "OCR_observations: 4",
+        "Visible label on handpiece reading 'ULTRAFORMER' and 'L4-4.5'"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Potential marketing use unclear",
+      "evidence": [
+        "No text or context indicating marketing intent supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose not specified",
+      "evidence": [
+        "No additional context or captions provided beyond visual scene"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this content type",
+      "evidence": [
+        "Per-scene result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A gloved practitioner holds an Ultraformer L4-4.5 handpiece against a reclining person's jawline and cheek, where ultrasound gel is visible on the skin. The device is connected by a cable, and the scene takes place on a treatment bed suggesting a clinical setting.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "caf35202-8b6c-4c6b-85a9-9f556eac346b",
+  "image_count": 1
+}

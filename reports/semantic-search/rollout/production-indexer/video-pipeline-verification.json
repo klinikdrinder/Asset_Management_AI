@@ -1,0 +1,106 @@
+{
+  "assets_prepared": 100,
+  "target": {
+    "ordinal": 47,
+    "filename": "IMG_1387.MP4",
+    "scenes": 5,
+    "keyframes": 5
+  },
+  "scene_pipeline": {
+    "multi_scene_videos": 1,
+    "total_scenes": 104,
+    "total_keyframes": 150,
+    "every_scene_has_keyframes": true,
+    "keyframe_files_present": true,
+    "pass": true
+  },
+  "audio": {
+    "audio_bearing": 100,
+    "transcript_states": {
+      "NO_SPEECH": 58,
+      "MEANINGFUL_SPEECH": 3,
+      "NO_MEANINGFUL_SPEECH": 39
+    },
+    "pass": true
+  },
+  "ocr": {
+    "evaluated": 100,
+    "observations": 151,
+    "pass": true
+  },
+  "video_keyframe_to_claude": {
+    "images_transmitted": 1,
+    "raw_video_transmitted": false,
+    "model": "claude-sonnet-5",
+    "pass": true
+  },
+  "eighteen_layer_validation": {
+    "layers_returned": 18,
+    "all_ids_present": true,
+    "states": {
+      "ASSET_IDENTITY_PROVENANCE": "OBSERVED",
+      "GLOBAL_ASSET_UNDERSTANDING": "OBSERVED",
+      "TEMPORAL_SCENE_STRUCTURE": "OBSERVED",
+      "PEOPLE_ROLES": "OBSERVED",
+      "PERSON_APPEARANCE": "OBSERVED",
+      "ANATOMY": "OBSERVED",
+      "TREATMENT_PROCEDURE": "UNKNOWN",
+      "ACTIONS_EVENTS": "OBSERVED",
+      "RELATIONSHIPS": "OBSERVED",
+      "CLINICAL_VISUAL_OBSERVATIONS": "OBSERVED",
+      "ENVIRONMENT": "OBSERVED",
+      "CINEMATOGRAPHY": "OBSERVED",
+      "COMPOSITION": "OBSERVED",
+      "SPEECH_TRANSCRIPT_AUDIO": "FALSE",
+      "OCR_VISIBLE_TEXT": "FALSE",
+      "MARKETING_CONTENT_USAGE": "UNKNOWN",
+      "SEMANTIC_NARRATIVE": "OBSERVED",
+      "SEARCH_EMBEDDINGS": "NOT_APPLICABLE"
+    },
+    "clinical_offenders": [],
+    "pass": true
+  },
+  "persistence": {
+    "layer_rows": 18,
+    "assertion_rows": 15,
+    "evidence_rows": 15,
+    "assertions_without_evidence": 0,
+    "document_status": "READY",
+    "deterministic_ids": true,
+    "pass": true
+  },
+  "e5": {
+    "dimensions": 384,
+    "model": "intfloat/multilingual-e5-small",
+    "model_version": "hf-main-pinned-runtime-v1",
+    "provider": "sentence_transformers",
+    "pass": true
+  },
+  "openclip": {
+    "dimensions": 512,
+    "model": "ViT-B-32",
+    "model_version": "laion2b_s34b_b79k",
+    "provider": "open_clip",
+    "pass": true
+  },
+  "embedding_families_separate": true,
+  "resume": {
+    "local_checkpoint_assets": 100,
+    "deterministic_repeat_ids_identical": true,
+    "semantic_checkpoint": true,
+    "pass": true
+  },
+  "claude_usage": [
+    {
+      "asset_id": "2b889768-fcef-49a5-92e8-e07d2fb4523d",
+      "request_type": "verify:scene:0",
+      "model": "claude-sonnet-5",
+      "images": 1,
+      "attempt": 1,
+      "latency_ms": 16292.3,
+      "input_tokens": 2205,
+      "output_tokens": 1729,
+      "request_id": "req_011Cehs8254drbgU3orjfFvB"
+    }
+  ]
+}

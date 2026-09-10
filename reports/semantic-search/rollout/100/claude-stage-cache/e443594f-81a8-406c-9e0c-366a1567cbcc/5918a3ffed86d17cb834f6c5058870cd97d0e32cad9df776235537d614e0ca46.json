@@ -1,0 +1,175 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_1145.MP4",
+      "evidence": [
+        "Asset metadata gives filename IMG_1145.MP4, duration 16.23s, 1280x720, h264, one canonical scene with two keyframes"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short close-up clip of a person in scrub attire indoors",
+      "evidence": [
+        "Two keyframes show a single continuous close-up shot of a person in a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene spanning the full 16.2s clip",
+      "evidence": [
+        "canonical_scenes: 1, scene_index 0 covers the whole asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One person wearing scrub attire",
+      "evidence": [
+        "Person visible wearing a grey V-neck scrub top and blue disposable cap, suggesting clinical staff role"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person with short dark hair, earring, blue cap, grey scrub top",
+      "evidence": [
+        "Image shows a person with visible facial skin texture, an earring in left ear, a blue disposable hair cap, and a grey V-neck scrub top"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, ear, neck, and scalp area visible under cap",
+      "evidence": [
+        "Close-up framing shows face, ear, neck, and hairline/scalp partially covered by the cap"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "No text or scene evidence names any specific clinical procedure; only clothing (scrub top, cap) is visible",
+        "Per-scene layer result explicitly marks TREATMENT_PROCEDURE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person turns head between frames",
+      "evidence": [
+        "First keyframe shows person looking to the side, second shows person facing more toward camera"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Only one person present",
+      "evidence": [
+        "Only a single individual appears in both keyframes, no interpersonal relationship to assess",
+        "Per-scene layer result marks RELATIONSHIPS as NOT_APPLICABLE"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial skin texture with visible pores and marks",
+      "evidence": [
+        "Close-up of face shows visible skin texture, pores, and small marks on the cheek area"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor room with white wall, red stripes, and door",
+      "evidence": [
+        "Background shows a plain white wall with red vertical stripes and a doorway, consistent with a clinic interior"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static close-up handheld-style framing",
+      "evidence": [
+        "Both keyframes show tight close-up framing on the head/shoulders with consistent camera distance and angle"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject centered/off-center in vertical frame",
+      "evidence": [
+        "Portrait-oriented framing with the person's face occupying the majority of the frame in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech detected",
+      "evidence": [
+        "audio_stream_present true and audio_state AUDIO_PRESENT, but transcript_state is NO_SPEECH",
+        "Per-scene layer result marks SPEECH_TRANSCRIPT_AUDIO as FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations count of 0",
+        "Per-scene layer result marks OCR_VISIBLE_TEXT as FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No indication of marketing intent or usage",
+      "evidence": [
+        "No text, branding, or contextual metadata indicates promotional use; per-scene result marks this UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical staff member glancing around in an indoor setting",
+      "evidence": [
+        "Two keyframes depict a person in scrub attire and a cap turning their head within a clinical-looking room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a text/embedding-indexable layer for this synthesis",
+      "evidence": [
+        "Per-scene layer result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A young person wearing a blue disposable surgical-style cap and a grey V-neck scrub top is shown in close-up, first looking to the side and then toward the camera. The background shows a plain white wall with red vertical stripes and a doorway, consistent with an indoor clinical setting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "e443594f-81a8-406c-9e0c-366a1567cbcc",
+  "image_count": 1
+}

@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1237.MP4, 1280x720, 18.9s",
+      "evidence": [
+        "filename IMG_1237.MP4",
+        "technical metadata: duration 18.9s, 1280x720, 30fps, h264, audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical setting video",
+      "evidence": [
+        "1 canonical scene, 2 canonical keyframes",
+        "scene narrative describes clinician and reclined man with equipment"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous 18.9s scene",
+      "evidence": [
+        "canonical_scenes: 1",
+        "scene_index 0 spans the asset duration of 18.9 seconds"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined male client",
+      "evidence": [
+        "masked clinician in navy scrubs with gloves positioned behind chair",
+        "man reclined with eyes closed in treatment chair"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scrubs, mask, gloves; man in Adidas shirt",
+      "evidence": [
+        "clinician wears navy scrub top, surgical mask, white gloves, smartwatch, hair tied up",
+        "man wears white Adidas t-shirt, has facial hair, eyes closed"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Head and scalp region visible",
+      "evidence": [
+        "man's head, face, and scalp visible in frame near clinician's hands and equipment"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "gloves, handheld device, and scalp contact alone do not establish a named procedure",
+        "scene-level TREATMENT_PROCEDURE recorded as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician operates handheld device near scalp",
+      "evidence": [
+        "clinician's gloved hand holds a device positioned at the man's hairline/scalp",
+        "man remains reclined and still with eyes closed"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician attending to reclined client",
+      "evidence": [
+        "clinician stands directly behind and over the reclined man, hands engaged at his head"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "PPE and equipment with illuminated panels present",
+      "evidence": [
+        "surgical mask and gloves worn by clinician",
+        "large equipment unit with red-lit panels positioned over the man's head",
+        "blue disposable draping/headrest cover"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not determinable beyond room visuals",
+      "evidence": [
+        "scene-level ENVIRONMENT recorded as UNKNOWN despite visible blinds and chairs"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld vertical video framing",
+      "evidence": [
+        "vertical 720-height frame with two sampled keyframes suggesting minimal camera movement across the scene"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and client framed together, off-center",
+      "evidence": [
+        "clinician positioned upper-left, reclined man occupies right and lower frame with equipment overhead"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech detected",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT",
+        "transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE recorded as UNKNOWN with no supplied context on usage or intent"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE recorded as UNKNOWN beyond the literal depicted actions"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/audio evaluation",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS recorded as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked clinician in navy scrubs, gloves, and a smartwatch handles a device near the scalp of a man reclined in a treatment chair with a blue draped headrest. Large dark equipment with red-lit panels is positioned above the man's head as he lies with eyes closed, wearing a white Adidas shirt, in a room with horizontal window blinds.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "f29e992c-8072-4b9a-b4c7-fddfc6efbcd9",
+  "image_count": 1
+}

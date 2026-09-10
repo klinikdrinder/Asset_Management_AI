@@ -1,0 +1,532 @@
+{
+  "status": "PASS",
+  "processor_version": "kdi_audio_intelligence_v1",
+  "configuration_version": "kdi_audio_intelligence_config_v1",
+  "configuration_fingerprint": "c90b3d1c7de34af15a93037b4e47229766306f2046de04fbcb89dea87396ba57",
+  "video_count": 8,
+  "videos_with_speech": 4,
+  "videos_without_speech": 2,
+  "videos_unknown": 2,
+  "total_chunks": 14,
+  "accepted_searchable_chunks": 3,
+  "review_required_chunks": 11,
+  "scene_linked_chunks": 14,
+  "event_linked_chunks": 6,
+  "embedding_count": 0,
+  "embedding_coverage_percent": 0.0,
+  "reconciliation": {
+    "SUPPORTS_VISUAL": 0,
+    "ADDS_NEW_CONTEXT": 0,
+    "CONFLICTS_WITH_VISUAL": 0,
+    "UNRELATED": 4,
+    "UNCERTAIN": 4
+  },
+  "provider_calls": 0,
+  "cost": "LOCAL_NO_API_COST_AFTER_FAILED_AUTHORIZED_OPENAI_ATTEMPT",
+  "videos": [
+    {
+      "asset_id": "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+      "filename": "IMG_0531.MP4",
+      "speech": {
+        "speech_present": "UNKNOWN",
+        "segments": [
+          {
+            "start_time": 2.94,
+            "end_time": 3.27,
+            "state": "SPEECH_CANDIDATE"
+          }
+        ],
+        "speech_duration_seconds": 0.33,
+        "speech_ratio": 0.067485,
+        "confidence": 0.875,
+        "confidence_source": "HEURISTIC",
+        "threshold_dbfs": -30.86,
+        "noise_floor_dbfs": -38.86,
+        "peak_dbfs": -24.12,
+        "reason": "ENERGY_CANDIDATE_WITHOUT_TRANSCRIPT"
+      },
+      "language": {
+        "primary": "en",
+        "secondary": null,
+        "mixed": false,
+        "confidence": 0.34396055340766907,
+        "confidence_source": "LOCAL_WHISPER_LANGUAGE_PROBABILITY"
+      },
+      "chunks": 0,
+      "accepted_searchable_chunks": 0,
+      "speakers": {
+        "anonymous_speaker_count": 0,
+        "speaker_ids": [],
+        "roles_assigned": 0,
+        "unknown_roles": 0,
+        "diarization_status": "UNAVAILABLE",
+        "diarization_confidence": null,
+        "voice_biometric_identification": "NONE"
+      },
+      "topics": [],
+      "performance": {
+        "audio_extraction_seconds": 0.14550270000472665,
+        "vad_seconds": 0.04468269999779295,
+        "transcription_seconds": 2.753143000009004,
+        "diarization_seconds": 0.0,
+        "embedding_seconds": 0.0,
+        "total_seconds": 3.3564333000103943,
+        "provider_calls": 0,
+        "retries": 0,
+        "cost": "LOCAL_NO_API_COST"
+      },
+      "review": "REVIEW_NEEDED"
+    },
+    {
+      "asset_id": "babae120-9372-42ad-b535-02a3276ea2be",
+      "filename": "IMG_1238.MP4",
+      "speech": {
+        "speech_present": "YES",
+        "segments": [
+          {
+            "start_time": 5.13,
+            "end_time": 5.49,
+            "state": "SPEECH_CANDIDATE"
+          }
+        ],
+        "speech_duration_seconds": 0.36,
+        "speech_ratio": 0.009324,
+        "confidence": 0.99,
+        "confidence_source": "HEURISTIC",
+        "threshold_dbfs": -37.7,
+        "noise_floor_dbfs": -45.7,
+        "peak_dbfs": -27.4
+      },
+      "language": {
+        "primary": "en",
+        "secondary": null,
+        "mixed": false,
+        "confidence": 0.5340517163276672,
+        "confidence_source": "LOCAL_WHISPER_LANGUAGE_PROBABILITY"
+      },
+      "chunks": 3,
+      "accepted_searchable_chunks": 0,
+      "speakers": {
+        "anonymous_speaker_count": 1,
+        "speaker_ids": [
+          "UNKNOWN_SPEAKER"
+        ],
+        "roles_assigned": 0,
+        "unknown_roles": 1,
+        "diarization_status": "UNAVAILABLE",
+        "diarization_confidence": null,
+        "voice_biometric_identification": "NONE"
+      },
+      "topics": [],
+      "performance": {
+        "audio_extraction_seconds": 0.08876189999864437,
+        "vad_seconds": 0.211670899996534,
+        "transcription_seconds": 5.736865099999704,
+        "diarization_seconds": 0.0,
+        "embedding_seconds": 0.0,
+        "total_seconds": 6.228559900002438,
+        "provider_calls": 0,
+        "retries": 0,
+        "cost": "LOCAL_NO_API_COST"
+      },
+      "review": "REVIEW_NEEDED"
+    },
+    {
+      "asset_id": "c86344e9-5b32-4d86-9205-67952d508651",
+      "filename": "IMG_3429.MP4",
+      "speech": {
+        "speech_present": "YES",
+        "segments": [
+          {
+            "start_time": 2.16,
+            "end_time": 2.34,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 2.73,
+            "end_time": 3.42,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 4.23,
+            "end_time": 4.41,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 9.9,
+            "end_time": 10.59,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 11.25,
+            "end_time": 12.21,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 13.41,
+            "end_time": 13.59,
+            "state": "SPEECH_CANDIDATE"
+          }
+        ],
+        "speech_duration_seconds": 2.88,
+        "speech_ratio": 0.139535,
+        "confidence": 0.99,
+        "confidence_source": "HEURISTIC",
+        "threshold_dbfs": -41.87,
+        "noise_floor_dbfs": -49.87,
+        "peak_dbfs": -26.16
+      },
+      "language": {
+        "primary": "ms",
+        "secondary": null,
+        "mixed": false,
+        "confidence": 0.8950081467628479,
+        "confidence_source": "LOCAL_WHISPER_LANGUAGE_PROBABILITY"
+      },
+      "chunks": 1,
+      "accepted_searchable_chunks": 0,
+      "speakers": {
+        "anonymous_speaker_count": 1,
+        "speaker_ids": [
+          "UNKNOWN_SPEAKER"
+        ],
+        "roles_assigned": 0,
+        "unknown_roles": 1,
+        "diarization_status": "UNAVAILABLE",
+        "diarization_confidence": null,
+        "voice_biometric_identification": "NONE"
+      },
+      "topics": [],
+      "performance": {
+        "audio_extraction_seconds": 0.0733263000001898,
+        "vad_seconds": 0.1253100999892922,
+        "transcription_seconds": 19.248428899998544,
+        "diarization_seconds": 0.0,
+        "embedding_seconds": 0.0,
+        "total_seconds": 19.58550600000308,
+        "provider_calls": 0,
+        "retries": 0,
+        "cost": "LOCAL_NO_API_COST"
+      },
+      "review": "REVIEW_NEEDED"
+    },
+    {
+      "asset_id": "444da390-0117-4380-8c87-d7c32f2903ff",
+      "filename": "IMG_9871.MOV",
+      "speech": {
+        "speech_present": "NO",
+        "segments": [],
+        "speech_duration_seconds": 0,
+        "speech_ratio": 0.0,
+        "confidence": 0.9,
+        "confidence_source": "HEURISTIC",
+        "threshold_dbfs": -46.81,
+        "noise_floor_dbfs": -54.81,
+        "peak_dbfs": -44.0
+      },
+      "language": {
+        "primary": "UNKNOWN",
+        "secondary": null,
+        "mixed": false,
+        "confidence": null,
+        "confidence_source": null
+      },
+      "chunks": 0,
+      "accepted_searchable_chunks": 0,
+      "speakers": {
+        "anonymous_speaker_count": 0,
+        "speaker_ids": [],
+        "roles_assigned": 0,
+        "unknown_roles": 0,
+        "diarization_status": "UNAVAILABLE",
+        "diarization_confidence": null,
+        "voice_biometric_identification": "NONE"
+      },
+      "topics": [],
+      "performance": {
+        "audio_extraction_seconds": 0.13621250000142027,
+        "vad_seconds": 0.03607850000844337,
+        "transcription_seconds": 0.0,
+        "diarization_seconds": 0.0,
+        "embedding_seconds": 0.0,
+        "total_seconds": 0.35160999999789055,
+        "provider_calls": 0,
+        "retries": 0,
+        "cost": "LOCAL_NO_API_COST"
+      },
+      "review": "PASS"
+    },
+    {
+      "asset_id": "64712c6a-c02c-46e9-9f73-16786109468b",
+      "filename": "IMG_0493.MP4",
+      "speech": {
+        "speech_present": "NO",
+        "segments": [],
+        "speech_duration_seconds": 0,
+        "speech_ratio": 0.0,
+        "confidence": 0.9,
+        "confidence_source": "HEURISTIC",
+        "threshold_dbfs": -35.99,
+        "noise_floor_dbfs": -43.99,
+        "peak_dbfs": -37.79
+      },
+      "language": {
+        "primary": "UNKNOWN",
+        "secondary": null,
+        "mixed": false,
+        "confidence": null,
+        "confidence_source": null
+      },
+      "chunks": 0,
+      "accepted_searchable_chunks": 0,
+      "speakers": {
+        "anonymous_speaker_count": 0,
+        "speaker_ids": [],
+        "roles_assigned": 0,
+        "unknown_roles": 0,
+        "diarization_status": "UNAVAILABLE",
+        "diarization_confidence": null,
+        "voice_biometric_identification": "NONE"
+      },
+      "topics": [],
+      "performance": {
+        "audio_extraction_seconds": 0.11452639999333769,
+        "vad_seconds": 0.017489200006821193,
+        "transcription_seconds": 0.0,
+        "diarization_seconds": 0.0,
+        "embedding_seconds": 0.0,
+        "total_seconds": 0.2198342999909073,
+        "provider_calls": 0,
+        "retries": 0,
+        "cost": "LOCAL_NO_API_COST"
+      },
+      "review": "PASS"
+    },
+    {
+      "asset_id": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+      "filename": "IMG_1148.MP4",
+      "speech": {
+        "speech_present": "YES",
+        "segments": [
+          {
+            "start_time": 5.13,
+            "end_time": 5.37,
+            "state": "SPEECH_CANDIDATE"
+          }
+        ],
+        "speech_duration_seconds": 0.24,
+        "speech_ratio": 0.03125,
+        "confidence": 0.897,
+        "confidence_source": "HEURISTIC",
+        "threshold_dbfs": -37.03,
+        "noise_floor_dbfs": -45.03,
+        "peak_dbfs": -29.62
+      },
+      "language": {
+        "primary": "ms",
+        "secondary": null,
+        "mixed": false,
+        "confidence": 0.3786967694759369,
+        "confidence_source": "LOCAL_WHISPER_LANGUAGE_PROBABILITY"
+      },
+      "chunks": 1,
+      "accepted_searchable_chunks": 0,
+      "speakers": {
+        "anonymous_speaker_count": 1,
+        "speaker_ids": [
+          "UNKNOWN_SPEAKER"
+        ],
+        "roles_assigned": 0,
+        "unknown_roles": 1,
+        "diarization_status": "UNAVAILABLE",
+        "diarization_confidence": null,
+        "voice_biometric_identification": "NONE"
+      },
+      "topics": [],
+      "performance": {
+        "audio_extraction_seconds": 0.07556920000934042,
+        "vad_seconds": 0.03689170000143349,
+        "transcription_seconds": 5.498239799999283,
+        "diarization_seconds": 0.0,
+        "embedding_seconds": 0.0,
+        "total_seconds": 5.706342899997253,
+        "provider_calls": 0,
+        "retries": 0,
+        "cost": "LOCAL_NO_API_COST"
+      },
+      "review": "REVIEW_NEEDED"
+    },
+    {
+      "asset_id": "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+      "filename": "IMG_2963.MP4",
+      "speech": {
+        "speech_present": "UNKNOWN",
+        "segments": [
+          {
+            "start_time": 0.3,
+            "end_time": 0.51,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 6.81,
+            "end_time": 6.99,
+            "state": "SPEECH_CANDIDATE"
+          }
+        ],
+        "speech_duration_seconds": 0.39,
+        "speech_ratio": 0.030233,
+        "confidence": 0.99,
+        "confidence_source": "HEURISTIC",
+        "threshold_dbfs": -38.46,
+        "noise_floor_dbfs": -46.46,
+        "peak_dbfs": -25.34,
+        "reason": "ENERGY_CANDIDATE_WITHOUT_TRANSCRIPT"
+      },
+      "language": {
+        "primary": "en",
+        "secondary": null,
+        "mixed": false,
+        "confidence": 0.34396055340766907,
+        "confidence_source": "LOCAL_WHISPER_LANGUAGE_PROBABILITY"
+      },
+      "chunks": 0,
+      "accepted_searchable_chunks": 0,
+      "speakers": {
+        "anonymous_speaker_count": 0,
+        "speaker_ids": [],
+        "roles_assigned": 0,
+        "unknown_roles": 0,
+        "diarization_status": "UNAVAILABLE",
+        "diarization_confidence": null,
+        "voice_biometric_identification": "NONE"
+      },
+      "topics": [],
+      "performance": {
+        "audio_extraction_seconds": 0.0608358000026783,
+        "vad_seconds": 0.058450200012885034,
+        "transcription_seconds": 2.4251090999896405,
+        "diarization_seconds": 0.0,
+        "embedding_seconds": 0.0,
+        "total_seconds": 2.7113127000047825,
+        "provider_calls": 0,
+        "retries": 0,
+        "cost": "LOCAL_NO_API_COST"
+      },
+      "review": "REVIEW_NEEDED"
+    },
+    {
+      "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+      "filename": "IMG_1160.MP4",
+      "speech": {
+        "speech_present": "YES",
+        "segments": [
+          {
+            "start_time": 0.0,
+            "end_time": 0.78,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 4.26,
+            "end_time": 4.44,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 4.86,
+            "end_time": 5.1,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 5.52,
+            "end_time": 5.73,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 6.12,
+            "end_time": 6.33,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 7.08,
+            "end_time": 7.32,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 7.77,
+            "end_time": 7.98,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 8.4,
+            "end_time": 8.7,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 12.42,
+            "end_time": 12.63,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 13.2,
+            "end_time": 13.89,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 14.79,
+            "end_time": 15.3,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 19.89,
+            "end_time": 21.06,
+            "state": "SPEECH_CANDIDATE"
+          },
+          {
+            "start_time": 21.93,
+            "end_time": 22.5,
+            "state": "SPEECH_CANDIDATE"
+          }
+        ],
+        "speech_duration_seconds": 5.52,
+        "speech_ratio": 0.233503,
+        "confidence": 0.99,
+        "confidence_source": "HEURISTIC",
+        "threshold_dbfs": -39.33,
+        "noise_floor_dbfs": -47.33,
+        "peak_dbfs": -23.57
+      },
+      "language": {
+        "primary": "ms",
+        "secondary": null,
+        "mixed": false,
+        "confidence": 0.49863681197166443,
+        "confidence_source": "LOCAL_WHISPER_LANGUAGE_PROBABILITY"
+      },
+      "chunks": 9,
+      "accepted_searchable_chunks": 3,
+      "speakers": {
+        "anonymous_speaker_count": 1,
+        "speaker_ids": [
+          "UNKNOWN_SPEAKER"
+        ],
+        "roles_assigned": 0,
+        "unknown_roles": 1,
+        "diarization_status": "UNAVAILABLE",
+        "diarization_confidence": null,
+        "voice_biometric_identification": "NONE"
+      },
+      "topics": [],
+      "performance": {
+        "audio_extraction_seconds": 0.07664329999533948,
+        "vad_seconds": 0.12364200000592973,
+        "transcription_seconds": 7.594021600001724,
+        "diarization_seconds": 0.0,
+        "embedding_seconds": 0.0,
+        "total_seconds": 7.922511500000837,
+        "provider_calls": 0,
+        "retries": 0,
+        "cost": "LOCAL_NO_API_COST"
+      },
+      "review": "REVIEW_NEEDED"
+    }
+  ]
+}

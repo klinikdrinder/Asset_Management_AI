@@ -1,0 +1,162 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene vertical clinical video, IMG_3408.MP4",
+      "evidence": [
+        "Asset metadata: 19.83s, 1280x720, h264, filename IMG_3408.MP4",
+        "One canonical scene with two sampled keyframes"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall asset context not determinable",
+      "evidence": []
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two sampled frames",
+      "evidence": [
+        "canonical_scenes: 1 with scene_index 0 spanning both sampled keyframes",
+        "Hand position on patient's forehead changes between the two frames, indicating progression within the same scene"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific roles of the two people not confirmed",
+      "evidence": []
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining patient and gloved practitioner in dark scrub and glasses",
+      "evidence": [
+        "Patient shown with eyes closed, headband, wrapped in a blue towel",
+        "Practitioner wears safety glasses, a mask, and a black scrub with embroidered name, and disposable gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, cheek, jaw, and neck visible",
+      "evidence": [
+        "Close-up of patient's face showing cheek, chin, jaw, and neck with visible skin marks/blemishes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed",
+      "evidence": []
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner holds a syringe near patient's cheek/jaw across frames",
+      "evidence": [
+        "Frame 1 shows syringe held near the cheek/chin",
+        "Frame 2 shows practitioner's other hand on patient's forehead while syringe remains near the jaw"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned over reclining patient in caregiver-patient arrangement",
+      "evidence": [
+        "Gloved practitioner leans over the patient who lies back on a treatment bed"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Visible skin blemishes/marks on patient's face",
+      "evidence": [
+        "Small red marks and spots visible across patient's cheeks and forehead in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting details not confirmed",
+      "evidence": []
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical handheld-style framing",
+      "evidence": [
+        "Vertical 1280x720 close-up composition centered on patient's face and practitioner's hands"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face centered with practitioner's hands and instrument in foreground",
+      "evidence": [
+        "Patient's face fills the lower/central frame while practitioner's gloved hands and syringe occupy the left foreground"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_state: AUDIO_PRESENT"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Name embroidered on practitioner's scrub",
+      "evidence": [
+        "Text 'DR ASHRUL IKHMAL' visible on the practitioner's black scrub",
+        "ocr_observations: 6 recorded for this asset"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended usage not determinable",
+      "evidence": []
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative intent not determinable",
+      "evidence": []
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this content",
+      "evidence": []
+    }
+  ],
+  "narrative": "A patient reclines with eyes closed on a treatment bed while a gloved practitioner, in a black scrub embroidered 'DR ASHRUL IKHMAL', holds a syringe near her lower cheek and jaw. Across the two keyframes the practitioner's other gloved hand shifts to rest on the patient's forehead while the syringe stays positioned near her jaw in what appears to be a clinical treatment room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "c9ac15e4-0695-4f68-b4a3-2072c501ecfa",
+  "image_count": 1
+}

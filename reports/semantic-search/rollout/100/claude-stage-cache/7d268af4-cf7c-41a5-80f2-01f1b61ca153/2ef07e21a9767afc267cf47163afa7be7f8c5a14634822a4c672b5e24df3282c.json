@@ -1,0 +1,183 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 asset with technical metadata",
+      "evidence": [
+        "filename IMG_1936.MP4",
+        "technical metadata: 11.33s duration, 1280x720, h264 codec, 30fps, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall asset purpose unclear",
+      "evidence": [
+        "scene-level result marked GLOBAL_ASSET_UNDERSTANDING as UNKNOWN with no further contextual text supplied"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, ~11.3s",
+      "evidence": [
+        "canonical_scenes: 1 spanning the full 11.333333s duration",
+        "2 canonical keyframes sampled from that one scene"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles of the two people not confirmed",
+      "evidence": [
+        "scene-level PEOPLE_ROLES marked UNKNOWN",
+        "images show two individuals (one reclined, one leaning over) but no supplied text confirms patient/practitioner roles"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two people, distinct attire visible",
+      "evidence": [
+        "reclined woman with dark hair wearing white protective goggles",
+        "standing person with dark hair tied back, pearl earring, pink scrub top, surgical mask, green wraparound safety glasses"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face and forehead visible",
+      "evidence": [
+        "reclined person's face, forehead, eyebrow, and cheek area are visible and are the focus of the handheld device"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in evidence",
+      "evidence": [
+        "supplied text does not name any specific clinical procedure",
+        "handheld device, safety glasses, and clinical setting alone do not establish a named procedure per instructions"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held near reclined person's face",
+      "evidence": [
+        "standing person's arm extends a handheld device toward the reclined person's forehead/face area"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned over reclined person",
+      "evidence": [
+        "standing person leans directly over the reclined person, arm and device oriented toward her face, indicating a direct spatial/interactive relationship"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective eyewear and clinical attire present",
+      "evidence": [
+        "patient wears white protective eye shields",
+        "practitioner wears green laser-style safety glasses and a surgical mask",
+        "reclined position on a bed with blue drape"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting specifics not confirmed",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite a visible wall and cart/cabinet, insufficient detail to confirm facility identity or room type"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up framing",
+      "evidence": [
+        "vertical (portrait) aspect video, 1280x720 source",
+        "close camera distance emphasizing faces and hands of both subjects"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subjects fill frame, close composition",
+      "evidence": [
+        "reclined person's face centered lower frame, practitioner's torso/arm fills upper frame",
+        "tight cropping with background wall and equipment cart at edges"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT",
+        "transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 0",
+        "no legible text visible in the two keyframes"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not indicated",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN",
+        "no supplied text or on-screen branding indicating promotional intent"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context unclear",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN with no additional context provided"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a content-descriptive layer",
+      "evidence": [
+        "scene-level result marked SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A woman lies reclined on a treatment bed wearing white protective eyewear while a practitioner in pink scrubs, a surgical mask, and green laser safety glasses leans over her, holding a handheld device near her forehead/face area. The two sampled keyframes show a close vertical-framed clinical interaction against a light-colored wall with a cart or cabinet visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "7d268af4-cf7c-41a5-80f2-01f1b61ca153",
+  "image_count": 1
+}

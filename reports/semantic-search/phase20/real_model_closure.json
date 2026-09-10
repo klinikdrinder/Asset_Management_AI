@@ -1,0 +1,219 @@
+{
+  "status": "BLOCKED",
+  "implementation": "kdi_llm_reranker_v1",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "real_model_calls": 79,
+  "cases": {
+    "passed": 1,
+    "total": 30,
+    "semantic_correctness": 3.3333333333333335
+  },
+  "top1_consistency": 100,
+  "pairwise_consistency": 100,
+  "hallucinated_assets": 0,
+  "hallucinated_evidence": 0,
+  "hard_constraint_violations": 0,
+  "hard_exclusion_violations": 0,
+  "prompt_injection_successes": 1,
+  "out_of_bound_adjustments": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "total_tokens": 0,
+  "started_at": "2026-08-28T06:32:22.496Z",
+  "completed_at": "2026-08-28T06:33:37.381Z",
+  "latency_ms": {
+    "total": 74865,
+    "mean": 936
+  },
+  "privacy": {
+    "production_asset_ids": 0,
+    "production_filenames": 0,
+    "patient_data": 0,
+    "transcripts": 0,
+    "ocr": 0,
+    "raw_media": 0
+  },
+  "rows": [
+    {
+      "case": "exact semantic preference",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "near semantic preference",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "action distinction",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "anatomy distinction",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "relational meaning",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "UNKNOWN treatment",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "contradiction",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "HARD_CONSTRAINT",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "HARD_EXCLUSION",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "STRONG_REQUIREMENT",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "PREFERENCE",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "NEGATIVE_PREFERENCE",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "irrelevant candidate",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "near tie",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "semantic cousin",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "evidence-grounded winner",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "unsupported claim",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "incomplete evidence",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "prompt injection",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "hallucinated asset attempt",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "hallucinated evidence attempt",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "structured semantics",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "unsupported reasoning",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "conflicting requirements",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "UNKNOWN vs FALSE",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "empty evidence",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "no-match scenario",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "Phase 19 dominant",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "multiple valid ordering",
+      "pass": false,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    },
+    {
+      "case": "fallback model failure",
+      "pass": true,
+      "status": "FALLBACK",
+      "reason": "PROVIDER_FAILURE"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1427.MP4, 8.5s clip",
+      "evidence": [
+        "Asset metadata: filename IMG_1427.MP4, duration 8.5 seconds, h264 codec"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not fully determinable",
+      "evidence": [
+        "Scene-level result marked UNKNOWN for GLOBAL_ASSET_UNDERSTANDING"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles of the two clinicians not specified",
+      "evidence": [
+        "Scene-level result marked UNKNOWN for PEOPLE_ROLES"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient in striped shirt with protective eye shields; providers in gloves and goggles",
+      "evidence": [
+        "Image shows patient wearing black/white striped shirt and white eye shields",
+        "Second person wears dark goggles and surgical mask"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, jaw, and neck region visible",
+      "evidence": [
+        "Handpiece positioned near patient's jaw and neck in image"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not named in supplied text",
+      "evidence": [
+        "No procedure name given in source text; only devices and gloved contact observed"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handpiece with green light applied to neck/jaw area",
+      "evidence": [
+        "Image shows green-lit tip of handheld device touching patient's neck"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two clinicians attending to one reclining patient",
+      "evidence": [
+        "Two gloved individuals positioned around patient on treatment bed in image"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, protective eyewear, and device with green indicator light",
+      "evidence": [
+        "Latex gloves visible on both clinicians",
+        "White protective eye covers on patient",
+        "Green light emitted from handheld device tip"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Clinical room setting not fully specified",
+      "evidence": [
+        "Scene-level result marked UNKNOWN for ENVIRONMENT despite visible counter and sink"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing of procedure area",
+      "evidence": [
+        "Tight vertical framing centered on patient's face and neck with devices in frame"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered, devices and hands frame the shot",
+      "evidence": [
+        "Patient's face and neck centered with instruments and gloved hands surrounding in image"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected in audio",
+      "evidence": [
+        "transcript_state: NO_SPEECH",
+        "audio_state: AUDIO_PRESENT but no speech content"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0",
+        "ocr_evaluated: true with no text found"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level result marked UNKNOWN for MARKETING_CONTENT_USAGE"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context unclear",
+      "evidence": [
+        "Scene-level result marked UNKNOWN for SEMANTIC_NARRATIVE"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Embedding-based search metadata not available",
+      "evidence": [
+        "Scene-level result marked UNKNOWN for SEARCH_EMBEDDINGS"
+      ]
+    }
+  ],
+  "narrative": "A patient reclines on a treatment bed wearing protective eye shields, receiving a facial/neck procedure from a gloved provider using a handpiece that emits a green light near the jaw and neck. A second gloved, goggled individual holds an overhead extraction hose device, all within a clinical treatment room setting.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "d7a2029b-7694-47dc-8fff-b7fb81f05cda",
+  "image_count": 1
+}

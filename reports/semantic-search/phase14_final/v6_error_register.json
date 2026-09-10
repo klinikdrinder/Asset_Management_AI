@@ -1,0 +1,483 @@
+{
+  "total": 2,
+  "parser_errors": 0,
+  "benchmark_gold_errors": 2,
+  "errors": [
+    {
+      "category": "YEAR",
+      "query": "Material taken in 2017",
+      "expected": {
+        "non_result_numbers": [
+          2017
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2017
+          }
+        }
+      },
+      "case_id": "QP14V6-042",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "evaluation": {
+        "passed": false,
+        "differences": [
+          {
+            "field": "media_type",
+            "expected": "VIDEO",
+            "actual": "ANY",
+            "critical": true
+          }
+        ],
+        "false_result_count": 0,
+        "missed_explicit_result_count": 0,
+        "schema_valid": true,
+        "actual": {
+          "count": {
+            "values": [],
+            "requested": null
+          },
+          "media_type": "ANY",
+          "extensions": [],
+          "numeric": {
+            "occurrences": [
+              {
+                "value": 2017,
+                "raw_text": "2017",
+                "numeric_type": "YEAR",
+                "status": "MATCHED",
+                "rule_id": "YEAR_TEMPORAL_CONTEXT",
+                "start_char": 18,
+                "end_char": 22,
+                "unit": "year",
+                "approximate": false,
+                "operator": "EXACT",
+                "min_value": null,
+                "max_value": null,
+                "inclusive_min": null,
+                "inclusive_max": null
+              }
+            ],
+            "age_exact": null,
+            "age_min": null,
+            "age_max": null,
+            "age_decade": null,
+            "graft_count_exact": null,
+            "graft_count_min": null,
+            "graft_count_max": null,
+            "graft_count_inclusive_min": null,
+            "graft_count_inclusive_max": null,
+            "age_inclusive_min": null,
+            "age_inclusive_max": null,
+            "treatment_session_count": null,
+            "session_ordinal": null,
+            "currency_amount": null
+          },
+          "temporal": {
+            "year": {
+              "operator": "EXACT",
+              "value": 2017
+            }
+          },
+          "positive": [],
+          "negative": [],
+          "modalities": [
+            "VISUAL"
+          ],
+          "conflicts": [],
+          "unresolved": true,
+          "schema_valid": true
+        }
+      },
+      "plan": {
+        "query_schema_version": "kdi_query_schema_v1_1",
+        "intent": "FIND_MEDIA",
+        "original_query": "Material taken in 2017",
+        "result_request": {
+          "requested_count": null,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": null,
+          "normalization_status": "NOT_FOUND",
+          "extraction": null,
+          "requested_count_occurrences": []
+        },
+        "media": {
+          "media_type": "ANY",
+          "media_type_extraction": null,
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [],
+          "negative_concepts": [],
+          "unresolved_concepts": [
+            {
+              "concept_type": "UNRESOLVED",
+              "raw_text": "Material taken",
+              "canonical_code": null,
+              "normalization_status": "UNRESOLVED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 0,
+              "end_char": 15,
+              "modality": "ANY",
+              "surface_strength": "NEUTRAL",
+              "clause_id": 0,
+              "polarity": "POSITIVE",
+              "marker": null
+            },
+            {
+              "concept_type": "UNRESOLVED",
+              "raw_text": "in 2017",
+              "canonical_code": null,
+              "normalization_status": "UNRESOLVED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 15,
+              "end_char": 22,
+              "modality": "ANY",
+              "surface_strength": "NEUTRAL",
+              "clause_id": 0,
+              "polarity": "POSITIVE",
+              "marker": null
+            }
+          ]
+        },
+        "temporal": {
+          "year": {
+            "value": 2017,
+            "raw_text": "2017",
+            "status": "MATCHED"
+          }
+        },
+        "numeric": {
+          "occurrences": [
+            {
+              "value": 2017,
+              "raw_text": "2017",
+              "numeric_type": "YEAR",
+              "status": "MATCHED",
+              "rule_id": "YEAR_TEMPORAL_CONTEXT",
+              "start_char": 18,
+              "end_char": 22,
+              "unit": "year",
+              "approximate": false,
+              "operator": "EXACT",
+              "min_value": null,
+              "max_value": null,
+              "inclusive_min": null,
+              "inclusive_max": null
+            }
+          ],
+          "age_exact": null,
+          "age_min": null,
+          "age_max": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "graft_count_min": null,
+          "graft_count_max": null,
+          "graft_count_inclusive_min": null,
+          "graft_count_inclusive_max": null,
+          "age_inclusive_min": null,
+          "age_inclusive_max": null,
+          "treatment_session_count": null,
+          "session_ordinal": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": null,
+          "text_semantic_query": null,
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v2",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v2",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v2",
+          "query_schema_version": "kdi_query_schema_v1_1",
+          "configuration_version": "kdi_query_parser_config_v2",
+          "configuration_fingerprint": "41afaf5b0c5b70e787347c66735dae8fc85f7afbe5a47d6889c03a194528f719",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en",
+          "semantic_provider_model_version": "v2",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "UNKNOWN",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "2bf153bcb801f80235a8f9946d6618b84e50fe195201edf617e15e700626127b"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "latency_ms": 2.516900000000021
+    },
+    {
+      "category": "YEAR",
+      "query": "Material taken in 2021",
+      "expected": {
+        "non_result_numbers": [
+          2021
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2021
+          }
+        }
+      },
+      "case_id": "QP14V6-046",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "evaluation": {
+        "passed": false,
+        "differences": [
+          {
+            "field": "media_type",
+            "expected": "VIDEO",
+            "actual": "ANY",
+            "critical": true
+          }
+        ],
+        "false_result_count": 0,
+        "missed_explicit_result_count": 0,
+        "schema_valid": true,
+        "actual": {
+          "count": {
+            "values": [],
+            "requested": null
+          },
+          "media_type": "ANY",
+          "extensions": [],
+          "numeric": {
+            "occurrences": [
+              {
+                "value": 2021,
+                "raw_text": "2021",
+                "numeric_type": "YEAR",
+                "status": "MATCHED",
+                "rule_id": "YEAR_TEMPORAL_CONTEXT",
+                "start_char": 18,
+                "end_char": 22,
+                "unit": "year",
+                "approximate": false,
+                "operator": "EXACT",
+                "min_value": null,
+                "max_value": null,
+                "inclusive_min": null,
+                "inclusive_max": null
+              }
+            ],
+            "age_exact": null,
+            "age_min": null,
+            "age_max": null,
+            "age_decade": null,
+            "graft_count_exact": null,
+            "graft_count_min": null,
+            "graft_count_max": null,
+            "graft_count_inclusive_min": null,
+            "graft_count_inclusive_max": null,
+            "age_inclusive_min": null,
+            "age_inclusive_max": null,
+            "treatment_session_count": null,
+            "session_ordinal": null,
+            "currency_amount": null
+          },
+          "temporal": {
+            "year": {
+              "operator": "EXACT",
+              "value": 2021
+            }
+          },
+          "positive": [],
+          "negative": [],
+          "modalities": [
+            "VISUAL"
+          ],
+          "conflicts": [],
+          "unresolved": true,
+          "schema_valid": true
+        }
+      },
+      "plan": {
+        "query_schema_version": "kdi_query_schema_v1_1",
+        "intent": "FIND_MEDIA",
+        "original_query": "Material taken in 2021",
+        "result_request": {
+          "requested_count": null,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": null,
+          "normalization_status": "NOT_FOUND",
+          "extraction": null,
+          "requested_count_occurrences": []
+        },
+        "media": {
+          "media_type": "ANY",
+          "media_type_extraction": null,
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [],
+          "negative_concepts": [],
+          "unresolved_concepts": [
+            {
+              "concept_type": "UNRESOLVED",
+              "raw_text": "Material taken",
+              "canonical_code": null,
+              "normalization_status": "UNRESOLVED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 0,
+              "end_char": 15,
+              "modality": "ANY",
+              "surface_strength": "NEUTRAL",
+              "clause_id": 0,
+              "polarity": "POSITIVE",
+              "marker": null
+            },
+            {
+              "concept_type": "UNRESOLVED",
+              "raw_text": "in 2021",
+              "canonical_code": null,
+              "normalization_status": "UNRESOLVED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 15,
+              "end_char": 22,
+              "modality": "ANY",
+              "surface_strength": "NEUTRAL",
+              "clause_id": 0,
+              "polarity": "POSITIVE",
+              "marker": null
+            }
+          ]
+        },
+        "temporal": {
+          "year": {
+            "value": 2021,
+            "raw_text": "2021",
+            "status": "MATCHED"
+          }
+        },
+        "numeric": {
+          "occurrences": [
+            {
+              "value": 2021,
+              "raw_text": "2021",
+              "numeric_type": "YEAR",
+              "status": "MATCHED",
+              "rule_id": "YEAR_TEMPORAL_CONTEXT",
+              "start_char": 18,
+              "end_char": 22,
+              "unit": "year",
+              "approximate": false,
+              "operator": "EXACT",
+              "min_value": null,
+              "max_value": null,
+              "inclusive_min": null,
+              "inclusive_max": null
+            }
+          ],
+          "age_exact": null,
+          "age_min": null,
+          "age_max": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "graft_count_min": null,
+          "graft_count_max": null,
+          "graft_count_inclusive_min": null,
+          "graft_count_inclusive_max": null,
+          "age_inclusive_min": null,
+          "age_inclusive_max": null,
+          "treatment_session_count": null,
+          "session_ordinal": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": null,
+          "text_semantic_query": null,
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v2",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v2",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v2",
+          "query_schema_version": "kdi_query_schema_v1_1",
+          "configuration_version": "kdi_query_parser_config_v2",
+          "configuration_fingerprint": "41afaf5b0c5b70e787347c66735dae8fc85f7afbe5a47d6889c03a194528f719",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en",
+          "semantic_provider_model_version": "v2",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "UNKNOWN",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "e40924675306c6f13552d7e9b45ddd793c2b6e40f50c877d4fe7d53f5247c8ab"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "latency_ms": 1.5540000000000305
+    }
+  ]
+}

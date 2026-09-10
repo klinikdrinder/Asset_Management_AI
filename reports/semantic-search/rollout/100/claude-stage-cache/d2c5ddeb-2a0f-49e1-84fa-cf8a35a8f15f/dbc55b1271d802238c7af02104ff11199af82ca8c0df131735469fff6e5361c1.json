@@ -1,0 +1,169 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0966.MP4",
+      "evidence": [
+        "filename IMG_0966.MP4, duration 16.23s, 1280x720 h264 with audio stream, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical treatment clip",
+      "evidence": [
+        "scene_results indicates 1 canonical scene across 2 keyframes showing a consistent setup"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, static setup moment",
+      "evidence": [
+        "canonical_scenes: 1; narrative notes 'a static setup moment with no visible motion of the device against the skin'"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined client and gloved practitioner",
+      "evidence": [
+        "image shows a woman reclined with eyes closed and a masked, gloved person holding a device near her face"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman with dark hair, gel on face/neck, pearl earring",
+      "evidence": [
+        "image shows dark eyebrows/hair, closed eyes, clear gel coating face and neck, pearl stud earring visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, neck, and ear visible",
+      "evidence": [
+        "image shows face, jawline, neck, and ear region coated in gel"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed",
+      "evidence": [
+        "per-scene layer marks TREATMENT_PROCEDURE as UNKNOWN; only a device label 'ULTRAFORMER MF2' and gel/gloves are visible, which do not by themselves establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device positioned near cheek",
+      "evidence": [
+        "image shows gloved hand holding the device close to the reclined woman's cheek"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Practitioner-client relationship unclear beyond proximity",
+      "evidence": [
+        "per-scene layer marks RELATIONSHIPS as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clear gel coating skin, gloved contact",
+      "evidence": [
+        "image shows glossy clear gel covering face and neck and white gloves in contact near the face"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "per-scene layer marks ENVIRONMENT as UNKNOWN despite a plain wall and blue headrest visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing",
+      "evidence": [
+        "image is a tight vertical close-up on the face/device area"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face centered, device entering frame from right",
+      "evidence": [
+        "image shows subject's face centered with device and practitioner's arm entering from upper right"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device text 'ULTRAFORMER MF2' visible",
+      "evidence": [
+        "ocr_observations: 2; image shows text 'ULTRAFORMER' and 'MF2' printed on the handheld device"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "per-scene layer marks MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "per-scene layer marks SEMANTIC_NARRATIVE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this medium",
+      "evidence": []
+    }
+  ],
+  "narrative": "A woman lies reclined on a treatment bed with her eyes closed, her face and neck coated in a clear gel, while a gloved practitioner holds a handheld device labeled 'ULTRAFORMER MF2' near her cheek. The two sampled keyframes show a static setup moment with no visible motion of the device against the skin.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "d2c5ddeb-2a0f-49e1-84fa-cf8a35a8f15f",
+  "image_count": 1
+}

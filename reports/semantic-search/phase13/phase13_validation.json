@@ -1,0 +1,232 @@
+{
+  "generated_at": "2026-08-25T02:20:47.894Z",
+  "status": "PASS",
+  "versions": {
+    "query_parser_version": "kdi_query_parser_v1",
+    "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+    "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+    "query_schema_version": "kdi_query_schema_v1",
+    "configuration_version": "kdi_query_parser_config_v1",
+    "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391"
+  },
+  "gates": {
+    "versions": true,
+    "configuration_fingerprint": true,
+    "audit": true,
+    "numeric_bug_prevented": true,
+    "occurrence_numeric": true,
+    "schema": true,
+    "status_model": true,
+    "deterministic": true,
+    "semantic": true,
+    "provider_smoke": true,
+    "provider_boundary": true,
+    "malformed_contained": true,
+    "degraded_valid": true,
+    "language": true,
+    "fingerprint": true,
+    "immutability": true,
+    "retrieval_text": true,
+    "no_hard_filters": true,
+    "no_filename_hardcoding": true,
+    "no_retrieval": true,
+    "no_phase14": true,
+    "no_frontend": true,
+    "no_human": true,
+    "database_preserved": true,
+    "embeddings_preserved": true,
+    "security": true
+  },
+  "provider": {
+    "generated_at": "2026-08-25T02:20:47.894Z",
+    "selected": {
+      "provider": "kdi_local_ontology_interpreter",
+      "model": "kdi_semantic_lexicon_en_ms",
+      "model_version": "v1",
+      "local": true,
+      "production_capable": true,
+      "privacy": "query remains in process; no network transmission",
+      "write_boundary": "allowlisted semantic fields only"
+    },
+    "available_runtime": {
+      "openai_configured": false,
+      "ollama_configured": true,
+      "ollama_live": false,
+      "local_ontology_interpreter": true
+    },
+    "smoke": {
+      "status": "PASS",
+      "latency_ms": 0.38999999999998636,
+      "input_tokens": "UNAVAILABLE",
+      "output_tokens": "UNAVAILABLE",
+      "estimated_cost": 0
+    },
+    "fallback": "No silent fallback. Provider failure returns schema-valid UNAVAILABLE plan."
+  },
+  "latency": {
+    "generated_at": "2026-08-25T02:20:47.894Z",
+    "samples": 15,
+    "deterministic": {
+      "minimum_ms": 0.018700000000080763,
+      "median_ms": 0.06709999999998217,
+      "maximum_ms": 2.830000000000041,
+      "mean_ms": 0.26190666666664886
+    },
+    "semantic_provider": {
+      "minimum_ms": 0.0805000000000291,
+      "median_ms": 0.10809999999992215,
+      "maximum_ms": 2.1648999999999887,
+      "mean_ms": 0.26423333333333027
+    },
+    "schema_validation_and_normalization": {
+      "minimum_ms": 0,
+      "median_ms": 0.15300000000002,
+      "maximum_ms": 0.8283999999998741,
+      "mean_ms": 0.18725999999999962
+    },
+    "total": {
+      "minimum_ms": 0.22289999999998145,
+      "median_ms": 0.3549999999999045,
+      "maximum_ms": 3.095899999999915,
+      "mean_ms": 0.5828066666666397
+    },
+    "retrieval": "NOT_APPLICABLE"
+  },
+  "cost": {
+    "provider_calls": 19,
+    "input_tokens": "UNAVAILABLE",
+    "output_tokens": "UNAVAILABLE",
+    "external_cost": 0
+  },
+  "database": {
+    "migration": "NOT_REQUIRED",
+    "dry_run": "NOT_REQUIRED",
+    "preservation": [
+      {
+        "table": "assets",
+        "before": 881,
+        "after": 881,
+        "delta": 0
+      },
+      {
+        "table": "semantic_assertions",
+        "before": 333,
+        "after": 333,
+        "delta": 0
+      },
+      {
+        "table": "semantic_assertion_evidence",
+        "before": 270,
+        "after": 270,
+        "delta": 0
+      },
+      {
+        "table": "asset_scenes",
+        "before": 312,
+        "after": 312,
+        "delta": 0
+      },
+      {
+        "table": "asset_events",
+        "before": 22,
+        "after": 22,
+        "delta": 0
+      },
+      {
+        "table": "asset_keyframes",
+        "before": 345,
+        "after": 345,
+        "delta": 0
+      },
+      {
+        "table": "asset_transcript_chunks",
+        "before": 14,
+        "after": 14,
+        "delta": 0
+      },
+      {
+        "table": "ocr_observations",
+        "before": 19,
+        "after": 19,
+        "delta": 0
+      },
+      {
+        "table": "semantic_narratives",
+        "before": 37,
+        "after": 37,
+        "delta": 0
+      },
+      {
+        "table": "search_document_builds",
+        "before": 55,
+        "after": 55,
+        "delta": 0
+      },
+      {
+        "table": "asset_search_concepts_v2",
+        "before": 270,
+        "after": 270,
+        "delta": 0
+      },
+      {
+        "table": "semantic_embeddings",
+        "before": 106,
+        "after": 106,
+        "delta": 0
+      },
+      {
+        "table": "semantic_review_decisions",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      {
+        "table": "gold_standard_assets",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      {
+        "table": "search_sessions",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      {
+        "table": "search_queries",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      {
+        "table": "search_results",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      {
+        "table": "search_feedback",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      }
+    ]
+  },
+  "security": {
+    "generated_at": "2026-08-25T02:20:47.894Z",
+    "status": "PASS",
+    "trusted_metadata_backend_owned": true,
+    "arbitrary_user_plan_write_denied": true,
+    "write_test": {
+      "denied": true,
+      "status": 400,
+      "detail": "{\"message\":\"Failed to run sql query: ERROR:  42501: permission denied for table search_queries\\nHINT:  Grant the required privileges to the current role with: GRANT INSERT ON public.search_queries TO authenticated;\\n\"}"
+    },
+    "rls_weakened": false,
+    "retrieval_performed": false,
+    "ranking_performed": false
+  },
+  "phase14_started": false,
+  "frontend_work": false,
+  "human_gold": "DEFERRED"
+}

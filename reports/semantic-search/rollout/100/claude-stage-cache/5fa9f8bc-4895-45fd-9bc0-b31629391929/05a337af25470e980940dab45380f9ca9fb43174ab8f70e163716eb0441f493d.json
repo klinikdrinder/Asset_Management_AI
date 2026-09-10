@@ -1,0 +1,185 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_9745.MP4, 8.1s clip",
+      "evidence": [
+        "filename IMG_9745.MP4",
+        "duration_seconds 8.133333",
+        "decoded_locally true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical scene of a facial procedure",
+      "evidence": [
+        "single scene showing clinician working near patient's face",
+        "keyframes depict instrument near nose/lip area"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes 1",
+        "canonical_keyframes 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles not explicitly confirmed",
+      "evidence": [
+        "scene layer PEOPLE_ROLES marked UNKNOWN despite visible clinician/patient distinction"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in purple scrubs, mask, gloves; patient with dark hair reclined",
+      "evidence": [
+        "mask labeled M-CURE",
+        "purple scrub top",
+        "patient with long dark hair and gold earring"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's nose, upper lip, and eyebrow area visible",
+      "evidence": [
+        "gauze pad near patient's nose/eyebrow",
+        "instrument near upper lip"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not identifiable from visuals",
+      "evidence": [
+        "no named procedure in supplied text",
+        "instrument and gloves alone insufficient to name procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician manipulates instrument near patient's face",
+      "evidence": [
+        "gloved hand holding small tool near patient's lip/nose"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician actively treating reclined patient",
+      "evidence": [
+        "clinician leaning over patient",
+        "physical contact near patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gauze pad and gloved instrument use near facial area",
+      "evidence": [
+        "white gauze taped near patient's eyebrow/nose",
+        "gloved hand holding metallic tool"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting context not fully confirmed",
+      "evidence": [
+        "scene layer ENVIRONMENT marked UNKNOWN despite visible mirror and lamp"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, angled shot focusing on clinician and patient's face",
+      "evidence": [
+        "tight framing on faces and hands",
+        "vertical video orientation"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient reclined in foreground, clinician leaning from above",
+      "evidence": [
+        "patient's head fills lower frame",
+        "clinician positioned above and behind"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state NO_MEANINGFUL_SPEECH",
+        "scene SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Mask brand text visible",
+      "evidence": [
+        "mask text reads 'M-CURE'",
+        "ocr_observations 4"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing intent indicated",
+      "evidence": [
+        "scene layer MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose unclear",
+      "evidence": [
+        "scene layer SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No embedding metadata available",
+      "evidence": [
+        "scene layer SEARCH_EMBEDDINGS marked UNKNOWN"
+      ]
+    }
+  ],
+  "narrative": "A masked, gloved clinician in purple scrubs leans over a reclined patient, using a small instrument near the patient's upper lip and nose area, which is padded with gauze. The patient lies back with head resting on a towel, wearing a blue drape, in a room with a mirror and an adjustable lamp visible in the background.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "5fa9f8bc-4895-45fd-9bc0-b31629391929",
+  "image_count": 1
+}

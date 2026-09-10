@@ -1,0 +1,183 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_7169.MP4, single scene",
+      "evidence": [
+        "filename IMG_7169.MP4",
+        "asset_id 2351fe7a-c8e5-49f2-8144-f4ce36770db8",
+        "scene_index 0, duration 16.668s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short vertical clinical clip",
+      "evidence": [
+        "1280x720 h264 video, ~16.7s duration",
+        "two keyframes show a clinician and reclined patient in a treatment room"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two similar keyframes",
+      "evidence": [
+        "scene spans 0.0 to 16.668 seconds with no scene breaks noted",
+        "both keyframes show nearly the same pose/angle, indicating a static or slow-moving shot"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and patient present",
+      "evidence": [
+        "one person wears a surgical mask, scrub top, and smartwatch consistent with clinical staff",
+        "second person lies reclined, draped with a blanket, consistent with a patient role"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician masked in teal scrubs; patient in checked shirt",
+      "evidence": [
+        "clinician has dark hair pulled back, surgical mask, teal short-sleeve top, white smartwatch",
+        "patient wears a green/white checked patterned shirt and is covered by a white knit blanket"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient forearm and elbow visible",
+      "evidence": [
+        "patient's bare forearm and elbow are exposed and being handled",
+        "clinician's hands are visible manipulating the device and stabilizing the arm"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "a handheld metallic device is held near the patient's skin but no procedure name appears in any supplied text",
+        "no readable text or spoken content names a specific treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds device against/near patient's arm",
+      "evidence": [
+        "clinician's right hand grips a corded metallic instrument positioned at the patient's forearm/elbow",
+        "clinician's left hand touches/stabilizes the patient's skin"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned over patient in caregiving posture",
+      "evidence": [
+        "clinician leans directly over the reclined patient",
+        "physical contact between clinician's hands and patient's arm"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No discernible skin findings",
+      "evidence": [
+        "patient's forearm skin is visible but no lesions, marks, or abnormalities are clearly distinguishable in the keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "exam table/bed with blue disposable sheet",
+        "background shows a stool, small side table, and bottle, consistent with a clinic room"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld overhead angle",
+      "evidence": [
+        "both keyframes are tight, overhead-angle shots focused on hands and device",
+        "vertical 1280x720 framing typical of handheld mobile capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Centered hands/device with patient arm dominant",
+      "evidence": [
+        "device and hands occupy the center-right of frame",
+        "patient's arm and torso fill the left/lower portion of the frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "spoken_content field is an empty array despite an audio stream being present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected field is empty",
+        "no legible text visible in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended usage not determinable",
+      "evidence": [
+        "no captions, branding, or supplied text indicating marketing intent or context"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical hands-on examination moment",
+      "evidence": [
+        "imagery depicts a clinician closely attending to a reclined patient's arm with an instrument"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual content layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked clinician in teal scrubs leans over a reclined patient, holding a silver handheld device close to the patient's forearm/elbow while steadying the arm with her other hand. The patient, dressed in a green checked garment and draped with a white knit blanket, lies on an exam table covered with a blue disposable sheet.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "2351fe7a-c8e5-49f2-8144-f4ce36770db8",
+  "image_count": 2
+}

@@ -1,0 +1,20 @@
+{
+  "job": "KDI AI Search V3 Job 3",
+  "project_id": "wcqqjpndlwsvatjuqnol",
+  "applied_migrations": [
+    "20260819061000_ai_search_v3_job3_scene_core.sql",
+    "20260819061100_ai_search_v3_job3_intelligence_layers.sql",
+    "20260819061200_ai_search_v3_job3_transcript_ocr.sql",
+    "20260819061300_ai_search_v3_job3_time_guard_fix.sql"
+  ],
+  "new_tables": {
+    "asset_scenes": 0, "asset_keyframes": 0, "scene_people": 0, "person_appearances": 0,
+    "scene_treatments": 0, "scene_anatomy": 0, "scene_actions": 0, "scene_relationships": 0,
+    "clinical_observations": 0, "scene_environment": 0, "scene_cinematography": 0,
+    "scene_composition": 0, "marketing_annotations": 0, "scene_narratives": 0, "ocr_observations": 0
+  },
+  "altered_tables": {"asset_transcript_chunks": ["scene_id", "speaker_person_id", "speaker_scene_person_id", "analysis_run_id"]},
+  "security": {"rls_on_all_new_tables": true, "anon_truncate": false, "authenticated_truncate": false, "ordinary_client_writes": false, "ordinary_client_reads": false},
+  "production_semantic_rows_generated": 0,
+  "legacy_asset_video_segments_preserved": true
+}

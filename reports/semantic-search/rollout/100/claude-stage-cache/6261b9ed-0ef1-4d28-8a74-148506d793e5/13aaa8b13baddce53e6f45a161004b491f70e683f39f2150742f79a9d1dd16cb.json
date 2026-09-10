@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_2949.MP4",
+      "evidence": [
+        "filename IMG_2949.MP4, duration 16.18s, 1280x720 h264 with audio stream, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical scene, single scene video",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, single scene result covering full asset"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across the clip",
+      "evidence": [
+        "scene_index 0 is the only scene listed, spanning the 16.18 second duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two gowned, masked clinicians and a patient",
+      "evidence": [
+        "two individuals in blue surgical gowns, caps, masks, and loupes/headlamps positioned over a reclined patient's scalp"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue gowns, caps, surgical masks, loupes with headlamps",
+      "evidence": [
+        "both clinicians wear blue surgical gowns and caps, surgical masks, and binocular loupes with attached headlamps; gloved hands visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Exposed, bloodied scalp region",
+      "evidence": [
+        "patient's head is draped with towels exposing a reddened, blood-marked scalp area under bright light"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN; no named procedure appears in supplied text, and instruments/gloves/scalp contact alone do not establish one"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instrument held near illuminated scalp area",
+      "evidence": [
+        "one clinician holds a fine instrument close to the scalp while the other observes closely"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two clinicians working together over one patient",
+      "evidence": [
+        "clinicians positioned side by side, both focused on the same illuminated scalp area, one performing the action and the other in close support position"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blood visible on scalp, metal instruments on towel",
+      "evidence": [
+        "reddened/bloodied scalp surface under bright light, metal instruments (hemostat/clamp-like) resting on towel drape"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting not confirmed",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible cabinetry and counter in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, static handheld framing on scalp and clinicians",
+      "evidence": [
+        "tight vertical framing centered on scalp and clinicians' faces with strong direct lighting from headlamp"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical frame, scalp centered with clinicians above",
+      "evidence": [
+        "portrait-oriented 1280x720 frame with illuminated scalp in lower-center and two clinician faces stacked above"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, but transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN with no supplied context on usage or platform intent"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close clinical scalp work by two gowned clinicians",
+      "evidence": [
+        "synthesized from scene narrative describing two clinicians examining and working on a bloodied scalp under bright light"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable at asset level",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "Two clinicians wearing surgical loupes, headlamps, blue gowns, caps, and masks lean closely over a patient's exposed, bloodied scalp under bright focused light. One clinician holds a fine instrument near the illuminated scalp area while the other looks on closely, with metal instruments and towel draping visible on the reclined patient.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "6261b9ed-0ef1-4d28-8a74-148506d793e5",
+  "image_count": 1
+}

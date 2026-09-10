@@ -1,0 +1,170 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2121.MP4",
+      "evidence": [
+        "filename IMG_2121.MP4, duration 17.1s, 1280x720, h264, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result reports GLOBAL_ASSET_UNDERSTANDING as UNKNOWN with no further asset-level context provided"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, single scene_index 0 spanning the 17.1s clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and reclined patient",
+      "evidence": [
+        "A masked, gloved individual in maroon scrubs stands over a patient reclined on a treatment bed wearing protective eyewear"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Maroon scrubs, mask, gloves, watch",
+      "evidence": [
+        "Practitioner has dark hair, wears a surgical mask, disposable gloves, maroon/rust-colored scrub top and pants, and a wristwatch",
+        "Patient wears white/taped protective eye coverings and a dark head covering"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and head visible",
+      "evidence": [
+        "Patient's face, forehead, nose, and head are visible reclined against the headrest with eyewear covering the eyes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identified",
+      "evidence": [
+        "A handheld device on an articulated arm is positioned near the patient's face, but no procedure name is stated in the supplied text; gloves and instrument contact alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positions device near patient's face",
+      "evidence": [
+        "Practitioner's gloved hand grips a metal handheld attachment connected to an overhead articulated arm, angling it toward the patient's face while the other hand steadies the patient's head"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner attending to patient",
+      "evidence": [
+        "Practitioner is positioned directly over and in close physical contact with the reclined patient, one hand on the patient's forehead/head"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective eyewear and draping present",
+      "evidence": [
+        "Patient wears taped/protective eye coverings, a head covering, and is draped with a blue cloth and white blanket; practitioner wears mask and gloves"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Indoor clinical room, specifics unclear",
+      "evidence": [
+        "Plain beige wall and a wall-mounted control panel are visible, but no signage or further identifying detail establishes the specific facility"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, handheld-style framing",
+      "evidence": [
+        "Vertical 1280x720 frame with close camera distance capturing the practitioner and patient from a slightly elevated side angle"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and equipment dominate frame",
+      "evidence": [
+        "Practitioner and overhead articulated arm occupy the upper portion of the frame while the reclined patient fills the lower half"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "No caption, branding, or usage context supplied to indicate marketing intent"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Narrative intent unclear",
+      "evidence": [
+        "Scene-level result marks SEMANTIC_NARRATIVE as UNKNOWN with no additional context to establish broader meaning"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked, gloved practitioner in maroon scrubs leans over a reclined patient, holding a handheld device connected to an articulated overhead arm near the patient's face. The patient lies on a treatment bed with blue and white linens, wearing protective eyewear, in a plain indoor clinical room with a wall-mounted control panel visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "49ec310e-b11b-44a6-a401-20cd8598a735",
+  "image_count": 1
+}

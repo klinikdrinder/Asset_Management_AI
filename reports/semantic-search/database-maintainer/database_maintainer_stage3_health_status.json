@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "scanner_version": "kdi_semantic_health_scanner_v1",
+  "production": {
+    "canonical_assets": 881,
+    "current_v1_complete": 10,
+    "pending_analysis": 870,
+    "unsupported": 1,
+    "search_ready": 10,
+    "unexpected_material_findings": 0
+  },
+  "queue": {
+    "implemented": true,
+    "idempotent": true,
+    "modes": [
+      "READ_ONLY",
+      "DRY_RUN",
+      "CONTROLLED_REPAIR"
+    ],
+    "forbidden_actions_blocked": true
+  },
+  "history": {
+    "snapshots": 1,
+    "delta_report": "PASS",
+    "handoff_context": "PASS"
+  },
+  "api_calls": 0,
+  "media_analysis": 0,
+  "semantic_writes": 0,
+  "protected": {
+    "original_10_modified": false,
+    "gold_modified": false,
+    "benchmark_modified": false,
+    "spec_modified": false,
+    "acl_modified": false,
+    "consent_modified": false
+  },
+  "rollout": {
+    "canary": "PENDING_ANALYSIS",
+    "phase2": "BLOCKED_OPENAI_QUOTA",
+    "phase3": "NOT_STARTED"
+  },
+  "snapshot_path": "reports/semantic-search/database-maintainer/database_maintainer_stage3_health_snapshot.json",
+  "tests": {
+    "passed": 19,
+    "total": 19
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video file with technical metadata",
+      "evidence": [
+        "filename IMG_4606.MP4, duration 12.83s, 1280x720, h264, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall purpose of asset unclear",
+      "evidence": [
+        "Scene-level GLOBAL_ASSET_UNDERSTANDING was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, one scene_result entry"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient and clinician present",
+      "evidence": [
+        "reclined patient with eyes closed; masked, gloved clinician in navy scrubs standing over her"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient with black head covering, clinician in navy scrubs",
+      "evidence": [
+        "patient has black head covering and blue gown; clinician wears surgical mask, gloves, navy scrub top with embroidered logo"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forehead and periorbital area visible",
+      "evidence": [
+        "forehead, brow, and closed-eye area coated in clear gel visible in keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not identifiable",
+      "evidence": [
+        "only a handheld device with glowing blue tip and gel are visible; no named procedure present in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applying device to patient's forehead",
+      "evidence": [
+        "gloved hand holding device with blue tip pressed to gel-covered forehead"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing hands-on activity on patient",
+      "evidence": [
+        "direct physical contact between clinician's device/hand and patient's forehead"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clear gel coating on skin, device with digital display",
+      "evidence": [
+        "clear/reflective gel visible on forehead; handheld device with screen and blue illuminated tip"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting not fully identifiable",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible equipment and treatment chair"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close overhead handheld framing",
+      "evidence": [
+        "vertical close-up shot from above patient's face, consistent across two keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered, clinician and device upper frame",
+      "evidence": [
+        "patient's face centered in lower/middle frame, clinician's arms and device occupy upper portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT, transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Text presence indicated but not resolved",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 2, but scene-level OCR_VISIBLE_TEXT marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative meaning not determinable",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A reclined patient with closed eyes, a black head covering, and a blue medical drape has a clear gel applied to her forehead area while a masked, gloved clinician in navy scrubs applies a handheld device with a glowing blue tip to her skin. The setting is a clinical treatment room with additional medical equipment visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "a509093d-278c-4df9-8c5c-8db79c3772a1",
+  "image_count": 1
+}

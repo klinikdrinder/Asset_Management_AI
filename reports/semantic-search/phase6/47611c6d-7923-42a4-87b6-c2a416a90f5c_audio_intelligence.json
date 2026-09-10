@@ -1,0 +1,261 @@
+{
+  "processor_version": "kdi_audio_intelligence_v1",
+  "configuration_version": "kdi_audio_intelligence_config_v1",
+  "configuration_fingerprint": "c90b3d1c7de34af15a93037b4e47229766306f2046de04fbcb89dea87396ba57",
+  "semantic_spec_version": "semantic_index_v1",
+  "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+  "pilot_manifest_version": "kdi_semantic_pilot_v1",
+  "analysis_run_id": "15e3e026-62db-563e-9200-ef9cd42ef56b",
+  "asset_id": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+  "filename": "IMG_1148.MP4",
+  "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd",
+  "generated_at": "2026-08-24T04:32:07.918163+00:00",
+  "status": "COMPLETED",
+  "authorization": {
+    "external_ai_eligible": true,
+    "reason": "Live reviewed asset_access_control.external_ai_status=ALLOWED",
+    "provider_used": "local_faster_whisper",
+    "audio_transmitted_externally": false,
+    "external_attempt_outcome": null,
+    "separate_controls": {
+      "external_ai_status": "ALLOWED",
+      "review_status": "REVIEWED",
+      "classification_status": "UNCLASSIFIED",
+      "is_clinical": null,
+      "sensitivity_level": "GENERAL",
+      "consent_status": "UNKNOWN",
+      "marketing_usage_status": "UNKNOWN",
+      "requires_clinical_permission": null,
+      "reviewed_at": "2026-08-20T04:49:35.121618+00:00"
+    }
+  },
+  "audio": {
+    "source_codec": "aac",
+    "video_duration_seconds": 7.7,
+    "duration_seconds": 7.673375,
+    "sample_rate": 16000,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "frame_count": 122774,
+    "audio_fingerprint": "4085dd06d1d5de398e33bc82ac0eaf31138943ea83aa1b6a8410c6f8a88c9924",
+    "duration_delta_seconds": 0.026625,
+    "duration_match": true,
+    "extraction_status": "COMPLETED",
+    "temporary_audio_retained": false
+  },
+  "speech_detection": {
+    "speech_present": "YES",
+    "segments": [
+      {
+        "start_time": 5.13,
+        "end_time": 5.37,
+        "state": "SPEECH_CANDIDATE"
+      }
+    ],
+    "speech_duration_seconds": 0.24,
+    "speech_ratio": 0.03125,
+    "confidence": 0.897,
+    "confidence_source": "HEURISTIC",
+    "threshold_dbfs": -37.03,
+    "noise_floor_dbfs": -45.03,
+    "peak_dbfs": -29.62
+  },
+  "language": {
+    "primary": "ms",
+    "secondary": null,
+    "mixed": false,
+    "confidence": 0.3786967694759369,
+    "confidence_source": "LOCAL_WHISPER_LANGUAGE_PROBABILITY"
+  },
+  "transcription": {
+    "status": "COMPLETED",
+    "raw_transcript": "Setiap kali anda menggantikan beberapa hari, anda tidak akan terlampas sangat.",
+    "normalized_transcript": "Setiap kali anda menggantikan beberapa hari, anda tidak akan terlampas sangat.",
+    "detected_speech_duration_seconds": 0.24,
+    "transcript_segment_span_seconds": 6.92,
+    "transcribed_speech_duration_seconds": 0.24,
+    "untranscribed_speech_duration_seconds": 0,
+    "transcribed_speech_coverage_percent": 100,
+    "coverage_method": "UNION_OVERLAP_OF_TRANSCRIPT_SEGMENTS_WITH_ENERGY_VAD_SEGMENTS",
+    "provider_raw": {
+      "whisper": {
+        "text": "Setiap kali anda menggantikan beberapa hari, anda tidak akan terlampas sangat.",
+        "language": "ms",
+        "language_probability": 0.3786967694759369,
+        "duration": 7.673375,
+        "duration_after_vad": 6.953375,
+        "segments": [
+          {
+            "id": 0,
+            "start": 0.72,
+            "end": 7.64,
+            "text": " Setiap kali anda menggantikan beberapa hari, anda tidak akan terlampas sangat.",
+            "avg_logprob": -0.965591926574707,
+            "no_speech_prob": 0.2435094714164734,
+            "words": [
+              {
+                "start": 0.72,
+                "end": 1.24,
+                "word": " Setiap",
+                "probability": 0.6802357882261276
+              },
+              {
+                "start": 1.24,
+                "end": 1.5,
+                "word": " kali",
+                "probability": 0.803591787815094
+              },
+              {
+                "start": 1.5,
+                "end": 1.68,
+                "word": " anda",
+                "probability": 0.2632991075515747
+              },
+              {
+                "start": 1.68,
+                "end": 2.2,
+                "word": " menggantikan",
+                "probability": 0.34219168312847614
+              },
+              {
+                "start": 2.2,
+                "end": 5.88,
+                "word": " beberapa",
+                "probability": 0.5344649106264114
+              },
+              {
+                "start": 5.88,
+                "end": 6.2,
+                "word": " hari,",
+                "probability": 0.9202486276626587
+              },
+              {
+                "start": 6.38,
+                "end": 6.62,
+                "word": " anda",
+                "probability": 0.5373451709747314
+              },
+              {
+                "start": 6.62,
+                "end": 7.2,
+                "word": " tidak",
+                "probability": 0.5426968932151794
+              },
+              {
+                "start": 7.2,
+                "end": 7.26,
+                "word": " akan",
+                "probability": 0.2805157005786896
+              },
+              {
+                "start": 7.26,
+                "end": 7.48,
+                "word": " terlampas",
+                "probability": 0.2652622517198324
+              },
+              {
+                "start": 7.48,
+                "end": 7.64,
+                "word": " sangat.",
+                "probability": 0.7970278859138489
+              }
+            ]
+          }
+        ]
+      },
+      "diarized": {
+        "segments": [],
+        "status": "UNAVAILABLE"
+      }
+    }
+  },
+  "transcript_chunks": [
+    {
+      "transcript_chunk_id": "4a201404-16cb-59af-84d9-0f205e801071",
+      "asset_id": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+      "start_time": 0.72,
+      "end_time": 7.64,
+      "raw_text": "Setiap kali anda menggantikan beberapa hari, anda tidak akan terlampas sangat.",
+      "normalized_text": "Setiap kali anda menggantikan beberapa hari, anda tidak akan terlampas sangat.",
+      "language": "ms",
+      "confidence": 0.542,
+      "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+      "quality_flags": [],
+      "accepted_for_search": false,
+      "speaker_id": "UNKNOWN_SPEAKER",
+      "speaker_role": "UNKNOWN_SPEAKER",
+      "speaker_role_confidence": null,
+      "analysis_run_id": "15e3e026-62db-563e-9200-ef9cd42ef56b",
+      "primary_scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+      "overlapping_scene_ids": [
+        "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8"
+      ],
+      "temporally_overlapping_event_ids": [
+        "6348092c-6f27-577a-8fd5-49d8211dd1a3",
+        "ce7bf880-1adb-556e-9542-42a5764d673c",
+        "e67e3643-b19d-55db-a9a1-4b706eccfe08"
+      ],
+      "event_relationship": "TEMPORAL_OVERLAP_ONLY",
+      "topics": [],
+      "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: ms\nTranscript: Setiap kali anda menggantikan beberapa hari, anda tidak akan terlampas sangat.",
+      "source_text_fingerprint": "62dc61abc47c51469e44ae3758c52ff4547e4f35179293bf98d3ba8f206e7751",
+      "embedding_id": null,
+      "embedding_state": "DEFERRED"
+    }
+  ],
+  "speakers": {
+    "anonymous_speaker_count": 1,
+    "speaker_ids": [
+      "UNKNOWN_SPEAKER"
+    ],
+    "roles_assigned": 0,
+    "unknown_roles": 1,
+    "diarization_status": "UNAVAILABLE",
+    "diarization_confidence": null,
+    "voice_biometric_identification": "NONE"
+  },
+  "spoken_topics": [],
+  "spoken_summary": "Setiap kali anda menggantikan beberapa hari, anda tidak akan terlampas sangat.",
+  "reconciliation": [
+    {
+      "asset_id": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+      "filename": "IMG_1148.MP4",
+      "spoken_concept": null,
+      "outcome": "UNRELATED",
+      "evidence_chunk_ids": [
+        "4a201404-16cb-59af-84d9-0f205e801071"
+      ],
+      "phase5_modified": false
+    }
+  ],
+  "img_1238_segmentation": null,
+  "layer_14": {
+    "applicability": "APPLICABLE",
+    "semantic_state": "OBSERVED",
+    "speech_state": "YES",
+    "transcript_state": "OBSERVED",
+    "embedding_state": "DEFERRED",
+    "human_review_state": "REVIEW_NEEDED"
+  },
+  "performance": {
+    "audio_extraction_seconds": 0.07556920000934042,
+    "vad_seconds": 0.03689170000143349,
+    "transcription_seconds": 5.498239799999283,
+    "diarization_seconds": 0.0,
+    "embedding_seconds": 0.0,
+    "total_seconds": 5.706342899997253,
+    "provider_calls": 0,
+    "retries": 0,
+    "cost": "LOCAL_NO_API_COST"
+  },
+  "prohibitions": {
+    "ocr_performed": false,
+    "production_writes": false,
+    "search_documents_rebuilt": false,
+    "phase5_modified": false
+  },
+  "idempotency": {
+    "verified": true,
+    "functional_fingerprint": "d1db113f2804e51bfe59807c772b659140de9844a10c68fc72fcb80645709ed9"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1231.MP4",
+      "evidence": [
+        "filename IMG_1231.MP4, duration 14.87s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical setting clip",
+      "evidence": [
+        "1 canonical scene, 2 canonical keyframes depicting a man in a chair and a masked staff member behind him"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across two keyframes",
+      "evidence": [
+        "scene_results shows scene_index 0 with narrative describing progression from staff member standing to reaching toward the man's head"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining male subject and masked female staff member",
+      "evidence": [
+        "man reclining in striped shirt; female in dark blue scrubs, surgical mask, gloves, positioned behind/above him"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Man with dark hair, striped shirt; staff with dark hair, mask, scrubs",
+      "evidence": [
+        "man has dark curly hair, stubble, wearing white/red/black striped shirt",
+        "woman has dark hair pulled back with bangs, wearing light blue surgical mask, navy scrub top, earrings, white gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Head, face, and scalp visible",
+      "evidence": [
+        "man's face, neck, and hairline/scalp area visible in frame with staff member's gloved fingers near top/back of his head"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in evidence",
+      "evidence": [
+        "per-scene result marks TREATMENT_PROCEDURE as UNKNOWN; gloves and hand near scalp do not by themselves establish any named clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff reaches toward man's head",
+      "evidence": [
+        "second frame shows staff member's gloved hand reaching toward the top/back of the reclining man's head"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member positioned behind seated subject",
+      "evidence": [
+        "woman stands directly behind/above the reclining man, one arm resting near his headrest, gloved hand near his hair"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical attire: gloves, mask, scrubs, disposable covers",
+      "evidence": [
+        "white surgical gloves, blue surgical mask, navy scrub top, blue disposable headrest cover, and gown/drape visible on chair"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinic-style room",
+      "evidence": [
+        "white cabinetry with red accent stripe, venetian blinds, neutral wall tones consistent with a clinic room"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical framing, handheld feel",
+      "evidence": [
+        "tight vertical portrait-style framing centered on the man's face and the staff member behind him"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject foreground, staff member background",
+      "evidence": [
+        "man's face fills lower foreground of frame while staff member is positioned upper-background, centered composition"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_state AUDIO_PRESENT but transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text on scrub top",
+      "evidence": [
+        "ocr_observations count of 1; partial lettering visible on woman's navy scrub top (e.g. 'urgicalCare')"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "per-scene result marks MARKETING_CONTENT_USAGE as UNKNOWN; no supplied text indicates intended usage context"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting interaction between staff and reclining subject",
+      "evidence": [
+        "overall narrative of a masked, gloved staff member attending to a reclining man's head in a clinic-like room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this layer",
+      "evidence": [
+        "per-scene result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A man reclines in a treatment chair wearing a striped shirt, his head resting on a blue disposable headrest cover. A masked female staff member in dark blue scrubs and white gloves stands behind him, reaching toward the top/back of his head with gloved fingers.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "fbfe0bdf-bb73-49f1-883d-3c7043878355",
+  "image_count": 1
+}

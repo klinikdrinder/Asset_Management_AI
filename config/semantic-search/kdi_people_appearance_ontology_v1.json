@@ -1,0 +1,33 @@
+{
+  "version": "kdi_people_appearance_ontology_v1",
+  "status": "LOCKED_FOR_FIX02_FOUNDATION",
+  "parser_connected": false,
+  "policy": {
+    "unknown_is_not_inferred": true,
+    "apparent_age_is_range_only": true,
+    "same_person_required": true,
+    "same_scene_required": true,
+    "navy_related_to_blue_but_stored_distinctly": true
+  },
+  "vocabularies": {
+    "person_role": ["PATIENT", "DOCTOR", "CLINICIAN", "STAFF", "PRESENTER", "OTHER", "UNKNOWN"],
+    "gender_presentation": ["MALE", "FEMALE", "AMBIGUOUS", "UNKNOWN"],
+    "hair_color": ["BLACK", "DARK_BROWN", "BROWN", "LIGHT_BROWN", "BLONDE", "GRAY", "WHITE", "RED", "DYED_OTHER", "MIXED", "UNKNOWN"],
+    "hair_length": ["SHAVED", "VERY_SHORT", "SHORT", "MEDIUM", "LONG", "VERY_LONG", "UNKNOWN"],
+    "hair_density": ["FULL", "MILD_THINNING", "THINNING", "SEVERE_THINNING", "BALD", "UNKNOWN"],
+    "hairline_pattern": ["NORMAL", "MATURE", "RECEDING", "FRONTAL_RECESSION", "TEMPORAL_RECESSION", "M_SHAPED", "DIFFUSE_FRONTAL_THINNING", "POST_TRANSPLANT", "UNKNOWN"],
+    "clothing_color": ["BLACK", "WHITE", "GRAY", "BLUE", "NAVY", "LIGHT_BLUE", "GREEN", "RED", "PINK", "PURPLE", "YELLOW", "ORANGE", "BROWN", "BEIGE", "MULTICOLOR", "UNKNOWN"],
+    "clothing_type": ["SHIRT", "TSHIRT", "POLO", "BLOUSE", "DRESS", "JACKET", "SCRUBS", "LAB_COAT", "HIJAB", "CAP", "OTHER", "UNKNOWN"],
+    "posture": ["STANDING", "SEATED", "LYING", "LEANING", "WALKING", "UNKNOWN"],
+    "visibility": ["CLEAR", "PARTIAL", "OCCLUDED", "NOT_VISIBLE", "UNKNOWN"]
+  },
+  "synonyms": {
+    "gender_presentation": {"male": "MALE", "man": "MALE", "gentleman": "MALE", "female": "FEMALE", "woman": "FEMALE", "lady": "FEMALE"},
+    "person_role": {"patient": "PATIENT", "client": "PATIENT", "doctor": "DOCTOR", "physician": "DOCTOR", "clinician": "CLINICIAN"},
+    "hairline_pattern": {"receding hairline": "RECEDING", "hairline recession": "RECEDING", "receding frontal hairline": "FRONTAL_RECESSION", "frontal recession": "FRONTAL_RECESSION"},
+    "clothing_color": {"blue": "BLUE", "blue shirt": "BLUE", "blue top": "BLUE", "navy": "NAVY", "navy shirt": "NAVY", "light blue": "LIGHT_BLUE"},
+    "clothing_type": {"shirt": "SHIRT", "blue shirt": "SHIRT", "navy shirt": "SHIRT", "blue top": "OTHER"},
+    "posture": {"standing": "STANDING", "seated": "SEATED", "sitting": "SEATED", "lying": "LYING", "reclining": "LYING"}
+  },
+  "provenance_priority": {"HUMAN_REVIEW": 100, "HIGH_CONFIDENCE_STRUCTURED_VISUAL": 80, "VERIFIED_STRUCTURED_ASSERTION": 60, "FREE_TEXT_AI_ASSERTION": 40, "UNKNOWN": 0}
+}

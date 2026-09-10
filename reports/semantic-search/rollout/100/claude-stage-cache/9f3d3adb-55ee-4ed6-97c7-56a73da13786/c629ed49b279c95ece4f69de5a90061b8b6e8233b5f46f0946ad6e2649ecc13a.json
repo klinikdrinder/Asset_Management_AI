@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video file with technical metadata",
+      "evidence": [
+        "filename IMG_3572.MP4, duration 8.87s, 1280x720, h264 codec"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene close-up of device control panel",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 showing consistent device panel view"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across short clip",
+      "evidence": [
+        "scene_results shows single scene_index 0 spanning full 8.87s duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No people visible in frame",
+      "evidence": [
+        "scene-level PEOPLE_ROLES marked UNKNOWN; only device and background drapery visible"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No person present to describe",
+      "evidence": [
+        "scene-level PERSON_APPEARANCE marked NOT_APPLICABLE; images contain only equipment"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No anatomical content visible",
+      "evidence": [
+        "scene-level ANATOMY marked NOT_APPLICABLE; frame shows only device housing and panel"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable from device alone",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN; only a control panel with mode labels is visible, no procedure text supplied"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No discernible action or event captured",
+      "evidence": [
+        "scene-level ACTIONS_EVENTS marked UNKNOWN; static close-up of stationary panel"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No interpersonal or object relationships shown",
+      "evidence": [
+        "scene-level RELATIONSHIPS marked NOT_APPLICABLE; no people present to establish relationships"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Medical-style device panel with caution label",
+      "evidence": [
+        "yellow caution sticker reading 'When using Incubator, be aware of your fingers'",
+        "blue LED indicators and mode buttons (Automatic, Dynamic, Static, CW)"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Background suggests clinical setting but unconfirmed",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN; blue drapery and white wall visible but full room context unclear"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld shot of device top",
+      "evidence": [
+        "tight framing on glossy panel with reflections indicating close camera proximity"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Panel centered with silver knob as focal point",
+      "evidence": [
+        "circular silver dial and black knob positioned centrally in frame with surrounding LED lights"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected in audio track",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text labels visible on panel",
+      "evidence": [
+        "12 OCR observations including 'STANDBY', 'READY', 'Automatic', 'Dynamic', 'Static', 'CW', caution warning text"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Purpose of footage unclear",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN; no branding or promotional context evident"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up documentation of device controls",
+      "evidence": [
+        "scene narrative describes glossy control panel with STANDBY/READY status and caution sticker in clinical-adjacent setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Visual and text features indexed for retrieval",
+      "evidence": [
+        "distinct visual elements (blue LEDs, silver knob, caution sticker) and OCR text provide searchable embedding features"
+      ]
+    }
+  ],
+  "narrative": "The video shows a close-up of an appliance's glossy black control panel with blue indicator lights, mode labels (Automatic, Dynamic, Static, CW), and STANDBY/READY status text, alongside a caution sticker about an incubator warning to be aware of fingers. In the background, blue medical drapery and equipment are visible against a white wall, suggesting a clinical or hospital-adjacent setting.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "9f3d3adb-55ee-4ed6-97c7-56a73da13786",
+  "image_count": 1
+}

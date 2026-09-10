@@ -1,0 +1,14 @@
+{
+  "status":"COMPLETE",
+  "failures":[
+    {"query":"Retrieve five clips","classification":"PARSER","evidence":"retrieve absent from request verbs","correction":"general request-verb family"},
+    {"query":"Video recorded in 2021","classification":"EVALUATOR","evidence":"canonical temporal.year is structured","correction":"canonical temporal adapter"},
+    {"query":"At the 00:42 position","classification":"EVALUATOR","evidence":"canonical temporal.timestamp.timestamp_seconds existed","correction":"nested timestamp adapter"},
+    {"query":"No longer than 38 seconds","classification":"BOTH","evidence":"grammar absent and evaluator used flat temporal path","correction":"named duration grammar and canonical adapter"},
+    {"query":"Only PNG photographs","classification":"PARSER","evidence":"photograph noun absent","correction":"image vocabulary and extension inference"},
+    {"query":"Return 4 items then show 9 videos","classification":"BOTH","evidence":"item noun absent; evaluator misdefined false count","correction":"count occurrences plus occurrence-based metrics"},
+    {"query":"Physician drawing a front hairline","classification":"PARSER","evidence":"governing action composition absent","correction":"hairline action-object composition"},
+    {"query":"Return 3 clips under 45 seconds near 00:18","classification":"EVALUATOR","evidence":"canonical nested duration/timestamp were compared as flat scalars","correction":"typed temporal adapter"},
+    {"query":"Find 8 photos from 2020","classification":"EVALUATOR","evidence":"canonical structured year penalized","correction":"structured year equivalence"}
+  ]
+}

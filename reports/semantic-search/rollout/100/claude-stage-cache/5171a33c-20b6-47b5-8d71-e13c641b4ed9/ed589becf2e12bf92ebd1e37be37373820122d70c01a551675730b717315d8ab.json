@@ -1,0 +1,187 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_3419.MP4",
+      "evidence": [
+        "filename IMG_3419.MP4",
+        "duration 14.07s, 1280x720, h264, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene close-up clinical clip",
+      "evidence": [
+        "canonical_scenes: 1",
+        "scene-level narrative describes a single continuous close-up shot"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, ~14 seconds",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "duration_seconds: 14.066667"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and patient present",
+      "evidence": [
+        "scene narrative: 'A gloved clinician in dark scrubs' and 'a patient's upper back/shoulder area'",
+        "second gloved hand belonging to an assisting person or same clinician steadying skin"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark scrubs, mask, gloves; bare skin of patient visible",
+      "evidence": [
+        "image shows dark scrub top, black face covering, latex/nitrile gloves",
+        "patient's bare shoulder/upper back skin visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Upper back/shoulder skin region",
+      "evidence": [
+        "image shows a close-up of a shoulder and upper back area of skin",
+        "scene narrative: 'skin of a patient's upper back/shoulder area'"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN",
+        "syringe and gloved contact with skin do not by themselves name a specific clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Syringe applied to skin while hand steadies area",
+      "evidence": [
+        "image shows syringe needle tip touching/near the skin surface",
+        "scene narrative: 'uses a syringe...to inject or mark a substance into the skin' and 'a second gloved hand steadies the patient's skin'"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing action on patient with assisting hand",
+      "evidence": [
+        "scene narrative describes one hand operating the syringe and another steadying the patient's skin",
+        "spatial arrangement in image shows clinician positioned over patient"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Syringe with blue-hubbed needle at skin surface",
+      "evidence": [
+        "image shows a syringe with blue needle hub and visible fluid, tip contacting skin",
+        "small marks/spots visible on skin near needle tip"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical indoor setting implied by attire",
+      "evidence": [
+        "dark scrub uniform and gloves visible consistent with a clinical setting",
+        "plain light-colored background wall visible in frame"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Camera technique not determinable",
+      "evidence": [
+        "scene-level CINEMATOGRAPHY marked UNKNOWN",
+        "only static keyframes available, no camera movement data"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Composition details not determinable",
+      "evidence": [
+        "scene-level COMPOSITION marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "transcript_state: NO_SPEECH",
+        "audio_state: AUDIO_PRESENT but scene-level SPEECH_TRANSCRIPT_AUDIO is FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial embroidered name on scrub top",
+      "evidence": [
+        "image shows partially visible embroidered text reading 'DR ASHRUL...' on the scrub top",
+        "scene narrative: 'clinician's scrubs display a partially visible embroidered name'"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended use not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN",
+        "no captions, branding overlays, or usage context supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose not determinable",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN",
+        "no surrounding context or caption text provided"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual content evaluation",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A gloved clinician in dark scrubs holds a syringe with a blue hub near the skin of a patient's upper back/shoulder, with a second gloved hand steadying the skin at the site. The clinician's scrubs bear a partially visible embroidered name, and no speech is present in the audio track.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "5171a33c-20b6-47b5-8d71-e13c641b4ed9",
+  "image_count": 1
+}

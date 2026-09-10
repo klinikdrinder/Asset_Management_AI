@@ -1,0 +1,19 @@
+[
+  {
+    "case_id": "QP14V7-109",
+    "split": "VALIDATION",
+    "category": "SEMANTIC",
+    "query": "Patient with implantation of grafts, for archive review",
+    "classification": "PARSER_DEFECT",
+    "root_cause": "SEMANTIC_CHUNKING",
+    "evidence": "The semantic chunker splits at the preposition 'of'; the alias 'implantation of grafts' therefore cannot be matched as one compositional action phrase.",
+    "differences": [
+      {
+        "field": "positive.IMPLANTING_GRAFTS",
+        "expected": true,
+        "actual": false,
+        "critical": true
+      }
+    ]
+  }
+]

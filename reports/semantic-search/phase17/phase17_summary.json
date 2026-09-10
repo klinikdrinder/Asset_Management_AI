@@ -1,0 +1,35 @@
+{
+  "phase17": "BLOCKED",
+  "blocker_type": "RETRIEVAL_VALIDATION_FAILURE",
+  "live_connection": "PASS",
+  "live_counts": {
+    "assets": 881,
+    "concepts": 270,
+    "semantic_embeddings": 106,
+    "pilot_assets": "10/10",
+    "asset_search_documents": 10,
+    "scene_search_documents": 10
+  },
+  "dev": {
+    "cases": 90,
+    "candidate_recall_at_10": 0.6666666666666666,
+    "critical_zero_results": 0,
+    "no_match_padding": 0
+  },
+  "validation": {
+    "cases": 30,
+    "candidate_recall_at_10": 0.6666666666666666,
+    "executed": false,
+    "reason": "DEV protected gate failed"
+  },
+  "blind": {
+    "cases": 30,
+    "executed": false,
+    "reason": "Validation not run because DEV gate failed"
+  },
+  "vector_channels": "UNAVAILABLE: compatible query-vector/RPC path not configured",
+  "database_preservation": "PASS",
+  "retrieval_internal_only": true,
+  "ranking_started": false,
+  "phase18_started": false
+}

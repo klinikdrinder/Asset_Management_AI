@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_7168.MP4",
+      "evidence": [
+        "filename IMG_7168.MP4, duration 15.3s, 1280x720 h264 video with audio stream, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene close-up clinical exam room video",
+      "evidence": [
+        "1 canonical scene, 2 keyframes sampled showing a consistent close-up setup of a clinician examining a reclining person"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, static framing across both keyframes",
+      "evidence": [
+        "scene_results reports canonical_scenes: 1; the two keyframes are described as nearly identical"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician examining a reclining patient",
+      "evidence": [
+        "one person in teal scrubs, face mask, and smartwatch handling a device near another person lying face down on the exam table"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs and mask; patient in green plaid shirt",
+      "evidence": [
+        "clinician wears teal scrubs, a surgical face mask, dark hair, and a white smartwatch; the reclining person wears a green plaid button-up shirt and is draped with a white knit blanket"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Shoulder/upper arm region visible",
+      "evidence": [
+        "the device is held against the exposed shoulder/upper arm skin of the reclining person, visible between the blanket and rolled-up shirt sleeve"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure indicated",
+      "evidence": [
+        "only a handheld device and physical contact are visible; no supplied text names a specific clinical procedure, so per rules this remains UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioning a handheld device against skin",
+      "evidence": [
+        "clinician's hand steadies a silver handheld dermatoscope-style device against the reclining person's shoulder/arm across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician directly interacting with reclining person",
+      "evidence": [
+        "clinician's hands are in direct contact with the reclining person's arm/shoulder while holding the device, indicating an examiner-patient interaction"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Skin condition not discernible",
+      "evidence": [
+        "scene-level result marks CLINICAL_VISUAL_OBSERVATIONS as UNKNOWN; keyframes do not show a clear or diagnostic view of the skin surface"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting ambiguous",
+      "evidence": [
+        "scene-level result marks ENVIRONMENT as UNKNOWN despite visible exam table, stool, and water bottle; specific setting cannot be confirmed"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static handheld close-up, vertical framing",
+      "evidence": [
+        "vertical 1280x720 frame with a close, static composition centered on the clinician's hands and the reclining person's upper body"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Diagonal framing centered on hands and device",
+      "evidence": [
+        "the reclining person's body runs diagonally across the frame with the clinician's hands and device positioned centrally in the lower half"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech in audio track",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_stream_present: true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated: true with ocr_observations: 0; scene-level OCR_VISIBLE_TEXT is FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level result marks MARKETING_CONTENT_USAGE as UNKNOWN; no captions, branding, or promotional framing present"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician examining reclining person's skin with handheld device",
+      "evidence": [
+        "consistent visual narrative across keyframes of a masked clinician holding a device to a draped, reclining person's shoulder area in an exam room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/narrative evaluation",
+      "evidence": [
+        "scene-level result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A clinician in teal scrubs, a face mask, and a smartwatch holds a handheld dermatoscope-style device near the shoulder/upper arm of a person lying face down, draped in a white knit blanket over a green plaid shirt with blue paper sheeting beneath. The two sampled keyframes are nearly identical, showing the clinician's hand steadying the device against the reclining person's skin in an exam room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "03a5ce9d-a716-4bfd-bcc0-522ba8e05a56",
+  "image_count": 1
+}

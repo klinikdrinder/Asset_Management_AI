@@ -1,0 +1,177 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3392.MP4",
+      "evidence": [
+        "filename IMG_3392.MP4, duration 12.78s, 1280x720, h264, local video asset"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, one scene_index (0) spanning the 12.78s clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and reclining patient",
+      "evidence": [
+        "masked, gloved person in black scrubs performing hands-on activity near a second person's face",
+        "second person reclining passively with eyes closed, draped with towel"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked practitioner; patient with headband",
+      "evidence": [
+        "practitioner has dark curly hair, glasses, black face mask, black scrub top",
+        "patient has dark hair tucked under a black headband, eyes closed"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial region: nose, glabella, forehead",
+      "evidence": [
+        "syringe positioned near the nose/glabella area",
+        "metal tool held near the forehead/temple region"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "no named procedure present in supplied text; gloves, syringe, and tool alone do not establish a named clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instrument held to patient's face",
+      "evidence": [
+        "gloved hand holding a syringe near the nose/glabella",
+        "second gloved hand holding a metal tool near the forehead"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner working directly on patient",
+      "evidence": [
+        "practitioner leaning over reclining patient with tools positioned at her face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, syringe, metal tool, blue device near face",
+      "evidence": [
+        "latex gloves on both visible hands",
+        "syringe tip at nose/glabella",
+        "blue-and-white handheld device near temple/headband"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting not fully determinable",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible glass partition and treatment bed"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld vertical framing",
+      "evidence": [
+        "tight close-up composition on face and hands, vertical (portrait) 1280x720 aspect suggesting mobile capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face-centered close shot with hands in frame",
+      "evidence": [
+        "patient's face centered lower-right, practitioner's hands and tools occupying upper and left frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state: NO_MEANINGFUL_SPEECH",
+        "scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No confirmed on-screen text",
+      "evidence": [
+        "ocr_observations: 0, scene-level OCR_VISIBLE_TEXT marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing elements present",
+      "evidence": [
+        "no logos, captions, or promotional overlays visible",
+        "scene-level MARKETING_CONTENT_USAGE marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative intent unclear",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A gloved practitioner in black scrubs, mask, and glasses holds a syringe near the nose/glabella of a reclining patient whose eyes are closed, while another gloved hand holds a metal tool near her forehead and a blue-and-white device rests near her temple. The patient is draped with a blue towel, wears a black headband, and lies on a treatment bed in front of a glass partition wall.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "08673852-7e9c-4ee3-a1aa-952e3a35fd4c",
+  "image_count": 1
+}

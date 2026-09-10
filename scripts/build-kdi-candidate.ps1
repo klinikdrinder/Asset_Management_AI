@@ -110,8 +110,10 @@ try {
     $env:KDI_RELEASE_ID = $releaseId
     $stdout = Join-Path $logRoot "staging-$timestamp.out.log"
     $stderr = Join-Path $logRoot "staging-$timestamp.err.log"
-    $process = Start-Process -FilePath "npm.cmd" -ArgumentList @("run","start:staging") -WorkingDirectory $dashboard -WindowStyle Hidden -RedirectStandardOutput $stdout -RedirectStandardError $stderr -PassThru
-    Set-Content -LiteralPath (Join-Path $runtimeRoot "staging.pid") -Value $process.Id
+    # Start-Process fails on this managed Windows host when its inherited
+    # environment contains both Path/PATH entries. cmd start /b is headless;
+    # the verified listener PID is captured after the health probe.
+    cmd.exe /d /c "cd /d `"$dashboard`" && start `"`" /b npm.cmd run start:staging 1>`"$stdout`" 2>`"$stderr`""
 
     $healthy = $false
     for ($attempt = 0; $attempt -lt 30; $attempt++) {
@@ -122,6 +124,8 @@ try {
         } catch {}
     }
     if (-not $healthy) { throw "Candidate did not become healthy on staging port $StagingPort." }
+    $stagingPid = (Get-NetTCPConnection -LocalAddress 127.0.0.1 -LocalPort $StagingPort -State Listen -ErrorAction Stop | Select-Object -First 1).OwningProcess
+    Set-Content -LiteralPath (Join-Path $runtimeRoot "staging.pid") -Value $stagingPid
     foreach ($route in @("/login", "/library", "/admin")) {
         $status = [int](curl.exe -s -o NUL -w "%{http_code}" --max-redirs 0 --connect-timeout 10 "http://127.0.0.1:$StagingPort$route")
         if ($status -notin @(200, 302, 303, 307, 308)) { throw "Staging smoke test failed for $route (HTTP $status)." }

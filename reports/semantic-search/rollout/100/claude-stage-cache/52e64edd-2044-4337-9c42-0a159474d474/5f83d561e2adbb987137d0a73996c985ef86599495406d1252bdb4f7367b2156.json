@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_1454.MP4",
+      "evidence": [
+        "filename \"IMG_1454.MP4\"",
+        "asset_id 52e64edd-2044-4337-9c42-0a159474d474 provided in metadata"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical facial skincare clip",
+      "evidence": [
+        "single scene, ~20 seconds, showing extreme close-ups of a face with cotton pads and a handheld device near the nose"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene spanning two depicted moments",
+      "evidence": [
+        "scene_index 0, start 0.0s to end 19.933s",
+        "first keyframe shows pads on face, second keyframe shows device with red light applied, indicating progression within the scene"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient and a gloved practitioner",
+      "evidence": [
+        "a face (patient) is shown reclined in both keyframes",
+        "a gloved hand operating equipment is visible in both images, indicating a practitioner"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Light-medium skin tone, visible facial texture",
+      "evidence": [
+        "visible eyebrow and skin tone in first keyframe",
+        "skin shows visible pores, some redness and small blemishes on cheek and nose across both images"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Nose, cheek, and eyebrow region",
+      "evidence": [
+        "nose, nostril, upper lip, cheek, and eyebrow clearly visible in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied evidence",
+      "evidence": [
+        "no readable_text_detected and no spoken_content provided naming any procedure",
+        "a device with a red indicator light is shown near the nose but no procedure name accompanies it"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Skin prep with pads, then device applied to nose",
+      "evidence": [
+        "first keyframe shows cotton/gauze pads pressed against cheek and brow",
+        "second keyframe shows a metal device with a red light beam positioned at the nose tip"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner hand interacting with patient's face",
+      "evidence": [
+        "gloved hand holding pads against the patient's face in the first image",
+        "gloved hand holding a device against the patient's nose in the second image"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Visible pores, mild redness, small blemishes",
+      "evidence": [
+        "enlarged pores and textured skin visible on cheek in first keyframe",
+        "small reddish spots/papules visible on nose and cheek in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment setting",
+      "evidence": [
+        "blue drape/surface visible in background of both keyframes",
+        "neutral wall/backdrop visible in first keyframe suggesting an indoor treatment room"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme close-up, shallow depth of field",
+      "evidence": [
+        "both keyframes are tightly framed macro shots of the nose/cheek area",
+        "background is blurred/out of focus in both images"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Off-center tight framing on nose and cheek",
+      "evidence": [
+        "subject's nose and cheek fill most of the frame at an angle in both keyframes",
+        "device and hand partially obscure the upper frame in the second keyframe"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is an empty array despite an audio stream being present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected field is an empty array",
+        "no text or overlays visible in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing elements present",
+      "evidence": [
+        "no logos, captions, branding, or promotional overlays visible in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial skin treatment step being documented",
+      "evidence": [
+        "progression from pad application to device use near the nose across the two keyframes suggests a documented treatment step"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "The keyframes show an extreme close-up of a patient's nose and cheek during a clinical skincare session, first with cotton/gauze pads pressed against the cheek and brow, then with a gloved hand holding a metal device that projects a small red light onto the tip of the nose. The patient's skin shows visible pores, mild redness, and small blemishes, and the setting includes a blue drape typical of a treatment room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "52e64edd-2044-4337-9c42-0a159474d474",
+  "image_count": 2
+}

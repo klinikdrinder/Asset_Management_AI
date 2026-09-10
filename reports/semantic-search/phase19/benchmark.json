@@ -1,0 +1,1347 @@
+{
+  "generated_at": "2026-08-27T03:05:05.782Z",
+  "version": "kdi_phase19_benchmark_v1",
+  "reranker_version": "kdi_deterministic_reranker_v1",
+  "configuration_fingerprint": "33c8d6d4271b2c7bd818c6ed3366fe1e5a64c96ced42d3c8949a566f4bbd0125",
+  "blind_run_nonce": "724c35a7ce04fbf6908e5af522ee4a1f",
+  "gold_independence": {
+    "dev": true,
+    "validation": true,
+    "blind": true,
+    "basis": "fixture expectations are authored by the benchmark generator and never derived from reranker output"
+  },
+  "gold_hidden_from_implementation": true,
+  "dev": {
+    "cases": 100,
+    "correct": 100,
+    "incorrect": 0,
+    "pairwise_accuracy": 1,
+    "top1": 1,
+    "top3": 1,
+    "mrr": 1,
+    "ndcg_at_2": 1,
+    "hard_constraint_violations": 0,
+    "hard_exclusion_violations": 0,
+    "unknown_errors": 0,
+    "unauthorized_leaks": 0,
+    "result": "PASS",
+    "results": [
+      {
+        "id": "P19-DEV-001",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000001",
+        "fingerprint": "19c9e2e69340b806d9c4ec46672f2ba4d019cc3459926883c6ae78328300ac9f"
+      },
+      {
+        "id": "P19-DEV-002",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000003",
+        "fingerprint": "dc323827bfbe99bd147d9980b2a5b2891e3b1b206357af32292c80230c593deb"
+      },
+      {
+        "id": "P19-DEV-003",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000005",
+        "fingerprint": "7ccbea6b7945fefd513fedd162272cadc7cf49c20c4d6f122617ccde29e592f4"
+      },
+      {
+        "id": "P19-DEV-004",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000007",
+        "fingerprint": "9f76b4307e4696926b6a66b76423d4dbd43e580844329d25ef49d2225e4eb79c"
+      },
+      {
+        "id": "P19-DEV-005",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000009",
+        "fingerprint": "d0ea856280b592ee15a108d69fec7e2b205394b2c5f441995e366095fb3e4af1"
+      },
+      {
+        "id": "P19-DEV-006",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000011",
+        "fingerprint": "45c3d52f631200a0c9190cd20ec8e29989519926213277cd26f48e0229093b83"
+      },
+      {
+        "id": "P19-DEV-007",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000013",
+        "fingerprint": "f7630f351d33b79540c3696df90f7533802a447c72ab4a5016066e33d6e03efc"
+      },
+      {
+        "id": "P19-DEV-008",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000015",
+        "fingerprint": "6fec910a3170610dacfd2a75834eed116f1f40078ee86d60565084d0f21f7af9"
+      },
+      {
+        "id": "P19-DEV-009",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000017",
+        "fingerprint": "ab7cc86edc691b4de65cd36f7ecd84ea2f96849f726c4e69cae812d45bdc95f2"
+      },
+      {
+        "id": "P19-DEV-010",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000019",
+        "fingerprint": "69b2a1ae95619cc05d9a50c47dc50f5bafe6046b72ff81075e9317992b039494"
+      },
+      {
+        "id": "P19-DEV-011",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000021",
+        "fingerprint": "86a5f444dc306ec592e2e8df0dd6d33a3eef82b6cefceee7df503c849170fbb3"
+      },
+      {
+        "id": "P19-DEV-012",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000023",
+        "fingerprint": "652be1df701ccdc35c16191f846df0eaca9ce62579dc11155bbfa319c03efdb0"
+      },
+      {
+        "id": "P19-DEV-013",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000025",
+        "fingerprint": "c38ae0d2b0289c6c86cf1fa5e4825386bdf79fe80e6b590ddf2b890636038300"
+      },
+      {
+        "id": "P19-DEV-014",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000027",
+        "fingerprint": "0fa4ec0ceb3f49e3755d51508d2471c7d64a10b1c14d5a843f40fc6913de6cf5"
+      },
+      {
+        "id": "P19-DEV-015",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000029",
+        "fingerprint": "7f45abacf8e3a9929a7cb722c12cbec0e2f9c9f3bf8ca08da3f99429b57faced"
+      },
+      {
+        "id": "P19-DEV-016",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000031",
+        "fingerprint": "e0e3502736f0476295651c1d0613d89a6328e19ba28ac6e3b192d193cd7bd7df"
+      },
+      {
+        "id": "P19-DEV-017",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000033",
+        "fingerprint": "2e1228b95baf9a098f6ab1908a100096019b269c9aed71c0669a7eff6416c63a"
+      },
+      {
+        "id": "P19-DEV-018",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000035",
+        "fingerprint": "592d6ef0b4a5d938e855f35f984e720271ffa1a928d99e0999a2f99548f84ed7"
+      },
+      {
+        "id": "P19-DEV-019",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000037",
+        "fingerprint": "581ac8d706f0668ae81bac46bc377c8da35e6d04241783c5da96504c21158971"
+      },
+      {
+        "id": "P19-DEV-020",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000039",
+        "fingerprint": "d8c3a2cf3d169e5fffa9b65ca2af5c8844d89bbaf44618bfbd4ac59d0bb33853"
+      },
+      {
+        "id": "P19-DEV-021",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000041",
+        "fingerprint": "c0cc433df8c18f0524c629a1e13825db8ebd91d626afa7dbd10e436b25f6c856"
+      },
+      {
+        "id": "P19-DEV-022",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000043",
+        "fingerprint": "feadcc15b7248f12aebdd805ceaf72d4a13bc57be166225b0f21a5daf5ee7eb9"
+      },
+      {
+        "id": "P19-DEV-023",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000045",
+        "fingerprint": "37a5ceb165e82c305ecafceaef812fe68a016f7ef3cf788925578951ffad47ea"
+      },
+      {
+        "id": "P19-DEV-024",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000047",
+        "fingerprint": "8967beb4147dc2eba0d5d9e1ce5c47a68c1034a8635dc9c96ddeb3579bd34383"
+      },
+      {
+        "id": "P19-DEV-025",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000049",
+        "fingerprint": "eb196463616406dcbc2ac4efb577a96874ab76880db013b18bf238fe0f3608d9"
+      },
+      {
+        "id": "P19-DEV-026",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000051",
+        "fingerprint": "4c92edc2f277974b73f4f694abe59ee35bc0a0eb065bcba8dbe204a8999d2ce1"
+      },
+      {
+        "id": "P19-DEV-027",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000053",
+        "fingerprint": "caf5b25f3920255fb3fb0ca76d9eb5de8159c9c76c167e658c8b363e9e93c5ee"
+      },
+      {
+        "id": "P19-DEV-028",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000055",
+        "fingerprint": "85481b8c9f49cd3e7b9a1eb1c44838882f19c6df3540a3a62aa02274a64bc84b"
+      },
+      {
+        "id": "P19-DEV-029",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000057",
+        "fingerprint": "d51c7272a2872ef66e09c8dbc70007d70cb15edf66c74220b1086f88733b40cb"
+      },
+      {
+        "id": "P19-DEV-030",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000059",
+        "fingerprint": "395627a282ead931194761664ce46680fa5b10e99529b9f18baa13708a5fcbf8"
+      },
+      {
+        "id": "P19-DEV-031",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000061",
+        "fingerprint": "8866f42200eeef9b56fe53bd6675aef36f669b8b2c4a612e1478a2c6ba08b3ff"
+      },
+      {
+        "id": "P19-DEV-032",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000063",
+        "fingerprint": "532c1682112755813d9d8004f445bce7156f78c380914075100979c40b913705"
+      },
+      {
+        "id": "P19-DEV-033",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000065",
+        "fingerprint": "15888a68e73a779288d7c3c2a23865eee021ceac27207949de9459278c13e945"
+      },
+      {
+        "id": "P19-DEV-034",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000067",
+        "fingerprint": "5f7259eded0750b748faf83dba170889b8f2736a137fb9ec0d37b3e91aa7ebc1"
+      },
+      {
+        "id": "P19-DEV-035",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000069",
+        "fingerprint": "3ed9374ca11a48768c7e098282b752607e064b9dc6640939e1a4d32366d06563"
+      },
+      {
+        "id": "P19-DEV-036",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000071",
+        "fingerprint": "747d878000a507f5485f68f56214ce6da795d26be9be6bafe180cf2928b26ad3"
+      },
+      {
+        "id": "P19-DEV-037",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000073",
+        "fingerprint": "a45a78a20675f4de3eee074d2cf33f465a3d04394d694756e6f67a0035d7d316"
+      },
+      {
+        "id": "P19-DEV-038",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000075",
+        "fingerprint": "5f7ab97d7914fc82550fa934d5f092207dabbb8eda1fb373de34eb5c1247474f"
+      },
+      {
+        "id": "P19-DEV-039",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000077",
+        "fingerprint": "ef0c662280c57815dfd8ccc17d32f7242507c4f4e825f58262de766479dc58b2"
+      },
+      {
+        "id": "P19-DEV-040",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000079",
+        "fingerprint": "b788dfa2f56747e19683c36cfd5d11e24b16fc3206e728e471bfa6722b31e9b6"
+      },
+      {
+        "id": "P19-DEV-041",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000081",
+        "fingerprint": "40fe89b28ee927b01bfaab3f580a2a0d724d626a1e0b53c056238d2fa74c5c6d"
+      },
+      {
+        "id": "P19-DEV-042",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000083",
+        "fingerprint": "ae68921f51c5cb85d9b0938ec0f00697a172ab6bd61e4ce18f078c224e301630"
+      },
+      {
+        "id": "P19-DEV-043",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000085",
+        "fingerprint": "f1da867d33e781d739caca9ecd7bda92e230c7061d31712d9346fe9a4a9983fa"
+      },
+      {
+        "id": "P19-DEV-044",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000087",
+        "fingerprint": "342838afe2464d5663425401906bee525f66384e502014d8ee43b9e803216805"
+      },
+      {
+        "id": "P19-DEV-045",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000089",
+        "fingerprint": "eae5615c77a9ea65a97d2eb6e8da1b5e7e6a909ad00d3f66baa4e33f59d275a1"
+      },
+      {
+        "id": "P19-DEV-046",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000091",
+        "fingerprint": "8e8b4060366105c2f987864c2983bac9f454352c15eaca75f0dc58b1b027e66c"
+      },
+      {
+        "id": "P19-DEV-047",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000093",
+        "fingerprint": "4660a251f28a613c82c3c402f19589d199f7daf8c938e17412e369a36507cc77"
+      },
+      {
+        "id": "P19-DEV-048",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000095",
+        "fingerprint": "2af7042eff1285a0e0210c508d34109e090d9d4fe7503e5f2b475edec6a8a0e0"
+      },
+      {
+        "id": "P19-DEV-049",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000097",
+        "fingerprint": "812f165f5009dbf09eee7898f2ee9e27fbfe1fb9d2600d074f44a6a0a6680dba"
+      },
+      {
+        "id": "P19-DEV-050",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000099",
+        "fingerprint": "41ebfc14207b0fc02c5984a23da0ec02f0697f3a3d3198ab2f153a74b32a8c88"
+      },
+      {
+        "id": "P19-DEV-051",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000101",
+        "fingerprint": "e6a81dcdcba888740f47826208afd9d2c3cade2306257d39cd6d97eab0164c6c"
+      },
+      {
+        "id": "P19-DEV-052",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000103",
+        "fingerprint": "d66c93284ffb89c7cabdd97790057099f3be0a6fee8922c1455b7bd62c528aff"
+      },
+      {
+        "id": "P19-DEV-053",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000105",
+        "fingerprint": "0361f1f8f031d424e458ee3c593778c5ebf4f5a8081609806840c859b845af1a"
+      },
+      {
+        "id": "P19-DEV-054",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000107",
+        "fingerprint": "467e0bc8df34ee17595c2d27ba48588a986803ce977834bffe0f321dd761e684"
+      },
+      {
+        "id": "P19-DEV-055",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000109",
+        "fingerprint": "4c0976ff2f59af9d57d7fc706c9c8ae83aac186c41311730a7f2dd8a4d14cdfe"
+      },
+      {
+        "id": "P19-DEV-056",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000111",
+        "fingerprint": "8105b4b91ba0f85dd483b1dc9027163d98989aab2e0ab8c0a65c1ef13de1b6f4"
+      },
+      {
+        "id": "P19-DEV-057",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000113",
+        "fingerprint": "d570850d0b1028a39c1774c3b67babdf76245c6589cc679bddf0871f0e2975b3"
+      },
+      {
+        "id": "P19-DEV-058",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000115",
+        "fingerprint": "fd92deeb9db76e3bc2f8ad14ae1a651cfea1c5f5a3f3130d429b346843d2d7e2"
+      },
+      {
+        "id": "P19-DEV-059",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000117",
+        "fingerprint": "43be40a3877c75cd39c3be1d4c4baff2ba146745f29ae2c5269cf15af453176d"
+      },
+      {
+        "id": "P19-DEV-060",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000119",
+        "fingerprint": "cb788dc106eb4b1bcd6020430484723bafb9c1ce771561bff39fcf0236777d48"
+      },
+      {
+        "id": "P19-DEV-061",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000121",
+        "fingerprint": "4114da9057ff01a739c07453afd3f67be99cdcedae88af986e429519563a2a35"
+      },
+      {
+        "id": "P19-DEV-062",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000123",
+        "fingerprint": "72c99c7410fe1f2e8cfe9837478ab2dd705306767a2d7cd0ddf7be3dbf633822"
+      },
+      {
+        "id": "P19-DEV-063",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000125",
+        "fingerprint": "0735e6d73fad742a85c99499b70531e1796d6f9ef3530c7fed28712bf8cd7a36"
+      },
+      {
+        "id": "P19-DEV-064",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000127",
+        "fingerprint": "dfe4cee79b42841547ce7f3e5932d93bf9198490062b17ff4c11ae535b4df5c0"
+      },
+      {
+        "id": "P19-DEV-065",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000129",
+        "fingerprint": "a199b694c34cf24cf65727cc1608b7f39f63aaf01b320679e1502792ecf88bab"
+      },
+      {
+        "id": "P19-DEV-066",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000131",
+        "fingerprint": "eab0fd7217e560b02aa6853eead1585a28132ea399601f655d928bf6966aa609"
+      },
+      {
+        "id": "P19-DEV-067",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000133",
+        "fingerprint": "5ab11579508b7fbb002fe44d2d70d9cad62cece4e552a2e09032ec50a2b667fb"
+      },
+      {
+        "id": "P19-DEV-068",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000135",
+        "fingerprint": "1917b0add835ad9585372096fb5a79c03971319fc24fa408ef0fc340ce75a72f"
+      },
+      {
+        "id": "P19-DEV-069",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000137",
+        "fingerprint": "25199f0c4721d3a9cd0f8fbfb7586a25e0f001918aa6c0163b4fa9c7e285f396"
+      },
+      {
+        "id": "P19-DEV-070",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000139",
+        "fingerprint": "e57d931b8c1bd01eefc6b502944df87c8e091699a1c177adbb0c9d3155f76b62"
+      },
+      {
+        "id": "P19-DEV-071",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000141",
+        "fingerprint": "a5d4e1d3ef91405b19ab49e95b8c4004612f02475b2a6a5cf10b4b11bff2211c"
+      },
+      {
+        "id": "P19-DEV-072",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000143",
+        "fingerprint": "f66f974e6043e0d41157f04cef014b9b8b9de82ac9b539e427fa6aef8719789d"
+      },
+      {
+        "id": "P19-DEV-073",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000145",
+        "fingerprint": "c3f56b24e4cebbcbcd099fc8345e80a8bb5953e7169476884f10663e85f192c2"
+      },
+      {
+        "id": "P19-DEV-074",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000147",
+        "fingerprint": "8b5979e89c20a0c23a1f40b40031eb6f1b53cae231f7484187a393434a3024d1"
+      },
+      {
+        "id": "P19-DEV-075",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000149",
+        "fingerprint": "c48f32968847dd28f2e332f49e2d2a220985dac5acc1cf83390414e79191838f"
+      },
+      {
+        "id": "P19-DEV-076",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000151",
+        "fingerprint": "4249a2234abb7655f7bbe7bc3b093294153a0d1226a56b3a9ea3338864d9933f"
+      },
+      {
+        "id": "P19-DEV-077",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000153",
+        "fingerprint": "6f8824797d320f35e75f07968c902902a94dc615a3a4c33b49a2c735223b0f97"
+      },
+      {
+        "id": "P19-DEV-078",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000155",
+        "fingerprint": "59644f8bda92ddb9aee708498aa8a1c5366a28ff904f8d7a8abacebb9e141078"
+      },
+      {
+        "id": "P19-DEV-079",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000157",
+        "fingerprint": "f0e04f0044e04cc678141c5a76758ffa690c1dd98683d9499901cc73a5b2029d"
+      },
+      {
+        "id": "P19-DEV-080",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000159",
+        "fingerprint": "45b3db33543f7eb5e99ab19dcafc477bfd8252e78f6d3ab0c2f3f82625fafb9f"
+      },
+      {
+        "id": "P19-DEV-081",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000161",
+        "fingerprint": "ecaba4987f6cf828cf530aebbf09d5f362b100e31410c8ba23048087b12121c1"
+      },
+      {
+        "id": "P19-DEV-082",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000163",
+        "fingerprint": "be849a04b7586768e0d84d80b353b227ca28e769e7f6f884b89384e99f36d480"
+      },
+      {
+        "id": "P19-DEV-083",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000165",
+        "fingerprint": "fad77da73fce547e9cf654dbebe6f6f5115d0d19790b95fa9e54db62020b55ff"
+      },
+      {
+        "id": "P19-DEV-084",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000167",
+        "fingerprint": "23ee2c74abdcf41823c795b6bdce54126aa01222181cc72672b74c852c29b111"
+      },
+      {
+        "id": "P19-DEV-085",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000169",
+        "fingerprint": "5333a49c7fac3fc65eab512f6c2f77980443aa1d3439e88f5bb5b676a82493f0"
+      },
+      {
+        "id": "P19-DEV-086",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000171",
+        "fingerprint": "13cb9d361d447eb70cea9a81bdeedffefd5e6cb7dfc0e301fca55383f1cc98a0"
+      },
+      {
+        "id": "P19-DEV-087",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000173",
+        "fingerprint": "019c9d9b612088e35e7d7f70652fddf0d79eebd95ca3e5196aa80ff78551be6d"
+      },
+      {
+        "id": "P19-DEV-088",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000175",
+        "fingerprint": "500a35accbec21193cd61fa04dcae310d0bc31dcfa9a01b453261d7299f40a3e"
+      },
+      {
+        "id": "P19-DEV-089",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000177",
+        "fingerprint": "1a48cbcdaded52635cce2e3557e0d421e6e743d93147296b8f1160536d1a976b"
+      },
+      {
+        "id": "P19-DEV-090",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000179",
+        "fingerprint": "3bfb5ba4e54b2957acc784267d969829ffad31483c1cbedb9e591f915c6a159f"
+      },
+      {
+        "id": "P19-DEV-091",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000181",
+        "fingerprint": "19620b4a9cd05197b225c3a0e0012750e763de7829d79c1b413507bc4717adb8"
+      },
+      {
+        "id": "P19-DEV-092",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000183",
+        "fingerprint": "acb7391f3d2fc6b2ae83f3f647e357ce8904bf03a0c07b67a9dcc959242f5d3c"
+      },
+      {
+        "id": "P19-DEV-093",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000185",
+        "fingerprint": "1f7d9f0b8bb53c50f790fd4e963a11d0fc203712da43a48908a2357f289c44bc"
+      },
+      {
+        "id": "P19-DEV-094",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000187",
+        "fingerprint": "3b6b96a906c0d58f736a9e79e2552793b380928f0412a8a1dc6733752728ed74"
+      },
+      {
+        "id": "P19-DEV-095",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000189",
+        "fingerprint": "953875f63e52b7deef9f267df5e2351ac1415a16e8b0a9895d1416ad8bac4889"
+      },
+      {
+        "id": "P19-DEV-096",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000191",
+        "fingerprint": "7660b0bb204f82794da2b5fa77aa99b7d75da1dbb20b35af45f46ca627bd3049"
+      },
+      {
+        "id": "P19-DEV-097",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000193",
+        "fingerprint": "29c95121079be1b9b3b4257f88be3e31eff207bc335dd3df9b84df45dadd716a"
+      },
+      {
+        "id": "P19-DEV-098",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000195",
+        "fingerprint": "16ca3090306fa689abcb1d631c437e950bea1b9290b3346364b39454d2d7510a"
+      },
+      {
+        "id": "P19-DEV-099",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000197",
+        "fingerprint": "795ed979e8b38c36bec21917d5e9e852a514e3d2cff589b2aecc422eee37afc7"
+      },
+      {
+        "id": "P19-DEV-100",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000199",
+        "fingerprint": "867b925945427efe06fd5d31525058eab5a09fb8bcd60d38328f41b3e9118774"
+      }
+    ]
+  },
+  "validation": {
+    "cases": 40,
+    "correct": 40,
+    "incorrect": 0,
+    "pairwise_accuracy": 1,
+    "top1": 1,
+    "top3": 1,
+    "mrr": 1,
+    "ndcg_at_2": 1,
+    "hard_constraint_violations": 0,
+    "hard_exclusion_violations": 0,
+    "unknown_errors": 0,
+    "unauthorized_leaks": 0,
+    "result": "PASS",
+    "results": [
+      {
+        "id": "P19-VALIDATION-101",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000201",
+        "fingerprint": "d31cdafe2d64ae256044c7d7c759216c068a1fe9cfdcedfd0a1480aefeaf782d"
+      },
+      {
+        "id": "P19-VALIDATION-102",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000203",
+        "fingerprint": "a394bb5364c362092de333ea851d75c1532246880ed09e1ecb14c340789d82cb"
+      },
+      {
+        "id": "P19-VALIDATION-103",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000205",
+        "fingerprint": "7306ad3e9ba84ff767d2f052e8af6b2d20e4d6277d813d8356edc193d72c4bf1"
+      },
+      {
+        "id": "P19-VALIDATION-104",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000207",
+        "fingerprint": "e16ab74186236ffa89d2d97cd1e7daa68967be83fae638122b41736bfacf3f2f"
+      },
+      {
+        "id": "P19-VALIDATION-105",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000209",
+        "fingerprint": "ea48198ddda3c270612e19493c65799202cdacc9bb590d4aa7ee7cd0cc8f8c96"
+      },
+      {
+        "id": "P19-VALIDATION-106",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000211",
+        "fingerprint": "76735ea0767e30655602191c481a188daae0469e69d312f48f06a44f7a1cb045"
+      },
+      {
+        "id": "P19-VALIDATION-107",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000213",
+        "fingerprint": "d2b9f2b857cfda91ace6ee2b732dd2c7bbb50c9e4c4375aecd753b4d58fd9019"
+      },
+      {
+        "id": "P19-VALIDATION-108",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000215",
+        "fingerprint": "fe4dbb62d54035bb10726165d0e8ca4453587fd5ce2a4372a0e04e4594ded2cd"
+      },
+      {
+        "id": "P19-VALIDATION-109",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000217",
+        "fingerprint": "313705dba4ed32ad3f41367f7522362e8ab036054f355f1915a200bb2554fbe6"
+      },
+      {
+        "id": "P19-VALIDATION-110",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000219",
+        "fingerprint": "21d27e6ad0c4f4504dd682ae4b38639a2230b03aae7a432d7a791733ca65d8dc"
+      },
+      {
+        "id": "P19-VALIDATION-111",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000221",
+        "fingerprint": "3a37dfc34634e0a319f975b356a97003fc47d44a8c523a39a27a60d2aa172415"
+      },
+      {
+        "id": "P19-VALIDATION-112",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000223",
+        "fingerprint": "b19e019fd0bb4f47a6ec66aa84f7054b3ab58d82b92f5297530df3e8e47aac0f"
+      },
+      {
+        "id": "P19-VALIDATION-113",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000225",
+        "fingerprint": "768b3dc55921f0e5c241b1a54aa9340f7a6fd3688f75b72a616e6abfca67ff5c"
+      },
+      {
+        "id": "P19-VALIDATION-114",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000227",
+        "fingerprint": "885c8f90d5029c8f42c1bf24c2107e16a8b2bc49aab0bbcc88eb871f25167c63"
+      },
+      {
+        "id": "P19-VALIDATION-115",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000229",
+        "fingerprint": "577f24aba78a596a9523163733b34e6f775914c8c942c3b507d2ad78a959f885"
+      },
+      {
+        "id": "P19-VALIDATION-116",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000231",
+        "fingerprint": "f84bc35b473588a86aec09e9b38436d722dc7f4c6d455753e12e77fef4580ba7"
+      },
+      {
+        "id": "P19-VALIDATION-117",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000233",
+        "fingerprint": "f634bacfe6fd5e82da394679ce4964c46b6b424bebaf116fb47f7308e9939043"
+      },
+      {
+        "id": "P19-VALIDATION-118",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000235",
+        "fingerprint": "ed3947bef8daca3f925031b92759f0e74fb554995715ecc8f8a0cb9405c597ee"
+      },
+      {
+        "id": "P19-VALIDATION-119",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000237",
+        "fingerprint": "af5e7e7a24cb83f1dbff5f4398d28fcf84dd1ee27ab008bda708449ee7c8fc9e"
+      },
+      {
+        "id": "P19-VALIDATION-120",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000239",
+        "fingerprint": "6786a57ebb6b708df850c6d64f624519f41cf9c114dc7e181109ecf9a7f5726a"
+      },
+      {
+        "id": "P19-VALIDATION-121",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000241",
+        "fingerprint": "6b9c84281987dc3fe6384ed281e96b0f4ab735424cbea863a002514d479bfa3e"
+      },
+      {
+        "id": "P19-VALIDATION-122",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000243",
+        "fingerprint": "41d4b14280aba8fea7bdedafdeef92eb77be40850eedb6b9473a0baf8e913e15"
+      },
+      {
+        "id": "P19-VALIDATION-123",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000245",
+        "fingerprint": "84f11468d4a2776daf411cb3ba562c4109b1991a1265670641dc247cee35c26a"
+      },
+      {
+        "id": "P19-VALIDATION-124",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000247",
+        "fingerprint": "4eeb6a46af83570696e9208c859531634fd721f83fef70b7e0c914e7ba7baa28"
+      },
+      {
+        "id": "P19-VALIDATION-125",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000249",
+        "fingerprint": "fc4cda4e2674efeabc416e33b4b3e12d7700013e67a428585a6fc68c32e3ab07"
+      },
+      {
+        "id": "P19-VALIDATION-126",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000251",
+        "fingerprint": "37424d01863029334e12ff9b37b6aac443fcc0b0ae9a60a198e612fbfb0febe8"
+      },
+      {
+        "id": "P19-VALIDATION-127",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000253",
+        "fingerprint": "e00a1b73e864b286a651e74c16fd90ab451da3c5c1b1d5565498c297956b54e9"
+      },
+      {
+        "id": "P19-VALIDATION-128",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000255",
+        "fingerprint": "acc81324fc21f8ffeee15cff8f6c8f61ebdccbc78979fddb8865cc9a0026f231"
+      },
+      {
+        "id": "P19-VALIDATION-129",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000257",
+        "fingerprint": "f9752cde1e7f9e43e1635a4f5c4d1a13ef132b83c24219e5e471bdc75d452215"
+      },
+      {
+        "id": "P19-VALIDATION-130",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000259",
+        "fingerprint": "7037398ea034cc06f57b96efa86a14ea08dc292ad672e4ff2983fbf36ff33be3"
+      },
+      {
+        "id": "P19-VALIDATION-131",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000261",
+        "fingerprint": "ee5642173169ded4db95f289ce097f036eaed37664417708f6368f491f3bf93c"
+      },
+      {
+        "id": "P19-VALIDATION-132",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000263",
+        "fingerprint": "798ef45614f29e30dcd0b9710dba1247da1b9bcdf3545efa0e367c3cbaa2af5b"
+      },
+      {
+        "id": "P19-VALIDATION-133",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000265",
+        "fingerprint": "567a0d87f5c1f9475a2800b0e476d7d6bad90689c8f291daff9c7a7eb4405247"
+      },
+      {
+        "id": "P19-VALIDATION-134",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000267",
+        "fingerprint": "f6eeddc3a8337f1dee8887c2295415ca2ed42b23386b25c0b0ecb51e798fe828"
+      },
+      {
+        "id": "P19-VALIDATION-135",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000269",
+        "fingerprint": "d71dc16f7f3f535f6d9ae0f8572aea97a01c8c643b671463b952b9ee70f1ba97"
+      },
+      {
+        "id": "P19-VALIDATION-136",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000271",
+        "fingerprint": "bb044370e8496a8578784e3654b5642cc0ba7059816f41f9e6318f6267d84bbe"
+      },
+      {
+        "id": "P19-VALIDATION-137",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000273",
+        "fingerprint": "f9a5264ff9475c1fcbf6e8e7b7555691a45276c805327d89195d994839d29dd4"
+      },
+      {
+        "id": "P19-VALIDATION-138",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000275",
+        "fingerprint": "8e3e6cfb1c04e6b6fd50e0966066190f7bca07e60df4309f9541f18c84735e0e"
+      },
+      {
+        "id": "P19-VALIDATION-139",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000277",
+        "fingerprint": "e4930d380861b82ccc14092af5ae4f97682bb5c490fa0630b7fbdc29b56395a4"
+      },
+      {
+        "id": "P19-VALIDATION-140",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000279",
+        "fingerprint": "2527a2efadce257a51d719c6117e0718c81c732651c13f430f332ffacc8d29f1"
+      }
+    ]
+  },
+  "blind": {
+    "cases": 40,
+    "correct": 40,
+    "incorrect": 0,
+    "pairwise_accuracy": 1,
+    "top1": 1,
+    "top3": 1,
+    "mrr": 1,
+    "ndcg_at_2": 1,
+    "hard_constraint_violations": 0,
+    "hard_exclusion_violations": 0,
+    "unknown_errors": 0,
+    "unauthorized_leaks": 0,
+    "result": "PASS",
+    "results": [
+      {
+        "id": "P19-BLIND-144",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000287",
+        "fingerprint": "784eacf04211f9c83b93abc32f12a159157645fdf528397d675e66c8a6b949ae"
+      },
+      {
+        "id": "P19-BLIND-148",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000295",
+        "fingerprint": "793ddfbe16bd51b629f3cced4497a263cfb5925972630fc72ea7d6133fabea78"
+      },
+      {
+        "id": "P19-BLIND-143",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000285",
+        "fingerprint": "683d302667106e9fe5d5a7589242c58bcb69f7213c861609d994a2d74ea063fc"
+      },
+      {
+        "id": "P19-BLIND-178",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000355",
+        "fingerprint": "e24486601285c9dbcc24aa2698e78b2ba340912b1169e3f5ba5e04ea71412737"
+      },
+      {
+        "id": "P19-BLIND-153",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000305",
+        "fingerprint": "52d83bcdf5c377573a3c97270fdef1db222b76fe64b6879c75b8dbd84a178b74"
+      },
+      {
+        "id": "P19-BLIND-146",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000291",
+        "fingerprint": "25f2dc61c57e2aeb97dcdfc61b2207da9437b4d563122c76bba72431e09ddfb9"
+      },
+      {
+        "id": "P19-BLIND-158",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000315",
+        "fingerprint": "13ee421500692e4c8d5449c1e546c6701e37c00f26ed7484a95c76e49c17bad5"
+      },
+      {
+        "id": "P19-BLIND-167",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000333",
+        "fingerprint": "a6d298628ee037045c162d2dfb8f80179943ca5dcf4da2e9824dca9a4615a525"
+      },
+      {
+        "id": "P19-BLIND-152",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000303",
+        "fingerprint": "a35aecb99022403c5c9fa397fc7dd6bb9bbd928ec422dbb182899a75192b2922"
+      },
+      {
+        "id": "P19-BLIND-154",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000307",
+        "fingerprint": "747cce2ce54b86a28e3e0c18ae1ecbda6ccb4b3aa28d269f4d391acceba00940"
+      },
+      {
+        "id": "P19-BLIND-162",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000323",
+        "fingerprint": "1623f8eed1804cced29dc4cb2e0eb1e6c9480cc847fe124865c61516f3d18e30"
+      },
+      {
+        "id": "P19-BLIND-168",
+        "kind": "LITERAL_VECTOR",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000335",
+        "fingerprint": "7d68e93de6eba5679406a852250afb572e6b01edc98f002d8cb14772630b2245"
+      },
+      {
+        "id": "P19-BLIND-145",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000289",
+        "fingerprint": "488d3646d8304565683f2983546bb7c5571db3115843335b3280c7e8e9743aa6"
+      },
+      {
+        "id": "P19-BLIND-141",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000281",
+        "fingerprint": "8b242935189f93c56f3a5c68bf02aaee84449fae3367bca90513ff47ecb54456"
+      },
+      {
+        "id": "P19-BLIND-163",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000325",
+        "fingerprint": "f7fd6630b4fc77ba6d87ee67e18d79eb68e86be85184c94400e24cae2131c6dd"
+      },
+      {
+        "id": "P19-BLIND-177",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000353",
+        "fingerprint": "e9f4780cf4b2578e0f69e5d92d323d662e534cc09b3d5f982aaf456c8b7ff8db"
+      },
+      {
+        "id": "P19-BLIND-165",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000329",
+        "fingerprint": "d7fc40948dcc37d64adb0dd479b421dc5ccb6ba14d701dab19bafd59408ed13f"
+      },
+      {
+        "id": "P19-BLIND-172",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000343",
+        "fingerprint": "76ece0e1fde5a84eb27bde5e80befb31769b67bf4b7ab80fd34977d8ff15ed2c"
+      },
+      {
+        "id": "P19-BLIND-142",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000283",
+        "fingerprint": "d73e00116f2588dd6ea83e8de9beccc8e796bf80367f211cc2bcc07651e49ff2"
+      },
+      {
+        "id": "P19-BLIND-155",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000309",
+        "fingerprint": "6f6666e6dfdac4330483f9195924f83e7ec504cfe81d7c8ba2c9386ad198adf3"
+      },
+      {
+        "id": "P19-BLIND-164",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000327",
+        "fingerprint": "8ee34193dce4cc23d031da294ba11576c3fe2635c539b42fc047275be4806987"
+      },
+      {
+        "id": "P19-BLIND-160",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000319",
+        "fingerprint": "66dbd1fdf1f5bf90558a2c52b10ecc29fcb138c97030c894d44b977ffb756a76"
+      },
+      {
+        "id": "P19-BLIND-149",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000297",
+        "fingerprint": "bd248d5def9d17d346d49662463be905435ea59043ffb6caebd62044960474fc"
+      },
+      {
+        "id": "P19-BLIND-150",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000299",
+        "fingerprint": "0383f50aa9961f1eb7bfc3c0b257514e94270ff24e9c6948bb6a853bbea7c8c9"
+      },
+      {
+        "id": "P19-BLIND-176",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000351",
+        "fingerprint": "ed1cebe80e13e6f8e7a7030b87039119b5e888ba9196665f2246d920424ac9ae"
+      },
+      {
+        "id": "P19-BLIND-147",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000293",
+        "fingerprint": "aabbbdb2bcad6047b45ab28eee5e959f106745e475a62b23033ca1a4fc22530d"
+      },
+      {
+        "id": "P19-BLIND-171",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000341",
+        "fingerprint": "338ca987771fc05a1818c51b968cfc98bca12b7786d7490938d8766b2f2d58e9"
+      },
+      {
+        "id": "P19-BLIND-170",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000339",
+        "fingerprint": "39273b75457b8a44e27772b7488faf1da9acd55720be82fcfdec4af426e1a360"
+      },
+      {
+        "id": "P19-BLIND-180",
+        "kind": "TIE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000359",
+        "fingerprint": "7ef87c14203a4b76401e6499875567ebcd0f002362a2e75f56de67ca1495e830"
+      },
+      {
+        "id": "P19-BLIND-157",
+        "kind": "EXCLUSION",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000313",
+        "fingerprint": "4832e3a8e1d31256d5c2d00b22e4135a6b9b1ddd7b8f1a99a4786d65c206f448"
+      },
+      {
+        "id": "P19-BLIND-175",
+        "kind": "PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000349",
+        "fingerprint": "9b2e6daddd95a3e648450296101cbb1e7324e64945a3b6fd2eb1247d5bb9f6fc"
+      },
+      {
+        "id": "P19-BLIND-173",
+        "kind": "COHERENT_SCATTERED",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000345",
+        "fingerprint": "6904bf94583fd274090518e9a786ac2601819ea4cfd22cea33ae5a237dcbc0f5"
+      },
+      {
+        "id": "P19-BLIND-156",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000311",
+        "fingerprint": "b9ae6c4ec2fedae1d1726ee2457dfbf1bde0464af25fa7e42c7292b6c6480baf"
+      },
+      {
+        "id": "P19-BLIND-151",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000301",
+        "fingerprint": "8c05a465f3f06dfba9a21f8dc60335214a84f5a611dbda75bf68e8dc168231c5"
+      },
+      {
+        "id": "P19-BLIND-159",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000317",
+        "fingerprint": "3a61be89e7487b0c87511c32e56bf9d19cf0db6322cf3727a78fbde272124571"
+      },
+      {
+        "id": "P19-BLIND-179",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000357",
+        "fingerprint": "0abea5e7827a3cd6c4ac8064b8800e24ebfee5a70b80551f2dca927991c766c5"
+      },
+      {
+        "id": "P19-BLIND-161",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000321",
+        "fingerprint": "7d69f3402de7284764811d129bda0b1c9db1e812d4d5d7173e4c9ce319581e4a"
+      },
+      {
+        "id": "P19-BLIND-166",
+        "kind": "NEGATIVE_PREFERENCE",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000331",
+        "fingerprint": "2b4b7c9db040a8d5bde8ad740192480a4ecdf0ea21f297f71672eebc7f20f9fd"
+      },
+      {
+        "id": "P19-BLIND-169",
+        "kind": "DEDUP",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000337",
+        "fingerprint": "9dff9a5d0aa9da7e6af43ffc606d70514040189b4f7d6a2354453719fc777a14"
+      },
+      {
+        "id": "P19-BLIND-174",
+        "kind": "OBSERVED_UNKNOWN",
+        "pass": true,
+        "winner": "00000000-0000-4000-8000-000000000347",
+        "fingerprint": "c58f397bc3fceee601bfda566c5c80690eeefdc57c92e77979fe55546b5d97d6"
+      }
+    ]
+  },
+  "performance": {
+    "10": {
+      "mean_ms": 0.20063000000000217,
+      "p50_ms": 0.165300000000002,
+      "p95_ms": 0.4187999999999761,
+      "p99_ms": 0.6176000000000101
+    },
+    "50": {
+      "mean_ms": 0.700013999999993,
+      "p50_ms": 0.6000000000000227,
+      "p95_ms": 1.3985999999999876,
+      "p99_ms": 1.9668999999999528
+    },
+    "100": {
+      "mean_ms": 1.5050280000000031,
+      "p50_ms": 1.3474999999999682,
+      "p95_ms": 2.5083999999999946,
+      "p99_ms": 2.6958000000000197
+    }
+  },
+  "database_query_count": 0,
+  "status": "PASS"
+}

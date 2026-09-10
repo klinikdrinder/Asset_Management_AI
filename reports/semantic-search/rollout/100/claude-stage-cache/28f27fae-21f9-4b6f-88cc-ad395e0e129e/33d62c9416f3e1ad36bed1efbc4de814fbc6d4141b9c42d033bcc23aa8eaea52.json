@@ -1,0 +1,170 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_3396.MP4",
+      "evidence": [
+        "Filename IMG_3396.MP4, duration 11.3s, 1280x720 h264 with audio stream, one canonical scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical-setting clip with one scene",
+      "evidence": [
+        "Single canonical scene spanning the full 11.3s clip with two sampled keyframes"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene",
+      "evidence": [
+        "canonical_scenes: 1, scene_index 0 covering the entire asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked/gloved staff member and a reclined female client",
+      "evidence": [
+        "A person in dark scrubs, glasses, mask, and gloves labeled 'DR ASHRUL' handles a device near a reclined woman with eyes closed"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark scrub top, glasses, mask, gloves; woman with dark hair, towel drape",
+      "evidence": [
+        "Staff member wears dark curly hair, glasses, black face mask, black scrub top with white 'DR ASHRUL' text, latex gloves",
+        "Woman has dark hair covered by a dark headband, eyes closed, wrapped in a blue towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman's face and forehead visible",
+      "evidence": [
+        "Forehead, eyes, nose, mouth, and chin of the reclined woman are visible in frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in evidence",
+      "evidence": [
+        "Only a handheld roller-type device, gloves, and facial contact are visible; no procedure name is supplied in the text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device pressed against forehead while chin supported",
+      "evidence": [
+        "Gloved hand holds a blue-and-white roller device to the woman's forehead while another gloved hand supports her chin/jaw"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member positioned over reclined client",
+      "evidence": [
+        "The masked/gloved individual leans over the reclined woman, one hand on her chin and one operating the device on her forehead"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No visible skin findings identifiable",
+      "evidence": [
+        "Scene-level CLINICAL_VISUAL_OBSERVATIONS marked UNKNOWN; no lesions, marks, or clinical findings are distinguishable in the keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting not clearly identifiable",
+      "evidence": [
+        "Scene-level ENVIRONMENT marked UNKNOWN despite background cabinetry and lighting suggesting an indoor treatment room"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld vertical framing",
+      "evidence": [
+        "Vertical 1280x720 orientation with tight close-up composition on the two subjects' upper bodies and faces"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two-subject close framing, staff above client",
+      "evidence": [
+        "Staff member's head and hands fill the upper portion of frame; reclined woman occupies the lower/central portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Meaningful speech present in audio track",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, transcript_state MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on scrub top",
+      "evidence": [
+        "ocr_observations: 1; 'DR ASHRUL' text printed on the staff member's scrub top"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN; no captions, branding overlays, or usage context supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical-style care interaction depicted",
+      "evidence": [
+        "Staff member in scrubs and gloves attending to a reclined, relaxed woman with a device against her forehead"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual observation layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person in dark scrubs labeled 'DR ASHRUL', wearing glasses, a face mask, and gloves, holds a blue-and-white handheld roller device against the forehead of a reclined woman with her eyes closed. She is draped with a blue towel and wears a dark headband, resting on a teal pillow in what appears to be a treatment room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "28f27fae-21f9-4b6f-88cc-ad395e0e129e",
+  "image_count": 1
+}

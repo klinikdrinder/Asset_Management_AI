@@ -7,9 +7,11 @@ export async function proxy(request: NextRequest) {
   if(isLocalAuthBypassConfigured()&&isLoopbackHost(request.headers.get("host"))){
     return NextResponse.next();
   }
-  const isLocalDevRoute=request.nextUrl.pathname === "/dev/library" || request.nextUrl.pathname.startsWith("/dev/library/") || request.nextUrl.pathname.startsWith("/dev/semantic-review") || request.nextUrl.pathname.startsWith("/api/dev/library/") || request.nextUrl.pathname.startsWith("/api/dev/semantic-review");
+  const isLibraryPreview=request.nextUrl.pathname==="/dev/library-preview"||request.nextUrl.pathname.startsWith("/dev/library-preview/");
+  const isLocalDevRoute=request.nextUrl.pathname === "/dev/library" || request.nextUrl.pathname.startsWith("/dev/library/") || request.nextUrl.pathname.startsWith("/dev/semantic-review") || request.nextUrl.pathname.startsWith("/api/dev/library/") || request.nextUrl.pathname.startsWith("/api/dev/semantic-review") || isLibraryPreview;
   if(isLocalDevRoute){
-    if(!(process.env.NODE_ENV === "development" && process.env.KDI_LIBRARY_DEV_BYPASS === "true")) return new NextResponse("Not Found", { status: 404, headers: { "Cache-Control": "private, no-store" } });
+    const previewAllowed=process.env.NODE_ENV==="development"&&process.env.KDI_LOCAL_LIBRARY_PREVIEW==="true"&&isLoopbackHost(request.headers.get("host"))&&(isLibraryPreview||request.nextUrl.pathname.startsWith("/api/dev/library/"));
+    if(!(process.env.NODE_ENV === "development" && process.env.KDI_LIBRARY_DEV_BYPASS === "true")&&!previewAllowed) return new NextResponse("Not Found", { status: 404, headers: { "Cache-Control": "private, no-store" } });
     return NextResponse.next();
   }
   return updateSession(request);

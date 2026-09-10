@@ -1,0 +1,179 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single vertical video asset, IMG_1361.MP4",
+      "evidence": [
+        "Technical metadata lists filename IMG_1361.MP4, duration 15.1s, 1280x720, h264, one canonical scene with two keyframes"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical interaction, single continuous scene",
+      "evidence": [
+        "scene_results marks GLOBAL_ASSET_UNDERSTANDING as OBSERVED for the one scene",
+        "Both keyframes show the same close-up moment from slightly different angles"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, ~15 seconds, two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "scene_results narrative describes a continuous moment across the two frames"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician operating device, reclining patient",
+      "evidence": [
+        "A person in teal scrubs, mask, and gloves handles a device over a reclining person wearing protective eyewear",
+        "scrubs display embroidered text including 'DR LEW'"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Teal scrubs and mask; patient with metallic eye shields",
+      "evidence": [
+        "Clinician wears teal scrub top, disposable face mask, white gloves, hair tied back",
+        "Patient wears reflective/metallic eye protection and lies on a green towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's jaw, cheek, and hairline visible",
+      "evidence": [
+        "Image shows patient's lower face, jaw, and upper hairline/scalp area near where the device is positioned"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure type not identifiable from evidence",
+      "evidence": [
+        "Only gloves, an instrument, and scalp/facial contact are visible; no named procedure appears in supplied text",
+        "scene_results explicitly marks TREATMENT_PROCEDURE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positions device with laser guide near patient's face/hairline",
+      "evidence": [
+        "A handheld device with a visible red targeting laser dot is aimed at the patient's jaw/hairline area",
+        "scene_results narrative describes a continuous moment of this interaction"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician working directly on patient positioned below",
+      "evidence": [
+        "Clinician leans over the reclining patient, one gloved hand operating the device and another near the patient's head"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, mask, red laser targeting dot on skin",
+      "evidence": [
+        "Visible surgical gloves, mask, and a red laser point on the patient's jaw area",
+        "scene_results marks CLINICAL_VISUAL_OBSERVATIONS as OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "scene_results marks ENVIRONMENT as UNKNOWN; only a plain wall and towels are visible, insufficient to confirm setting type"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Camera technique not determinable",
+      "evidence": [
+        "scene_results marks CINEMATOGRAPHY as UNKNOWN despite vertical close-up framing of the two keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up framing centered on device and face",
+      "evidence": [
+        "Both keyframes are vertical (1280x720 source cropped/oriented vertically) and tightly framed on the device and patient's face"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "audio_stream_present true and audio_state AUDIO_PRESENT, but transcript_state is NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on clinician's scrub pocket",
+      "evidence": [
+        "ocr_evaluated true with 2 ocr_observations",
+        "Embroidered text reading 'DR LEW' visible on the scrub top pocket"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene_results marks MARKETING_CONTENT_USAGE as UNKNOWN; no captions, branding overlays, or promotional text present"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose unclear",
+      "evidence": [
+        "scene_results marks SEMANTIC_NARRATIVE as UNKNOWN given absence of speech, captions, or contextual text"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": [
+        "scene_results marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A clinician in teal scrubs, a surgical mask, and gloves holds a handheld device with a visible red targeting laser near the jaw and hairline of a reclining patient wearing protective eye shields. Two vertical keyframes capture a close-up, continuous moment of this interaction from slightly different angles, with a second gloved hand steadying the patient's head.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "5f0cd5bb-b464-49ee-a64d-6daf55b68de9",
+  "image_count": 1
+}

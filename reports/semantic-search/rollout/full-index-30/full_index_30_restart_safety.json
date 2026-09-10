@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-09-03T05:55:57.426781+00:00",
+  "phase": "FULL_INDEX_30",
+  "status": "PASS",
+  "summary": "deterministic uuid5 identifiers plus a per-asset checkpoint; a repeat writes the same rows and an interrupted asset cannot satisfy the SEARCH_READY gate",
+  "interruptions_observed_this_phase": [
+    "asset_scenes.duration_seconds generated-column rejection aborted the first analyze run before any scene was written",
+    "Phase 11 transcription aborted twice on schema faults and converged on re-run"
+  ],
+  "checkpoint_file": "full_index_30_scene_build.json",
+  "checkpointed_assets": 10,
+  "deterministic_identifiers": "uuid5 over (analysis_run, scene index, keyframe index, representation)",
+  "completed_assets_preserved": true,
+  "partial_asset_cannot_be_search_ready": true,
+  "scenes_without_text_scene_embedding": [],
+  "duplicate_active_truth": {
+    "canonical_scenes": 0,
+    "canonical_keyframes": 0,
+    "active_layers": 0,
+    "active_assertions": 0,
+    "evidence": 0,
+    "active_scene_documents": 0,
+    "active_asset_documents": 0,
+    "active_embeddings": 0,
+    "transcript_chunks": 0,
+    "ocr_observations": 0
+  },
+  "historical_superseded_rows_retained": 30
+}

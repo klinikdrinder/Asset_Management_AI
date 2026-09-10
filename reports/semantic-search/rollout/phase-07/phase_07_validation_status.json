@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "layer_database_state": "CORRECT",
+  "report_layer_label_drift": "RESOLVED",
+  "catalog_17_18": {
+    "17": {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "layer_number": 17,
+      "layer_name": "Semantic Narrative",
+      "spec_version": "semantic_index_v1"
+    },
+    "18": {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "layer_number": 18,
+      "layer_name": "Search & Embeddings",
+      "spec_version": "semantic_index_v1"
+    }
+  },
+  "active_canary_layers": 18,
+  "canonical_layers": true,
+  "legacy_active_canary_layers": 0,
+  "assertions_before_correction": 0,
+  "assertions_current_active": 0,
+  "evidence_preserved": 4,
+  "raw_observations_rejected_as_ungrounded": 0,
+  "unsupported_term_removed": "surgery",
+  "search_smoke": [
+    {
+      "query": "IMG_2951",
+      "canary_returned": true,
+      "channel": "asset_search_documents.searchable_text",
+      "structured_evidence_support": true
+    },
+    {
+      "query": "surgery",
+      "canary_returned": false,
+      "channel": "asset_search_documents.searchable_text",
+      "structured_evidence_support": false
+    },
+    {
+      "query": "procedure",
+      "canary_returned": false,
+      "channel": "asset_search_documents.searchable_text",
+      "structured_evidence_support": false
+    },
+    {
+      "query": "treatment",
+      "canary_returned": false,
+      "channel": "asset_search_documents.searchable_text",
+      "structured_evidence_support": false
+    },
+    {
+      "query": "unsupported_nonexistent_concept",
+      "canary_returned": false,
+      "channel": "asset_search_documents.searchable_text",
+      "structured_evidence_support": false
+    }
+  ],
+  "complete_by_18_layers": 11,
+  "original_pilot_complete_preserved": true,
+  "external_calls": 0
+}

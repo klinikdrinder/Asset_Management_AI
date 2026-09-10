@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-09-02T06:47:55.440504+00:00",
+  "phase": 11,
+  "status": "PASS",
+  "analysis_only": true,
+  "mass_rollout_started": false,
+  "phase_10_average_per_asset_seconds": 417.555,
+  "phase_10_average_image_seconds": 417.526,
+  "phase_10_average_video_seconds": 417.588,
+  "phase_10_vlm_inference_share": 0.985,
+  "phase_10_embedding_seconds": 0.797,
+  "phase_11_transcription_seconds_per_video": 2.683,
+  "phase_11_transcription_total_seconds": 21.46,
+  "transcription_overhead_vs_visual": 0.0064,
+  "pending_assets": 850,
+  "estimated_single_worker_hours": 98.6,
+  "concurrency": {
+    "safe_parallel_workers_recommended": 2,
+    "reasoning": "The analyzer is CPU-bound and single-process; SmolVLM2 plus OpenCLIP/E5 already contend for BLAS threads. Two workers is the conservative ceiling without measured headroom.",
+    "duplicate_job_risk": "LOW \u2014 deterministic uuid5 write keys and per-asset checkpoints make a repeated asset idempotent, but no cross-process claim/lease exists yet.",
+    "required_before_parallelism": [
+      "a durable per-asset claim/lease (synchronization_locks is present but unused)",
+      "per-worker BLAS thread pinning to avoid OpenMP contention",
+      "the ctranslate2/torch OpenMP conflict keeps transcription and embedding in separate processes"
+    ],
+    "model_memory_exhaustion_risk": "MEDIUM \u2014 each worker loads its own SmolVLM2 and Whisper weights.",
+    "supabase_contention_risk": "LOW at this write volume.",
+    "semantic_race_condition_risk": "LOW for distinct assets; UNMITIGATED for the same asset without a lease.",
+    "nondeterministic_write_risk": "LOW \u2014 writes are deterministic given identical input."
+  },
+  "recommendation": "Do not scale to the full library from this phase. Validate Stage C (100 assets) with at most two workers and a real claim/lease before Stage D."
+}

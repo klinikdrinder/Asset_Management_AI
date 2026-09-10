@@ -1,0 +1,1616 @@
+{
+  "asset": {
+    "asset_id": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+    "filename": "IMG_1148.MP4",
+    "media_type": "video",
+    "extension": "mp4",
+    "mime_type": "video/mp4",
+    "size_bytes": 3324705,
+    "source_file_id": "7a67ce30-a4a8-44ba-bcf8-e0e6d7265244",
+    "master_destination_present": true,
+    "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c"
+  },
+  "analysis_run": {
+    "analysis_run_id": "35eb23b0-ac29-5ef7-9e80-670eaea3f463",
+    "analyzer_version": "kdi_semantic_analyzer_v1",
+    "configuration_version": "kdi_semantic_analyzer_config_v1",
+    "configuration_fingerprint": "65b40e1cddda8d0dd5ed2fb95e5f8bf76edf680cb751707087a6b38ab925a5b0",
+    "semantic_spec_version": "semantic_index_v1",
+    "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+    "ontology_version": "KDI_SEMANTIC_V2",
+    "provider": "openai_codex_visual_review",
+    "model": "current_codex_model_identifier_unavailable",
+    "provider_version": "phase5_evidence_review_v1",
+    "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd",
+    "generated_at": "2026-08-24T03:58:44.466990+00:00"
+  },
+  "external_ai_safety": {
+    "eligible": true,
+    "reason": "Reviewed asset_access_control.external_ai_status=ALLOWED",
+    "provider_used": "openai_codex_visual_review",
+    "external_media_transmission": true,
+    "transmitted_material": "DERIVED_CONTACT_SHEET_ONLY",
+    "permission_dimensions": {
+      "classification_status": "UNCLASSIFIED",
+      "is_clinical": null,
+      "sensitivity_level": "GENERAL",
+      "consent_status": "UNKNOWN",
+      "internal_usage_status": "UNKNOWN",
+      "marketing_usage_status": "UNKNOWN",
+      "external_ai_status": "ALLOWED",
+      "requires_clinical_permission": null,
+      "download_allowed": null,
+      "review_status": "REVIEWED",
+      "reviewed_at": "2026-08-20T04:49:35.121618+00:00"
+    }
+  },
+  "layers": [
+    {
+      "layer_number": 1,
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "layer_name": "Asset Identity & Provenance",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "eb3b6225-a1a4-54d4-8235-e39cfc6cca29",
+          "concept": "ASSET_IDENTITY",
+          "layer": "ASSET_IDENTITY_PROVENANCE",
+          "state": "OBSERVED",
+          "value": {
+            "asset_id": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+            "filename": "IMG_1148.MP4",
+            "media_type": "video",
+            "extension": "mp4",
+            "mime_type": "video/mp4",
+            "size_bytes": 3324705,
+            "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+          },
+          "confidence": 1.0,
+          "confidence_band": "HIGH",
+          "evidence": [
+            {
+              "type": "ASSET_LEVEL",
+              "source_artifact": "FROZEN_MANIFEST_AND_PHASE_EVIDENCE",
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "DATABASE_METADATA",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "band": "HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "ASSET_LEVEL",
+          "source_artifact": "FROZEN_MANIFEST_AND_PHASE_EVIDENCE",
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": false,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "COMPLETE_FOR_PHASE_5",
+      "future_work": "Preserve identity during later ingestion"
+    },
+    {
+      "layer_number": 2,
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "layer_name": "Global Asset Understanding",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "d9bedf38-66eb-503d-99a5-83980ec473fc",
+          "concept": "MEDIA_SUMMARY",
+          "layer": "GLOBAL_ASSET_UNDERSTANDING",
+          "state": "OBSERVED",
+          "value": "A masked clinician uses a handheld tool near the frontal scalp of a reclining adult patient wearing eye protection.",
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 0.84,
+        "maximum": 0.84,
+        "band": "MEDIUM_HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PARTIAL",
+      "future_work": "Human review and later cross-layer validation"
+    },
+    {
+      "layer_number": 3,
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "layer_name": "Temporal / Scene Structure",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "3e564871-f563-5038-b3d9-0317bab1f06b",
+          "concept": "TIMELINE_STRUCTURE",
+          "layer": "TEMPORAL_SCENE_STRUCTURE",
+          "state": "OBSERVED",
+          "value": {
+            "scene_count": 1,
+            "event_candidate_count": 3,
+            "keyframe_count": 5,
+            "timeline_coverage_percent": 100.0
+          },
+          "confidence": 1.0,
+          "confidence_band": "HIGH",
+          "evidence": [
+            {
+              "type": "ASSET_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "analysis_run_id": "5caaa011-e0c6-5856-8de6-e58ff39350f8",
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "DETERMINISTIC_PROCESSOR",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "NEW_OBSERVATION",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "band": "HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "ASSET_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "analysis_run_id": "5caaa011-e0c6-5856-8de6-e58ff39350f8",
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": false,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "COMPLETE_FOR_PHASE_5",
+      "future_work": "Retain shadow scene/event structure"
+    },
+    {
+      "layer_number": 4,
+      "layer_id": "PEOPLE_ROLES",
+      "layer_name": "People & Roles",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "8e0ad766-0ab8-5c8e-a9b9-f1d6487cd2fe",
+          "concept": "PATIENT",
+          "layer": "PEOPLE_ROLES",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        },
+        {
+          "fact_id": "cb8b35ac-d438-5995-bdb2-99564b640963",
+          "concept": "CLINICIAN",
+          "layer": "PEOPLE_ROLES",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 0.84,
+        "maximum": 0.84,
+        "band": "MEDIUM_HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        },
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PARTIAL",
+      "future_work": "Human review and later cross-layer validation"
+    },
+    {
+      "layer_number": 5,
+      "layer_id": "PERSON_APPEARANCE",
+      "layer_name": "Person Appearance",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "eeffc787-3711-5bec-9150-021bfb2b632a",
+          "concept": "ADULT_PRESENTATION",
+          "layer": "PERSON_APPEARANCE",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        },
+        {
+          "fact_id": "4e558a49-91bb-5971-819e-a2f08909b9c7",
+          "concept": "PATIENT_RECLINING",
+          "layer": "PERSON_APPEARANCE",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        },
+        {
+          "fact_id": "1334e2ba-7cbd-5a59-be36-ce98d5e6a2ce",
+          "concept": "EYE_PROTECTION_VISIBLE",
+          "layer": "PERSON_APPEARANCE",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        },
+        {
+          "fact_id": "a4f12f0e-d4df-556f-b4cf-5b4bec91910b",
+          "concept": "CLINICIAN_MASKED",
+          "layer": "PERSON_APPEARANCE",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 0.84,
+        "maximum": 0.84,
+        "band": "MEDIUM_HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        },
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        },
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        },
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PARTIAL",
+      "future_work": "Human review and later cross-layer validation"
+    },
+    {
+      "layer_number": 6,
+      "layer_id": "ANATOMY",
+      "layer_name": "Anatomy",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "fb677100-2e51-5459-8158-5aa9fd838238",
+          "concept": "SCALP",
+          "layer": "ANATOMY",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        },
+        {
+          "fact_id": "b38b9756-0280-5831-bba4-bb21a219fe9e",
+          "concept": "FRONTAL_SCALP",
+          "layer": "ANATOMY",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 0.84,
+        "maximum": 0.84,
+        "band": "MEDIUM_HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        },
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PARTIAL",
+      "future_work": "Human review and later cross-layer validation"
+    },
+    {
+      "layer_number": 7,
+      "layer_id": "TREATMENT_PROCEDURE",
+      "layer_name": "Treatment / Procedure",
+      "applicability": "APPLICABLE",
+      "semantic_state": "UNKNOWN",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "concept": "TREATMENT_PROCEDURE",
+          "state": "UNKNOWN",
+          "value": null,
+          "confidence": null,
+          "evidence": [],
+          "provenance": "WORKFLOW_STATE",
+          "human_review_status": "UNVERIFIED",
+          "note": "Evidence does not support a reliable canonical value"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": null,
+        "maximum": null,
+        "band": "UNKNOWN"
+      },
+      "evidence_references": [],
+      "existing_data_used": true,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "UNKNOWN",
+      "future_work": "Human review and later cross-layer validation"
+    },
+    {
+      "layer_number": 8,
+      "layer_id": "ACTIONS_EVENTS",
+      "layer_name": "Actions & Events",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "b3940ee5-cd82-54c7-86e6-b52b4a08591d",
+          "concept": "USING_DEVICE",
+          "layer": "ACTIONS_EVENTS",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        },
+        {
+          "fact_id": "1d58b94c-c03e-58ff-b88c-3000cf92d450",
+          "concept": "TOUCHING",
+          "layer": "ACTIONS_EVENTS",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 0.84,
+        "maximum": 0.84,
+        "band": "MEDIUM_HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        },
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PARTIAL",
+      "future_work": "Human review and later cross-layer validation"
+    },
+    {
+      "layer_number": 9,
+      "layer_id": "RELATIONSHIPS",
+      "layer_name": "Relationships",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "f79a8369-a361-5920-a49e-881fd3f8b866",
+          "concept": "CLINICIAN_TREATS_PATIENT",
+          "layer": "RELATIONSHIPS",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        },
+        {
+          "fact_id": "ae6ae696-1d88-5524-bc0a-53e006a4f147",
+          "concept": "CLINICIAN_WORKS_ON_ANATOMY",
+          "layer": "RELATIONSHIPS",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        },
+        {
+          "fact_id": "b7077bad-cecc-5bcb-87a2-beffe459cf2f",
+          "concept": "PATIENT_POSITIONED_IN_TREATMENT_CHAIR",
+          "layer": "RELATIONSHIPS",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 0.84,
+        "maximum": 0.84,
+        "band": "MEDIUM_HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        },
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        },
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PARTIAL",
+      "future_work": "Human review and later cross-layer validation"
+    },
+    {
+      "layer_number": 10,
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "layer_name": "Clinical Visual Observations",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "5f875a01-9ac6-5ff6-ad09-f3393e1c149e",
+          "concept": "SCALP_UNDER_ACTIVE_CLINICAL_ATTENTION",
+          "layer": "CLINICAL_VISUAL_OBSERVATIONS",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 0.84,
+        "maximum": 0.84,
+        "band": "MEDIUM_HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PARTIAL",
+      "future_work": "Human review and later cross-layer validation"
+    },
+    {
+      "layer_number": 11,
+      "layer_id": "ENVIRONMENT",
+      "layer_name": "Environment",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "cc6d5d16-a409-5a92-be0e-4074d928a1d2",
+          "concept": "TREATMENT_ROOM",
+          "layer": "ENVIRONMENT",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 0.84,
+        "maximum": 0.84,
+        "band": "MEDIUM_HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PARTIAL",
+      "future_work": "Human review and later cross-layer validation"
+    },
+    {
+      "layer_number": 12,
+      "layer_id": "CINEMATOGRAPHY",
+      "layer_name": "Cinematography",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "d55297ca-6110-528f-a8af-98e443957cc7",
+          "concept": "MEDIUM",
+          "layer": "CINEMATOGRAPHY",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        },
+        {
+          "fact_id": "829ae589-5d8e-5c3f-84fc-f4096c42a808",
+          "concept": "VERTICAL",
+          "layer": "CINEMATOGRAPHY",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        },
+        {
+          "fact_id": "d635e424-f78d-5a03-89ef-2ee35fb08386",
+          "concept": "HANDHELD",
+          "layer": "CINEMATOGRAPHY",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 0.84,
+        "maximum": 0.84,
+        "band": "MEDIUM_HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        },
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        },
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PARTIAL",
+      "future_work": "Human review and later cross-layer validation"
+    },
+    {
+      "layer_number": 13,
+      "layer_id": "COMPOSITION",
+      "layer_name": "Composition",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "dc32ad6a-1ea0-5dda-aa7a-80c74ef6ad03",
+          "concept": "PATIENT_HEAD_AND_CLINICIAN_DOMINANT",
+          "layer": "COMPOSITION",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        },
+        {
+          "fact_id": "2445e09c-3891-5c4e-8340-eb80f897e4b5",
+          "concept": "TOOL_VISIBLE_NEAR_TREATMENT_AREA",
+          "layer": "COMPOSITION",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 0.84,
+        "maximum": 0.84,
+        "band": "MEDIUM_HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        },
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PARTIAL",
+      "future_work": "Human review and later cross-layer validation"
+    },
+    {
+      "layer_number": 14,
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "layer_name": "Speech / Transcript / Audio",
+      "applicability": "APPLICABLE",
+      "semantic_state": "UNKNOWN",
+      "processing_status": "PENDING_PHASE_6",
+      "structured_facts": [
+        {
+          "fact_id": "3fae7cb7-98c0-5fd4-a8d1-f64b578add03",
+          "concept": "AUDIO_STREAM_PRESENT",
+          "layer": "SPEECH_TRANSCRIPT_AUDIO",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 1.0,
+          "confidence_band": "HIGH",
+          "evidence": [
+            {
+              "type": "ASSET_LEVEL",
+              "source_artifact": "PHASE3_TECHNICAL_METADATA",
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "DETERMINISTIC_PROCESSOR",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "NEW_OBSERVATION",
+          "human_review_status": "UNVERIFIED"
+        },
+        {
+          "concept": "SPEECH_PRESENT",
+          "state": "UNKNOWN",
+          "value": null,
+          "confidence": null,
+          "evidence": [],
+          "provenance": "WORKFLOW_STATE",
+          "human_review_status": "UNVERIFIED",
+          "note": "Pending Phase 6"
+        },
+        {
+          "concept": "TRANSCRIPT",
+          "state": "UNKNOWN",
+          "value": null,
+          "confidence": null,
+          "evidence": [],
+          "provenance": "WORKFLOW_STATE",
+          "human_review_status": "UNVERIFIED",
+          "note": "Pending Phase 6"
+        },
+        {
+          "concept": "SPEAKER_ROLES_FROM_AUDIO",
+          "state": "UNKNOWN",
+          "value": null,
+          "confidence": null,
+          "evidence": [],
+          "provenance": "WORKFLOW_STATE",
+          "human_review_status": "UNVERIFIED",
+          "note": "Pending Phase 6"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "band": "HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "ASSET_LEVEL",
+          "source_artifact": "PHASE3_TECHNICAL_METADATA",
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": false,
+      "new_analysis_used": false,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PENDING_PHASE_6",
+      "future_work": "Run approved Phase 6 audio intelligence"
+    },
+    {
+      "layer_number": 15,
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "layer_name": "OCR / Visible Text",
+      "applicability": "APPLICABLE",
+      "semantic_state": "UNKNOWN",
+      "processing_status": "PENDING_PHASE_7",
+      "structured_facts": [
+        {
+          "concept": "VISIBLE_TEXT",
+          "state": "UNKNOWN",
+          "value": null,
+          "confidence": null,
+          "evidence": [],
+          "provenance": "WORKFLOW_STATE",
+          "human_review_status": "UNVERIFIED",
+          "note": "No OCR executed; pending Phase 7"
+        },
+        {
+          "concept": "RECOGNIZED_TEXT",
+          "state": "UNKNOWN",
+          "value": null,
+          "confidence": null,
+          "evidence": [],
+          "provenance": "WORKFLOW_STATE",
+          "human_review_status": "UNVERIFIED",
+          "note": "No OCR executed; pending Phase 7"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": null,
+        "maximum": null,
+        "band": "UNKNOWN"
+      },
+      "evidence_references": [],
+      "existing_data_used": false,
+      "new_analysis_used": false,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PENDING_PHASE_7",
+      "future_work": "Run approved Phase 7 OCR"
+    },
+    {
+      "layer_number": 16,
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "layer_name": "Marketing & Content Usage",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "dcd689d2-ced8-5346-b219-9a28e43262d7",
+          "concept": "PROCEDURE_CONTENT",
+          "layer": "MARKETING_CONTENT_USAGE",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        },
+        {
+          "fact_id": "52c18339-ef49-5c98-9c92-d43314de3ab0",
+          "concept": "CLINICAL_REFERENCE",
+          "layer": "MARKETING_CONTENT_USAGE",
+          "state": "OBSERVED",
+          "value": true,
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "VERIFIED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 0.84,
+        "maximum": 0.84,
+        "band": "MEDIUM_HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        },
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PARTIAL",
+      "future_work": "Human review and later cross-layer validation"
+    },
+    {
+      "layer_number": 17,
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "layer_name": "Semantic Narrative",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "COMPLETED_PHASE_5",
+      "structured_facts": [
+        {
+          "fact_id": "33583c65-3c7c-5466-9049-dbe52685343d",
+          "concept": "PROVISIONAL_ASSET_NARRATIVE",
+          "layer": "SEMANTIC_NARRATIVE",
+          "state": "OBSERVED",
+          "value": "A masked clinician uses a handheld tool near the frontal scalp of a reclining adult patient wearing eye protection.",
+          "confidence": 0.84,
+          "confidence_band": "MEDIUM_HIGH",
+          "evidence": [
+            {
+              "type": "KEYFRAME_LEVEL",
+              "source_artifact": "PHASE3_TIMELINE",
+              "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+              "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+              "timestamp_start": 0.0,
+              "timestamp_end": 0.0,
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "AI_MODEL",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "NEW_OBSERVATION",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 0.84,
+        "maximum": 0.84,
+        "band": "MEDIUM_HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "KEYFRAME_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a",
+          "timestamp_start": 0.0,
+          "timestamp_end": 0.0,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": true,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PARTIAL",
+      "future_work": "Human review and later search-document authoring"
+    },
+    {
+      "layer_number": 18,
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "layer_name": "Search & Embeddings",
+      "applicability": "APPLICABLE",
+      "semantic_state": "OBSERVED",
+      "processing_status": "PENDING_LATER_SEARCH_STAGE",
+      "structured_facts": [
+        {
+          "fact_id": "5b30eb8a-f755-56d0-b777-c27e5ae604ef",
+          "concept": "CURRENT_SEARCH_REPRESENTATION",
+          "layer": "SEARCH_EMBEDDINGS",
+          "state": "OBSERVED",
+          "value": {
+            "visual_embedding": true,
+            "asset_search_document": true,
+            "scene_search_document": true,
+            "scene_embedding": true,
+            "keyframe_embedding": true,
+            "semantic_index_v1_embedding_status": "PENDING_REGENERATION",
+            "canonical_search_document": "PENDING_LATER_PHASE"
+          },
+          "confidence": 1.0,
+          "confidence_band": "HIGH",
+          "evidence": [
+            {
+              "type": "ASSET_LEVEL",
+              "source_artifact": "PHASE2_AUDIT",
+              "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+            }
+          ],
+          "provenance": "DATABASE_METADATA",
+          "provider": "openai_codex_visual_review",
+          "model": "current_codex_model_identifier_unavailable",
+          "provider_version": "phase5_evidence_review_v1",
+          "source_disposition": "RETAINED_EXISTING",
+          "human_review_status": "UNVERIFIED"
+        }
+      ],
+      "confidence_summary": {
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "band": "HIGH"
+      },
+      "evidence_references": [
+        {
+          "type": "ASSET_LEVEL",
+          "source_artifact": "PHASE2_AUDIT",
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd"
+        }
+      ],
+      "existing_data_used": true,
+      "new_analysis_used": false,
+      "conflicts": [],
+      "human_review_status": "UNVERIFIED",
+      "completeness": "PENDING_LATER_SEARCH_STAGE",
+      "future_work": "Regenerate only after canonical facts are approved"
+    }
+  ],
+  "scene_semantics": [
+    {
+      "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+      "scene_index": 0,
+      "start_time": 0.0,
+      "end_time": 7.7,
+      "semantic_label": "SCALP_TREATMENT",
+      "semantic_state": "OBSERVED",
+      "confidence": 0.79,
+      "evidence": [
+        {
+          "type": "SCENE_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "timestamp_start": 0.0,
+          "timestamp_end": 7.7,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd",
+          "keyframe_id": "d1c3f279-7051-570c-b6cc-d7b75d7c5e6a"
+        }
+      ],
+      "narrative": "A masked clinician uses a handheld tool near the frontal scalp of a reclining adult patient wearing eye protection.",
+      "human_review_status": "UNVERIFIED"
+    }
+  ],
+  "event_semantics": [
+    {
+      "event_id": "6348092c-6f27-577a-8fd5-49d8211dd1a3",
+      "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+      "start_time": 0.8666666666666667,
+      "end_time": 2.2333333333333334,
+      "peak_time": 1.9333333333333333,
+      "semantic_action": "USING_DEVICE",
+      "semantic_state": "OBSERVED",
+      "confidence": 0.79,
+      "evidence": [
+        {
+          "type": "EVENT_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "event_id": "6348092c-6f27-577a-8fd5-49d8211dd1a3",
+          "timestamp_start": 0.8666666666666667,
+          "timestamp_end": 2.2333333333333334,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd",
+          "keyframe_id": "c8b5b4a2-916f-5a8a-b574-5c36b723ff46"
+        }
+      ],
+      "narrative": "Candidate interval visually supports USING_DEVICE.",
+      "human_review_status": "UNVERIFIED"
+    },
+    {
+      "event_id": "ce7bf880-1adb-556e-9542-42a5764d673c",
+      "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+      "start_time": 5.366666666666666,
+      "end_time": 6.333333333333333,
+      "peak_time": 5.866666666666666,
+      "semantic_action": "USING_DEVICE",
+      "semantic_state": "OBSERVED",
+      "confidence": 0.79,
+      "evidence": [
+        {
+          "type": "EVENT_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "event_id": "ce7bf880-1adb-556e-9542-42a5764d673c",
+          "timestamp_start": 5.366666666666666,
+          "timestamp_end": 6.333333333333333,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd",
+          "keyframe_id": "7d7e486e-6084-5a56-abb5-91b9603f4b5b"
+        }
+      ],
+      "narrative": "Candidate interval visually supports USING_DEVICE.",
+      "human_review_status": "UNVERIFIED"
+    },
+    {
+      "event_id": "e67e3643-b19d-55db-a9a1-4b706eccfe08",
+      "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+      "start_time": 7.166666666666667,
+      "end_time": 7.666666666666667,
+      "peak_time": 7.5,
+      "semantic_action": "USING_DEVICE",
+      "semantic_state": "OBSERVED",
+      "confidence": 0.79,
+      "evidence": [
+        {
+          "type": "EVENT_LEVEL",
+          "source_artifact": "PHASE3_TIMELINE",
+          "scene_id": "ee19f9eb-d4f9-508d-9533-d4e7c39a33a8",
+          "event_id": "e67e3643-b19d-55db-a9a1-4b706eccfe08",
+          "timestamp_start": 7.166666666666667,
+          "timestamp_end": 7.666666666666667,
+          "source_fingerprint": "55a5a5c073e90252a5bac758b5b049060d7b8193a3b40c3c35d88ba8ecf1b5dd",
+          "keyframe_id": "79b5d4d5-491b-555e-8f3b-91bc0df1e941"
+        }
+      ],
+      "narrative": "Candidate interval visually supports USING_DEVICE.",
+      "human_review_status": "UNVERIFIED"
+    }
+  ],
+  "conflicts": [],
+  "existing_data_reconciliation": {
+    "primary_disposition": "VERIFIED_EXISTING"
+  },
+  "processing_gaps": [
+    "TRANSCRIPT_PENDING_PHASE_6",
+    "OCR_PENDING_PHASE_7",
+    "EMBEDDING_AND_SEARCH_DOCUMENT_PENDING_LATER_STAGE"
+  ],
+  "human_review_requirements": [],
+  "performance": {
+    "semantic_analysis_seconds": 0.0003728000010596588,
+    "provider_calls": 1,
+    "provider": "openai_codex_visual_review",
+    "model": "current_codex_model_identifier_unavailable",
+    "input_contact_sheets": 1,
+    "cost": "UNAVAILABLE",
+    "retry_count": 0,
+    "failure_count": 0
+  },
+  "status": "COMPLETED",
+  "idempotency": {
+    "verified": true,
+    "functional_fingerprint": "15caf24e3ca1c736308d560b65c4cdae228c7d1fdff65f5e36e711838812dd02",
+    "repeat_fingerprint": "15caf24e3ca1c736308d560b65c4cdae228c7d1fdff65f5e36e711838812dd02"
+  }
+}

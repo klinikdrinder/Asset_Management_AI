@@ -1,0 +1,177 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1388.MP4, 15s, 1280x720",
+      "evidence": [
+        "Technical metadata lists filename IMG_1388.MP4, duration 15.0817s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical video of instrument applied to face/neck skin",
+      "evidence": [
+        "Majority of the 41 scenes consistently show a gloved hand applying a metallic pen-like device to a patient's chin/jaw/neck skin"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "41 sequential close-up scenes of continuous device application",
+      "evidence": [
+        "scene_results contains 41 indexed scenes progressing through similar close-up shots of the device moving across the jaw/chin/neck area"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved practitioner(s) and one patient",
+      "evidence": [
+        "Multiple scenes describe a gloved hand/practitioner holding the device and a patient's face/chin/neck as the treatment site",
+        "scene 40 shows the patient's face with eye shields, lying down"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient skin with redness, small moles/pigmented spots",
+      "evidence": [
+        "scene 0 and 18 note a small mole on the neck and pigmented spots",
+        "several scenes describe mild redness near the mouth/jaw"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Chin, jawline, neck, and lower face visible",
+      "evidence": [
+        "Scenes repeatedly reference the chin, jaw, neck, ear, nose, and mouth corner of the patient"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not identifiable from visuals alone",
+      "evidence": [
+        "No supplied text names a specific clinical procedure; scenes only show a gloved hand with an instrument tip touching skin, which per instructions is insufficient to establish a named procedure",
+        "every scene_results entry marks TREATMENT_PROCEDURE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instrument tip repeatedly applied to skin across facial/neck area",
+      "evidence": [
+        "Across scenes 0-40 the device tip is shown touching, hovering over, or moving across different points of the chin, jaw, and neck"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner's hands interacting with patient's skin",
+      "evidence": [
+        "Most scenes show one gloved hand holding the device while a second gloved hand steadies or stretches the patient's skin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Erythema, orange discoloration, and surface residue on skin",
+      "evidence": [
+        "Multiple scenes (e.g., 21, 27-30, 33, 35, 36, 40) describe reddened, blotchy, or orange-tinted skin at the contact site",
+        "scene 2 notes fine white residue on the skin surface"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment setting with blue drape/towel",
+      "evidence": [
+        "Numerous scenes (e.g., 16-38) describe a blue cloth or towel draped near the patient's neck/shoulder, consistent with a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme close-up, handheld point-of-view style shots",
+      "evidence": [
+        "Nearly all scenes are described as extreme close-ups or tight close-up shots focused on the device tip and skin contact"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device and gloved hands centered, patient's face at frame edge",
+      "evidence": [
+        "Scenes consistently frame the metallic device and gloved hands centrally with the patient's nose/mouth/ear visible at frame edges"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "transcript_state is NO_SPEECH",
+        "every scene_results entry marks SPEECH_TRANSCRIPT_AUDIO as FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations count is 0",
+        "every scene_results entry marks OCR_VISIBLE_TEXT as FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing content indicators found",
+      "evidence": [
+        "Scenes that evaluate this layer (e.g., 0, 33, 35, 40) mark MARKETING_CONTENT_USAGE as FALSE; no branding, captions, or promotional elements are described in any scene"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Continuous close-up sequence of skin treatment application",
+      "evidence": [
+        "Per-scene narratives collectively describe a coherent progression of a handheld instrument being applied across the patient's chin, jaw, and neck"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually inspectable layer",
+      "evidence": [
+        "Nearly all scene_results mark SEARCH_EMBEDDINGS as NOT_APPLICABLE, indicating this layer is not derivable from visual evidence"
+      ]
+    }
+  ],
+  "narrative": "A gloved practitioner holds a metallic, ribbed pen-shaped instrument connected by a cable, repeatedly touching or hovering its fine tip against a patient's chin, jawline, and neck skin, which shows patches of redness and orange-tinted discoloration. The patient lies draped in a blue cloth throughout the close-up sequence, with a second gloved hand steadying the skin and small moles visible nearby.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "df817eac-fbf8-46bd-9817-940e66de50b3",
+  "image_count": 12
+}

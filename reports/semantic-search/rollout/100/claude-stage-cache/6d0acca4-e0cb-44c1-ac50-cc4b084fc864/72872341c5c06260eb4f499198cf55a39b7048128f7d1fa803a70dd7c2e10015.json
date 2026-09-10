@@ -1,0 +1,190 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3968.MP4, single scene 0\u201318.8s",
+      "evidence": [
+        "filename IMG_3968.MP4",
+        "asset_id 6d0acca4-e0cb-44c1-ac50-cc4b084fc864",
+        "scene_index 0, start 0.0s end 18.8s",
+        "technical metadata: 1280x720, 30fps, h264, audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room with provider treating reclined patient's face",
+      "evidence": [
+        "clinician using handheld device connected to console on reclined, draped patient",
+        "medical equipment and treatment bed visible in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two sequential keyframes",
+      "evidence": [
+        "scene spans 0.0s to 18.8s with 2 supplied keyframes",
+        "keyframe 1 shows applicator lifted away from face; keyframe 2 shows applicator touching skin near nose"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One clinician/provider and one reclined patient",
+      "evidence": [
+        "person in scrubs, mask, and gloves actively holding treatment device (provider role)",
+        "second person lying down, eyes closed, covered by drape (patient role)"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider in olive scrubs with name embroidery; patient draped in blue",
+      "evidence": [
+        "provider has dark hair in a bun with a hair clip, wears olive-green short-sleeve scrub top with embroidered text, surgical mask, latex gloves, and a smartwatch",
+        "patient's face partially visible with eyes closed; body covered by a blue disposable sheet"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's facial region (nose, upper lip, periorbital area)",
+      "evidence": [
+        "applicator positioned over patient's nose/upper lip in both keyframes",
+        "small gauze/tape patch visible on nasal bridge"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Device-based facial treatment; specific procedure not stated",
+      "evidence": [
+        "no procedure name present in supplied text (spoken_content and readable_text_detected are empty)",
+        "only gloves, a handheld applicator, and a console are visible, which do not by themselves establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider positions and applies handpiece to patient's face",
+      "evidence": [
+        "keyframe 1: provider holds hose-connected applicator near but not touching patient's face",
+        "keyframe 2: applicator tip is in contact with skin near the nose"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider-patient clinical interaction",
+      "evidence": [
+        "provider is bent over, in close physical proximity, actively directing a device toward the patient's face",
+        "patient is passive, reclined beneath provider's working area"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small gauze/tape on nasal bridge, eyes closed, no other visible findings",
+      "evidence": [
+        "small white gauze or tape patch visible on patient's nose in both keyframes",
+        "patient's eyes appear closed with no visible redness, bleeding, or bruising in the framed area"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinic treatment room",
+      "evidence": [
+        "cream-colored walls with a vertical red accent stripe",
+        "wall-mounted switch/outlet panel",
+        "medical device console on a cart with a control screen and dial",
+        "treatment bed with blue disposable sheeting and a rolling stool"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-range vertical framing of treatment area",
+      "evidence": [
+        "both keyframes are vertically oriented, close-up shots centered on the provider's hands and patient's face",
+        "camera angle is elevated, looking down at the treatment area"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider and patient fill foreground, device console in background",
+      "evidence": [
+        "provider and patient occupy the left/center and lower frame",
+        "console/machine is positioned in the right background of both keyframes",
+        "hose cable curves prominently through the lower frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech content detected despite audio track",
+      "evidence": [
+        "spoken_content field is an empty array",
+        "technical metadata indicates audio_stream true but no transcribed speech supplied"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Embroidered name text visible on provider's scrub top",
+      "evidence": [
+        "text reading approximately \"DR LEW KAR SIEW\" is embroidered on the provider's scrub top in both keyframes",
+        "partial text is visible on the console housing, though not fully legible"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Vertical video format; intended use not specified",
+      "evidence": [
+        "video is vertically framed similar to short-form social content, but no caption, branding overlay, or usage context is supplied in the text"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician administering a facial device treatment to a reclined patient",
+      "evidence": [
+        "provider actively operates a hose-connected handheld applicator on the patient's facial area",
+        "patient reclines passively under a drape in a clinical room, consistent with an in-progress treatment session"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually or textually observable attribute",
+      "evidence": []
+    }
+  ],
+  "narrative": "A clinician in olive-green scrubs, a surgical mask, and gloves holds a handheld applicator connected by a coiled hose to a tabletop console, working near the nose/upper-lip area of a patient reclined on a treatment bed under a blue drape. Two keyframes from the same clinic room show the applicator first lifted near the patient's face and then touching the skin, with a small piece of gauze or tape visible on the patient's nose.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "6d0acca4-e0cb-44c1-ac50-cc4b084fc864",
+  "image_count": 2
+}

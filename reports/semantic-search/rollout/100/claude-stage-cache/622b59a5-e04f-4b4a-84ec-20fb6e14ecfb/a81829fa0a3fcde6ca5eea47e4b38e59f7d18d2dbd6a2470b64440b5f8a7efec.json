@@ -1,0 +1,179 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_3403.MP4",
+      "evidence": [
+        "filename IMG_3403.MP4, duration 11.98s, 1280x720, h264, one canonical scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical clip of a facial treatment session",
+      "evidence": [
+        "Single scene showing a reclined patient and two clinic staff performing hands-on facial care with a device and syringe"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across the clip",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, single scene_index 0 entry"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined patient and two clinic staff members",
+      "evidence": [
+        "patient reclining with eyes closed on treatment bed",
+        "clinician in navy scrubs with 'KLINIK DR INDER' logo holding a device",
+        "second person in dark scrubs and gloves holding a syringe"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient with dark hair under headband; staff in navy and dark scrubs",
+      "evidence": [
+        "patient has dark hair pulled back under a black headband, eyes closed, small marks visible on cheek",
+        "staff member wears glasses, hijab, and navy scrub top with embroidered logo",
+        "second staff member wears dark clothing and white gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, forehead, and hairline visible",
+      "evidence": [
+        "patient's face, forehead, and hairline area are visible and being contacted near the syringe and device"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure name not established",
+      "evidence": [
+        "Only a handheld device and a gloved hand holding a syringe near the forehead are visible; no named procedure appears in supplied text, so per rules this cannot be labeled OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device applied to forehead while syringe is held near hairline",
+      "evidence": [
+        "scene narrative: clinician holds device near forehead; second person holds syringe near forehead/hairline"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Relationship between staff and patient not specified",
+      "evidence": [
+        "per-scene RELATIONSHIPS layer marked UNKNOWN in supplied data"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small red marks visible on patient's cheek",
+      "evidence": [
+        "small reddish marks/spots visible on the patient's cheek in the image",
+        "scene-level CLINICAL_VISUAL_OBSERVATIONS marked OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Clinic room setting not clearly detailed",
+      "evidence": [
+        "per-scene ENVIRONMENT layer marked UNKNOWN despite visible treatment bed and wall, insufficient detail to confirm broader setting"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical handheld-style framing",
+      "evidence": [
+        "vertical frame tightly cropped on patient's face and attending hands",
+        "scene-level CINEMATOGRAPHY marked OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered, staff framed at edges",
+      "evidence": [
+        "patient's face occupies center/lower frame while staff and hands occupy upper frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH",
+        "scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinic logo text visible on uniform",
+      "evidence": [
+        "'KLINIK DR INDER' text visible embroidered on navy scrub top",
+        "ocr_observations: 5 reported in supplied data"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not established",
+      "evidence": [
+        "per-scene MARKETING_CONTENT_USAGE marked UNKNOWN in supplied data"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical facial care session depicted",
+      "evidence": [
+        "scene shows reclined patient receiving hands-on facial attention from two clinic staff with a device and syringe"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual content evaluation",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE in supplied data"
+      ]
+    }
+  ],
+  "narrative": "A person reclines on a treatment bed with eyes closed and head resting on a blue-covered pillow while a clinician in navy scrubs holds a blue and white handheld device against their forehead. A second person wearing dark scrubs and gloves holds a syringe near the patient's forehead/hairline area, with a clinic logo reading \"KLINIK DR INDER\" visible on the navy uniform.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "622b59a5-e04f-4b4a-84ec-20fb6e14ecfb",
+  "image_count": 1
+}

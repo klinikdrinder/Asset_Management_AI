@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_0528.MP4",
+      "evidence": [
+        "filename IMG_0528.MP4, duration 13.47s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical close-up clip",
+      "evidence": [
+        "scene_results indicates 1 canonical scene with 2 keyframes covering the full asset"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining patient and gloved practitioner",
+      "evidence": [
+        "woman lying back with eyes closed; gloved hands of another person holding a pen and touching her jaw/neck"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman in blue surgical cap, eyes closed",
+      "evidence": [
+        "blue disposable cap covering hair, closed eyes, purple/gray towel draped over shoulders and chest"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, hairline, jaw and neck visible",
+      "evidence": [
+        "pen positioned near hairline/temple; second hand cups jaw and neck area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in evidence",
+      "evidence": [
+        "gloves, marking pen, and physical contact are visible but no procedure name is present in the supplied text; per rules this alone cannot establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Marking pen held near hairline, hand stabilizing jaw",
+      "evidence": [
+        "one gloved hand holds a white marking pen with red cap near the hairline/temple; another gloved hand cups and palpates the jaw and neck"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner hands positioned on patient's head/neck",
+      "evidence": [
+        "two gloved hands from a second person interact directly with the reclining woman's head and neck"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Marking pen near hairline, gloved contact with skin",
+      "evidence": [
+        "white pen with red-tinted tip near hairline; gloved hand contact on jaw/neck skin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "per-scene ENVIRONMENT marked UNKNOWN despite visible exam table, towel, and equipment; specific setting type cannot be confirmed from evidence"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing of face and hands",
+      "evidence": [
+        "tight vertical framing on face, hands, and upper torso across the two keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject centered, hands in foreground",
+      "evidence": [
+        "woman's face centered in frame with gloved hands occupying foreground left side"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Audio track with meaningful speech present",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, transcript_state MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text 'LUTR' on background device",
+      "evidence": [
+        "ocr_observations: 2; partial text 'LUTR' visible on black equipment in background"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing content present",
+      "evidence": [
+        "per-scene MARKETING_CONTENT_USAGE recorded as FALSE"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose not determinable",
+      "evidence": [
+        "per-scene SEMANTIC_NARRATIVE marked UNKNOWN; no procedure or context named in supplied text to establish narrative intent"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/narrative evaluation",
+      "evidence": [
+        "per-scene SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A woman lies back with eyes closed on an exam table, wearing a blue disposable surgical cap and a purple/gray towel over her shoulders and chest. A gloved hand holds a white marking pen near her hairline while a second gloved hand steadies her jaw and neck, with a black device labeled 'LUTR...' visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "b1e6a644-b467-4867-af4f-66b60717ea38",
+  "image_count": 1
+}

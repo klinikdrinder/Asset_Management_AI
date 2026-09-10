@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two keyframes from scene 0 of the supplied MP4 asset",
+      "evidence": [
+        "Supplied metadata identifies asset_id 46feb6c5-6b13-42d6-9d9b-2211b20b9498, filename IMG_3481.MP4, scene_index 0, and two representative keyframes."
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Apparent clinical interaction involving a handheld device",
+      "evidence": [
+        "The images show a gloved person in scrubs, a draped seated or reclined person, a corded handheld device, and a console."
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "The handheld device appears in the later keyframe",
+      "evidence": [
+        "The first keyframe shows the people and console without the device prominently raised; the second shows the gloved person holding it near the drape."
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Apparent healthcare worker and seated or reclined subject",
+      "evidence": [
+        "One person wears dark scrubs and gloves and handles equipment beside another person positioned on a padded surface under a blue drape."
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short-haired adult in dark scrubs and gloves; second person in dark clothing",
+      "evidence": [
+        "The visible worker has short dark hair, dark scrubs, and light-colored gloves; the other person's clothed lower torso and legs are visible."
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clothed lower torso and upper legs are visible",
+      "evidence": [
+        "The foreground person's covered lap, hip region, and upper legs occupy most of both frames."
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure cannot be determined",
+      "evidence": [
+        "A gloved person holds a device near a draped subject, but the supplied text does not name a procedure and the contact area is obscured."
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Worker raises and positions a corded handheld device",
+      "evidence": [
+        "In the second keyframe, the gloved worker grips a large handheld device and holds it near the blue drape."
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One person appears to attend to another",
+      "evidence": [
+        "The person in scrubs is positioned beside the seated or reclined person and handles equipment directed toward them."
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, scrubs, draping, padded surface, and equipment are visible",
+      "evidence": [
+        "Both frames show a gloved person in scrubs, a blue drape over the other person, a padded surface, and a medical-style console."
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Bright white treatment-room-like interior",
+      "evidence": [
+        "The scene has plain white walls, clinical-style equipment, a blue drape, and a padded treatment surface."
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-range fixed viewpoint",
+      "evidence": [
+        "Both supplied frames use portrait orientation and a similar close viewpoint focused on the people and equipment."
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Foreground body and drape partially obscure the worker and console",
+      "evidence": [
+        "The clothed foreground figure and blue drape dominate the right and lower frame, while the worker and console occupy the left and center background."
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Repeated supplied spoken phrase",
+      "evidence": [
+        "Supplied spoken content repeatedly transcribes: \"Gak boleh ambil asur di syuris\".",
+        "Technical metadata reports an AAC audio stream at 48000 Hz."
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "The supplied readable_text_detected list is empty.",
+        "Any markings visible on clothing or equipment are too obscured or unclear to read reliably."
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended marketing use cannot be determined",
+      "evidence": [
+        "The keyframes and metadata do not establish whether the video is promotional, educational, documentary, or for another use."
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "An apparent healthcare worker prepares or positions equipment beside a draped person",
+      "evidence": [
+        "Across the two keyframes, the worker remains beside the subject and later holds a corded device near the covered area."
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical room, gloved worker, draped person, handheld device, equipment console",
+      "evidence": [
+        "These searchable concepts are directly grounded in the visible people, setting, clothing, drape, device, and console."
+      ]
+    }
+  ],
+  "narrative": "Two representative video keyframes show a gloved person in dark scrubs beside a seated or reclined person whose torso and upper legs are covered by clothing and a blue drape. In the later keyframe, the person in scrubs holds a large corded handheld device near the draped person, with a console visible behind them.",
+  "provider": "codex_cli",
+  "model": "codex-default",
+  "asset_id": "46feb6c5-6b13-42d6-9d9b-2211b20b9498",
+  "image_count": 2
+}

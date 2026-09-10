@@ -1,0 +1,175 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_4121.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_4121.MP4, h264, 1280x720, 15.03s duration"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical still-life of trays on equipment",
+      "evidence": [
+        "One canonical scene with two keyframes showing a petri dish and metal tray on a labeled unit"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1, scene_index 0 spanning the clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No person visible in sampled keyframes",
+      "evidence": [
+        "The two sampled keyframes show only equipment and trays with no person in frame, though scene-level notes reference a gloved individual"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No appearance details visible in these frames",
+      "evidence": [
+        "No person is visible in the supplied keyframes to assess appearance"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No anatomy discernible",
+      "evidence": [
+        "Scene-level layer result lists ANATOMY as UNKNOWN",
+        "Frames show only trays and equipment, no visible body part"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure indicated",
+      "evidence": [
+        "No procedure name appears in the supplied text; gloves, trays, and instruments alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No action visible in static keyframes",
+      "evidence": [
+        "Sampled keyframes show stationary trays; scene-level ACTIONS_EVENTS was OBSERVED elsewhere but not evident in these two images alone"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No interpersonal relationship depicted",
+      "evidence": [
+        "No people are visible in the sampled frames to establish relationships"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blood agar plate and tray of small grafts",
+      "evidence": [
+        "Red divided petri dish with dark spots visible",
+        "Blue divided tray containing small grey/white granular material"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical room labeled ROOM 4 with plastic-wrapped wall",
+      "evidence": [
+        "Metal unit bears a sign reading 'ROOM 4'",
+        "Background wall is covered in a plastic/quilted protective sheeting"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up static vertical framing",
+      "evidence": [
+        "Vertical 1280x720-oriented close shot centered on the trays atop the unit"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Trays centered on equipment surface",
+      "evidence": [
+        "Petri dish and blue tray placed side by side on the metal tray surface, filling the mid-frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present being true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handwritten note and label text visible",
+      "evidence": [
+        "Paper with handwritten '250' and partial text 'NARA,MURNI' visible top left",
+        "Printed sign reading 'ROOM 4' on the equipment"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No indication of marketing use",
+      "evidence": [
+        "No branding, watermark, or promotional context present in the supplied evidence"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical lab setup with prepared trays",
+      "evidence": [
+        "Scene narrative describes a blood agar plate and tray of graft-like material on a labeled clinical unit"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": [
+        "Scene-level result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A red blood agar plate divided into quadrants and a blue divided tray holding small grey grafts sit on a metal unit labeled 'ROOM 4' against a plastic-wrapped wall backdrop. A handwritten note reading '250' and partial text 'NARA,MURNI' is visible on paper taped above the equipment.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "f1376392-7dfd-438c-9127-60b1e641c2b4",
+  "image_count": 1
+}

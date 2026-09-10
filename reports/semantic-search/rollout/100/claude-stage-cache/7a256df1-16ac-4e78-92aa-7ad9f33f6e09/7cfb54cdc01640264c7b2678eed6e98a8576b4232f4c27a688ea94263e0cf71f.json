@@ -1,0 +1,175 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Local video file IMG_0478.MP4",
+      "evidence": [
+        "filename IMG_0478.MP4, duration 18.4s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical close-up video",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, single scene_results entry"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across the clip",
+      "evidence": [
+        "scene_index 0 spans the full 18.4s duration with no scene breaks noted"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician attending to a reclined patient",
+      "evidence": [
+        "masked, gloved person in green scrubs positioned above a reclined patient wearing a surgical cap"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Green scrubs, surgical mask, gloves; patient in blue cap",
+      "evidence": [
+        "clinician wears teal/green scrub top, blue surgical mask, pearl earring, white gloves",
+        "patient wears a blue surgical cap and has faint marker lines on the face"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and scalp visible",
+      "evidence": [
+        "patient's forehead, nose, cheek, and closed eyes visible with marker lines on the face/scalp area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identified from evidence",
+      "evidence": [
+        "supplied data marks TREATMENT_PROCEDURE UNKNOWN for the scene; gloves and contact alone do not name a procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician dabbing at patient's forehead/nose",
+      "evidence": [
+        "gloved hand shown dabbing/holding something near the patient's forehead and nose area"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-patient care interaction",
+      "evidence": [
+        "clinician positioned directly over reclined patient performing hands-on contact"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Marker lines on patient's face/scalp",
+      "evidence": [
+        "faint marker/pen lines visible on the patient's forehead and cheek",
+        "blue surgical cap covering scalp and hairline"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Plain white clinical treatment room",
+      "evidence": [
+        "white walls, wall-mounted switches and a remote/intercom panel, medical chair/equipment in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld vertical close-range shot",
+      "evidence": [
+        "vertical framing (1280x720 sampled as portrait-oriented keyframes), close medium shot on the clinician and patient"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient in foreground, clinician upper frame",
+      "evidence": [
+        "patient's reclined face fills lower-left of frame; clinician's torso and raised arm occupy upper-right"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "audio_state AUDIO_PRESENT but transcript_state NO_SPEECH",
+        "scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0",
+        "scene-level OCR_VISIBLE_TEXT marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN with no supporting text or branding evidence"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing hands-on care on reclined patient",
+      "evidence": [
+        "combined visual evidence of gloved clinician attending to draped, reclined patient in clinical room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this medium",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked, gloved clinician in green scrubs leans over a reclined patient wearing a blue surgical cap, dabbing at the patient's forehead/nose area while the patient lies back with eyes closed under a towel draped over the chest. The setting is a plain white clinical room with wall switches and equipment visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "7a256df1-16ac-4e78-92aa-7ad9f33f6e09",
+  "image_count": 1
+}

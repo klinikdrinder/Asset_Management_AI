@@ -1,0 +1,941 @@
+{
+  "status": "PASS",
+  "planned": 10,
+  "completed": 10,
+  "assets": [
+    {
+      "asset_id": "e8f2ca8c-e7c2-4b74-95e7-3f31cd1d816a",
+      "filename": "3631150497-preview.mp4",
+      "status": "ANALYZED",
+      "run_id": "0ed257b7-8bc3-5136-8475-6253517443d5",
+      "source_fingerprint": "517ecf4e88e382baa7975a7e03e4debf951a23075e1d3ee249afd6e541bbfb75",
+      "technical": {
+        "duration_seconds": 5.0,
+        "width_px": 898,
+        "height_px": 506,
+        "fps": 30.0,
+        "codec": "h264",
+        "orientation": "LANDSCAPE",
+        "aspect_ratio": "449:253",
+        "rotation": null,
+        "pix_fmt": "yuv420p",
+        "bit_rate": "657259",
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "size_bytes": 410787,
+        "has_audio": false,
+        "audio_codec": null,
+        "audio_sample_rate": null,
+        "audio_channels": null
+      },
+      "detected_cuts": [],
+      "technical_metadata_persisted_to": "BLOCKED:APIError",
+      "scenes": [
+        {
+          "scene_id": "7cd97006-a4f7-5110-a4c0-a1514cf3b271",
+          "index": 0,
+          "start": 0.0,
+          "end": 5.0,
+          "literal": "Scene 1 of 3631150497-preview.mp4: no determinate visual observation.",
+          "accepted_concepts": [],
+          "positives": [],
+          "search_text": "3631150497-preview.mp4 scene 1 Scene 1 of 3631150497-preview.mp4: no determinate visual observation.",
+          "keyframes": [
+            {
+              "keyframe_id": "65ade0f9-6821-5719-ab88-ebe29416dacf",
+              "path": "D:\\Asset_Management_AI\\tmp\\full-index-30\\e8f2ca8c-e7c2-4b74-95e7-3f31cd1d816a\\s0_c0.jpg",
+              "timestamp": 0.714,
+              "frame_index": 21,
+              "selection_reason": "QUALITY_SCORED_REPRESENTATIVE",
+              "visual_description": "Representative frame with no determinate visual observation.",
+              "quality": {
+                "brightness": 198.43,
+                "contrast": 50.09,
+                "sharpness": 125.74,
+                "score": 6298.62
+              }
+            },
+            {
+              "keyframe_id": "c80da98e-ca24-5dbe-b877-3e939793dbe4",
+              "path": "D:\\Asset_Management_AI\\tmp\\full-index-30\\e8f2ca8c-e7c2-4b74-95e7-3f31cd1d816a\\s0_c1.jpg",
+              "timestamp": 1.429,
+              "frame_index": 42,
+              "selection_reason": "QUALITY_SCORED_REPRESENTATIVE",
+              "visual_description": "Representative frame with no determinate visual observation.",
+              "quality": {
+                "brightness": 201.47,
+                "contrast": 48.58,
+                "sharpness": 228.44,
+                "score": 11097.43
+              }
+            }
+          ]
+        }
+      ],
+      "seconds": 1029.969
+    },
+    {
+      "asset_id": "963376ad-9cc1-46e3-a80a-9249b71839d1",
+      "filename": "IMG_0534.MP4",
+      "status": "ANALYZED",
+      "run_id": "89186c8e-38a2-57ec-9bc4-01a62a0aa8b4",
+      "source_fingerprint": "4ea1b08cb578fa7a2caf95a952be92eca4fc39ac1f4a71c099538f6ec4bef7f1",
+      "technical": {
+        "duration_seconds": 0.9667,
+        "width_px": 1280,
+        "height_px": 720,
+        "fps": 30.0,
+        "codec": "h264",
+        "orientation": "LANDSCAPE",
+        "aspect_ratio": 1.7778,
+        "rotation": -90,
+        "pix_fmt": "yuv420p",
+        "bit_rate": "3941814",
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "size_bytes": 476319,
+        "has_audio": true,
+        "audio_codec": "aac",
+        "audio_sample_rate": "44100",
+        "audio_channels": 2
+      },
+      "detected_cuts": [],
+      "technical_metadata_persisted_to": "BLOCKED:APIError",
+      "scenes": [
+        {
+          "scene_id": "977e1fda-56b0-50a2-82e7-58d626bc307b",
+          "index": 0,
+          "start": 0.0,
+          "end": 0.967,
+          "literal": "Scene 1 of IMG_0534.MP4: handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible.",
+          "accepted_concepts": [
+            "handheld object or instrument and protective gloves visible",
+            "person or body part visible",
+            "physical contact, holding, or manipulation visible"
+          ],
+          "positives": [
+            {
+              "assertion_id": "3c9b25aa-d62d-577c-9526-9618cebba8f3",
+              "canonical_code": "PHYSICAL_CONTACT_HOLDING_OR_MANIPULATION_VISIBLE",
+              "display_text": "physical contact, holding, or manipulation visible",
+              "concept_type": "ACTION",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "05ff2700-568f-5fe4-96a4-3adfc9d7fda7",
+              "canonical_code": "HANDHELD_INSTRUMENT_AND_PROTECTIVE_GLOVES_VISIBLE",
+              "display_text": "handheld object or instrument and protective gloves visible",
+              "concept_type": "SEMANTIC_CONCEPT",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "fd0e3f31-ef23-5ce1-bbfb-1128c45cb373",
+              "canonical_code": "PERSON_OR_BODY_PART_VISIBLE",
+              "display_text": "person or body part visible",
+              "concept_type": "ROLE",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            }
+          ],
+          "search_text": "IMG_0534.MP4 scene 1 Scene 1 of IMG_0534.MP4: handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible. handheld object or instrument and protective gloves visible person or body part visible physical contact, holding, or manipulation visible",
+          "keyframes": [
+            {
+              "keyframe_id": "364a546f-909e-51ef-8ea0-cbc2585a0c52",
+              "path": "D:\\Asset_Management_AI\\tmp\\full-index-30\\963376ad-9cc1-46e3-a80a-9249b71839d1\\s0_c0.jpg",
+              "timestamp": 0.483,
+              "frame_index": 14,
+              "selection_reason": "QUALITY_SCORED_REPRESENTATIVE",
+              "visual_description": "Representative frame showing person or body part visible, handheld object or instrument and protective gloves visible, physical contact, holding, or manipulation visible.",
+              "quality": {
+                "brightness": 137.72,
+                "contrast": 61.94,
+                "sharpness": 101.89,
+                "score": 6113.16
+              }
+            }
+          ]
+        }
+      ],
+      "seconds": 452.331
+    },
+    {
+      "asset_id": "f33dfc19-8fd2-4909-927b-5c1362f8fb55",
+      "filename": "IMG_1461.MP4",
+      "status": "ANALYZED",
+      "run_id": "eeb424a6-6774-5eb7-8961-5b0934404359",
+      "source_fingerprint": "d012e3dc6d98ccd91d074d7a694b9fae2f5299c1dff816b3ced553240d3ed949",
+      "technical": {
+        "duration_seconds": 1.0667,
+        "width_px": 1280,
+        "height_px": 720,
+        "fps": 54.375,
+        "codec": "h264",
+        "orientation": "LANDSCAPE",
+        "aspect_ratio": 1.7778,
+        "rotation": -90,
+        "pix_fmt": "yuv420p",
+        "bit_rate": "3309384",
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "size_bytes": 441265,
+        "has_audio": true,
+        "audio_codec": "aac",
+        "audio_sample_rate": "44100",
+        "audio_channels": 2
+      },
+      "detected_cuts": [],
+      "technical_metadata_persisted_to": "BLOCKED:APIError",
+      "scenes": [
+        {
+          "scene_id": "faf9bc81-9473-583a-8e9f-3a03f6198cfb",
+          "index": 0,
+          "start": 0.0,
+          "end": 1.067,
+          "literal": "Scene 1 of IMG_1461.MP4: exposed body region visible, handheld object or instrument and protective gloves visible.",
+          "accepted_concepts": [
+            "exposed body region visible",
+            "handheld object or instrument and protective gloves visible"
+          ],
+          "positives": [
+            {
+              "assertion_id": "b71584d6-f512-514f-ac04-6316824fc25b",
+              "canonical_code": "EXPOSED_BODY_REGION_VISIBLE",
+              "display_text": "exposed body region visible",
+              "concept_type": "ANATOMY",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "d2507274-103a-56a2-9fa8-57819cf47a21",
+              "canonical_code": "HANDHELD_INSTRUMENT_AND_PROTECTIVE_GLOVES_VISIBLE",
+              "display_text": "handheld object or instrument and protective gloves visible",
+              "concept_type": "SEMANTIC_CONCEPT",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            }
+          ],
+          "search_text": "IMG_1461.MP4 scene 1 Scene 1 of IMG_1461.MP4: exposed body region visible, handheld object or instrument and protective gloves visible. exposed body region visible handheld object or instrument and protective gloves visible",
+          "keyframes": [
+            {
+              "keyframe_id": "2ccd2ac5-8348-5d0f-af3d-7bcf1be1dab3",
+              "path": "D:\\Asset_Management_AI\\tmp\\full-index-30\\f33dfc19-8fd2-4909-927b-5c1362f8fb55\\s0_c2.jpg",
+              "timestamp": 0.8,
+              "frame_index": 43,
+              "selection_reason": "QUALITY_SCORED_REPRESENTATIVE",
+              "visual_description": "Representative frame showing handheld object or instrument and protective gloves visible, exposed body region visible.",
+              "quality": {
+                "brightness": 126.87,
+                "contrast": 55.17,
+                "sharpness": 120.52,
+                "score": 6648.91
+              }
+            }
+          ]
+        }
+      ],
+      "seconds": 553.103
+    },
+    {
+      "asset_id": "2f81c26a-eb3b-4dbb-9325-a0da9eaf526f",
+      "filename": "IMG_2933.MP4",
+      "status": "ANALYZED",
+      "run_id": "9a86dc76-6069-5d8a-b8cb-926afc582c13",
+      "source_fingerprint": "77a0536056f14e565c13be369cbb8ba40e4e51aa75983fcc4f0c14b77390042d",
+      "technical": {
+        "duration_seconds": 0.133333,
+        "width_px": 1280,
+        "height_px": 720,
+        "fps": 30.0,
+        "codec": "h264",
+        "orientation": "LANDSCAPE",
+        "aspect_ratio": 1.7778,
+        "rotation": -90,
+        "pix_fmt": "yuv420p",
+        "bit_rate": "5657654",
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "size_bytes": 94294,
+        "has_audio": true,
+        "audio_codec": "aac",
+        "audio_sample_rate": "48000",
+        "audio_channels": 2
+      },
+      "detected_cuts": [],
+      "technical_metadata_persisted_to": "BLOCKED:APIError",
+      "scenes": [
+        {
+          "scene_id": "32578ce8-c285-5b81-8b4d-978908e04a3f",
+          "index": 0,
+          "start": 0.0,
+          "end": 0.133,
+          "literal": "Scene 1 of IMG_2933.MP4: handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible.",
+          "accepted_concepts": [
+            "handheld object or instrument and protective gloves visible",
+            "person or body part visible",
+            "physical contact, holding, or manipulation visible"
+          ],
+          "positives": [
+            {
+              "assertion_id": "4e2b2d42-c10d-55a4-8739-3b304bf5f3fd",
+              "canonical_code": "PHYSICAL_CONTACT_HOLDING_OR_MANIPULATION_VISIBLE",
+              "display_text": "physical contact, holding, or manipulation visible",
+              "concept_type": "ACTION",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "fc6a525c-7342-59cb-a2fe-c77f76f56d9b",
+              "canonical_code": "HANDHELD_INSTRUMENT_AND_PROTECTIVE_GLOVES_VISIBLE",
+              "display_text": "handheld object or instrument and protective gloves visible",
+              "concept_type": "SEMANTIC_CONCEPT",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "28c50b74-c2e4-53b5-8655-138041afe165",
+              "canonical_code": "PERSON_OR_BODY_PART_VISIBLE",
+              "display_text": "person or body part visible",
+              "concept_type": "ROLE",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            }
+          ],
+          "search_text": "IMG_2933.MP4 scene 1 Scene 1 of IMG_2933.MP4: handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible. handheld object or instrument and protective gloves visible person or body part visible physical contact, holding, or manipulation visible",
+          "keyframes": [
+            {
+              "keyframe_id": "61bc2e66-f341-50fe-ae6c-b85c9573316f",
+              "path": "D:\\Asset_Management_AI\\tmp\\full-index-30\\2f81c26a-eb3b-4dbb-9325-a0da9eaf526f\\s0_c0.jpg",
+              "timestamp": 0.067,
+              "frame_index": 2,
+              "selection_reason": "QUALITY_SCORED_REPRESENTATIVE",
+              "visual_description": "Representative frame showing person or body part visible, handheld object or instrument and protective gloves visible, physical contact, holding, or manipulation visible.",
+              "quality": {
+                "brightness": 131.98,
+                "contrast": 54.27,
+                "sharpness": 80.13,
+                "score": 4349.29
+              }
+            }
+          ]
+        }
+      ],
+      "seconds": 1206.97
+    },
+    {
+      "asset_id": "a9c4cf6f-c86c-4d9d-8a6d-2a815fe211bd",
+      "filename": "IMG_2951.MP4",
+      "status": "ANALYZED",
+      "run_id": "4dee165e-6c3c-5bd2-99e6-0293cc118b30",
+      "source_fingerprint": "9672677a00b90c09d50a7927e804d65323c3bef0411e10af2b4d51745cd7cae2",
+      "technical": {
+        "duration_seconds": 0.116667,
+        "width_px": 1280,
+        "height_px": 720,
+        "fps": 30.0,
+        "codec": "h264",
+        "orientation": "LANDSCAPE",
+        "aspect_ratio": 1.7778,
+        "rotation": -90,
+        "pix_fmt": "yuv420p",
+        "bit_rate": "5450864",
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "size_bytes": 79492,
+        "has_audio": true,
+        "audio_codec": "aac",
+        "audio_sample_rate": "48000",
+        "audio_channels": 2
+      },
+      "detected_cuts": [],
+      "technical_metadata_persisted_to": "BLOCKED:APIError",
+      "scenes": [
+        {
+          "scene_id": "3d6eb15b-d3ef-5229-a7f1-5bfbfceafb02",
+          "index": 0,
+          "start": 0.0,
+          "end": 0.117,
+          "literal": "Scene 1 of IMG_2951.MP4: exposed body region visible, handheld object or instrument and protective gloves visible, person or body part visible.",
+          "accepted_concepts": [
+            "exposed body region visible",
+            "handheld object or instrument and protective gloves visible",
+            "person or body part visible"
+          ],
+          "positives": [
+            {
+              "assertion_id": "0b25be10-1937-54f3-af01-ae75038b46ff",
+              "canonical_code": "EXPOSED_BODY_REGION_VISIBLE",
+              "display_text": "exposed body region visible",
+              "concept_type": "ANATOMY",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "579335d8-5986-585f-ae9e-b31fd2005cdd",
+              "canonical_code": "HANDHELD_INSTRUMENT_AND_PROTECTIVE_GLOVES_VISIBLE",
+              "display_text": "handheld object or instrument and protective gloves visible",
+              "concept_type": "SEMANTIC_CONCEPT",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "1f5f272f-9f3c-5ccc-bf0e-cad7d1787afd",
+              "canonical_code": "PERSON_OR_BODY_PART_VISIBLE",
+              "display_text": "person or body part visible",
+              "concept_type": "ROLE",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            }
+          ],
+          "search_text": "IMG_2951.MP4 scene 1 Scene 1 of IMG_2951.MP4: exposed body region visible, handheld object or instrument and protective gloves visible, person or body part visible. exposed body region visible handheld object or instrument and protective gloves visible person or body part visible",
+          "keyframes": [
+            {
+              "keyframe_id": "e368b01a-cc54-5a17-8cac-bec2a4ab3e94",
+              "path": "D:\\Asset_Management_AI\\tmp\\full-index-30\\a9c4cf6f-c86c-4d9d-8a6d-2a815fe211bd\\s0_c0.jpg",
+              "timestamp": 0.059,
+              "frame_index": 1,
+              "selection_reason": "QUALITY_SCORED_REPRESENTATIVE",
+              "visual_description": "Representative frame showing person or body part visible, handheld object or instrument and protective gloves visible, exposed body region visible.",
+              "quality": {
+                "brightness": 54.76,
+                "contrast": 37.5,
+                "sharpness": 58.44,
+                "score": 2191.35
+              }
+            }
+          ]
+        }
+      ],
+      "seconds": 474.625
+    },
+    {
+      "asset_id": "00166f3b-d16f-4f6c-9b8d-d57f6875766b",
+      "filename": "IMG_3564.MP4",
+      "status": "ANALYZED",
+      "run_id": "ab50b108-83f6-5691-b21a-e774fa666d51",
+      "source_fingerprint": "2b1d80a2dd17fb6a239afac0a611ef00c57e03f0aa63428dc6087302ab312c22",
+      "technical": {
+        "duration_seconds": 1.033333,
+        "width_px": 1280,
+        "height_px": 720,
+        "fps": 30.0,
+        "codec": "h264",
+        "orientation": "LANDSCAPE",
+        "aspect_ratio": 1.7778,
+        "rotation": -90,
+        "pix_fmt": "yuv420p",
+        "bit_rate": "3817263",
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "size_bytes": 493063,
+        "has_audio": true,
+        "audio_codec": "aac",
+        "audio_sample_rate": "48000",
+        "audio_channels": 2
+      },
+      "detected_cuts": [],
+      "technical_metadata_persisted_to": "BLOCKED:APIError",
+      "scenes": [
+        {
+          "scene_id": "bc9169e4-3ea4-5416-8420-d882078c6333",
+          "index": 0,
+          "start": 0.0,
+          "end": 1.033,
+          "literal": "Scene 1 of IMG_3564.MP4: handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible.",
+          "accepted_concepts": [
+            "handheld object or instrument and protective gloves visible",
+            "person or body part visible",
+            "physical contact, holding, or manipulation visible"
+          ],
+          "positives": [
+            {
+              "assertion_id": "4055682b-2891-518d-b159-5d6fa6fa2d0d",
+              "canonical_code": "PHYSICAL_CONTACT_HOLDING_OR_MANIPULATION_VISIBLE",
+              "display_text": "physical contact, holding, or manipulation visible",
+              "concept_type": "ACTION",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "a86de181-6599-5ca0-ab3c-3d1b051f904d",
+              "canonical_code": "HANDHELD_INSTRUMENT_AND_PROTECTIVE_GLOVES_VISIBLE",
+              "display_text": "handheld object or instrument and protective gloves visible",
+              "concept_type": "SEMANTIC_CONCEPT",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "704e2129-b93d-5aa6-b36d-93903d517d70",
+              "canonical_code": "PERSON_OR_BODY_PART_VISIBLE",
+              "display_text": "person or body part visible",
+              "concept_type": "ROLE",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            }
+          ],
+          "search_text": "IMG_3564.MP4 scene 1 Scene 1 of IMG_3564.MP4: handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible. handheld object or instrument and protective gloves visible person or body part visible physical contact, holding, or manipulation visible",
+          "keyframes": [
+            {
+              "keyframe_id": "edcd4c97-b127-583d-97fd-18c04d30cad1",
+              "path": "D:\\Asset_Management_AI\\tmp\\full-index-30\\00166f3b-d16f-4f6c-9b8d-d57f6875766b\\s0_c2.jpg",
+              "timestamp": 0.775,
+              "frame_index": 23,
+              "selection_reason": "QUALITY_SCORED_REPRESENTATIVE",
+              "visual_description": "Representative frame showing person or body part visible, handheld object or instrument and protective gloves visible, physical contact, holding, or manipulation visible.",
+              "quality": {
+                "brightness": 146.78,
+                "contrast": 73.27,
+                "sharpness": 180.4,
+                "score": 10823.79
+              }
+            }
+          ]
+        }
+      ],
+      "seconds": 342.785
+    },
+    {
+      "asset_id": "b972b81a-1565-45aa-8e53-48cdc397646e",
+      "filename": "IMG_3568.MP4",
+      "status": "ANALYZED",
+      "run_id": "bd74766a-5860-5f18-881c-d0d661abfdd1",
+      "source_fingerprint": "5bce19e4a15600ffc80603e9a5a6f4385d7e2d3b5d21e732a0e7664025a781c4",
+      "technical": {
+        "duration_seconds": 1.833333,
+        "width_px": 1280,
+        "height_px": 720,
+        "fps": 30.0,
+        "codec": "h264",
+        "orientation": "LANDSCAPE",
+        "aspect_ratio": 1.7778,
+        "rotation": -90,
+        "pix_fmt": "yuv420p",
+        "bit_rate": "3675893",
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "size_bytes": 842392,
+        "has_audio": true,
+        "audio_codec": "aac",
+        "audio_sample_rate": "48000",
+        "audio_channels": 2
+      },
+      "detected_cuts": [],
+      "technical_metadata_persisted_to": "BLOCKED:APIError",
+      "scenes": [
+        {
+          "scene_id": "c205fbb2-b141-5a6a-8824-c751c4125bbc",
+          "index": 0,
+          "start": 0.0,
+          "end": 1.833,
+          "literal": "Scene 1 of IMG_3568.MP4: exposed body region visible, handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible.",
+          "accepted_concepts": [
+            "exposed body region visible",
+            "handheld object or instrument and protective gloves visible",
+            "person or body part visible",
+            "physical contact, holding, or manipulation visible"
+          ],
+          "positives": [
+            {
+              "assertion_id": "c7b076d1-d8d9-5c00-b188-5dc15b2a4f10",
+              "canonical_code": "PHYSICAL_CONTACT_HOLDING_OR_MANIPULATION_VISIBLE",
+              "display_text": "physical contact, holding, or manipulation visible",
+              "concept_type": "ACTION",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "e0e07a32-daf5-5be5-bee9-fdffc7660577",
+              "canonical_code": "EXPOSED_BODY_REGION_VISIBLE",
+              "display_text": "exposed body region visible",
+              "concept_type": "ANATOMY",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "0c0328af-126c-5145-9b40-8553fcb7773b",
+              "canonical_code": "HANDHELD_INSTRUMENT_AND_PROTECTIVE_GLOVES_VISIBLE",
+              "display_text": "handheld object or instrument and protective gloves visible",
+              "concept_type": "SEMANTIC_CONCEPT",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "f38623e5-5471-569c-b5e6-2ceb9a0cea00",
+              "canonical_code": "PERSON_OR_BODY_PART_VISIBLE",
+              "display_text": "person or body part visible",
+              "concept_type": "ROLE",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            }
+          ],
+          "search_text": "IMG_3568.MP4 scene 1 Scene 1 of IMG_3568.MP4: exposed body region visible, handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible. exposed body region visible handheld object or instrument and protective gloves visible person or body part visible physical contact, holding, or manipulation visible",
+          "keyframes": [
+            {
+              "keyframe_id": "777f440a-765a-53ab-b419-4263b6f732d9",
+              "path": "D:\\Asset_Management_AI\\tmp\\full-index-30\\b972b81a-1565-45aa-8e53-48cdc397646e\\s0_c2.jpg",
+              "timestamp": 1.375,
+              "frame_index": 41,
+              "selection_reason": "QUALITY_SCORED_REPRESENTATIVE",
+              "visual_description": "Representative frame showing person or body part visible, handheld object or instrument and protective gloves visible, exposed body region visible, physical contact, holding, or manipulation visible.",
+              "quality": {
+                "brightness": 148.0,
+                "contrast": 69.1,
+                "sharpness": 161.05,
+                "score": 9663.27
+              }
+            }
+          ]
+        }
+      ],
+      "seconds": 365.454
+    },
+    {
+      "asset_id": "b17c5b6e-8b53-45b6-b8de-83f02d482d77",
+      "filename": "IMG_3575.MP4",
+      "status": "ANALYZED",
+      "run_id": "9d82b6d2-1982-5a5b-be58-ee320aac9309",
+      "source_fingerprint": "f84b9fbcd43f594030f0e0f9a91a69ccca36bdde3580cde334609d670ae147c1",
+      "technical": {
+        "duration_seconds": 1.798333,
+        "width_px": 1280,
+        "height_px": 720,
+        "fps": 30.027804,
+        "codec": "h264",
+        "orientation": "LANDSCAPE",
+        "aspect_ratio": 1.7778,
+        "rotation": -90,
+        "pix_fmt": "yuv420p",
+        "bit_rate": "3516883",
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "size_bytes": 790566,
+        "has_audio": true,
+        "audio_codec": "aac",
+        "audio_sample_rate": "48000",
+        "audio_channels": 2
+      },
+      "detected_cuts": [],
+      "technical_metadata_persisted_to": "BLOCKED:APIError",
+      "scenes": [
+        {
+          "scene_id": "219a29b2-6c53-5b47-b022-091f82ceb6c1",
+          "index": 0,
+          "start": 0.0,
+          "end": 1.798,
+          "literal": "Scene 1 of IMG_3575.MP4: handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible.",
+          "accepted_concepts": [
+            "handheld object or instrument and protective gloves visible",
+            "person or body part visible",
+            "physical contact, holding, or manipulation visible"
+          ],
+          "positives": [
+            {
+              "assertion_id": "9a3f76ee-a028-5fe5-88d9-39756ae23061",
+              "canonical_code": "PHYSICAL_CONTACT_HOLDING_OR_MANIPULATION_VISIBLE",
+              "display_text": "physical contact, holding, or manipulation visible",
+              "concept_type": "ACTION",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "1a222357-59cf-53d8-9267-a988fbb9e672",
+              "canonical_code": "HANDHELD_INSTRUMENT_AND_PROTECTIVE_GLOVES_VISIBLE",
+              "display_text": "handheld object or instrument and protective gloves visible",
+              "concept_type": "SEMANTIC_CONCEPT",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "81856ff1-f301-5ee8-a81a-9294a5eea6c9",
+              "canonical_code": "PERSON_OR_BODY_PART_VISIBLE",
+              "display_text": "person or body part visible",
+              "concept_type": "ROLE",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            }
+          ],
+          "search_text": "IMG_3575.MP4 scene 1 Scene 1 of IMG_3575.MP4: handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible. handheld object or instrument and protective gloves visible person or body part visible physical contact, holding, or manipulation visible",
+          "keyframes": [
+            {
+              "keyframe_id": "173f609d-fb0a-567b-81bb-9ee97091f946",
+              "path": "D:\\Asset_Management_AI\\tmp\\full-index-30\\b17c5b6e-8b53-45b6-b8de-83f02d482d77\\s0_c1.jpg",
+              "timestamp": 0.899,
+              "frame_index": 26,
+              "selection_reason": "QUALITY_SCORED_REPRESENTATIVE",
+              "visual_description": "Representative frame showing person or body part visible, handheld object or instrument and protective gloves visible, physical contact, holding, or manipulation visible.",
+              "quality": {
+                "brightness": 147.68,
+                "contrast": 67.32,
+                "sharpness": 89.83,
+                "score": 5389.85
+              }
+            }
+          ]
+        }
+      ],
+      "seconds": 342.603
+    },
+    {
+      "asset_id": "aaf3f7d0-42b5-401d-8005-c0b26dcb92c5",
+      "filename": "IMG_3587.MP4",
+      "status": "ANALYZED",
+      "run_id": "184b11eb-85a6-5d75-8ab4-7ff7eb1c5f62",
+      "source_fingerprint": "75034ef95b6c0ab2cb901ca88381b51be99bf2a8e439b25486de9a6922098413",
+      "technical": {
+        "duration_seconds": 1.3,
+        "width_px": 1280,
+        "height_px": 720,
+        "fps": 30.0,
+        "codec": "h264",
+        "orientation": "LANDSCAPE",
+        "aspect_ratio": 1.7778,
+        "rotation": -90,
+        "pix_fmt": "yuv420p",
+        "bit_rate": "3822375",
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "size_bytes": 621136,
+        "has_audio": true,
+        "audio_codec": "aac",
+        "audio_sample_rate": "48000",
+        "audio_channels": 2
+      },
+      "detected_cuts": [],
+      "technical_metadata_persisted_to": "BLOCKED:APIError",
+      "scenes": [
+        {
+          "scene_id": "f11df9bf-47ce-5324-8cba-d93e3e745ed0",
+          "index": 0,
+          "start": 0.0,
+          "end": 1.3,
+          "literal": "Scene 1 of IMG_3587.MP4: exposed body region visible, handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible.",
+          "accepted_concepts": [
+            "exposed body region visible",
+            "handheld object or instrument and protective gloves visible",
+            "person or body part visible",
+            "physical contact, holding, or manipulation visible"
+          ],
+          "positives": [
+            {
+              "assertion_id": "ea36fc0a-39b8-5f9d-bd0d-670be05993e2",
+              "canonical_code": "PHYSICAL_CONTACT_HOLDING_OR_MANIPULATION_VISIBLE",
+              "display_text": "physical contact, holding, or manipulation visible",
+              "concept_type": "ACTION",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "592073b4-7368-5a7c-8a66-f5c21fdd98eb",
+              "canonical_code": "EXPOSED_BODY_REGION_VISIBLE",
+              "display_text": "exposed body region visible",
+              "concept_type": "ANATOMY",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "4a8f8f7e-fcd7-500b-a4af-3a7aa3e05abb",
+              "canonical_code": "HANDHELD_INSTRUMENT_AND_PROTECTIVE_GLOVES_VISIBLE",
+              "display_text": "handheld object or instrument and protective gloves visible",
+              "concept_type": "SEMANTIC_CONCEPT",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "f66cd4f9-7b03-53a7-a611-273fff501e0f",
+              "canonical_code": "PERSON_OR_BODY_PART_VISIBLE",
+              "display_text": "person or body part visible",
+              "concept_type": "ROLE",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            }
+          ],
+          "search_text": "IMG_3587.MP4 scene 1 Scene 1 of IMG_3587.MP4: exposed body region visible, handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible. exposed body region visible handheld object or instrument and protective gloves visible person or body part visible physical contact, holding, or manipulation visible",
+          "keyframes": [
+            {
+              "keyframe_id": "82e2b4e0-3ed1-5d9a-a82d-8bc7338cf447",
+              "path": "D:\\Asset_Management_AI\\tmp\\full-index-30\\aaf3f7d0-42b5-401d-8005-c0b26dcb92c5\\s0_c0.jpg",
+              "timestamp": 0.325,
+              "frame_index": 9,
+              "selection_reason": "QUALITY_SCORED_REPRESENTATIVE",
+              "visual_description": "Representative frame showing person or body part visible, handheld object or instrument and protective gloves visible, exposed body region visible, physical contact, holding, or manipulation visible.",
+              "quality": {
+                "brightness": 120.69,
+                "contrast": 74.62,
+                "sharpness": 106.18,
+                "score": 6371.01
+              }
+            }
+          ]
+        }
+      ],
+      "seconds": 357.025
+    },
+    {
+      "asset_id": "5c8e8f05-1703-4f00-9cd2-f1fccbf17d94",
+      "filename": "IMG_3592.MP4",
+      "status": "ANALYZED",
+      "run_id": "292ec3ea-ee4d-5e6f-b5a1-2d39e94f08dd",
+      "source_fingerprint": "f47a7dcbf13faf66c0e1c49072d66c691dc15744f6c266873ce7a4970f219c74",
+      "technical": {
+        "duration_seconds": 1.5,
+        "width_px": 1280,
+        "height_px": 720,
+        "fps": 30.0,
+        "codec": "h264",
+        "orientation": "LANDSCAPE",
+        "aspect_ratio": 1.7778,
+        "rotation": -90,
+        "pix_fmt": "yuv420p",
+        "bit_rate": "3717920",
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "size_bytes": 697110,
+        "has_audio": true,
+        "audio_codec": "aac",
+        "audio_sample_rate": "48000",
+        "audio_channels": 2
+      },
+      "detected_cuts": [],
+      "technical_metadata_persisted_to": "BLOCKED:APIError",
+      "scenes": [
+        {
+          "scene_id": "5c83a994-1f57-5c43-ad29-f042d193f3e1",
+          "index": 0,
+          "start": 0.0,
+          "end": 1.5,
+          "literal": "Scene 1 of IMG_3592.MP4: handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible.",
+          "accepted_concepts": [
+            "handheld object or instrument and protective gloves visible",
+            "person or body part visible",
+            "physical contact, holding, or manipulation visible"
+          ],
+          "positives": [
+            {
+              "assertion_id": "897400ff-83a0-5e69-8339-c58734310290",
+              "canonical_code": "PHYSICAL_CONTACT_HOLDING_OR_MANIPULATION_VISIBLE",
+              "display_text": "physical contact, holding, or manipulation visible",
+              "concept_type": "ACTION",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "9b58bbbe-2de9-5416-85ec-1dae1db1687d",
+              "canonical_code": "HANDHELD_INSTRUMENT_AND_PROTECTIVE_GLOVES_VISIBLE",
+              "display_text": "handheld object or instrument and protective gloves visible",
+              "concept_type": "SEMANTIC_CONCEPT",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            },
+            {
+              "assertion_id": "e89bd4c3-f048-5935-9568-42c6cc0e81cf",
+              "canonical_code": "PERSON_OR_BODY_PART_VISIBLE",
+              "display_text": "person or body part visible",
+              "concept_type": "ROLE",
+              "semantic_state": "OBSERVED",
+              "confidence": 0.7,
+              "origin": "AI_MODEL",
+              "search_critical": true,
+              "resolution_source": "UNVERIFIED_AI"
+            }
+          ],
+          "search_text": "IMG_3592.MP4 scene 1 Scene 1 of IMG_3592.MP4: handheld object or instrument and protective gloves visible, person or body part visible, physical contact, holding, or manipulation visible. handheld object or instrument and protective gloves visible person or body part visible physical contact, holding, or manipulation visible",
+          "keyframes": [
+            {
+              "keyframe_id": "a1a4e3c4-7a69-5697-9467-8a53a235687f",
+              "path": "D:\\Asset_Management_AI\\tmp\\full-index-30\\5c8e8f05-1703-4f00-9cd2-f1fccbf17d94\\s0_c0.jpg",
+              "timestamp": 0.375,
+              "frame_index": 11,
+              "selection_reason": "QUALITY_SCORED_REPRESENTATIVE",
+              "visual_description": "Representative frame showing person or body part visible, handheld object or instrument and protective gloves visible, physical contact, holding, or manipulation visible.",
+              "quality": {
+                "brightness": 145.3,
+                "contrast": 69.21,
+                "sharpness": 154.62,
+                "score": 9277.45
+              }
+            }
+          ]
+        }
+      ],
+      "seconds": 313.321
+    }
+  ],
+  "built": {
+    "scene_documents": 10,
+    "text_scene": 10,
+    "visual_scene": 10,
+    "visual_keyframe": 11
+  }
+}

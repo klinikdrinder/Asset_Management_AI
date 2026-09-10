@@ -1,0 +1,188 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1953.MP4, 16.4s, two keyframes supplied",
+      "evidence": [
+        "filename IMG_1953.MP4",
+        "duration_seconds 16.366667",
+        "keyframes_supplied 2"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clinical scene, one shot",
+      "evidence": [
+        "scene_index 0 spanning start_seconds 0.0 to end_seconds 16.367",
+        "both keyframes show near-identical framing of the same moment"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, two near-identical keyframes suggesting minimal movement",
+      "evidence": [
+        "two keyframes appear almost identical in pose and framing",
+        "scene covers full 16.367 second duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked staff member performing a task on a reclined patient; third person in background",
+      "evidence": [
+        "person in peach scrubs with surgical mask holding a handpiece near patient's face",
+        "reclined individual in black top with drape, passive posture",
+        "partial figure in dark clothing standing in background"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff in peach scrubs and surgical mask; patient in black top with pearl jewelry",
+      "evidence": [
+        "staff member wears peach/coral scrub top with embroidered text and a blue surgical mask labeled M-CURE",
+        "staff member has dark hair pulled back and wears earrings",
+        "patient has dark hair, wears a black ribbed top, pearl necklace and earring, blue hairnet/drape visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's nose, upper lip, and lower face visible",
+      "evidence": [
+        "handpiece tip is positioned directly on the patient's nose/upper lip area",
+        "patient's face, neck, and ear are visible in reclined position"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unspecified procedure using handheld device",
+      "evidence": [
+        "no procedure name appears in readable_text_detected or spoken_content",
+        "a metal handpiece with a ring-shaped tip is applied to the nose area, but device/procedure identity is not stated in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member applies handpiece to patient's face while stabilizing with other hand",
+      "evidence": [
+        "one hand holds the silver handpiece against the nose/upper lip",
+        "other hand's fingers are positioned near the patient's cheek/nose, appears to stabilize or pinch skin"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member positioned directly over reclined patient in a provider-patient arrangement",
+      "evidence": [
+        "staff member leans over the reclined patient with direct hand contact via instrument",
+        "patient is passive and reclined beneath the staff member's working hands"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "No visible bleeding, redness, or marking on treated area",
+      "evidence": [
+        "skin at contact point appears unmarked in both keyframes",
+        "no discoloration, redness, or fluid visible on the nose/lip area"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room with medical equipment",
+      "evidence": [
+        "a device with a circular display/dial panel is visible at left edge of frame",
+        "beige wall background and blue disposable drape/hairnet consistent with a clinic setting"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing focused on procedure area",
+      "evidence": [
+        "portrait/vertical aspect crop apparent in image composition",
+        "tight framing centers on the patient's face and staff member's hands"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face centered low, staff member's hands and device dominate upper frame",
+      "evidence": [
+        "handpiece and hands occupy upper-center of frame",
+        "patient's reclined face and neck occupy lower-center, blue drape fills lower frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content supplied despite audio track present",
+      "evidence": [
+        "spoken_content is an empty list",
+        "technical.audio_stream is true but no transcript content provided"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on mask and scrub top",
+      "evidence": [
+        "mask reads 'M-CURE'",
+        "scrub top has embroidered text reading 'DR LEW KAR...' (partially obscured)"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context supplied",
+      "evidence": [
+        "no captions, branding overlays, or usage context provided in the supplied text"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A clinic staff member applies a handheld device to a reclined patient's face",
+      "evidence": [
+        "masked staff member holds device tip against patient's nose/upper lip",
+        "patient reclines passively under a drape during the interaction"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually or textually assessable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked clinical staff member in a peach/coral scrub top embroidered \"DR LEW KAR...\" holds a metal handpiece connected to a device near the nose/upper lip area of a reclined patient. The patient, wearing a black top and a pearl necklace, lies back under a blue drape while another person stands in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "d606c806-2427-4ff8-8ffe-13ef2b22cf3d",
+  "image_count": 2
+}

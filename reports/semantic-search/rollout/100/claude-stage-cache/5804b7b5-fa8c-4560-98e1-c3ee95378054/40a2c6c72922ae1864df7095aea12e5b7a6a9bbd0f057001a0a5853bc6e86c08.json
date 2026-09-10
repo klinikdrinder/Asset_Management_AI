@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 clip with asset_id and filename supplied",
+      "evidence": [
+        "asset_id 5804b7b5-fa8c-4560-98e1-c3ee95378054, filename IMG_1003.MP4 provided in metadata"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single short clinical/cosmetic device session clip",
+      "evidence": [
+        "16.7-second scene showing a device-based facial skin treatment across two keyframes"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, 0.0s-16.7s, two keyframes",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 16.7, keyframes_supplied 2 with differing practitioner position/mask between frames"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining client and gloved practitioner",
+      "evidence": [
+        "one person lying down with eyes closed and headband, another person standing wearing gloves and holding a device, second frame shows same standing person now wearing a surgical mask"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Client with headband and gel-coated face; practitioner in black top",
+      "evidence": [
+        "client has dark hair tucked under a black headband, glossy gel layer on forehead/cheeks/chin, eyes closed",
+        "practitioner wears a black ribbed top, white/latex glove, and in frame two a pleated surgical mask"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, cheek, forehead, ear visible",
+      "evidence": [
+        "client's forehead, closed eyes, nose, cheeks, chin, and ear (with a pearl earring) are visible and coated in gel"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Device-based facial treatment, procedure not named",
+      "evidence": [
+        "no readable_text_detected or spoken_content naming any procedure",
+        "only a gloved hand, a corded handheld device with a blue-lit tip, and gel on the skin are visible, which do not by themselves establish a named clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner applies handheld device to gel-coated face",
+      "evidence": [
+        "gloved hand holds a corded probe near the client's cheek/forehead in frame one",
+        "in frame two the practitioner leans in closer with the device tip, now glowing blue, near the skin"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner working directly on reclining client",
+      "evidence": [
+        "practitioner's gloved hands and device are positioned directly over the client's face while the client lies still with eyes closed"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Glossy gel/serum layer and illuminated device tip",
+      "evidence": [
+        "thick, shiny, translucent gel coats the forehead, cheeks, and chin in both frames",
+        "device tip emits a visible blue light in the second keyframe"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room with disposable coverings",
+      "evidence": [
+        "pale yellow wall, wall-mounted outlet, blue disposable sheet/pillow cover, black headrest cushion visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical handheld-style framing",
+      "evidence": [
+        "vertical 1280x720 aspect crop tightly framing the face and practitioner's torso/arms, consistent with a phone-recorded close-up shot"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face centered with device cables crossing frame",
+      "evidence": [
+        "client's face is centered lower-frame while the practitioner's arm, device cable, and torso occupy the upper frame in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "technical.audio_stream is true but spoken_content array is empty"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected array is empty and no text is visible in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context supplied",
+      "evidence": [
+        "no captions, branding, or usage metadata provided to indicate marketing intent or platform"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts a facial skincare/device session",
+      "evidence": [
+        "visuals consistently show a client receiving a gel-assisted, device-based facial skin treatment from a gloved practitioner"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Backend indexing layer, not visually observable",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two keyframes show a client lying face-up with a headband on, a clear gel or serum coating her face, while a gloved practitioner in a black top holds a handheld corded device near her cheek/forehead; in the second frame a masked practitioner leans closer with the device tip glowing blue near the skin.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "5804b7b5-fa8c-4560-98e1-c3ee95378054",
+  "image_count": 2
+}

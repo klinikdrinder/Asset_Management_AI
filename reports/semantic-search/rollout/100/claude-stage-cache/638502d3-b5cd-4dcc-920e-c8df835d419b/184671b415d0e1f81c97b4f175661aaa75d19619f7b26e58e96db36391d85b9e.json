@@ -1,0 +1,188 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_3571.MP4",
+      "evidence": [
+        "technical metadata: filename IMG_3571.MP4, duration 5.5s, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up footage of an aesthetic/laser device control panel in a clinical room",
+      "evidence": [
+        "keyframes show device control panel with STANDBY/READY labels",
+        "background sink and towels indicate a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, 5.5 seconds, 2 keyframes sampled",
+      "evidence": [
+        "canonical_scenes: 1",
+        "canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No people visible in frame",
+      "evidence": [
+        "per-scene PEOPLE_ROLES marked UNKNOWN",
+        "images show only equipment and room, no person visible"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No person present to describe",
+      "evidence": [
+        "per-scene PERSON_APPEARANCE marked NOT_APPLICABLE",
+        "no person visible in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No anatomical region visible",
+      "evidence": [
+        "per-scene ANATOMY marked NOT_APPLICABLE",
+        "frame shows only device and background objects"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Device type suggests possible aesthetic treatment, but no procedure named",
+      "evidence": [
+        "control panel labels like 'Advance', 'Dynamic', 'Static' and 'Energy' suggest a treatment device",
+        "no procedure explicitly stated in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clear action or event depicted",
+      "evidence": [
+        "per-scene ACTIONS_EVENTS marked UNKNOWN",
+        "static close-up shot with no visible activity"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No interpersonal or subject relationships depicted",
+      "evidence": [
+        "per-scene RELATIONSHIPS marked NOT_APPLICABLE",
+        "no people present in frame"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clinical findings visible, only equipment",
+      "evidence": [
+        "per-scene CLINICAL_VISUAL_OBSERVATIONS marked UNKNOWN",
+        "no skin or treatment area shown"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical/spa room with sink, tiled walls, folded towels",
+      "evidence": [
+        "background shows wall-mounted sink with faucet",
+        "white tiled surfaces and stacked blue towels visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style shot focused on device panel",
+      "evidence": [
+        "tight framing on device top panel",
+        "slight angle suggesting handheld camera movement"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device panel centered with cable arching across upper frame",
+      "evidence": [
+        "black coiled cable arcs across top of frame",
+        "device control panel occupies center and lower portion of image"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH",
+        "audio_state: AUDIO_PRESENT but no speech content"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "On-screen device text: STANDBY, READY, Power, Energy, Advance, Dynamic, Static",
+      "evidence": [
+        "ocr_observations: 4",
+        "visible labels on control panel including 'STANDBY', 'READY', 'PUSH', warning label"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Purpose of footage unclear, possibly promotional or documentation",
+      "evidence": [
+        "per-scene MARKETING_CONTENT_USAGE marked UNKNOWN",
+        "no overlay branding or marketing text visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Narrative intent of clip unclear beyond device showcase",
+      "evidence": [
+        "per-scene SEMANTIC_NARRATIVE marked UNKNOWN",
+        "no context clarifying purpose of the recording"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indexable visual content of aesthetic device in clinical setting",
+      "evidence": [
+        "keyframes provide visual embedding basis of device and room",
+        "OCR text and device features support searchable descriptors"
+      ]
+    }
+  ],
+  "narrative": "The images show a close-up of a white aesthetic/laser device with a glossy touch control panel displaying 'STANDBY', 'READY', power and energy indicators, a keyed switch, and a red push button, along with a coiled black cable and a handpiece nearby. The device sits in a clinical or spa treatment room with a wall-mounted sink, folded blue towels, and white tiled surfaces visible in the background.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "638502d3-b5cd-4dcc-920e-c8df835d419b",
+  "image_count": 1
+}

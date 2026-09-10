@@ -1,0 +1,829 @@
+{
+  "generator_version": "kdi_narrative_generator_v1",
+  "configuration_version": "kdi_narrative_generator_config_v1",
+  "configuration_fingerprint": "a84a43f5124843e404126e84f32911d0d361df67e60961759a24635fcbaa57ca",
+  "semantic_spec_version": "semantic_index_v1",
+  "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+  "ontology_version": "KDI_SEMANTIC_V2",
+  "pilot_manifest_version": "kdi_semantic_pilot_v1",
+  "analysis_run_id": "a4c0704f-3d89-5555-be6c-342327b06c22",
+  "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+  "filename": "DSC03753.JPG",
+  "media_type": "image",
+  "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b",
+  "input_evidence_fingerprint": "2f5a656c959493af70e2c30d1ce5c2dc4bb0ec05b6285dced665b66c082e70ed",
+  "generated_at": "2026-08-24T05:47:50.664079+00:00",
+  "generation": {
+    "method": "DETERMINISTIC_TEMPLATE",
+    "provider": "LOCAL_DETERMINISTIC_TEMPLATES",
+    "model": "kdi_evidence_renderer_v1",
+    "temperature": 0.0,
+    "template_fallback_available": true,
+    "template_fallback_used": true,
+    "external_payload_transmission": false
+  },
+  "evidence_bundle": {
+    "asset": {
+      "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+      "filename": "DSC03753.JPG",
+      "media_type": "image",
+      "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+    },
+    "structured_facts": [
+      {
+        "fact_id": "b60862ef-d150-58eb-9ff1-b08087952356",
+        "concept": "ASSET_IDENTITY",
+        "layer": "ASSET_IDENTITY_PROVENANCE",
+        "state": "OBSERVED",
+        "value": {
+          "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+          "filename": "DSC03753.JPG",
+          "media_type": "image",
+          "extension": "jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 4082854,
+          "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+        },
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "FROZEN_MANIFEST_AND_PHASE_EVIDENCE",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "DATABASE_METADATA",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 1,
+        "layer_id": "ASSET_IDENTITY_PROVENANCE"
+      },
+      {
+        "fact_id": "3b388de2-8457-525d-9af5-70b0e90643ba",
+        "concept": "MEDIA_SUMMARY",
+        "layer": "GLOBAL_ASSET_UNDERSTANDING",
+        "state": "OBSERVED",
+        "value": "A single adult subject poses front-facing against a plain light background with the frontal scalp and hairline clearly visible.",
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 2,
+        "layer_id": "GLOBAL_ASSET_UNDERSTANDING"
+      },
+      {
+        "fact_id": "9b5cb74c-5cb4-5fbe-9857-89a366941283",
+        "concept": "SUBJECT",
+        "layer": "PEOPLE_ROLES",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 4,
+        "layer_id": "PEOPLE_ROLES"
+      },
+      {
+        "fact_id": "051a41f2-00e8-5b53-b24b-5e6d8df47c10",
+        "concept": "ADULT_PRESENTATION",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "03e7754e-ea69-55b4-b467-5c9bad5cfd24",
+        "concept": "FRONT_FACING",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "24db88f3-4938-5ac7-8d66-12ebe1c369d6",
+        "concept": "SHORT_DARK_HAIR",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "f04e2e2c-9f48-5d76-8cee-cc8bd58f1e81",
+        "concept": "WHITE_COLLARED_SHIRT",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "74bdb6f3-9874-5087-85bf-488004a2909b",
+        "concept": "FACE",
+        "layer": "ANATOMY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 6,
+        "layer_id": "ANATOMY"
+      },
+      {
+        "fact_id": "b4ff5dc6-fe42-530a-b280-19e7d36cc6cc",
+        "concept": "FRONTAL_SCALP",
+        "layer": "ANATOMY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 6,
+        "layer_id": "ANATOMY"
+      },
+      {
+        "fact_id": "5d1064d2-6a63-5b0a-9e0b-29b95ed326ca",
+        "concept": "FRONTAL_HAIRLINE",
+        "layer": "ANATOMY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 6,
+        "layer_id": "ANATOMY"
+      },
+      {
+        "fact_id": "f31a6148-c497-5ac6-9927-9b685a09e598",
+        "concept": "POSING_FOR_CAMERA",
+        "layer": "ACTIONS_EVENTS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 8,
+        "layer_id": "ACTIONS_EVENTS"
+      },
+      {
+        "fact_id": "59bb1533-03a0-5dee-aa88-370108f5ed74",
+        "concept": "PERSON_LOOKS_AT_CAMERA",
+        "layer": "RELATIONSHIPS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 9,
+        "layer_id": "RELATIONSHIPS"
+      },
+      {
+        "fact_id": "a9411952-d8c0-5f68-bb85-200108bccdd1",
+        "concept": "VISIBLE_FRONTAL_HAIR_THINNING",
+        "layer": "CLINICAL_VISUAL_OBSERVATIONS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 10,
+        "layer_id": "CLINICAL_VISUAL_OBSERVATIONS"
+      },
+      {
+        "fact_id": "440c44d5-48ff-5de2-bedb-355a71850178",
+        "concept": "MEDIUM_CLOSEUP",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "188692ff-1d3f-537b-ba78-cee3e64ccd7c",
+        "concept": "LANDSCAPE",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "55a050d4-4052-5aad-b6fb-dc0ff0ed6eff",
+        "concept": "STATIC",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "efbe1278-aec9-5ffb-adba-414e03360f3b",
+        "concept": "FRONT_ANGLE",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "07c5b01e-14c0-5e03-a622-433dcf9e9e55",
+        "concept": "SINGLE_CENTRAL_SUBJECT",
+        "layer": "COMPOSITION",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 13,
+        "layer_id": "COMPOSITION"
+      },
+      {
+        "fact_id": "d312aa8e-d78e-59fe-8d5a-c712d06a1e6d",
+        "concept": "FACE_AND_FRONTAL_SCALP_PROMINENT",
+        "layer": "COMPOSITION",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 13,
+        "layer_id": "COMPOSITION"
+      },
+      {
+        "fact_id": "46b3fef3-9e79-5c15-b61c-303da79a0a27",
+        "concept": "PLAIN_LIGHT_BACKGROUND",
+        "layer": "COMPOSITION",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 13,
+        "layer_id": "COMPOSITION"
+      },
+      {
+        "fact_id": "9189d60f-8145-5f0a-9842-c09ad333b232",
+        "concept": "PORTRAIT_CONTENT",
+        "layer": "MARKETING_CONTENT_USAGE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 16,
+        "layer_id": "MARKETING_CONTENT_USAGE"
+      },
+      {
+        "fact_id": "6fbf4591-760e-5999-9c74-ad36a62c1b7d",
+        "concept": "CLINICAL_DOCUMENTATION_CANDIDATE",
+        "layer": "MARKETING_CONTENT_USAGE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 16,
+        "layer_id": "MARKETING_CONTENT_USAGE"
+      },
+      {
+        "fact_id": "35cc9bc7-5451-58f1-bc92-3f18d4dacd33",
+        "concept": "PROVISIONAL_ASSET_NARRATIVE",
+        "layer": "SEMANTIC_NARRATIVE",
+        "state": "OBSERVED",
+        "value": "A single adult subject poses front-facing against a plain light background with the frontal scalp and hairline clearly visible.",
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE4_IMAGE_ANALYSIS",
+            "region_id": "c62342e8-00a0-530b-9418-ec3e892eab81",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "NEW_OBSERVATION",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 17,
+        "layer_id": "SEMANTIC_NARRATIVE"
+      },
+      {
+        "fact_id": "dcbe0602-38c5-5906-a2c0-3bc33aea2b0e",
+        "concept": "CURRENT_SEARCH_REPRESENTATION",
+        "layer": "SEARCH_EMBEDDINGS",
+        "state": "OBSERVED",
+        "value": {
+          "visual_embedding": true,
+          "asset_search_document": true,
+          "scene_search_document": true,
+          "scene_embedding": true,
+          "keyframe_embedding": true,
+          "semantic_index_v1_embedding_status": "PENDING_REGENERATION",
+          "canonical_search_document": "PENDING_LATER_PHASE"
+        },
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE2_AUDIT",
+            "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b"
+          }
+        ],
+        "provenance": "DATABASE_METADATA",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "RETAINED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 18,
+        "layer_id": "SEARCH_EMBEDDINGS"
+      }
+    ],
+    "scenes": [],
+    "events": [],
+    "transcript_evidence": [],
+    "ocr_evidence": [],
+    "conflicts": [
+      {
+        "conflict_type": "SEARCH_DOCUMENT_INTERNAL_ACTION_MISMATCH",
+        "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+        "filename": "DSC03753.JPG",
+        "source_a": "asset_search_documents.structured_document.actions",
+        "value_a": [],
+        "source_b": "asset_search_documents.structured_document.rich_semantic_v2.actions and scene_actions",
+        "value_b": [
+          "POSING_FOR_CAMERA"
+        ],
+        "recommended_future_action": "NORMALIZE and rebuild the search document from canonical structured facts",
+        "layer_number": 8,
+        "layer": "ACTIONS_EVENTS",
+        "status": "UNRESOLVED",
+        "evidence": {
+          "source": "PHASE2_AUDIT"
+        },
+        "confidence": 1.0,
+        "recommended_resolution": "NORMALIZE and rebuild the search document from canonical structured facts"
+      },
+      {
+        "conflict_type": "LEGACY_COMPLETENESS_WITH_ZERO_EVIDENCE",
+        "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+        "filename": "DSC03753.JPG",
+        "source_a": "asset_layer_status",
+        "value_a": "TREATMENT=COMPLETE and OCR=COMPLETE with evidence_count=0",
+        "source_b": "semantic_index_v1 audit",
+        "value_b": "SEARCH_DOC_ONLY; no structured treatment/OCR assertion",
+        "recommended_future_action": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states",
+        "layer_number": 7,
+        "layer": "TREATMENT_PROCEDURE",
+        "status": "UNRESOLVED",
+        "evidence": {
+          "source": "PHASE2_AUDIT"
+        },
+        "confidence": 1.0,
+        "recommended_resolution": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states"
+      },
+      {
+        "conflict_type": "LEGACY_COMPLETENESS_WITH_ZERO_EVIDENCE",
+        "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+        "filename": "DSC03753.JPG",
+        "source_a": "asset_layer_status",
+        "value_a": "TREATMENT=COMPLETE and OCR=COMPLETE with evidence_count=0",
+        "source_b": "semantic_index_v1 audit",
+        "value_b": "SEARCH_DOC_ONLY; no structured treatment/OCR assertion",
+        "recommended_future_action": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states",
+        "layer_number": 15,
+        "layer": "OCR_VISIBLE_TEXT",
+        "status": "UNRESOLVED",
+        "evidence": {
+          "source": "PHASE2_AUDIT"
+        },
+        "confidence": 1.0,
+        "recommended_resolution": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states"
+      }
+    ],
+    "unknowns": [
+      {
+        "layer_number": 7,
+        "layer_id": "TREATMENT_PROCEDURE"
+      },
+      {
+        "layer_number": 11,
+        "layer_id": "ENVIRONMENT"
+      },
+      {
+        "layer_number": 15,
+        "layer_id": "OCR_VISIBLE_TEXT"
+      }
+    ],
+    "human_review": [],
+    "source_artifacts": {
+      "phase3": false,
+      "phase4": true,
+      "phase5": true,
+      "phase6": false,
+      "phase7": true
+    }
+  },
+  "asset_narrative": "A single adult subject poses front-facing against a plain light background with the frontal scalp and hairline clearly visible.",
+  "short_semantic_summary": "A single adult subject poses front-facing against a plain light background with the frontal scalp and hairline clearly visible.",
+  "search_summary": "A single adult subject poses front-facing against a plain light background with the frontal scalp and hairline clearly visible.",
+  "search_safe_narrative": "A single adult subject poses front-facing against a plain light background with the frontal scalp and hairline clearly visible.",
+  "claims": [
+    {
+      "claim_id": "0fa33378-243f-531d-81c6-e4a496fb23a8",
+      "text": "A single adult subject poses front-facing against a plain light background with the frontal scalp and hairline clearly visible.",
+      "supports": [
+        "3b388de2-8457-525d-9af5-70b0e90643ba"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.92,
+      "status": "SUPPORTED",
+      "accepted": true
+    }
+  ],
+  "scene_narratives": [],
+  "event_narratives": [],
+  "technical_only_events": [],
+  "canonical_concepts": {
+    "people": [
+      "SUBJECT"
+    ],
+    "roles": [
+      "SUBJECT"
+    ],
+    "anatomy": [
+      "FACE",
+      "FRONTAL_SCALP",
+      "FRONTAL_HAIRLINE"
+    ],
+    "treatments": [],
+    "actions": [
+      "POSING_FOR_CAMERA"
+    ],
+    "environment": [],
+    "stage": []
+  },
+  "quality": {
+    "evidence_complete": true,
+    "contains_unknowns": true,
+    "contains_review_required_fact": false,
+    "contains_transcript": false,
+    "contains_ocr": false,
+    "contains_legacy_fact": false,
+    "human_review_status": "UNVERIFIED",
+    "search_status": "ACCEPTED_FOR_SEARCH",
+    "narrative_confidence": 0.92,
+    "narrative_embedding_status": "PENDING_LATER_PHASE"
+  },
+  "claim_validation": {
+    "valid": true,
+    "failures": [],
+    "total_claims": 1,
+    "supported_claims": 1,
+    "unsupported_claims": 0
+  },
+  "phase5_reconciliation": {
+    "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+    "filename": "DSC03753.JPG",
+    "phase5_narrative": "A single adult subject poses front-facing against a plain light background with the frontal scalp and hairline clearly visible.",
+    "phase8_narrative": "A single adult subject poses front-facing against a plain light background with the frontal scalp and hairline clearly visible.",
+    "disposition": "UNCHANGED",
+    "reason": "Phase 5 evidence-grounded wording retained."
+  },
+  "img_1238_segmentation": null,
+  "performance": {
+    "input_facts": 24,
+    "scene_count": 0,
+    "event_count": 0,
+    "accepted_transcript_chunks_available": 0,
+    "transcript_chunks_used": 0,
+    "accepted_ocr_observations_available": 0,
+    "ocr_observations_used": 0,
+    "template_generation_seconds": 0.00705,
+    "llm_calls": 0,
+    "llm_generation_seconds": 0.0,
+    "validation_seconds": 0.0,
+    "retries": 0,
+    "cost": "LOCAL_NO_API_COST"
+  },
+  "prohibitions": {
+    "production_writes": false,
+    "search_documents_rebuilt": false,
+    "embeddings_generated": false,
+    "phase3_modified": false,
+    "phase4_modified": false,
+    "phase5_modified": false,
+    "phase6_modified": false,
+    "phase7_modified": false
+  },
+  "idempotency": {
+    "verified": true,
+    "functional_fingerprint": "61d514b55783c3367bfba14cee51bb978c75b4b3c8983314dd4f5128200b62b8"
+  }
+}

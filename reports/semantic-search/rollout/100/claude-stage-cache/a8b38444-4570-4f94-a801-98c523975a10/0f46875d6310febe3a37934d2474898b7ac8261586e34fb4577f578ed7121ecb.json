@@ -1,0 +1,176 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, 20.9s, 1280x720",
+      "evidence": [
+        "technical metadata: duration_seconds 20.9, width 1280, height 720, fps 30/1, codec h264, filename IMG_1440.MP4"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene close-up clinic video of facial product application",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "scene narrative describes a facial application at a clinic"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across the clip",
+      "evidence": [
+        "scene_results contains a single scene_index 0 spanning the asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles of the two people not confirmed",
+      "evidence": [
+        "scene-level PEOPLE_ROLES marked UNKNOWN despite visible staff attire and reclining client"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining woman with cap and towel; masked staff member in dark scrub top",
+      "evidence": [
+        "image shows woman with closed eyes, blue hair cap, maroon towel, cream on face",
+        "image shows a person in black scrub top and surgical mask applying product with a spatula"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, including cheek, nose, chin, and ear visible",
+      "evidence": [
+        "image shows woman's face, ear with earring, and neck area covered in white product"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not named in supplied text",
+      "evidence": [
+        "no named clinical procedure appears in supplied text; only a spatula/brush and cream application are visible",
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member applying/spreading white product on face with spatula",
+      "evidence": [
+        "image shows hand holding a small spatula-like tool touching cream on the woman's cheek/nose area"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member positioned over reclining client, actively treating her face",
+      "evidence": [
+        "image shows staff member's arm and hand reaching down over the reclining woman's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "White cream/mask coating visible on facial skin",
+      "evidence": [
+        "image shows thick white substance covering cheeks, nose, and chin of the woman"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable beyond a treatment chair",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite partial background visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style vertical framing on subject's face",
+      "evidence": [
+        "image is a tight close-up crop centered on the face and applying hand"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical frame centered on face with towel and cap filling lower/side frame",
+      "evidence": [
+        "image shows vertical 720-width frame with face centered, towel at bottom, cap at left"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio track present but no speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH",
+        "scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinic name text visible on staff uniform",
+      "evidence": [
+        "image shows text \"KLINIK DR INDER\" on the black scrub top",
+        "ocr_evaluated true with ocr_observations: 5"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent or usage context not established",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinic staff performing a facial skin-care application on a client",
+      "evidence": [
+        "scene narrative describes staff member applying/spreading product on client's face at Klinik Dr Inder"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/narrative evaluation",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A woman lies on a treatment bed with a blue hair cap and maroon towel, eyes closed, with a white cream or mask covering her cheeks, nose, and chin. A masked staff member from a clinic labeled \"Klinik Dr Inder\" uses a small spatula-like tool to apply or spread the product on her face.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "a8b38444-4570-4f94-a801-98c523975a10",
+  "image_count": 1
+}

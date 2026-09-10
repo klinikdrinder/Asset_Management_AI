@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1235.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_1235.MP4, duration 10.93s, 1280x720, h264, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result for GLOBAL_ASSET_UNDERSTANDING is UNKNOWN; only two static keyframes available"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "Asset comprises 1 canonical scene sampled by 2 near-identical keyframes"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined male client",
+      "evidence": [
+        "A masked, gloved person in navy scrubs stands over a reclined man with eyes closed, consistent with clinician and client roles"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scrubs-clad staff, patient in Adidas jersey",
+      "evidence": [
+        "Clinician wears navy scrubs, surgical mask, gloves, and a smartwatch; reclined man has short dark hair, facial hair, closed eyes, and wears a white Adidas jersey"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forehead and hairline area visible",
+      "evidence": [
+        "Clinician's gloved hands are positioned near the reclined man's forehead and hairline"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "Gloves, hand-held item, and proximity to scalp are visible but no procedure is named in supplied text, so it cannot be established"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician working near patient's hairline",
+      "evidence": [
+        "Gloved hand holding a small item is positioned at the man's forehead/hairline while he lies still with eyes closed"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-patient interaction",
+      "evidence": [
+        "Clinician leans directly over the reclined man, hands in contact with his head area"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved contact near hairline, headrest coverings",
+      "evidence": [
+        "Blue disposable covers on headrest and neck area, gloved hands near forehead/hairline"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "Scene-level result for ENVIRONMENT is UNKNOWN despite visible blinds and equipment, insufficient to confirm setting type"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical framing, static shot",
+      "evidence": [
+        "Vertical 720p frame tightly framed on clinician and reclined patient with consistent composition across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered, clinician upper frame",
+      "evidence": [
+        "Reclined man occupies lower/center frame while clinician's torso and hands occupy upper frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No legible text found",
+      "evidence": [
+        "Scene-level OCR_VISIBLE_TEXT is FALSE despite ocr_observations count of 2"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level result for MARKETING_CONTENT_USAGE is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical care moment depicted",
+      "evidence": [
+        "Consistent visual narrative of a clinician attending to a reclined, relaxed patient in a treatment-like setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable at asset level",
+      "evidence": [
+        "Scene-level result for SEARCH_EMBEDDINGS is NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "Two near-identical keyframes show a masked, gloved clinician in navy scrubs leaning over a reclined man to work near his forehead/hairline while he lies back with eyes closed, head cushioned on a blue disposable headrest cover. He wears a white Adidas jersey, and a red-light panel device and window blinds are visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "b5b35600-abff-4c78-a34f-0e862de57499",
+  "image_count": 1
+}

@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-09-02T06:47:55.440504+00:00",
+  "phase": 11,
+  "status": "PASS",
+  "evidence_is_live": "Phase 10 was genuinely interrupted three times; the cohort below is the surviving state.",
+  "interrupted_runs": [
+    "positions 12, 13 and 14 were committed by interrupted Phase 10 executions before the final run"
+  ],
+  "checkpoint_handling": "phase_10_asset_results.json / phase_11_transcription_results.json record only assets whose writes fully committed; a restart skips them.",
+  "idempotent_semantic_writes": "assertions, layers, documents and embeddings use uuid5 ids derived from (analysis_run, concept) and are upserted, so a repeat writes the same row.",
+  "evidence_uniqueness": "evidence rows are inserted only for assertion ids that have none.",
+  "search_document_rebuild": "previous active document is marked stale before the new deterministic id becomes active.",
+  "embedding_upsert": "previous active TEXT_ASSET embedding is marked stale before the new deterministic id becomes active.",
+  "completed_asset_detection": "checkpoint plus an 18-active-COMPLETE-layer check.",
+  "baseline_drift_detection": "restart-aware gate accepts the certified baseline plus its own committed assets and raises MATERIAL_BASELINE_DRIFT otherwise.",
+  "duplicate_active_layers": [],
+  "duplicate_active_assertions": [],
+  "duplicate_active_documents": [],
+  "duplicate_active_embeddings": [],
+  "duplicate_active_truth": 0
+}

@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset IMG_0571.MP4",
+      "evidence": [
+        "Filename IMG_0571.MP4 and technical metadata (1280x720, h264, 4.1s) present in supplied data"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not fully determinable",
+      "evidence": [
+        "Scene-level result marked GLOBAL_ASSET_UNDERSTANDING as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes:1, canonical_keyframes:2 in metadata"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles not explicitly confirmed",
+      "evidence": [
+        "Scene result lists PEOPLE_ROLES as UNKNOWN despite visible scrubs and reclining patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and patient appearance visible",
+      "evidence": [
+        "Practitioner in teal scrubs, mask, safety glasses; patient with hairnet, eye shields, purple towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial anatomy visible under treatment",
+      "evidence": [
+        "Patient's face, nose, and eye area visible with metal eye shields"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not named",
+      "evidence": [
+        "No named clinical procedure in supplied text; only device and cable visible"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner operating handheld device near patient's face",
+      "evidence": [
+        "Gloved hands hold orange cable and device with glowing tip near patient's face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Interpersonal relationship not confirmed",
+      "evidence": [
+        "Scene-level RELATIONSHIPS marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Visible clinical setup with protective gear",
+      "evidence": [
+        "Gloves, mask, safety glasses, eye shields, hairnet, glowing device tip"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting details not fully confirmed",
+      "evidence": [
+        "Scene-level ENVIRONMENT marked UNKNOWN despite visible clinical furniture in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing",
+      "evidence": [
+        "Vertical close-up shot capturing practitioner and patient interaction"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned above reclining patient",
+      "evidence": [
+        "Practitioner leaning over patient, device centered in frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Some visible text detected",
+      "evidence": [
+        "ocr_observations: 3 noted in metadata"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing purpose not confirmed",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context unclear",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No embedding data applicable",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A practitioner in teal scrubs, a surgical mask, and laser safety glasses holds an orange fiber-optic cable linked to a handheld device emitting a glowing yellow tip near a reclining patient's face. The patient wears metal eye shields, a blue hairnet, and a purple towel around the neck in what appears to be a clinical treatment room.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "ccfc6b3d-03fa-4261-b8df-cb23fe52716f",
+  "image_count": 1
+}

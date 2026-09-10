@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_0480.MP4",
+      "evidence": [
+        "filename IMG_0480.MP4, duration 7.97s, 1280x720, h264, single canonical scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical procedure clip in a treatment room",
+      "evidence": [
+        "single scene showing a gloved worker attending to a reclined patient in a medical-style room"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across full duration",
+      "evidence": [
+        "canonical_scenes: 1, duration 7.97 seconds"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Healthcare worker attending to a reclined patient",
+      "evidence": [
+        "figure in teal scrubs, mask, and gloves leaning over a person lying on a bed wearing a surgical cap"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Worker in teal scrubs with mask; patient in blue surgical cap",
+      "evidence": [
+        "worker wears teal scrub top, surgical face mask labeled M-CURE, latex gloves, hair in a bun with bangs, wristwatch; patient wears blue mesh surgical cap and green top, covered by dark towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forehead, eyebrow, and facial area visible",
+      "evidence": [
+        "worker's gloved hands positioned near patient's forehead/eyebrow region; patient's ear and neck also visible"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure type cannot be determined",
+      "evidence": [
+        "gloved hands near forehead but no named procedure indicated in supplied text; per-scene TREATMENT_PROCEDURE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Worker performing close hand contact near patient's forehead",
+      "evidence": [
+        "gloved hands positioned on and near patient's forehead/eyebrow area in the keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Direct physical proximity between caregiver and patient",
+      "evidence": [
+        "worker leaning directly over reclined patient with hands in contact with patient's face/head"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Sterile gloves, mask, surgical cap suggest clinical setting",
+      "evidence": [
+        "latex gloves, surgical face mask, blue mesh surgical cap, medical bed with disposable pillow cover"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Plain white clinical room with wardrobe and IV stand",
+      "evidence": [
+        "white walls, white wardrobe/cabinet, metal IV stand visible in background, patient bed with blue pillow"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static close-range vertical shot focused on patient's head area",
+      "evidence": [
+        "vertical 1280x720 frame, camera positioned close to bed capturing worker and patient's upper body"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Worker centered above reclined patient occupying lower frame",
+      "evidence": [
+        "patient lying horizontally across bottom of frame, worker's torso and face filling upper-middle frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech detected",
+      "evidence": [
+        "audio_stream_present true, transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on worker's surgical mask",
+      "evidence": [
+        "mask brand text 'M-CURE' visible on worker's face mask"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent cannot be determined",
+      "evidence": [
+        "no branding, captions, or promotional elements identified beyond mask text; per-scene marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts a clinical caregiving interaction",
+      "evidence": [
+        "gloved worker attending closely to reclined, capped patient in a treatment-room setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical scene embedding derived from visual content",
+      "evidence": [
+        "keyframes show medical attire, gloves, patient positioning, and room setting consistent with clinical care footage"
+      ]
+    }
+  ],
+  "narrative": "A masked healthcare worker in teal scrubs and gloves leans over a patient lying on a bed, working near the patient's forehead and eyebrow area. The patient wears a blue surgical cap and is covered with a dark towel, situated in a plain white clinical room with a wardrobe and IV stand visible in the background.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "c02e2a44-19cc-49bf-98c5-94182a4f0abf",
+  "image_count": 1
+}

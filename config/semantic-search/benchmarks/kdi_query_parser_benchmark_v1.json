@@ -1,0 +1,3375 @@
+{
+  "benchmark_version": "kdi_query_parser_benchmark_v1",
+  "evaluation_version": "kdi_query_parser_eval_v1",
+  "created_at": "2026-08-25T00:00:00.000Z",
+  "query_count": 150,
+  "split_counts": {
+    "DEV": 90,
+    "VALIDATION": 30,
+    "BLIND": 30
+  },
+  "category_distribution": {
+    "AGE_VS_RESULT_COUNT": 8,
+    "CURRENCY": 5,
+    "DURATION": 6,
+    "GRAFT_COUNTS": 7,
+    "MALAY": 8,
+    "MEDIA_EXTENSION": 9,
+    "MIXED_LANGUAGE": 8,
+    "MULTI_NUMBER_ADVERSARIAL": 10,
+    "NEGATION_EXCLUSIONS": 9,
+    "NO_MATCH_UNKNOWN": 6,
+    "OCR_TRANSCRIPT_MODALITY": 7,
+    "ONLY_MUST_EXACTLY": 6,
+    "PREFERENCES": 6,
+    "RESULT_COUNT": 12,
+    "SEMANTIC_COMBINATIONS": 12,
+    "SESSION_COUNTS": 6,
+    "SIMILARITY_INTENT": 5,
+    "TIMESTAMP": 6,
+    "TYPO_MISSPELLING": 7,
+    "YEAR_DATE": 7
+  },
+  "frozen_versions": {
+    "query_parser_version": "kdi_query_parser_v1",
+    "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+    "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+    "query_schema_version": "kdi_query_schema_v1",
+    "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391"
+  },
+  "cases": [
+    {
+      "case_id": "QP14-001",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "Please return 9 media files",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 9,
+        "media_type": "ANY"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-002",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "I need two videos",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 2,
+        "media_type": "VIDEO"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-003",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "Top 11 results for scalp care",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 11
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-004",
+      "split": "VALIDATION",
+      "category": "RESULT_COUNT",
+      "query": "Find the best 4 photos",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 4,
+        "media_type": "IMAGE",
+        "sort": "MOST_RELEVANT_FIRST"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-005",
+      "split": "BLIND",
+      "category": "RESULT_COUNT",
+      "query": "Could you show ten images?",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 10,
+        "media_type": "IMAGE"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-006",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "Return a single file",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 1,
+        "media_type": "ANY"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-007",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "Find 13 videos",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 13,
+        "media_type": "VIDEO"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-008",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "Give me three pictures",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 3,
+        "media_type": "IMAGE"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-009",
+      "split": "VALIDATION",
+      "category": "RESULT_COUNT",
+      "query": "Best five matches",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 5,
+        "sort": "MOST_RELEVANT_FIRST"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-010",
+      "split": "BLIND",
+      "category": "RESULT_COUNT",
+      "query": "Show 18 files please",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 18,
+        "media_type": "ANY"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-011",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "I want seven clips",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 7,
+        "media_type": "VIDEO"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-012",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "Return 2 images",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 2,
+        "media_type": "IMAGE"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-013",
+      "split": "DEV",
+      "category": "AGE_VS_RESULT_COUNT",
+      "query": "Portrait of a 42-year-old patient",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "age_exact": 42
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-014",
+      "split": "VALIDATION",
+      "category": "AGE_VS_RESULT_COUNT",
+      "query": "Patient in her 50s facing camera",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "age_decade": 50
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-015",
+      "split": "BLIND",
+      "category": "AGE_VS_RESULT_COUNT",
+      "query": "Find 8 videos of someone around age 35",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 8,
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 35
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-016",
+      "split": "DEV",
+      "category": "AGE_VS_RESULT_COUNT",
+      "query": "About 28 years old, show 4 photos",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 4,
+        "media_type": "IMAGE",
+        "numeric": {
+          "age_exact": 28
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-017",
+      "split": "DEV",
+      "category": "AGE_VS_RESULT_COUNT",
+      "query": "A clinician aged 30",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "age_exact": 30
+        },
+        "positive": [
+          "CLINICIAN"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-018",
+      "split": "DEV",
+      "category": "AGE_VS_RESULT_COUNT",
+      "query": "Show six images of a patient in their 40s",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 6,
+        "media_type": "IMAGE",
+        "numeric": {
+          "age_decade": 40
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-019",
+      "split": "VALIDATION",
+      "category": "AGE_VS_RESULT_COUNT",
+      "query": "Patient between 25 and 35 years old",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "age_min": 25,
+          "age_max": 35
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-020",
+      "split": "BLIND",
+      "category": "AGE_VS_RESULT_COUNT",
+      "query": "Need 3 files featuring a 60-year-old patient",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 3,
+        "media_type": "ANY",
+        "numeric": {
+          "age_exact": 60
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-021",
+      "split": "DEV",
+      "category": "GRAFT_COUNTS",
+      "query": "Approximately 2,800 graft hair transplant",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "graft_count_exact": 2800
+        },
+        "positive": [
+          "HAIR_TRANSPLANT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-022",
+      "split": "DEV",
+      "category": "GRAFT_COUNTS",
+      "query": "Footage involving 3200 grafts",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "graft_count_exact": 3200
+        },
+        "media_type": "VIDEO"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-023",
+      "split": "DEV",
+      "category": "GRAFT_COUNTS",
+      "query": "Show 5 videos about roughly 2500 grafts",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 5,
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2500
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-024",
+      "split": "VALIDATION",
+      "category": "GRAFT_COUNTS",
+      "query": "Between 1800 and 2400 grafts",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "graft_count_min": 1800,
+          "graft_count_max": 2400
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-025",
+      "split": "BLIND",
+      "category": "GRAFT_COUNTS",
+      "query": "At least 3000 grafts in a transplant",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "graft_count_min": 3000
+        },
+        "positive": [
+          "HAIR_TRANSPLANT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-026",
+      "split": "DEV",
+      "category": "GRAFT_COUNTS",
+      "query": "At most 1500 grafts",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "graft_count_max": 1500
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-027",
+      "split": "DEV",
+      "category": "GRAFT_COUNTS",
+      "query": "Find three clips with 2,000 graft implantation",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 3,
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2000
+        },
+        "positive": [
+          "IMPLANTING_GRAFTS"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-028",
+      "split": "DEV",
+      "category": "YEAR_DATE",
+      "query": "Media captured during 2024",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "temporal": {
+          "year": 2024
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-029",
+      "split": "VALIDATION",
+      "category": "YEAR_DATE",
+      "query": "Return 6 clips taken in 2026",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 6,
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": 2026
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-030",
+      "split": "BLIND",
+      "category": "YEAR_DATE",
+      "query": "Between February and May",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "temporal": {
+          "month_start": 2,
+          "month_end": 5,
+          "year": null
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-031",
+      "split": "DEV",
+      "category": "YEAR_DATE",
+      "query": "After 15 June 2025",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "temporal": {
+          "year": 2025
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-032",
+      "split": "DEV",
+      "category": "YEAR_DATE",
+      "query": "Photos before August",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "IMAGE",
+        "temporal": {
+          "month": 8,
+          "year": null
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-033",
+      "split": "DEV",
+      "category": "YEAR_DATE",
+      "query": "Videos from January 2026",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": 2026,
+          "month": 1
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-034",
+      "split": "VALIDATION",
+      "category": "YEAR_DATE",
+      "query": "Show 4 files dated 2023",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 4,
+        "media_type": "ANY",
+        "temporal": {
+          "year": 2023
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-035",
+      "split": "BLIND",
+      "category": "TIMESTAMP",
+      "query": "Footage near 01:20",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "temporal": {
+          "timestamp_seconds": 80
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-036",
+      "split": "DEV",
+      "category": "TIMESTAMP",
+      "query": "At the 40 second mark",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "temporal": {
+          "timestamp_seconds": 40
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-037",
+      "split": "DEV",
+      "category": "TIMESTAMP",
+      "query": "Show 2 videos around 00:25",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 2,
+        "media_type": "VIDEO",
+        "temporal": {
+          "timestamp_seconds": 25
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-038",
+      "split": "DEV",
+      "category": "TIMESTAMP",
+      "query": "Moment near the 55-second mark",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "temporal": {
+          "timestamp_seconds": 55
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-039",
+      "split": "VALIDATION",
+      "category": "TIMESTAMP",
+      "query": "Find five clips at 1:05",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 5,
+        "media_type": "VIDEO",
+        "temporal": {
+          "timestamp_seconds": 65
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-040",
+      "split": "BLIND",
+      "category": "TIMESTAMP",
+      "query": "Around 32 seconds into the video",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "temporal": {
+          "timestamp_seconds": 32
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-041",
+      "split": "DEV",
+      "category": "DURATION",
+      "query": "Videos shorter than 25 seconds",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "temporal": {
+          "duration_max_seconds": 25
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-042",
+      "split": "DEV",
+      "category": "DURATION",
+      "query": "Footage over one minute",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "temporal": {
+          "duration_min_seconds": 60
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-043",
+      "split": "DEV",
+      "category": "DURATION",
+      "query": "Between 12 and 48 seconds long",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "temporal": {
+          "duration_min_seconds": 12,
+          "duration_max_seconds": 48
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-044",
+      "split": "VALIDATION",
+      "category": "DURATION",
+      "query": "Show 4 videos under 18 seconds",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 4,
+        "media_type": "VIDEO",
+        "temporal": {
+          "duration_max_seconds": 18
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-045",
+      "split": "BLIND",
+      "category": "DURATION",
+      "query": "At least 90 seconds in duration",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "temporal": {
+          "duration_min_seconds": 90
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-046",
+      "split": "DEV",
+      "category": "DURATION",
+      "query": "At most two minutes",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "temporal": {
+          "duration_max_seconds": 120
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-047",
+      "split": "DEV",
+      "category": "SESSION_COUNTS",
+      "query": "Patient after 4 treatment sessions",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "treatment_session_count": 4
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-048",
+      "split": "DEV",
+      "category": "SESSION_COUNTS",
+      "query": "Give 8 files showing a patient receiving 8 sessions",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 8,
+        "media_type": "ANY",
+        "numeric": {
+          "treatment_session_count": 8
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-049",
+      "split": "VALIDATION",
+      "category": "SESSION_COUNTS",
+      "query": "During the third session",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "treatment_session_count": 3
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-050",
+      "split": "BLIND",
+      "category": "SESSION_COUNTS",
+      "query": "After two sessions of care",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "treatment_session_count": 2
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-051",
+      "split": "DEV",
+      "category": "SESSION_COUNTS",
+      "query": "Show 5 videos from session 6",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 5,
+        "media_type": "VIDEO",
+        "numeric": {
+          "treatment_session_count": 6
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-052",
+      "split": "DEV",
+      "category": "SESSION_COUNTS",
+      "query": "A six-session treatment plan",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "treatment_session_count": 6
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-053",
+      "split": "DEV",
+      "category": "CURRENCY",
+      "query": "Promotion priced at RM8,888",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "currency_amount": 8888
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-054",
+      "split": "VALIDATION",
+      "category": "CURRENCY",
+      "query": "Media mentioning under RM10,000",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "ANY",
+        "numeric": {
+          "currency_amount": 10000
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-055",
+      "split": "BLIND",
+      "category": "CURRENCY",
+      "query": "Show 5 videos advertising RM899",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 5,
+        "media_type": "VIDEO",
+        "numeric": {
+          "currency_amount": 899
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-056",
+      "split": "DEV",
+      "category": "CURRENCY",
+      "query": "RM3,500 package, return 2 clips",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 2,
+        "media_type": "VIDEO",
+        "numeric": {
+          "currency_amount": 3500
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-057",
+      "split": "DEV",
+      "category": "CURRENCY",
+      "query": "Offer costs RM700 only",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "numeric": {
+          "currency_amount": 700
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-058",
+      "split": "DEV",
+      "category": "MEDIA_EXTENSION",
+      "query": "Only moving footage please",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "markers": [
+          "EXPLICIT_ONLY"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-059",
+      "split": "VALIDATION",
+      "category": "MEDIA_EXTENSION",
+      "query": "I want still pictures",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "IMAGE"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-060",
+      "split": "BLIND",
+      "category": "MEDIA_EXTENSION",
+      "query": "Return MOV media",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "ANY",
+        "extensions": [
+          "MOV"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-061",
+      "split": "DEV",
+      "category": "MEDIA_EXTENSION",
+      "query": "JPEG photographs only",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "IMAGE",
+        "extensions": [
+          "JPEG"
+        ],
+        "markers": [
+          "EXPLICIT_ONLY"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-062",
+      "split": "DEV",
+      "category": "MEDIA_EXTENSION",
+      "query": "Find 6 MP4 clips",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 6,
+        "media_type": "VIDEO",
+        "extensions": [
+          "MP4"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-063",
+      "split": "DEV",
+      "category": "MEDIA_EXTENSION",
+      "query": "Any kind of media",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "ANY"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-064",
+      "split": "VALIDATION",
+      "category": "MEDIA_EXTENSION",
+      "query": "WEBP pictures",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "IMAGE",
+        "extensions": [
+          "WEBP"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-065",
+      "split": "BLIND",
+      "category": "MEDIA_EXTENSION",
+      "query": "Give four PNG images",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 4,
+        "media_type": "IMAGE",
+        "extensions": [
+          "PNG"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-066",
+      "split": "DEV",
+      "category": "MEDIA_EXTENSION",
+      "query": "JPG or PNG photos",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "IMAGE",
+        "extensions": [
+          "JPG",
+          "PNG"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-067",
+      "split": "DEV",
+      "category": "NEGATION_EXCLUSIONS",
+      "query": "Scalp footage without injections",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "negative": [
+          "INJECTING"
+        ],
+        "positive": [
+          "SCALP"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-068",
+      "split": "DEV",
+      "category": "NEGATION_EXCLUSIONS",
+      "query": "Exclude anything showing a syringe",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "negative": [
+          "INJECTING"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-069",
+      "split": "VALIDATION",
+      "category": "NEGATION_EXCLUSIONS",
+      "query": "Hairline clips but no clinician",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "negative": [
+          "CLINICIAN"
+        ],
+        "positive": [
+          "FRONTAL_HAIRLINE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-070",
+      "split": "BLIND",
+      "category": "NEGATION_EXCLUSIONS",
+      "query": "Anything except procedure footage",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "negative": [
+          "PROCEDURE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-071",
+      "split": "DEV",
+      "category": "NEGATION_EXCLUSIONS",
+      "query": "Patient images not showing injection",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "IMAGE",
+        "negative": [
+          "INJECTING"
+        ],
+        "positive": [
+          "PATIENT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-072",
+      "split": "DEV",
+      "category": "NEGATION_EXCLUSIONS",
+      "query": "No doctor, just the patient",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "negative": [
+          "CLINICIAN"
+        ],
+        "positive": [
+          "PATIENT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-073",
+      "split": "DEV",
+      "category": "NEGATION_EXCLUSIONS",
+      "query": "Videos with cleansing and without syringe",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "positive": [
+          "CLEANSING"
+        ],
+        "negative": [
+          "INJECTING"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-074",
+      "split": "VALIDATION",
+      "category": "NEGATION_EXCLUSIONS",
+      "query": "Do not include neck treatment",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "negative": [
+          "NECK"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-075",
+      "split": "BLIND",
+      "category": "NEGATION_EXCLUSIONS",
+      "query": "Avoid injection footage",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "negative": [
+          "INJECTING"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-076",
+      "split": "DEV",
+      "category": "ONLY_MUST_EXACTLY",
+      "query": "Only return videos",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "markers": [
+          "EXPLICIT_ONLY"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-077",
+      "split": "DEV",
+      "category": "ONLY_MUST_EXACTLY",
+      "query": "Must include a clinician",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "CLINICIAN"
+        ],
+        "markers": [
+          "EXPLICIT_MUST"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-078",
+      "split": "DEV",
+      "category": "ONLY_MUST_EXACTLY",
+      "query": "Exactly 9 results",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 9,
+        "markers": [
+          "EXPLICIT_EXACT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-079",
+      "split": "VALIDATION",
+      "category": "ONLY_MUST_EXACTLY",
+      "query": "I only want .MOV files",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "extensions": [
+          "MOV"
+        ],
+        "markers": [
+          "EXPLICIT_ONLY"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-080",
+      "split": "BLIND",
+      "category": "ONLY_MUST_EXACTLY",
+      "query": "Has to show frontal scalp",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "FRONTAL_SCALP"
+        ],
+        "markers": [
+          "EXPLICIT_MUST"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-081",
+      "split": "DEV",
+      "category": "ONLY_MUST_EXACTLY",
+      "query": "Must be images of a patient",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "IMAGE",
+        "positive": [
+          "PATIENT"
+        ],
+        "markers": [
+          "EXPLICIT_MUST"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-082",
+      "split": "DEV",
+      "category": "PREFERENCES",
+      "query": "Preferably with a physician visible",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "CLINICIAN"
+        ],
+        "markers": [
+          "PREFERENCE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-083",
+      "split": "DEV",
+      "category": "PREFERENCES",
+      "query": "Ideally a frontal view",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "markers": [
+          "PREFERENCE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-084",
+      "split": "VALIDATION",
+      "category": "PREFERENCES",
+      "query": "If possible, avoid injection",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "negative": [
+          "INJECTING"
+        ],
+        "markers": [
+          "PREFERENCE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-085",
+      "split": "BLIND",
+      "category": "PREFERENCES",
+      "query": "I would prefer procedure footage",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "markers": [
+          "PREFERENCE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-086",
+      "split": "DEV",
+      "category": "PREFERENCES",
+      "query": "Scalp photos, preferably consultation",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "IMAGE",
+        "positive": [
+          "SCALP",
+          "CONSULTATION"
+        ],
+        "markers": [
+          "PREFERENCE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-087",
+      "split": "DEV",
+      "category": "PREFERENCES",
+      "query": "Prefer a patient looking at camera",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "PATIENT",
+          "LOOKING_AT_CAMERA"
+        ],
+        "markers": [
+          "PREFERENCE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-088",
+      "split": "DEV",
+      "category": "SEMANTIC_COMBINATIONS",
+      "query": "Physician cleansing a patient's cheek",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "CLINICIAN",
+          "PATIENT",
+          "CLEANSING",
+          "CHEEK"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-089",
+      "split": "VALIDATION",
+      "category": "SEMANTIC_COMBINATIONS",
+      "query": "Staff member beside a seated patient",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "STAFF",
+          "PATIENT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-090",
+      "split": "BLIND",
+      "category": "SEMANTIC_COMBINATIONS",
+      "query": "Graft implantation across frontal scalp",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "IMPLANTING_GRAFTS",
+          "FRONTAL_SCALP"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-091",
+      "split": "DEV",
+      "category": "SEMANTIC_COMBINATIONS",
+      "query": "Doctor drawing the front hairline before treatment",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "CLINICIAN",
+          "DRAWING_HAIRLINE",
+          "FRONTAL_HAIRLINE",
+          "PRE_PROCEDURE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-092",
+      "split": "DEV",
+      "category": "SEMANTIC_COMBINATIONS",
+      "query": "Patient looking directly at camera",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "PATIENT",
+          "LOOKING_AT_CAMERA"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-093",
+      "split": "DEV",
+      "category": "SEMANTIC_COMBINATIONS",
+      "query": "Injection into the cheek during procedure",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "INJECTING",
+          "CHEEK",
+          "DURING_PROCEDURE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-094",
+      "split": "VALIDATION",
+      "category": "SEMANTIC_COMBINATIONS",
+      "query": "Clinical room showing a scalp transplant",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "CLINICAL_ENVIRONMENT",
+          "SCALP",
+          "HAIR_TRANSPLANT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-095",
+      "split": "BLIND",
+      "category": "SEMANTIC_COMBINATIONS",
+      "query": "Close-up of face and neck cleansing",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "FACE",
+          "NECK",
+          "CLEANSING"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-096",
+      "split": "DEV",
+      "category": "SEMANTIC_COMBINATIONS",
+      "query": "Clinician implanting hair grafts",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "CLINICIAN",
+          "IMPLANTING_GRAFTS"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-097",
+      "split": "DEV",
+      "category": "SEMANTIC_COMBINATIONS",
+      "query": "Patient consultation after treatment",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "PATIENT",
+          "CONSULTATION",
+          "POST_PROCEDURE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-098",
+      "split": "DEV",
+      "category": "SEMANTIC_COMBINATIONS",
+      "query": "Frontal hairline design by medical staff",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "FRONTAL_HAIRLINE",
+          "DRAWING_HAIRLINE",
+          "STAFF"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-099",
+      "split": "VALIDATION",
+      "category": "SEMANTIC_COMBINATIONS",
+      "query": "Doctor examines the recipient region",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "CLINICIAN",
+          "RECIPIENT_REGION"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-100",
+      "split": "BLIND",
+      "category": "OCR_TRANSCRIPT_MODALITY",
+      "query": "Find footage where M-CURE is written on screen",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "modalities": [
+          "OCR"
+        ],
+        "positive": []
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-101",
+      "split": "DEV",
+      "category": "OCR_TRANSCRIPT_MODALITY",
+      "query": "Doctor mentions no-shave technique",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "CLINICIAN"
+        ],
+        "modalities": [
+          "TRANSCRIPT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-102",
+      "split": "DEV",
+      "category": "OCR_TRANSCRIPT_MODALITY",
+      "query": "Video where someone says frontal hairline",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "modalities": [
+          "TRANSCRIPT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-103",
+      "split": "DEV",
+      "category": "OCR_TRANSCRIPT_MODALITY",
+      "query": "iGraft visible in the frame",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "modalities": [
+          "OCR"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-104",
+      "split": "VALIDATION",
+      "category": "OCR_TRANSCRIPT_MODALITY",
+      "query": "Screen text reads consultation",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "modalities": [
+          "OCR"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-105",
+      "split": "BLIND",
+      "category": "OCR_TRANSCRIPT_MODALITY",
+      "query": "Clip where clinician talks about grafts",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "positive": [
+          "CLINICIAN"
+        ],
+        "modalities": [
+          "TRANSCRIPT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-106",
+      "split": "DEV",
+      "category": "OCR_TRANSCRIPT_MODALITY",
+      "query": "Written label M-CURE, not spoken",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "modalities": [
+          "OCR"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-107",
+      "split": "DEV",
+      "category": "MALAY",
+      "query": "cari rakaman doktor lukis garisan rambut",
+      "language": "MALAY",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "positive": [
+          "CLINICIAN",
+          "DRAWING_HAIRLINE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-108",
+      "split": "DEV",
+      "category": "MALAY",
+      "query": "tunjuk lima video pesakit",
+      "language": "MALAY",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 5,
+        "media_type": "VIDEO",
+        "positive": [
+          "PATIENT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-109",
+      "split": "VALIDATION",
+      "category": "MALAY",
+      "query": "video tanpa suntikan",
+      "language": "MALAY",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "negative": [
+          "INJECTING"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-110",
+      "split": "BLIND",
+      "category": "MALAY",
+      "query": "gambar yang ada tulisan iGraft",
+      "language": "MALAY",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "IMAGE",
+        "modalities": [
+          "OCR"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-111",
+      "split": "DEV",
+      "category": "MALAY",
+      "query": "cari doktor rawat kulit kepala",
+      "language": "MALAY",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "CLINICIAN",
+          "SCALP"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-112",
+      "split": "DEV",
+      "category": "MALAY",
+      "query": "saya mahu tiga gambar muka pesakit",
+      "language": "MALAY",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 3,
+        "media_type": "IMAGE",
+        "positive": [
+          "FACE",
+          "PATIENT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-113",
+      "split": "DEV",
+      "category": "MALAY",
+      "query": "rakaman pesakit selepas rawatan",
+      "language": "MALAY",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "positive": [
+          "PATIENT",
+          "POST_PROCEDURE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-114",
+      "split": "VALIDATION",
+      "category": "MALAY",
+      "query": "tunjuk video sebelum prosedur",
+      "language": "MALAY",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "positive": [
+          "PRE_PROCEDURE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-115",
+      "split": "BLIND",
+      "category": "MIXED_LANGUAGE",
+      "query": "show saya 4 videos doctor lukis frontal hairline",
+      "language": "MIXED",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 4,
+        "media_type": "VIDEO",
+        "positive": [
+          "CLINICIAN",
+          "DRAWING_HAIRLINE",
+          "FRONTAL_HAIRLINE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-116",
+      "split": "DEV",
+      "category": "MIXED_LANGUAGE",
+      "query": "cari clip patient tapi no injection",
+      "language": "MIXED",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "positive": [
+          "PATIENT"
+        ],
+        "negative": [
+          "INJECTING"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-117",
+      "split": "DEV",
+      "category": "MIXED_LANGUAGE",
+      "query": "nak 3 photos yang ada M-CURE visible",
+      "language": "MIXED",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 3,
+        "media_type": "IMAGE",
+        "modalities": [
+          "OCR"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-118",
+      "split": "DEV",
+      "category": "MIXED_LANGUAGE",
+      "query": "tolong find video clinician buat cleansing",
+      "language": "MIXED",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "positive": [
+          "CLINICIAN",
+          "CLEANSING"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-119",
+      "split": "VALIDATION",
+      "category": "MIXED_LANGUAGE",
+      "query": "show gambar scalp selepas procedure",
+      "language": "MIXED",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "IMAGE",
+        "positive": [
+          "SCALP",
+          "POST_PROCEDURE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-120",
+      "split": "BLIND",
+      "category": "MIXED_LANGUAGE",
+      "query": "cari 6 videos patient says no shaving",
+      "language": "MIXED",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 6,
+        "media_type": "VIDEO",
+        "positive": [
+          "PATIENT"
+        ],
+        "modalities": [
+          "TRANSCRIPT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-121",
+      "split": "DEV",
+      "category": "MIXED_LANGUAGE",
+      "query": "preferably doktor dengan patient in clinic",
+      "language": "MIXED",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "CLINICIAN",
+          "PATIENT",
+          "CLINICAL_ENVIRONMENT"
+        ],
+        "markers": [
+          "PREFERENCE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-122",
+      "split": "DEV",
+      "category": "MIXED_LANGUAGE",
+      "query": "tunjuk MOV files of frontal scalp",
+      "language": "MIXED",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "ANY",
+        "extensions": [
+          "MOV"
+        ],
+        "positive": [
+          "FRONTAL_SCALP"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-123",
+      "split": "DEV",
+      "category": "TYPO_MISSPELLING",
+      "query": "doctr drawing frntal hairline",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "CLINICIAN",
+          "DRAWING_HAIRLINE",
+          "FRONTAL_HAIRLINE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-124",
+      "split": "VALIDATION",
+      "category": "TYPO_MISSPELLING",
+      "query": "har transplant on scalp",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "HAIR_TRANSPLANT",
+          "SCALP"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-125",
+      "split": "BLIND",
+      "category": "TYPO_MISSPELLING",
+      "query": "no injction please",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "negative": [
+          "INJECTING"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-126",
+      "split": "DEV",
+      "category": "TYPO_MISSPELLING",
+      "query": "graft implntation footage",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "IMPLANTING_GRAFTS"
+        ],
+        "media_type": "VIDEO"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-127",
+      "split": "DEV",
+      "category": "TYPO_MISSPELLING",
+      "query": "pateint face closeup",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "PATIENT",
+          "FACE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-128",
+      "split": "DEV",
+      "category": "TYPO_MISSPELLING",
+      "query": "clinican clensing cheek",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "CLINICIAN",
+          "CLEANSING",
+          "CHEEK"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-129",
+      "split": "VALIDATION",
+      "category": "TYPO_MISSPELLING",
+      "query": "frontal harline desgin",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "FRONTAL_HAIRLINE",
+          "DRAWING_HAIRLINE"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-130",
+      "split": "BLIND",
+      "category": "SIMILARITY_INTENT",
+      "query": "Find footage resembling this",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_SIMILAR_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-131",
+      "split": "DEV",
+      "category": "SIMILARITY_INTENT",
+      "query": "Give me more like this one",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_SIMILAR_MEDIA",
+        "requested_count": null
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-132",
+      "split": "DEV",
+      "category": "SIMILARITY_INTENT",
+      "query": "Show visually similar images",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_SIMILAR_MEDIA",
+        "requested_count": null,
+        "media_type": "IMAGE"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-133",
+      "split": "DEV",
+      "category": "SIMILARITY_INTENT",
+      "query": "Search for related footage",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_SIMILAR_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO"
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-134",
+      "split": "VALIDATION",
+      "category": "SIMILARITY_INTENT",
+      "query": "Anything similar to this reference?",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_SIMILAR_MEDIA",
+        "requested_count": null
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-135",
+      "split": "BLIND",
+      "category": "NO_MATCH_UNKNOWN",
+      "query": "Find videos of aurora follicle mapping",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "unresolved": true
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-136",
+      "split": "DEV",
+      "category": "NO_MATCH_UNKNOWN",
+      "query": "Show quantum scalp calibration",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "unresolved": true
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-137",
+      "split": "DEV",
+      "category": "NO_MATCH_UNKNOWN",
+      "query": "Patient undergoing velvet protocol",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "PATIENT"
+        ],
+        "unresolved": true
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-138",
+      "split": "DEV",
+      "category": "NO_MATCH_UNKNOWN",
+      "query": "Images of cobalt aftercare ritual",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "IMAGE",
+        "unresolved": true
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-139",
+      "split": "VALIDATION",
+      "category": "NO_MATCH_UNKNOWN",
+      "query": "Find the zeta crown manoeuvre",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "unresolved": true
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-140",
+      "split": "BLIND",
+      "category": "NO_MATCH_UNKNOWN",
+      "query": "Video of heliotrope assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "unresolved": true
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-141",
+      "split": "DEV",
+      "category": "MULTI_NUMBER_ADVERSARIAL",
+      "query": "A 36-year-old with 2800 grafts; return 9 videos",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 9,
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 36,
+          "graft_count_exact": 2800
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-142",
+      "split": "DEV",
+      "category": "MULTI_NUMBER_ADVERSARIAL",
+      "query": "Show 7 videos from 2024 after 4 treatment sessions",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 7,
+        "media_type": "VIDEO",
+        "numeric": {
+          "treatment_session_count": 4
+        },
+        "temporal": {
+          "year": 2024
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-143",
+      "split": "DEV",
+      "category": "MULTI_NUMBER_ADVERSARIAL",
+      "query": "Give 3 clips under 45 seconds near 00:15",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 3,
+        "media_type": "VIDEO",
+        "temporal": {
+          "duration_max_seconds": 45,
+          "timestamp_seconds": 15
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-144",
+      "split": "VALIDATION",
+      "category": "MULTI_NUMBER_ADVERSARIAL",
+      "query": "RM9,999 offer; find 2 videos",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 2,
+        "media_type": "VIDEO",
+        "numeric": {
+          "currency_amount": 9999
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-145",
+      "split": "BLIND",
+      "category": "MULTI_NUMBER_ADVERSARIAL",
+      "query": "Patient aged 50 in session 5, show 5 photos",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 5,
+        "media_type": "IMAGE",
+        "numeric": {
+          "age_exact": 50,
+          "treatment_session_count": 5
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-146",
+      "split": "DEV",
+      "category": "MULTI_NUMBER_ADVERSARIAL",
+      "query": "From 2026, return 6 files with 3000 grafts",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 6,
+        "media_type": "ANY",
+        "numeric": {
+          "graft_count_exact": 3000
+        },
+        "temporal": {
+          "year": 2026
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-147",
+      "split": "DEV",
+      "category": "MULTI_NUMBER_ADVERSARIAL",
+      "query": "At 00:30 in a 90-second video, show 4 results",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 4,
+        "media_type": "VIDEO",
+        "temporal": {
+          "timestamp_seconds": 30,
+          "duration_max_seconds": 90
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-148",
+      "split": "DEV",
+      "category": "MULTI_NUMBER_ADVERSARIAL",
+      "query": "Three sessions for a 30-year-old; give three videos",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": 3,
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 30,
+          "treatment_session_count": 3
+        }
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-149",
+      "split": "VALIDATION",
+      "category": "MULTI_NUMBER_ADVERSARIAL",
+      "query": "Only images, show videos",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "media_type": "VIDEO",
+        "markers": [
+          "EXPLICIT_ONLY"
+        ],
+        "conflict": true
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    },
+    {
+      "case_id": "QP14-150",
+      "split": "BLIND",
+      "category": "MULTI_NUMBER_ADVERSARIAL",
+      "query": "No injection but must show injection",
+      "language": "ENGLISH",
+      "expected": {
+        "intent": "FIND_MEDIA",
+        "requested_count": null,
+        "positive": [
+          "INJECTING"
+        ],
+        "negative": [
+          "INJECTING"
+        ],
+        "markers": [
+          "EXPLICIT_MUST"
+        ],
+        "conflict": true
+      },
+      "fields_not_expected": [
+        "asset_id",
+        "filename",
+        "search_results",
+        "relevance_score"
+      ],
+      "notes": "Parser-only gold; no media-result expectation."
+    }
+  ],
+  "fingerprint": "29557f950a7cffe82cbdb8fe70b71075176da988b4ea0d9e54872678423095d9",
+  "frozen": true
+}

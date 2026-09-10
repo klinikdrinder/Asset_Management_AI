@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_3197.MP4",
+      "evidence": [
+        "Filename IMG_3197.MP4, duration 12.77s, 1280x720, h264, single canonical scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical scalp device video, one scene",
+      "evidence": [
+        "Scene-level narrative describes a person's scalp being treated with a handheld red-light device in a clinical room"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, ~12.8 seconds",
+      "evidence": [
+        "canonical_scenes: 1, duration_seconds: 12.766667, 2 sampled keyframes"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles of the two people not confirmed",
+      "evidence": [
+        "Scene-level PEOPLE_ROLES marked UNKNOWN; no text identifies patient/provider roles beyond attire"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining person with short buzzed hair; operator in dark scrubs, surgical mask, glove",
+      "evidence": [
+        "Image shows short buzzed hair and bare feet on reclined person",
+        "Second person wears dark scrub top, surgical mask, and a disposable glove"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp/back of head and feet visible",
+      "evidence": [
+        "Back/top of scalp visible under red light",
+        "Bare feet visible at bottom of frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure; device applied to scalp",
+      "evidence": [
+        "A gloved hand holds a corded device emitting red light near the scalp, but no procedure name is present in the supplied text",
+        "Rule: gloves, instruments, and scalp contact alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operator holds device against reclining patient's scalp",
+      "evidence": [
+        "Gloved hand positions handheld device with red light close to the scalp of the face-down patient"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One person applies device to another reclining person",
+      "evidence": [
+        "Spatial arrangement shows one person standing/leaning over the other, who is reclined on a treatment surface"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Red light from device on scalp; glove and mask worn",
+      "evidence": [
+        "Visible red glow at the device tip contacting the scalp area",
+        "Personal protective equipment (glove, surgical mask) visible on the operator"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room type not confirmed",
+      "evidence": [
+        "Scene-level ENVIRONMENT marked UNKNOWN despite visible white room, glass cabinet, and sink; specific facility type not established by text"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld/static close-medium shot from the side",
+      "evidence": [
+        "Single vertical-oriented frame shows a side-angle medium shot centered on the patient's head and operator's arm"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's head and operator's arm dominate frame",
+      "evidence": [
+        "Patient's head occupies lower-center frame; operator's gloved hand and device occupy upper-right portion of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech detected",
+      "evidence": [
+        "audio_stream_present: true, transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated: true, ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing elements present",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked FALSE; no logos, captions, or promotional overlays visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical scalp treatment moment with handheld device",
+      "evidence": [
+        "Combined visual evidence of a reclining patient, gloved operator, and red-light-emitting device near the scalp forms a coherent clinical treatment narrative"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to media evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person lies face-down with their head resting on a blue disposable headrest cover, showing short buzzed hair and bare feet, in a white clinical room with a glass cabinet and sink. A gloved hand from a person in dark scrubs and a surgical mask holds a corded handheld device emitting a red light close to the back/top of the patient's scalp.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "3a3f803d-35d3-444f-9c87-93765544c840",
+  "image_count": 1
+}

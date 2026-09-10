@@ -1,0 +1,334 @@
+{
+  "processor_version": "kdi_audio_intelligence_v1",
+  "configuration_version": "kdi_audio_intelligence_config_v1",
+  "configuration_fingerprint": "c90b3d1c7de34af15a93037b4e47229766306f2046de04fbcb89dea87396ba57",
+  "semantic_spec_version": "semantic_index_v1",
+  "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+  "pilot_manifest_version": "kdi_semantic_pilot_v1",
+  "analysis_run_id": "cb03175d-29a9-5a49-8428-5ba55124b52e",
+  "asset_id": "babae120-9372-42ad-b535-02a3276ea2be",
+  "filename": "IMG_1238.MP4",
+  "source_fingerprint": "8a5d8d9aee7a71b1885289dc0cdd91aa649e692ff2afa5e1140d6964a542edeb",
+  "generated_at": "2026-08-24T04:31:41.609197+00:00",
+  "status": "COMPLETED",
+  "authorization": {
+    "external_ai_eligible": true,
+    "reason": "Live reviewed asset_access_control.external_ai_status=ALLOWED",
+    "provider_used": "local_faster_whisper",
+    "audio_transmitted_externally": false,
+    "external_attempt_outcome": null,
+    "separate_controls": {
+      "external_ai_status": "ALLOWED",
+      "review_status": "REVIEWED",
+      "classification_status": "UNCLASSIFIED",
+      "is_clinical": null,
+      "sensitivity_level": "GENERAL",
+      "consent_status": "UNKNOWN",
+      "marketing_usage_status": "UNKNOWN",
+      "requires_clinical_permission": null,
+      "reviewed_at": "2026-08-20T04:49:35.121618+00:00"
+    }
+  },
+  "audio": {
+    "source_codec": "aac",
+    "video_duration_seconds": 38.6,
+    "duration_seconds": 38.605,
+    "sample_rate": 16000,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "frame_count": 617680,
+    "audio_fingerprint": "a5a11f2469c650aacdf5bb5c709eeaa57881d0828c612d35b81a56ebbe57b789",
+    "duration_delta_seconds": 0.005,
+    "duration_match": true,
+    "extraction_status": "COMPLETED",
+    "temporary_audio_retained": false
+  },
+  "speech_detection": {
+    "speech_present": "YES",
+    "segments": [
+      {
+        "start_time": 5.13,
+        "end_time": 5.49,
+        "state": "SPEECH_CANDIDATE"
+      }
+    ],
+    "speech_duration_seconds": 0.36,
+    "speech_ratio": 0.009324,
+    "confidence": 0.99,
+    "confidence_source": "HEURISTIC",
+    "threshold_dbfs": -37.7,
+    "noise_floor_dbfs": -45.7,
+    "peak_dbfs": -27.4
+  },
+  "language": {
+    "primary": "en",
+    "secondary": null,
+    "mixed": false,
+    "confidence": 0.5340517163276672,
+    "confidence_source": "LOCAL_WHISPER_LANGUAGE_PROBABILITY"
+  },
+  "transcription": {
+    "status": "COMPLETED",
+    "raw_transcript": "So can we have a sense of difference? Yeah. Sure.",
+    "normalized_transcript": "So can we have a sense of difference? Yeah. Sure.",
+    "detected_speech_duration_seconds": 0.36,
+    "transcript_segment_span_seconds": 1.68,
+    "transcribed_speech_duration_seconds": 0.36,
+    "untranscribed_speech_duration_seconds": 0,
+    "transcribed_speech_coverage_percent": 100,
+    "coverage_method": "UNION_OVERLAP_OF_TRANSCRIPT_SEGMENTS_WITH_ENERGY_VAD_SEGMENTS",
+    "provider_raw": {
+      "whisper": {
+        "text": "So can we have a sense of difference? Yeah. Sure.",
+        "language": "en",
+        "language_probability": 0.5340517163276672,
+        "duration": 38.605,
+        "duration_after_vad": 3.584,
+        "segments": [
+          {
+            "id": 0,
+            "start": 4.05,
+            "end": 5.01,
+            "text": " So can we have a sense of difference?",
+            "avg_logprob": -0.9236036241054535,
+            "no_speech_prob": 0.5885699987411499,
+            "words": [
+              {
+                "start": 4.05,
+                "end": 4.05,
+                "word": " So",
+                "probability": 0.020023003220558167
+              },
+              {
+                "start": 4.05,
+                "end": 4.25,
+                "word": " can",
+                "probability": 0.2817203998565674
+              },
+              {
+                "start": 4.25,
+                "end": 4.37,
+                "word": " we",
+                "probability": 0.2694486081600189
+              },
+              {
+                "start": 4.37,
+                "end": 4.45,
+                "word": " have",
+                "probability": 0.6069552302360535
+              },
+              {
+                "start": 4.45,
+                "end": 4.53,
+                "word": " a",
+                "probability": 0.45541077852249146
+              },
+              {
+                "start": 4.53,
+                "end": 4.65,
+                "word": " sense",
+                "probability": 0.3648001551628113
+              },
+              {
+                "start": 4.65,
+                "end": 4.81,
+                "word": " of",
+                "probability": 0.9752653241157532
+              },
+              {
+                "start": 4.81,
+                "end": 5.01,
+                "word": " difference?",
+                "probability": 0.40672582387924194
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "start": 5.13,
+            "end": 5.49,
+            "text": " Yeah.",
+            "avg_logprob": -0.9236036241054535,
+            "no_speech_prob": 0.5885699987411499,
+            "words": [
+              {
+                "start": 5.13,
+                "end": 5.49,
+                "word": " Yeah.",
+                "probability": 0.2584315836429596
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "start": 6.67,
+            "end": 7.03,
+            "text": " Sure.",
+            "avg_logprob": -0.9236036241054535,
+            "no_speech_prob": 0.5885699987411499,
+            "words": [
+              {
+                "start": 6.67,
+                "end": 7.03,
+                "word": " Sure.",
+                "probability": 0.2949279844760895
+              }
+            ]
+          }
+        ]
+      },
+      "diarized": {
+        "segments": [],
+        "status": "UNAVAILABLE"
+      }
+    }
+  },
+  "transcript_chunks": [
+    {
+      "transcript_chunk_id": "fcb7ea7b-6282-5b33-a7f1-bcb102eba9ed",
+      "asset_id": "babae120-9372-42ad-b535-02a3276ea2be",
+      "start_time": 4.05,
+      "end_time": 5.01,
+      "raw_text": "So can we have a sense of difference?",
+      "normalized_text": "So can we have a sense of difference?",
+      "language": "en",
+      "confidence": 0.423,
+      "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+      "quality_flags": [],
+      "accepted_for_search": false,
+      "speaker_id": "UNKNOWN_SPEAKER",
+      "speaker_role": "UNKNOWN_SPEAKER",
+      "speaker_role_confidence": null,
+      "analysis_run_id": "cb03175d-29a9-5a49-8428-5ba55124b52e",
+      "primary_scene_id": "ac00873b-4454-5213-9d3f-e37abc8ff1df",
+      "overlapping_scene_ids": [
+        "ac00873b-4454-5213-9d3f-e37abc8ff1df"
+      ],
+      "temporally_overlapping_event_ids": [],
+      "event_relationship": null,
+      "topics": [],
+      "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: en\nTranscript: So can we have a sense of difference?",
+      "source_text_fingerprint": "3214f970eb20d1abcbbe48a34d6cf2665b14583c63ad41fd2875b3cdabc4c444",
+      "embedding_id": null,
+      "embedding_state": "DEFERRED"
+    },
+    {
+      "transcript_chunk_id": "ff704608-a03d-5303-8472-755fd21980c5",
+      "asset_id": "babae120-9372-42ad-b535-02a3276ea2be",
+      "start_time": 5.13,
+      "end_time": 5.49,
+      "raw_text": "Yeah.",
+      "normalized_text": "Yeah.",
+      "language": "en",
+      "confidence": 0.258,
+      "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+      "quality_flags": [],
+      "accepted_for_search": false,
+      "speaker_id": "UNKNOWN_SPEAKER",
+      "speaker_role": "UNKNOWN_SPEAKER",
+      "speaker_role_confidence": null,
+      "analysis_run_id": "cb03175d-29a9-5a49-8428-5ba55124b52e",
+      "primary_scene_id": "ac00873b-4454-5213-9d3f-e37abc8ff1df",
+      "overlapping_scene_ids": [
+        "ac00873b-4454-5213-9d3f-e37abc8ff1df"
+      ],
+      "temporally_overlapping_event_ids": [],
+      "event_relationship": null,
+      "topics": [],
+      "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: en\nTranscript: Yeah.",
+      "source_text_fingerprint": "b1b014d0356aca0996fa6dd9fc46916401fc0dc80273e8880b234563ef31c3a3",
+      "embedding_id": null,
+      "embedding_state": "DEFERRED"
+    },
+    {
+      "transcript_chunk_id": "954c4202-e656-571b-acae-e1b061a42fba",
+      "asset_id": "babae120-9372-42ad-b535-02a3276ea2be",
+      "start_time": 6.67,
+      "end_time": 7.03,
+      "raw_text": "Sure.",
+      "normalized_text": "Sure.",
+      "language": "en",
+      "confidence": 0.295,
+      "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+      "quality_flags": [],
+      "accepted_for_search": false,
+      "speaker_id": "UNKNOWN_SPEAKER",
+      "speaker_role": "UNKNOWN_SPEAKER",
+      "speaker_role_confidence": null,
+      "analysis_run_id": "cb03175d-29a9-5a49-8428-5ba55124b52e",
+      "primary_scene_id": "ac00873b-4454-5213-9d3f-e37abc8ff1df",
+      "overlapping_scene_ids": [
+        "ac00873b-4454-5213-9d3f-e37abc8ff1df"
+      ],
+      "temporally_overlapping_event_ids": [],
+      "event_relationship": null,
+      "topics": [],
+      "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: en\nTranscript: Sure.",
+      "source_text_fingerprint": "ff8d23ed279030ff0b7b1bb14ba2afb27e9dc89d6d00647de0a83951303ce58d",
+      "embedding_id": null,
+      "embedding_state": "DEFERRED"
+    }
+  ],
+  "speakers": {
+    "anonymous_speaker_count": 1,
+    "speaker_ids": [
+      "UNKNOWN_SPEAKER"
+    ],
+    "roles_assigned": 0,
+    "unknown_roles": 1,
+    "diarization_status": "UNAVAILABLE",
+    "diarization_confidence": null,
+    "voice_biometric_identification": "NONE"
+  },
+  "spoken_topics": [],
+  "spoken_summary": "So can we have a sense of difference? Yeah. Sure.",
+  "reconciliation": [
+    {
+      "asset_id": "babae120-9372-42ad-b535-02a3276ea2be",
+      "filename": "IMG_1238.MP4",
+      "spoken_concept": null,
+      "outcome": "UNRELATED",
+      "evidence_chunk_ids": [
+        "fcb7ea7b-6282-5b33-a7f1-bcb102eba9ed",
+        "ff704608-a03d-5303-8472-755fd21980c5",
+        "954c4202-e656-571b-acae-e1b061a42fba"
+      ],
+      "phase5_modified": false
+    }
+  ],
+  "img_1238_segmentation": {
+    "existing_status": "REVIEW_NEEDED",
+    "topic_changes": [],
+    "audio_supports_resegmentation_review": false,
+    "segmentation_modified": false
+  },
+  "layer_14": {
+    "applicability": "APPLICABLE",
+    "semantic_state": "OBSERVED",
+    "speech_state": "YES",
+    "transcript_state": "OBSERVED",
+    "embedding_state": "DEFERRED",
+    "human_review_state": "REVIEW_NEEDED"
+  },
+  "performance": {
+    "audio_extraction_seconds": 0.08876189999864437,
+    "vad_seconds": 0.211670899996534,
+    "transcription_seconds": 5.736865099999704,
+    "diarization_seconds": 0.0,
+    "embedding_seconds": 0.0,
+    "total_seconds": 6.228559900002438,
+    "provider_calls": 0,
+    "retries": 0,
+    "cost": "LOCAL_NO_API_COST"
+  },
+  "prohibitions": {
+    "ocr_performed": false,
+    "production_writes": false,
+    "search_documents_rebuilt": false,
+    "phase5_modified": false
+  },
+  "idempotency": {
+    "verified": true,
+    "functional_fingerprint": "f0c09b515e4e9780f8623e3c682f7e6d3725bf68f4b4e5643a3158172204f935"
+  }
+}

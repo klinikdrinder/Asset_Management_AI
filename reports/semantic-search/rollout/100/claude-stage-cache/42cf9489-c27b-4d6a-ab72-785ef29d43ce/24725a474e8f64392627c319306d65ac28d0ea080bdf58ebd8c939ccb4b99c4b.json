@@ -1,0 +1,170 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0486.MP4, scene 0",
+      "evidence": [
+        "asset_id 42cf9489-c27b-4d6a-ab72-785ef29d43ce, filename IMG_0486.MP4, scene_index 0, start 0.0 end 11.912"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical room video clip, ~12 seconds",
+      "evidence": [
+        "technical duration_seconds 11.911667, resolution 1280x720, h264, audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene spanning 0 to 11.9 seconds",
+      "evidence": [
+        "scene start_seconds 0.0, end_seconds 11.912, keyframes_supplied 2 showing near-identical framing"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One masked attendant in scrubs and one reclining patient",
+      "evidence": [
+        "person in teal scrub top and surgical mask leaning over a reclining person wearing a green mesh surgical cap and covered by blue drapes"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Attendant with bun hairstyle and mask; patient in cap and drapes",
+      "evidence": [
+        "attendant has dark hair in a bun, bangs, wearing a light blue surgical mask and teal short-sleeve scrub top",
+        "patient's head covered by a green mesh cap, body covered by a blue disposable drape and dark towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's head, face, and forehead visible",
+      "evidence": [
+        "patient's face, forehead, and side of head are visible beneath the surgical cap in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure evidenced",
+      "evidence": [
+        "no readable_text_detected and no spoken_content supplied; only visual cues of scrubs, mask, cap, and drapes without a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Attendant leaning over and touching patient's head/face",
+      "evidence": [
+        "attendant's hands are positioned near the patient's forehead/temple in both keyframes, head tilted downward toward the patient"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Attendant positioned directly over reclining patient",
+      "evidence": [
+        "attendant stands behind/above the patient's head, leaning down in close physical proximity in both frames"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Surgical cap, mask, and drapes suggest a clinical setting",
+      "evidence": [
+        "green mesh surgical cap on patient, blue disposable drape covering torso, surgical mask worn by attendant"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical room with white walls and cabinet",
+      "evidence": [
+        "plain white walls, white cabinet with metal handle, recessed ceiling light visible in background of both keyframes"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Low-angle handheld shot, vertical framing",
+      "evidence": [
+        "camera angled slightly upward toward subjects, vertical (portrait) 1280x720 frame orientation suggests phone-style vertical video capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient in foreground, attendant centered above",
+      "evidence": [
+        "blue drape and patient fill the lower half of frame, attendant's upper body and face centered in upper-middle of both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content: [] despite audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected: []"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators evidenced",
+      "evidence": [
+        "no supplied text, branding, or overlays indicating marketing use in the keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical attendant tending to a draped, capped patient",
+      "evidence": [
+        "consistent visual narrative across both keyframes of close attendant-patient interaction in a clinical room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually assessable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two keyframes show a patient reclining under blue disposable drapes with a green mesh cap covering the hair, while a person in teal scrubs, a surgical mask, and a bun hairstyle leans over the patient's head with hands near the forehead/temple area. The room is a plain clinical space with white walls, a white cabinet, and a ceiling light visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "42cf9489-c27b-4d6a-ab72-785ef29d43ce",
+  "image_count": 2
+}

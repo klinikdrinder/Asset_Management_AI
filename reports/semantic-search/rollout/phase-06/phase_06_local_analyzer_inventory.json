@@ -1,0 +1,76 @@
+{
+  "candidates": [
+    {
+      "name": "OpenCLIP ViT-B-32",
+      "type": "visual embedding",
+      "installed": true,
+      "model_files": true,
+      "image_input": true,
+      "video_frame_input": true,
+      "structured_output": false,
+      "local": true,
+      "integration": true,
+      "production_suitable_18_layer": false,
+      "reason": "Embedding model; does not generate grounded semantic assertions."
+    },
+    {
+      "name": "faster-whisper-small",
+      "type": "speech transcription",
+      "installed": true,
+      "model_files": true,
+      "image_input": false,
+      "video_frame_input": false,
+      "structured_output": false,
+      "local": true,
+      "integration": true,
+      "production_suitable_18_layer": false,
+      "reason": "Audio-only capability."
+    },
+    {
+      "name": "OpenCV/Pillow",
+      "type": "technical media decoding",
+      "installed": true,
+      "model_files": false,
+      "image_input": true,
+      "video_frame_input": true,
+      "structured_output": false,
+      "local": true,
+      "integration": true,
+      "production_suitable_18_layer": false,
+      "reason": "Decode/preprocessing only."
+    },
+    {
+      "name": "Ollama/qwen3-vl",
+      "type": "historical local VLM",
+      "installed": false,
+      "model_files": false,
+      "image_input": false,
+      "video_frame_input": false,
+      "structured_output": false,
+      "local": true,
+      "integration": "historical",
+      "production_suitable_18_layer": false,
+      "reason": "No local model/runtime available; historical configuration is not an approved active path."
+    },
+    {
+      "name": "Gemini",
+      "type": "external multimodal",
+      "installed": false,
+      "model_files": false,
+      "image_input": true,
+      "video_frame_input": true,
+      "structured_output": true,
+      "local": false,
+      "integration": "historical",
+      "production_suitable_18_layer": false,
+      "reason": "Explicitly abandoned by user decision; never active for indexing."
+    }
+  ],
+  "hardware_audit": {
+    "cpu": "UNAVAILABLE_IN_RESTRICTED_RUNTIME",
+    "ram": "UNAVAILABLE_IN_RESTRICTED_RUNTIME",
+    "gpu": "UNAVAILABLE_IN_RESTRICTED_RUNTIME",
+    "disk": "workspace available; model capacity not sufficient/evidenced"
+  },
+  "result": "NO_VIABLE_LOCAL_18_LAYER_ANALYZER"
+}

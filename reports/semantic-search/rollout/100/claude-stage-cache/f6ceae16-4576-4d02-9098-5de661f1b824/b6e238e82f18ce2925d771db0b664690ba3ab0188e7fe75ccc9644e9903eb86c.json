@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_1939.MP4",
+      "evidence": [
+        "filename IMG_1939.MP4",
+        "asset_id f6ceae16-4576-4d02-9098-5de661f1b824",
+        "technical metadata: 1280x720, 30fps, h264, duration 13.648s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room clip, single scene",
+      "evidence": [
+        "13.648s vertical video with 2 keyframes depicting a clinician and reclined patient in a treatment room"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene, 0.0-13.648s, two sampled moments",
+      "evidence": [
+        "scene_index 0 spanning start_seconds 0.0 to end_seconds 13.648",
+        "keyframe 1 shows device near forehead, keyframe 2 shows clinician adjusting goggles with a different handheld device"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "one person in scrubs, mask, and safety goggles actively holding equipment",
+        "one person reclined in a chair with eyes covered, in a passive/recipient posture"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scrub-clad clinician; reclined patient with eye protection",
+      "evidence": [
+        "clinician has dark hair in a bun, coral scrub top with embroidered text, surgical mask, tinted goggles",
+        "patient has dark hair, wears white protective eye shields, wrapped in gray knit garment and blue drape"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, forehead, and periocular area",
+      "evidence": [
+        "patient's forehead, nose, and eye region visible with eyes covered by protective shields in both frames"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not confirmed by supplied text",
+      "evidence": [
+        "no readable text or spoken content supplied names a procedure",
+        "a handheld device and instruments alone do not establish a named clinical procedure per rules"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positions device near patient's face",
+      "evidence": [
+        "frame 1: clinician holds a large handheld device with articulated arm pointed toward patient's forehead",
+        "frame 2: clinician pushes goggles up, touches her hair, and holds a smaller handheld device near patient's face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician administering care to reclined patient",
+      "evidence": [
+        "clinician stands over/behind the reclined patient, hands positioned directly above patient's face with equipment"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective eyewear, draping, and device use",
+      "evidence": [
+        "patient wears protective eye shields in both frames",
+        "clinician wears laser-style tinted safety goggles and surgical mask",
+        "blue medical drape covers patient's torso"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "beige wall, wall-mounted paper towel/tissue dispenser, reclining treatment chair with headrest visible in both frames"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up framing, indoor lighting",
+      "evidence": [
+        "portrait-oriented 1280x720 frames",
+        "close-range framing centered on patient's face and clinician's hands"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient foreground reclined, clinician upper frame",
+      "evidence": [
+        "patient occupies lower/foreground of frame reclined horizontally",
+        "clinician stands in upper/background portion with hands and device central"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No transcribed speech despite audio track",
+      "evidence": [
+        "spoken_content supplied as empty array",
+        "technical metadata indicates audio_stream true but no speech content listed"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected supplied as empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context supplied",
+      "evidence": [
+        "no supplied text or metadata indicates promotional intent or usage context"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing device-based facial treatment",
+      "evidence": [
+        "visuals depict a clinician applying handheld equipment to a reclined, eye-protected patient's face in a treatment room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually descriptive layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two keyframes show a masked clinician in coral scrubs and tinted safety goggles operating a handheld device attached to an articulated arm near the forehead of a reclined patient who wears white protective eye shields. In the second frame the clinician's goggles are pushed up and she holds a smaller handheld device near the patient's face while the patient remains reclined under a blue drape and gray knit wrap.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "f6ceae16-4576-4d02-9098-5de661f1b824",
+  "image_count": 2
+}

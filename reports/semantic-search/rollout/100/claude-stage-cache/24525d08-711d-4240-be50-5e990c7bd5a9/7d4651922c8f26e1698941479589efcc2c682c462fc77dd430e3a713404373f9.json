@@ -1,0 +1,177 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scene 0 from supplied MP4 asset",
+      "evidence": [
+        "Supplied metadata identifies asset_id 24525d08-711d-4240-be50-5e990c7bd5a9, filename IMG_1464.MP4, and two representative keyframes."
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up care or treatment scene",
+      "evidence": [
+        "Both frames show a gloved practitioner attending closely to a reclining person's face."
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One 29.33-second scene",
+      "evidence": [
+        "Supplied metadata specifies scene_index 0 from 0.0 to 29.333 seconds.",
+        "Both keyframes show the same people, positioning, and room."
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and reclining recipient",
+      "evidence": [
+        "One person wears gloves, a mask, and dark work attire while handling an instrument.",
+        "The other person reclines with eye pads and a headband."
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked practitioner; recipient with covered eyes",
+      "evidence": [
+        "The practitioner has dark hair, black clothing, a blue surgical-style mask, and white gloves.",
+        "The reclining person wears a black headband and has white pads over both eyes."
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, forehead, temple, and hands visible",
+      "evidence": [
+        "The recipient's face, forehead, cheeks, nose, lips, and temple area are visible.",
+        "The practitioner's gloved hands are visible near the recipient's head."
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure cannot be identified",
+      "evidence": [
+        "The frames show gloves, facial contact, and a small instrument, but the supplied text does not name a procedure."
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instrument held near forehead or temple",
+      "evidence": [
+        "The practitioner leans over the recipient and positions a small handheld implement close to the upper side of the face."
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner attending to recipient",
+      "evidence": [
+        "The standing person directs their gaze, hands, and instrument toward the reclining person's face."
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial redness and small blemishes visible",
+      "evidence": [
+        "The recipient's cheeks and forehead show visible redness and uneven skin texture.",
+        "Several small facial spots or blemishes are visible."
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor treatment room",
+      "evidence": [
+        "The scene contains plain light-colored walls, a blue-covered reclining surface, towels, gloves, and eye pads."
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up framing",
+      "evidence": [
+        "Both supplied frames use a portrait orientation and close-up viewpoint focused on the people and facial area."
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Recipient foreground, practitioner above",
+      "evidence": [
+        "The reclining person's face dominates the lower foreground while the practitioner occupies the upper portion of the frame."
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content supplied",
+      "evidence": [
+        "The supplied spoken_content array is empty, although metadata reports an audio stream."
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text on mask and clothing",
+      "evidence": [
+        "Visible lettering includes \u201cDR INDER\u201d on the practitioner's black top and partial lettering on the mask.",
+        "The supplied readable_text_detected array is empty, so no machine-readable transcription was provided."
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended promotional use cannot be determined",
+      "evidence": [
+        "The frames contain branded-looking work attire, but no supplied evidence establishes the asset's intended use."
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner works near reclining person's face",
+      "evidence": [
+        "Across both keyframes, a masked and gloved practitioner attends to the facial area of a person lying back with eye coverings."
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial care, practitioner, reclining client",
+      "evidence": [
+        "Visually grounded searchable concepts include masked practitioner, white gloves, facial care setting, eye pads, handheld instrument, and reclining person."
+      ]
+    }
+  ],
+  "narrative": "Two representative frames show a masked, gloved practitioner leaning over a reclining person whose eyes are covered with white pads. The practitioner holds a small handheld instrument near the person's forehead or temple in an indoor treatment-room setting.",
+  "provider": "codex_cli",
+  "model": "codex-default",
+  "asset_id": "24525d08-711d-4240-be50-5e990c7bd5a9",
+  "image_count": 2
+}

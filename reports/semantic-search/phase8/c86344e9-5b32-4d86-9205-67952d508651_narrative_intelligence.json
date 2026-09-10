@@ -1,0 +1,1103 @@
+{
+  "generator_version": "kdi_narrative_generator_v1",
+  "configuration_version": "kdi_narrative_generator_config_v1",
+  "configuration_fingerprint": "a84a43f5124843e404126e84f32911d0d361df67e60961759a24635fcbaa57ca",
+  "semantic_spec_version": "semantic_index_v1",
+  "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+  "ontology_version": "KDI_SEMANTIC_V2",
+  "pilot_manifest_version": "kdi_semantic_pilot_v1",
+  "analysis_run_id": "7a15eb29-ce4b-557d-850a-0482f0325ee4",
+  "asset_id": "c86344e9-5b32-4d86-9205-67952d508651",
+  "filename": "IMG_3429.MP4",
+  "media_type": "video",
+  "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929",
+  "input_evidence_fingerprint": "9288691d84c0871833c1d4cf94745ab289382e8762b016d1e1cbd754748ac0a9",
+  "generated_at": "2026-08-24T05:47:50.617410+00:00",
+  "generation": {
+    "method": "DETERMINISTIC_TEMPLATE",
+    "provider": "LOCAL_DETERMINISTIC_TEMPLATES",
+    "model": "kdi_evidence_renderer_v1",
+    "temperature": 0.0,
+    "template_fallback_available": true,
+    "template_fallback_used": true,
+    "external_payload_transmission": false
+  },
+  "evidence_bundle": {
+    "asset": {
+      "asset_id": "c86344e9-5b32-4d86-9205-67952d508651",
+      "filename": "IMG_3429.MP4",
+      "media_type": "video",
+      "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+    },
+    "structured_facts": [
+      {
+        "fact_id": "39c6a51e-2493-5b49-b4ed-c6387b1d0a1a",
+        "concept": "ASSET_IDENTITY",
+        "layer": "ASSET_IDENTITY_PROVENANCE",
+        "state": "OBSERVED",
+        "value": {
+          "asset_id": "c86344e9-5b32-4d86-9205-67952d508651",
+          "filename": "IMG_3429.MP4",
+          "media_type": "video",
+          "extension": "mp4",
+          "mime_type": "video/mp4",
+          "size_bytes": 9393732,
+          "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+        },
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "FROZEN_MANIFEST_AND_PHASE_EVIDENCE",
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "DATABASE_METADATA",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 1,
+        "layer_id": "ASSET_IDENTITY_PROVENANCE"
+      },
+      {
+        "fact_id": "6e4c1c13-315a-5960-9beb-f741a8de7293",
+        "concept": "MEDIA_SUMMARY",
+        "layer": "GLOBAL_ASSET_UNDERSTANDING",
+        "state": "OBSERVED",
+        "value": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 2,
+        "layer_id": "GLOBAL_ASSET_UNDERSTANDING"
+      },
+      {
+        "fact_id": "7b790761-4b4f-5026-baa0-77dcb7d75691",
+        "concept": "TIMELINE_STRUCTURE",
+        "layer": "TEMPORAL_SCENE_STRUCTURE",
+        "state": "OBSERVED",
+        "value": {
+          "scene_count": 2,
+          "event_candidate_count": 2,
+          "keyframe_count": 6,
+          "timeline_coverage_percent": 100.0
+        },
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "analysis_run_id": "3152ff49-8ea9-5ab0-96eb-8dbb67b299ed",
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "DETERMINISTIC_PROCESSOR",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "NEW_OBSERVATION",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 3,
+        "layer_id": "TEMPORAL_SCENE_STRUCTURE"
+      },
+      {
+        "fact_id": "a59c4202-b384-5f63-b928-07870ebd6c78",
+        "concept": "PATIENT",
+        "layer": "PEOPLE_ROLES",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 4,
+        "layer_id": "PEOPLE_ROLES"
+      },
+      {
+        "fact_id": "8af85756-36de-59a3-a81d-4485b3c8b092",
+        "concept": "CLINICIAN",
+        "layer": "PEOPLE_ROLES",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 4,
+        "layer_id": "PEOPLE_ROLES"
+      },
+      {
+        "fact_id": "855f656b-a213-5e82-aae3-4db2ca654f02",
+        "concept": "ADULT_PRESENTATION",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "67e0d16e-d25e-5868-952f-501cb60c63dc",
+        "concept": "PATIENT_RECLINING",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "c2c92e18-f072-5e1f-8c27-d44382adb532",
+        "concept": "CLINICIAN_GLOVED",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "d9253ee5-5d87-5edc-8ba5-5dc2043777c7",
+        "concept": "NECK",
+        "layer": "ANATOMY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 6,
+        "layer_id": "ANATOMY"
+      },
+      {
+        "fact_id": "1f549d50-ca61-5a7c-8f34-4f59cef8121d",
+        "concept": "INJECTABLES",
+        "layer": "TREATMENT_PROCEDURE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 7,
+        "layer_id": "TREATMENT_PROCEDURE"
+      },
+      {
+        "fact_id": "a93fc26e-6e8c-537a-9032-2bb4a691c4cf",
+        "concept": "INJECTING",
+        "layer": "ACTIONS_EVENTS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 8,
+        "layer_id": "ACTIONS_EVENTS"
+      },
+      {
+        "fact_id": "6247497b-3b5d-5052-9e38-4b48c2d80e53",
+        "concept": "HOLDING_SYRINGE",
+        "layer": "ACTIONS_EVENTS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 8,
+        "layer_id": "ACTIONS_EVENTS"
+      },
+      {
+        "fact_id": "1a7c5164-a0aa-5f77-8c5e-994ae79a8c73",
+        "concept": "CLINICIAN_TREATS_PATIENT",
+        "layer": "RELATIONSHIPS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 9,
+        "layer_id": "RELATIONSHIPS"
+      },
+      {
+        "fact_id": "bb2fa22d-f7f4-518b-bb55-c34f8210dbec",
+        "concept": "CLINICIAN_WORKS_ON_ANATOMY",
+        "layer": "RELATIONSHIPS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 9,
+        "layer_id": "RELATIONSHIPS"
+      },
+      {
+        "fact_id": "b6d94fda-e4fa-53bb-b23e-5b21dc046774",
+        "concept": "VISIBLE_INJECTION_AT_NECK",
+        "layer": "CLINICAL_VISUAL_OBSERVATIONS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 10,
+        "layer_id": "CLINICAL_VISUAL_OBSERVATIONS"
+      },
+      {
+        "fact_id": "f2f80e89-cedb-54b5-b9c8-f4b03e514c1f",
+        "concept": "TREATMENT_ROOM",
+        "layer": "ENVIRONMENT",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 11,
+        "layer_id": "ENVIRONMENT"
+      },
+      {
+        "fact_id": "4c657bc6-81f2-585c-bb94-ebd46206237d",
+        "concept": "EXTREME_CLOSEUP",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "ddb9793e-c915-58ea-b33b-21aa24e9bc07",
+        "concept": "VERTICAL",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "a8076012-bd69-59a0-b614-350e53c7f94c",
+        "concept": "HANDHELD",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "932e7b66-0157-5659-af3f-be35a185ef2c",
+        "concept": "NECK_TREATMENT_AREA_DOMINANT",
+        "layer": "COMPOSITION",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 13,
+        "layer_id": "COMPOSITION"
+      },
+      {
+        "fact_id": "fa86920f-8456-5903-9dea-7395567ef12c",
+        "concept": "CLINICIAN_HANDS_IN_FOREGROUND",
+        "layer": "COMPOSITION",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 13,
+        "layer_id": "COMPOSITION"
+      },
+      {
+        "fact_id": "9bba0b5e-b32f-5892-a294-1be4d786861b",
+        "concept": "AUDIO_STREAM_PRESENT",
+        "layer": "SPEECH_TRANSCRIPT_AUDIO",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE3_TECHNICAL_METADATA",
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "DETERMINISTIC_PROCESSOR",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "NEW_OBSERVATION",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 14,
+        "layer_id": "SPEECH_TRANSCRIPT_AUDIO"
+      },
+      {
+        "fact_id": "0233f377-f276-5171-81e0-2f1f31119134",
+        "concept": "PROCEDURE_CONTENT",
+        "layer": "MARKETING_CONTENT_USAGE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 16,
+        "layer_id": "MARKETING_CONTENT_USAGE"
+      },
+      {
+        "fact_id": "3112abb9-cb10-5e55-bf0c-e56e86df2b54",
+        "concept": "CLINICAL_REFERENCE",
+        "layer": "MARKETING_CONTENT_USAGE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 16,
+        "layer_id": "MARKETING_CONTENT_USAGE"
+      },
+      {
+        "fact_id": "6bb3f4bf-496e-585b-9cd0-a37df8a3a262",
+        "concept": "PROVISIONAL_ASSET_NARRATIVE",
+        "layer": "SEMANTIC_NARRATIVE",
+        "state": "OBSERVED",
+        "value": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "NEW_OBSERVATION",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 17,
+        "layer_id": "SEMANTIC_NARRATIVE"
+      },
+      {
+        "fact_id": "0c43b1fd-9fca-51c7-b8b2-8ea92671aa35",
+        "concept": "CURRENT_SEARCH_REPRESENTATION",
+        "layer": "SEARCH_EMBEDDINGS",
+        "state": "OBSERVED",
+        "value": {
+          "visual_embedding": true,
+          "asset_search_document": true,
+          "scene_search_document": true,
+          "scene_embedding": true,
+          "keyframe_embedding": true,
+          "semantic_index_v1_embedding_status": "PENDING_REGENERATION",
+          "canonical_search_document": "PENDING_LATER_PHASE"
+        },
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE2_AUDIT",
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929"
+          }
+        ],
+        "provenance": "DATABASE_METADATA",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "RETAINED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 18,
+        "layer_id": "SEARCH_EMBEDDINGS"
+      }
+    ],
+    "scenes": [
+      {
+        "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+        "scene_index": 0,
+        "start_time": 0.0,
+        "end_time": 11.0,
+        "semantic_label": "INJECTABLE_TREATMENT",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.87,
+        "evidence": [
+          {
+            "type": "SCENE_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "timestamp_start": 0.0,
+            "timestamp_end": 11.0,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929",
+            "keyframe_id": "71a1fde7-7f5a-5011-a2af-25d1814bc40f"
+          }
+        ],
+        "narrative": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+        "human_review_status": "UNVERIFIED"
+      },
+      {
+        "scene_id": "bbe6fe9e-6364-5e03-9c81-898dcbdff648",
+        "scene_index": 1,
+        "start_time": 11.0,
+        "end_time": 20.633333,
+        "semantic_label": "INJECTABLE_TREATMENT",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.87,
+        "evidence": [
+          {
+            "type": "SCENE_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "bbe6fe9e-6364-5e03-9c81-898dcbdff648",
+            "timestamp_start": 11.0,
+            "timestamp_end": 20.633333,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929",
+            "keyframe_id": "d027023f-9b14-59ef-a68c-e942da8f47d5"
+          }
+        ],
+        "narrative": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+        "human_review_status": "UNVERIFIED"
+      }
+    ],
+    "events": [
+      {
+        "event_id": "22343ab3-2a86-5139-b1c1-cabc6825d232",
+        "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+        "start_time": 1.3333333333333333,
+        "end_time": 3.6,
+        "peak_time": 1.8,
+        "semantic_action": "INJECTING",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.87,
+        "evidence": [
+          {
+            "type": "EVENT_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+            "event_id": "22343ab3-2a86-5139-b1c1-cabc6825d232",
+            "timestamp_start": 1.3333333333333333,
+            "timestamp_end": 3.6,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929",
+            "keyframe_id": "b866d9b7-ca2c-59c2-99c8-0bb3bdce7e09"
+          }
+        ],
+        "narrative": "Candidate interval visually supports INJECTING.",
+        "human_review_status": "UNVERIFIED"
+      },
+      {
+        "event_id": "6ee10132-0ade-5a72-bb25-bf4f4ffda6c0",
+        "scene_id": "bbe6fe9e-6364-5e03-9c81-898dcbdff648",
+        "start_time": 10.4,
+        "end_time": 14.133333333333333,
+        "peak_time": 11.433333333333334,
+        "semantic_action": "INJECTING",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.87,
+        "evidence": [
+          {
+            "type": "EVENT_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "bbe6fe9e-6364-5e03-9c81-898dcbdff648",
+            "event_id": "6ee10132-0ade-5a72-bb25-bf4f4ffda6c0",
+            "timestamp_start": 10.4,
+            "timestamp_end": 14.133333333333333,
+            "source_fingerprint": "c70e54e2c7c68b33df928421d44335e83b58743b2057f6837d3aeb832d70e929",
+            "keyframe_id": "ea546b12-a9aa-5078-be06-d97d5ce22ec5"
+          }
+        ],
+        "narrative": "Candidate interval visually supports INJECTING.",
+        "human_review_status": "UNVERIFIED"
+      }
+    ],
+    "transcript_evidence": [],
+    "ocr_evidence": [],
+    "conflicts": [],
+    "unknowns": [
+      {
+        "layer_number": 14,
+        "layer_id": "SPEECH_TRANSCRIPT_AUDIO"
+      },
+      {
+        "layer_number": 15,
+        "layer_id": "OCR_VISIBLE_TEXT"
+      }
+    ],
+    "human_review": [],
+    "source_artifacts": {
+      "phase3": true,
+      "phase4": false,
+      "phase5": true,
+      "phase6": true,
+      "phase7": true
+    }
+  },
+  "asset_narrative": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+  "short_semantic_summary": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+  "search_summary": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+  "search_safe_narrative": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+  "claims": [
+    {
+      "claim_id": "5fa8c311-d77a-53c8-a5bc-865f429a2a0f",
+      "text": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+      "supports": [
+        "6e4c1c13-315a-5960-9beb-f741a8de7293"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.92,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "5319f4ba-8f39-5589-9a9d-62c7f6e35862",
+      "text": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+      "supports": [
+        "scene:759aa3b3-8f0f-532e-bb17-198455531cfd"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.87,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "8f742fe5-0e57-5bd4-b5ab-6fea1964e347",
+      "text": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+      "supports": [
+        "scene:bbe6fe9e-6364-5e03-9c81-898dcbdff648"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.87,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "b12243be-ca49-5db6-acf4-1d2ecb729528",
+      "text": "From 1.33s to 3.60s, a clinician performs an injection.",
+      "supports": [
+        "event:22343ab3-2a86-5139-b1c1-cabc6825d232",
+        "a59c4202-b384-5f63-b928-07870ebd6c78",
+        "8af85756-36de-59a3-a81d-4485b3c8b092"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.87,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "8d701db4-40b6-532b-a333-c8a90b581b0a",
+      "text": "From 10.40s to 14.13s, a clinician performs an injection.",
+      "supports": [
+        "event:6ee10132-0ade-5a72-bb25-bf4f4ffda6c0",
+        "a59c4202-b384-5f63-b928-07870ebd6c78",
+        "8af85756-36de-59a3-a81d-4485b3c8b092"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.87,
+      "status": "SUPPORTED",
+      "accepted": true
+    }
+  ],
+  "scene_narratives": [
+    {
+      "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+      "start_time": 0.0,
+      "end_time": 11.0,
+      "narrative": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+      "semantic_state": "OBSERVED",
+      "claim_ids": [
+        "5319f4ba-8f39-5589-9a9d-62c7f6e35862"
+      ],
+      "evidence_references": [
+        "scene:759aa3b3-8f0f-532e-bb17-198455531cfd"
+      ],
+      "confidence": 0.87,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    },
+    {
+      "scene_id": "bbe6fe9e-6364-5e03-9c81-898dcbdff648",
+      "start_time": 11.0,
+      "end_time": 20.633333,
+      "narrative": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+      "semantic_state": "OBSERVED",
+      "claim_ids": [
+        "8f742fe5-0e57-5bd4-b5ab-6fea1964e347"
+      ],
+      "evidence_references": [
+        "scene:bbe6fe9e-6364-5e03-9c81-898dcbdff648"
+      ],
+      "confidence": 0.87,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    }
+  ],
+  "event_narratives": [
+    {
+      "event_id": "22343ab3-2a86-5139-b1c1-cabc6825d232",
+      "scene_id": "759aa3b3-8f0f-532e-bb17-198455531cfd",
+      "start_time": 1.3333333333333333,
+      "end_time": 3.6,
+      "narrative": "From 1.33s to 3.60s, a clinician performs an injection.",
+      "semantic_action": "INJECTING",
+      "claim_ids": [
+        "b12243be-ca49-5db6-acf4-1d2ecb729528"
+      ],
+      "evidence_references": [
+        "event:22343ab3-2a86-5139-b1c1-cabc6825d232",
+        "a59c4202-b384-5f63-b928-07870ebd6c78",
+        "8af85756-36de-59a3-a81d-4485b3c8b092"
+      ],
+      "confidence": 0.87,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    },
+    {
+      "event_id": "6ee10132-0ade-5a72-bb25-bf4f4ffda6c0",
+      "scene_id": "bbe6fe9e-6364-5e03-9c81-898dcbdff648",
+      "start_time": 10.4,
+      "end_time": 14.133333333333333,
+      "narrative": "From 10.40s to 14.13s, a clinician performs an injection.",
+      "semantic_action": "INJECTING",
+      "claim_ids": [
+        "8d701db4-40b6-532b-a333-c8a90b581b0a"
+      ],
+      "evidence_references": [
+        "event:6ee10132-0ade-5a72-bb25-bf4f4ffda6c0",
+        "a59c4202-b384-5f63-b928-07870ebd6c78",
+        "8af85756-36de-59a3-a81d-4485b3c8b092"
+      ],
+      "confidence": 0.87,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    }
+  ],
+  "technical_only_events": [],
+  "canonical_concepts": {
+    "people": [
+      "PATIENT",
+      "CLINICIAN"
+    ],
+    "roles": [
+      "PATIENT",
+      "CLINICIAN"
+    ],
+    "anatomy": [
+      "NECK"
+    ],
+    "treatments": [
+      "INJECTABLES"
+    ],
+    "actions": [
+      "INJECTING",
+      "HOLDING_SYRINGE"
+    ],
+    "environment": [
+      "TREATMENT_ROOM"
+    ],
+    "stage": []
+  },
+  "quality": {
+    "evidence_complete": true,
+    "contains_unknowns": true,
+    "contains_review_required_fact": false,
+    "contains_transcript": false,
+    "contains_ocr": false,
+    "contains_legacy_fact": false,
+    "human_review_status": "UNVERIFIED",
+    "search_status": "ACCEPTED_FOR_SEARCH",
+    "narrative_confidence": 0.87,
+    "narrative_embedding_status": "PENDING_LATER_PHASE"
+  },
+  "claim_validation": {
+    "valid": true,
+    "failures": [],
+    "total_claims": 5,
+    "supported_claims": 5,
+    "unsupported_claims": 0
+  },
+  "phase5_reconciliation": {
+    "asset_id": "c86344e9-5b32-4d86-9205-67952d508651",
+    "filename": "IMG_3429.MP4",
+    "phase5_narrative": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+    "phase8_narrative": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+    "disposition": "UNCHANGED",
+    "reason": "Phase 5 evidence-grounded wording retained."
+  },
+  "img_1238_segmentation": null,
+  "performance": {
+    "input_facts": 26,
+    "scene_count": 2,
+    "event_count": 2,
+    "accepted_transcript_chunks_available": 0,
+    "transcript_chunks_used": 0,
+    "accepted_ocr_observations_available": 0,
+    "ocr_observations_used": 0,
+    "template_generation_seconds": 0.024601,
+    "llm_calls": 0,
+    "llm_generation_seconds": 0.0,
+    "validation_seconds": 0.0,
+    "retries": 0,
+    "cost": "LOCAL_NO_API_COST"
+  },
+  "prohibitions": {
+    "production_writes": false,
+    "search_documents_rebuilt": false,
+    "embeddings_generated": false,
+    "phase3_modified": false,
+    "phase4_modified": false,
+    "phase5_modified": false,
+    "phase6_modified": false,
+    "phase7_modified": false
+  },
+  "idempotency": {
+    "verified": true,
+    "functional_fingerprint": "b2ff6ab31ea3afdb28503fe615725d07534a3864c94c81545299b25022487715"
+  }
+}

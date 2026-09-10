@@ -5,7 +5,13 @@ google-auth-oauthlib==1.2.2
 python-dotenv==1.1.1
 psycopg[binary]==3.3.4
 supabase==2.17.0
-# Optional explicit cloud adapter. Production local inference uses Ollama's
-# loopback HTTP API without a Python ML runtime dependency.
+# OpenAI is retained only for separately governed database-maintenance tooling;
+# it is not an indexing dependency and is not imported by the semantic worker.
 openai==2.53.0
 Pillow>=11.0.0,<13.0.0
+faster-whisper==1.2.1
+easyocr==1.7.2
+sentence-transformers==5.1.0
+num2words==0.5.14
+lm-format-enforcer==0.10.12
+pypdfium2

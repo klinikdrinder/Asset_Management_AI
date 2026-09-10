@@ -1,0 +1,3303 @@
+{
+  "generated_at": "2026-08-25T02:20:47.894Z",
+  "count": 15,
+  "examples": [
+    {
+      "original_query": "Give me 7 videos of a doctor doing frontal hairline design before transplant.",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": {
+          "value": 7,
+          "raw_text": "7",
+          "status": "MATCHED",
+          "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+          "start_char": 8,
+          "end_char": 9
+        },
+        "media_type": {
+          "value": "VIDEO",
+          "raw_text": "videos",
+          "status": "MATCHED",
+          "rule_id": "MEDIA_PRIMARY_REQUEST",
+          "start_char": 10,
+          "end_char": 16
+        },
+        "extensions": [],
+        "numeric_occurrences": [
+          {
+            "value": 7,
+            "raw_text": "7",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 8,
+            "end_char": 9,
+            "numeric_type": "RESULT_COUNT"
+          }
+        ],
+        "temporal": {},
+        "surface_markers": [],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "ENGLISH",
+        "consumed_spans": [
+          {
+            "start_char": 8,
+            "end_char": 9,
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA"
+          },
+          {
+            "start_char": 10,
+            "end_char": 16,
+            "rule_id": "MEDIA_PRIMARY_REQUEST"
+          }
+        ]
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [
+          {
+            "concept_type": "ROLE",
+            "raw_text": "doctor",
+            "canonical_code": "CLINICIAN",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 22,
+            "end_char": 28,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          },
+          {
+            "concept_type": "ANATOMY",
+            "raw_text": "frontal hairline",
+            "canonical_code": "FRONTAL_HAIRLINE",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 35,
+            "end_char": 51,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          },
+          {
+            "concept_type": "TREATMENT",
+            "raw_text": "transplant",
+            "canonical_code": "HAIR_TRANSPLANT",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 66,
+            "end_char": 76,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          },
+          {
+            "concept_type": "ACTION",
+            "raw_text": "hairline design",
+            "canonical_code": "DRAWING_HAIRLINE",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 43,
+            "end_char": 58,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          },
+          {
+            "concept_type": "PROCEDURE_STAGE",
+            "raw_text": "before transplant",
+            "canonical_code": "PRE_PROCEDURE",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 59,
+            "end_char": 76,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          }
+        ],
+        "negative_concepts": [],
+        "unresolved_concepts": [],
+        "modalities": [
+          "VISUAL"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "Give me 7 videos of a doctor doing frontal hairline design before transplant.",
+        "result_request": {
+          "requested_count": 7,
+          "system_default_count": 5,
+          "effective_count": 7,
+          "requested_count_raw": "7",
+          "normalization_status": "MATCHED",
+          "extraction": {
+            "value": 7,
+            "raw_text": "7",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 8,
+            "end_char": 9
+          }
+        },
+        "media": {
+          "media_type": "VIDEO",
+          "media_type_extraction": {
+            "value": "VIDEO",
+            "raw_text": "videos",
+            "status": "MATCHED",
+            "rule_id": "MEDIA_PRIMARY_REQUEST",
+            "start_char": 10,
+            "end_char": 16
+          },
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [
+            {
+              "concept_type": "ROLE",
+              "raw_text": "doctor",
+              "canonical_code": "CLINICIAN",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 22,
+              "end_char": 28,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            },
+            {
+              "concept_type": "ANATOMY",
+              "raw_text": "frontal hairline",
+              "canonical_code": "FRONTAL_HAIRLINE",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 35,
+              "end_char": 51,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            },
+            {
+              "concept_type": "TREATMENT",
+              "raw_text": "transplant",
+              "canonical_code": "HAIR_TRANSPLANT",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 66,
+              "end_char": 76,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            },
+            {
+              "concept_type": "ACTION",
+              "raw_text": "hairline design",
+              "canonical_code": "DRAWING_HAIRLINE",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 43,
+              "end_char": 58,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            },
+            {
+              "concept_type": "PROCEDURE_STAGE",
+              "raw_text": "before transplant",
+              "canonical_code": "PRE_PROCEDURE",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 59,
+              "end_char": 76,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            }
+          ],
+          "negative_concepts": [],
+          "unresolved_concepts": []
+        },
+        "temporal": {},
+        "numeric": {
+          "occurrences": [
+            {
+              "value": 7,
+              "raw_text": "7",
+              "status": "MATCHED",
+              "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+              "start_char": 8,
+              "end_char": 9,
+              "numeric_type": "RESULT_COUNT"
+            }
+          ],
+          "age_exact": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": "clinician frontal hairline hair transplant drawing hairline pre procedure",
+          "text_semantic_query": "clinician frontal hairline hair transplant drawing hairline pre procedure",
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "ENGLISH",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "5daced0cc01f436db8a49c415d9e14de5b05a473b011f1f7db5a189133e883c0"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "male patient in his 30s with frontal hairline",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": null,
+        "media_type": null,
+        "extensions": [],
+        "numeric_occurrences": [
+          {
+            "value": 30,
+            "raw_text": "30",
+            "numeric_type": "AGE_DECADE",
+            "status": "MATCHED",
+            "rule_id": "AGE_DECADE",
+            "start_char": 20,
+            "end_char": 22,
+            "unit": "decade"
+          }
+        ],
+        "temporal": {},
+        "surface_markers": [],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "ENGLISH",
+        "consumed_spans": []
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [
+          {
+            "concept_type": "ROLE",
+            "raw_text": "patient",
+            "canonical_code": "PATIENT",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 5,
+            "end_char": 12,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          },
+          {
+            "concept_type": "PERSON_APPEARANCE",
+            "raw_text": "male",
+            "canonical_code": "MALE",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 0,
+            "end_char": 4,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          },
+          {
+            "concept_type": "ANATOMY",
+            "raw_text": "frontal hairline",
+            "canonical_code": "FRONTAL_HAIRLINE",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 29,
+            "end_char": 45,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          }
+        ],
+        "negative_concepts": [],
+        "unresolved_concepts": [],
+        "modalities": [
+          "VISUAL"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "male patient in his 30s with frontal hairline",
+        "result_request": {
+          "requested_count": null,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": null,
+          "normalization_status": "NOT_FOUND",
+          "extraction": null
+        },
+        "media": {
+          "media_type": "ANY",
+          "media_type_extraction": null,
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [
+            {
+              "concept_type": "ROLE",
+              "raw_text": "patient",
+              "canonical_code": "PATIENT",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 5,
+              "end_char": 12,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            },
+            {
+              "concept_type": "PERSON_APPEARANCE",
+              "raw_text": "male",
+              "canonical_code": "MALE",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 0,
+              "end_char": 4,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            },
+            {
+              "concept_type": "ANATOMY",
+              "raw_text": "frontal hairline",
+              "canonical_code": "FRONTAL_HAIRLINE",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 29,
+              "end_char": 45,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            }
+          ],
+          "negative_concepts": [],
+          "unresolved_concepts": []
+        },
+        "temporal": {},
+        "numeric": {
+          "occurrences": [
+            {
+              "value": 30,
+              "raw_text": "30",
+              "numeric_type": "AGE_DECADE",
+              "status": "MATCHED",
+              "rule_id": "AGE_DECADE",
+              "start_char": 20,
+              "end_char": 22,
+              "unit": "decade"
+            }
+          ],
+          "age_exact": null,
+          "age_decade": 30,
+          "graft_count_exact": null,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": "patient male frontal hairline",
+          "text_semantic_query": "patient male frontal hairline",
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "ENGLISH",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "9675ff957ba3a5b4f7991f25dc89385d52e1767f65da2177358316196c7eb737"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "show 5 videos from 2025",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": {
+          "value": 5,
+          "raw_text": "5",
+          "status": "MATCHED",
+          "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+          "start_char": 5,
+          "end_char": 6
+        },
+        "media_type": {
+          "value": "VIDEO",
+          "raw_text": "videos",
+          "status": "MATCHED",
+          "rule_id": "MEDIA_PRIMARY_REQUEST",
+          "start_char": 7,
+          "end_char": 13
+        },
+        "extensions": [],
+        "numeric_occurrences": [
+          {
+            "value": 5,
+            "raw_text": "5",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 5,
+            "end_char": 6,
+            "numeric_type": "RESULT_COUNT"
+          },
+          {
+            "value": 2025,
+            "raw_text": "2025",
+            "numeric_type": "YEAR",
+            "status": "MATCHED",
+            "rule_id": "YEAR_YYYY",
+            "start_char": 19,
+            "end_char": 23,
+            "unit": "year"
+          }
+        ],
+        "temporal": {
+          "year": {
+            "value": 2025,
+            "raw_text": "2025",
+            "status": "MATCHED",
+            "start_char": 19,
+            "end_char": 23
+          }
+        },
+        "surface_markers": [],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "ENGLISH",
+        "consumed_spans": [
+          {
+            "start_char": 5,
+            "end_char": 6,
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA"
+          },
+          {
+            "start_char": 7,
+            "end_char": 13,
+            "rule_id": "MEDIA_PRIMARY_REQUEST"
+          }
+        ]
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [],
+        "negative_concepts": [],
+        "unresolved_concepts": [
+          {
+            "concept_type": "UNRESOLVED",
+            "raw_text": "show 5 videos from 2025",
+            "canonical_code": null,
+            "normalization_status": "UNRESOLVED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 0,
+            "end_char": 23,
+            "modality": "ANY",
+            "surface_strength": "NEUTRAL"
+          }
+        ],
+        "modalities": [
+          "VISUAL"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "show 5 videos from 2025",
+        "result_request": {
+          "requested_count": 5,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": "5",
+          "normalization_status": "MATCHED",
+          "extraction": {
+            "value": 5,
+            "raw_text": "5",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 5,
+            "end_char": 6
+          }
+        },
+        "media": {
+          "media_type": "VIDEO",
+          "media_type_extraction": {
+            "value": "VIDEO",
+            "raw_text": "videos",
+            "status": "MATCHED",
+            "rule_id": "MEDIA_PRIMARY_REQUEST",
+            "start_char": 7,
+            "end_char": 13
+          },
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [],
+          "negative_concepts": [],
+          "unresolved_concepts": [
+            {
+              "concept_type": "UNRESOLVED",
+              "raw_text": "show 5 videos from 2025",
+              "canonical_code": null,
+              "normalization_status": "UNRESOLVED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 0,
+              "end_char": 23,
+              "modality": "ANY",
+              "surface_strength": "NEUTRAL"
+            }
+          ]
+        },
+        "temporal": {
+          "year": {
+            "value": 2025,
+            "raw_text": "2025",
+            "status": "MATCHED",
+            "start_char": 19,
+            "end_char": 23
+          }
+        },
+        "numeric": {
+          "occurrences": [
+            {
+              "value": 5,
+              "raw_text": "5",
+              "status": "MATCHED",
+              "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+              "start_char": 5,
+              "end_char": 6,
+              "numeric_type": "RESULT_COUNT"
+            },
+            {
+              "value": 2025,
+              "raw_text": "2025",
+              "numeric_type": "YEAR",
+              "status": "MATCHED",
+              "rule_id": "YEAR_YYYY",
+              "start_char": 19,
+              "end_char": 23,
+              "unit": "year"
+            }
+          ],
+          "age_exact": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": null,
+          "text_semantic_query": "show 5 videos from 2025",
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "ENGLISH",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "d8770213d0191c1878806fb7eaccd3c68710c6e2f65e85941270f65380b7452b"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "3000 graft hair transplant",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": null,
+        "media_type": null,
+        "extensions": [],
+        "numeric_occurrences": [
+          {
+            "value": 3000,
+            "raw_text": "3000",
+            "numeric_type": "GRAFT_COUNT_EXACT",
+            "status": "MATCHED",
+            "rule_id": "GRAFT_N",
+            "start_char": 0,
+            "end_char": 4,
+            "unit": "grafts"
+          }
+        ],
+        "temporal": {},
+        "surface_markers": [],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "UNKNOWN",
+        "consumed_spans": []
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [
+          {
+            "concept_type": "TREATMENT",
+            "raw_text": "hair transplant",
+            "canonical_code": "HAIR_TRANSPLANT",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 11,
+            "end_char": 26,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          }
+        ],
+        "negative_concepts": [],
+        "unresolved_concepts": [],
+        "modalities": [
+          "VISUAL"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "3000 graft hair transplant",
+        "result_request": {
+          "requested_count": null,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": null,
+          "normalization_status": "NOT_FOUND",
+          "extraction": null
+        },
+        "media": {
+          "media_type": "ANY",
+          "media_type_extraction": null,
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [
+            {
+              "concept_type": "TREATMENT",
+              "raw_text": "hair transplant",
+              "canonical_code": "HAIR_TRANSPLANT",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 11,
+              "end_char": 26,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            }
+          ],
+          "negative_concepts": [],
+          "unresolved_concepts": []
+        },
+        "temporal": {},
+        "numeric": {
+          "occurrences": [
+            {
+              "value": 3000,
+              "raw_text": "3000",
+              "numeric_type": "GRAFT_COUNT_EXACT",
+              "status": "MATCHED",
+              "rule_id": "GRAFT_N",
+              "start_char": 0,
+              "end_char": 4,
+              "unit": "grafts"
+            }
+          ],
+          "age_exact": null,
+          "age_decade": null,
+          "graft_count_exact": 3000,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": "hair transplant",
+          "text_semantic_query": "hair transplant",
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "UNKNOWN",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "be59bfae834321f746d016874f2f8e56e457d1f3bd2a6e3cfe45641de0ac57cd"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "Give me 6 files of a patient receiving 6 sessions",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": {
+          "value": 6,
+          "raw_text": "6",
+          "status": "MATCHED",
+          "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+          "start_char": 8,
+          "end_char": 9
+        },
+        "media_type": {
+          "value": "ANY",
+          "raw_text": "files",
+          "status": "MATCHED",
+          "rule_id": "MEDIA_PRIMARY_REQUEST",
+          "start_char": 10,
+          "end_char": 15
+        },
+        "extensions": [],
+        "numeric_occurrences": [
+          {
+            "value": 6,
+            "raw_text": "6",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 8,
+            "end_char": 9,
+            "numeric_type": "RESULT_COUNT"
+          },
+          {
+            "value": 6,
+            "raw_text": "6",
+            "numeric_type": "TREATMENT_SESSION_COUNT",
+            "status": "MATCHED",
+            "rule_id": "SESSION_N",
+            "start_char": 39,
+            "end_char": 40,
+            "unit": "sessions"
+          }
+        ],
+        "temporal": {},
+        "surface_markers": [],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "ENGLISH",
+        "consumed_spans": [
+          {
+            "start_char": 8,
+            "end_char": 9,
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA"
+          },
+          {
+            "start_char": 10,
+            "end_char": 15,
+            "rule_id": "MEDIA_PRIMARY_REQUEST"
+          }
+        ]
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [
+          {
+            "concept_type": "ROLE",
+            "raw_text": "patient",
+            "canonical_code": "PATIENT",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 21,
+            "end_char": 28,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          }
+        ],
+        "negative_concepts": [],
+        "unresolved_concepts": [],
+        "modalities": [
+          "VISUAL"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "Give me 6 files of a patient receiving 6 sessions",
+        "result_request": {
+          "requested_count": 6,
+          "system_default_count": 5,
+          "effective_count": 6,
+          "requested_count_raw": "6",
+          "normalization_status": "MATCHED",
+          "extraction": {
+            "value": 6,
+            "raw_text": "6",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 8,
+            "end_char": 9
+          }
+        },
+        "media": {
+          "media_type": "ANY",
+          "media_type_extraction": {
+            "value": "ANY",
+            "raw_text": "files",
+            "status": "MATCHED",
+            "rule_id": "MEDIA_PRIMARY_REQUEST",
+            "start_char": 10,
+            "end_char": 15
+          },
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [
+            {
+              "concept_type": "ROLE",
+              "raw_text": "patient",
+              "canonical_code": "PATIENT",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 21,
+              "end_char": 28,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            }
+          ],
+          "negative_concepts": [],
+          "unresolved_concepts": []
+        },
+        "temporal": {},
+        "numeric": {
+          "occurrences": [
+            {
+              "value": 6,
+              "raw_text": "6",
+              "status": "MATCHED",
+              "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+              "start_char": 8,
+              "end_char": 9,
+              "numeric_type": "RESULT_COUNT"
+            },
+            {
+              "value": 6,
+              "raw_text": "6",
+              "numeric_type": "TREATMENT_SESSION_COUNT",
+              "status": "MATCHED",
+              "rule_id": "SESSION_N",
+              "start_char": 39,
+              "end_char": 40,
+              "unit": "sessions"
+            }
+          ],
+          "age_exact": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "treatment_session_count": 6,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": "patient",
+          "text_semantic_query": "patient",
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "ENGLISH",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "ca93c794d4b514fdecf4225dc1e405c908aecce2b05b13ffd37e26a0d7799159"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "show the best 3 videos but no injection",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": {
+          "value": 3,
+          "raw_text": "3",
+          "status": "MATCHED",
+          "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+          "start_char": 14,
+          "end_char": 15
+        },
+        "media_type": {
+          "value": "VIDEO",
+          "raw_text": "videos",
+          "status": "MATCHED",
+          "rule_id": "MEDIA_PRIMARY_REQUEST",
+          "start_char": 16,
+          "end_char": 22
+        },
+        "extensions": [],
+        "numeric_occurrences": [
+          {
+            "value": 3,
+            "raw_text": "3",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 14,
+            "end_char": 15,
+            "numeric_type": "RESULT_COUNT"
+          }
+        ],
+        "temporal": {},
+        "surface_markers": [],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "USER_EXPLICIT",
+          "raw_text": "best"
+        },
+        "detected_language": "ENGLISH",
+        "consumed_spans": [
+          {
+            "start_char": 14,
+            "end_char": 15,
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA"
+          },
+          {
+            "start_char": 16,
+            "end_char": 22,
+            "rule_id": "MEDIA_PRIMARY_REQUEST"
+          }
+        ]
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [],
+        "negative_concepts": [
+          {
+            "concept_type": "ACTION",
+            "raw_text": "injection",
+            "canonical_code": "INJECTING",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 30,
+            "end_char": 39,
+            "modality": "VISUAL",
+            "surface_strength": "EXPLICIT_EXCLUDE"
+          }
+        ],
+        "unresolved_concepts": [],
+        "modalities": [
+          "VISUAL"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "show the best 3 videos but no injection",
+        "result_request": {
+          "requested_count": 3,
+          "system_default_count": 5,
+          "effective_count": 3,
+          "requested_count_raw": "3",
+          "normalization_status": "MATCHED",
+          "extraction": {
+            "value": 3,
+            "raw_text": "3",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 14,
+            "end_char": 15
+          }
+        },
+        "media": {
+          "media_type": "VIDEO",
+          "media_type_extraction": {
+            "value": "VIDEO",
+            "raw_text": "videos",
+            "status": "MATCHED",
+            "rule_id": "MEDIA_PRIMARY_REQUEST",
+            "start_char": 16,
+            "end_char": 22
+          },
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [],
+          "negative_concepts": [
+            {
+              "concept_type": "ACTION",
+              "raw_text": "injection",
+              "canonical_code": "INJECTING",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 30,
+              "end_char": 39,
+              "modality": "VISUAL",
+              "surface_strength": "EXPLICIT_EXCLUDE"
+            }
+          ],
+          "unresolved_concepts": []
+        },
+        "temporal": {},
+        "numeric": {
+          "occurrences": [
+            {
+              "value": 3,
+              "raw_text": "3",
+              "status": "MATCHED",
+              "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+              "start_char": 14,
+              "end_char": 15,
+              "numeric_type": "RESULT_COUNT"
+            }
+          ],
+          "age_exact": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "USER_EXPLICIT",
+          "raw_text": "best"
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": null,
+          "text_semantic_query": "show the best 3 videos but no injection",
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "ENGLISH",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "4f2389a71ba2b03b3a85414d5f5b2da3166edffa8cd4ca78f832525313e66953"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "find video around 00:30",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": null,
+        "media_type": {
+          "value": "VIDEO",
+          "raw_text": "video",
+          "status": "MATCHED",
+          "rule_id": "MEDIA_PRIMARY_REQUEST",
+          "start_char": 5,
+          "end_char": 10
+        },
+        "extensions": [],
+        "numeric_occurrences": [
+          {
+            "value": 30,
+            "raw_text": "00:30",
+            "numeric_type": "TIMESTAMP",
+            "status": "MATCHED",
+            "rule_id": "TIMESTAMP_MMSS",
+            "start_char": 18,
+            "end_char": 23,
+            "unit": "seconds"
+          }
+        ],
+        "temporal": {
+          "timestamp": {
+            "timestamp_seconds": 30,
+            "raw_text": "00:30",
+            "approximate": true,
+            "status": "MATCHED"
+          }
+        },
+        "surface_markers": [],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "ENGLISH",
+        "consumed_spans": [
+          {
+            "start_char": 5,
+            "end_char": 10,
+            "rule_id": "MEDIA_PRIMARY_REQUEST"
+          }
+        ]
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [],
+        "negative_concepts": [],
+        "unresolved_concepts": [
+          {
+            "concept_type": "UNRESOLVED",
+            "raw_text": "find video around 00:30",
+            "canonical_code": null,
+            "normalization_status": "UNRESOLVED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 0,
+            "end_char": 23,
+            "modality": "ANY",
+            "surface_strength": "NEUTRAL"
+          }
+        ],
+        "modalities": [
+          "VISUAL"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "find video around 00:30",
+        "result_request": {
+          "requested_count": null,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": null,
+          "normalization_status": "NOT_FOUND",
+          "extraction": null
+        },
+        "media": {
+          "media_type": "VIDEO",
+          "media_type_extraction": {
+            "value": "VIDEO",
+            "raw_text": "video",
+            "status": "MATCHED",
+            "rule_id": "MEDIA_PRIMARY_REQUEST",
+            "start_char": 5,
+            "end_char": 10
+          },
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [],
+          "negative_concepts": [],
+          "unresolved_concepts": [
+            {
+              "concept_type": "UNRESOLVED",
+              "raw_text": "find video around 00:30",
+              "canonical_code": null,
+              "normalization_status": "UNRESOLVED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 0,
+              "end_char": 23,
+              "modality": "ANY",
+              "surface_strength": "NEUTRAL"
+            }
+          ]
+        },
+        "temporal": {
+          "timestamp": {
+            "timestamp_seconds": 30,
+            "raw_text": "00:30",
+            "approximate": true,
+            "status": "MATCHED"
+          }
+        },
+        "numeric": {
+          "occurrences": [
+            {
+              "value": 30,
+              "raw_text": "00:30",
+              "numeric_type": "TIMESTAMP",
+              "status": "MATCHED",
+              "rule_id": "TIMESTAMP_MMSS",
+              "start_char": 18,
+              "end_char": 23,
+              "unit": "seconds"
+            }
+          ],
+          "age_exact": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": null,
+          "text_semantic_query": "find video around 00:30",
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "ENGLISH",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "0ea66e73dba65763f948ddc76237831cbb8805fc017ecb4333e613d85bec6220"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "cari video doktor buat frontal hairline",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": null,
+        "media_type": {
+          "value": "VIDEO",
+          "raw_text": "video",
+          "status": "MATCHED",
+          "rule_id": "MEDIA_PRIMARY_REQUEST",
+          "start_char": 5,
+          "end_char": 10
+        },
+        "extensions": [],
+        "numeric_occurrences": [],
+        "temporal": {},
+        "surface_markers": [],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "MIXED",
+        "consumed_spans": [
+          {
+            "start_char": 5,
+            "end_char": 10,
+            "rule_id": "MEDIA_PRIMARY_REQUEST"
+          }
+        ]
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [
+          {
+            "concept_type": "ROLE",
+            "raw_text": "doktor",
+            "canonical_code": "CLINICIAN",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 11,
+            "end_char": 17,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          },
+          {
+            "concept_type": "ANATOMY",
+            "raw_text": "frontal hairline",
+            "canonical_code": "FRONTAL_HAIRLINE",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 23,
+            "end_char": 39,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          },
+          {
+            "concept_type": "ACTION",
+            "raw_text": "buat frontal hairline",
+            "canonical_code": "DRAWING_HAIRLINE",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 18,
+            "end_char": 39,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          }
+        ],
+        "negative_concepts": [],
+        "unresolved_concepts": [],
+        "modalities": [
+          "VISUAL"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "cari video doktor buat frontal hairline",
+        "result_request": {
+          "requested_count": null,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": null,
+          "normalization_status": "NOT_FOUND",
+          "extraction": null
+        },
+        "media": {
+          "media_type": "VIDEO",
+          "media_type_extraction": {
+            "value": "VIDEO",
+            "raw_text": "video",
+            "status": "MATCHED",
+            "rule_id": "MEDIA_PRIMARY_REQUEST",
+            "start_char": 5,
+            "end_char": 10
+          },
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [
+            {
+              "concept_type": "ROLE",
+              "raw_text": "doktor",
+              "canonical_code": "CLINICIAN",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 11,
+              "end_char": 17,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            },
+            {
+              "concept_type": "ANATOMY",
+              "raw_text": "frontal hairline",
+              "canonical_code": "FRONTAL_HAIRLINE",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 23,
+              "end_char": 39,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            },
+            {
+              "concept_type": "ACTION",
+              "raw_text": "buat frontal hairline",
+              "canonical_code": "DRAWING_HAIRLINE",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 18,
+              "end_char": 39,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            }
+          ],
+          "negative_concepts": [],
+          "unresolved_concepts": []
+        },
+        "temporal": {},
+        "numeric": {
+          "occurrences": [],
+          "age_exact": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": "clinician frontal hairline drawing hairline",
+          "text_semantic_query": "clinician frontal hairline drawing hairline",
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "MIXED",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "bcc98c3f9b13589f4d0e2e2a0b535dcc583d4a2d2da869886623469ecd544c5b"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "video with M-CURE visible",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": null,
+        "media_type": {
+          "value": "VIDEO",
+          "raw_text": "video",
+          "status": "MATCHED",
+          "rule_id": "MEDIA_PRIMARY_REQUEST",
+          "start_char": 0,
+          "end_char": 5
+        },
+        "extensions": [],
+        "numeric_occurrences": [],
+        "temporal": {},
+        "surface_markers": [],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "ENGLISH",
+        "consumed_spans": [
+          {
+            "start_char": 0,
+            "end_char": 5,
+            "rule_id": "MEDIA_PRIMARY_REQUEST"
+          }
+        ]
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [],
+        "negative_concepts": [],
+        "unresolved_concepts": [],
+        "modalities": [
+          "OCR"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [
+          "M-CURE"
+        ],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "video with M-CURE visible",
+        "result_request": {
+          "requested_count": null,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": null,
+          "normalization_status": "NOT_FOUND",
+          "extraction": null
+        },
+        "media": {
+          "media_type": "VIDEO",
+          "media_type_extraction": {
+            "value": "VIDEO",
+            "raw_text": "video",
+            "status": "MATCHED",
+            "rule_id": "MEDIA_PRIMARY_REQUEST",
+            "start_char": 0,
+            "end_char": 5
+          },
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [],
+          "negative_concepts": [],
+          "unresolved_concepts": []
+        },
+        "temporal": {},
+        "numeric": {
+          "occurrences": [],
+          "age_exact": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [
+              "M-CURE"
+            ],
+            "raw_phrases": [
+              "M-CURE"
+            ]
+          },
+          "modalities": [
+            "OCR"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": null,
+          "text_semantic_query": "M-CURE",
+          "full_text_query": "M-CURE"
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "ENGLISH",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "b9d949ae965c2e6b10f696bd55800f00176e091dd420a57abd1cc7f14fb7fc1f"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "doctor doing scalp procedure preferably no injection",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": null,
+        "media_type": null,
+        "extensions": [],
+        "numeric_occurrences": [],
+        "temporal": {},
+        "surface_markers": [
+          {
+            "raw_text": "preferably",
+            "surface_strength": "PREFERENCE",
+            "start_char": 29,
+            "end_char": 39
+          }
+        ],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "ENGLISH",
+        "consumed_spans": []
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [
+          {
+            "concept_type": "ROLE",
+            "raw_text": "doctor",
+            "canonical_code": "CLINICIAN",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 0,
+            "end_char": 6,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          },
+          {
+            "concept_type": "ANATOMY",
+            "raw_text": "scalp",
+            "canonical_code": "SCALP",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 13,
+            "end_char": 18,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          }
+        ],
+        "negative_concepts": [
+          {
+            "concept_type": "ACTION",
+            "raw_text": "injection",
+            "canonical_code": "INJECTING",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 43,
+            "end_char": 52,
+            "modality": "VISUAL",
+            "surface_strength": "EXPLICIT_EXCLUDE"
+          }
+        ],
+        "unresolved_concepts": [],
+        "modalities": [
+          "VISUAL"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "doctor doing scalp procedure preferably no injection",
+        "result_request": {
+          "requested_count": null,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": null,
+          "normalization_status": "NOT_FOUND",
+          "extraction": null
+        },
+        "media": {
+          "media_type": "ANY",
+          "media_type_extraction": null,
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [
+            {
+              "concept_type": "ROLE",
+              "raw_text": "doctor",
+              "canonical_code": "CLINICIAN",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 0,
+              "end_char": 6,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            },
+            {
+              "concept_type": "ANATOMY",
+              "raw_text": "scalp",
+              "canonical_code": "SCALP",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 13,
+              "end_char": 18,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            }
+          ],
+          "negative_concepts": [
+            {
+              "concept_type": "ACTION",
+              "raw_text": "injection",
+              "canonical_code": "INJECTING",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 43,
+              "end_char": 52,
+              "modality": "VISUAL",
+              "surface_strength": "EXPLICIT_EXCLUDE"
+            }
+          ],
+          "unresolved_concepts": []
+        },
+        "temporal": {},
+        "numeric": {
+          "occurrences": [],
+          "age_exact": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": [
+            {
+              "raw_text": "preferably",
+              "surface_strength": "PREFERENCE",
+              "start_char": 29,
+              "end_char": 39
+            }
+          ]
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": "clinician scalp",
+          "text_semantic_query": "clinician scalp",
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "ENGLISH",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "63d8a1c03fc86ee7c6f03038a6c5e4c94872f7fbb05207d7723d91379313d12c"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "30-year-old patient, show 7 videos",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": {
+          "value": 7,
+          "raw_text": "7",
+          "status": "MATCHED",
+          "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+          "start_char": 26,
+          "end_char": 27
+        },
+        "media_type": {
+          "value": "VIDEO",
+          "raw_text": "videos",
+          "status": "MATCHED",
+          "rule_id": "MEDIA_PRIMARY_REQUEST",
+          "start_char": 28,
+          "end_char": 34
+        },
+        "extensions": [],
+        "numeric_occurrences": [
+          {
+            "value": 30,
+            "raw_text": "30",
+            "numeric_type": "AGE_EXACT",
+            "status": "MATCHED",
+            "rule_id": "AGE_N_YEAR_OLD",
+            "start_char": 0,
+            "end_char": 2,
+            "unit": "years"
+          },
+          {
+            "value": 7,
+            "raw_text": "7",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 26,
+            "end_char": 27,
+            "numeric_type": "RESULT_COUNT"
+          }
+        ],
+        "temporal": {},
+        "surface_markers": [],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "ENGLISH",
+        "consumed_spans": [
+          {
+            "start_char": 26,
+            "end_char": 27,
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA"
+          },
+          {
+            "start_char": 28,
+            "end_char": 34,
+            "rule_id": "MEDIA_PRIMARY_REQUEST"
+          }
+        ]
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [
+          {
+            "concept_type": "ROLE",
+            "raw_text": "patient",
+            "canonical_code": "PATIENT",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 12,
+            "end_char": 19,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          }
+        ],
+        "negative_concepts": [],
+        "unresolved_concepts": [],
+        "modalities": [
+          "VISUAL"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "30-year-old patient, show 7 videos",
+        "result_request": {
+          "requested_count": 7,
+          "system_default_count": 5,
+          "effective_count": 7,
+          "requested_count_raw": "7",
+          "normalization_status": "MATCHED",
+          "extraction": {
+            "value": 7,
+            "raw_text": "7",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 26,
+            "end_char": 27
+          }
+        },
+        "media": {
+          "media_type": "VIDEO",
+          "media_type_extraction": {
+            "value": "VIDEO",
+            "raw_text": "videos",
+            "status": "MATCHED",
+            "rule_id": "MEDIA_PRIMARY_REQUEST",
+            "start_char": 28,
+            "end_char": 34
+          },
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [
+            {
+              "concept_type": "ROLE",
+              "raw_text": "patient",
+              "canonical_code": "PATIENT",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 12,
+              "end_char": 19,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            }
+          ],
+          "negative_concepts": [],
+          "unresolved_concepts": []
+        },
+        "temporal": {},
+        "numeric": {
+          "occurrences": [
+            {
+              "value": 30,
+              "raw_text": "30",
+              "numeric_type": "AGE_EXACT",
+              "status": "MATCHED",
+              "rule_id": "AGE_N_YEAR_OLD",
+              "start_char": 0,
+              "end_char": 2,
+              "unit": "years"
+            },
+            {
+              "value": 7,
+              "raw_text": "7",
+              "status": "MATCHED",
+              "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+              "start_char": 26,
+              "end_char": 27,
+              "numeric_type": "RESULT_COUNT"
+            }
+          ],
+          "age_exact": 30,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": "patient",
+          "text_semantic_query": "patient",
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "ENGLISH",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "9e35bbb98df2cc50ac526ef3f72858ab8a09f77f4bb59769f191c4e773ca7e0f"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "show 6 videos from 2026 with 3000 grafts",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": {
+          "value": 6,
+          "raw_text": "6",
+          "status": "MATCHED",
+          "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+          "start_char": 5,
+          "end_char": 6
+        },
+        "media_type": {
+          "value": "VIDEO",
+          "raw_text": "videos",
+          "status": "MATCHED",
+          "rule_id": "MEDIA_PRIMARY_REQUEST",
+          "start_char": 7,
+          "end_char": 13
+        },
+        "extensions": [],
+        "numeric_occurrences": [
+          {
+            "value": 6,
+            "raw_text": "6",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 5,
+            "end_char": 6,
+            "numeric_type": "RESULT_COUNT"
+          },
+          {
+            "value": 2026,
+            "raw_text": "2026",
+            "numeric_type": "YEAR",
+            "status": "MATCHED",
+            "rule_id": "YEAR_YYYY",
+            "start_char": 19,
+            "end_char": 23,
+            "unit": "year"
+          },
+          {
+            "value": 3000,
+            "raw_text": "3000",
+            "numeric_type": "GRAFT_COUNT_EXACT",
+            "status": "MATCHED",
+            "rule_id": "GRAFT_N",
+            "start_char": 29,
+            "end_char": 33,
+            "unit": "grafts"
+          }
+        ],
+        "temporal": {
+          "year": {
+            "value": 2026,
+            "raw_text": "2026",
+            "status": "MATCHED",
+            "start_char": 19,
+            "end_char": 23
+          }
+        },
+        "surface_markers": [],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "ENGLISH",
+        "consumed_spans": [
+          {
+            "start_char": 5,
+            "end_char": 6,
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA"
+          },
+          {
+            "start_char": 7,
+            "end_char": 13,
+            "rule_id": "MEDIA_PRIMARY_REQUEST"
+          }
+        ]
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [],
+        "negative_concepts": [],
+        "unresolved_concepts": [
+          {
+            "concept_type": "UNRESOLVED",
+            "raw_text": "show 6 videos from 2026 with 3000 grafts",
+            "canonical_code": null,
+            "normalization_status": "UNRESOLVED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 0,
+            "end_char": 40,
+            "modality": "ANY",
+            "surface_strength": "NEUTRAL"
+          }
+        ],
+        "modalities": [
+          "VISUAL"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "show 6 videos from 2026 with 3000 grafts",
+        "result_request": {
+          "requested_count": 6,
+          "system_default_count": 5,
+          "effective_count": 6,
+          "requested_count_raw": "6",
+          "normalization_status": "MATCHED",
+          "extraction": {
+            "value": 6,
+            "raw_text": "6",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 5,
+            "end_char": 6
+          }
+        },
+        "media": {
+          "media_type": "VIDEO",
+          "media_type_extraction": {
+            "value": "VIDEO",
+            "raw_text": "videos",
+            "status": "MATCHED",
+            "rule_id": "MEDIA_PRIMARY_REQUEST",
+            "start_char": 7,
+            "end_char": 13
+          },
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [],
+          "negative_concepts": [],
+          "unresolved_concepts": [
+            {
+              "concept_type": "UNRESOLVED",
+              "raw_text": "show 6 videos from 2026 with 3000 grafts",
+              "canonical_code": null,
+              "normalization_status": "UNRESOLVED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 0,
+              "end_char": 40,
+              "modality": "ANY",
+              "surface_strength": "NEUTRAL"
+            }
+          ]
+        },
+        "temporal": {
+          "year": {
+            "value": 2026,
+            "raw_text": "2026",
+            "status": "MATCHED",
+            "start_char": 19,
+            "end_char": 23
+          }
+        },
+        "numeric": {
+          "occurrences": [
+            {
+              "value": 6,
+              "raw_text": "6",
+              "status": "MATCHED",
+              "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+              "start_char": 5,
+              "end_char": 6,
+              "numeric_type": "RESULT_COUNT"
+            },
+            {
+              "value": 2026,
+              "raw_text": "2026",
+              "numeric_type": "YEAR",
+              "status": "MATCHED",
+              "rule_id": "YEAR_YYYY",
+              "start_char": 19,
+              "end_char": 23,
+              "unit": "year"
+            },
+            {
+              "value": 3000,
+              "raw_text": "3000",
+              "numeric_type": "GRAFT_COUNT_EXACT",
+              "status": "MATCHED",
+              "rule_id": "GRAFT_N",
+              "start_char": 29,
+              "end_char": 33,
+              "unit": "grafts"
+            }
+          ],
+          "age_exact": null,
+          "age_decade": null,
+          "graft_count_exact": 3000,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": null,
+          "text_semantic_query": "show 6 videos from 2026 with 3000 grafts",
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "ENGLISH",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "a363e85ba71b2396d702b41bdc66cff0abd2a2ad2c71209c152df373fb98f6b5"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "give me 5 videos around 00:30 under 60 seconds",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": {
+          "value": 5,
+          "raw_text": "5",
+          "status": "MATCHED",
+          "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+          "start_char": 8,
+          "end_char": 9
+        },
+        "media_type": {
+          "value": "VIDEO",
+          "raw_text": "videos",
+          "status": "MATCHED",
+          "rule_id": "MEDIA_PRIMARY_REQUEST",
+          "start_char": 10,
+          "end_char": 16
+        },
+        "extensions": [],
+        "numeric_occurrences": [
+          {
+            "value": 5,
+            "raw_text": "5",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 8,
+            "end_char": 9,
+            "numeric_type": "RESULT_COUNT"
+          },
+          {
+            "value": 30,
+            "raw_text": "00:30",
+            "numeric_type": "TIMESTAMP",
+            "status": "MATCHED",
+            "rule_id": "TIMESTAMP_MMSS",
+            "start_char": 24,
+            "end_char": 29,
+            "unit": "seconds"
+          },
+          {
+            "value": 60,
+            "raw_text": "60",
+            "numeric_type": "DURATION",
+            "status": "MATCHED",
+            "rule_id": "DURATION_BOUND",
+            "start_char": 36,
+            "end_char": 38,
+            "unit": "seconds"
+          }
+        ],
+        "temporal": {
+          "duration": {
+            "duration_min_seconds": null,
+            "duration_max_seconds": 60,
+            "raw_text": "60",
+            "status": "MATCHED"
+          },
+          "timestamp": {
+            "timestamp_seconds": 30,
+            "raw_text": "00:30",
+            "approximate": true,
+            "status": "MATCHED"
+          }
+        },
+        "surface_markers": [],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "ENGLISH",
+        "consumed_spans": [
+          {
+            "start_char": 8,
+            "end_char": 9,
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA"
+          },
+          {
+            "start_char": 10,
+            "end_char": 16,
+            "rule_id": "MEDIA_PRIMARY_REQUEST"
+          }
+        ]
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [],
+        "negative_concepts": [],
+        "unresolved_concepts": [
+          {
+            "concept_type": "UNRESOLVED",
+            "raw_text": "give me 5 videos around 00:30 under 60 seconds",
+            "canonical_code": null,
+            "normalization_status": "UNRESOLVED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 0,
+            "end_char": 46,
+            "modality": "ANY",
+            "surface_strength": "NEUTRAL"
+          }
+        ],
+        "modalities": [
+          "VISUAL"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "give me 5 videos around 00:30 under 60 seconds",
+        "result_request": {
+          "requested_count": 5,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": "5",
+          "normalization_status": "MATCHED",
+          "extraction": {
+            "value": 5,
+            "raw_text": "5",
+            "status": "MATCHED",
+            "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+            "start_char": 8,
+            "end_char": 9
+          }
+        },
+        "media": {
+          "media_type": "VIDEO",
+          "media_type_extraction": {
+            "value": "VIDEO",
+            "raw_text": "videos",
+            "status": "MATCHED",
+            "rule_id": "MEDIA_PRIMARY_REQUEST",
+            "start_char": 10,
+            "end_char": 16
+          },
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [],
+          "negative_concepts": [],
+          "unresolved_concepts": [
+            {
+              "concept_type": "UNRESOLVED",
+              "raw_text": "give me 5 videos around 00:30 under 60 seconds",
+              "canonical_code": null,
+              "normalization_status": "UNRESOLVED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 0,
+              "end_char": 46,
+              "modality": "ANY",
+              "surface_strength": "NEUTRAL"
+            }
+          ]
+        },
+        "temporal": {
+          "duration": {
+            "duration_min_seconds": null,
+            "duration_max_seconds": 60,
+            "raw_text": "60",
+            "status": "MATCHED"
+          },
+          "timestamp": {
+            "timestamp_seconds": 30,
+            "raw_text": "00:30",
+            "approximate": true,
+            "status": "MATCHED"
+          }
+        },
+        "numeric": {
+          "occurrences": [
+            {
+              "value": 5,
+              "raw_text": "5",
+              "status": "MATCHED",
+              "rule_id": "RESULT_COUNT_VERB_N_MEDIA",
+              "start_char": 8,
+              "end_char": 9,
+              "numeric_type": "RESULT_COUNT"
+            },
+            {
+              "value": 30,
+              "raw_text": "00:30",
+              "numeric_type": "TIMESTAMP",
+              "status": "MATCHED",
+              "rule_id": "TIMESTAMP_MMSS",
+              "start_char": 24,
+              "end_char": 29,
+              "unit": "seconds"
+            },
+            {
+              "value": 60,
+              "raw_text": "60",
+              "numeric_type": "DURATION",
+              "status": "MATCHED",
+              "rule_id": "DURATION_BOUND",
+              "start_char": 36,
+              "end_char": 38,
+              "unit": "seconds"
+            }
+          ],
+          "age_exact": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": null,
+          "text_semantic_query": "give me 5 videos around 00:30 under 60 seconds",
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "ENGLISH",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "ea91a33c88cb74d9157a47d94b3b812cc0be5103fc5fba5d3052ea243ed53a4a"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "only videos of frontal hairline, preferably consultation",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": null,
+        "media_type": {
+          "value": "VIDEO",
+          "raw_text": "videos",
+          "status": "MATCHED",
+          "rule_id": "MEDIA_PRIMARY_REQUEST",
+          "start_char": 5,
+          "end_char": 11
+        },
+        "extensions": [],
+        "numeric_occurrences": [],
+        "temporal": {},
+        "surface_markers": [
+          {
+            "raw_text": "only",
+            "surface_strength": "EXPLICIT_ONLY",
+            "start_char": 0,
+            "end_char": 4
+          },
+          {
+            "raw_text": "preferably",
+            "surface_strength": "PREFERENCE",
+            "start_char": 33,
+            "end_char": 43
+          }
+        ],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "UNKNOWN",
+        "consumed_spans": [
+          {
+            "start_char": 5,
+            "end_char": 11,
+            "rule_id": "MEDIA_PRIMARY_REQUEST"
+          }
+        ]
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [
+          {
+            "concept_type": "ANATOMY",
+            "raw_text": "frontal hairline",
+            "canonical_code": "FRONTAL_HAIRLINE",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 15,
+            "end_char": 31,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          },
+          {
+            "concept_type": "ACTION",
+            "raw_text": "consultation",
+            "canonical_code": "CONSULTING",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 44,
+            "end_char": 56,
+            "modality": "VISUAL",
+            "surface_strength": "PREFERENCE"
+          },
+          {
+            "concept_type": "PROCEDURE_STAGE",
+            "raw_text": "consultation",
+            "canonical_code": "CONSULTATION",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 44,
+            "end_char": 56,
+            "modality": "VISUAL",
+            "surface_strength": "PREFERENCE"
+          }
+        ],
+        "negative_concepts": [],
+        "unresolved_concepts": [],
+        "modalities": [
+          "VISUAL"
+        ],
+        "transcript_phrases": [],
+        "ocr_phrases": [],
+        "preferences": [
+          {
+            "raw_text": "consultation",
+            "concept": "CONSULTING",
+            "surface_strength": "PREFERENCE"
+          },
+          {
+            "raw_text": "consultation",
+            "concept": "CONSULTATION",
+            "surface_strength": "PREFERENCE"
+          }
+        ]
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "only videos of frontal hairline, preferably consultation",
+        "result_request": {
+          "requested_count": null,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": null,
+          "normalization_status": "NOT_FOUND",
+          "extraction": null
+        },
+        "media": {
+          "media_type": "VIDEO",
+          "media_type_extraction": {
+            "value": "VIDEO",
+            "raw_text": "videos",
+            "status": "MATCHED",
+            "rule_id": "MEDIA_PRIMARY_REQUEST",
+            "start_char": 5,
+            "end_char": 11
+          },
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [
+            {
+              "concept_type": "ANATOMY",
+              "raw_text": "frontal hairline",
+              "canonical_code": "FRONTAL_HAIRLINE",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 15,
+              "end_char": 31,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            },
+            {
+              "concept_type": "ACTION",
+              "raw_text": "consultation",
+              "canonical_code": "CONSULTING",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 44,
+              "end_char": 56,
+              "modality": "VISUAL",
+              "surface_strength": "PREFERENCE"
+            },
+            {
+              "concept_type": "PROCEDURE_STAGE",
+              "raw_text": "consultation",
+              "canonical_code": "CONSULTATION",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 44,
+              "end_char": 56,
+              "modality": "VISUAL",
+              "surface_strength": "PREFERENCE"
+            }
+          ],
+          "negative_concepts": [],
+          "unresolved_concepts": []
+        },
+        "temporal": {},
+        "numeric": {
+          "occurrences": [],
+          "age_exact": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": [
+            {
+              "raw_text": "only",
+              "surface_strength": "EXPLICIT_ONLY",
+              "start_char": 0,
+              "end_char": 4
+            },
+            {
+              "raw_text": "preferably",
+              "surface_strength": "PREFERENCE",
+              "start_char": 33,
+              "end_char": 43
+            }
+          ]
+        },
+        "preferences": [
+          {
+            "raw_text": "consultation",
+            "concept": "CONSULTING",
+            "surface_strength": "PREFERENCE"
+          },
+          {
+            "raw_text": "consultation",
+            "concept": "CONSULTATION",
+            "surface_strength": "PREFERENCE"
+          }
+        ],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": "frontal hairline consulting consultation",
+          "text_semantic_query": "frontal hairline consulting consultation",
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "UNKNOWN",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "d0c991681d5ee458baa0f4ac0372c1331d4bc29c43e82e2b48df31007dc03fa9"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    },
+    {
+      "original_query": "show video with M-CURE visible but doctor says no shaving",
+      "deterministic_extraction": {
+        "intent": "FIND_MEDIA",
+        "count": null,
+        "media_type": {
+          "value": "VIDEO",
+          "raw_text": "video",
+          "status": "MATCHED",
+          "rule_id": "MEDIA_PRIMARY_REQUEST",
+          "start_char": 5,
+          "end_char": 10
+        },
+        "extensions": [],
+        "numeric_occurrences": [],
+        "temporal": {},
+        "surface_markers": [],
+        "sort": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "detected_language": "ENGLISH",
+        "consumed_spans": [
+          {
+            "start_char": 5,
+            "end_char": 10,
+            "rule_id": "MEDIA_PRIMARY_REQUEST"
+          }
+        ]
+      },
+      "semantic_raw_structured_output": {
+        "positive_concepts": [
+          {
+            "concept_type": "ROLE",
+            "raw_text": "doctor",
+            "canonical_code": "CLINICIAN",
+            "normalization_status": "MATCHED",
+            "source": "SEMANTIC_INTERPRETER",
+            "confidence": null,
+            "start_char": 35,
+            "end_char": 41,
+            "modality": "VISUAL",
+            "surface_strength": "NEUTRAL"
+          }
+        ],
+        "negative_concepts": [],
+        "unresolved_concepts": [],
+        "modalities": [
+          "TRANSCRIPT",
+          "OCR"
+        ],
+        "transcript_phrases": [
+          "no shaving"
+        ],
+        "ocr_phrases": [
+          "M-CURE"
+        ],
+        "preferences": []
+      },
+      "validated_normalized_query_plan": {
+        "query_schema_version": "kdi_query_schema_v1",
+        "intent": "FIND_MEDIA",
+        "original_query": "show video with M-CURE visible but doctor says no shaving",
+        "result_request": {
+          "requested_count": null,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": null,
+          "normalization_status": "NOT_FOUND",
+          "extraction": null
+        },
+        "media": {
+          "media_type": "VIDEO",
+          "media_type_extraction": {
+            "value": "VIDEO",
+            "raw_text": "video",
+            "status": "MATCHED",
+            "rule_id": "MEDIA_PRIMARY_REQUEST",
+            "start_char": 5,
+            "end_char": 10
+          },
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [
+            {
+              "concept_type": "ROLE",
+              "raw_text": "doctor",
+              "canonical_code": "CLINICIAN",
+              "normalization_status": "MATCHED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 35,
+              "end_char": 41,
+              "modality": "VISUAL",
+              "surface_strength": "NEUTRAL"
+            }
+          ],
+          "negative_concepts": [],
+          "unresolved_concepts": []
+        },
+        "temporal": {},
+        "numeric": {
+          "occurrences": [],
+          "age_exact": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "treatment_session_count": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [
+              "no shaving"
+            ],
+            "raw_phrases": [
+              "no shaving"
+            ]
+          },
+          "ocr": {
+            "required_terms": [
+              "M-CURE"
+            ],
+            "raw_phrases": [
+              "M-CURE"
+            ]
+          },
+          "modalities": [
+            "TRANSCRIPT",
+            "OCR"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": "clinician",
+          "text_semantic_query": "clinician no shaving M-CURE",
+          "full_text_query": "M-CURE no shaving"
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+          "query_schema_version": "kdi_query_schema_v1",
+          "configuration_version": "kdi_query_parser_config_v1",
+          "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en_ms",
+          "semantic_provider_model_version": "v1",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "ENGLISH",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "f1c25fc4441f95d50627e19efe23e204fbd64159706b6b3a593fc7f8bd39d371"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "warnings": [],
+      "conflicts": [],
+      "validation_result": "VALID"
+    }
+  ]
+}

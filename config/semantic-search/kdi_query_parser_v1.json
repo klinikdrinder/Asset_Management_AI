@@ -1,0 +1,67 @@
+{
+  "query_parser_version": "kdi_query_parser_v1",
+  "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+  "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+  "query_schema_version": "kdi_query_schema_v1",
+  "configuration_version": "kdi_query_parser_config_v1",
+  "result_count": { "minimum": 1, "maximum": 50, "system_default": 5 },
+  "text_normalization": "unicode_nfkc_whitespace_v1",
+  "semantic_provider": {
+    "provider": "kdi_local_ontology_interpreter",
+    "model": "kdi_semantic_lexicon_en_ms",
+    "model_version": "v1",
+    "local": true
+  },
+  "provider_writable_fields": [
+    "positive_concepts", "negative_concepts", "unresolved_concepts",
+    "modalities", "transcript_phrases", "ocr_phrases", "preferences"
+  ],
+  "extensions": ["MP4", "MOV", "JPG", "JPEG", "PNG", "WEBP"],
+  "semantic_aliases": {
+    "ROLE": {
+      "CLINICIAN": ["doctor", "clinician", "physician", "doktor"],
+      "PATIENT": ["patient", "pesakit"],
+      "STAFF": ["staff"],
+      "SUBJECT": ["subject"],
+      "PRESENTER": ["presenter"]
+    },
+    "PERSON_APPEARANCE": {
+      "MALE": ["male", "man"],
+      "FEMALE": ["female", "woman", "women"]
+    },
+    "ANATOMY": {
+      "FRONTAL_HAIRLINE": ["frontal hairline", "front hairline", "frntal harline"],
+      "FRONTAL_SCALP": ["frontal scalp"],
+      "RECIPIENT_REGION": ["recipient region"],
+      "SCALP": ["scalp"],
+      "FACE": ["face"],
+      "CHEEK": ["cheek", "cheeks"],
+      "NECK": ["neck"]
+    },
+    "TREATMENT": {
+      "HAIR_TRANSPLANT": ["hair transplant", "transplant"],
+      "HAIR_TRANSPLANT_FUE": ["fue", "follicular unit extraction"]
+    },
+    "ACTION": {
+      "DRAWING_HAIRLINE": ["hairline design", "hairline drawing", "hairline planning", "buat frontal hairline", "frntal harline desgin"],
+      "IMPLANTING_GRAFTS": ["implanting grafts", "graft implantation"],
+      "INJECTING": ["injection", "injections", "injecting", "syringe"],
+      "CLEANSING": ["cleansing", "cleaning cheek"],
+      "LOOKING_AT_CAMERA": ["looking at camera"],
+      "CONSULTING": ["consultation", "consulting"]
+    },
+    "ENVIRONMENT": {
+      "CLINIC": ["clinic"],
+      "CONSULTATION_ROOM": ["consultation room"],
+      "TREATMENT_ROOM": ["treatment room"],
+      "OPERATING_ROOM": ["operating room"]
+    },
+    "PROCEDURE_STAGE": {
+      "PRE_PROCEDURE": ["before treatment", "before transplant", "before procedure", "pre procedure", "pre-procedure"],
+      "DURING_PROCEDURE": ["during procedure", "during treatment"],
+      "POST_PROCEDURE": ["after procedure", "after treatment", "post procedure", "post-procedure"],
+      "FOLLOW_UP": ["follow up", "follow-up", "aftercare"],
+      "CONSULTATION": ["consultation"]
+    }
+  }
+}

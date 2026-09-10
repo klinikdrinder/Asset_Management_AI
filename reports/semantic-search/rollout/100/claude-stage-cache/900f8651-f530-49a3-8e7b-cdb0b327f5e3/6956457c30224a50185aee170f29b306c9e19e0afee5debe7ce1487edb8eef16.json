@@ -1,0 +1,188 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical MP4, 1280x720, 24s, h264 with audio track",
+      "evidence": [
+        "technical metadata: duration 24.07s, 1280x720, fps 30/1, codec h264, audio_stream true",
+        "filename IMG_1368.MP4"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical close-up video of a facial procedure",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "keyframes depict a clinician using a handheld device near a patient's forehead"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across the clip",
+      "evidence": [
+        "scene_results shows a single scene_index 0 spanning the asset",
+        "two keyframes sampled from that one scene show consistent positioning"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician operating device on a reclined patient",
+      "evidence": [
+        "masked, gloved person in teal scrub top holding the device",
+        "second person reclined on the treatment bed receiving the device's application"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs, mask, gloves; patient with protective eyewear",
+      "evidence": [
+        "clinician wears teal scrub top with embroidered name, surgical mask, latex gloves, hair tied back, smartwatch",
+        "patient wears metal protective eyewear and is draped with a green towel and blue cloth"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forehead/brow area of patient visible",
+      "evidence": [
+        "device tip and red beam are positioned at the patient's forehead/brow region",
+        "patient's face, chin, and neck are visible reclined on the bed"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure type not identifiable from evidence",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN",
+        "device, gloves, and skin contact alone do not name a specific clinical procedure per rules"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds device tip against patient's forehead area",
+      "evidence": [
+        "handheld device connected to articulated arm positioned at forehead with visible red beam on skin",
+        "clinician's gloved hands steady the device and stabilize the patient's head"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-patient interaction in a treatment setting",
+      "evidence": [
+        "clinician positioned above and in direct contact with the reclined patient",
+        "patient positioned passively on treatment bed while clinician operates equipment"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Red targeting beam visible on patient's skin during device use",
+      "evidence": [
+        "small red beam visible on the forehead/brow skin at the device tip",
+        "protective metal eyewear worn by patient consistent with device use near the face"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting details beyond a plain wall not determinable",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN",
+        "only a plain white wall and treatment bed are visible, insufficient to characterize the broader setting"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing focused on device and face",
+      "evidence": [
+        "vertical 1280x720 orientation with tight framing on clinician's hands, device, and patient's face",
+        "two keyframes capture a static close camera angle"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and device fill upper frame, patient reclined below",
+      "evidence": [
+        "clinician's torso, arms, and device occupy upper-to-mid frame",
+        "patient's face and draped body occupy lower frame against plain background"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT but transcript_state: NO_SPEECH",
+        "scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Embroidered text visible on clinician's scrub top",
+      "evidence": [
+        "ocr_observations: 4 recorded for this asset",
+        "embroidered lettering \"DR LEW KAR MIN\" visible on the teal scrub top in keyframes"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended use of clip not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN",
+        "no supplied text indicates marketing purpose or context for this footage"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical close-up of device application to patient's face",
+      "evidence": [
+        "consistent depiction across keyframes of a clinician applying a handheld device to a reclined patient's forehead area",
+        "protective eyewear and red beam indicate a device-based facial treatment scene"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a human-observable layer",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "Two vertical keyframes show a masked, gloved clinician in a teal scrub top holding a handheld device connected to an articulated arm near the forehead/brow area of a reclined patient wearing metal protective eyewear, with a small red beam visible on the skin. The patient lies on a treatment bed with a green towel and blue drape around the neck and shoulders, against a plain white wall background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "900f8651-f530-49a3-8e7b-cdb0b327f5e3",
+  "image_count": 1
+}

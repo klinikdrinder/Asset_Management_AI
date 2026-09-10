@@ -1,0 +1,170 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_1230.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_1230.MP4, duration 11.03s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical setting clip",
+      "evidence": [
+        "One canonical scene with two keyframes showing a consistent indoor clinical setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, ~11 seconds",
+      "evidence": [
+        "canonical_scenes: 1, scene_index 0 spanning the 11.03s duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member and reclined male patient/client",
+      "evidence": [
+        "Person in navy scrubs, surgical mask, and badge stands beside a reclined man with eyes closed"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked staff in scrubs; man with dark hair, closed eyes",
+      "evidence": [
+        "Staff member has dark hair, surgical mask, navy scrub top with embroidered logo",
+        "Reclined man has short dark hair, closed eyes, stubble, wearing a striped shirt"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Head, face, and scalp visible",
+      "evidence": [
+        "Man's face, closed eyes, and scalp/hairline are visible in frame with a gloved hand near the scalp area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed",
+      "evidence": [
+        "Presence of gloved hand near scalp and a red-lit device does not by itself name any procedure; no text confirms a specific treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff attends to reclined man near device",
+      "evidence": [
+        "Staff member's gloved hand rests near the man's head/shoulder while he reclines under the overhead device"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff-to-client caregiving interaction",
+      "evidence": [
+        "Staff member positioned directly beside and attending to the reclined man"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp/hairline visible under equipment",
+      "evidence": [
+        "Man's hairline and scalp area visible beneath the positioned red-lit device"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Indoor room, setting unspecified",
+      "evidence": [
+        "Blinds/window covering and ceiling visible but no signage confirming specific facility type"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld vertical video, close framing",
+      "evidence": [
+        "Vertical 1280x720 orientation with close-up framing on subjects' upper bodies and heads"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two figures and device framed together",
+      "evidence": [
+        "Staff member on left, reclined man center-right, device positioned above his head in background"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT but transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on mask",
+      "evidence": [
+        "ocr_observations: 1; partial text 'M-CURE' visible on staff member's surgical mask"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not established",
+      "evidence": [
+        "No supplied text indicates this clip's use in marketing or promotional context"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Client receiving clinical attention while reclined",
+      "evidence": [
+        "Consistent depiction across keyframes of a reclined man attended to by clinical staff near a device"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked clinical staff member in dark navy scrubs stands beside a man reclined in a chair with his head resting on a blue paper-covered headrest, her gloved hand near his scalp. A dark, red-lit device is positioned above the man's head in the background of the frame.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "ef44c4b1-048b-41f7-b675-a1a0ae29331b",
+  "image_count": 1
+}

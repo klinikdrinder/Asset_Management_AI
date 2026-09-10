@@ -1,0 +1,186 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1356.MP4, 10.4s, 1280x720",
+      "evidence": [
+        "filename IMG_1356.MP4",
+        "duration_seconds 10.433333, width 1280, height 720, fps 30/1, codec h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall asset purpose not determinable",
+      "evidence": [
+        "scene_results marks GLOBAL_ASSET_UNDERSTANDING as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "scene_index 0 spans the full ~10.4s clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Supine patient, gloved clinician, assisting staff member",
+      "evidence": [
+        "keyframes show a patient lying supine",
+        "a gloved hand holding a device near the patient's face",
+        "a second person in teal scrubs leaning over the patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Cap/net, corneal eye shields, gloves, teal scrubs",
+      "evidence": [
+        "patient wears a surgical hair cap/net",
+        "metallic corneal eye shields cover the patient's eyes",
+        "clinician wears white gloves",
+        "second person wears teal scrub top"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial area including brow, eyes, and forehead visible",
+      "evidence": [
+        "patient's face, brow, and closed/shielded eyes are visible in frame",
+        "skin of the forehead near the hairline is exposed"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied evidence",
+      "evidence": [
+        "no procedure name appears in the supplied text",
+        "a handheld device emitting light and gloved contact alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device with light applied near patient's brow",
+      "evidence": [
+        "a handheld device emitting a green-yellow light is held near the patient's brow",
+        "second person leans in closely over the patient"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and assistant both attending to one patient",
+      "evidence": [
+        "gloved clinician positioned at the patient's head applying the device",
+        "second person in teal scrubs positioned close over the same patient"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Eye protection, cap, gloves, illuminated instrument tip",
+      "evidence": [
+        "metallic corneal eye shields on the patient",
+        "surgical cap/net covering hair",
+        "gloved hand operating a device with a glowing green-yellow tip near the skin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not confirmed beyond a treatment room impression",
+      "evidence": [
+        "scene_results marks ENVIRONMENT as UNKNOWN despite visible equipment in the background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld vertical video",
+      "evidence": [
+        "tight close-up framing on the patient's face",
+        "vertical (portrait) orientation of the frame"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face centered, clinician's hand in foreground",
+      "evidence": [
+        "patient's face and eye area occupy the center of frame",
+        "gloved hand and device dominate the lower-left foreground"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio track present but no speech detected",
+      "evidence": [
+        "audio_stream_present: true",
+        "transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated: true",
+        "ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene_results marks MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative meaning not determinable",
+      "evidence": [
+        "scene_results marks SEMANTIC_NARRATIVE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A patient lies supine wearing a blue surgical cap/net with metallic corneal eye shields covering both eyes, while a gloved clinician holds a handheld device emitting a green-yellow light near the patient's brow. A second person wearing teal scrubs leans in closely over the patient in what appears to be a clinical treatment setting with equipment visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "1522cff9-860e-42b5-9dab-c04f3d5df430",
+  "image_count": 1
+}

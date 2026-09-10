@@ -1,0 +1,180 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video asset, IMG_3428.MP4",
+      "evidence": [
+        "filename IMG_3428.MP4, duration 16.87s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical video of neck/chest area with gloved hands",
+      "evidence": [
+        "Two keyframes show gloved hands and marked skin over a single continuous scene"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene, two sampled keyframes showing progression",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "hands positioned near skin in frame 1, hands moved with material placed in frame 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined patient and gloved provider",
+      "evidence": [
+        "visible chin/mouth and torso of a reclined person",
+        "gloved hands of a second person (provider) manipulating an instrument near the patient's skin"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's bare neck/chest skin with antiseptic staining visible",
+      "evidence": [
+        "visible skin of neck and upper chest with orange-brown streaks",
+        "small dark spots/marks on skin"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Neck and upper chest region",
+      "evidence": [
+        "chin, neck, and upper chest/clavicle area visible in both frames"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied evidence",
+      "evidence": [
+        "gloves, instrument, and skin contact are visible but no named procedure is present in the supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands holding instrument near skin, then placing material on skin",
+      "evidence": [
+        "frame 1: gloved hands hold a capped syringe-like instrument near the neck skin",
+        "frame 2: hands moved away, blue patterned tape/gauze placed over part of the neck/chest"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider hands in direct contact with patient's skin",
+      "evidence": [
+        "gloved hands positioned directly on and near the patient's neck/chest skin in both frames"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Orange-brown antiseptic staining and gloved clinical handling",
+      "evidence": [
+        "streaks of orange-brown solution consistent with antiseptic prep on neck and chest",
+        "white nitrile/latex gloves worn by provider",
+        "blue patterned material applied to skin in second frame"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting with dark headrest and blue towel",
+      "evidence": [
+        "dark reclined headrest/chair visible behind patient",
+        "blue towel draped near patient's chest"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing of neck/chest area",
+      "evidence": [
+        "tight close-up composition focused on neck and chest with hands filling much of frame"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Composition details not determinable beyond close framing",
+      "evidence": [
+        "per-scene layer result for COMPOSITION reported as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state NO_MEANINGFUL_SPEECH",
+        "scene layer SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0",
+        "scene layer OCR_VISIBLE_TEXT marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing content indicators",
+      "evidence": [
+        "scene layer MARKETING_CONTENT_USAGE marked FALSE, no branding or promotional elements visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical handling of prepped neck/chest skin",
+      "evidence": [
+        "consistent narrative across both keyframes of gloved hands working on antiseptic-marked skin"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual synthesis",
+      "evidence": [
+        "scene layer SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "The two keyframes show a reclined patient's neck and upper chest, marked with streaks of orange-brown antiseptic solution, while a gloved provider's hands hold a capped syringe-like instrument near the skin. In the second frame the provider's hands have moved and a piece of blue patterned material has been placed over part of the neck/chest area.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "325dc47b-e119-4903-9f40-5bfef49e19bb",
+  "image_count": 1
+}

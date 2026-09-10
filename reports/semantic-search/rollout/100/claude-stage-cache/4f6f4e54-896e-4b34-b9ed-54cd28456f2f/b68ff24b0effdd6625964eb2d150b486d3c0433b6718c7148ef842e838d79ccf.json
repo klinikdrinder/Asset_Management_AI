@@ -1,0 +1,187 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video file, 2 sampled keyframes",
+      "evidence": [
+        "filename IMG_2347.MP4",
+        "duration_seconds 10.966667, codec h264, decoded_locally true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene close-up clinical facial video",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "scene-level GLOBAL_ASSET_UNDERSTANDING: OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across ~11 seconds",
+      "evidence": [
+        "canonical_scenes: 1",
+        "scene-level TEMPORAL_SCENE_STRUCTURE: OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Role of pictured person not determinable",
+      "evidence": [
+        "scene-level PEOPLE_ROLES: UNKNOWN",
+        "no identifying role information visible or in supplied text"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person reclining, dark eyewear, visible hair at neckline",
+      "evidence": [
+        "dark protective eyewear visible in first image",
+        "hair visible near ear and neck in images"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Lower face, jaw, nose, mouth, ear, and neck visible",
+      "evidence": [
+        "close-up framing shows nose, mouth, chin, jawline, ear, and neck"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable from evidence",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE: UNKNOWN",
+        "no supplied text names a specific clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific action being performed not determinable",
+      "evidence": [
+        "scene-level ACTIONS_EVENTS: UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No interpersonal relationships depicted",
+      "evidence": [
+        "scene-level RELATIONSHIPS: NOT_APPLICABLE",
+        "only one person visible in frame"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial redness, pinpoint bleeding spots, demarcation line",
+      "evidence": [
+        "visible erythema and pinpoint bleeding on cheek",
+        "sharp demarcation line between flushed and pale skin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting with blue drape/fabric",
+      "evidence": [
+        "blue fabric visible in background, consistent with a clinical drape",
+        "neutral tan wall visible in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme close-up, handheld-style framing",
+      "evidence": [
+        "tight close-up crop on lower face and neck",
+        "vertical 720x1280-oriented framing typical of mobile capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face fills frame diagonally, head tilted back",
+      "evidence": [
+        "face oriented diagonally across frame with chin/neck lower right",
+        "tight cropping leaves little background visible"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH",
+        "scene-level SPEECH_TRANSCRIPT_AUDIO: FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0",
+        "scene-level OCR_VISIBLE_TEXT: FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended marketing use not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE: UNKNOWN",
+        "no captions, branding, or usage context supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up documentation of facial skin condition/response",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE: OBSERVED",
+        "images depict localized skin redness and demarcation consistent with a documented skin reaction"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indexable close-up facial skin imagery",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS: OBSERVED",
+        "distinct visual features (redness, demarcation, eyewear) available for embedding"
+      ]
+    }
+  ],
+  "narrative": "Two close-up images show the lower face, jaw, and neck of a person reclining, with visible facial redness, pinpoint bleeding spots, and a sharply demarcated line separating flushed skin from unaffected pale skin. The person wears dark protective eyewear in one image, resting against a blue fabric surface.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "4f6f4e54-896e-4b34-b9ed-54cd28456f2f",
+  "image_count": 1
+}

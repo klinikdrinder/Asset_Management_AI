@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0580.MP4, 7.5s clip",
+      "evidence": [
+        "technical metadata shows filename IMG_0580.MP4, duration 7.566667s, resolution 1280x720"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical treatment clip with device activation",
+      "evidence": [
+        "single scene showing clinician operating a handheld device near patient's face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, two keyframes",
+      "evidence": [
+        "scene_results indicates 1 canonical scene with 2 keyframes showing progression of device use"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and patient present",
+      "evidence": [
+        "person in teal scrubs with mask, gloves, and safety glasses performing an action on a reclined individual"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs; patient with eye shields and purple towel",
+      "evidence": [
+        "clinician wears teal scrub top labeled 'DR LEIVAR M...', dark hair, mask, tinted safety glasses, gloves",
+        "patient has blue hairnet, metal eye protectors, purple towel around neck"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and brow area visible",
+      "evidence": [
+        "patient's forehead, brow, nose, and cheek are visible and being approached by the device tip"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from visuals alone",
+      "evidence": [
+        "device with fiber-optic cable and light emission near face does not confirm a specific named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positions handpiece near patient's face",
+      "evidence": [
+        "first keyframe shows handpiece held near brow, second keyframe shows visible light emission from tip"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Clinician-patient relationship inferred but unconfirmed",
+      "evidence": [
+        "scene_results marks RELATIONSHIPS as UNKNOWN despite visible clinician-patient interaction"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Light-based device tip near patient's skin",
+      "evidence": [
+        "orange/red fiber-optic cable connected to metal handpiece emitting visible light near patient's brow"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting appears clinical but not fully confirmed",
+      "evidence": [
+        "scene_results lists ENVIRONMENT as UNKNOWN despite visible medical tray and equipment in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing of procedure",
+      "evidence": [
+        "tight vertical framing capturing clinician's hands and patient's face in detail"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered with clinician above, tools framing image",
+      "evidence": [
+        "patient's face fills lower half, clinician's gloved hands and instrument occupy upper portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_stream_present being true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on clinician's scrub top",
+      "evidence": [
+        "ocr_observations: 4",
+        "partial text 'DR LEIVAR M...' visible on scrub top in image"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene_results marks MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context unclear",
+      "evidence": [
+        "scene_results marks SEMANTIC_NARRATIVE as UNKNOWN due to lack of contextual dialogue or captions"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Embedding-level semantic tagging not evaluated visually",
+      "evidence": [
+        "scene_results marks SEARCH_EMBEDDINGS as UNKNOWN"
+      ]
+    }
+  ],
+  "narrative": "A clinician in teal scrubs, mask, safety glasses, and gloves holds a fiber-optic handpiece with an orange cable near the face of a reclined patient who wears metal eye shields, a blue hair cover, and a purple towel around the neck. The setting appears to be a clinical treatment room with medical equipment visible in the background.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "15056e1f-b6fa-4250-8ad7-8ff1f1e4ea36",
+  "image_count": 1
+}

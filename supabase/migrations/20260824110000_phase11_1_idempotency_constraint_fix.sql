@@ -1,0 +1,10 @@
+begin;
+drop index if exists public.semantic_evidence_idempotency_idx;
+create unique index semantic_evidence_idempotency_idx on public.semantic_assertion_evidence(idempotency_key);
+drop index if exists public.semantic_narratives_source_key_idx;
+create unique index semantic_narratives_source_key_idx on public.semantic_narratives(source_narrative_key);
+drop index if exists public.narrative_claims_source_id_idx;
+create unique index narrative_claims_source_id_idx on public.narrative_claims(source_claim_id);
+drop index if exists public.transcript_chunks_source_chunk_idx;
+create unique index transcript_chunks_source_chunk_idx on public.asset_transcript_chunks(asset_id,source_chunk_id);
+commit;

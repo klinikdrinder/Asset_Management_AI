@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_4601.MP4",
+      "evidence": [
+        "filename IMG_4601.MP4, duration 16.73s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical close-up clip of a facial treatment moment",
+      "evidence": [
+        "single scene, two keyframes showing a clinician working on a reclined patient's face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, ~16.7 seconds",
+      "evidence": [
+        "canonical_scenes: 1, duration_seconds: 16.733333"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "masked, gloved person in dark scrubs performing an action; a second person reclined and draped as the recipient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in navy scrubs, glasses, surgical mask, gloves; patient with black head covering under blue drape",
+      "evidence": [
+        "image shows dark hair tied back, glasses, blue surgical mask labeled 'M-Curv', navy scrub top with clinic logo, white gloves",
+        "patient wearing black head wrap, reclined on striped/knit pillow under blue drape"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forehead and brow area visible",
+      "evidence": [
+        "white tool positioned against the patient's forehead/brow near closed eyes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied text",
+      "evidence": [
+        "no named clinical procedure appears in the supplied text; gloves, spatula tool, and facial contact alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applies/wipes with a spatula tool on patient's forehead while holding a dish of liquid",
+      "evidence": [
+        "image shows white flat tool touching forehead area and clinician's other hand holding a small glass dish of clear liquid"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned above and attending to the reclined patient",
+      "evidence": [
+        "clinician leaning over patient's head performing a hands-on action"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Sterile tray, gloves, mask, dish of clear liquid visible",
+      "evidence": [
+        "metal instrument tray at left edge, gloved hands, surgical mask, clear liquid in glass dish"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting not clearly identifiable",
+      "evidence": [
+        "scene layer result for ENVIRONMENT is UNKNOWN despite plain wall and treatment chair visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static close-range vertical framing on patient's face and clinician's hands",
+      "evidence": [
+        "vertical 1280x720 frame tightly cropped around patient's head and clinician's upper body"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered lower frame, clinician upper frame leaning in",
+      "evidence": [
+        "patient reclined across lower two-thirds of frame, clinician's head and hands occupy upper portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on mask and scrub top",
+      "evidence": [
+        "ocr_observations: 4",
+        "mask printed with 'M-Curv', scrub top embroidered with 'InnoSurgicalCare Klinik Pakar Skurgeri' style clinic branding"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable from evidence",
+      "evidence": [
+        "no supplied text indicates intended use context"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose not determinable",
+      "evidence": [
+        "scene layer result for SEMANTIC_NARRATIVE is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked, gloved clinician in dark scrubs holds a small clear dish of liquid while running a white spatula-like tool across the forehead/brow area of a reclined patient. The patient lies under a blue drape with a black head covering, resting on a knit-covered pillow in a clinical treatment room with a metal instrument tray visible.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "45883da3-437c-45db-83a0-430fbf74f822",
+  "image_count": 1
+}

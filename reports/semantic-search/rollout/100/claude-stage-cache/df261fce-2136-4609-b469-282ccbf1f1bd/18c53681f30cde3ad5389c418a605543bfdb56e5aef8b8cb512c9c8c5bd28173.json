@@ -1,0 +1,182 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3486.MP4, 20.4s, 1280x720",
+      "evidence": [
+        "asset technical metadata: duration_seconds 20.433333, width 1280, height 720, fps 30/1, codec h264, filename IMG_3486.MP4"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical setting clip with one static scene",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "single scene narrative shows consistent subject and device across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, minimal change between keyframes",
+      "evidence": [
+        "scene_results shows one scene_index 0 covering the full 20.4s duration",
+        "narrative notes two near-identical keyframes"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One staff member in scrubs, one person on table",
+      "evidence": [
+        "person in dark scrub top with gloved hand holding device",
+        "second individual present, lower body covered in dark fabric and blue drape"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member wears dark v-neck scrub top with embroidered logo, white glove",
+      "evidence": [
+        "dark scrub top with \"INDER MEDISIN\" logo embroidery visible on chest",
+        "white/beige latex glove on hand holding device"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Lower leg/thigh area covered by fabric",
+      "evidence": [
+        "image shows a leg or thigh region covered by dark ribbed fabric with device held close to it"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable from evidence",
+      "evidence": [
+        "supplied text explicitly marks TREATMENT_PROCEDURE as UNKNOWN",
+        "gloves, device, and contact with covered body part do not by themselves name a procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member positions handheld device near covered leg",
+      "evidence": [
+        "gloved hand holds gray device close to fabric-covered thigh/leg in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member positioned over patient, device directed at patient's body",
+      "evidence": [
+        "image shows staff member's torso and arm reaching toward the reclined patient's leg with the device"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clinical findings discernible",
+      "evidence": [
+        "supplied per-scene data marks CLINICAL_VISUAL_OBSERVATIONS as UNKNOWN",
+        "target area is covered by fabric, obscuring any visual clinical detail"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "supplied per-scene data marks ENVIRONMENT as UNKNOWN",
+        "plain light-colored wall visible in background, insufficient to confirm specific setting"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static close-up handheld-style shot, vertical framing",
+      "evidence": [
+        "portrait-oriented frame (1280x720 source displayed vertically) with camera close to subject",
+        "two near-identical keyframes indicate a static or minimally moving shot"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject centered, device and hand dominate foreground",
+      "evidence": [
+        "device and gloved hand occupy the central/left portion of frame",
+        "staff member's torso fills upper background, patient's leg and blue drape fill lower foreground"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH",
+        "per-scene layer SPEECH_TRANSCRIPT_AUDIO marked FALSE despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Logo text \"INDER MEDISIN\" visible on scrub top",
+      "evidence": [
+        "embroidered text reading \"INDER MEDISIN\" visible on the staff member's scrub top pocket area",
+        "ocr_evaluated true"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "supplied per-scene data marks MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical staff member using handheld device near patient's leg",
+      "evidence": [
+        "consistent visual narrative across both keyframes of a gloved staff member holding a device near a covered patient limb in what appears to be a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this medium",
+      "evidence": [
+        "supplied per-scene data marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person wearing dark scrubs with an \"INDER MEDISIN\" logo holds a light gray handheld device in a gloved hand near a patient's leg area covered in dark fabric. A blue drape is visible in the foreground across both keyframes of this near-static shot.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "df261fce-2136-4609-b469-282ccbf1f1bd",
+  "image_count": 1
+}

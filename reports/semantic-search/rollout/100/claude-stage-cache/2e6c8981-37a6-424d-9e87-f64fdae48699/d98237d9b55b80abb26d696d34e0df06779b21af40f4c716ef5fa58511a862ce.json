@@ -1,0 +1,184 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video asset, IMG_9746.MP4",
+      "evidence": [
+        "filename IMG_9746.MP4",
+        "duration_seconds 11.93, 1280x720, h264 codec, audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall asset purpose not established",
+      "evidence": [
+        "only a single scene is provided with no broader context text",
+        "scene-level GLOBAL_ASSET_UNDERSTANDING was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous ~12s scene",
+      "evidence": [
+        "canonical_scenes: 1",
+        "canonical_keyframes: 2",
+        "duration_seconds: 11.933333"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One masked/gloved attendant, one reclined patient",
+      "evidence": [
+        "person in blue scrubs, mask, and gloves leaning over the other individual",
+        "second person reclined with head on towel"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scrubs, mask, gloves; dark hair on both figures",
+      "evidence": [
+        "blue/purple scrub top, surgical mask, white gloves visible on standing figure",
+        "dark hair visible on reclined figure's head on towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forehead and hairline area visible",
+      "evidence": [
+        "instrument held near patient's forehead/hairline in image"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "gloved hands and an instrument near the hairline are visible but no procedure name appears in the supplied text or metadata",
+        "scene-level TREATMENT_PROCEDURE was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instrument held near patient's forehead",
+      "evidence": [
+        "standing figure holds a thin stick-like instrument close to the reclined patient's forehead/hairline"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Attendant positioned directly over patient",
+      "evidence": [
+        "close physical proximity and hands-on positioning between the two figures in the frame"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, mask, and draping visible",
+      "evidence": [
+        "surgical mask and latex-style gloves worn by standing figure",
+        "blue drape over patient's shoulders and towel beneath head"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting not conclusively classified",
+      "evidence": [
+        "scene-level ENVIRONMENT was UNKNOWN despite a glass cabinet, mirror, and yellow-lit shelving being visible in the background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close medium shot, indoor ambient lighting",
+      "evidence": [
+        "tight framing centered on the two figures",
+        "warm/yellow accent lighting visible on background shelving"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient in lower frame, attendant leaning from upper right",
+      "evidence": [
+        "reclined patient occupies the lower portion of the frame",
+        "standing figure leans in from the upper right with layered background behind"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Audio track with meaningful speech",
+      "evidence": [
+        "audio_stream_present: true",
+        "transcript_state: MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Text presence unresolved",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 3, but scene-level OCR_VISIBLE_TEXT was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context supplied",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE was UNKNOWN",
+        "no campaign or usage information present in supplied text"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative meaning not established",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No embedding data supplied",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS was UNKNOWN",
+        "no embedding or index metadata included in the evidence"
+      ]
+    }
+  ],
+  "narrative": "A gloved, masked clinician in blue scrubs leans over a patient reclined in a treatment chair, holding a thin stick-like instrument near the patient's forehead and hairline. The patient's head rests on a blue towel with a blue drape over the shoulders, in a room with a glass cabinet and mirrored surface visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "2e6c8981-37a6-424d-9e87-f64fdae48699",
+  "image_count": 1
+}

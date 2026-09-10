@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0492.MP4, 7.8s clip",
+      "evidence": [
+        "technical metadata shows filename IMG_0492.MP4, duration 7.833s, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical interaction clip",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, scene narrative describes a medical/spa setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across the clip",
+      "evidence": [
+        "scene_results lists a single scene_index 0 spanning the video"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient reclining, worker in scrubs attending",
+      "evidence": [
+        "one person lies reclined with eyes closed, another wears teal scrubs, mask, and cap while leaning over them"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Worker in teal scrubs and mask; patient in blue cap",
+      "evidence": [
+        "image shows teal scrub top, surgical mask, hair bun with scrunchie on worker; patient wears blue surgical cap and dark towel draped near neck"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, ear, and jaw visible",
+      "evidence": [
+        "patient's closed eyes, face, ear, and jaw area are visible with worker's hand near ear"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not identifiable",
+      "evidence": [
+        "scene_results marks TREATMENT_PROCEDURE as UNKNOWN; only gloved hand and physical contact near ear are visible, no named procedure in text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Worker leaning over, hand near patient's ear/jaw",
+      "evidence": [
+        "image shows worker's gloved hand positioned near patient's ear while leaning over the reclined patient"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Caregiver-patient interaction",
+      "evidence": [
+        "worker in scrubs is positioned directly over and attending to the reclined person, indicating a caregiver-patient relationship"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, mask, surgical cap, towel draping visible",
+      "evidence": [
+        "image shows gloved hand, surgical mask on worker, blue cap on patient, and towel draped over patient's shoulder/neck area"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical or medical spa room with sink",
+      "evidence": [
+        "background shows plain white walls, a small counter with a sink and bottle visible on the left"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld vertical framing, close-up angle",
+      "evidence": [
+        "image is vertically oriented and closely framed on the two subjects, suggesting a handheld phone capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two figures dominate frame, patient lower, worker upper",
+      "evidence": [
+        "patient occupies lower portion of frame reclined, worker's torso and head occupy upper portion leaning over"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No visible text in frame",
+      "evidence": [
+        "ocr_observations: 0, ocr_evaluated true"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators identifiable",
+      "evidence": [
+        "scene_results marks MARKETING_CONTENT_USAGE as UNKNOWN; no branding, text, or promotional cues visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall purpose of clip unclear",
+      "evidence": [
+        "scene_results marks SEMANTIC_NARRATIVE as UNKNOWN; specific intent or procedure cannot be determined from visuals alone"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable at asset level",
+      "evidence": [
+        "scene_results marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A patient reclines with eyes closed on a treatment chair, wearing a blue surgical cap, while a healthcare worker in teal scrubs, a hairnet-style bun, and a face mask leans over to work near the patient's ear and jaw area. The setting is a simple clinical or medical spa room with white walls and a small sink visible in the background.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "8b90a470-b98e-4e0c-952c-915fced5efe1",
+  "image_count": 1
+}

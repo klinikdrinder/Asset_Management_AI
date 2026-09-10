@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video asset, single scene",
+      "evidence": [
+        "filename IMG_7175.MP4, duration 12.57s, 1280x720 h264, decoded_locally true, canonical_scenes 1"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical hand-treatment clip",
+      "evidence": [
+        "single scene shows a handheld device applied to a patient's forearm in a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, 2 keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, scene_index 0 spans the clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician, patient, and assisting hand",
+      "evidence": [
+        "gloved clinician operating device; patient in gown on exam table; a second person's hand holding gauze near the elbow"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark-haired masked clinician, patient in green gown",
+      "evidence": [
+        "clinician has dark hair, surgical mask, teal scrubs, white Apple Watch; patient wears green checkered gown"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forearm and elbow visible",
+      "evidence": [
+        "tattooed forearm and elbow area shown with device applied to skin"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "scene_results TREATMENT_PROCEDURE marked UNKNOWN; only a handheld device and gloved contact are visible with no named procedure in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device applied to marked skin area",
+      "evidence": [
+        "clinician holds device tip against a marked/inked spot on the forearm while stabilizing the arm with her other hand"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician working directly on patient",
+      "evidence": [
+        "clinician's hands positioned directly on and above patient's arm; second person's hand assisting with gauze near patient's elbow"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Marked skin, tattoo, gauze present",
+      "evidence": [
+        "purple/violet marking or ring-shaped device contact point on skin, visible tattoo on forearm, folded gauze held by second person"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical exam room with treatment table",
+      "evidence": [
+        "exam table with white padded surface, blue disposable drape, plain wall background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld vertical framing",
+      "evidence": [
+        "tight close-up vertical (portrait) framing centered on the treated arm and device"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Arm and device centered in frame",
+      "evidence": [
+        "patient's arm and device occupy the central lower two-thirds of frame, clinician's hands and head in upper-left"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, but transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0; scene OCR_VISIBLE_TEXT FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene_results marks MARKETING_CONTENT_USAGE as UNKNOWN with no supplied context indicating promotional use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical device application on forearm",
+      "evidence": [
+        "scene narrative describes clinician applying a handheld device to a tattooed forearm while stabilizing the patient's arm"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/textual review",
+      "evidence": [
+        "scene_results lists SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A gloved clinician holds a silver handheld device with a small ring-tipped applicator against a patient's tattooed forearm, steadying the limb with her other gloved hand while a second person holds gauze near the elbow. The patient, wearing a green checkered gown, lies on an exam table draped in blue and white linens.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "7c8deaf5-2cb9-4c85-80d1-7a9e2d3e8a37",
+  "image_count": 1
+}

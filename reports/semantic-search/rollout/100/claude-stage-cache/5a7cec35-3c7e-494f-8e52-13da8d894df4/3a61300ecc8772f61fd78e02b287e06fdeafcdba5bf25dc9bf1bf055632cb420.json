@@ -1,0 +1,176 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 file IMG_3390.MP4, 1280x720, 11.7s",
+      "evidence": [
+        "filename IMG_3390.MP4",
+        "duration_seconds 11.7, width 1280, height 720, fps 30/1, codec h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short single-scene clip of a clinical interaction",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "keyframes show a gloved man holding an instrument near a reclined woman's face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous ~11.7 second scene",
+      "evidence": [
+        "scene_results contains one scene_index (0) spanning the full 11.7-second duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked/gloved provider attending to a reclined woman",
+      "evidence": [
+        "man wears scrub top, gloves, and mask and holds a syringe-like instrument near the woman's face",
+        "woman is reclined with eyes closed, head resting on a covered surface"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Curly-haired masked man; dark-haired woman with headband",
+      "evidence": [
+        "man has curly dark hair, glasses, black face mask, black scrub top",
+        "woman has dark hair under a black headband, eyes closed, blue towel over shoulders"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman's face and man's gloved hand visible",
+      "evidence": [
+        "woman's forehead, eyebrow, nose, and eye area are visible in frame",
+        "man's gloved fingers holding a thin instrument are visible"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed in supplied text",
+      "evidence": [
+        "gloves, a syringe-like instrument, and physical proximity to the face are visible but no procedure name is present in the supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Man holds instrument near reclined woman's face",
+      "evidence": [
+        "man's gloved hand raises a syringe-like instrument close to the woman's face while she lies still with eyes closed"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider positioned above/behind reclined woman",
+      "evidence": [
+        "man is seated or standing behind/above the reclined woman, oriented toward her face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, instrument, drape, and towel visible",
+      "evidence": [
+        "white disposable gloves on the man's hands",
+        "syringe-like instrument held near the face",
+        "disposable drape and blue towel covering the woman's shoulders/chest",
+        "black headband on the woman"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Indoor room, specific setting not confirmed",
+      "evidence": []
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical, close-medium static framing",
+      "evidence": [
+        "1280x720 video with vertical-style close/medium framing of the two subjects",
+        "static camera angle across the two sampled keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hand with instrument in foreground, faces centered",
+      "evidence": [
+        "man's raised gloved hand and instrument occupy the upper-left foreground",
+        "woman's reclined face and shoulders occupy the lower-right of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no meaningful speech",
+      "evidence": [
+        "audio_stream_present: true, audio_state: AUDIO_PRESENT",
+        "transcript_state: NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Embroidered name text on scrub top",
+      "evidence": [
+        "text reading 'DR ASHRUL BCHM...' embroidered on the man's scrub top pocket"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing usage context supplied",
+      "evidence": []
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts a clinical-style close interaction between provider and client",
+      "evidence": [
+        "gloved, masked individual attends closely to a reclined person's face with an instrument in an indoor room with clinical-style supplies (gloves, drape, towel)"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual/content layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A short vertical clinical video shows a man in a black scrub top, glasses, and a face mask holding a syringe-like instrument near the face of a woman who lies reclined with her eyes closed, wearing a black headband and covered by a blue towel and disposable drape. The scrub top bears an embroidered name reading 'DR ASHRUL BCHM...', and the background shows white cabinetry and a countertop in an indoor room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "5a7cec35-3c7e-494f-8e52-13da8d894df4",
+  "image_count": 1
+}

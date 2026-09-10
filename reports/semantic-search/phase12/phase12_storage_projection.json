@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-08-25T01:47:14.687Z",
+  "current": {
+    "rows": 106,
+    "vector_bytes": 196520,
+    "row_bytes": 277785,
+    "mib": 0.265
+  },
+  "estimates": [
+    {
+      "assets": 30,
+      "estimated_rows": 318,
+      "estimated_bytes": 833355,
+      "estimated_mib": 0.795
+    },
+    {
+      "assets": 100,
+      "estimated_rows": 1060,
+      "estimated_bytes": 2777850,
+      "estimated_mib": 2.649
+    },
+    {
+      "assets": 881,
+      "estimated_rows": 9339,
+      "estimated_bytes": 24472859,
+      "estimated_mib": 23.339
+    }
+  ],
+  "basis": "Linear extrapolation from current 10-pilot representation density; excludes index overhead.",
+  "index_strategy": "Exact cosine search for pilot; scalable design filters by provider/model/model_version/dimensions/representation_type before distance. No mixed-space global ANN index.",
+  "indexes": [
+    {
+      "indexname": "semantic_embeddings_active_unit_version_idx",
+      "indexdef": "CREATE UNIQUE INDEX semantic_embeddings_active_unit_version_idx ON public.semantic_embeddings USING btree (asset_id, COALESCE(scene_id, '00000000-0000-0000-0000-000000000000'::uuid), COALESCE(event_id, '00000000-0000-0000-0000-000000000000'::uuid), COALESCE(keyframe_id, '00000000-0000-0000-0000-000000000000'::uuid), COALESCE(transcript_chunk_id, ('-1'::integer)::bigint), COALESCE(ocr_observation_id, '00000000-0000-0000-0000-000000000000'::uuid), representation_type, embedding_version, model_version) WHERE (active AND (representation_type IS NOT NULL))"
+    },
+    {
+      "indexname": "semantic_embeddings_phase12_asset_idx",
+      "indexdef": "CREATE INDEX semantic_embeddings_phase12_asset_idx ON public.semantic_embeddings USING btree (asset_id, representation_type, active)"
+    },
+    {
+      "indexname": "semantic_embeddings_phase12_filter_idx",
+      "indexdef": "CREATE INDEX semantic_embeddings_phase12_filter_idx ON public.semantic_embeddings USING btree (representation_type, provider, model, model_version, embedding_version, dimensions, active, stale)"
+    },
+    {
+      "indexname": "semantic_embeddings_pkey",
+      "indexdef": "CREATE UNIQUE INDEX semantic_embeddings_pkey ON public.semantic_embeddings USING btree (id)"
+    },
+    {
+      "indexname": "semantic_embeddings_source_idx",
+      "indexdef": "CREATE INDEX semantic_embeddings_source_idx ON public.semantic_embeddings USING btree (asset_id, embedding_scope, stale)"
+    }
+  ]
+}

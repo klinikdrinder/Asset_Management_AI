@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1360.MP4, 9.4s clip",
+      "evidence": [
+        "Asset metadata: filename IMG_1360.MP4, duration 9.4s, h264 720p"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not fully determinable",
+      "evidence": [
+        "Scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene of facial treatment",
+      "evidence": [
+        "1 canonical scene, 2 keyframes spanning the clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles not explicitly confirmed",
+      "evidence": [
+        "Scene-level PEOPLE_ROLES marked UNKNOWN despite visible clinician and patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient with dark mask on face, clinician in teal scrubs",
+      "evidence": [
+        "Image shows patient's face covered in dark substance, metallic eye shields, clinician wearing teal scrubs, surgical mask, gloves, smartwatch"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, cheek, forehead region visible",
+      "evidence": [
+        "Patient's face, nose, mouth, chin visible under mask"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not named",
+      "evidence": [
+        "No named procedure in supplied text; device and mask alone do not confirm a specific treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds device near patient's cheek",
+      "evidence": [
+        "Image shows handheld device positioned close to patient's cheek with gloved hand stabilizing head"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Clinician-patient relationship not detailed",
+      "evidence": [
+        "Scene-level RELATIONSHIPS marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark mask coating patient's face",
+      "evidence": [
+        "Face covered in dark/black substance visible in image"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Clinical setting not fully specified",
+      "evidence": [
+        "Scene-level ENVIRONMENT marked UNKNOWN; background shows plain wall and treatment chair only"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Overhead angle looking down at patient's face",
+      "evidence": [
+        "Image shows top-down vertical framing capturing clinician above reclined patient"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered, clinician framing from above",
+      "evidence": [
+        "Patient's face centered in frame with clinician's torso and arms framing the top portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text 'DR LEW KAR MIN' on scrub top",
+      "evidence": [
+        "ocr_observations: 1; name visible on clinician's teal scrub top in image"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context unclear",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Embedding-level indexing not assessed",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked UNKNOWN"
+      ]
+    }
+  ],
+  "narrative": "A patient reclines with a dark topical mask covering the face and metallic protective eye shields in place, while a clinician in teal scrubs labeled 'DR LEW KAR MIN' leans over holding a handheld device near the cheek. The patient is draped with a green towel and blue linens while the clinician, wearing a surgical mask, gloves, and a smartwatch, performs a facial treatment.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "d1da3e87-ecf7-4fd6-9cb9-eb5ed5a39bb6",
+  "image_count": 1
+}

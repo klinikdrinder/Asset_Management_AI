@@ -1,0 +1,1 @@
+import assert from"node:assert/strict";import test from"node:test";import{interpretQuery}from"../db/query-interpreter";test("unknown and valid-word safety",async()=>{for(const q of["donor","delta scalp resonance","violet follicle prism"]){const p=await interpretQuery(q);assert.equal(p.semantic.positive_concepts.length,0);assert.ok(p.semantic.unresolved_concepts.length)}});

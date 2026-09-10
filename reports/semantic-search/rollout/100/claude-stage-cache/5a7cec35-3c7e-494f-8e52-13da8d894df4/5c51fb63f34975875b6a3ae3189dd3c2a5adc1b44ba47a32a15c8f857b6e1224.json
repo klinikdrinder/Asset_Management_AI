@@ -1,0 +1,179 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3390.MP4",
+      "evidence": [
+        "filename IMG_3390.MP4, asset_id 5a7cec35-3c7e-494f-8e52-13da8d894df4"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical-setting video clip, single scene",
+      "evidence": [
+        "scene_index 0 spanning 0.0-11.7 seconds of an 11.7 second video",
+        "two keyframes showing a consistent indoor clinical setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, ~11.7 seconds",
+      "evidence": [
+        "start_seconds 0.0, end_seconds 11.7, one scene_index (0)",
+        "both keyframes show nearly identical framing and pose, indicating a static continuous shot"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One masked/gloved staff member and one reclined individual",
+      "evidence": [
+        "a man wearing a dark scrub top labeled with a name tag, glasses, mask, and gloves holding a syringe",
+        "a woman reclined with head back, eyes closed, wearing a headband and towel"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Man in black scrubs and glasses; woman with black headband and blue towel",
+      "evidence": [
+        "man has curly dark hair, glasses, black face mask, black scrub top with embroidered text",
+        "woman has a black headband, closed eyes, blue towel draped over shoulders, disposable cape visible at neck"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman's face and forehead area visible near syringe",
+      "evidence": [
+        "woman's face, forehead, nose, and closed eyes are visible in both keyframes with the syringe positioned near her forehead/brow area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "no readable_text_detected or spoken_content naming any procedure",
+        "a gloved hand holding a syringe near the face alone does not establish a named clinical procedure per instructions"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Man holds syringe near reclined woman's face",
+      "evidence": [
+        "in keyframe 1, gloved hand holds syringe raised near face",
+        "in keyframe 2, a second gloved hand is also touching the woman's forehead/eyebrow area, syringe still held"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner-patient interaction",
+      "evidence": [
+        "one person in scrubs/gloves positioned above and facing a reclined second person, hand near her face, consistent with a caregiver-client interaction"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, syringe, and disposable coverings present",
+      "evidence": [
+        "white latex/nitrile gloves on the man's hands",
+        "syringe with visible needle held between fingers",
+        "disposable plastic cape/drape visible at the woman's neckline"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical/treatment room",
+      "evidence": [
+        "white cabinetry, a reclined treatment chair/bed, and a blue medical-style headrest cover visible in the background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static vertical handheld-style shot, close framing",
+      "evidence": [
+        "vertical 720x1280 orientation typical of mobile video",
+        "both keyframes show nearly identical camera angle and framing, suggesting a fixed or minimally moving camera"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two-subject close-up composition, man upper-left, woman lower-right",
+      "evidence": [
+        "man positioned in upper half of frame facing downward",
+        "woman positioned diagonally across the lower half of the frame, reclined"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text on scrub top, not fully legible in metadata",
+      "evidence": [
+        "embroidered text visible on the man's scrub top pocket in both keyframes, though readable_text_detected list is empty"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators identified",
+      "evidence": [
+        "no captions, logos, or promotional overlays are present in the supplied text or visible in the keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical staff attending to a reclined client",
+      "evidence": [
+        "gloved man holding a syringe near the face of a reclined woman in a clinical-looking room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual observation layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A man in dark scrubs, glasses, and a face mask holds a syringe near a reclined woman's face while wearing white gloves; the woman lies back with a headband, disposable drape, and blue towel around her shoulders.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "5a7cec35-3c7e-494f-8e52-13da8d894df4",
+  "image_count": 2
+}

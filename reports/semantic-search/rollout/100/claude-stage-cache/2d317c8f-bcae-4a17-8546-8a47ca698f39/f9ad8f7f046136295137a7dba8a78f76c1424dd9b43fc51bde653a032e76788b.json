@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_4124.MP4, 7.1s, 1280x720",
+      "evidence": [
+        "technical metadata: duration 7.1s, 1280x720, h264, filename IMG_4124.MP4"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical-setting clip of lab equipment and materials",
+      "evidence": [
+        "two keyframes show device labeled Room 4 with petri dish and tray"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene across 7.1 seconds",
+      "evidence": [
+        "canonical_scenes: 1, scene_index 0 spanning full duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Only a gloved hand visible, role unclear",
+      "evidence": [
+        "scene-level PEOPLE_ROLES marked UNKNOWN",
+        "gloved hand visible but no identifying context"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No identifiable person shown",
+      "evidence": [
+        "scene-level PERSON_APPEARANCE marked UNKNOWN",
+        "only a gloved hand visible in frame"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No anatomy depicted",
+      "evidence": [
+        "scene-level ANATOMY marked NOT_APPLICABLE"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN",
+        "gloved hand with tweezers manipulating material, no procedure named in text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Hand uses tweezers to manipulate material in tray",
+      "evidence": [
+        "second keyframe shows gloved hand with tweezers manipulating material in blue tray"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No interpersonal relationships depicted",
+      "evidence": [
+        "scene-level RELATIONSHIPS marked NOT_APPLICABLE"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Red liquid in petri dish, grayish material in blue tray",
+      "evidence": [
+        "petri dish filled with red substance",
+        "blue tray containing small grayish material"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical room setting with quilted cloth backdrop",
+      "evidence": [
+        "quilted white cloth background",
+        "device labeled Room 4",
+        "printed schedule sign visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld shot of device and tray",
+      "evidence": [
+        "two keyframes show close framing on device and tray with slight change in angle"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device centered with tray and dish on top, sign in background",
+      "evidence": [
+        "metal device with Room 4 label centered in frame",
+        "petri dish and blue tray placed atop device"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio stream",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT",
+        "transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible: 'Room 4' and schedule sign",
+      "evidence": [
+        "ocr_observations: 11",
+        "label reading ROOM 4 on device",
+        "sign text: HAIRWASH, LUNCH, HOME, NURSE INCHARGE with names"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No marketing content present",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked NOT_APPLICABLE"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts lab/clinical station with materials being handled",
+      "evidence": [
+        "scene narrative describing device, petri dish, tray, and hand action"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indexable visual content for search",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked OBSERVED"
+      ]
+    }
+  ],
+  "narrative": "The video shows a metal apparatus labeled 'Room 4' holding a red-filled petri dish and a blue tray containing small grayish material, positioned against a quilted white cloth backdrop with a printed schedule sign nearby. A gloved hand appears using tweezers to manipulate material in the blue tray, though no procedure is named and no speech is present.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "2d317c8f-bcae-4a17-8546-8a47ca698f39",
+  "image_count": 1
+}

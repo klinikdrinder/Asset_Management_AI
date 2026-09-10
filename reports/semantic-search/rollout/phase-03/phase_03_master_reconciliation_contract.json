@@ -1,0 +1,16 @@
+{
+  "version": "kdi_master_reconciliation_v1",
+  "states": [
+    "PRESENT",
+    "MISSING",
+    "INACCESSIBLE",
+    "MOVED_OR_RENAMED",
+    "CHANGED",
+    "VERIFICATION_REQUIRED"
+  ],
+  "missing_policy": "preserve semantic history; suppress active media retrieval; queue recovery",
+  "changed_policy": "content mismatch blocks retrieval and requires reconciliation",
+  "move_policy": "same hash/provider identity updates location without new asset",
+  "direct_addition": "discover, hash, deduplicate, register Master provenance, enroll pending",
+  "direct_delete": "retain asset/semantics; mark destination missing"
+}

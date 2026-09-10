@@ -34,20 +34,74 @@ function Wait-Http([string]$uri, [int[]]$accepted, [int]$seconds = 30) {
     }
     return $false
 }
-function Restart-Production {
-    Stop-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
-    for($i=0;$i -lt 6;$i++){ if(-not (Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue)){break}; Start-Sleep -Milliseconds 500 }
-    $listeners = @(Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue)
-    foreach($listener in $listeners){
-        $process = Get-CimInstance Win32_Process -Filter "ProcessId=$($listener.OwningProcess)" -ErrorAction SilentlyContinue
-        if($process.Name -ne "node.exe" -or $process.CommandLine -notmatch 'next.*start'){
-            throw "Port 3000 is occupied by a process that is not the KDI production server."
+function Test-MutexFree {
+    $probe=[Threading.Mutex]::new($false,"Local\KDI.MediaLibrary.Production.3000")
+    try { $free=$probe.WaitOne(0); if($free){$probe.ReleaseMutex()}; return $free } finally {$probe.Dispose()}
+}
+function Get-VerifiedRuntimeProcesses {
+    $statePath=Join-Path $runtimeRoot "production-runtime.json"
+    $verified=@()
+    if(Test-Path -LiteralPath $statePath){
+        $state=Get-Content -LiteralPath $statePath -Raw | ConvertFrom-Json
+        $supervisor=Get-CimInstance Win32_Process -Filter "ProcessId=$($state.supervisorPid)" -ErrorAction SilentlyContinue
+        if($supervisor){
+            if($supervisor.Name -ne "powershell.exe" -or $supervisor.CommandLine -notmatch [regex]::Escape((Join-Path $liveRoot "scripts\start-kdi-media-library-background.ps1"))){throw "Runtime state points to an unverified supervisor PID."}
+            $verified += $supervisor
         }
-        Stop-Process -Id $listener.OwningProcess -Force
+        $child=$null
+        if ([int]$state.childPid -gt 0) {
+            $child=Get-CimInstance Win32_Process -Filter "ProcessId=$($state.childPid)" -ErrorAction SilentlyContinue
+        }
+        if($child){
+            if($child.Name -ne "node.exe" -or [int]$child.ParentProcessId -ne [int]$state.supervisorPid){throw "Runtime state points to an unverified production child PID."}
+            $expectedCli=Join-Path $state.release "node_modules\next\dist\bin\next"
+            if($child.CommandLine -and ($child.CommandLine -notmatch [regex]::Escape($expectedCli) -or $child.CommandLine -notmatch 'start.*127\.0\.0\.1.*3000')){throw "Runtime child command line does not match the recorded KDI release."}
+            if($child.CommandLine){$verified += $child}
+        }
     }
-    for($i=0;$i -lt 20;$i++){ if(-not (Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue)){break}; Start-Sleep -Milliseconds 250 }
-    if(Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue){throw "Production port 3000 did not stop cleanly."}
+    return @($verified)
+}
+function Stop-ProductionCleanly([string]$reason) {
+    $initial=@(Get-VerifiedRuntimeProcesses)
+    Log "runtime_stop_started" @{ reason=$reason; pids=($initial.ProcessId -join ',') }
+    Stop-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
+    $deadline=(Get-Date).AddSeconds(30)
+    do {
+        $remaining=@(Get-VerifiedRuntimeProcesses)
+        $listeners=@(Get-NetTCPConnection -LocalAddress 127.0.0.1 -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue)
+        $mutexFree=Test-MutexFree
+        if($remaining.Count -eq 0 -and $listeners.Count -eq 0 -and $mutexFree){Log "runtime_stop_passed" @{ reason=$reason; fallback="NO" }; return}
+        Start-Sleep -Milliseconds 500
+    } while((Get-Date) -lt $deadline)
+    $remaining=@(Get-VerifiedRuntimeProcesses)
+    foreach($process in $remaining | Sort-Object ProcessId -Unique){ Log "runtime_process_terminate" @{ pid=$process.ProcessId; name=$process.Name; parent=$process.ParentProcessId; reason=$reason } }
+    $supervisor=@($remaining | Where-Object Name -eq "powershell.exe" | Select-Object -First 1)
+    if($supervisor){taskkill.exe /PID $supervisor.ProcessId /T /F | Out-Null}
+    $deadline=(Get-Date).AddSeconds(15)
+    do {
+        $remaining=@(Get-VerifiedRuntimeProcesses); $listeners=@(Get-NetTCPConnection -LocalAddress 127.0.0.1 -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue); $mutexFree=Test-MutexFree
+        if($remaining.Count -eq 0 -and $listeners.Count -eq 0 -and $mutexFree){Log "runtime_stop_passed" @{ reason=$reason; fallback="YES" }; return}
+        Start-Sleep -Milliseconds 250
+    } while((Get-Date) -lt $deadline)
+    throw "KDI runtime did not completely stop; deployment cannot continue."
+}
+function Start-ProductionAndWait([string]$reason) {
+    if(-not (Test-MutexFree)){throw "KDI runtime mutex is still owned before startup."}
+    if(Get-NetTCPConnection -LocalAddress 127.0.0.1 -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue){throw "Port 3000 is still listening before startup."}
     Start-ScheduledTask -TaskName $TaskName
+    $deadline=(Get-Date).AddSeconds(120); $lastStage=""; $seenRuntime=$false; $missingRuntimePolls=0
+    do {
+        $runtime=@(Get-VerifiedRuntimeProcesses); $child=@($runtime|Where-Object Name -eq 'node.exe'|Select-Object -First 1); $listener=@(Get-NetTCPConnection -LocalAddress 127.0.0.1 -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue)
+        $health=if($listener){try{[int](curl.exe -s -o NUL -w "%{http_code}" --max-redirs 0 --connect-timeout 2 http://127.0.0.1:3000/api/health)}catch{0}}else{0}
+        if($runtime){$seenRuntime=$true;$missingRuntimePolls=0}elseif($seenRuntime){$missingRuntimePolls++;if($missingRuntimePolls -ge 6){throw "Production runtime exited during startup; inspect production stdout/stderr logs."}}
+        $stage=if(-not $runtime){"no_process"}elseif(-not $child){"supervisor_no_child"}elseif(-not $listener){"child_alive_port_wait"}elseif($health -ne 200){"port_listening_health_wait"}else{"healthy"}
+        $childPid=if($child){$child.ProcessId}else{0}
+        if($stage -ne $lastStage){Log "runtime_start_progress" @{ reason=$reason; stage=$stage; childPid=$childPid; health=$health };$lastStage=$stage}
+        if($stage -eq "healthy"){return}
+        if($child -and -not (Get-Process -Id $child.ProcessId -ErrorAction SilentlyContinue)){throw "Production child exited during startup; inspect production stdout/stderr logs."}
+        Start-Sleep -Milliseconds 500
+    } while((Get-Date) -lt $deadline)
+    throw "Production startup exceeded the bounded cold-start window at stage $lastStage."
 }
 
 try {
@@ -86,17 +140,19 @@ try {
     Set-Pointer $previousPointer $previousDashboard
     Log "release_prepared" @{ previous=$previousDashboard; candidate=$releaseDashboard; commit=$commit }
 
+    Stop-ProductionCleanly "candidate_swap"
     Set-Pointer $pointer $releaseDashboard
     try {
-        Restart-Production
-        if (-not (Wait-Http "http://127.0.0.1:3000/api/health" @(200) 40)) { throw "Production health endpoint failed." }
+        Start-ProductionAndWait "candidate_swap"
         if (-not (Wait-Http "http://127.0.0.1:3000/login" @(200) 10)) { throw "Production login failed." }
         if (-not (Wait-Http "http://127.0.0.1:3000/library" @(200,302,303,307,308) 10)) { throw "Production library failed." }
+        if (-not (Wait-Http "http://127.0.0.1:3000/admin/users" @(200,302,303,307,308) 10)) { throw "Production admin/users failed." }
         Log "deployment_passed" @{ previous=$previousDashboard; candidate=$releaseDashboard; restart="PASS"; health="PASS"; rollback="NOT_REQUIRED" }
     } catch {
         Log "deployment_failed" @{ candidate=$releaseDashboard; reason="health_or_restart_failed"; rollback="STARTED" }
+        Stop-ProductionCleanly "candidate_failed_before_rollback"
         Set-Pointer $pointer $previousDashboard
-        Restart-Production
+        Start-ProductionAndWait "automatic_rollback"
         if (-not (Wait-Http "http://127.0.0.1:3000/login" @(200) 40)) { throw "Deployment and automatic rollback both failed." }
         Log "rollback_passed" @{ restored=$previousDashboard; health="PASS" }
         throw "Candidate deployment failed; previous known-good release was restored."

@@ -1,0 +1,170 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2345.MP4",
+      "evidence": [
+        "filename IMG_2345.MP4, asset_id 9993bf51-a0c2-4dd3-8c37-42bc9db2024b"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical close-up video clip",
+      "evidence": [
+        "18.7 second scene, 1280x720, h264, two representative keyframes showing a close-up clinical interaction"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene, 0-18.7s, two keyframes",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 18.733, keyframes_supplied 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider and reclined patient",
+      "evidence": [
+        "one person in scrubs, mask, gloves, and a name badge reading 'DR. LEW' positioned above a second person reclined in a chair with a blue drape"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked gloved provider; reclined patient with visible forehead redness",
+      "evidence": [
+        "provider has dark hair tied back, surgical mask, blue scrubs, white gloves, Apple Watch on wrist",
+        "patient has dark hair, eyes closed/covered by dark eyewear, visible pink/red mottled skin on forehead"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forehead, scalp hairline, and face visible",
+      "evidence": [
+        "keyframes show close-up of patient's forehead, upper hairline, nose, and closed eyes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied text",
+      "evidence": [
+        "no readable_text_detected or spoken_content entries name any procedure; gloves, syringe-like tool, and scalp contact alone do not establish a named clinical procedure per instructions"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider holds tool near patient's forehead/hairline",
+      "evidence": [
+        "gloved hand steadies patient's head/hair while other gloved hand holds a small syringe-like object near the forehead in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider positioned directly over patient in close contact",
+      "evidence": [
+        "provider leans closely over the reclined patient with hands in direct contact with patient's head/hair"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Pink/red mottled discoloration on forehead",
+      "evidence": [
+        "visible reddish, blotchy skin tone across the patient's forehead in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "reclined treatment chair, blue drape/cushion, overhead light fixture and dark equipment arm visible, plain beige wall background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style vertical framing",
+      "evidence": [
+        "tight close-up vertical (portrait) shot, 1280x720 frame, angled downward view of provider and patient"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider fills upper frame, patient reclined below",
+      "evidence": [
+        "provider's face and hands occupy top half of frame, patient's face and body occupy lower half in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content array is empty despite audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Name badge text visible on scrubs",
+      "evidence": [
+        "badge on provider's scrub top reads 'DR. LEW' in the keyframes; readable_text_detected list is otherwise empty"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No usage or marketing context supplied",
+      "evidence": [
+        "no metadata or text indicating marketing intent or platform usage was supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close clinical interaction between provider and reclined patient",
+      "evidence": [
+        "visual sequence of a gloved, masked provider working closely near a reclined patient's forehead/hairline with a small instrument"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual content layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked clinical provider wearing gloves leans over a reclined patient, holding a syringe near the patient's forehead/scalp hairline area. The patient lies back in a chair with eyes closed or covered, head resting on a blue cushion, while the provider examines or applies something with a small tool in the other hand.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "9993bf51-a0c2-4dd3-8c37-42bc9db2024b",
+  "image_count": 2
+}

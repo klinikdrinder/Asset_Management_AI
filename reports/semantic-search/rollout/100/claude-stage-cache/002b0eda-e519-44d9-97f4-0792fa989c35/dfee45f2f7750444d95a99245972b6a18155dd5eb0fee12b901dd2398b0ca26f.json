@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_2315.MP4",
+      "evidence": [
+        "asset_id 002b0eda-e519-44d9-97f4-0792fa989c35, filename IMG_2315.MP4, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical close-up video, one scene",
+      "evidence": [
+        "duration_seconds 23.635, canonical_scenes 1, canonical_keyframes 2"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across the clip",
+      "evidence": [
+        "scene_results contains one scene_index (0) covering the full duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One masked, gowned individual attending a patient",
+      "evidence": [
+        "person in blue surgical attire, mask, loupes and headlight positioned over a patient's arm/hand"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue gown, blue cap, black mask, surgical loupes with headlight",
+      "evidence": [
+        "visible blue surgical gown and cap, black face mask, white loupes with purple adjustment dials and an attached headlight"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forearm/hand and fingers visible",
+      "evidence": [
+        "gloved hand with blood traces on fingers positioned over a bandaged forearm/hand region"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied text",
+      "evidence": [
+        "scene layer TREATMENT_PROCEDURE marked UNKNOWN; gloves and instrument near skin do not by themselves establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hand manipulating a fine instrument near the patient",
+      "evidence": [
+        "fingers holding a thin instrument positioned close to gauze-dressed area on the patient's limb"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned directly over patient",
+      "evidence": [
+        "gowned individual leaning closely over the patient's bandaged limb, hands in direct contact"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blood traces on gloves, gauze dressing on limb",
+      "evidence": [
+        "visible small blood marks on gloved fingers and reddish staining near the gauze-wrapped area"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical setting with draped fabric",
+      "evidence": [
+        "plain wall background and folded green/dark cloth draping visible behind the subjects"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing on subject and hands",
+      "evidence": [
+        "tight vertical framing centered on the person's upper body and working hands, two keyframes sampled"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject centered, patient area in lower frame",
+      "evidence": [
+        "person's head and torso occupy upper frame, hands and patient's limb occupy lower frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, transcript_state NO_SPEECH",
+        "scene layer SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true, ocr_observations 0",
+        "scene layer OCR_VISIBLE_TEXT marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing intent indicated",
+      "evidence": [
+        "scene layer MARKETING_CONTENT_USAGE marked UNKNOWN; no supplied text indicates marketing purpose"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close clinical attention to a patient's limb",
+      "evidence": [
+        "gowned, masked figure with loupes closely working on a bandaged, bleeding-marked limb"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual narrative",
+      "evidence": [
+        "scene layer SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person wearing a blue surgical gown, cap, mask, and loupes with an attached headlight leans over a patient, gloved hands with blood traces manipulating a fine instrument near the patient's bandaged arm and hand, with gauze dressings visible around the site. The setting resembles a clinical treatment room with draped surfaces in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "002b0eda-e519-44d9-97f4-0792fa989c35",
+  "image_count": 1
+}

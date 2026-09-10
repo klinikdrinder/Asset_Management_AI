@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3963.MP4",
+      "evidence": [
+        "filename IMG_3963.MP4, duration 11.445s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical close-up video",
+      "evidence": [
+        "1 canonical scene, 2 canonical keyframes showing a clinician working on a reclined patient"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, ~11.4 seconds",
+      "evidence": [
+        "canonical_scenes: 1, duration_seconds: 11.445"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "masked person in olive scrubs and gloves actively handling a device near a reclined, blanket-covered patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in mask, olive scrubs, gloves; patient wrapped in blue blanket",
+      "evidence": [
+        "clinician has dark hair in a bun with bangs, wears a light blue surgical mask, olive-green scrub top, white gloves",
+        "patient reclined with head visible, body covered by a blue blanket and light blue drape"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forehead and periorbital area",
+      "evidence": [
+        "handheld device positioned over the patient's forehead/eye region with patient's face visible below the clinician's hands"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from visuals alone",
+      "evidence": [
+        "gloves, a handheld device with hose, and facial contact are visible but no named procedure appears in the supplied text, per rule this cannot be inferred as a specific treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applies handheld device to patient's face",
+      "evidence": [
+        "clinician leans in closely holding the device tip against the patient's forehead/eye area while patient lies still"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-patient interaction",
+      "evidence": [
+        "clinician positioned directly above and in contact with the reclined patient, hands actively engaged near patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, mask, handheld device with corrugated hose",
+      "evidence": [
+        "white gloves, surgical mask, gold-toned handheld device attached to a long corrugated gray hose"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Indoor setting, details unclear",
+      "evidence": [
+        "plain beige/cream wall visible in background but no further identifying environmental details present"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical handheld-style framing",
+      "evidence": [
+        "vertical 720-width frame tightly cropped on clinician and patient's upper body/face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician centered above reclined patient",
+      "evidence": [
+        "clinician's torso and hands occupy the upper-center frame, patient's face and blanket fill the lower frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT, transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "No on-screen text found",
+      "evidence": [
+        "ocr_evaluated: true, ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended use not determinable",
+      "evidence": [
+        "no captions, branding, or usage context present in the supplied text or images"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical care moment",
+      "evidence": [
+        "scene depicts a focused clinician performing a hands-on facial treatment on a reclined, covered patient"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this asset",
+      "evidence": [
+        "scene-level layer marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked clinician in olive scrubs and gloves holds a handheld device connected to a corrugated hose over the face of a reclined patient wrapped in a blue blanket. The clinician leans in closely working near the patient's forehead and eye area in what appears to be a clinical treatment room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "1256f9c1-c157-496b-b05f-3f7f3e8a2997",
+  "image_count": 1
+}

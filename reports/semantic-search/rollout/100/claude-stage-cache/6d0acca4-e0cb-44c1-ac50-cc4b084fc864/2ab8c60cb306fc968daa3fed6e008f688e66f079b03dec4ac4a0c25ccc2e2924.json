@@ -1,0 +1,175 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video asset IMG_3968.MP4",
+      "evidence": [
+        "filename IMG_3968.MP4, duration 18.8s, 1280x720, h264, single scene with audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall asset purpose not determinable",
+      "evidence": [
+        "scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes=1, canonical_keyframes=2 showing applicator lifted then touching skin"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific roles not confirmed",
+      "evidence": [
+        "scene-level PEOPLE_ROLES marked UNKNOWN despite visible clinician and reclined patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in olive scrubs, mask, gloves; patient under blue drape",
+      "evidence": [
+        "scrub top text \"DR LEW KAR MUN\", hair in claw clip, surgical mask, latex gloves, smartwatch on wrist",
+        "patient reclined with blue disposable drape covering torso"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's facial area (nose/upper lip) visible",
+      "evidence": [
+        "scene-level ANATOMY OBSERVED",
+        "keyframes show patient's face, nose with gauze/tape, and upper-lip region"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed",
+      "evidence": [
+        "no procedure name present in supplied text; gloves, applicator, and facial contact alone do not establish a named clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applies handheld device to patient's face",
+      "evidence": [
+        "keyframes show applicator held near then touching the patient's nose/upper-lip area",
+        "coiled hose connects applicator to console device"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned directly over reclined patient",
+      "evidence": [
+        "clinician leaning over patient on treatment bed, hand and applicator in direct contact with patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, mask, gauze/tape, and console device visible",
+      "evidence": [
+        "latex gloves and surgical mask on clinician",
+        "small gauze or tape piece on patient's nose",
+        "tabletop console labeled \"...LTIMATE EDITION\" with touchscreen"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not confirmed beyond visible room",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite a room with treatment bed and equipment visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Camera/shot details not determinable",
+      "evidence": [
+        "scene-level CINEMATOGRAPHY marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close framing on clinician and patient",
+      "evidence": [
+        "portrait-oriented frame centered on clinician's hands and patient's face across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech detected",
+      "evidence": [
+        "audio_state AUDIO_PRESENT with transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on clinician's scrub top",
+      "evidence": [
+        "ocr_observations=1",
+        "\"DR LEW KAR MUN\" text visible on olive scrub top in keyframe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A clinician in olive-green scrubs labeled \"DR LEW KAR MUN\", wearing a surgical mask, gloves, and a smartwatch, holds a handheld applicator connected by a coiled hose to a tabletop console, positioning it near the nose/upper-lip area of a patient reclined under a blue drape. The single-scene video progresses from the applicator being lifted near the patient's face to making contact with the skin, with a small piece of gauze or tape visible on the patient's nose in a clinic room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "6d0acca4-e0cb-44c1-ac50-cc4b084fc864",
+  "image_count": 1
+}

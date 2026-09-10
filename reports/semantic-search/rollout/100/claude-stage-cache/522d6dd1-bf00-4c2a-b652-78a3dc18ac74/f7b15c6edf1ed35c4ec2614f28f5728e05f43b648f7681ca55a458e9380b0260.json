@@ -1,0 +1,177 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video file IMG_0563.MP4, 8.77s, 1280x720",
+      "evidence": [
+        "technical metadata: duration 8.766667s, width 1280, height 720, codec h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context of the clip cannot be fully determined",
+      "evidence": [
+        "scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across 2 keyframes",
+      "evidence": [
+        "canonical_scenes: 1",
+        "canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles of individuals not explicitly confirmed",
+      "evidence": [
+        "scene-level PEOPLE_ROLES marked UNKNOWN despite visible scrubs and patient positioning"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner with dark hair bun, teal scrubs, mask, tinted safety glasses; patient with glasses, hairnet, purple towel",
+      "evidence": [
+        "image shows teal scrub top labeled 'DR LEW', surgical mask, orange-tinted glasses",
+        "patient visible with glasses and hairnet under purple towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Lower face, chin, and neck area of patient visible",
+      "evidence": [
+        "image shows device tip near patient's chin/jaw area with green light spot"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not named in supplied text",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN",
+        "no named clinical procedure present in evidence text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner applies handheld laser device to patient's face",
+      "evidence": [
+        "image shows gloved hand holding device with fiber cable directed at patient's chin",
+        "green light visible at contact point"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Relationship between practitioner and patient not specified",
+      "evidence": [
+        "scene-level RELATIONSHIPS marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Green laser spot visible on patient's chin during device application",
+      "evidence": [
+        "image shows illuminated green point at device tip touching skin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting appears clinical but not explicitly confirmed",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite plain wall background and medical tray visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Camera framing/style not analyzed",
+      "evidence": [
+        "scene-level CINEMATOGRAPHY marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical portrait framing centered on practitioner and patient's face",
+      "evidence": [
+        "image is vertical 1280x720 orientation with subjects centered"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH",
+        "scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text visible on scrub top reading 'DR LEW'",
+      "evidence": [
+        "ocr_observations: 4",
+        "image shows partial embroidered text on teal scrub top"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent or usage context not determined",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative or purpose not established",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable at asset level",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A practitioner in teal scrubs, a surgical mask, and laser safety glasses holds a handheld device connected by an orange fiber cable, directing a green light onto the lower face/chin area of a reclined patient. The patient wears protective eyewear, a hairnet, and is covered with a purple towel in what appears to be a clinical treatment setting.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "522d6dd1-bf00-4c2a-b652-78a3dc18ac74",
+  "image_count": 1
+}

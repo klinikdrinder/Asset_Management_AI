@@ -1,0 +1,175 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3432.MP4, 5.9s, 1280x720",
+      "evidence": [
+        "Technical metadata: filename IMG_3432.MP4, duration 5.9s, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context of asset unclear",
+      "evidence": [
+        "Scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, 2 keyframes",
+      "evidence": [
+        "canonical_scenes:1, canonical_keyframes:2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles not explicitly confirmed",
+      "evidence": [
+        "Scene-level PEOPLE_ROLES marked UNKNOWN despite visible clinician and patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician wearing glasses, black mask, black top with name text; patient's bare neck/chest visible",
+      "evidence": [
+        "Image shows person with curly hair, glasses, black face mask, black top labeled 'DR ASHRUL IKHM...'",
+        "Patient's neck and chest visible under blue towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Neck and lower chin/chest area visible",
+      "evidence": [
+        "Close-up of patient's neck, chin, and upper chest in image"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not named in evidence",
+      "evidence": [
+        "No named clinical procedure provided in supplied text; syringe and gloves alone do not confirm a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holding syringe near patient's neck",
+      "evidence": [
+        "Image shows gloved hands positioning a syringe with green-tinted liquid against the patient's neck skin"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Relationship between individuals not specified",
+      "evidence": [
+        "Scene-level RELATIONSHIPS marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Orange-brown antiseptic solution and small skin marks on neck",
+      "evidence": [
+        "Visible orange-brown staining on patient's neck/shoulder area",
+        "Small red spots/pimples on chin visible in image"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical room with supplies in background",
+      "evidence": [
+        "Background shows boxes/products on a shelf and white clinical walls"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style shot focusing on neck and hands",
+      "evidence": [
+        "Tight framing on syringe and neck area across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Centered composition on syringe/injection site with clinician above",
+      "evidence": [
+        "Syringe and neck centrally framed, clinician's masked face and hands framing top of image"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track present",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH",
+        "audio_state: AUDIO_PRESENT but no speech content"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text 'DR ASHRUL IKHM...' visible on clinician's top",
+      "evidence": [
+        "ocr_observations: 2",
+        "Visible partial text on black top reading 'DR ASHRUL IKHM...'"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context unclear",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this asset type",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A gloved clinician wearing glasses, a black mask, and a top labeled 'DR ASHRUL IKHM...' holds a syringe with greenish contents near a patient's neck, which is coated with an orange-brown antiseptic solution. A blue towel covers the patient's chest during this close-up clinical encounter.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "150d66ce-5d13-474f-b5eb-6d36340ec32a",
+  "image_count": 1
+}

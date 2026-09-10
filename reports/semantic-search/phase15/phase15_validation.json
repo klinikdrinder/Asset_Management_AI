@@ -1,0 +1,243 @@
+{
+  "status": "PASS",
+  "classifier": "kdi_requirement_classifier_v1",
+  "policy": "kdi_requirement_policy_v1",
+  "schema": "kdi_requirement_schema_v1",
+  "benchmark": "kdi_requirement_classifier_benchmark_v1",
+  "benchmark_fingerprint": "fbd36033fd43d8d9db324a8bd0de37fdc0098aa6875b7b5534ecb9900a1d9f76",
+  "classes": {
+    "RESPONSE_CONTROL": "PASS",
+    "HARD_CONSTRAINT": "PASS",
+    "HARD_EXCLUSION": "PASS",
+    "STRONG_REQUIREMENT": "PASS",
+    "PREFERENCE": "PASS",
+    "NEGATIVE_PREFERENCE": "PASS",
+    "CONTEXT": "PASS",
+    "UNRESOLVED": "PASS",
+    "CONFLICT": "PASS"
+  },
+  "safety": {
+    "requested_count_hard": 0,
+    "inferred_semantic_hard": 0,
+    "negative_preference_hard_exclusion": 0,
+    "unknown_fabrication": 0,
+    "cross_clause_leakage": 0,
+    "silent_conflict_resolution": 0
+  },
+  "engineering": {
+    "generated": 3200,
+    "passed": 3200,
+    "failed": 0,
+    "zero_result_regression": "PASS"
+  },
+  "gold": "180/180",
+  "dev": {
+    "split": "DEV",
+    "cases": 120,
+    "passed": 120,
+    "errors": 0,
+    "response_control_accuracy": 1,
+    "hard_constraint_accuracy": 1,
+    "hard_exclusion_accuracy": 1,
+    "strong_requirement_accuracy": 1,
+    "preference_accuracy": 1,
+    "negative_preference_accuracy": 1,
+    "context_unresolved_accuracy": 1,
+    "conflict_accuracy": 1,
+    "scope_accuracy": 1,
+    "reason_accuracy": 1,
+    "inferred_semantic_hard_promotions": 0,
+    "negative_preference_hard_leakage": 0,
+    "requested_count_hard_leakage": 0,
+    "unknown_fabrication": 0,
+    "malformed_plans": 0,
+    "schema_valid": 1,
+    "micro": 1,
+    "macro": 1,
+    "critical_slot_exact": 1,
+    "latency_ms": {
+      "p50": 1.2092999999999847,
+      "p95": 4.208199999999977,
+      "max": 19.80590000000001
+    }
+  },
+  "validation": {
+    "split": "VALIDATION",
+    "cases": 30,
+    "passed": 30,
+    "errors": 0,
+    "response_control_accuracy": 1,
+    "hard_constraint_accuracy": 1,
+    "hard_exclusion_accuracy": 1,
+    "strong_requirement_accuracy": 1,
+    "preference_accuracy": 1,
+    "negative_preference_accuracy": 1,
+    "context_unresolved_accuracy": 1,
+    "conflict_accuracy": 1,
+    "scope_accuracy": 1,
+    "reason_accuracy": 1,
+    "inferred_semantic_hard_promotions": 0,
+    "negative_preference_hard_leakage": 0,
+    "requested_count_hard_leakage": 0,
+    "unknown_fabrication": 0,
+    "malformed_plans": 0,
+    "schema_valid": 1,
+    "micro": 1,
+    "macro": 1,
+    "critical_slot_exact": 1,
+    "latency_ms": {
+      "p50": 1.984199999999987,
+      "p95": 5.749199999999973,
+      "max": 25.177300000000002
+    }
+  },
+  "blind": {
+    "split": "BLIND",
+    "cases": 30,
+    "passed": 30,
+    "errors": 0,
+    "response_control_accuracy": 1,
+    "hard_constraint_accuracy": 1,
+    "hard_exclusion_accuracy": 1,
+    "strong_requirement_accuracy": 1,
+    "preference_accuracy": 1,
+    "negative_preference_accuracy": 1,
+    "context_unresolved_accuracy": 1,
+    "conflict_accuracy": 1,
+    "scope_accuracy": 1,
+    "reason_accuracy": 1,
+    "inferred_semantic_hard_promotions": 0,
+    "negative_preference_hard_leakage": 0,
+    "requested_count_hard_leakage": 0,
+    "unknown_fabrication": 0,
+    "malformed_plans": 0,
+    "schema_valid": 1,
+    "micro": 1,
+    "macro": 1,
+    "critical_slot_exact": 1,
+    "latency_ms": {
+      "p50": 1.6707000000000107,
+      "p95": 5.680700000000002,
+      "max": 23.448699999999974
+    }
+  },
+  "reproducibility": {
+    "plans": "180/180",
+    "fingerprints": "180/180",
+    "metrics_identical": true
+  },
+  "parser_preservation": {
+    "status": "PASS",
+    "classifier": "kdi_requirement_classifier_v1",
+    "policy": "kdi_requirement_policy_v1",
+    "schema": "kdi_requirement_schema_v1",
+    "policy_fingerprint": "c8b6a95fa723dec9cea7a9673b8409f5e99333f8f175cc80707c1a427d5b9a0f",
+    "parser_source_sha256": "5c175efcf604f4db060561c4e6bd9653ff3be7b538f54ee87494547dfcfa5977",
+    "phase14_parser_source_sha256": "5c175efcf604f4db060561c4e6bd9653ff3be7b538f54ee87494547dfcfa5977",
+    "parser_preserved": true,
+    "phase14_benchmark_logical_fingerprint": "ff71934ea65b6a9d1b320d23531c395a6cc5d232a4647359b7d10aa13e822402",
+    "phase14_benchmark_file_sha256": "b9645967595e9b46238c325a408de760e210440bb3e1f51f3c1c354d73c90085"
+  },
+  "database": {
+    "generated_at": "2026-08-25T05:50:27.025Z",
+    "status": "PASS",
+    "semantic_data_changed": false,
+    "production_query_pollution": 0,
+    "embeddings": {
+      "before": 106,
+      "after": 106
+    },
+    "comparison": [
+      {
+        "table": "assets",
+        "before": 881,
+        "after": 881,
+        "delta": 0
+      },
+      {
+        "table": "semantic_assertions",
+        "before": 333,
+        "after": 333,
+        "delta": 0
+      },
+      {
+        "table": "semantic_assertion_evidence",
+        "before": 270,
+        "after": 270,
+        "delta": 0
+      },
+      {
+        "table": "asset_scenes",
+        "before": 312,
+        "after": 312,
+        "delta": 0
+      },
+      {
+        "table": "asset_events",
+        "before": 22,
+        "after": 22,
+        "delta": 0
+      },
+      {
+        "table": "asset_keyframes",
+        "before": 345,
+        "after": 345,
+        "delta": 0
+      },
+      {
+        "table": "asset_transcript_chunks",
+        "before": 14,
+        "after": 14,
+        "delta": 0
+      },
+      {
+        "table": "ocr_observations",
+        "before": 19,
+        "after": 19,
+        "delta": 0
+      },
+      {
+        "table": "semantic_narratives",
+        "before": 37,
+        "after": 37,
+        "delta": 0
+      },
+      {
+        "table": "asset_search_concepts_v2",
+        "before": 270,
+        "after": 270,
+        "delta": 0
+      },
+      {
+        "table": "semantic_embeddings",
+        "before": 106,
+        "after": 106,
+        "delta": 0
+      },
+      {
+        "table": "semantic_review_decisions",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      {
+        "table": "gold_standard_assets",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      {
+        "table": "search_queries",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      }
+    ]
+  },
+  "retrieval": "NOT_STARTED",
+  "ranking": "NOT_STARTED",
+  "frontend": "DEFERRED",
+  "human_gold": "DEFERRED",
+  "phase16": "NOT_STARTED",
+  "ready_for_phase16": true
+}

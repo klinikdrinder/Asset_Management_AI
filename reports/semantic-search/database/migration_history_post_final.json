@@ -1,0 +1,397 @@
+{
+  "generated_at": "2026-08-24T07:26:02.365Z",
+  "migrations": [
+    {
+      "version": "202607280001",
+      "name": "create_foundation_schema",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 104
+    },
+    {
+      "version": "202607280002",
+      "name": "seed_three_source_folders",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 3
+    },
+    {
+      "version": "202607290001",
+      "name": "repair_foundation_schema",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 160
+    },
+    {
+      "version": "202607300001",
+      "name": "add_step9_hashing_state",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 18
+    },
+    {
+      "version": "202607300002",
+      "name": "add_step10_asset_destinations",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 40
+    },
+    {
+      "version": "202607300003",
+      "name": "fix_step10_b3_controls",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 17
+    },
+    {
+      "version": "202607310001",
+      "name": "fix_step10_migration_events_status",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 6
+    },
+    {
+      "version": "202607310002",
+      "name": "extend_step10_event_type_contract",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 3
+    },
+    {
+      "version": "202607310003",
+      "name": "fix_step10_legacy_status_mapping",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 7
+    },
+    {
+      "version": "202607310004",
+      "name": "fix_step10_exact_legacy_status_contract",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 7
+    },
+    {
+      "version": "202608030001",
+      "name": "add_individual_app_user_auth",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 39
+    },
+    {
+      "version": "202608030002",
+      "name": "fix_staff_view_rls_enforcement",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 8
+    },
+    {
+      "version": "202608030003",
+      "name": "repair_source_folder_summary_authorization",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 24
+    },
+    {
+      "version": "202608040001",
+      "name": "add_firebase_identity_bridge",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 24
+    },
+    {
+      "version": "202608050001",
+      "name": "add_step14_incremental_sync",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 15
+    },
+    {
+      "version": "202608070001",
+      "name": "add_semantic_search",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 38
+    },
+    {
+      "version": "202608110001",
+      "name": "standardize_semantic_vectors_1024",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 14
+    },
+    {
+      "version": "202608130001",
+      "name": "atomic_semantic_completion",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 5
+    },
+    {
+      "version": "202608130002",
+      "name": "add_full_library_visual_search",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 22
+    },
+    {
+      "version": "202608130003",
+      "name": "add_custom_admin_auth",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 14
+    },
+    {
+      "version": "202608130004",
+      "name": "classify_corrupt_visual_fixtures",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 3
+    },
+    {
+      "version": "202608170001",
+      "name": "add_user_management_invitations",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 27
+    },
+    {
+      "version": "20260818072252",
+      "name": "add_rich_asset_ai_metadata_tables",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "202608190001",
+      "name": "ai_search_v3_job1_cleanup_draft",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819052309",
+      "name": "ai_search_v3_job1_1_security_remediation",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819054255",
+      "name": "ai_search_v3_job2_core_schema",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819054325",
+      "name": "ai_search_v3_job2_ontology_seed",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819054605",
+      "name": "ai_search_v3_job2_reviewed_by_index",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819060437",
+      "name": "ai_search_v3_job3_scene_core",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819060440",
+      "name": "ai_search_v3_job3_intelligence_layers",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819060442",
+      "name": "ai_search_v3_job3_transcript_ocr",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819060857",
+      "name": "ai_search_v3_job3_time_guard_fix",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819062310",
+      "name": "ai_search_v3_job4_embedding_schema",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819062314",
+      "name": "ai_search_v3_job4_search_documents",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819062316",
+      "name": "ai_search_v3_job4_conversation_search",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819063314",
+      "name": "ai_search_v3_job4_fk_covering_indexes",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819064906",
+      "name": "ai_search_v3_job5_permission_functions",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819064923",
+      "name": "ai_search_v3_job5_rls_permission_enforcement",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819064928",
+      "name": "ai_search_v3_job5_permission_indexes",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260819065242",
+      "name": "ai_search_v3_job5_advisor_fk_indexes",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260820045231",
+      "name": "ai_search_v3_job5_3_service_role_private_usage",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260820053023",
+      "name": "ai_search_v3_job6_worker_transcript_access",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260820061951",
+      "name": "ai_search_v3_job7_hybrid_search",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260820073300",
+      "name": "ai_search_v3_job7_visual_only_threshold",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260820074200",
+      "name": "ai_search_v3_job7_domain_visual_threshold",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260820083431",
+      "name": "ai_search_v3_job8_structured_tuning",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260821053645",
+      "name": "soften_inferred_v3_structured_signals",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260821081752",
+      "name": "ai_search_v3_job9_semantic_layer_core",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260821081855",
+      "name": "ai_search_v3_job9_ontology_expansion",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260821082132",
+      "name": "ai_search_v3_job9_still_image_and_layer_backfill_v3",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260821082202",
+      "name": "ai_search_v3_job9_ontology_parent_fix",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260821082342",
+      "name": "ai_search_v3_job9_new_fk_indexes",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260821083240",
+      "name": "expand_portrait_action_ontology",
+      "created_by": "jaspal.my@gmail.com",
+      "idempotency_key": null,
+      "statement_count": 1
+    },
+    {
+      "version": "20260824064838",
+      "name": "phase10_semantic_database_v1",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 108
+    },
+    {
+      "version": "20260824071927",
+      "name": "phase10_gold_immutability_trigger_fix",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 3
+    },
+    {
+      "version": "20260824072321",
+      "name": "phase10_semantic_lineage_and_indexes",
+      "created_by": null,
+      "idempotency_key": null,
+      "statement_count": 24
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "generated_at": "2026-08-25T04:12:45.855Z",
+  "status": "BLOCKED",
+  "parser": "kdi_query_parser_v1_4",
+  "schema": "kdi_query_schema_v1_1",
+  "evaluator": "kdi_query_parser_evaluator_v2",
+  "evaluator_fingerprint": "9415e82e03c763bc422bf15edc609055bbca78700e062df82e772120c293e014",
+  "benchmark": "kdi_query_parser_benchmark_v5",
+  "benchmark_fingerprint": "f07484a24e85a55dea42b5e773e996e8fd44d72625d55554b22a0229d02b339e",
+  "primary_language": "ENGLISH",
+  "dev": {
+    "split": "DEV",
+    "cases": 90,
+    "passed": 90,
+    "errors": 0,
+    "false_result_count": 0,
+    "missed_explicit_result_count": 0,
+    "result_count_accuracy": 1,
+    "count_conflict_accuracy": 1,
+    "numeric_accuracy": 1,
+    "year_accuracy": 1,
+    "timestamp_accuracy": 1,
+    "duration_accuracy": 1,
+    "media_accuracy": 1,
+    "extension_accuracy": 1,
+    "negation_accuracy": 1,
+    "contradiction_accuracy": 1,
+    "semantic_accuracy": 1,
+    "unknown_fabrication": 0,
+    "unsafe_fuzzy": 0,
+    "schema_valid": 1,
+    "english_accuracy": 1,
+    "micro": 1,
+    "macro": 1,
+    "critical_exact": 1
+  },
+  "validation": {
+    "split": "VALIDATION",
+    "cases": 30,
+    "passed": 29,
+    "errors": 1,
+    "false_result_count": 0,
+    "missed_explicit_result_count": 0,
+    "result_count_accuracy": 1,
+    "count_conflict_accuracy": 1,
+    "numeric_accuracy": 1,
+    "year_accuracy": 1,
+    "timestamp_accuracy": 1,
+    "duration_accuracy": 1,
+    "media_accuracy": 1,
+    "extension_accuracy": 1,
+    "negation_accuracy": 0.75,
+    "contradiction_accuracy": 1,
+    "semantic_accuracy": 0.9166666666666666,
+    "unknown_fabrication": 0,
+    "unsafe_fuzzy": 0,
+    "schema_valid": 1,
+    "english_accuracy": 0.9866666666666667,
+    "micro": 0.9866666666666667,
+    "macro": 0.9666666666666667,
+    "critical_exact": 0.9866666666666667
+  },
+  "blind": {
+    "run": false,
+    "status": "NOT_RUN_VALIDATION_FAILED"
+  },
+  "errors": [
+    {
+      "category": "EXCLUSION",
+      "query": "Leave any syringe scenes out",
+      "expected": {
+        "negative": [
+          "INJECTING"
+        ]
+      },
+      "case_id": "QP14V5-082",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "evaluation": {
+        "passed": false,
+        "differences": [
+          {
+            "field": "negative.INJECTING",
+            "expected": true,
+            "actual": false,
+            "critical": true
+          }
+        ],
+        "false_result_count": 0,
+        "missed_explicit_result_count": 0,
+        "schema_valid": true,
+        "actual": {
+          "count": {
+            "values": [],
+            "requested": null
+          },
+          "media_type": "ANY",
+          "extensions": [],
+          "numeric": {
+            "occurrences": [],
+            "age_exact": null,
+            "age_min": null,
+            "age_max": null,
+            "age_decade": null,
+            "graft_count_exact": null,
+            "graft_count_min": null,
+            "graft_count_max": null,
+            "graft_count_inclusive_min": null,
+            "graft_count_inclusive_max": null,
+            "age_inclusive_min": null,
+            "age_inclusive_max": null,
+            "treatment_session_count": null,
+            "session_ordinal": null,
+            "currency_amount": null
+          },
+          "temporal": {},
+          "positive": [],
+          "negative": [],
+          "modalities": [
+            "VISUAL"
+          ],
+          "conflicts": [],
+          "unresolved": true,
+          "schema_valid": true
+        }
+      },
+      "plan": {
+        "query_schema_version": "kdi_query_schema_v1_1",
+        "intent": "FIND_MEDIA",
+        "original_query": "Leave any syringe scenes out",
+        "result_request": {
+          "requested_count": null,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": null,
+          "normalization_status": "NOT_FOUND",
+          "extraction": null,
+          "requested_count_occurrences": []
+        },
+        "media": {
+          "media_type": "ANY",
+          "media_type_extraction": null,
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [],
+          "negative_concepts": [],
+          "unresolved_concepts": [
+            {
+              "concept_type": "UNRESOLVED",
+              "raw_text": "Leave any syringe scenes out",
+              "canonical_code": null,
+              "normalization_status": "UNRESOLVED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 0,
+              "end_char": 28,
+              "modality": "ANY",
+              "surface_strength": "NEUTRAL",
+              "clause_id": 0,
+              "polarity": "POSITIVE",
+              "marker": null
+            }
+          ]
+        },
+        "temporal": {},
+        "numeric": {
+          "occurrences": [],
+          "age_exact": null,
+          "age_min": null,
+          "age_max": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "graft_count_min": null,
+          "graft_count_max": null,
+          "graft_count_inclusive_min": null,
+          "graft_count_inclusive_max": null,
+          "age_inclusive_min": null,
+          "age_inclusive_max": null,
+          "treatment_session_count": null,
+          "session_ordinal": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": null,
+          "text_semantic_query": null,
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1_4",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1_4",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1_4",
+          "query_schema_version": "kdi_query_schema_v1_1",
+          "configuration_version": "kdi_query_parser_config_v1_4",
+          "configuration_fingerprint": "1f20397ec64cf9c1dcc02fe72deea0f379cd8534756954c8e4f2c52c08fe93dc",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en",
+          "semantic_provider_model_version": "v1_4",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "UNKNOWN",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "d291c68ac897f4691d2add94e4125193328cdca829c92e494f59b789f5b80a0a"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "latency_ms": 0.8821000000000083
+    }
+  ],
+  "reproducibility": {
+    "eligible": 120,
+    "status": "NOT_RUN_FULL_SET_VALIDATION_FAILED"
+  },
+  "latency": {
+    "p50": 0.7812000000000126,
+    "p95": 2.2697000000000003,
+    "max": 16.067499999999995
+  },
+  "database": {
+    "generated_at": "2026-08-25T04:12:38.684Z",
+    "status": "PASS",
+    "semantic_data_changed": false,
+    "production_benchmark_queries_added": 0,
+    "embeddings": {
+      "before": 106,
+      "after": 106
+    },
+    "comparison": [
+      {
+        "table": "assets",
+        "before": 881,
+        "after": 881,
+        "delta": 0
+      },
+      {
+        "table": "semantic_assertions",
+        "before": 333,
+        "after": 333,
+        "delta": 0
+      },
+      {
+        "table": "semantic_assertion_evidence",
+        "before": 270,
+        "after": 270,
+        "delta": 0
+      },
+      {
+        "table": "asset_scenes",
+        "before": 312,
+        "after": 312,
+        "delta": 0
+      },
+      {
+        "table": "asset_events",
+        "before": 22,
+        "after": 22,
+        "delta": 0
+      },
+      {
+        "table": "asset_keyframes",
+        "before": 345,
+        "after": 345,
+        "delta": 0
+      },
+      {
+        "table": "asset_transcript_chunks",
+        "before": 14,
+        "after": 14,
+        "delta": 0
+      },
+      {
+        "table": "ocr_observations",
+        "before": 19,
+        "after": 19,
+        "delta": 0
+      },
+      {
+        "table": "semantic_narratives",
+        "before": 37,
+        "after": 37,
+        "delta": 0
+      },
+      {
+        "table": "asset_search_concepts_v2",
+        "before": 270,
+        "after": 270,
+        "delta": 0
+      },
+      {
+        "table": "semantic_embeddings",
+        "before": 106,
+        "after": 106,
+        "delta": 0
+      },
+      {
+        "table": "semantic_review_decisions",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      {
+        "table": "gold_standard_assets",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      {
+        "table": "search_queries",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      }
+    ]
+  },
+  "boundaries": {
+    "retrieval": false,
+    "ranking": false,
+    "phase15": false,
+    "frontend": false,
+    "human_gold": "DEFERRED"
+  }
+}

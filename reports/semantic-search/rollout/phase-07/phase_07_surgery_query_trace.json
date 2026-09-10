@@ -1,0 +1,13 @@
+{
+  "query": "surgery",
+  "before": {
+    "channel": "asset_search_documents.searchable_text",
+    "source": "model assertion + description + narrative + E5 text",
+    "structured_treatment_support": false
+  },
+  "classification": "C_UNSUPPORTED_MODEL_TOKEN",
+  "after": {
+    "canary_returned": false,
+    "reason": "removed from current searchable truth"
+  }
+}

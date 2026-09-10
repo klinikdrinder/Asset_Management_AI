@@ -1,0 +1,48 @@
+{
+  "version": "kdi_production_configuration_v1",
+  "semantic_spec": "semantic_index_v1",
+  "semantic_fingerprint": "ba43dab744dedfd590e81be5c8ec5ec8ab7c0bda79f8aca16c0b24d198294888",
+  "locked_18_layer_spec": "kdi_semantic_18_layer_v1",
+  "ontology_version": "KDI_SEMANTIC_V2",
+  "evidence_version": "phase10_semantic_assertion_evidence_v1",
+  "search_document_version": "kdi_search_document_v1",
+  "indexing_pipeline_version": "kdi_automatic_indexing_pipeline_v1",
+  "embedding_bundle_version": "kdi_embedding_bundle_v1",
+  "repository_sync_version": "kdi_repository_lifecycle_v1",
+  "master_reconciliation_version": "kdi_master_reconciliation_v1",
+  "cohort": {
+    "cohortId": "kdi_semantic_rollout_881_v1",
+    "baselineFingerprint": "22ef81db0394b3f0efb4164b741017faad248cedccee92bb30a5118528623faa",
+    "baselineAssetCount": 881,
+    "status": "FROZEN",
+    "membershipImmutable": true,
+    "postBaselinePolicy": "ENROLL_SEPARATELY"
+  },
+  "supported_file_types": {
+    "images": [
+      "image/jpeg",
+      "image/png",
+      "image/webp",
+      "image/heic"
+    ],
+    "videos": [
+      "video/mp4",
+      "video/quicktime",
+      "video/webm"
+    ],
+    "documents": [
+      "application/pdf"
+    ],
+    "unsupported_policy": "Register operationally; no semantic indexing; preserve reason"
+  },
+  "semantic_enrollment_policy": "supported unique asset -> PENDING_ANALYSIS; no UNKNOWN scaffold",
+  "media_availability_rules": "semantic history is preserved; active media retrieval requires verified Master PRESENT",
+  "search_availability_rules": "semantic_match AND master_present AND authorized",
+  "retry": {
+    "max_attempts": 5,
+    "lease_recovery": true
+  },
+  "idempotency": "asset_id + content_hash + spec_fingerprint + pipeline_version + provider_identity",
+  "external_ai_enabled": false,
+  "configuration_fingerprint": "06eb91877f36562f2dd950317982b4d3ccffe3e338a258528062972e979b9b66"
+}

@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1967.MP4",
+      "evidence": [
+        "filename IMG_1967.MP4, duration 16.53s, 1280x720, h264, local video asset"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result for GLOBAL_ASSET_UNDERSTANDING is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, both frames show the same setting with device position changing slightly"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient and clinician present",
+      "evidence": [
+        "A reclining woman wearing a gown and goggles is the apparent patient; a person in pink/coral scrubs operating a device is the apparent clinician"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient in blue gown, goggles, headband; clinician in coral scrubs with smartwatch",
+      "evidence": [
+        "Woman has dark hair under a black headband, wears white protective eye goggles, earrings, and a blue V-neck gown",
+        "Clinician wears pink/coral scrub top and a light-colored smartwatch on wrist"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, cheek, and temple area visible",
+      "evidence": [
+        "Patient's face, nose, mouth, cheeks, and neck are visible with a handheld probe held near the cheek/temple region"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not identifiable",
+      "evidence": [
+        "No named procedure appears in supplied text; a handheld device and metal armature are visible but do not by themselves establish a named clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positions device near patient's face",
+      "evidence": [
+        "Clinician's hand stabilizes the patient's head/cheek while holding a metal probe close to the face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician actively treating reclining patient",
+      "evidence": [
+        "Clinician stands over the reclining patient, one hand on her face/head and the other operating the device, indicating a provider-patient interaction"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective eyewear and device applied to face",
+      "evidence": [
+        "Patient wears white protective goggles; a metal handheld probe is held against/near her cheek area"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly determinable",
+      "evidence": [
+        "Scene-level result for ENVIRONMENT is UNKNOWN despite a treatment bed and blue linens being visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld vertical framing",
+      "evidence": [
+        "Tight, close-up vertical composition centered on the patient's face and the clinician's hands/device, 720p resolution"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered, clinician framing from above",
+      "evidence": [
+        "Patient's face is centered in frame with clinician's arms and device entering from the top of the shot"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0, ocr_evaluated true"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level result for MARKETING_CONTENT_USAGE is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "Scene-level result for SEMANTIC_NARRATIVE is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": [
+        "Scene-level result for SEARCH_EMBEDDINGS is NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A woman lies on a treatment bed wearing protective eye goggles and a blue medical gown while a clinician in pink/coral scrubs holds a handheld device connected to a larger metal armature near her face. The clinician's hand steadies the patient's head as the probe is positioned close to her cheek and temple area.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "745b6280-1a22-4919-a346-60e06b10b665",
+  "image_count": 1
+}

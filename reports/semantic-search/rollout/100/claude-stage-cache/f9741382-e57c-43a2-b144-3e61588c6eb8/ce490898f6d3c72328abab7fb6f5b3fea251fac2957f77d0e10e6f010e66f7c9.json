@@ -1,0 +1,184 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 asset with filename and technical metadata",
+      "evidence": [
+        "filename IMG_1952.MP4, 1280x720, 30fps, h264, 12.1s duration"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene close-up clinical video",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, scene-level narrative describing a close-up procedure moment"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across near-identical keyframes",
+      "evidence": [
+        "scene_index 0 covering the full 12.1s clip",
+        "near-identical framing across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and reclined patient",
+      "evidence": [
+        "figure in coral scrubs with embroidered name, mask, hairnet, gloves handling a device near the patient's face",
+        "reclined woman with closed eyes being attended to"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scrubs, mask, hairnet, smartwatch; patient in black top",
+      "evidence": [
+        "coral scrub top embroidered 'Dr. Lew Kar Min', surgical mask, hairnet, gloves, smartwatch on wrist",
+        "patient has dark hair, closed eyes, black v-neck top, gray knit blanket over chest"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's nose and midface visible",
+      "evidence": [
+        "hand pinching patient's nose while device is held near the nose/face area",
+        "patient's face, closed eyes visible in frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed",
+      "evidence": [
+        "scene result lists TREATMENT_PROCEDURE as UNKNOWN",
+        "only a handheld device and gloved contact are visible with no procedure name in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held near face while nose is pinched",
+      "evidence": [
+        "practitioner holds metallic handheld device close to the patient's nose/face",
+        "other hand pinches the patient's nose"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner attending directly to patient",
+      "evidence": [
+        "practitioner positioned over reclined patient performing hands-on contact with device and fingers"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No clinical findings depicted",
+      "evidence": [
+        "scene result marks CLINICAL_VISUAL_OBSERVATIONS as FALSE",
+        "no visible wounds, markings, or clinical findings distinguishable in the images"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "scene result marks ENVIRONMENT as UNKNOWN",
+        "blue drape and plain background visible but no clear room/facility identifiers"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Overhead close-up handheld framing",
+      "evidence": [
+        "top-down close angle on patient's face across both keyframes",
+        "vertical orientation with tight framing on the procedure area"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered with practitioner leaning in from above",
+      "evidence": [
+        "patient's face centered in frame with practitioner's hands and device occupying upper portion of both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech detected",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT",
+        "transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Embroidered name text visible on scrub top",
+      "evidence": [
+        "ocr_observations: 6",
+        "embroidered text 'DR. LEW KAR MIN' visible on the practitioner's scrub top"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "scene result marks MARKETING_CONTENT_USAGE as UNKNOWN",
+        "no supplied text indicates intended usage context"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose unclear",
+      "evidence": [
+        "scene result marks SEMANTIC_NARRATIVE as UNKNOWN",
+        "no named procedure or context text supplied to establish narrative intent"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this layer set",
+      "evidence": [
+        "scene result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A practitioner in coral scrubs embroidered with 'Dr. Lew Kar Min', wearing a surgical mask, hairnet, gloves, and a smartwatch, holds a metallic handheld device near the nose/face of a reclined patient while pinching the patient's nose with her other hand. The patient, a woman with dark hair and closed eyes, wears a black top and lies on a blue medical drape with a gray knit blanket over her chest, framing nearly identical across both keyframes.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "f9741382-e57c-43a2-b144-3e61588c6eb8",
+  "image_count": 1
+}

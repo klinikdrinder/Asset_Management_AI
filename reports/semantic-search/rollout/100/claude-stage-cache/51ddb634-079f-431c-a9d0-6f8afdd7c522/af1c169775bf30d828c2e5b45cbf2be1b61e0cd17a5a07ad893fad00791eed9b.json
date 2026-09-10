@@ -1,0 +1,169 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2956.MP4",
+      "evidence": [
+        "Asset metadata gives filename IMG_2956.MP4, duration 11.47s, 1280x720, h264, with audio stream"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical scalp procedure clip",
+      "evidence": [
+        "One canonical scene with two keyframes depicting consistent overhead scalp view with medical staff"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, ~11.5 seconds",
+      "evidence": [
+        "scene_results reports canonical_scenes: 1 spanning the 11.466667s duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved medical staff attending to patient",
+      "evidence": [
+        "Multiple gloved hands in surgical attire (blue gowns) surround a patient wearing a surgical mask and green gown, positioned as caregiver and patient roles"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient scalp visible; staff in blue/green surgical gowns",
+      "evidence": [
+        "Patient's head shown from above with gauze covering face and surgical mask visible; staff wear blue surgical gowns, gloves, and rings visible under gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Top of scalp/crown region",
+      "evidence": [
+        "Overhead view shows the crown of the head marked with purple dye and small red marks"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identified in supplied text",
+      "evidence": [
+        "Instruments, gloves, and scalp contact are visible but no named procedure appears in the supplied text, so per rules this cannot be labeled"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instruments applied to marked scalp",
+      "evidence": [
+        "Gloved hands hold fine pointed instruments near/touching the scalp surface in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff positioned around reclined patient",
+      "evidence": [
+        "Multiple staff hands and a microscope/light fixture surround the patient's head, indicating a coordinated clinical team arrangement"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Purple dye markings and red puncture-like marks on scalp",
+      "evidence": [
+        "Crown of scalp is dotted with small red marks and marked with purple/violet dye visible under bright light"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operating room setting",
+      "evidence": [
+        "Surgical light, overhead microscope/lamp fixture, plastic draping, and sterile towels indicate an operating room"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Overhead close-up framing with focused light",
+      "evidence": [
+        "Both keyframes are shot from directly above the patient's head with a bright spot light illuminating the scalp"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Centered scalp with hands framing edges",
+      "evidence": [
+        "Scalp is centered in frame with gloved hands and instruments entering from left and right edges"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state is NO_SPEECH despite audio_stream_present being true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on surgical mask",
+      "evidence": [
+        "ocr_observations count is 2, and partial lettering '...M-CU...' is visible on the patient's surgical mask"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context indicated",
+      "evidence": [
+        "No branding, captions, or promotional framing present in the supplied evidence to determine marketing usage"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical scalp procedure moment",
+      "evidence": [
+        "Consistent depiction across both keyframes of medical staff working on a marked, punctured scalp in a sterile operating environment"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual content evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two keyframes show an overhead view of a patient's scalp marked with purple dye and small red puncture-like marks, with gloved hands holding fine pointed instruments near the scalp under a surgical light. The patient's face is covered with folded gauze and a surgical mask while medical staff in blue and green surgical attire work around the head, in an operating room setting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "51ddb634-079f-431c-a9d0-6f8afdd7c522",
+  "image_count": 1
+}

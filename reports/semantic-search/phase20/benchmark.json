@@ -1,0 +1,1558 @@
+{
+  "generated_at": "2026-08-27T02:47:20.186Z",
+  "version": "kdi_phase20_benchmark_v1",
+  "implementation_version": "kdi_llm_reranker_v1",
+  "configuration_fingerprint": "04a60bad63276b02612eaf2d74e8bea6b5334346461c704fccee4a347a6e3132",
+  "phase19_fingerprint": "33c8d6d4271b2c7bd818c6ed3366fe1e5a64c96ced42d3c8949a566f4bbd0125",
+  "provider_mode": "protected synthetic/local; no external AI",
+  "gold_independence": {
+    "dev": true,
+    "validation": true,
+    "blind": true
+  },
+  "blind_hidden_from_implementation": true,
+  "blind_nonce": "c4bf2c37bcb300c9c3c633fd78419d05a15450e222f11206809979c7a5356a37",
+  "dev": {
+    "cases": 100,
+    "correct": 100,
+    "incorrect": 0,
+    "pairwise_accuracy": 1,
+    "top1": 1,
+    "top3": 1,
+    "mrr": 1,
+    "ndcg_at_2": 1,
+    "non_regression": 1,
+    "schema_valid_rate": 1,
+    "hallucinated_accepted_assets": 0,
+    "hallucinated_accepted_evidence": 0,
+    "security_violations": 0,
+    "fallback_correct": 39,
+    "result": "PASS",
+    "results": [
+      {
+        "id": "P20-DEV-001",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000000101"
+      },
+      {
+        "id": "P20-DEV-002",
+        "kind": "ACTION_HAPPENING_PREPARING",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000000201"
+      },
+      {
+        "id": "P20-DEV-003",
+        "kind": "EXACT_ADJACENT_ANATOMY",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000000301"
+      },
+      {
+        "id": "P20-DEV-004",
+        "kind": "ACTOR_RELATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000000401"
+      },
+      {
+        "id": "P20-DEV-005",
+        "kind": "SAME_SCENE_SCATTERED",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000000501"
+      },
+      {
+        "id": "P20-DEV-006",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000000601"
+      },
+      {
+        "id": "P20-DEV-007",
+        "kind": "TESTIMONIAL_FACING_CAMERA",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000000701"
+      },
+      {
+        "id": "P20-DEV-008",
+        "kind": "PREFERENCE_MISMATCH",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000000801"
+      },
+      {
+        "id": "P20-DEV-009",
+        "kind": "NEGATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000000901"
+      },
+      {
+        "id": "P20-DEV-010",
+        "kind": "AMBIGUOUS_ROLE",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000001001"
+      },
+      {
+        "id": "P20-DEV-011",
+        "kind": "PROMPT_INJECTION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000001101"
+      },
+      {
+        "id": "P20-DEV-012",
+        "kind": "CANDIDATE_INJECTION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000001201"
+      },
+      {
+        "id": "P20-DEV-013",
+        "kind": "EVIDENCE_INJECTION",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_EVIDENCE",
+        "winner": "10000000-0000-4000-8000-000000001301"
+      },
+      {
+        "id": "P20-DEV-014",
+        "kind": "TIMEOUT",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000001401"
+      },
+      {
+        "id": "P20-DEV-015",
+        "kind": "HTTP_429",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000001501"
+      },
+      {
+        "id": "P20-DEV-016",
+        "kind": "HTTP_500",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000001601"
+      },
+      {
+        "id": "P20-DEV-017",
+        "kind": "NETWORK",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000001701"
+      },
+      {
+        "id": "P20-DEV-018",
+        "kind": "INVALID_JSON",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000001801"
+      },
+      {
+        "id": "P20-DEV-019",
+        "kind": "TRUNCATED_JSON",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000001901"
+      },
+      {
+        "id": "P20-DEV-020",
+        "kind": "WRONG_SCHEMA",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000002001"
+      },
+      {
+        "id": "P20-DEV-021",
+        "kind": "UNKNOWN_ASSET",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_ASSET",
+        "winner": "10000000-0000-4000-8000-000000002101"
+      },
+      {
+        "id": "P20-DEV-022",
+        "kind": "UNKNOWN_EVIDENCE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_EVIDENCE",
+        "winner": "10000000-0000-4000-8000-000000002201"
+      },
+      {
+        "id": "P20-DEV-023",
+        "kind": "DUPLICATE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "DUPLICATE_ASSET",
+        "winner": "10000000-0000-4000-8000-000000002301"
+      },
+      {
+        "id": "P20-DEV-024",
+        "kind": "MISSING",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "MISSING_CANDIDATE",
+        "winner": "10000000-0000-4000-8000-000000002401"
+      },
+      {
+        "id": "P20-DEV-025",
+        "kind": "INVALID_SCORE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "INVALID_SCORE",
+        "winner": "10000000-0000-4000-8000-000000002501"
+      },
+      {
+        "id": "P20-DEV-026",
+        "kind": "HARD_CONSTRAINT",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000002601"
+      },
+      {
+        "id": "P20-DEV-027",
+        "kind": "HARD_EXCLUSION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000002701"
+      },
+      {
+        "id": "P20-DEV-028",
+        "kind": "UNKNOWN_FALSE",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000002801"
+      },
+      {
+        "id": "P20-DEV-029",
+        "kind": "CACHE_ISOLATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000002901"
+      },
+      {
+        "id": "P20-DEV-030",
+        "kind": "EXTERNAL_AI_DENIAL",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000003001"
+      },
+      {
+        "id": "P20-DEV-031",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000003101"
+      },
+      {
+        "id": "P20-DEV-032",
+        "kind": "ACTION_HAPPENING_PREPARING",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000003201"
+      },
+      {
+        "id": "P20-DEV-033",
+        "kind": "EXACT_ADJACENT_ANATOMY",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000003301"
+      },
+      {
+        "id": "P20-DEV-034",
+        "kind": "ACTOR_RELATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000003401"
+      },
+      {
+        "id": "P20-DEV-035",
+        "kind": "SAME_SCENE_SCATTERED",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000003501"
+      },
+      {
+        "id": "P20-DEV-036",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000003601"
+      },
+      {
+        "id": "P20-DEV-037",
+        "kind": "TESTIMONIAL_FACING_CAMERA",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000003701"
+      },
+      {
+        "id": "P20-DEV-038",
+        "kind": "PREFERENCE_MISMATCH",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000003801"
+      },
+      {
+        "id": "P20-DEV-039",
+        "kind": "NEGATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000003901"
+      },
+      {
+        "id": "P20-DEV-040",
+        "kind": "AMBIGUOUS_ROLE",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000004001"
+      },
+      {
+        "id": "P20-DEV-041",
+        "kind": "PROMPT_INJECTION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000004101"
+      },
+      {
+        "id": "P20-DEV-042",
+        "kind": "CANDIDATE_INJECTION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000004201"
+      },
+      {
+        "id": "P20-DEV-043",
+        "kind": "EVIDENCE_INJECTION",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_EVIDENCE",
+        "winner": "10000000-0000-4000-8000-000000004301"
+      },
+      {
+        "id": "P20-DEV-044",
+        "kind": "TIMEOUT",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000004401"
+      },
+      {
+        "id": "P20-DEV-045",
+        "kind": "HTTP_429",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000004501"
+      },
+      {
+        "id": "P20-DEV-046",
+        "kind": "HTTP_500",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000004601"
+      },
+      {
+        "id": "P20-DEV-047",
+        "kind": "NETWORK",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000004701"
+      },
+      {
+        "id": "P20-DEV-048",
+        "kind": "INVALID_JSON",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000004801"
+      },
+      {
+        "id": "P20-DEV-049",
+        "kind": "TRUNCATED_JSON",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000004901"
+      },
+      {
+        "id": "P20-DEV-050",
+        "kind": "WRONG_SCHEMA",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000005001"
+      },
+      {
+        "id": "P20-DEV-051",
+        "kind": "UNKNOWN_ASSET",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_ASSET",
+        "winner": "10000000-0000-4000-8000-000000005101"
+      },
+      {
+        "id": "P20-DEV-052",
+        "kind": "UNKNOWN_EVIDENCE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_EVIDENCE",
+        "winner": "10000000-0000-4000-8000-000000005201"
+      },
+      {
+        "id": "P20-DEV-053",
+        "kind": "DUPLICATE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "DUPLICATE_ASSET",
+        "winner": "10000000-0000-4000-8000-000000005301"
+      },
+      {
+        "id": "P20-DEV-054",
+        "kind": "MISSING",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "MISSING_CANDIDATE",
+        "winner": "10000000-0000-4000-8000-000000005401"
+      },
+      {
+        "id": "P20-DEV-055",
+        "kind": "INVALID_SCORE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "INVALID_SCORE",
+        "winner": "10000000-0000-4000-8000-000000005501"
+      },
+      {
+        "id": "P20-DEV-056",
+        "kind": "HARD_CONSTRAINT",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000005601"
+      },
+      {
+        "id": "P20-DEV-057",
+        "kind": "HARD_EXCLUSION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000005701"
+      },
+      {
+        "id": "P20-DEV-058",
+        "kind": "UNKNOWN_FALSE",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000005801"
+      },
+      {
+        "id": "P20-DEV-059",
+        "kind": "CACHE_ISOLATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000005901"
+      },
+      {
+        "id": "P20-DEV-060",
+        "kind": "EXTERNAL_AI_DENIAL",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000006001"
+      },
+      {
+        "id": "P20-DEV-061",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000006101"
+      },
+      {
+        "id": "P20-DEV-062",
+        "kind": "ACTION_HAPPENING_PREPARING",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000006201"
+      },
+      {
+        "id": "P20-DEV-063",
+        "kind": "EXACT_ADJACENT_ANATOMY",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000006301"
+      },
+      {
+        "id": "P20-DEV-064",
+        "kind": "ACTOR_RELATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000006401"
+      },
+      {
+        "id": "P20-DEV-065",
+        "kind": "SAME_SCENE_SCATTERED",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000006501"
+      },
+      {
+        "id": "P20-DEV-066",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000006601"
+      },
+      {
+        "id": "P20-DEV-067",
+        "kind": "TESTIMONIAL_FACING_CAMERA",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000006701"
+      },
+      {
+        "id": "P20-DEV-068",
+        "kind": "PREFERENCE_MISMATCH",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000006801"
+      },
+      {
+        "id": "P20-DEV-069",
+        "kind": "NEGATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000006901"
+      },
+      {
+        "id": "P20-DEV-070",
+        "kind": "AMBIGUOUS_ROLE",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000007001"
+      },
+      {
+        "id": "P20-DEV-071",
+        "kind": "PROMPT_INJECTION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000007101"
+      },
+      {
+        "id": "P20-DEV-072",
+        "kind": "CANDIDATE_INJECTION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000007201"
+      },
+      {
+        "id": "P20-DEV-073",
+        "kind": "EVIDENCE_INJECTION",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_EVIDENCE",
+        "winner": "10000000-0000-4000-8000-000000007301"
+      },
+      {
+        "id": "P20-DEV-074",
+        "kind": "TIMEOUT",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000007401"
+      },
+      {
+        "id": "P20-DEV-075",
+        "kind": "HTTP_429",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000007501"
+      },
+      {
+        "id": "P20-DEV-076",
+        "kind": "HTTP_500",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000007601"
+      },
+      {
+        "id": "P20-DEV-077",
+        "kind": "NETWORK",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000007701"
+      },
+      {
+        "id": "P20-DEV-078",
+        "kind": "INVALID_JSON",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000007801"
+      },
+      {
+        "id": "P20-DEV-079",
+        "kind": "TRUNCATED_JSON",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000007901"
+      },
+      {
+        "id": "P20-DEV-080",
+        "kind": "WRONG_SCHEMA",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000008001"
+      },
+      {
+        "id": "P20-DEV-081",
+        "kind": "UNKNOWN_ASSET",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_ASSET",
+        "winner": "10000000-0000-4000-8000-000000008101"
+      },
+      {
+        "id": "P20-DEV-082",
+        "kind": "UNKNOWN_EVIDENCE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_EVIDENCE",
+        "winner": "10000000-0000-4000-8000-000000008201"
+      },
+      {
+        "id": "P20-DEV-083",
+        "kind": "DUPLICATE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "DUPLICATE_ASSET",
+        "winner": "10000000-0000-4000-8000-000000008301"
+      },
+      {
+        "id": "P20-DEV-084",
+        "kind": "MISSING",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "MISSING_CANDIDATE",
+        "winner": "10000000-0000-4000-8000-000000008401"
+      },
+      {
+        "id": "P20-DEV-085",
+        "kind": "INVALID_SCORE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "INVALID_SCORE",
+        "winner": "10000000-0000-4000-8000-000000008501"
+      },
+      {
+        "id": "P20-DEV-086",
+        "kind": "HARD_CONSTRAINT",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000008601"
+      },
+      {
+        "id": "P20-DEV-087",
+        "kind": "HARD_EXCLUSION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000008701"
+      },
+      {
+        "id": "P20-DEV-088",
+        "kind": "UNKNOWN_FALSE",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000008801"
+      },
+      {
+        "id": "P20-DEV-089",
+        "kind": "CACHE_ISOLATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000008901"
+      },
+      {
+        "id": "P20-DEV-090",
+        "kind": "EXTERNAL_AI_DENIAL",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000009001"
+      },
+      {
+        "id": "P20-DEV-091",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000009101"
+      },
+      {
+        "id": "P20-DEV-092",
+        "kind": "ACTION_HAPPENING_PREPARING",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000009201"
+      },
+      {
+        "id": "P20-DEV-093",
+        "kind": "EXACT_ADJACENT_ANATOMY",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000009301"
+      },
+      {
+        "id": "P20-DEV-094",
+        "kind": "ACTOR_RELATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000009401"
+      },
+      {
+        "id": "P20-DEV-095",
+        "kind": "SAME_SCENE_SCATTERED",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000009501"
+      },
+      {
+        "id": "P20-DEV-096",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000009601"
+      },
+      {
+        "id": "P20-DEV-097",
+        "kind": "TESTIMONIAL_FACING_CAMERA",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000009701"
+      },
+      {
+        "id": "P20-DEV-098",
+        "kind": "PREFERENCE_MISMATCH",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000009801"
+      },
+      {
+        "id": "P20-DEV-099",
+        "kind": "NEGATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000009901"
+      },
+      {
+        "id": "P20-DEV-100",
+        "kind": "AMBIGUOUS_ROLE",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000010001"
+      }
+    ]
+  },
+  "validation": {
+    "cases": 40,
+    "correct": 40,
+    "incorrect": 0,
+    "pairwise_accuracy": 1,
+    "top1": 1,
+    "top3": 1,
+    "mrr": 1,
+    "ndcg_at_2": 1,
+    "non_regression": 1,
+    "schema_valid_rate": 1,
+    "hallucinated_accepted_assets": 0,
+    "hallucinated_accepted_evidence": 0,
+    "security_violations": 0,
+    "fallback_correct": 21,
+    "result": "PASS",
+    "results": [
+      {
+        "id": "P20-VALIDATION-101",
+        "kind": "PROMPT_INJECTION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000010101"
+      },
+      {
+        "id": "P20-VALIDATION-102",
+        "kind": "CANDIDATE_INJECTION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000010201"
+      },
+      {
+        "id": "P20-VALIDATION-103",
+        "kind": "EVIDENCE_INJECTION",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_EVIDENCE",
+        "winner": "10000000-0000-4000-8000-000000010301"
+      },
+      {
+        "id": "P20-VALIDATION-104",
+        "kind": "TIMEOUT",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000010401"
+      },
+      {
+        "id": "P20-VALIDATION-105",
+        "kind": "HTTP_429",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000010501"
+      },
+      {
+        "id": "P20-VALIDATION-106",
+        "kind": "HTTP_500",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000010601"
+      },
+      {
+        "id": "P20-VALIDATION-107",
+        "kind": "NETWORK",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000010701"
+      },
+      {
+        "id": "P20-VALIDATION-108",
+        "kind": "INVALID_JSON",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000010801"
+      },
+      {
+        "id": "P20-VALIDATION-109",
+        "kind": "TRUNCATED_JSON",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000010901"
+      },
+      {
+        "id": "P20-VALIDATION-110",
+        "kind": "WRONG_SCHEMA",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000011001"
+      },
+      {
+        "id": "P20-VALIDATION-111",
+        "kind": "UNKNOWN_ASSET",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_ASSET",
+        "winner": "10000000-0000-4000-8000-000000011101"
+      },
+      {
+        "id": "P20-VALIDATION-112",
+        "kind": "UNKNOWN_EVIDENCE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_EVIDENCE",
+        "winner": "10000000-0000-4000-8000-000000011201"
+      },
+      {
+        "id": "P20-VALIDATION-113",
+        "kind": "DUPLICATE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "DUPLICATE_ASSET",
+        "winner": "10000000-0000-4000-8000-000000011301"
+      },
+      {
+        "id": "P20-VALIDATION-114",
+        "kind": "MISSING",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "MISSING_CANDIDATE",
+        "winner": "10000000-0000-4000-8000-000000011401"
+      },
+      {
+        "id": "P20-VALIDATION-115",
+        "kind": "INVALID_SCORE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "INVALID_SCORE",
+        "winner": "10000000-0000-4000-8000-000000011501"
+      },
+      {
+        "id": "P20-VALIDATION-116",
+        "kind": "HARD_CONSTRAINT",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000011601"
+      },
+      {
+        "id": "P20-VALIDATION-117",
+        "kind": "HARD_EXCLUSION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000011701"
+      },
+      {
+        "id": "P20-VALIDATION-118",
+        "kind": "UNKNOWN_FALSE",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000011801"
+      },
+      {
+        "id": "P20-VALIDATION-119",
+        "kind": "CACHE_ISOLATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000011901"
+      },
+      {
+        "id": "P20-VALIDATION-120",
+        "kind": "EXTERNAL_AI_DENIAL",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000012001"
+      },
+      {
+        "id": "P20-VALIDATION-121",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000012101"
+      },
+      {
+        "id": "P20-VALIDATION-122",
+        "kind": "ACTION_HAPPENING_PREPARING",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000012201"
+      },
+      {
+        "id": "P20-VALIDATION-123",
+        "kind": "EXACT_ADJACENT_ANATOMY",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000012301"
+      },
+      {
+        "id": "P20-VALIDATION-124",
+        "kind": "ACTOR_RELATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000012401"
+      },
+      {
+        "id": "P20-VALIDATION-125",
+        "kind": "SAME_SCENE_SCATTERED",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000012501"
+      },
+      {
+        "id": "P20-VALIDATION-126",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000012601"
+      },
+      {
+        "id": "P20-VALIDATION-127",
+        "kind": "TESTIMONIAL_FACING_CAMERA",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000012701"
+      },
+      {
+        "id": "P20-VALIDATION-128",
+        "kind": "PREFERENCE_MISMATCH",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000012801"
+      },
+      {
+        "id": "P20-VALIDATION-129",
+        "kind": "NEGATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000012901"
+      },
+      {
+        "id": "P20-VALIDATION-130",
+        "kind": "AMBIGUOUS_ROLE",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000013001"
+      },
+      {
+        "id": "P20-VALIDATION-131",
+        "kind": "PROMPT_INJECTION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000013101"
+      },
+      {
+        "id": "P20-VALIDATION-132",
+        "kind": "CANDIDATE_INJECTION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000013201"
+      },
+      {
+        "id": "P20-VALIDATION-133",
+        "kind": "EVIDENCE_INJECTION",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_EVIDENCE",
+        "winner": "10000000-0000-4000-8000-000000013301"
+      },
+      {
+        "id": "P20-VALIDATION-134",
+        "kind": "TIMEOUT",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000013401"
+      },
+      {
+        "id": "P20-VALIDATION-135",
+        "kind": "HTTP_429",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000013501"
+      },
+      {
+        "id": "P20-VALIDATION-136",
+        "kind": "HTTP_500",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000013601"
+      },
+      {
+        "id": "P20-VALIDATION-137",
+        "kind": "NETWORK",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000013701"
+      },
+      {
+        "id": "P20-VALIDATION-138",
+        "kind": "INVALID_JSON",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000013801"
+      },
+      {
+        "id": "P20-VALIDATION-139",
+        "kind": "TRUNCATED_JSON",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000013901"
+      },
+      {
+        "id": "P20-VALIDATION-140",
+        "kind": "WRONG_SCHEMA",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000014001"
+      }
+    ]
+  },
+  "blind": {
+    "cases": 40,
+    "correct": 40,
+    "incorrect": 0,
+    "pairwise_accuracy": 1,
+    "top1": 1,
+    "top3": 1,
+    "mrr": 1,
+    "ndcg_at_2": 1,
+    "non_regression": 1,
+    "schema_valid_rate": 1,
+    "hallucinated_accepted_assets": 0,
+    "hallucinated_accepted_evidence": 0,
+    "security_violations": 0,
+    "fallback_correct": 18,
+    "result": "PASS",
+    "results": [
+      {
+        "id": "P20-BLIND-143",
+        "kind": "DUPLICATE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "DUPLICATE_ASSET",
+        "winner": "10000000-0000-4000-8000-000000014301"
+      },
+      {
+        "id": "P20-BLIND-168",
+        "kind": "INVALID_JSON",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000016801"
+      },
+      {
+        "id": "P20-BLIND-151",
+        "kind": "EXACT_PARTIAL",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000015101"
+      },
+      {
+        "id": "P20-BLIND-144",
+        "kind": "MISSING",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "MISSING_CANDIDATE",
+        "winner": "10000000-0000-4000-8000-000000014401"
+      },
+      {
+        "id": "P20-BLIND-175",
+        "kind": "INVALID_SCORE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "INVALID_SCORE",
+        "winner": "10000000-0000-4000-8000-000000017501"
+      },
+      {
+        "id": "P20-BLIND-158",
+        "kind": "PREFERENCE_MISMATCH",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000015801"
+      },
+      {
+        "id": "P20-BLIND-142",
+        "kind": "UNKNOWN_EVIDENCE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_EVIDENCE",
+        "winner": "10000000-0000-4000-8000-000000014201"
+      },
+      {
+        "id": "P20-BLIND-148",
+        "kind": "UNKNOWN_FALSE",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000014801"
+      },
+      {
+        "id": "P20-BLIND-176",
+        "kind": "HARD_CONSTRAINT",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000017601"
+      },
+      {
+        "id": "P20-BLIND-167",
+        "kind": "NETWORK",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000016701"
+      },
+      {
+        "id": "P20-BLIND-150",
+        "kind": "EXTERNAL_AI_DENIAL",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000015001"
+      },
+      {
+        "id": "P20-BLIND-172",
+        "kind": "UNKNOWN_EVIDENCE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_EVIDENCE",
+        "winner": "10000000-0000-4000-8000-000000017201"
+      },
+      {
+        "id": "P20-BLIND-162",
+        "kind": "CANDIDATE_INJECTION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000016201"
+      },
+      {
+        "id": "P20-BLIND-145",
+        "kind": "INVALID_SCORE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "INVALID_SCORE",
+        "winner": "10000000-0000-4000-8000-000000014501"
+      },
+      {
+        "id": "P20-BLIND-160",
+        "kind": "AMBIGUOUS_ROLE",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000016001"
+      },
+      {
+        "id": "P20-BLIND-146",
+        "kind": "HARD_CONSTRAINT",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000014601"
+      },
+      {
+        "id": "P20-BLIND-171",
+        "kind": "UNKNOWN_ASSET",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_ASSET",
+        "winner": "10000000-0000-4000-8000-000000017101"
+      },
+      {
+        "id": "P20-BLIND-178",
+        "kind": "UNKNOWN_FALSE",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000017801"
+      },
+      {
+        "id": "P20-BLIND-153",
+        "kind": "EXACT_ADJACENT_ANATOMY",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000015301"
+      },
+      {
+        "id": "P20-BLIND-165",
+        "kind": "HTTP_429",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000016501"
+      },
+      {
+        "id": "P20-BLIND-179",
+        "kind": "CACHE_ISOLATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000017901"
+      },
+      {
+        "id": "P20-BLIND-155",
+        "kind": "SAME_SCENE_SCATTERED",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000015501"
+      },
+      {
+        "id": "P20-BLIND-174",
+        "kind": "MISSING",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "MISSING_CANDIDATE",
+        "winner": "10000000-0000-4000-8000-000000017401"
+      },
+      {
+        "id": "P20-BLIND-154",
+        "kind": "ACTOR_RELATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000015401"
+      },
+      {
+        "id": "P20-BLIND-147",
+        "kind": "HARD_EXCLUSION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000014701"
+      },
+      {
+        "id": "P20-BLIND-170",
+        "kind": "WRONG_SCHEMA",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000017001"
+      },
+      {
+        "id": "P20-BLIND-173",
+        "kind": "DUPLICATE",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "DUPLICATE_ASSET",
+        "winner": "10000000-0000-4000-8000-000000017301"
+      },
+      {
+        "id": "P20-BLIND-156",
+        "kind": "SPECIFIC_GENERIC",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000015601"
+      },
+      {
+        "id": "P20-BLIND-169",
+        "kind": "TRUNCATED_JSON",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "SCHEMA",
+        "winner": "10000000-0000-4000-8000-000000016901"
+      },
+      {
+        "id": "P20-BLIND-166",
+        "kind": "HTTP_500",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000016601"
+      },
+      {
+        "id": "P20-BLIND-152",
+        "kind": "ACTION_HAPPENING_PREPARING",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000015201"
+      },
+      {
+        "id": "P20-BLIND-163",
+        "kind": "EVIDENCE_INJECTION",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_EVIDENCE",
+        "winner": "10000000-0000-4000-8000-000000016301"
+      },
+      {
+        "id": "P20-BLIND-141",
+        "kind": "UNKNOWN_ASSET",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "UNKNOWN_ASSET",
+        "winner": "10000000-0000-4000-8000-000000014101"
+      },
+      {
+        "id": "P20-BLIND-177",
+        "kind": "HARD_EXCLUSION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000017701"
+      },
+      {
+        "id": "P20-BLIND-157",
+        "kind": "TESTIMONIAL_FACING_CAMERA",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000015701"
+      },
+      {
+        "id": "P20-BLIND-149",
+        "kind": "CACHE_ISOLATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000014901"
+      },
+      {
+        "id": "P20-BLIND-164",
+        "kind": "TIMEOUT",
+        "pass": true,
+        "status": "FALLBACK",
+        "reason": "PROVIDER_FAILURE",
+        "winner": "10000000-0000-4000-8000-000000016401"
+      },
+      {
+        "id": "P20-BLIND-180",
+        "kind": "EXTERNAL_AI_DENIAL",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000018001"
+      },
+      {
+        "id": "P20-BLIND-161",
+        "kind": "PROMPT_INJECTION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000016101"
+      },
+      {
+        "id": "P20-BLIND-159",
+        "kind": "NEGATION",
+        "pass": true,
+        "status": "APPLIED",
+        "reason": null,
+        "winner": "10000000-0000-4000-8000-000000015901"
+      }
+    ]
+  },
+  "stability": {
+    "repeated_cases": 20,
+    "top1_consistency": 1,
+    "pairwise_consistency": 1,
+    "schema_validity": 1,
+    "evidence_ref_validity": 1,
+    "mean_adjustment_variance": 0,
+    "threshold": 0.95,
+    "result": "PASS"
+  },
+  "performance": {
+    "5": {
+      "evidence_assembly_mean_ms": 0,
+      "model_mean_ms": 0.06427000000000171,
+      "validation_mean_ms": 0.03524666666666666,
+      "combine_mean_ms": 0.012093333333333334,
+      "total_mean_ms": 0.11161000000000172,
+      "total_p50_ms": 0.11269999999998959,
+      "total_p95_ms": 0.15280000000001337,
+      "input_tokens": 240,
+      "output_tokens": 132
+    },
+    "10": {
+      "evidence_assembly_mean_ms": 0,
+      "model_mean_ms": 0.05996999999999798,
+      "validation_mean_ms": 0.07023333333333334,
+      "combine_mean_ms": 0.017053333333333334,
+      "total_mean_ms": 0.14725666666666465,
+      "total_p50_ms": 0.12539999999998486,
+      "total_p95_ms": 0.25839999999999463,
+      "input_tokens": 450,
+      "output_tokens": 252
+    },
+    "20": {
+      "evidence_assembly_mean_ms": 0,
+      "model_mean_ms": 0.09480333333333055,
+      "validation_mean_ms": 0.14564666666666667,
+      "combine_mean_ms": 0.020796666666666668,
+      "total_mean_ms": 0.2612466666666639,
+      "total_p50_ms": 0.24389999999999645,
+      "total_p95_ms": 0.3826999999999998,
+      "input_tokens": 870,
+      "output_tokens": 492
+    }
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3427.MP4, single scene",
+      "evidence": [
+        "asset_id 1b6f3d15-cf2f-4087-ade3-22a868577494, filename IMG_3427.MP4, scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical-setting clip of a person's face/neck",
+      "evidence": [
+        "16.583s scene with 2 keyframes showing a reclined person's face and neck in an indoor setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, 0.0-16.583s",
+      "evidence": [
+        "start_seconds 0.0, end_seconds 16.583, scene_index 0, keyframes_supplied 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One reclining individual visible; no other person shown",
+      "evidence": [
+        "both keyframes show only one person's face, neck, and shoulders; no hands, instruments, or second person are visible in frame"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark-haired individual, headband in one frame, scattered facial marks",
+      "evidence": [
+        "dark hair visible in both images",
+        "black headband visible in second image",
+        "small red/purple pinpoint spots scattered across cheeks and chin in both images"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, neck, and upper shoulder/chest area visible",
+      "evidence": [
+        "images frame the lower face, chin, full neck, and shoulder/upper chest region"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied evidence",
+      "evidence": [
+        "readable_text_detected and spoken_content are both empty, so no procedure name is confirmed by the supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person reclining with head tilted back/upward",
+      "evidence": [
+        "subject's head rests on a teal headrest, chin lifted and face angled upward in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No second person shown to establish a relationship",
+      "evidence": [
+        "only one individual is visible in either keyframe; no clinician, hands, or tools appear in frame"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Orange-brown topical patches on neck and small facial pinpoint marks",
+      "evidence": [
+        "several irregular orange/brown stained patches visible across the neck and upper chest in both images",
+        "small dark red/purple pinpoint spots scattered on the cheeks and chin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical/treatment room setting",
+      "evidence": [
+        "teal headrest/pad, white wall and door frame in background, blue towel draped over the person in both images"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical shot at 1280x720",
+      "evidence": [
+        "technical metadata lists width 1280, height 720; both keyframes are tight close-ups of the face/neck"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face and neck centered and filling the frame",
+      "evidence": [
+        "both keyframes center the chin, neck, and shoulder area with minimal background visible"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected despite audio track",
+      "evidence": [
+        "spoken_content is an empty array; technical.audio_stream is true but no transcript was produced"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected is an empty array",
+        "no text visible in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No branding or promotional elements confirmed",
+      "evidence": [
+        "no logos, captions, or overlay text appear in either keyframe, and no supplied text indicates marketing intent"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A person reclined in a clinical setting with topical marks on the neck",
+      "evidence": [
+        "reclined posture, headrest, towel draping, and orange-brown patches on the neck across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two vertical video keyframes show a person reclining with their head tilted back on a teal headrest, a blue towel draped over their chest and shoulders. Their neck bears several orange-brown antiseptic-like patches over the skin, and their face shows scattered small red/purple pinpoint marks.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "1b6f3d15-cf2f-4087-ade3-22a868577494",
+  "image_count": 2
+}

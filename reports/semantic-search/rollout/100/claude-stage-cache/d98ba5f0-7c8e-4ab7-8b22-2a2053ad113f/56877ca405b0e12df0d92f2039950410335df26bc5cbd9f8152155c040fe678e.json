@@ -1,0 +1,184 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_1012.MP4, 20.87s, 1280x720",
+      "evidence": [
+        "technical metadata: duration 20.866667s, width 1280, height 720, fps 30/1, codec h264, filename IMG_1012.MP4"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene facial treatment clip",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "scene narrative describes a continuous facial treatment sequence"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "scene_index 0 spans the full asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One reclined subject, one gloved practitioner",
+      "evidence": [
+        "woman reclined on treatment bed in robe",
+        "gloved hand holding device and gloved hand pressing on cheek visible in frame"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark-haired woman, black headband, dark robe",
+      "evidence": [
+        "hair pulled back under black headband",
+        "wearing dark robe",
+        "face, forehead, and neck coated in clear/beige gel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, forehead, cheek, jaw, and neck visible",
+      "evidence": [
+        "gel-coated face, forehead, cheek, jaw, and neck visible in frame",
+        "eyes closed, eyebrows visible"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed facial device treatment",
+      "evidence": [
+        "gloved hand holds a handheld device emitting blue light near jaw/cheek; no procedure name present in supplied text",
+        "per instructions, gloves/instruments/skin contact alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device applied to face; hand presses cheek",
+      "evidence": [
+        "gloved hand holds handheld device emitting blue light near jaw and cheek",
+        "second frame shows gloved hand pressing on cheek"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner hands interacting directly with subject's face",
+      "evidence": [
+        "gloved hands shown applying device and pressing directly on the reclined woman's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gel/product coating skin, blue-light device in use",
+      "evidence": [
+        "face, forehead, and neck coated in clear/beige gel-like substance",
+        "handheld device emitting blue light held near jaw and cheek"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Treatment setting, specifics unclear",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible treatment bed and blue covering",
+        "no further setting detail available in supplied text"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Camera style not determinable",
+      "evidence": [
+        "scene-level CINEMATOGRAPHY marked UNKNOWN in supplied evidence"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing of face and upper body",
+      "evidence": [
+        "subject's face and upper torso fill the vertical frame",
+        "gloved hands and device occupy right side of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT",
+        "transcript_state: NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated: true, ocr_observations: 0",
+        "scene-level OCR_VISIBLE_TEXT marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN with no supporting captions or branding in evidence"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN in supplied evidence"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to media evaluation",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A woman with her hair pulled back under a black headband reclines on a treatment bed with a blue covering, wearing a dark robe, her face, forehead, and neck coated in a clear/beige gel. A gloved hand holds a handheld device emitting a blue light near her jaw and cheek while another gloved hand presses on her cheek.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "d98ba5f0-7c8e-4ab7-8b22-2a2053ad113f",
+  "image_count": 1
+}

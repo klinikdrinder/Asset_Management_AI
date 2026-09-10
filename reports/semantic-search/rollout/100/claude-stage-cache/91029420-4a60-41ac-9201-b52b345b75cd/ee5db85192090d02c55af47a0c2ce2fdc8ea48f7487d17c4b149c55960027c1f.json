@@ -1,0 +1,186 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2342.MP4, single scene",
+      "evidence": [
+        "filename IMG_2342.MP4",
+        "asset_id 91029420-4a60-41ac-9201-b52b345b75cd",
+        "scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical close-up video, ~11 seconds",
+      "evidence": [
+        "duration_seconds 11.043334",
+        "2 keyframes supplied showing a facial procedure setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene from 0 to 11.04s",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 11.043"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined patient and two gloved/masked clinical staff",
+      "evidence": [
+        "patient's face and neck visible reclined in chair",
+        "two sets of gloved hands visible",
+        "one figure wearing surgical mask and blue scrubs with partial name tag 'DR LEW...'"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient has dark hair, wearing blue draping; staff in blue scrubs with surgical mask and gloves",
+      "evidence": [
+        "dark hair visible around patient's head",
+        "blue surgical drape over patient",
+        "clinician wearing light blue surgical mask and blue scrub top"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, nose, mouth, and neck visible",
+      "evidence": [
+        "close-up framing of nose, lips, cheeks, chin, and neck area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Named procedure not established by supplied evidence",
+      "evidence": [
+        "no readable_text_detected or spoken_content naming any procedure",
+        "gloves, instrument, and facial contact alone do not establish a specific named procedure per instructions"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positions a handheld device near the patient's face while another holds eye shields",
+      "evidence": [
+        "hands holding metal ring-cone device close to patient's nose/eye area in first image",
+        "hand adjusting black eye shield on patient's face in second image"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical staff actively attending to reclined patient",
+      "evidence": [
+        "staff hands directly contacting patient's face and eyewear",
+        "patient positioned passively beneath staff performing actions"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reddened/pink patch visible across patient's cheek and forehead",
+      "evidence": [
+        "visible reddish-pink discoloration spanning cheek to forehead in both images"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "plain wall with red vertical stripe in background",
+        "blue medical draping and surgical attire visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical handheld framing of patient's face",
+      "evidence": [
+        "tight vertical (portrait) framing centered on face",
+        "1280x720 resolution reformatted to vertical crop with slight framing shift between the two keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face centered, device and hands occupy upper frame",
+      "evidence": [
+        "patient's face fills lower two-thirds of frame",
+        "instrument and gloved hands occupy upper third in first image"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected despite audio track present",
+      "evidence": [
+        "spoken_content is an empty list",
+        "technical.audio_stream is true but no transcript supplied"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial name badge text visible on clinician's scrub top",
+      "evidence": [
+        "text fragment 'DR LEW' visible on blue scrub top in second image",
+        "readable_text_detected list is empty in supplied data"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context supplied",
+      "evidence": [
+        "no caption, branding, or usage metadata provided in evidence"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical staff performing a facial treatment on a reclined patient",
+      "evidence": [
+        "combination of protective eyewear, handheld device, gloved hands, and marked skin area indicates an in-progress clinical facial treatment"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual or textual descriptor layer",
+      "evidence": [
+        "layer represents an internal embedding/index construct not derivable as an observation"
+      ]
+    }
+  ],
+  "narrative": "A patient lies reclined in a treatment chair wearing protective eye shields while a gloved clinician holds a handheld device with a metal ring/cone attachment near her face; a red mark or patch is visible across her cheek and forehead. A second masked staff member assists by holding the eye shields in place.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "91029420-4a60-41ac-9201-b52b345b75cd",
+  "image_count": 2
+}

@@ -1,0 +1,175 @@
+{
+  "assets": {
+    "table": "public.assets",
+    "columns": [
+      "id",
+      "filename",
+      "media_type",
+      "content_hash",
+      "file_size"
+    ],
+    "relations": [
+      "asset_sources",
+      "asset_destinations"
+    ]
+  },
+  "provenance": {
+    "table": "public.asset_sources",
+    "columns": [
+      "asset_id",
+      "source_id",
+      "source_path",
+      "source_fingerprint"
+    ]
+  },
+  "semantic_profile": {
+    "table": "public.asset_ai_profiles",
+    "columns": [
+      "asset_id",
+      "analysis_version",
+      "processing_status"
+    ]
+  },
+  "layer_definitions": {
+    "table": "public.semantic_layer_definitions",
+    "columns": [
+      "layer_id",
+      "layer_number",
+      "layer_name",
+      "spec_version",
+      "active"
+    ]
+  },
+  "layer_evaluations": {
+    "table": "public.asset_semantic_layers",
+    "columns": [
+      "asset_id",
+      "layer_id",
+      "analysis_run_id",
+      "applicability",
+      "semantic_state",
+      "processing_status",
+      "completeness_status",
+      "ontology_version",
+      "semantic_spec_version",
+      "active"
+    ]
+  },
+  "analysis_lineage": {
+    "table": "public.semantic_analysis_runs",
+    "columns": [
+      "asset_id",
+      "status",
+      "semantic_spec_version",
+      "ontology_version",
+      "processor_version",
+      "source_fingerprint",
+      "provider",
+      "model",
+      "supersedes_run_id"
+    ]
+  },
+  "assertions": {
+    "table": "public.semantic_assertions",
+    "columns": [
+      "asset_id",
+      "layer_id",
+      "predicate",
+      "semantic_state",
+      "search_critical",
+      "analysis_run_id",
+      "origin",
+      "ontology_version",
+      "semantic_spec_version",
+      "source_fingerprint"
+    ]
+  },
+  "evidence": {
+    "table": "public.semantic_assertion_evidence",
+    "columns": [
+      "assertion_id",
+      "evidence_type",
+      "asset_id",
+      "scene_id",
+      "event_id",
+      "keyframe_id",
+      "transcript_chunk_id",
+      "ocr_observation_id",
+      "start_time",
+      "end_time",
+      "analysis_run_id"
+    ]
+  },
+  "temporal": {
+    "tables": [
+      "public.asset_scenes",
+      "public.asset_events",
+      "public.asset_keyframes"
+    ],
+    "linkage": "asset_id plus scene/event/keyframe foreign keys and bounded timestamps"
+  },
+  "people_appearance": {
+    "tables": [
+      "public.scene_people",
+      "public.person_appearances",
+      "public.asset_people"
+    ]
+  },
+  "clinical_layers": {
+    "tables": [
+      "public.scene_anatomy",
+      "public.scene_treatments",
+      "public.scene_actions",
+      "public.scene_relationships",
+      "public.clinical_observations",
+      "public.scene_environment",
+      "public.scene_cinematography",
+      "public.scene_composition"
+    ]
+  },
+  "audio_ocr": {
+    "tables": [
+      "public.asset_transcript_chunks",
+      "public.ocr_observations"
+    ],
+    "acceptance": "accepted/search_status plus source fingerprints"
+  },
+  "marketing": {
+    "table": "public.marketing_annotations"
+  },
+  "narrative": {
+    "tables": [
+      "public.semantic_narratives",
+      "public.narrative_claims",
+      "public.narrative_claim_evidence"
+    ]
+  },
+  "search_documents": {
+    "tables": [
+      "public.asset_search_documents",
+      "public.scene_search_documents",
+      "public.search_document_build_runs",
+      "public.search_document_concepts",
+      "public.search_document_evidence"
+    ],
+    "version": "kdi_search_document_v1"
+  },
+  "embeddings": {
+    "tables": [
+      "public.semantic_embeddings",
+      "public.asset_embeddings",
+      "public.asset_visual_embeddings",
+      "public.scene_embeddings",
+      "public.keyframe_embeddings",
+      "public.transcript_embeddings"
+    ],
+    "backend": "PostgreSQL + pgvector"
+  },
+  "authorization": {
+    "table": "public.asset_access_control",
+    "separation": "independent from semantic state"
+  },
+  "consent": {
+    "status": "governance/consent fields remain separate; no semantic implication"
+  }
+}

@@ -1,1 +1,41 @@
-"use client";import Link from"next/link";import{FormEvent,useState}from"react";import{createPasswordAuthClient}from"../lib/supabase/auth-client";export function ResetPasswordForm(){const[password,setPassword]=useState(""),[confirm,setConfirm]=useState(""),[show,setShow]=useState(false),[error,setError]=useState(""),[done,setDone]=useState(false);async function submit(e:FormEvent){e.preventDefault();setError("");if(password.length<8){setError("Password must be at least 8 characters.");return}if(password!==confirm){setError("Passwords do not match.");return}const result=await createPasswordAuthClient(true).auth.updateUser({password});if(result.error){setError("The reset link is invalid or expired.");return}setDone(true)}return done?<div className="authSuccess">Password updated successfully. <Link href="/login">Continue to Login</Link></div>:<form className="authForm" onSubmit={submit}><label>New Password<input type={show?"text":"password"} autoComplete="new-password" minLength={8} required value={password} onChange={e=>setPassword(e.target.value)}/></label><label>Confirm New Password<input type={show?"text":"password"} autoComplete="new-password" minLength={8} required value={confirm} onChange={e=>setConfirm(e.target.value)}/></label><label className="rememberRow"><input type="checkbox" checked={show} onChange={e=>setShow(e.target.checked)}/><span>Show password</span></label>{error&&<div className="authError" role="alert">{error}</div>}<button className="authPrimary">Update Password</button></form>}
+"use client";
+
+import Link from "next/link";
+import { FormEvent, useState } from "react";
+import { createPasswordAuthClient } from "../lib/supabase/auth-client";
+
+export function ResetPasswordForm() {
+  const [password, setPassword] = useState("");
+  const [confirm, setConfirm] = useState("");
+  const [error, setError] = useState("");
+  const [pending, setPending] = useState(false);
+  const [done, setDone] = useState(false);
+
+  async function submit(event: FormEvent) {
+    event.preventDefault();
+    setError("");
+    if (password.length < 8) return setError("Password must be at least 8 characters.");
+    if (password !== confirm) return setError("Passwords do not match.");
+    setPending(true);
+    const auth = createPasswordAuthClient(true);
+    const result = await auth.auth.updateUser({ password });
+    if (result.error) {
+      setError("The reset link is invalid or expired.");
+      setPending(false);
+      return;
+    }
+    // Revoke all sessions so a stolen or pre-reset session cannot survive the credential change.
+    const signedOut = await auth.auth.signOut({ scope: "global" });
+    if (signedOut.error) await auth.auth.signOut({ scope: "local" });
+    setDone(true);
+    setPending(false);
+  }
+
+  if (done) return <div className="authSuccess"><p>Password updated successfully.</p><Link href="/login">Return to Sign In</Link></div>;
+  return <form className="authForm" onSubmit={submit}>
+    <label>New Password<input type="password" autoComplete="new-password" minLength={8} required value={password} onChange={(event) => setPassword(event.target.value)} /></label>
+    <label>Confirm New Password<input type="password" autoComplete="new-password" minLength={8} required value={confirm} onChange={(event) => setConfirm(event.target.value)} /></label>
+    {error && <div className="authError" role="alert">{error}</div>}
+    <button className="authPrimary" disabled={pending}>{pending ? "Resetting…" : "Reset Password"}</button>
+  </form>;
+}

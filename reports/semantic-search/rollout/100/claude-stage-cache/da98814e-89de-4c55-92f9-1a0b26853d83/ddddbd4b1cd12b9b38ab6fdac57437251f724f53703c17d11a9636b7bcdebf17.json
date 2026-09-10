@@ -1,0 +1,185 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0951.MP4, 13.1s scene",
+      "evidence": [
+        "filename IMG_0951.MP4",
+        "asset_id da98814e-89de-4c55-92f9-1a0b26853d83",
+        "duration_seconds 13.113333"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single short clinical/aesthetic device treatment scene",
+      "evidence": [
+        "one scene spanning 0.0 to 13.113 seconds",
+        "2 keyframes showing consistent setting and subject"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, device repositioned between frames",
+      "evidence": [
+        "scene_index 0 spans 0.0-13.113s",
+        "device angle and gloved hand position differ slightly between the two keyframes"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One reclined patient/client and one gloved practitioner",
+      "evidence": [
+        "a person lying down with eyes closed/relaxed",
+        "a second person's gloved hands operating a handheld device near the patient's face"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined individual with dark hair, gel on lower face",
+      "evidence": [
+        "dark eyebrows and hairline visible",
+        "clear gel/liquid visible on cheek and chin",
+        "wearing a dark top, lying on a blue disposable sheet"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Lower face, cheek, chin, and jaw/neck area visible",
+      "evidence": [
+        "nose, lips, chin, cheek, and neck are visible in both frames",
+        "gel applied over the cheek and chin region"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed device-based skin treatment",
+      "evidence": [
+        "no procedure name present in readable_text_detected or spoken_content",
+        "gloved hands and a handheld device with gel contact alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner holds and moves device against treated skin",
+      "evidence": [
+        "device head is in contact with gel-covered cheek/chin in both frames",
+        "device position shifts slightly between the two keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner performing hands-on application to patient",
+      "evidence": [
+        "gloved hands directly holding and applying the device to the reclined person's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gel/coupling medium and gloved hands indicate clinical setting",
+      "evidence": [
+        "clear gel visible on skin surface",
+        "white nitrile-style gloves worn by the operator",
+        "device probe with dark contact pads/sensors visible"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "neutral beige wall in background",
+        "blue disposable paper sheet under patient consistent with a treatment table"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld vertical video framing",
+      "evidence": [
+        "tight close-up composition on face and device",
+        "vertical 720x1280-style aspect ratio implied by portrait framing of keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device and hands dominate frame center, face lower portion",
+      "evidence": [
+        "gloved hands and device occupy upper and central frame",
+        "patient's face positioned in lower-left of frame in both images"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small unreadable label on device head",
+      "evidence": [
+        "a white sticker with faint markings is visible on the device probe in the second keyframe",
+        "readable_text_detected list is empty, indicating text is not legible/extractable"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Potential promotional/before-content but usage unspecified",
+      "evidence": [
+        "no captions, logos, or usage metadata supplied to indicate marketing intent"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts a hands-on facial skincare/device treatment session",
+      "evidence": [
+        "gloved application of a device with gel to a reclined patient's cheek and chin area across both frames"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person lies reclined on a treatment bed with clear gel applied to their lower cheek and chin area while a gloved practitioner holds a handheld device with a metallic probe against the treated skin. The two frames show the device being positioned and moved slightly along the jaw/cheek area, with a small labeled sticker visible on the device head in the second frame.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "da98814e-89de-4c55-92f9-1a0b26853d83",
+  "image_count": 2
+}

@@ -1,0 +1,176 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_4101.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_4101.MP4, duration 12.73s, 1280x720, h264, one canonical scene with two keyframes"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clip of scalp marking before an unnamed procedure",
+      "evidence": [
+        "Single scene showing a clinician marking a patient's scalp with a pen, consistent across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, ~12.7 seconds",
+      "evidence": [
+        "scene_results indicates 1 canonical scene spanning the full 12.733333-second duration with 2 keyframes"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician marking scalp of seated patient",
+      "evidence": [
+        "Person in blue surgical cap, mask, and dark scrubs holds a marker and forceps near the patient's head",
+        "A second person in a gray gown sits facing away, presumed patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked clinician; bald-headed patient in gray gown",
+      "evidence": [
+        "Clinician wears blue surgical cap, blue face mask, dark navy scrub top",
+        "Patient has a closely shaved/bald head and wears a gray gown"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Back and crown of patient's scalp visible",
+      "evidence": [
+        "Back of head, crown, and ear region of the patient are visible with marker lines drawn on the scalp"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure evidenced",
+      "evidence": [
+        "Only marker lines, gloved-looking hands, and an instrument near the scalp are visible; no text or audio names any clinical procedure",
+        "Per-scene evaluation lists TREATMENT_PROCEDURE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician draws marker lines on scalp",
+      "evidence": [
+        "Keyframes show a marker pen actively drawing a circular outline and vertical lines on the back/crown of the head"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned directly behind seated patient",
+      "evidence": [
+        "Clinician's hands and marker are in direct contact with the patient's scalp while standing behind the seated patient"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Purple marker grid and circular outline on scalp",
+      "evidence": [
+        "Vertical marker lines and a circular outline are drawn on the crown and back of the scalp",
+        "A metallic instrument is held near the ear/scalp area"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Plain blue-background clinical setting",
+      "evidence": [
+        "Flat light blue backdrop fills the frame behind both subjects, consistent with a clinical/studio setting"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static close-up vertical framing",
+      "evidence": [
+        "Two near-identical close-up keyframes with vertical (portrait) 720-width framing centered on the head and clinician"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's head lower-left, clinician upper-right",
+      "evidence": [
+        "Patient's marked head occupies the lower-left of frame while the clinician's masked face and hands occupy the upper-right"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Audio track present but no speech detected",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0",
+        "Per-scene OCR_VISIBLE_TEXT marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing elements present",
+      "evidence": [
+        "Per-scene MARKETING_CONTENT_USAGE marked FALSE; no logos, captions, or branding visible in keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Purpose of marking not confirmed by evidence",
+      "evidence": [
+        "No supplied text or audio clarifies the intent behind the scalp marking beyond the visual act itself"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually derivable layer",
+      "evidence": [
+        "Per-scene evaluation lists SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A clinician in a blue surgical cap and mask uses a marker to draw a circular outline and vertical grid lines on the back of a bald patient's head. The patient, wearing a gray gown, sits with their back to the camera against a plain blue background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "0a932fbd-8675-4301-99d9-ec052b1c22b4",
+  "image_count": 1
+}

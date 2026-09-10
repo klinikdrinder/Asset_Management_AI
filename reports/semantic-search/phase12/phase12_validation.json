@@ -1,0 +1,432 @@
+{
+  "generated_at": "2026-08-25T01:47:14.687Z",
+  "status": "PASS",
+  "gate": {
+    "exact_pilots": true,
+    "fingerprints": true,
+    "legacy_preserved": true,
+    "versions_locked": true,
+    "coverage": true,
+    "excluded_content": true,
+    "img1238": true,
+    "integrity": true,
+    "idempotency": true,
+    "staleness": true,
+    "mixed_dimensions": true,
+    "structured": true,
+    "visual_sanity": true,
+    "text_sanity": true,
+    "cross_modal_sanity": true,
+    "rls": true,
+    "client_write_denied": true,
+    "semantic_preserved": true,
+    "no_human": true,
+    "no_frontend": true,
+    "phase13_not_started": true
+  },
+  "representations": [
+    {
+      "representation_type": "TEXT_ASSET",
+      "provider": "sentence_transformers",
+      "model": "intfloat/multilingual-e5-small",
+      "model_version": "hf-main-pinned-runtime-v1",
+      "embedding_version": "kdi_text_embedding_v1",
+      "embedding_bundle_version": "kdi_embedding_bundle_v1",
+      "dimensions": 384,
+      "count": 10,
+      "active_count": 10
+    },
+    {
+      "representation_type": "TEXT_EVENT",
+      "provider": "sentence_transformers",
+      "model": "intfloat/multilingual-e5-small",
+      "model_version": "hf-main-pinned-runtime-v1",
+      "embedding_version": "kdi_text_embedding_v1",
+      "embedding_bundle_version": "kdi_embedding_bundle_v1",
+      "dimensions": 384,
+      "count": 16,
+      "active_count": 16
+    },
+    {
+      "representation_type": "TEXT_OCR",
+      "provider": "sentence_transformers",
+      "model": "intfloat/multilingual-e5-small",
+      "model_version": "hf-main-pinned-runtime-v1",
+      "embedding_version": "kdi_text_embedding_v1",
+      "embedding_bundle_version": "kdi_embedding_bundle_v1",
+      "dimensions": 384,
+      "count": 1,
+      "active_count": 1
+    },
+    {
+      "representation_type": "TEXT_SCENE",
+      "provider": "sentence_transformers",
+      "model": "intfloat/multilingual-e5-small",
+      "model_version": "hf-main-pinned-runtime-v1",
+      "embedding_version": "kdi_text_embedding_v1",
+      "embedding_bundle_version": "kdi_embedding_bundle_v1",
+      "dimensions": 384,
+      "count": 11,
+      "active_count": 11
+    },
+    {
+      "representation_type": "TEXT_TRANSCRIPT",
+      "provider": "sentence_transformers",
+      "model": "intfloat/multilingual-e5-small",
+      "model_version": "hf-main-pinned-runtime-v1",
+      "embedding_version": "kdi_text_embedding_v1",
+      "embedding_bundle_version": "kdi_embedding_bundle_v1",
+      "dimensions": 384,
+      "count": 3,
+      "active_count": 3
+    },
+    {
+      "representation_type": "VISUAL_ASSET",
+      "provider": "open_clip",
+      "model": "ViT-B-32",
+      "model_version": "laion2b_s34b_b79k",
+      "embedding_version": "kdi_visual_embedding_v1",
+      "embedding_bundle_version": "kdi_embedding_bundle_v1",
+      "dimensions": 512,
+      "count": 10,
+      "active_count": 10
+    },
+    {
+      "representation_type": "VISUAL_KEYFRAME",
+      "provider": "open_clip",
+      "model": "ViT-B-32",
+      "model_version": "laion2b_s34b_b79k",
+      "embedding_version": "kdi_visual_embedding_v1",
+      "embedding_bundle_version": "kdi_embedding_bundle_v1",
+      "dimensions": 512,
+      "count": 44,
+      "active_count": 44
+    },
+    {
+      "representation_type": "VISUAL_SCENE",
+      "provider": "open_clip",
+      "model": "ViT-B-32",
+      "model_version": "laion2b_s34b_b79k",
+      "embedding_version": "kdi_visual_embedding_v1",
+      "embedding_bundle_version": "kdi_embedding_bundle_v1",
+      "dimensions": 512,
+      "count": 11,
+      "active_count": 11
+    }
+  ],
+  "integrity": {
+    "total": 106,
+    "active": 106,
+    "missing_source": 0,
+    "missing_vector_fp": 0,
+    "missing_run": 0,
+    "dimension_mismatch": 0,
+    "null_vectors": 0,
+    "bad_visual_dims": 0,
+    "bad_text_dims": 0,
+    "duplicate_active": 0,
+    "stale_document_mismatch": 0
+  },
+  "excluded": {
+    "excluded_transcripts": 0,
+    "excluded_ocr": 0,
+    "technical_events": 0,
+    "img3429_transcript": 0
+  },
+  "img1238": {
+    "img1238_treatment": "UNKNOWN",
+    "undersegmentation": 1,
+    "mcure_ocr_only": 1,
+    "technical_only": 6,
+    "human_decisions": 0,
+    "signed_gold": 0
+  },
+  "concepts": [
+    {
+      "concept_type": "ACTION",
+      "count": 16
+    },
+    {
+      "concept_type": "ANATOMY",
+      "count": 21
+    },
+    {
+      "concept_type": "CLINICAL_OBSERVATION",
+      "count": 9
+    },
+    {
+      "concept_type": "CONTENT_TYPE",
+      "count": 21
+    },
+    {
+      "concept_type": "ENVIRONMENT",
+      "count": 7
+    },
+    {
+      "concept_type": "OCR",
+      "count": 3
+    },
+    {
+      "concept_type": "RELATIONSHIP",
+      "count": 23
+    },
+    {
+      "concept_type": "ROLE",
+      "count": 18
+    },
+    {
+      "concept_type": "SEMANTIC_CONCEPT",
+      "count": 139
+    },
+    {
+      "concept_type": "SPOKEN_CONCEPT",
+      "count": 8
+    },
+    {
+      "concept_type": "TREATMENT",
+      "count": 5
+    }
+  ],
+  "security": {
+    "generated_at": "2026-08-25T01:47:14.687Z",
+    "rls": "PASS",
+    "authorized": {
+      "rows": 106,
+      "families": 8
+    },
+    "unauthorized": {
+      "rows": 0,
+      "families": 0
+    },
+    "unauthorized_vector_exposure": 0,
+    "normal_client_write_denied": true,
+    "write_test": {
+      "denied": true,
+      "status": 400,
+      "detail": "{\"message\":\"Failed to run sql query: ERROR:  42501: permission denied for table semantic_embeddings\\nHINT:  Grant the required privileges to the current role with: GRANT INSERT ON public.semantic_embeddings TO authenticated;\\n\"}"
+    }
+  },
+  "similarity": {
+    "visual": {
+      "tested": 44,
+      "rank1": 44,
+      "exceptions": []
+    },
+    "text": {
+      "tested": 41,
+      "rank1": 40,
+      "exceptions": [
+        {
+          "id": "8b1f5d7c-8b19-5163-b409-d8b43baaa663",
+          "rank": 2,
+          "top": [
+            1,
+            "9775fc04-740b-599e-8a9c-48460d749ea2"
+          ]
+        }
+      ]
+    },
+    "text_equivalent_ties": 1,
+    "scene_coherence_pass": true,
+    "cross_modal_queries": [
+      "clinician",
+      "patient",
+      "scalp",
+      "face",
+      "clinical procedure"
+    ]
+  },
+  "latency": {
+    "VISUAL_ASSET": {
+      "samples": 7,
+      "p50_ms": 265.2288000000008,
+      "p95_ms": 617.3258999999998,
+      "max_ms": 617.3258999999998
+    },
+    "VISUAL_SCENE": {
+      "samples": 7,
+      "p50_ms": 307.65380000000005,
+      "p95_ms": 820.1028000000006,
+      "max_ms": 820.1028000000006
+    },
+    "VISUAL_KEYFRAME": {
+      "samples": 7,
+      "p50_ms": 306.4879999999994,
+      "p95_ms": 2150.8652,
+      "max_ms": 2150.8652
+    },
+    "TEXT_ASSET": {
+      "samples": 7,
+      "p50_ms": 252.14120000000003,
+      "p95_ms": 975.3035,
+      "max_ms": 975.3035
+    },
+    "TEXT_SCENE": {
+      "samples": 7,
+      "p50_ms": 366.95020000000295,
+      "p95_ms": 472.75350000000253,
+      "max_ms": 472.75350000000253
+    },
+    "TEXT_EVENT": {
+      "samples": 7,
+      "p50_ms": 308.5945000000029,
+      "p95_ms": 2149.2358999999997,
+      "max_ms": 2149.2358999999997
+    },
+    "TEXT_TRANSCRIPT": {
+      "samples": 7,
+      "p50_ms": 300.1948999999986,
+      "p95_ms": 419.2555999999968,
+      "max_ms": 419.2555999999968
+    },
+    "TEXT_OCR": {
+      "samples": 7,
+      "p50_ms": 273.9383000000016,
+      "p95_ms": 459.81050000000323,
+      "max_ms": 459.81050000000323
+    }
+  },
+  "data_preservation": [
+    {
+      "table": "asset_access_control",
+      "before": 881,
+      "after": 881,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "asset_destinations",
+      "before": 881,
+      "after": 881,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "asset_embeddings",
+      "before": 20,
+      "after": 20,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "asset_events",
+      "before": 22,
+      "after": 22,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "asset_keyframes",
+      "before": 345,
+      "after": 345,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "asset_scenes",
+      "before": 312,
+      "after": 312,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "asset_search_concepts_v2",
+      "before": 270,
+      "after": 270,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "asset_sources",
+      "before": 881,
+      "after": 881,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "asset_transcript_chunks",
+      "before": 14,
+      "after": 14,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "asset_visual_embeddings",
+      "before": 875,
+      "after": 875,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "assets",
+      "before": 881,
+      "after": 881,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "ocr_observations",
+      "before": 19,
+      "after": 19,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "search_document_builds",
+      "before": 55,
+      "after": 55,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "semantic_analysis_runs",
+      "before": 58,
+      "after": 78,
+      "delta": 20,
+      "expected_change": true
+    },
+    {
+      "table": "semantic_assertion_evidence",
+      "before": 270,
+      "after": 270,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "semantic_assertions",
+      "before": 333,
+      "after": 333,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "semantic_embeddings",
+      "before": 0,
+      "after": 106,
+      "delta": 106,
+      "expected_change": true
+    },
+    {
+      "table": "semantic_narratives",
+      "before": 37,
+      "after": 37,
+      "delta": 0,
+      "expected_change": false
+    },
+    {
+      "table": "source_files",
+      "before": 890,
+      "after": 890,
+      "delta": 0,
+      "expected_change": false
+    }
+  ],
+  "index_strategy": {
+    "metric": "cosine",
+    "pilot": "exact",
+    "future": "partial ANN indexes per compatible vector space only",
+    "mixed_space_global_index": false
+  },
+  "frontend_work": false,
+  "phase13_started": false
+}

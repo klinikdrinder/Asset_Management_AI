@@ -1,0 +1,48 @@
+{
+  "extends": "kdi_query_parser_v2",
+  "query_parser_version": "kdi_query_parser_v3_1",
+  "deterministic_parser_version": "kdi_deterministic_query_parser_v3_1",
+  "semantic_interpreter_version": "kdi_semantic_query_interpreter_v3_1",
+  "query_schema_version": "kdi_query_schema_v1_1",
+  "configuration_version": "kdi_query_parser_config_v3_1",
+  "primary_supported_language": "ENGLISH",
+  "optional_language_support": "BEST_EFFORT",
+  "pipeline_version": "kdi_query_pipeline_v3",
+  "semantic_phrase_engine_version": "kdi_semantic_phrase_engine_v3",
+  "action_morphology_version": "kdi_action_morphology_v1",
+  "action_families": [
+    {
+      "code": "IMPLANTING_GRAFTS",
+      "patterns": [
+        "\\bimplant(?:s|ed|ing)?\\s+(?:the\\s+)?grafts?\\b",
+        "\\bgrafts?\\s+(?:(?:are|is|were|being)\\s+)?implanted\\b",
+        "\\b(?:graft\\s+implantation|implantation\\s+of\\s+(?:the\\s+)?grafts?|placement\\s+of\\s+(?:the\\s+)?grafts?|placing\\s+(?:the\\s+)?grafts?|graft\\s+placement)\\b"
+      ]
+    },
+    {
+      "code": "DRAWING_HAIRLINE",
+      "patterns": [
+        "\\b(?:draw|draws|drawn|drawing|design|designs|designed|designing|plan|plans|planned|planning|mark|marks|marked|marking)\\s+(?:of\\s+)?(?:a\\s+|the\\s+)?(?:front(?:al)?\\s+)?hair\\s*line\\b",
+        "\\b(?:front(?:al)?\\s+)?hair\\s*line\\s+(?:(?:is|was|being)\\s+)?(?:drawn|designed|planned|marked|drawing|design|planning|marking)\\b",
+        "\\b(?:drawing|design|planning|marking)\\s+of\\s+(?:a\\s+|the\\s+)?(?:front(?:al)?\\s+)?hair\\s*line\\b"
+      ]
+    },
+    {
+      "code": "CLEANSING",
+      "patterns": [
+        "\\b(?:clean|cleans|cleaned|cleaning|cleanse|cleanses|cleansed|cleansing|wipe|wipes|wiped|wiping)\\s+(?:of\\s+)?(?:the\\s+)?(?:scalp|recipient\\s+(?:area|region))\\b",
+        "\\b(?:scalp|recipient\\s+(?:area|region))\\s+(?:(?:is|was|being)\\s+)?(?:cleaned|cleansed|wiped|cleaning|cleansing)\\b",
+        "\\bcleansing\\s+of\\s+(?:the\\s+)?(?:scalp|recipient\\s+(?:area|region))\\b"
+      ]
+    },
+    {
+      "code": "INJECTING",
+      "patterns": [
+        "\\b(?:inject|injects|injected|injecting|injection)\\b(?:\\s+(?:into|on|at)\\s+(?:the\\s+)?scalp)?",
+        "\\b(?:doctor|physician|clinician)\\s+(?:giving|administering)\\s+(?:an?\\s+)?injection\\b",
+        "\\bpatient\\s+(?:(?:is|was|being)\\s+)?(?:injected|receiving\\s+(?:an?\\s+)?injection)\\b",
+        "\\bsyringe\\s+injection\\b"
+      ]
+    }
+  ]
+}

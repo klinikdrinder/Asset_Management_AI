@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video file, 1280x720, 13.38s",
+      "evidence": [
+        "technical metadata: duration 13.38s, 1280x720, 30fps, h264, filename IMG_1363.MP4"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "scene-level result for GLOBAL_ASSET_UNDERSTANDING is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 showing progression of instrument near patient's face"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclining patient present",
+      "evidence": [
+        "person in teal scrubs, mask, and white gloves handling instrument; reclining person draped in towel with protective eyewear"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs; patient with eyewear and towel drape",
+      "evidence": [
+        "clinician wearing teal scrub top and white gloves; patient wearing metallic protective eyewear and covered with a green/tan towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forehead, nose, and facial area visible",
+      "evidence": [
+        "patient's face, nose, and forehead region visible beneath protective eyewear with instrument tip near skin"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "gloves, instrument, and facial contact are visible but no named procedure is stated in supplied text; scene-level TREATMENT_PROCEDURE is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applying handheld instrument to patient's face",
+      "evidence": [
+        "hands positioning and holding a device with a red light near the patient's nose/forehead area"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned over reclining patient",
+      "evidence": [
+        "clinician leans over patient, hands and instrument directed at patient's face, indicating clinician-patient interaction"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, instrument, and red light on skin",
+      "evidence": [
+        "white gloves, handheld device with cable, faint red light visible near patient's skin in first keyframe"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room type not confirmed",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible sink, spray bottles, and tray"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up framing on patient's face and hands",
+      "evidence": [
+        "vertical 1280x720 keyframes with close framing on hands, instrument, and patient's face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Foreground hands/instrument, background counter and tray",
+      "evidence": [
+        "gloved hands and instrument dominate foreground; sink, bottles, and draped tray visible in background"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose not determinable",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/audio evaluation",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS is NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A patient reclines with head tilted back, draped in a towel and wearing protective eyewear, while a clinician in teal scrubs and white gloves holds a handheld instrument near the patient's forehead/nose area with a faint red light visible on the skin. The background shows a treatment room with a sink, spray bottles, and a blue-draped tray holding small dishes and tools.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "3829debc-4439-4212-8780-0f4e46ca31fa",
+  "image_count": 1
+}

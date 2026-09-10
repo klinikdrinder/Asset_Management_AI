@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset IMG_0482.MP4",
+      "evidence": [
+        "Filename IMG_0482.MP4, duration 9.77s, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clip of a clinical interaction",
+      "evidence": [
+        "Single scene showing patient and gloved masked person in a treatment room"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across the clip",
+      "evidence": [
+        "canonical_scenes: 1, scene_index 0 covering full duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A patient and a masked, gloved staff member",
+      "evidence": [
+        "Person lying on bed with surgical cap; person in teal scrubs, mask, gloves leaning over them"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Teal scrubs, surgical mask, gloves; patient in green top with blue cap",
+      "evidence": [
+        "Visible teal scrub top, blue surgical mask, white gloves on standing person; patient wearing blue disposable cap and green shirt"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forehead/scalp area of patient visible",
+      "evidence": [
+        "Gloved hand near patient's forehead/hairline"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from visuals",
+      "evidence": [
+        "Gloved contact with forehead alone does not name a procedure per instructions"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member touching/working on patient's forehead",
+      "evidence": [
+        "Gloved hands positioned at patient's forehead in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Caregiver-patient relationship in clinical setting",
+      "evidence": [
+        "One person lying down passively, another standing over them performing an action"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, mask, surgical cap, towel draped on patient",
+      "evidence": [
+        "White gloves, blue mask, blue disposable cap, blue towel over patient's shoulder/chest"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room type not definitively identified",
+      "evidence": [
+        "Per-scene ENVIRONMENT marked UNKNOWN despite visible sliding doors and equipment"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical handheld-style framing, close medium shot",
+      "evidence": [
+        "Portrait 1280x720 aspect appears vertical crop, camera positioned close to subjects"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient horizontal in foreground, staff member vertical in background",
+      "evidence": [
+        "Patient reclining across lower frame, standing staff member occupies upper-right frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "No branding, captions, or promotional cues visible; per-scene marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Narrative purpose unclear beyond depicted action",
+      "evidence": [
+        "Per-scene SEMANTIC_NARRATIVE UNKNOWN; no further context available"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Embedding-level semantics not resolved",
+      "evidence": [
+        "Per-scene SEARCH_EMBEDDINGS UNKNOWN, no additional distinguishing data"
+      ]
+    }
+  ],
+  "narrative": "A patient wearing a blue surgical cap lies on a bed with a blue disposable pillow cover while a person in teal scrubs, gloves, and a face mask leans over to touch the patient's forehead area. The setting resembles a clinical treatment room with sliding doors, a red accent stripe, and medical equipment visible in the background.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "b9fe6721-60a0-4c2f-bd45-d70b014c7b31",
+  "image_count": 1
+}

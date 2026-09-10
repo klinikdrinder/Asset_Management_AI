@@ -1,0 +1,162 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video file, IMG_1938.MP4",
+      "evidence": [
+        "filename IMG_1938.MP4, 1280x720, 24.37s, h264, fps 30/1, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clinical-setting clip",
+      "evidence": [
+        "One canonical scene spanning the full 24.37s duration showing an applicator device used near a reclined person's neck/jaw"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, no cuts",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, single scene_index 0 covering the whole clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operator and reclined individual",
+      "evidence": [
+        "One person in a mask, goggles, and scrub top actively holds and positions the applicator; a second person lies reclined with head tilted back receiving the contact"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Coral scrubs, mask, goggles; reclined person under blanket",
+      "evidence": [
+        "Operator has dark hair pulled back, wears a surgical mask, green-framed safety goggles, and a coral short-sleeve scrub top",
+        "Reclined person wears clear eye protection and is covered by a blue drape and gray knit blanket"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Neck and jaw area visible",
+      "evidence": [
+        "Applicator tip is held against the reclined person's neck/lower jaw region, with head tilted back exposing that area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied evidence",
+      "evidence": []
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Applicator held against reclined person's neck/jaw",
+      "evidence": [
+        "Operator's hand steadies and presses the handheld applicator, attached to the articulated 'HELIOS 785' arm, against the reclined person's skin"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner attending to reclined individual",
+      "evidence": [
+        "Spatial and interactive arrangement shows the standing masked person leaning over and directly contacting the reclined, draped individual"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "PPE, drape, and device contact with skin",
+      "evidence": [
+        "Mask, goggles, disposable blue drape, reclined positioning, and direct device-to-skin contact are visible"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting not further specified",
+      "evidence": []
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Camera/shot characteristics not determined",
+      "evidence": []
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical framing centered on device and faces",
+      "evidence": [
+        "Portrait-oriented frame (1280x720 source cropped to vertical view) centers the articulated arm, applicator, and both people's heads"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech detected",
+      "evidence": [
+        "audio_stream_present: true, transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device branding text visible",
+      "evidence": [
+        "Text 'HELIOS 785' and 'OPTEK' printed on the device arm; ocr_observations: 3"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing overlays or branding usage indicated",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE recorded as FALSE with no promotional graphics or text overlays visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative intent not determined",
+      "evidence": []
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked practitioner in a coral scrub top holds a handheld applicator, connected via an articulated arm labeled 'HELIOS 785' and 'OPTEK', near the neck and jaw of a reclined person wearing clear eye protection. The reclined individual is covered by a blue disposable drape and a gray knit blanket in a room with cream walls, and the 24-second clip carries an audio track with no discernible speech.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "95b3a4e4-37c5-4f74-b5c8-953ad3c0d981",
+  "image_count": 1
+}

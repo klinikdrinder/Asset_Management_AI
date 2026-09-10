@@ -1,0 +1,174 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video file with two sampled keyframes",
+      "evidence": [
+        "filename IMG_2124.MP4, duration 16.8s, 1280x720, h264, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall purpose not determinable from stills",
+      "evidence": [
+        "Scene-level result marked GLOBAL_ASSET_UNDERSTANDING as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, scene marked OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles of clinician and patient not confirmed",
+      "evidence": [
+        "Scene-level result marked PEOPLE_ROLES as UNKNOWN despite visible clinician/patient figures"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in maroon scrubs, gloves, hair in bun; patient reclined",
+      "evidence": [
+        "Clinician has dark hair in a bun, maroon scrub top, white gloves, watch on wrist; second frame shows surgical mask",
+        "Patient reclined with head on pillow, blue drape visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forehead/browline area visible",
+      "evidence": [
+        "Handheld device positioned near patient's forehead/browline in image"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed",
+      "evidence": [
+        "Gloves, instrument, and facial contact alone do not establish a named procedure per rules",
+        "Scene-level result marked TREATMENT_PROCEDURE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applies handheld device to patient's face",
+      "evidence": [
+        "Clinician leans over patient holding device connected to articulated arm near forehead/browline"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned directly over reclined patient",
+      "evidence": [
+        "Clinician leaning over patient in close physical proximity, hands near patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clinical findings determinable",
+      "evidence": [
+        "Scene-level result marked CLINICAL_VISUAL_OBSERVATIONS as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting not further specified",
+      "evidence": [
+        "Scene-level result marked ENVIRONMENT as UNKNOWN despite plain wall and treatment bed visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up framing of procedure area",
+      "evidence": [
+        "Vertical (portrait) 1280x720-derived frame composition centered on clinician and patient's face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and device dominate upper frame, patient lower frame",
+      "evidence": [
+        "Silver articulated arm and clinician occupy top/center, reclined patient fills lower portion of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state NO_SPEECH",
+        "Scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Text on scrub top not clearly legible",
+      "evidence": [
+        "ocr_observations count is 1 but scene-level OCR_VISIBLE_TEXT marked UNKNOWN; faint embroidered text on clinician's shirt not clearly readable"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing elements present",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked FALSE; no logos, captions, or promotional overlays visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual layer",
+      "evidence": [
+        "Scene-level result marked SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "Two keyframes show a clinician with dark hair in a bun, wearing a maroon scrub top and white gloves, leaning over a reclined patient and applying a handheld device connected to an articulated silver arm near the patient's forehead/browline. The patient lies on a treatment bed with a pillow and blue drape in a plain clinical room; in the second frame the clinician also wears a surgical face mask.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "c54b43da-55c2-4c56-9436-1e9fd892a9c4",
+  "image_count": 1
+}

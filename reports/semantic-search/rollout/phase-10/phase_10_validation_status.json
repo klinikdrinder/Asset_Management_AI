@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-09-02T05:56:43.196564+00:00",
+  "phase": 10,
+  "status": "PASS",
+  "phase_10": "PASS",
+  "batch": {
+    "planned": 19,
+    "attempted": 19,
+    "completed": 19,
+    "search_ready": 19,
+    "failed": 0,
+    "unsupported": 0,
+    "blocked": 0
+  },
+  "gates": {
+    "semantic_quality": true,
+    "layer_coverage": true,
+    "embeddings": true,
+    "search_documents": true,
+    "external_inference_zero": true,
+    "search_validation": true,
+    "scope_and_preservation": true
+  },
+  "preservation": {
+    "original_10_complete": 10,
+    "canary_complete": true,
+    "original_11_search_ready": 11,
+    "original_11_visual_vectors": 11,
+    "original_11_text_embeddings": 11,
+    "status": "PASS"
+  },
+  "database": {
+    "before": {
+      "certified_phase_09_baseline": {
+        "assets": 881,
+        "complete": 11,
+        "pending": 869,
+        "unsupported": 1,
+        "search_ready": 11
+      },
+      "resume_observed": {
+        "assets": 881,
+        "complete": 14,
+        "pending": 866,
+        "unsupported": 1,
+        "search_ready": 14,
+        "structures": {
+          "asset_semantic_layers": 270,
+          "semantic_assertions": 357,
+          "semantic_assertion_evidence": 294,
+          "asset_search_documents": 14,
+          "search_document_builds": 69,
+          "semantic_embeddings": 121,
+          "asset_visual_embeddings": 875,
+          "asset_scenes": 314,
+          "asset_keyframes": 347,
+          "asset_transcript_chunks": 14,
+          "ocr_observations": 19
+        }
+      },
+      "resumed_phase_10_assets": [
+        "2f81c26a-eb3b-4dbb-9325-a0da9eaf526f",
+        "e447839d-b034-4936-a1ad-b51b9ccf3739",
+        "ebbb9b67-7ef6-410e-bad8-a8533da2f3c2"
+      ],
+      "resumed_count": 3
+    },
+    "after": {
+      "assets": 881,
+      "complete": 30,
+      "pending": 850,
+      "unsupported": 1,
+      "search_ready": 30,
+      "structures": {
+        "asset_semantic_layers": 558,
+        "semantic_assertions": 437,
+        "semantic_assertion_evidence": 374,
+        "asset_search_documents": 30,
+        "search_document_builds": 85,
+        "semantic_embeddings": 137,
+        "asset_visual_embeddings": 875,
+        "asset_scenes": 322,
+        "asset_keyframes": 355,
+        "asset_transcript_chunks": 14,
+        "ocr_observations": 19
+      }
+    }
+  },
+  "acl": {
+    "rows": 19,
+    "all_verified": true,
+    "download_allowed": 0
+  },
+  "external_ai_calls": 0,
+  "external_media_transmission": 0,
+  "deferred": {
+    "DEFERRED_SOURCE_REPOSITORY_PERMISSION": "DEFERRED",
+    "required_before_phase_19": true
+  },
+  "artifacts": [
+    "PHASE_10_CONTROLLED_PRODUCTION_INDEXING_FINAL.md",
+    "phase_10_asset_manifest.json",
+    "phase_10_asset_results.json",
+    "phase_10_batch_run.err.log",
+    "phase_10_batch_run.log",
+    "phase_10_clinical_false_positive_audit.json",
+    "phase_10_database_before_after.json",
+    "phase_10_embedding_audit.json",
+    "phase_10_external_inference_audit.json",
+    "phase_10_layer_coverage.json",
+    "phase_10_original_11_regression.json",
+    "phase_10_p2_displacement_analysis.json",
+    "phase_10_performance.json",
+    "phase_10_phase_09_regression_benchmark.json",
+    "phase_10_raw_benchmark.json",
+    "phase_10_search_document_audit.json",
+    "phase_10_search_validation.json",
+    "phase_10_semantic_quality_audit.json",
+    "phase_10_validation_status.json"
+  ],
+  "next": "PHASE 11 of the locked rollout",
+  "phase_11_started": false
+}

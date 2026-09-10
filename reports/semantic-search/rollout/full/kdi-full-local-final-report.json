@@ -1,0 +1,121 @@
+{
+  "status": "PASS_WITH_EXCEPTIONS",
+  "generated_at": "2026-09-07T07:36:17.464241+00:00",
+  "library": {
+    "total": 881,
+    "certified": 30,
+    "previous_local": 304,
+    "new_local": 543,
+    "unsupported": 1,
+    "technical_exceptions": 3,
+    "accounted": 881,
+    "unaccounted": 0
+  },
+  "local_preparation": {
+    "target_supported": 546,
+    "local_evidence_complete": 543,
+    "runs_completed": 543,
+    "remaining_running": 0,
+    "failures": 3
+  },
+  "media": {
+    "VIDEO": 267,
+    "IMAGE": 276
+  },
+  "scenes": {
+    "video_assets": 267,
+    "assets_with_scenes": 267,
+    "rows": 428,
+    "zero_scene_video_failures": 0
+  },
+  "keyframes": {
+    "assets": 267,
+    "rows": 693,
+    "missing_files": 0,
+    "scenes_with_zero": 0
+  },
+  "audio": {
+    "audio_bearing": 267,
+    "meaningful_speech": 28,
+    "no_meaningful_speech": 98,
+    "no_speech": 141,
+    "failures": 0
+  },
+  "transcripts": {
+    "assets": 28,
+    "chunks": 66,
+    "failures": 0
+  },
+  "ocr": {
+    "assets_evaluated": 543,
+    "observations": 606,
+    "failures": 0
+  },
+  "openclip": {
+    "visual_asset_512d": 543,
+    "visual_scene_512d": 428,
+    "visual_keyframe_512d": 693,
+    "invalid": 0
+  },
+  "readiness": {
+    "new_search_ready": 0,
+    "certified_search_ready": 30
+  },
+  "baseline": {
+    "assets_before": 30,
+    "assets_after": 30,
+    "layers_before": 540,
+    "layers_after": 540,
+    "search_ready_before": 30,
+    "search_ready_after": 30,
+    "fingerprints_before": {
+      "layers": "0e9d154b15f60f30a4f39e54010acf23788d7ffaf45e450c32b7985c23f6240a",
+      "documents": "0d0832b45cad32aaac8f0832b2f1da8259e165b52930bc9c25bba8be078fe90d",
+      "embeddings": "af3ba0debc19bc46b6cdabc40396037e56749d836ce0287c49ffcd6617547848",
+      "ready": "a9ea838d00e772926842b89e6ff591b11d1add44b129b2982dd0bd9cb90356d6"
+    },
+    "fingerprints_after": {
+      "layers": "0e9d154b15f60f30a4f39e54010acf23788d7ffaf45e450c32b7985c23f6240a",
+      "documents": "0d0832b45cad32aaac8f0832b2f1da8259e165b52930bc9c25bba8be078fe90d",
+      "embeddings": "af3ba0debc19bc46b6cdabc40396037e56749d836ce0287c49ffcd6617547848",
+      "ready": "a9ea838d00e772926842b89e6ff591b11d1add44b129b2982dd0bd9cb90356d6"
+    },
+    "unchanged": true
+  },
+  "previous_304": {
+    "assets": 304,
+    "scenes": 344,
+    "keyframes": 587
+  },
+  "safety": {
+    "external_ai_calls_attempted": 0,
+    "external_ai_calls_completed": 0,
+    "acl_modifications": 0
+  },
+  "exceptions": [
+    {
+      "asset_id": "1e6651de-6ffb-4565-9094-b1c5cc9c09b8",
+      "filename": "step14-retry.png",
+      "stage": "IMAGE_DECODE",
+      "reason": "OSError: Truncated File Read"
+    },
+    {
+      "asset_id": "2746a447-4b32-415c-971e-ed3878176848",
+      "filename": "step14-unique.png",
+      "stage": "IMAGE_DECODE",
+      "reason": "OSError: Truncated File Read"
+    },
+    {
+      "asset_id": "c89e88bf-39fb-4bd6-8ed2-dc4cb9e3901c",
+      "filename": "step14-unique.png",
+      "stage": "IMAGE_DECODE",
+      "reason": "OSError: Truncated File Read"
+    },
+    {
+      "asset_id": "3bcdd832-b504-4641-9729-0d965e01411a",
+      "filename": "REVIEW.pptx",
+      "stage": "FORMAT_VALIDATION",
+      "reason": "UNSUPPORTED_FORMAT"
+    }
+  ]
+}

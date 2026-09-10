@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "asset_id": "a9c4cf6f-c86c-4d9d-8a6d-2a815fe211bd",
+  "elapsed_seconds": 351.7,
+  "observations": [
+    {
+      "category": "people",
+      "claim_type": "DIRECT_OBSERVATION",
+      "concept": "people",
+      "state": "OBSERVED",
+      "confidence": "MEDIUM",
+      "evidence_type": "KEYFRAME",
+      "raw_response": "YES.",
+      "clinical_specificity": "NONE"
+    },
+    {
+      "category": "objects",
+      "claim_type": "DIRECT_OBSERVATION",
+      "concept": "objects",
+      "state": "OBSERVED",
+      "confidence": "MEDIUM",
+      "evidence_type": "KEYFRAME",
+      "raw_response": "YES.",
+      "clinical_specificity": "NONE"
+    },
+    {
+      "category": "anatomy",
+      "claim_type": "DIRECT_OBSERVATION",
+      "concept": "anatomy",
+      "state": "OBSERVED",
+      "confidence": "MEDIUM",
+      "evidence_type": "KEYFRAME",
+      "raw_response": "YES.",
+      "clinical_specificity": "NONE"
+    },
+    {
+      "category": "action",
+      "claim_type": "DIRECT_OBSERVATION",
+      "concept": "action",
+      "state": "OBSERVED",
+      "confidence": "MEDIUM",
+      "evidence_type": "KEYFRAME",
+      "raw_response": "YES.",
+      "clinical_specificity": "NONE"
+    },
+    {
+      "category": "environment",
+      "claim_type": "DIRECT_OBSERVATION",
+      "concept": "environment",
+      "state": "FALSE",
+      "confidence": "MEDIUM",
+      "evidence_type": "KEYFRAME",
+      "raw_response": "NO.",
+      "clinical_specificity": "NONE"
+    }
+  ],
+  "external_calls": 0,
+  "model": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+  "model_revision": "local-cache-main",
+  "runtime": "Transformers 4.57.6 / Torch 2.3.1+cpu / CPython 3.12.8",
+  "atomic_inference": "PASS",
+  "safe_fixture": {
+    "status": "PASS",
+    "accepted_positive_observations": 0,
+    "clinical_false_positives": 0,
+    "inference_seconds": 276.24
+  },
+  "canary_recall": 0.8,
+  "clinical_false_positives": 0,
+  "unsupported_accepted_observations": 0,
+  "invalid_evidence": 0
+}

@@ -1,0 +1,177 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video, 12s, 1280x720, keyframes sampled",
+      "evidence": [
+        "technical metadata: duration_seconds 12.033, width 1280, height 720, fps 30/1, codec h264, filename IMG_1384.MP4"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical video of facial skin treatment with handheld device",
+      "evidence": [
+        "all 26 scene keyframes show consistent extreme close-up framing of a face with gloved hands and a handheld probe device"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "26 scenes across a single continuous close-up sequence",
+      "evidence": [
+        "canonical_scenes: 26, canonical_keyframes: 26, each scene_index 0-25 shows a similar continuous close-up progression"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved clinician hands and a patient face",
+      "evidence": [
+        "gloved hands holding instruments and steadying skin appear in every scene narrative",
+        "scene 25 mentions a second person in teal scrub attire in the blurred background"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's lower face skin with mild redness and visible vessels",
+      "evidence": [
+        "multiple scene narratives describe 'mild redness', 'fine blood vessels (telangiectasia)', and skin texture on chin, jaw, and cheek"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Chin, jawline, cheek, nose, and periocular area",
+      "evidence": [
+        "scene narratives repeatedly reference chin, jaw, cheek, nose, and in scenes 2-3 forehead/scalp and neck areas"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure using handheld probe device",
+      "evidence": [
+        "per-scene TREATMENT_PROCEDURE is UNKNOWN in all 26 scenes",
+        "no named procedure appears in supplied text; gloves and a probe instrument alone do not establish a named treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device tip applied to skin while hand steadies face",
+      "evidence": [
+        "every scene narrative describes a gloved hand holding/applying a handheld instrument tip near or against the skin while another hand steadies the face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician hands interacting directly with patient's face",
+      "evidence": [
+        "scenes show one gloved hand stabilizing the patient's skin while another gloved hand operates the device, indicating a clinician-patient interaction"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Erythema and fine vessels at treatment site",
+      "evidence": [
+        "scene 0: 'visible mild redness/erythema in the chin area'",
+        "scene 4: 'visible redness and fine blood vessels (telangiectasia)'"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room with blue/teal drape",
+      "evidence": [
+        "scene 0: 'a hint of a blue surface' in background",
+        "scene 22: 'clinical treatment room with blue drapes visible in the background'"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme close-up handheld shots with shallow focus",
+      "evidence": [
+        "every scene narrative describes an 'extreme close-up' or 'close-up' framing with blurred background"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face fills frame, instrument tip centered near skin",
+      "evidence": [
+        "scenes consistently frame the lower face/chin filling most of the image with the device tip positioned centrally against the skin"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech detected",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT, transcript_state: NO_SPEECH",
+        "all scenes list SPEECH_TRANSCRIPT_AUDIO as FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated: true, ocr_observations: 0",
+        "all scenes list OCR_VISIBLE_TEXT as FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators identified",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE values are mixed FALSE/UNKNOWN with no consistent marketing element identified across scenes"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical skin treatment sequence",
+      "evidence": [
+        "majority of scenes (e.g. scenes 3,4,5,8,9,12,13,14,15,16,17,18,19,21,22,23,24,25) mark SEMANTIC_NARRATIVE as OBSERVED describing a coherent treatment sequence"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual content evaluation",
+      "evidence": [
+        "all scenes list SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "The images are a sequence of extreme close-up video keyframes showing a gloved clinician holding a metallic handheld probe with a coiled cable (and in two frames emitting a green light with an orange-white glow) against a patient's chin, jawline, and lower cheek, while a second gloved hand steadies the skin. The patient's skin shows mild redness and visible fine blood vessels, with a blue/teal drape visible in the blurred background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "8b7f2ab8-103e-42f0-84d8-a0bc2efd06be",
+  "image_count": 12
+}

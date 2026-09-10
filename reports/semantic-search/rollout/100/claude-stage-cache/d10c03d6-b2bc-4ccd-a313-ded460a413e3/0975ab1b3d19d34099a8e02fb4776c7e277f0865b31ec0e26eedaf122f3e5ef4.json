@@ -1,0 +1,185 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, 13.57s, 1280x720",
+      "evidence": [
+        "technical metadata: duration_seconds 13.566667, width 1280, height 720, fps 30/1, codec h264, filename IMG_4842.MP4"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical close-up clip of a facial procedure",
+      "evidence": [
+        "Single canonical scene showing a facial treatment with a handheld light-emitting device",
+        "duration_seconds 13.566667, canonical_scenes 1"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "scene_results contains a single scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient reclining; clinician performing a facial treatment",
+      "evidence": [
+        "Reclining person with facial mask and eye pad",
+        "Gloved person in magenta scrubs with name badge \"DR MANORA...\" positioned above/behind patient's head holding a handheld device"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient in green top with lavender headband; clinician in magenta scrubs with gloves",
+      "evidence": [
+        "Patient wears a green sleeveless top, lavender headband, dark red nail polish, white cream mask on face, gauze pad over one eye",
+        "Clinician wears magenta/pink scrub top with white name badge and white disposable gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, eye area, and upper arm visible",
+      "evidence": [
+        "Face covered in cream mask with visible lips, nose, one open eye area near the light",
+        "Other eye covered by gauze pad taped down",
+        "Plastic wrap visible on patient's upper arm"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed facial device treatment",
+      "evidence": [
+        "A handheld device emits a green-yellow light near the eye/cheek area but no procedure name is present in the supplied text",
+        "Per instructions, gloves, instruments, and physical contact alone cannot establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician directs a light-emitting handheld device toward patient's face",
+      "evidence": [
+        "Gloved hand holds a wand-like instrument emitting green-yellow light pointed at the cheek/under-eye region",
+        "Patient's hands rest folded on her chest, remaining still"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned over reclining patient, actively treating her",
+      "evidence": [
+        "Clinician's gloved hand and device are in direct proximity/contact with the patient's face while patient lies passively on the table"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Cream facial mask, taped gauze eye pad, plastic wrap on arm, gloves",
+      "evidence": [
+        "White cream mask coating the face",
+        "Gauze pad taped over one eye",
+        "Plastic wrap visible on the upper arm",
+        "Clinician wearing disposable white gloves"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Indoor clinical setting, specifics unclear",
+      "evidence": [
+        "scene_results ENVIRONMENT marked UNKNOWN despite a treatment table, blue disposable sheet, and pillow being visible; broader room context not discernible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close overhead/top-down handheld framing",
+      "evidence": [
+        "Vertical-oriented close shot looking down at the patient's face and upper body from above"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered, clinician's hands and device framing top of shot",
+      "evidence": [
+        "Patient's face and torso occupy the center/lower frame while the clinician's gloved hand and torso occupy the upper frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no meaningful speech",
+      "evidence": [
+        "audio_stream_present: true, audio_state: AUDIO_PRESENT",
+        "transcript_state: NO_MEANINGFUL_SPEECH",
+        "scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial name badge text visible on scrubs",
+      "evidence": [
+        "Text \"DR MANORA...\" visible on the clinician's scrub top pocket",
+        "ocr_evaluated: true, ocr_observations: 2"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context established",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN; no captions, branding overlays, or promotional text present in the supplied evidence"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose unclear",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN; only a single treatment moment is shown without surrounding context"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this content",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person lies on a treatment table with a white cream mask covering her face, a gauze pad taped over one eye, and a lavender headband holding back her hair, while a gloved clinician in magenta scrubs (badge reading \"DR MANORA...\") directs a handheld device emitting a green-yellow light toward her cheek/eye area. A blue disposable sheet covers the table and pillow, and plastic wrap is visible on the patient's upper arm.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "d10c03d6-b2bc-4ccd-a313-ded460a413e3",
+  "image_count": 1
+}

@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2344.MP4",
+      "evidence": [
+        "filename IMG_2344.MP4, 1280x720, 12.87s, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical close-up clip",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, one scene summarized across the asset"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, no cuts",
+      "evidence": [
+        "canonical_scenes: 1 with a single scene_index 0 spanning the 12.87s duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "masked figure in blue scrubs and gloves positioned over a reclined individual, one hand stabilizing the other's head"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved clinician, mask, dark hair; patient with reddened facial skin",
+      "evidence": [
+        "clinician wearing surgical mask, gloves, blue scrub top, Apple Watch on wrist",
+        "patient's forehead/temple skin appears reddened/blotchy"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forehead, temple, and facial area of patient visible",
+      "evidence": [
+        "reclined patient's forehead, temple, and lower face are in frame near the syringe and gloved hand"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN; syringe, gloves, and skin contact alone do not name a specific procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holding syringe near patient's face while stabilizing head",
+      "evidence": [
+        "gloved hand holds a syringe with yellow-tinted contents near the forehead/temple",
+        "other gloved hand stabilizes the patient's head/jaw"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Direct clinician-patient physical interaction",
+      "evidence": [
+        "clinician's gloved hand makes direct contact with patient's face while positioning the syringe close to the skin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reddened/blotchy skin on forehead area",
+      "evidence": [
+        "visible reddened patch of skin on the patient's forehead near the syringe tip"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite a plain wall and door visible in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing",
+      "evidence": [
+        "tight close-up composition centered on syringe, gloved hands, and patient's face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical frame dominated by hands, syringe, and faces",
+      "evidence": [
+        "1280x720 frame filled by clinician's head/hands in upper portion and patient's face in lower/right portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT but transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Some on-screen text detected",
+      "evidence": [
+        "ocr_evaluated: true with ocr_observations: 2"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN; no supplied text indicates promotional use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical care moment",
+      "evidence": [
+        "scene depicts a gloved clinician attending closely to a reclined patient's face with a syringe"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked clinician in blue scrubs and gloves holds a syringe near the forehead/temple area of a reclined patient with reddened skin, stabilizing the patient's head with a gloved hand. A device resembling glasses or a loupe rests on the patient's face, and an Apple Watch is visible on the clinician's wrist.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "99e8772c-d425-4260-81ff-bb5a306e901f",
+  "image_count": 1
+}

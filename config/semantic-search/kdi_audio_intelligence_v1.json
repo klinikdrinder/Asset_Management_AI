@@ -1,0 +1,20 @@
+{
+  "processor_version": "kdi_audio_intelligence_v1",
+  "configuration_version": "kdi_audio_intelligence_config_v1",
+  "audio_extractor": {"name": "ffmpeg", "format": "wav_pcm_s16le", "sample_rate": 16000, "channels": 1},
+  "vad": {"name": "kdi_rms_energy_vad", "version": "v1", "window_ms": 30, "absolute_floor_dbfs": -48.0, "noise_margin_db": 8.0, "minimum_speech_ms": 180, "merge_gap_ms": 300, "speech_candidate_ratio_floor": 0.002},
+  "speech_to_text": {"provider": "local_faster_whisper", "model": "small", "model_version": "faster-whisper-1.2.1_ct2", "device": "cpu", "compute_type": "int8", "beam_size": 5, "word_timestamps": true, "temperature": 0},
+  "language_detector": {"provider": "local_faster_whisper", "version": "small_language_probability"},
+  "diarization": {"enabled": false, "provider": "UNAVAILABLE", "model": "UNASSIGNED", "model_version": "UNASSIGNED", "identity_inference": false, "reason": "No approved local diarization model is configured; OpenAI API quota was unavailable."},
+  "chunking": {"maximum_duration_seconds": 30, "maximum_characters": 1200, "split_on_speaker": true, "split_on_scene": true},
+  "topics": {"version": "kdi_spoken_topic_rules_v1", "confidence_threshold": 0.75},
+  "embedding": {"status": "DEFERRED", "provider": "UNAVAILABLE", "model": "UNASSIGNED", "model_version": "UNASSIGNED", "dimensions": null, "reason": "Configured local Ollama qwen3-embedding service was unreachable and OpenAI API returned insufficient_quota."},
+  "translation": {"enabled": false},
+  "shadow_mode": true,
+  "production_database_writes": false,
+  "ocr_enabled": false,
+  "final_search_document_generation": false,
+  "retain_raw_audio": false,
+  "external_ai_requires_live_allowed_reviewed": true,
+  "provider_attempt_history": [{"provider": "openai", "asset_id": "7f72217d-3839-4920-86b4-ccc33e9e3d95", "outcome": "insufficient_quota_before_transcription", "authorized": true}]
+}

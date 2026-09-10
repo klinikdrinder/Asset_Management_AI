@@ -1,0 +1,153 @@
+{
+  "processor_version": "kdi_audio_intelligence_v1",
+  "configuration_version": "kdi_audio_intelligence_config_v1",
+  "configuration_fingerprint": "c90b3d1c7de34af15a93037b4e47229766306f2046de04fbcb89dea87396ba57",
+  "semantic_spec_version": "semantic_index_v1",
+  "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+  "pilot_manifest_version": "kdi_semantic_pilot_v1",
+  "analysis_run_id": "ad4dec2e-9b67-5f91-8061-06062b093de9",
+  "asset_id": "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+  "filename": "IMG_2963.MP4",
+  "source_fingerprint": "e23578c3df0265c02e25dd85a7e416c22a39533fb30f06a278aa02bfdade8749",
+  "generated_at": "2026-08-24T04:32:13.687407+00:00",
+  "status": "COMPLETED",
+  "authorization": {
+    "external_ai_eligible": true,
+    "reason": "Live reviewed asset_access_control.external_ai_status=ALLOWED",
+    "provider_used": "local_faster_whisper",
+    "audio_transmitted_externally": false,
+    "external_attempt_outcome": null,
+    "separate_controls": {
+      "external_ai_status": "ALLOWED",
+      "review_status": "REVIEWED",
+      "classification_status": "UNCLASSIFIED",
+      "is_clinical": null,
+      "sensitivity_level": "GENERAL",
+      "consent_status": "UNKNOWN",
+      "marketing_usage_status": "UNKNOWN",
+      "requires_clinical_permission": null,
+      "reviewed_at": "2026-08-20T04:49:35.121618+00:00"
+    }
+  },
+  "audio": {
+    "source_codec": "aac",
+    "video_duration_seconds": 12.9,
+    "duration_seconds": 12.8783125,
+    "sample_rate": 16000,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "frame_count": 206053,
+    "audio_fingerprint": "47917de1761901f1c13ac6404e0d324141da0ce278eea12597bcd609a2165fd5",
+    "duration_delta_seconds": 0.021688,
+    "duration_match": true,
+    "extraction_status": "COMPLETED",
+    "temporary_audio_retained": false
+  },
+  "speech_detection": {
+    "speech_present": "UNKNOWN",
+    "segments": [
+      {
+        "start_time": 0.3,
+        "end_time": 0.51,
+        "state": "SPEECH_CANDIDATE"
+      },
+      {
+        "start_time": 6.81,
+        "end_time": 6.99,
+        "state": "SPEECH_CANDIDATE"
+      }
+    ],
+    "speech_duration_seconds": 0.39,
+    "speech_ratio": 0.030233,
+    "confidence": 0.99,
+    "confidence_source": "HEURISTIC",
+    "threshold_dbfs": -38.46,
+    "noise_floor_dbfs": -46.46,
+    "peak_dbfs": -25.34,
+    "reason": "ENERGY_CANDIDATE_WITHOUT_TRANSCRIPT"
+  },
+  "language": {
+    "primary": "en",
+    "secondary": null,
+    "mixed": false,
+    "confidence": 0.34396055340766907,
+    "confidence_source": "LOCAL_WHISPER_LANGUAGE_PROBABILITY"
+  },
+  "transcription": {
+    "status": "UNKNOWN",
+    "raw_transcript": "",
+    "normalized_transcript": "",
+    "detected_speech_duration_seconds": 0.39,
+    "transcript_segment_span_seconds": 0,
+    "transcribed_speech_duration_seconds": 0.0,
+    "untranscribed_speech_duration_seconds": 0.39,
+    "transcribed_speech_coverage_percent": 0.0,
+    "coverage_method": "UNION_OVERLAP_OF_TRANSCRIPT_SEGMENTS_WITH_ENERGY_VAD_SEGMENTS",
+    "provider_raw": {
+      "whisper": {
+        "text": "",
+        "language": "en",
+        "language_probability": 0.34396055340766907,
+        "duration": 12.8783125,
+        "duration_after_vad": 0.0,
+        "segments": []
+      },
+      "diarized": {
+        "segments": [],
+        "status": "UNAVAILABLE"
+      }
+    }
+  },
+  "transcript_chunks": [],
+  "speakers": {
+    "anonymous_speaker_count": 0,
+    "speaker_ids": [],
+    "roles_assigned": 0,
+    "unknown_roles": 0,
+    "diarization_status": "UNAVAILABLE",
+    "diarization_confidence": null,
+    "voice_biometric_identification": "NONE"
+  },
+  "spoken_topics": [],
+  "spoken_summary": null,
+  "reconciliation": [
+    {
+      "asset_id": "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+      "filename": "IMG_2963.MP4",
+      "spoken_concept": null,
+      "outcome": "UNCERTAIN",
+      "evidence_chunk_ids": [],
+      "phase5_modified": false
+    }
+  ],
+  "img_1238_segmentation": null,
+  "layer_14": {
+    "applicability": "APPLICABLE",
+    "semantic_state": "UNKNOWN",
+    "speech_state": "UNKNOWN",
+    "transcript_state": "UNKNOWN",
+    "embedding_state": "NOT_APPLICABLE_TO_CONTENT",
+    "human_review_state": "REVIEW_NEEDED"
+  },
+  "performance": {
+    "audio_extraction_seconds": 0.0608358000026783,
+    "vad_seconds": 0.058450200012885034,
+    "transcription_seconds": 2.4251090999896405,
+    "diarization_seconds": 0.0,
+    "embedding_seconds": 0.0,
+    "total_seconds": 2.7113127000047825,
+    "provider_calls": 0,
+    "retries": 0,
+    "cost": "LOCAL_NO_API_COST"
+  },
+  "prohibitions": {
+    "ocr_performed": false,
+    "production_writes": false,
+    "search_documents_rebuilt": false,
+    "phase5_modified": false
+  },
+  "idempotency": {
+    "verified": true,
+    "functional_fingerprint": "2a4c5be20e7076c26823e2f7c4fd504f3a36e006efe16d04463fc39abe9f04bc"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_4608.MP4",
+      "evidence": [
+        "Technical metadata lists filename IMG_4608.MP4, duration 13.7s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context of clip not determinable",
+      "evidence": [
+        "Scene-level GLOBAL_ASSET_UNDERSTANDING is UNKNOWN with no supporting narrative detail"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across 13.7s clip",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, scene_results contains one scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined patient and masked, gloved clinician",
+      "evidence": [
+        "Image shows a woman reclined with eyes closed and a masked person in scrubs with gloves performing an action near her face"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman in blue gown, black headband, eyes closed",
+      "evidence": [
+        "Image shows patient wearing a blue gown and black headband with eyes closed; clinician wears navy scrubs, surgical mask, and gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, forehead and cheek visible with gel applied",
+      "evidence": [
+        "Image shows a clear gel/serum coating the forehead and cheek area of the patient's face"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not named in evidence",
+      "evidence": [
+        "Scene-level TREATMENT_PROCEDURE is UNKNOWN; only gloves, a handheld device with blue light, and a spatula tool are visible with no named procedure in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds device with blue light near patient's face",
+      "evidence": [
+        "Image shows a gloved hand holding a handheld device emitting a small blue light close to the patient's cheek/eye area, another gloved hand holds a white spatula tool"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Relationship between patient and clinician not specified",
+      "evidence": [
+        "Scene-level RELATIONSHIPS is UNKNOWN with no identifying detail beyond visual roles"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gel/serum on skin, gloved hands, handheld device with blue light",
+      "evidence": [
+        "Image shows clear gel coating on forehead/cheek, latex gloves on both clinician hands, and an illuminated blue tip on the handheld device"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Clinical setting implied but not detailed",
+      "evidence": [
+        "Scene-level ENVIRONMENT is UNKNOWN; only a treatment bed and equipment cords are visible with no further room context"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Overhead close-up framing of patient's face",
+      "evidence": [
+        "Image is a top-down close-up shot centered on the patient's face and the clinician's hands/tools"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient face centered, clinician hands framing top of shot",
+      "evidence": [
+        "Image shows patient's face centered in frame with clinician's torso, gloved hands, and device positioned above/around it"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, but transcript_state is NO_SPEECH and scene-level SPEECH_TRANSCRIPT_AUDIO is FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial logo/text on clinician's scrub top",
+      "evidence": [
+        "Image shows a small embroidered logo and partial text on the clinician's navy scrub top pocket area"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended use of clip not determinable",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE is UNKNOWN with no supplied context on distribution or purpose"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative meaning not determinable",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE is UNKNOWN with no supplied context beyond the depicted moment"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS is NOT_APPLICABLE, an internal indexing construct rather than an observable content layer"
+      ]
+    }
+  ],
+  "narrative": "A woman lies reclined on a treatment bed wearing a blue gown and black headband, eyes closed, with a clear gel or serum applied across her forehead and cheek. A masked, gloved clinician holds a handheld device emitting a small blue light near her face while another gloved hand holds a white spatula-like tool nearby.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "72e78149-1232-4ef1-9c79-888fa523109c",
+  "image_count": 1
+}

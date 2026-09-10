@@ -1,0 +1,14 @@
+{
+  "title": "KDI SEMANTIC SEARCH — PHASE 20 ABSOLUTE FINAL",
+  "status": "PASS",
+  "phase_21_allowed": true,
+  "phase19": {"version": "kdi_deterministic_reranker_v1", "fingerprint": "33c8d6d4271b2c7bd818c6ed3366fe1e5a64c96ced42d3c8949a566f4bbd0125", "match": true},
+  "phase20": {"implementation": "kdi_llm_reranker_v1", "prompt": "kdi_llm_reranker_prompt_v1", "schema": "kdi_llm_reranker_schema_v1", "combiner": "kdi_llm_combiner_v1", "fingerprint": "04a60bad63276b02612eaf2d74e8bea6b5334346461c704fccee4a347a6e3132", "candidate_window": 20, "maximum_adjustment": 6},
+  "provider": {"mode": "protected synthetic/local", "external_ai_used": false, "raw_media_sent": 0, "estimated_cost": 0},
+  "benchmark": {"dev": "100/100", "validation": "40/40", "blind": "40/40", "hallucinated_assets": 0, "hallucinated_evidence_refs": 0, "security_violations": 0},
+  "stability": {"runs": 20, "top1": 1, "pairwise": 1, "schema": 1, "evidence_refs": 1, "adjustment_variance": 0},
+  "pilot": {"cases": 14, "passed": 14, "preserved": 10, "fabricated_candidates": 0, "acl_restored": true},
+  "database": {"assets": 881, "asset_sources": 881, "acl": 881, "embeddings": 106, "concepts": 270, "assertions": 333, "evidence": 270, "asset_docs": 10, "scene_docs": 10, "app_users": 2, "unknown_acl": 881, "temporary_users": 0, "temporary_fixtures": 0},
+  "acceptance_gates": {"passed": 47, "failed": 0},
+  "remaining_blockers": []
+}

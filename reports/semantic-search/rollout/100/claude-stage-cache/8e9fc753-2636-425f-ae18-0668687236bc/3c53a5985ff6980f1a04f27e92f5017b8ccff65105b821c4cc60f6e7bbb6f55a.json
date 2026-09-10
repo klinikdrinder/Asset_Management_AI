@@ -1,0 +1,184 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1944.MP4",
+      "evidence": [
+        "filename IMG_1944.MP4",
+        "asset_id 8e9fc753-2636-425f-ae18-0668687236bc",
+        "duration_seconds 11.166667, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clinical scene, ~11 seconds",
+      "evidence": [
+        "scene_index 0 spanning start_seconds 0.0 to end_seconds 11.167",
+        "two keyframes show consistent setup: practitioner using handheld device near reclined patient's face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, two keyframes showing near-identical moment",
+      "evidence": [
+        "keyframes_supplied: 2",
+        "both images depict the same pose and setup with minor hand/device position differences"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two people: a practitioner and a reclined patient",
+      "evidence": [
+        "one person stands wearing scrubs, mask, and protective eyewear, holding a device toward the other person's face",
+        "the other person reclines in a chair wearing protective goggles, consistent with a patient role"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in coral scrubs; patient in black top with gray blanket",
+      "evidence": [
+        "standing figure wears a coral/salmon short-sleeve scrub top, surgical mask, green-tinted safety glasses, hair in a bun",
+        "reclined figure has dark hair, wears a blue hairnet, white protective eye shields, black top, and is covered with a gray knit blanket"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and periocular area visible",
+      "evidence": [
+        "patient's face, including nose, mouth, cheeks, and area around eyes covered by white goggles, is visible in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure; device near face, no procedure named in text",
+      "evidence": [
+        "a handheld silver device is held near the patient's face/temple area by a gloved-appearing hand",
+        "no procedure name appears in readable_text_detected or spoken_content, and per rules gloves/instruments alone cannot establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner applies a handheld device near patient's face",
+      "evidence": [
+        "standing person holds a metallic handheld device close to the patient's temple/face in both keyframes",
+        "patient remains reclined and still with eyes shielded by goggles"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner-patient interaction",
+      "evidence": [
+        "practitioner is positioned directly over and in close physical contact with the reclined patient, actively operating a device near her face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective eyewear, mask, hairnet, and disposable drapes used",
+      "evidence": [
+        "patient wears white protective eye shields and a blue hairnet",
+        "practitioner wears green-tinted safety glasses and a surgical mask",
+        "blue disposable drape covers the chair beneath the gray blanket"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "beige/cream wall background, overhead equipment arm visible on left edge of frame, marble-patterned floor visible in second image",
+        "reclining treatment chair with disposable blue paper covering"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical handheld-style video, close-up framing",
+      "evidence": [
+        "1280x720 frame displayed in vertical/portrait orientation showing a tight close-up of the practitioner and patient",
+        "similar framing across both keyframes suggesting a fixed or minimally moved camera position"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered lower frame, practitioner upper frame",
+      "evidence": [
+        "patient's face and body occupy the lower two-thirds of the frame while the practitioner leans in from the upper portion",
+        "equipment arm and treatment poster visible at frame edges"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content captured",
+      "evidence": [
+        "spoken_content: [] despite audio_stream: true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected: []"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No indication of marketing intent or usage in supplied data",
+      "evidence": [
+        "no captions, branding, or promotional text present in readable_text_detected or spoken_content to indicate marketing purpose"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts a clinical treatment moment involving facial-area device application",
+      "evidence": [
+        "consistent visual narrative across both keyframes of a practitioner applying a handheld device near a protected, reclined patient's face in a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": [
+        "this layer represents backend indexing metadata rather than visual or audio content that can be observed in the frames"
+      ]
+    }
+  ],
+  "narrative": "A person wearing green-tinted safety glasses and a mask holds a handheld device near the face of a reclined patient who wears white protective goggles and a blue hairnet. The patient is covered with a gray knit blanket over a blue disposable drape, in what appears to be a clinical treatment room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "8e9fc753-2636-425f-ae18-0668687236bc",
+  "image_count": 2
+}

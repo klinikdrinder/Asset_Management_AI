@@ -1,0 +1,178 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_1373.MP4",
+      "evidence": [
+        "filename IMG_1373.MP4, duration 16.7s, 1280x720, h264, 1 canonical scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clip of a clinical treatment moment",
+      "evidence": [
+        "canonical_scenes: 1",
+        "scene narrative describes one continuous setup with practitioner and patient"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene spanning the full ~16.7s clip",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One practitioner and one reclined patient",
+      "evidence": [
+        "masked, gloved practitioner in teal scrubs leaning over",
+        "reclined patient wearing eye shields under a blue blanket"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in teal scrubs, mask, gloves, smartwatch; patient with dark hair, eye shields",
+      "evidence": [
+        "practitioner: dark hair in bun, surgical mask, teal scrub top, white gloves, wristwatch visible",
+        "patient: dark hair, metal eye shields over eyes, reclined under blue blanket"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, eye area and forehead visible",
+      "evidence": [
+        "device positioned near patient's eye/forehead area with eye shields covering eyes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied evidence",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN",
+        "gloves, instrument, and facial contact alone do not establish a named procedure per rules"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner holding device near patient's face",
+      "evidence": [
+        "handheld metallic device on articulated arm held close to patient's eye/forehead",
+        "practitioner's other hand steadying patient's face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned directly over patient performing hands-on activity",
+      "evidence": [
+        "practitioner leaning over reclined patient with device and hand near patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "PPE use and protective eye shields visible",
+      "evidence": [
+        "surgical mask and gloves on practitioner",
+        "metal eye shields on patient's eyes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting appears to be an indoor treatment room, but specific facility unconfirmed",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible white walls and red accent strip"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, vertical handheld framing on the treatment area",
+      "evidence": [
+        "vertical 1280x720 frame tightly cropped on practitioner's hands and patient's face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and device fill upper frame, patient reclined below",
+      "evidence": [
+        "practitioner and articulated device arm occupy top portion of frame",
+        "patient's face and blue blanket fill lower portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present: true, transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated: true, ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable from evidence",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable at this evaluation stage",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked, gloved practitioner in teal scrubs leans over a reclined patient, positioning a metallic handheld device attached to an articulated arm near the patient's eye and forehead area. The patient lies back in a chair covered with a blue blanket, wearing metal eye shields, in a plain indoor room with white walls and a red accent strip.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "e21dcbea-86fc-4c12-ab2f-217f48f3031d",
+  "image_count": 1
+}

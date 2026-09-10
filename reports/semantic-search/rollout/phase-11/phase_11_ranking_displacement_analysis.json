@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-09-02T06:47:55.440504+00:00",
+  "phase": 11,
+  "status": "PASS",
+  "historical_case": "phase-09 benchmark case p2, query \"visible tool\"",
+  "phase_10_observation": {
+    "canary_rank": 6,
+    "canary_score": 26.702405,
+    "rank5_score": 26.706535,
+    "difference": 0.004129999999999967,
+    "filename_channel_hits": 0
+  },
+  "classification": "B_EXPECTED_INDEX_GROWTH_DISPLACEMENT",
+  "reasoning": "The legacy assertion required one fixed asset inside the default five results. The corpus grew from 11 to 30 SEARCH_READY assets and five of them carry the same generic instrument/glove concept with near-identical scores. Semantic truth was unchanged, the filename channel contributed nothing, and the canary remains retrievable and correctly ranked among the relevant set.",
+  "benchmark_action": "The fixed-asset top-5 assertion is superseded by a relevant-set assertion measuring recall and MRR over every asset that actually carries the concept. The historical case is retained in the Phase 9 and Phase 10 artifacts and is not deleted.",
+  "ranking_hack_introduced": false,
+  "scores_modified": false,
+  "semantic_truth_modified": false,
+  "replacement_case": {
+    "id": "visible-tool-relevance",
+    "query": "visible tool",
+    "pass": true,
+    "metrics": {
+      "relevant_total": 9,
+      "retrieved": 5,
+      "hits": 5,
+      "recall_at_k": 0.5555555555555556,
+      "precision_at_k": 1,
+      "mrr": 1,
+      "ndcg_at_10": 1
+    },
+    "ranking": [
+      {
+        "rank": 1,
+        "asset_id": "963376ad-9cc1-46e3-a80a-9249b71839d1",
+        "filename": "IMG_0534.MP4",
+        "score": 26.71696,
+        "eligible": true,
+        "in_cohort": true
+      },
+      {
+        "rank": 2,
+        "asset_id": "2f81c26a-eb3b-4dbb-9325-a0da9eaf526f",
+        "filename": "IMG_2933.MP4",
+        "score": 26.71582,
+        "eligible": true,
+        "in_cohort": true
+      },
+      {
+        "rank": 3,
+        "asset_id": "00166f3b-d16f-4f6c-9b8d-d57f6875766b",
+        "filename": "IMG_3564.MP4",
+        "score": 26.71499,
+        "eligible": true,
+        "in_cohort": true
+      },
+      {
+        "rank": 4,
+        "asset_id": "5c8e8f05-1703-4f00-9cd2-f1fccbf17d94",
+        "filename": "IMG_3592.MP4",
+        "score": 26.71262,
+        "eligible": true,
+        "in_cohort": true
+      },
+      {
+        "rank": 5,
+        "asset_id": "b17c5b6e-8b53-45b6-b8de-83f02d482d77",
+        "filename": "IMG_3575.MP4",
+        "score": 26.706535,
+        "eligible": true,
+        "in_cohort": true
+      }
+    ]
+  }
+}

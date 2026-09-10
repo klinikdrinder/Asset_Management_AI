@@ -1,0 +1,185 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2942.MP4, single scene",
+      "evidence": [
+        "asset_id and filename IMG_2942.MP4 supplied",
+        "scene_index 0, duration 21.067s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clinical-setting scene",
+      "evidence": [
+        "One scene spanning 0-21.067 seconds",
+        "Two keyframes show consistent setting and subjects"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, two keyframes showing similar framing with lighting variation",
+      "evidence": [
+        "scene_index 0 with start 0.0 and end 21.067 seconds",
+        "second keyframe is notably darker than the first, suggesting a lighting or exposure change over the scene"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One masked, gloved individual wearing a headlight, working over a draped patient",
+      "evidence": [
+        "Person visible wearing surgical cap, mask, and headlight loupes",
+        "Gloved hand holding an instrument",
+        "Blue drapes suggest a second person (patient) partially visible in foreground"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in blue scrubs, surgical mask, cap, and head-mounted light/loupes",
+      "evidence": [
+        "Blue surgical attire visible on shoulder/back",
+        "White headlight device strapped to head",
+        "Surgical mask covering lower face",
+        "White gloves on hands"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific anatomical site not clearly identifiable",
+      "evidence": [
+        "Illuminated area under the light is small and obscured by hands/instrument, no distinct anatomical structure is clearly resolvable in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure indicated",
+      "evidence": [
+        "No procedure name present in readable_text_detected or spoken_content",
+        "Gloves, instrument, and surgical setting alone do not establish a specific named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner holding a small round instrument near an illuminated field",
+      "evidence": [
+        "Gloved hand holds a small metallic circular object near the light source in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned directly over draped individual",
+      "evidence": [
+        "Blue drape occupies foreground consistent with a patient",
+        "Practitioner's head and hands are oriented downward toward the drape and lit area"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Bright focused light on a small working area with surgical draping",
+      "evidence": [
+        "Intense white/yellow illuminated spot in both keyframes",
+        "Blue sterile drapes covering surrounding area"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical/procedure room",
+      "evidence": [
+        "White cabinet and equipment visible in background",
+        "Partial text 'ROOM' visible on a wall-mounted sign in second keyframe",
+        "Sterile blue drapes and gloves consistent with a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, handheld point-of-view style shot with vertical framing",
+      "evidence": [
+        "Vertical (portrait) aspect ratio typical of phone video",
+        "Close framing over the practitioner's shoulder",
+        "Second keyframe is markedly darker, indicating exposure/lighting shift or camera movement"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Over-the-shoulder composition centered on illuminated work area",
+      "evidence": [
+        "Practitioner's head and shoulder occupy left/foreground",
+        "Bright lit area centered right-of-frame in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text reading 'ROOM' visible on background sign",
+      "evidence": [
+        "Second keyframe shows partial white text 'ROOM' on a dark sign in upper right"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended use not indicated by evidence",
+      "evidence": [
+        "No supplied text or metadata indicates marketing purpose or usage context"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A clinical worker performing close-up hands-on work under bright light on a draped subject",
+      "evidence": [
+        "Gloved hands, instrument, headlight, drapes, and clinical room setting together depict an in-progress clinical activity"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a distinct observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person wearing surgical scrubs, a mask, headlight loupes, and gloves leans over a patient covered with blue surgical drapes under bright light. A gloved hand holds a small round metal instrument near the illuminated field while thin tubing/wires are visible near the practitioner's head.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "718533ff-e3a9-405e-8761-50101ede2fb8",
+  "image_count": 2
+}

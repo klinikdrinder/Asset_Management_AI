@@ -1,0 +1,179 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_1949.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_1949.MP4, duration 15.27s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result for GLOBAL_ASSET_UNDERSTANDING is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "Scene-level TEMPORAL_SCENE_STRUCTURE: OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and reclined patient",
+      "evidence": [
+        "A masked, gloved-appearing person in coral scrubs operates a device on a reclined patient wearing eye shields and a cap"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Coral scrubs, mask, goggles; patient with cap and eye shields",
+      "evidence": [
+        "Practitioner has hair in a bun, surgical mask, green safety goggles, coral t-shirt with partial text",
+        "Patient wears oval eye shields, blue disposable cap, knit sweater and blue drape"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face/cheek area visible",
+      "evidence": [
+        "Reclined patient's face, cheek, and jaw area are visible and targeted by red light"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "No named procedure appears in supplied text; device, red targeting light, and eye protection alone do not establish a specific named procedure",
+        "Scene-level TREATMENT_PROCEDURE: UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner aims device at patient's cheek",
+      "evidence": [
+        "Handheld device connected to overhead articulated arm is aimed at the cheek with a visible red target light",
+        "Practitioner steadies patient's face with free hand"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned over patient, hand-to-face contact",
+      "evidence": [
+        "Practitioner's hand rests on patient's face/jaw while operating the device positioned directly above the patient"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Eye protection, red targeting light, disposable cap and drape",
+      "evidence": [
+        "Patient wears oval eye shields and blue disposable cap; blue disposable drape covers torso",
+        "Visible red targeting light on cheek from the handheld device"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly determinable",
+      "evidence": [
+        "Scene-level ENVIRONMENT: UNKNOWN",
+        "Plain light-colored wall visible but no further identifying context"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical framing on practitioner and patient",
+      "evidence": [
+        "Vertical 720-width frame closely framing the practitioner's upper body and the patient's head/face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient reclined in lower frame, practitioner leaning over from above",
+      "evidence": [
+        "Patient occupies lower portion of frame reclined, practitioner and device occupy upper portion leaning over"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "audio_stream_present: true, transcript_state: NO_MEANINGFUL_SPEECH",
+        "Scene-level SPEECH_TRANSCRIPT_AUDIO: FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text on practitioner's shirt",
+      "evidence": [
+        "ocr_evaluated: true, ocr_observations: 2",
+        "Partial lettering visible on coral shirt reading text resembling a name/title, not fully legible"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE: UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative meaning not determinable",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE: UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual content layer",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS: NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked practitioner in coral scrubs and green safety goggles holds a handheld device linked to an overhead articulated arm, directing a visible red target light at the cheek of a reclined patient wearing oval eye shields and a blue disposable cap. The patient is covered with a blue drape and a knit sweater while the practitioner steadies the patient's face with her free hand.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "35e8548a-a6fb-4302-a337-da6c36333292",
+  "image_count": 1
+}

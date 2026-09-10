@@ -1,0 +1,176 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Keyframes from supplied MP4 scene",
+      "evidence": [
+        "Supplied metadata identifies asset e4a850a8-cb94-463a-8b20-9cf999a3b489, filename IMG_1372.MP4, scene 0, with two representative keyframes."
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical cosmetic-care interaction",
+      "evidence": [
+        "Both frames show a practitioner using specialized equipment beside a reclining person in a treatment setting."
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous 48.6-second scene",
+      "evidence": [
+        "Metadata gives scene start 0.0 seconds and end 48.6 seconds.",
+        "The device shifts from beside the cheek in the first frame to above the lower face in the second."
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and reclining recipient",
+      "evidence": [
+        "One person wears scrubs, a mask, and gloves while operating equipment; the other lies reclined under a blanket."
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked practitioner in teal scrubs",
+      "evidence": [
+        "The standing person has dark tied-back hair, teal scrubs, a surgical-style mask, white gloves, and a wristwatch.",
+        "The reclining person has dark hair and is covered by a blue blanket."
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, cheek, eye, nose, and mouth visible",
+      "evidence": [
+        "The reclining person\u2019s face is shown closely, including the cheek, protected eye area, nose, lips, and chin."
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Exact procedure not identified",
+      "evidence": [
+        "A specialized handheld device is positioned near the face, but the supplied text does not name a procedure."
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device positioned over facial areas",
+      "evidence": [
+        "The practitioner steadies the recipient\u2019s face with one hand and holds the device near the cheek and lower face with the other.",
+        "A red aiming point appears on the skin."
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner attending to recipient",
+      "evidence": [
+        "The practitioner directly operates equipment on or near the reclining person\u2019s face."
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Eye shields and facial aiming light visible",
+      "evidence": [
+        "Metal protective shields cover the reclining person\u2019s eyes.",
+        "A small red light is visible on the cheek in one frame and near the mouth or chin in the other."
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Bright treatment room",
+      "evidence": [
+        "The scene contains a treatment bed, blue draping, white walls, and specialized articulated equipment."
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up framing",
+      "evidence": [
+        "Both keyframes use a portrait-oriented close view centered on the practitioner, device, and recipient\u2019s face."
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner above, recipient below",
+      "evidence": [
+        "The practitioner occupies the upper portion of each frame while the reclining person and blue blanket fill the lower portion.",
+        "The articulated device forms a strong diagonal through the upper center."
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content supplied",
+      "evidence": [
+        "Supplied spoken_content is an empty array, although metadata indicates an AAC audio stream."
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial scrub embroidery visible",
+      "evidence": [
+        "Small white embroidered lettering beginning with \u201cDR.\u201d is visible on the practitioner\u2019s scrub top, though the supplied readable_text_detected array is empty."
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended usage cannot be determined",
+      "evidence": [
+        "The frames show a treatment interaction but provide no reliable evidence of the asset\u2019s intended promotional or non-promotional use."
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial device treatment session",
+      "evidence": [
+        "Across both frames, a practitioner carefully directs equipment at different areas of a protected, reclining person\u2019s face."
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No embedding data supplied",
+      "evidence": [
+        "The supplied evidence contains asset metadata, keyframes, readable text results, and spoken-content results, but no search embedding output."
+      ]
+    }
+  ],
+  "narrative": "Two representative frames show a masked, gloved practitioner in teal scrubs leaning over a reclining person whose eyes are covered by metal shields. The practitioner holds a large articulated handheld device near the person\u2019s cheek and mouth area, where a red aiming light is visible.",
+  "provider": "codex_cli",
+  "model": "codex-default",
+  "asset_id": "e4a850a8-cb94-463a-8b20-9cf999a3b489",
+  "image_count": 2
+}

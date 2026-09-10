@@ -1,0 +1,30 @@
+{
+  "status": "REVIEW_REQUIRED_BEFORE_30_ASSET_ROLLOUT",
+  "findings": [
+    {
+      "id": "P1-LAYER-CATALOG",
+      "severity": "P1",
+      "component": "legacy semantic_layer_catalog",
+      "summary": "Live legacy catalog uses KDI_SEMANTIC_V2 names/order that differ from the locked semantic_index_v1 contract.",
+      "action": "Keep legacy rows immutable; new indexing must use semantic_index_v1 and a separately versioned mapping/migration before rollout."
+    },
+    {
+      "id": "P1-EMBEDDING-BUNDLE",
+      "severity": "P1",
+      "component": "embedding configuration",
+      "summary": "Historical embedding bundle includes OpenCLIP visual and Ollama text lineage; this is not a semantic-layer substitute.",
+      "action": "Preserve historical vectors and explicitly configure the accepted text/visual models for new indexing before rollout."
+    },
+    {
+      "id": "P2-UNIFORM-STATE",
+      "severity": "P2",
+      "component": "legacy records",
+      "summary": "Older records do not uniformly expose the four-state assertion contract/evidence references.",
+      "action": "Do not rewrite history; require canonical validator fields for new V1 runs."
+    }
+  ],
+  "p0": 0,
+  "p1": 2,
+  "p2": 1,
+  "p3": 0
+}

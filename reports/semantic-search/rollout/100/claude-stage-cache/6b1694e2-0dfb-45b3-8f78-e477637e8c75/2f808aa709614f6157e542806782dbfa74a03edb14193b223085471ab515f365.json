@@ -1,0 +1,174 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_7170.MP4, single scene 0-11.6s",
+      "evidence": [
+        "filename IMG_7170.MP4",
+        "asset_id 6b1694e2-0dfb-45b3-8f78-e477637e8c75",
+        "scene_index 0, start 0.0 end 11.602 seconds"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical room video with patient and clinician",
+      "evidence": [
+        "Two keyframes show a patient reclined on a treatment table and a clinician handling a device near the patient's arm"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single 11.6s scene, device positioning then pointing gesture",
+      "evidence": [
+        "Scene spans 0.0 to 11.602 seconds with 2 representative keyframes",
+        "First keyframe shows device held near arm, second keyframe shows finger pointing at tattoo"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient reclined, clinician performing hands-on examination",
+      "evidence": [
+        "One person lies on the table wearing a plaid shirt",
+        "Second person in teal scrubs and surgical mask holds a device and points at the patient's arm"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient in green plaid shirt with tattooed forearm; clinician in teal scrubs and mask",
+      "evidence": [
+        "Patient wears a green plaid button shirt and has visible tattoos on the forearm",
+        "Clinician has dark hair tied back, wears a teal scrub top, surgical mask, and a wristwatch"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forearm and hand visible",
+      "evidence": [
+        "Bare forearm with tattoos is shown resting on a blue drape in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": []
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds device near arm, then points at tattoo",
+      "evidence": [
+        "First keyframe: clinician holds a silver handheld device close to the patient's forearm",
+        "Second keyframe: clinician's finger points directly at a tattoo on the forearm"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician attending to reclined patient",
+      "evidence": [
+        "Clinician is positioned over and in close physical contact with the patient's arm in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Tattoos visible on forearm; device held close to skin",
+      "evidence": [
+        "Dark line-art tattoos are visible on the patient's forearm in both images",
+        "A metallic handheld device is held near/against the skin in the first keyframe"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room",
+      "evidence": [
+        "Padded treatment table with blue paper drape",
+        "Blue rolling stool, adjustable lamp, small side table with water bottle in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical handheld video, overhead close-up angle",
+      "evidence": [
+        "Frame dimensions 1280x720 suggest vertical/mobile capture context",
+        "Both keyframes show a close, elevated angle looking down at the patient's arm and clinician's hands"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Tight framing centered on arm, hands, and device",
+      "evidence": [
+        "Both keyframes are tightly cropped around the patient's arm, the clinician's hands, and the device"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech content detected",
+      "evidence": [
+        "spoken_content field is empty despite audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected field is empty"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators present",
+      "evidence": []
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical examination moment focused on a tattooed forearm",
+      "evidence": [
+        "Sequence shows a clinician handling a device near the arm and then indicating a specific tattoo, consistent with an examination interaction"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A patient lies on a treatment table wearing a green plaid shirt, with a tattooed forearm resting on a blue paper drape. A masked clinician in teal scrubs holds a metallic handheld device near the patient's arm and then points with a gloveless finger at a tattoo on the forearm.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "6b1694e2-0dfb-45b3-8f78-e477637e8c75",
+  "image_count": 2
+}

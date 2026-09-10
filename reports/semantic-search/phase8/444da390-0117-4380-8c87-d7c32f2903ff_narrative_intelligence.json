@@ -1,0 +1,892 @@
+{
+  "generator_version": "kdi_narrative_generator_v1",
+  "configuration_version": "kdi_narrative_generator_config_v1",
+  "configuration_fingerprint": "a84a43f5124843e404126e84f32911d0d361df67e60961759a24635fcbaa57ca",
+  "semantic_spec_version": "semantic_index_v1",
+  "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+  "ontology_version": "KDI_SEMANTIC_V2",
+  "pilot_manifest_version": "kdi_semantic_pilot_v1",
+  "analysis_run_id": "bce3f9fa-d910-53b3-8ac2-4303ab57ad8c",
+  "asset_id": "444da390-0117-4380-8c87-d7c32f2903ff",
+  "filename": "IMG_9871.MOV",
+  "media_type": "video",
+  "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c",
+  "input_evidence_fingerprint": "488e595da7e995c2eaff50fed0f38a73e125de36f26c3db48751cfaed97ec23e",
+  "generated_at": "2026-08-24T05:47:50.655718+00:00",
+  "generation": {
+    "method": "DETERMINISTIC_TEMPLATE",
+    "provider": "LOCAL_DETERMINISTIC_TEMPLATES",
+    "model": "kdi_evidence_renderer_v1",
+    "temperature": 0.0,
+    "template_fallback_available": true,
+    "template_fallback_used": true,
+    "external_payload_transmission": false
+  },
+  "evidence_bundle": {
+    "asset": {
+      "asset_id": "444da390-0117-4380-8c87-d7c32f2903ff",
+      "filename": "IMG_9871.MOV",
+      "media_type": "video",
+      "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+    },
+    "structured_facts": [
+      {
+        "fact_id": "4468e42c-7b97-59da-84f1-6404c85471c8",
+        "concept": "ASSET_IDENTITY",
+        "layer": "ASSET_IDENTITY_PROVENANCE",
+        "state": "OBSERVED",
+        "value": {
+          "asset_id": "444da390-0117-4380-8c87-d7c32f2903ff",
+          "filename": "IMG_9871.MOV",
+          "media_type": "video",
+          "extension": "mov",
+          "mime_type": "video/quicktime",
+          "size_bytes": 22533748,
+          "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+        },
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "FROZEN_MANIFEST_AND_PHASE_EVIDENCE",
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "DATABASE_METADATA",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 1,
+        "layer_id": "ASSET_IDENTITY_PROVENANCE"
+      },
+      {
+        "fact_id": "6971b77b-0aa5-5ae6-a4e1-7207276884b5",
+        "concept": "MEDIA_SUMMARY",
+        "layer": "GLOBAL_ASSET_UNDERSTANDING",
+        "state": "OBSERVED",
+        "value": "An adult subject records a close front-facing self-view in an indoor room.",
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 2,
+        "layer_id": "GLOBAL_ASSET_UNDERSTANDING"
+      },
+      {
+        "fact_id": "b23eda3c-aba5-5221-8c61-6de7e44ce22d",
+        "concept": "TIMELINE_STRUCTURE",
+        "layer": "TEMPORAL_SCENE_STRUCTURE",
+        "state": "OBSERVED",
+        "value": {
+          "scene_count": 1,
+          "event_candidate_count": 1,
+          "keyframe_count": 3,
+          "timeline_coverage_percent": 100.0
+        },
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "analysis_run_id": "d92628c6-1ac0-5fcd-8c6d-c0ef6e525af9",
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "DETERMINISTIC_PROCESSOR",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "NEW_OBSERVATION",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 3,
+        "layer_id": "TEMPORAL_SCENE_STRUCTURE"
+      },
+      {
+        "fact_id": "2f42ecea-9b47-5937-9108-b91532fda728",
+        "concept": "SUBJECT",
+        "layer": "PEOPLE_ROLES",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 4,
+        "layer_id": "PEOPLE_ROLES"
+      },
+      {
+        "fact_id": "b83b94db-8d24-51c2-a3c6-3f021e8d897c",
+        "concept": "ADULT_PRESENTATION",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "7a328ea9-93bf-533a-8756-e66bc26e3cf1",
+        "concept": "FRONT_FACING",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "2a40c034-3945-5bd8-8e29-b7172e1c2623",
+        "concept": "SEATED_OR_STANDING_UNKNOWN",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "4a2e71c4-c695-5906-b736-67aed300c18b",
+        "concept": "FACE",
+        "layer": "ANATOMY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 6,
+        "layer_id": "ANATOMY"
+      },
+      {
+        "fact_id": "580ae688-437e-5921-909d-d300129e7360",
+        "concept": "LOOKING_AT_CAMERA",
+        "layer": "ACTIONS_EVENTS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 8,
+        "layer_id": "ACTIONS_EVENTS"
+      },
+      {
+        "fact_id": "39e6c502-3f7b-50d4-ad8b-3875a65126cb",
+        "concept": "RECORDING_VIDEO",
+        "layer": "ACTIONS_EVENTS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 8,
+        "layer_id": "ACTIONS_EVENTS"
+      },
+      {
+        "fact_id": "9473f35f-06e8-5481-acaf-30a758b84590",
+        "concept": "PERSON_LOOKS_AT_CAMERA",
+        "layer": "RELATIONSHIPS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 9,
+        "layer_id": "RELATIONSHIPS"
+      },
+      {
+        "fact_id": "339d0ab8-fccb-5a94-bea1-855502a0fc97",
+        "concept": "CLOSEUP",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "bf497f33-da2e-5e74-b9cd-6f170cd61346",
+        "concept": "VERTICAL",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "73fea4ea-473e-5914-9091-9d001cd2966d",
+        "concept": "HANDHELD",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "1ae6b43e-23ad-578d-9840-32f182fed712",
+        "concept": "SELF_RECORDED",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "a81c5aed-a326-5dde-a7c5-54247004723d",
+        "concept": "SINGLE_CENTRAL_FACE",
+        "layer": "COMPOSITION",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 13,
+        "layer_id": "COMPOSITION"
+      },
+      {
+        "fact_id": "201c90ca-e1fd-549d-9b05-d076d42bdea6",
+        "concept": "FACE_PROMINENT",
+        "layer": "COMPOSITION",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 13,
+        "layer_id": "COMPOSITION"
+      },
+      {
+        "fact_id": "6411bbd6-8455-5e26-a2ea-2acf65bc773b",
+        "concept": "AUDIO_STREAM_PRESENT",
+        "layer": "SPEECH_TRANSCRIPT_AUDIO",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE3_TECHNICAL_METADATA",
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "DETERMINISTIC_PROCESSOR",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "NEW_OBSERVATION",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 14,
+        "layer_id": "SPEECH_TRANSCRIPT_AUDIO"
+      },
+      {
+        "fact_id": "ee217e37-bfd7-51d2-b0c4-b225854fc703",
+        "concept": "SELF_RECORDED_CONTENT",
+        "layer": "MARKETING_CONTENT_USAGE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 16,
+        "layer_id": "MARKETING_CONTENT_USAGE"
+      },
+      {
+        "fact_id": "ce7ef62c-b07f-5e73-a9f8-ac0ca714b065",
+        "concept": "PORTRAIT_CONTENT",
+        "layer": "MARKETING_CONTENT_USAGE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 16,
+        "layer_id": "MARKETING_CONTENT_USAGE"
+      },
+      {
+        "fact_id": "78c2e013-f289-57b9-9ace-773b0f799184",
+        "concept": "PROVISIONAL_ASSET_NARRATIVE",
+        "layer": "SEMANTIC_NARRATIVE",
+        "state": "OBSERVED",
+        "value": "An adult subject records a close front-facing self-view in an indoor room.",
+        "confidence": 0.88,
+        "confidence_band": "MEDIUM_HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "NEW_OBSERVATION",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 17,
+        "layer_id": "SEMANTIC_NARRATIVE"
+      },
+      {
+        "fact_id": "385dfa28-5416-5225-a1c4-00d694842ba5",
+        "concept": "CURRENT_SEARCH_REPRESENTATION",
+        "layer": "SEARCH_EMBEDDINGS",
+        "state": "OBSERVED",
+        "value": {
+          "visual_embedding": true,
+          "asset_search_document": true,
+          "scene_search_document": true,
+          "scene_embedding": true,
+          "keyframe_embedding": true,
+          "semantic_index_v1_embedding_status": "PENDING_REGENERATION",
+          "canonical_search_document": "PENDING_LATER_PHASE"
+        },
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE2_AUDIT",
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c"
+          }
+        ],
+        "provenance": "DATABASE_METADATA",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "RETAINED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 18,
+        "layer_id": "SEARCH_EMBEDDINGS"
+      }
+    ],
+    "scenes": [
+      {
+        "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+        "scene_index": 0,
+        "start_time": 0.0,
+        "end_time": 7.648333,
+        "semantic_label": "PORTRAIT_SELF_RECORDING",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.83,
+        "evidence": [
+          {
+            "type": "SCENE_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "timestamp_start": 0.0,
+            "timestamp_end": 7.648333,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c",
+            "keyframe_id": "10cc7828-296c-560d-bdc6-67ee0c9900c6"
+          }
+        ],
+        "narrative": "An adult subject records a close front-facing self-view in an indoor room.",
+        "human_review_status": "UNVERIFIED"
+      }
+    ],
+    "events": [
+      {
+        "event_id": "daaa3c41-20d5-546d-a618-98761c1a3059",
+        "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+        "start_time": 3.15,
+        "end_time": 7.266666666666667,
+        "peak_time": 4.283333333333333,
+        "semantic_action": "LOOKING_AT_CAMERA",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.83,
+        "evidence": [
+          {
+            "type": "EVENT_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+            "event_id": "daaa3c41-20d5-546d-a618-98761c1a3059",
+            "timestamp_start": 3.15,
+            "timestamp_end": 7.266666666666667,
+            "source_fingerprint": "b0108960964e8e0f8ac987cb8219b2cdb0dd7c0e1a1b6f382ea502fb7260310c",
+            "keyframe_id": "4b4f2fc3-f917-5e22-a9fd-f80975191973"
+          }
+        ],
+        "narrative": "Candidate interval visually supports LOOKING_AT_CAMERA.",
+        "human_review_status": "UNVERIFIED"
+      }
+    ],
+    "transcript_evidence": [],
+    "ocr_evidence": [],
+    "conflicts": [],
+    "unknowns": [
+      {
+        "layer_number": 7,
+        "layer_id": "TREATMENT_PROCEDURE"
+      },
+      {
+        "layer_number": 10,
+        "layer_id": "CLINICAL_VISUAL_OBSERVATIONS"
+      },
+      {
+        "layer_number": 11,
+        "layer_id": "ENVIRONMENT"
+      },
+      {
+        "layer_number": 14,
+        "layer_id": "SPEECH_TRANSCRIPT_AUDIO"
+      },
+      {
+        "layer_number": 15,
+        "layer_id": "OCR_VISIBLE_TEXT"
+      }
+    ],
+    "human_review": [],
+    "source_artifacts": {
+      "phase3": true,
+      "phase4": false,
+      "phase5": true,
+      "phase6": true,
+      "phase7": true
+    }
+  },
+  "asset_narrative": "An adult subject records a close front-facing self-view in an indoor room.",
+  "short_semantic_summary": "An adult subject records a close front-facing self-view in an indoor room.",
+  "search_summary": "An adult subject records a close front-facing self-view in an indoor room.",
+  "search_safe_narrative": "An adult subject records a close front-facing self-view in an indoor room.",
+  "claims": [
+    {
+      "claim_id": "68359f02-09bb-5af2-8e85-5eae5d852e07",
+      "text": "An adult subject records a close front-facing self-view in an indoor room.",
+      "supports": [
+        "6971b77b-0aa5-5ae6-a4e1-7207276884b5"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.88,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "0e0d9633-bb39-5883-9f4d-8c1bca82db59",
+      "text": "An adult subject records a close front-facing self-view in an indoor room.",
+      "supports": [
+        "scene:58a2a1ed-a0fd-5e90-85b2-0c08e2385313"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.83,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "dd81b7e6-6a82-5137-b6cd-1f02742458fc",
+      "text": "From 3.15s to 7.27s, the subject looks toward the camera.",
+      "supports": [
+        "event:daaa3c41-20d5-546d-a618-98761c1a3059",
+        "2f42ecea-9b47-5937-9108-b91532fda728"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.83,
+      "status": "SUPPORTED",
+      "accepted": true
+    }
+  ],
+  "scene_narratives": [
+    {
+      "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+      "start_time": 0.0,
+      "end_time": 7.648333,
+      "narrative": "An adult subject records a close front-facing self-view in an indoor room.",
+      "semantic_state": "OBSERVED",
+      "claim_ids": [
+        "0e0d9633-bb39-5883-9f4d-8c1bca82db59"
+      ],
+      "evidence_references": [
+        "scene:58a2a1ed-a0fd-5e90-85b2-0c08e2385313"
+      ],
+      "confidence": 0.83,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    }
+  ],
+  "event_narratives": [
+    {
+      "event_id": "daaa3c41-20d5-546d-a618-98761c1a3059",
+      "scene_id": "58a2a1ed-a0fd-5e90-85b2-0c08e2385313",
+      "start_time": 3.15,
+      "end_time": 7.266666666666667,
+      "narrative": "From 3.15s to 7.27s, the subject looks toward the camera.",
+      "semantic_action": "LOOKING_AT_CAMERA",
+      "claim_ids": [
+        "dd81b7e6-6a82-5137-b6cd-1f02742458fc"
+      ],
+      "evidence_references": [
+        "event:daaa3c41-20d5-546d-a618-98761c1a3059",
+        "2f42ecea-9b47-5937-9108-b91532fda728"
+      ],
+      "confidence": 0.83,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    }
+  ],
+  "technical_only_events": [],
+  "canonical_concepts": {
+    "people": [
+      "SUBJECT"
+    ],
+    "roles": [
+      "SUBJECT"
+    ],
+    "anatomy": [
+      "FACE"
+    ],
+    "treatments": [],
+    "actions": [
+      "LOOKING_AT_CAMERA",
+      "RECORDING_VIDEO"
+    ],
+    "environment": [],
+    "stage": []
+  },
+  "quality": {
+    "evidence_complete": true,
+    "contains_unknowns": true,
+    "contains_review_required_fact": false,
+    "contains_transcript": false,
+    "contains_ocr": false,
+    "contains_legacy_fact": false,
+    "human_review_status": "UNVERIFIED",
+    "search_status": "ACCEPTED_FOR_SEARCH",
+    "narrative_confidence": 0.83,
+    "narrative_embedding_status": "PENDING_LATER_PHASE"
+  },
+  "claim_validation": {
+    "valid": true,
+    "failures": [],
+    "total_claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "phase5_reconciliation": {
+    "asset_id": "444da390-0117-4380-8c87-d7c32f2903ff",
+    "filename": "IMG_9871.MOV",
+    "phase5_narrative": "An adult subject records a close front-facing self-view in an indoor room.",
+    "phase8_narrative": "An adult subject records a close front-facing self-view in an indoor room.",
+    "disposition": "UNCHANGED",
+    "reason": "Phase 5 evidence-grounded wording retained."
+  },
+  "img_1238_segmentation": null,
+  "performance": {
+    "input_facts": 22,
+    "scene_count": 1,
+    "event_count": 1,
+    "accepted_transcript_chunks_available": 0,
+    "transcript_chunks_used": 0,
+    "accepted_ocr_observations_available": 0,
+    "ocr_observations_used": 0,
+    "template_generation_seconds": 0.036738,
+    "llm_calls": 0,
+    "llm_generation_seconds": 0.0,
+    "validation_seconds": 0.0,
+    "retries": 0,
+    "cost": "LOCAL_NO_API_COST"
+  },
+  "prohibitions": {
+    "production_writes": false,
+    "search_documents_rebuilt": false,
+    "embeddings_generated": false,
+    "phase3_modified": false,
+    "phase4_modified": false,
+    "phase5_modified": false,
+    "phase6_modified": false,
+    "phase7_modified": false
+  },
+  "idempotency": {
+    "verified": true,
+    "functional_fingerprint": "0253a7fb79ae3ccb4f2523dfbe879c0edb53d7f1c2ff51645e53fea82f414097"
+  }
+}

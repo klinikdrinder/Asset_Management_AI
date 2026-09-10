@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-09-02T06:47:55.440504+00:00",
+  "phase": 11,
+  "status": "PASS",
+  "phase_11": "PASS",
+  "PHASE_11_DEFINITION_SOURCE": "PROMPT_CONTROLLED_FALLBACK",
+  "gates": {
+    "locked_definition_recorded": true,
+    "no_asset_31_plus_indexed": true,
+    "cohort_complete_30": true,
+    "cohort_search_ready_30": true,
+    "active_layer_states_540": true,
+    "integrity": true,
+    "clinical": true,
+    "filename_regression": true,
+    "transcription": true,
+    "search_acceptance_no_blocking_failures": true,
+    "determinism": true,
+    "authorization": true,
+    "restart_safety": true,
+    "database_preserved": true,
+    "external_zero": true
+  },
+  "open_findings": [
+    {
+      "finding": "QUERY_VOCABULARY_COVERAGE_GAP",
+      "severity": "P2",
+      "summary": "Concepts are indexed and retrievable in principle, but the query expansion lexicon resolves only a minority of canonical codes, so natural phrasing cannot reach the rest.",
+      "canonical_codes_indexed": 98,
+      "canonical_codes_in_expansion_lexicon": 9,
+      "coverage_ratio": 0.0918,
+      "lexicon_codes": [
+        "CLEANSING",
+        "CLINICIAN",
+        "FRONTAL_HAIRLINE",
+        "FRONTAL_SCALP",
+        "HAIR_TRANSPLANT",
+        "IMPLANTING_GRAFTS",
+        "INJECTING",
+        "PATIENT",
+        "SCALP"
+      ],
+      "affected_cases": [
+        {
+          "id": "gr:DSC08097.JPG",
+          "query": "give me 30 files with a close-up",
+          "returned": 0,
+          "relevant_assets_in_truth": 2
+        },
+        {
+          "id": "gr:IMG_1238.MP4",
+          "query": "give me 30 files with readable on-screen text",
+          "returned": 0,
+          "relevant_assets_in_truth": 1
+        },
+        {
+          "id": "gr:IMG_9871.MOV",
+          "query": "give me 30 files with a close-up",
+          "returned": 0,
+          "relevant_assets_in_truth": 2
+        }
+      ],
+      "is_regression": false,
+      "root_cause": "config/semantic-search/kdi_query_expansion_lexicon_v1.json covers a small subset of the canonical codes present in asset_search_concepts_v2.",
+      "remediation_required_before": "Stage C (100-asset validation)",
+      "not_fixed_in_phase_11_because": "Extending the query vocabulary changes search behaviour and belongs in a dedicated, benchmarked change, not inside an acceptance phase."
+    }
+  ],
+  "acceptance_cases": {
+    "total": 192,
+    "passed": 189,
+    "blocking_failures": [],
+    "coverage_gap_failures": [
+      "gr:DSC08097.JPG",
+      "gr:IMG_1238.MP4",
+      "gr:IMG_9871.MOV"
+    ]
+  },
+  "cohort_size": 30,
+  "search_ready": 30,
+  "assets": 881,
+  "pending": 850,
+  "unsupported": 1,
+  "external_ai_calls": 0,
+  "external_media_transmission": false,
+  "deferred": {
+    "DEFERRED_SOURCE_REPOSITORY_PERMISSION": "DEFERRED",
+    "required_before_phase_19": true
+  },
+  "artifacts": [
+    "PHASE_11_30_ASSET_FINAL_ACCEPTANCE.md",
+    "phase_11_30_asset_integrity_audit.json",
+    "phase_11_authorization_audit.json",
+    "phase_11_capacity_review.json",
+    "phase_11_clinical_specificity_audit.json",
+    "phase_11_database_before_after.json",
+    "phase_11_determinism.json",
+    "phase_11_embedding_changes.json",
+    "phase_11_external_inference_audit.json",
+    "phase_11_filename_regression.json",
+    "phase_11_human_review_packet.json",
+    "phase_11_locked_definition_audit.json",
+    "phase_11_phase10_code_change_audit.json",
+    "phase_11_ranking_displacement_analysis.json",
+    "phase_11_raw_acceptance.json",
+    "phase_11_restart_safety.json",
+    "phase_11_search_acceptance.json",
+    "phase_11_search_document_changes.json",
+    "phase_11_search_quality_metrics.json",
+    "phase_11_transcription_candidate_manifest.json",
+    "phase_11_transcription_quality_audit.json",
+    "phase_11_transcription_results.json",
+    "phase_11_transcription_results.pre_meaningfulness_gate.json",
+    "phase_11_transcription_run.err.log",
+    "phase_11_transcription_run.log",
+    "phase_11_validation_status.json"
+  ],
+  "next": "Stage C \u2014 100-asset validation",
+  "phase_12_started": false
+}

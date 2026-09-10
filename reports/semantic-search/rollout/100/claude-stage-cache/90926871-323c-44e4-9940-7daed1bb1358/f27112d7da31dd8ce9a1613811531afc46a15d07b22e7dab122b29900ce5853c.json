@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_1048.MP4",
+      "evidence": [
+        "Filename and technical metadata provided (duration 9.87s, 1280x720, h264)"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clip of a device being applied to skin",
+      "evidence": [
+        "Single scene showing handheld device applied to gel-coated shoulder/arm area"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, ~10 seconds",
+      "evidence": [
+        "canonical_scenes: 1, duration_seconds: 9.866667"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles not clearly identifiable",
+      "evidence": [
+        "Per-scene result marked PEOPLE_ROLES as UNKNOWN despite two people visible"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in black ribbed outfit with bracelet; client's bare arm/shoulder visible",
+      "evidence": [
+        "Image shows dark clothing on standing person and bare skin of reclining person's arm/shoulder"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Upper arm and shoulder region visible",
+      "evidence": [
+        "Device positioned over shoulder/upper arm with gel applied in image"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure name not specified",
+      "evidence": [
+        "No named procedure in supplied text; device use alone does not establish a specific treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device pressed against gel-coated skin while arm is stabilized",
+      "evidence": [
+        "Image shows handheld device contacting shoulder area with gel, other hand gripping client's arm"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner interacting directly with client's body using device",
+      "evidence": [
+        "One person's hand operates device on another person's skin; second hand holds client's arm"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clear gel visible on skin surface",
+      "evidence": [
+        "Glossy gel-like substance seen on shoulder/arm area in image"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting details not fully clear",
+      "evidence": [
+        "Per-scene marked ENVIRONMENT as UNKNOWN despite visible machine and neutral wall background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Camera technique not determinable",
+      "evidence": [
+        "Per-scene result lists CINEMATOGRAPHY as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up framing centered on device and skin contact point",
+      "evidence": [
+        "Image shows tight framing on arm/shoulder with device, client draped in pink cloth"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text observed",
+      "evidence": [
+        "ocr_observations: 1 but per-scene OCR_VISIBLE_TEXT marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent unclear",
+      "evidence": [
+        "Per-scene result lists MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context unclear",
+      "evidence": [
+        "Per-scene result lists SEMANTIC_NARRATIVE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/audio evidence",
+      "evidence": [
+        "Per-scene result lists SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A practitioner in dark clothing uses a handheld metallic-headed device on a client's gel-coated shoulder/upper arm, while stabilizing the client's arm with the other hand. A wheeled machine with attached cables sits nearby, suggesting a treatment or spa setting.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "90926871-323c-44e4-9940-7daed1bb1358",
+  "image_count": 1
+}

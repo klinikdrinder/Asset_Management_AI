@@ -1,0 +1,136 @@
+{
+  "generated_at": "2026-09-02T05:56:43.196564+00:00",
+  "phase": 10,
+  "status": "PASS",
+  "rule": "An asset may match a clinical concept only when its own semantic truth supports it. Matches from other indexed assets are legitimate and are not failures.",
+  "phase_10_assets_carrying_a_supported_clinical_concept": 0,
+  "unsupported_clinical_leakage_from_new_batch": 0,
+  "unsafe_match_reasons": [],
+  "queries": [
+    {
+      "query": "surgery",
+      "passed": true,
+      "returned_count": 0,
+      "phase10_assets_matched": 0,
+      "phase10_matched_detail": [],
+      "other_assets_returned": [],
+      "why_no_match": "no accepted TREATMENT_PROCEDURE or CLINICAL_VISUAL_OBSERVATIONS concept exists for any Phase 10 asset"
+    },
+    {
+      "query": "procedure",
+      "passed": true,
+      "returned_count": 0,
+      "phase10_assets_matched": 0,
+      "phase10_matched_detail": [],
+      "other_assets_returned": [],
+      "why_no_match": "no accepted TREATMENT_PROCEDURE or CLINICAL_VISUAL_OBSERVATIONS concept exists for any Phase 10 asset"
+    },
+    {
+      "query": "treatment",
+      "passed": true,
+      "returned_count": 0,
+      "phase10_assets_matched": 0,
+      "phase10_matched_detail": [],
+      "other_assets_returned": [],
+      "why_no_match": "no accepted TREATMENT_PROCEDURE or CLINICAL_VISUAL_OBSERVATIONS concept exists for any Phase 10 asset"
+    },
+    {
+      "query": "hair transplant",
+      "passed": true,
+      "returned_count": 5,
+      "phase10_assets_matched": 0,
+      "phase10_matched_detail": [],
+      "other_assets_returned": [
+        {
+          "rank": 1,
+          "asset_id": "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "filename": "IMG_2963.MP4",
+          "score": 31.07272
+        },
+        {
+          "rank": 2,
+          "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+          "filename": "DSC03753.JPG",
+          "score": 7.552164
+        },
+        {
+          "rank": 3,
+          "asset_id": "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "filename": "IMG_0531.MP4",
+          "score": 7.358719
+        },
+        {
+          "rank": 4,
+          "asset_id": "babae120-9372-42ad-b535-02a3276ea2be",
+          "filename": "IMG_1238.MP4",
+          "score": 4.621176
+        },
+        {
+          "rank": 5,
+          "asset_id": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+          "filename": "IMG_1148.MP4",
+          "score": 4.543096
+        }
+      ],
+      "why_no_match": "no accepted TREATMENT_PROCEDURE or CLINICAL_VISUAL_OBSERVATIONS concept exists for any Phase 10 asset"
+    },
+    {
+      "query": "FUE",
+      "passed": true,
+      "returned_count": 5,
+      "phase10_assets_matched": 0,
+      "phase10_matched_detail": [],
+      "other_assets_returned": [
+        {
+          "rank": 1,
+          "asset_id": "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "filename": "IMG_2963.MP4",
+          "score": 27.758024
+        },
+        {
+          "rank": 2,
+          "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "filename": "IMG_1160.MP4",
+          "score": 4.53356
+        },
+        {
+          "rank": 3,
+          "asset_id": "babae120-9372-42ad-b535-02a3276ea2be",
+          "filename": "IMG_1238.MP4",
+          "score": 4.521606
+        },
+        {
+          "rank": 4,
+          "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+          "filename": "DSC03753.JPG",
+          "score": 0.505426
+        },
+        {
+          "rank": 5,
+          "asset_id": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+          "filename": "IMG_1148.MP4",
+          "score": 0.481716
+        }
+      ],
+      "why_no_match": "no accepted TREATMENT_PROCEDURE or CLINICAL_VISUAL_OBSERVATIONS concept exists for any Phase 10 asset"
+    },
+    {
+      "query": "implantation",
+      "passed": true,
+      "returned_count": 0,
+      "phase10_assets_matched": 0,
+      "phase10_matched_detail": [],
+      "other_assets_returned": [],
+      "why_no_match": "no accepted TREATMENT_PROCEDURE or CLINICAL_VISUAL_OBSERVATIONS concept exists for any Phase 10 asset"
+    },
+    {
+      "query": "extraction",
+      "passed": true,
+      "returned_count": 0,
+      "phase10_assets_matched": 0,
+      "phase10_matched_detail": [],
+      "other_assets_returned": [],
+      "why_no_match": "no accepted TREATMENT_PROCEDURE or CLINICAL_VISUAL_OBSERVATIONS concept exists for any Phase 10 asset"
+    }
+  ]
+}

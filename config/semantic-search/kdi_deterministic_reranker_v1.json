@@ -1,0 +1,50 @@
+{
+  "name": "KDI deterministic multi-evidence reranker",
+  "version": "kdi_deterministic_reranker_v1",
+  "schema_version": "kdi_ranked_authorized_candidate_set_v1",
+  "score_range": [0, 100],
+  "weights": {
+    "hard_constraint_satisfied": 18,
+    "hard_constraint_unknown": -5,
+    "strong_requirement": 14,
+    "preference": 5,
+    "negative_preference_violation": 7,
+    "negative_preference_explicit_false": 1,
+    "context": 2,
+    "unresolved_literal": 3,
+    "conflict": -10,
+    "same_scene_coherence": 7,
+    "same_event_coherence": 5,
+    "specificity": 4,
+    "independent_support_cap": 3,
+    "text_similarity_cap": 5,
+    "visual_similarity_cap": 2,
+    "literal_exact": 7
+  },
+  "match_quality": {
+    "EXACT_CANONICAL": 1,
+    "EXACT_ALIAS": 0.92,
+    "SAFE_EXPANSION": 0.82,
+    "PARENT_CHILD_ONTOLOGY": 0.66,
+    "LITERAL": 0.78,
+    "FULL_TEXT": 0.55,
+    "SEMANTIC_TEXT": 0.32,
+    "VISUAL_SIMILARITY": 0.18,
+    "UNRESOLVED_GROUNDED": 0.4
+  },
+  "evidence_hierarchy": [
+    "DIRECT_STRUCTURED_OBSERVATION",
+    "NORMALIZED_SEARCH_DOCUMENT",
+    "TRUSTED_LITERAL",
+    "SEMANTIC_TEXT",
+    "VISUAL_SIMILARITY"
+  ],
+  "tie_breaking": [
+    "normalized_score_desc",
+    "strong_requirements_satisfied_desc",
+    "exact_canonical_matches_desc",
+    "mean_evidence_confidence_desc",
+    "coherent_requirement_groups_desc",
+    "asset_id_asc"
+  ]
+}

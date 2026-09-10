@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1145.MP4, single scene",
+      "evidence": [
+        "asset_id e443594f-81a8-406c-9e0c-366a1567cbcc, filename IMG_1145.MP4, scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short 16-second selfie-style video clip indoors",
+      "evidence": [
+        "duration_seconds 16.233, two keyframes showing a person in a cap and scrubs against an indoor wall"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene spanning 0 to 16.2 seconds",
+      "evidence": [
+        "start_seconds 0.0, end_seconds 16.233, scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One person wearing scrubs and a surgical cap",
+      "evidence": [
+        "single individual visible in both keyframes wearing a grey V-neck scrub top and blue disposable cap"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short-haired individual with visible facial acne/scarring, wearing an earring",
+      "evidence": [
+        "visible skin texture with acne marks on cheeks, small hoop/stud earring in left ear, blue disposable hair cap covering hair"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, ear, neck and shoulders visible",
+      "evidence": [
+        "close-up framing shows face, ear with earring, neck, and shoulders in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure indicated",
+      "evidence": [
+        "no readable_text_detected or spoken_content provided naming any procedure; cap and scrubs alone do not establish a specific treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person turning head between the two frames",
+      "evidence": [
+        "first keyframe shows head turned to the side, second keyframe shows head facing more toward camera"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Only one person present, no interpersonal relationship shown",
+      "evidence": [
+        "both keyframes show a single individual with no other people visible"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial acne and post-acne marks visible on cheeks",
+      "evidence": [
+        "textured skin with reddish-brown spots and small pitted marks visible on both cheeks in close-up"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor room with white wall, red stripe accents, and a doorway",
+      "evidence": [
+        "background shows a white paneled wall with two vertical red stripes and an open door frame in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up, front-facing handheld selfie-style shot",
+      "evidence": [
+        "tight vertical framing (1280x720 source cropped to portrait-style close-up) centered on the face in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject centered/off-center in frame with plain wall backdrop",
+      "evidence": [
+        "subject occupies lower two-thirds of frame with head near top third in both keyframes, wall fills background"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected despite audio track present",
+      "evidence": [
+        "spoken_content is an empty array, though audio_stream is true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected in frames",
+      "evidence": [
+        "readable_text_detected is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No indication of marketing intent or usage",
+      "evidence": [
+        "no text, branding, or contextual data provided indicating promotional use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Individual in clinical attire captured in a brief personal video moment",
+      "evidence": [
+        "cap and scrub attire combined with plain clinical-style backdrop across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": [
+        "this layer is reserved for embedding/indexing metadata, not a visual observation"
+      ]
+    }
+  ],
+  "narrative": "A young person wearing a blue disposable surgical/hair cap and grey V-neck scrub top is shown in close-up, looking to the side in one frame and toward the camera in the other. The background shows a plain white wall with red vertical stripes and a doorway, indicating an indoor clinical setting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "e443594f-81a8-406c-9e0c-366a1567cbcc",
+  "image_count": 2
+}

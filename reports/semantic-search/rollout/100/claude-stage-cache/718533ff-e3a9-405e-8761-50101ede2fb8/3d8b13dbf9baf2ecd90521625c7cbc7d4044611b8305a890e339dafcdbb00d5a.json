@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2942.MP4",
+      "evidence": [
+        "filename IMG_2942.MP4, duration 21.07s, 1280x720, h264, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical-setting video clip",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, scene shows a consistent close-up medical setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across the clip",
+      "evidence": [
+        "scene_results lists a single scene_index 0 spanning the asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One practitioner visible, role unspecified",
+      "evidence": [
+        "person wearing scrubs, mask, headlight loupes, and gloves positioned over the field; no role label given"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in blue scrubs, mask, gloves, headlight loupes",
+      "evidence": [
+        "images show blue surgical cap/scrub fabric, surgical mask, white headlight/loupe apparatus, white gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Anatomy not clearly identifiable",
+      "evidence": [
+        "scene layer result marks ANATOMY as UNKNOWN; illuminated area obscured by hand, instrument, and glare"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "scene layer result marks TREATMENT_PROCEDURE as UNKNOWN; only gloves, instrument, and drapes visible with no named procedure in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hand manipulating small instrument",
+      "evidence": [
+        "gloved hand holds a small round metal instrument near the illuminated field"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned over draped patient/field",
+      "evidence": [
+        "practitioner leans closely over a blue-draped surface with hand extended toward the lit area"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Surgical drapes, gloves, bright focused light, tubing",
+      "evidence": [
+        "blue surgical drapes, white gloves, bright illuminated field, thin tubing/wires near practitioner's head"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting suggests clinical space but unconfirmed",
+      "evidence": [
+        "scene layer result marks ENVIRONMENT as UNKNOWN; background shows a cabinet and equipment but no clear identifying signage"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing",
+      "evidence": [
+        "tight close-up angle from over the practitioner's shoulder toward the lit field"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Foreground gloved hand and instrument, blue drape frame",
+      "evidence": [
+        "gloved hand and instrument occupy center-right frame, blue drapes fill lower and left portions"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH; scene layer SPEECH_TRANSCRIPT_AUDIO marked FALSE despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "On-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 1"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene layer result marks MARKETING_CONTENT_USAGE as UNKNOWN; no captions or branding context supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close clinical-style scene of instrument use near patient",
+      "evidence": [
+        "consistent depiction across scene of gloved practitioner working near an illuminated field on a draped patient"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to media content",
+      "evidence": [
+        "scene layer result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person in surgical scrubs, mask, and headlight loupes leans over a patient draped in blue surgical covering under bright light, holding a small round metal instrument close to an illuminated area near the head. Thin tubing or wires are visible near the practitioner's head while a gloved hand manipulates the instrument.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "718533ff-e3a9-405e-8761-50101ede2fb8",
+  "image_count": 1
+}

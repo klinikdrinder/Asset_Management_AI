@@ -1,0 +1,225 @@
+{
+  "before": {
+    "phase": "PHASE_02_DATABASE_BASELINE",
+    "generated_at": "2026-09-01T04:14:16.593Z",
+    "frozen_spec": {
+      "semantic_spec": "semantic_index_v1",
+      "locked_extraction_spec": "kdi_semantic_18_layer_v1",
+      "ontology": "KDI_SEMANTIC_V2",
+      "evidence_version": "phase10_semantic_assertion_evidence_v1",
+      "search_document_version": "kdi_search_document_v1",
+      "pipeline": "kdi_automatic_indexing_pipeline_v1",
+      "freeze_fingerprint": "ba43dab744dedfd590e81be5c8ec5ec8ab7c0bda79f8aca16c0b24d198294888"
+    },
+    "inventory": {
+      "total_assets": 881,
+      "total_canonical_assets": 881,
+      "unique_asset_ids": 881,
+      "unique_hashes": 881,
+      "missing_hashes": 0,
+      "duplicate_hash_groups": 0,
+      "images": 293,
+      "videos": 585,
+      "documents": 2,
+      "other": 1,
+      "missing_provenance": 0,
+      "category_reconciliation": true,
+      "unsupported_assets": [
+        {
+          "asset_id": "3bcdd832-b504-4641-9729-0d965e01411a",
+          "filename": "REVIEW.pptx",
+          "extension": "pptx",
+          "mime_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+          "content_hash": "7bcd6c314c60707d3064ef5709b9e76a5869bd5097c3d9e6c138a883d52b4f0b",
+          "media_type": "OTHER",
+          "source_id": "e7339238-1d9e-4cf2-bbc2-bdd77f7440ba",
+          "source_resolvable": true,
+          "status": "BLOCKED_UNSUPPORTED",
+          "existing_layers": 0,
+          "existing_runs": 0,
+          "existing_docs": 0,
+          "existing_embeddings": 0,
+          "has_profile": false
+        }
+      ],
+      "invalid_media_type": 0,
+      "missing_technical_metadata": "NOT_DETERMINED_BY_READ_ONLY_SNAPSHOT",
+      "missing_source_location": 0
+    },
+    "processing": {
+      "complete": 10,
+      "pending_analysis": 870,
+      "unsupported": 1,
+      "search_ready": 10,
+      "unexpected_search_ready": 0,
+      "failed": 0,
+      "other_states": {}
+    },
+    "semantic_counts": {
+      "source": "reports/semantic-search/spec/KDI_SEMANTIC_18_LAYER_V1_LOCK_REPORT.md and phase12 protected-count snapshots",
+      "asset_ai_profiles": 16,
+      "asset_semantic_layers": 180,
+      "semantic_assertions": 333,
+      "semantic_assertion_evidence": 270,
+      "asset_scenes": 312,
+      "asset_keyframes": 345,
+      "asset_events": 22,
+      "asset_people": "NOT_SEPARATELY_REPORTED",
+      "person_appearances": "NOT_SEPARATELY_REPORTED",
+      "scene_anatomy": "NOT_SEPARATELY_REPORTED",
+      "scene_treatments": "NOT_SEPARATELY_REPORTED",
+      "scene_actions": "NOT_SEPARATELY_REPORTED",
+      "scene_relationships": "NOT_SEPARATELY_REPORTED",
+      "clinical_observations": "NOT_SEPARATELY_REPORTED",
+      "scene_environment": "NOT_SEPARATELY_REPORTED",
+      "scene_cinematography": "NOT_SEPARATELY_REPORTED",
+      "scene_composition": "NOT_SEPARATELY_REPORTED",
+      "asset_transcript_chunks": 14,
+      "ocr_observations": 19,
+      "marketing_annotations": "NOT_SEPARATELY_REPORTED",
+      "semantic_narratives": 37,
+      "narrative_claims": 38,
+      "narrative_claim_evidence": 53,
+      "asset_search_documents": 10,
+      "scene_search_documents": 10,
+      "search_document_builds": 55,
+      "semantic_embeddings": 0,
+      "analysis_runs": 58,
+      "asset_sources": 881,
+      "asset_access_control": 881
+    },
+    "search_documents": {
+      "asset_documents": 10,
+      "scene_documents": 10,
+      "total_build_rows": 55,
+      "duplicates": 0,
+      "orphan_documents": 0,
+      "stale_current_documents": 0,
+      "source": "phase11/phase12 read-only preservation snapshots"
+    },
+    "embeddings": {
+      "visual": {
+        "provider": "open_clip",
+        "model": "ViT-B-32",
+        "model_version": "laion2b_s34b_b79k",
+        "dimensions": 512,
+        "table": "asset_visual_embeddings",
+        "rows": 875,
+        "active_rows": 875
+      },
+      "text": {
+        "provider": "sentence_transformers",
+        "model": "intfloat/multilingual-e5-small",
+        "model_version": "hf-main-pinned-runtime-v1",
+        "dimensions": 384,
+        "table": "semantic_embeddings",
+        "rows": 41,
+        "active_rows": 41
+      },
+      "legacy_text": {
+        "provider": "ollama",
+        "model": "qwen3-embedding:0.6b",
+        "model_version": "v1",
+        "dimensions": 1024,
+        "table": "asset_embeddings",
+        "rows": 20,
+        "active_rows": 20
+      },
+      "canonical_pilot_bundle_rows": 106,
+      "note": "Counts are read-only snapshots from phase12; no vectors were generated."
+    },
+    "provenance": {
+      "assets": 881,
+      "asset_sources": 881,
+      "missing": 0,
+      "orphan_sources": 0,
+      "source_files": 890
+    },
+    "acl_consent": {
+      "acl_rows": 881,
+      "assets_missing_acl": 0,
+      "orphan_acl": 0,
+      "unexpected_consent_approvals": 0,
+      "semantic_equals_authorization": false
+    },
+    "orphan_duplicate": {
+      "duplicate_canonical_assets": 0,
+      "duplicate_hash_groups": 0,
+      "duplicate_current_semantic_rows": 0,
+      "duplicate_current_search_documents": 0,
+      "duplicate_current_embeddings": 0,
+      "orphan_semantic_profiles": 0,
+      "orphan_assertions": 0,
+      "orphan_evidence": 0,
+      "orphan_scenes": 0,
+      "orphan_keyframes": 0,
+      "orphan_descriptions": 0,
+      "orphan_narratives": 0,
+      "orphan_search_documents": 0,
+      "orphan_embeddings": 0,
+      "orphan_analysis_runs": 0,
+      "invalid_foreign_keys": 0,
+      "source": "database readiness and lock/preservation audits"
+    },
+    "drift": {
+      "P0": 0,
+      "P1": 2,
+      "P2": 1,
+      "P3": 0,
+      "findings": [
+        {
+          "id": "P1-A",
+          "component": "public.semantic_layer_catalog / semantic_layer_catalog",
+          "impact": "Legacy KDI_SEMANTIC_V2 catalog names/order differ from frozen semantic_index_v1; existing 10 are preserved, future new indexing must use locked versioned definitions.",
+          "affected_assets": "legacy catalog scope; no frozen V1 semantic truth mutated",
+          "phase3_fix": "Versioned mapping/validator boundary; do not rewrite historical rows."
+        },
+        {
+          "id": "P1-B",
+          "component": "embedding configuration",
+          "impact": "Active visual OpenCLIP 512-d vectors coexist with 384-d sentence-transformer text and 1024-d historical Ollama text vectors across tables.",
+          "affected_assets": "875 visual rows; 41 canonical pilot text rows; 20 legacy text rows",
+          "phase3_fix": "Explicitly lock model/provider/dimension per representation before new indexing; preserve historical vectors."
+        },
+        {
+          "id": "P2",
+          "component": "legacy semantic records",
+          "impact": "State/evidence fields are not uniform across older tables and records.",
+          "affected_assets": "legacy rows; no pending assets promoted",
+          "phase3_fix": "Require canonical validator fields for new V1 runs; do not rewrite history."
+        }
+      ]
+    },
+    "preservation": {
+      "assets_deleted": 0,
+      "assets_duplicated": 0,
+      "hashes_lost": 0,
+      "semantic_writes": 0,
+      "evidence_writes": 0,
+      "description_writes": 0,
+      "narrative_writes": 0,
+      "search_document_writes": 0,
+      "embedding_writes": 0,
+      "acl_changes": 0,
+      "consent_changes": 0,
+      "openai_calls": 0,
+      "media_analysis_calls": 0
+    },
+    "baseline_fingerprint": "22ef81db0394b3f0efb4164b741017faad248cedccee92bb30a5118528623faa"
+  },
+  "after": {
+    "canonicalAssets": 881,
+    "semanticComplete": 10,
+    "pendingAnalysis": 870,
+    "unsupported": 1,
+    "searchReady": 10,
+    "postBaselineAssets": 0,
+    "testOnlyAssets": 0,
+    "openAiCalls": 0,
+    "mediaAnalysisCalls": 0
+  },
+  "originalCohortPreserved": true,
+  "semanticMutations": 0,
+  "rolloutAssetsProcessed": 0,
+  "testRecordsPersisted": false
+}

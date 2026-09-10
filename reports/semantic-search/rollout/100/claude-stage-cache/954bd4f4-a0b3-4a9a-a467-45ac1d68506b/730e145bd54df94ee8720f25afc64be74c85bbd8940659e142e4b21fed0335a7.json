@@ -1,0 +1,180 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0568.MP4, 6.77s clip",
+      "evidence": [
+        "Asset metadata specifies filename IMG_0568.MP4, duration 6.7717s, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result marked GLOBAL_ASSET_UNDERSTANDING as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1",
+        "scene_results shows one scene index 0 marked OBSERVED for TEMPORAL_SCENE_STRUCTURE"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles not confirmed by text",
+      "evidence": [
+        "Scene-level result marked PEOPLE_ROLES as UNKNOWN despite visible clinician-patient setup"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs, dark hair, mask, safety glasses; patient with eye shields, blue cap, purple towel",
+      "evidence": [
+        "Image shows clinician's attire and accessories",
+        "Image shows patient's facial coverings and towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forehead and facial area visible",
+      "evidence": [
+        "Image shows patient's face, forehead, nose, and skin texture under laser device"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not named",
+      "evidence": [
+        "No named clinical procedure appears in supplied text; only a handheld laser device and gloves are visible",
+        "Scene-level result marked TREATMENT_PROCEDURE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applying laser device near patient's forehead",
+      "evidence": [
+        "Image shows handheld device with visible green light near patient's skin",
+        "Scene-level ACTIONS_EVENTS marked OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing action on reclining patient",
+      "evidence": [
+        "Image shows spatial proximity and interaction between clinician and patient",
+        "Scene-level RELATIONSHIPS marked OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Skin condition not clearly assessable",
+      "evidence": [
+        "Scene-level result marked CLINICAL_VISUAL_OBSERVATIONS as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "Scene-level result marked ENVIRONMENT as UNKNOWN",
+        "Background appears plain white but no further context given"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Camera technique not specified",
+      "evidence": [
+        "Scene-level result marked CINEMATOGRAPHY as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing of clinician and patient",
+      "evidence": [
+        "Image shows tight vertical composition centering clinician's hands and patient's face",
+        "Scene-level COMPOSITION marked OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH",
+        "Scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text 'DR LEW KAR...' visible on scrub top",
+      "evidence": [
+        "Image shows embroidered text on clinician's scrub top",
+        "ocr_observations: 5"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level result marked MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "Scene-level result marked SEMANTIC_NARRATIVE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Embedding-level indexing not assessed",
+      "evidence": [
+        "Scene-level result marked SEARCH_EMBEDDINGS as UNKNOWN"
+      ]
+    }
+  ],
+  "narrative": "A clinician wearing teal scrubs, a surgical mask, and laser safety glasses holds a handheld laser device connected to an orange fiber optic cable, directing it near a reclining patient's forehead. The patient wears metallic eye shields, a blue surgical cap, and is covered with a purple towel.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "954bd4f4-a0b3-4a9a-a467-45ac1d68506b",
+  "image_count": 1
+}

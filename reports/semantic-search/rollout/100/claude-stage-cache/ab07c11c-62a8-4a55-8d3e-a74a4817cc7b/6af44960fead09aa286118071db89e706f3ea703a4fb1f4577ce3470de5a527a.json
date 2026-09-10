@@ -1,0 +1,183 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0491.MP4",
+      "evidence": [
+        "filename IMG_0491.MP4",
+        "duration 6.4 seconds, 1280x720 resolution"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clinical scene",
+      "evidence": [
+        "one scene spanning 0.0 to 6.4 seconds",
+        "two keyframes showing consistent setup"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short single scene of ongoing procedure",
+      "evidence": [
+        "scene_index 0, start 0.0, end 6.4 seconds",
+        "two keyframes show minimal change in pose"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and reclining patient",
+      "evidence": [
+        "person in teal scrubs, mask, gloves leaning over",
+        "person in surgical cap reclined in chair with closed eyes"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in teal scrubs with mask; patient in blue surgical cap and green top",
+      "evidence": [
+        "dark hair in bun with decorative clip, teal scrub top, surgical mask, smartwatch",
+        "patient wearing blue disposable cap, green shirt, dark pants, gold ring on hand"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial area with visible markings",
+      "evidence": [
+        "small dark marks visible on forehead and cheek area of reclined person",
+        "face, neck, and hands visible in frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unspecified facial procedure",
+      "evidence": [
+        "gloved hands near patient's face/neck area",
+        "no named procedure present in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner working on patient's face while patient reclines still",
+      "evidence": [
+        "gloved hands positioned near jaw/neck in both keyframes",
+        "patient's eyes closed and hands folded in lap in both frames"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner-patient interaction",
+      "evidence": [
+        "practitioner leaning directly over patient performing close contact task",
+        "patient passive and still while practitioner actively works"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Surgical markings on face, gloves worn",
+      "evidence": [
+        "dark dot markings visible on forehead/cheek of patient",
+        "practitioner wearing white disposable gloves and surgical mask"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Plain clinical treatment room",
+      "evidence": [
+        "white walls with wall-mounted panel",
+        "blue disposable chair covering and metal cabinet edge visible in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static vertical handheld-style shot",
+      "evidence": [
+        "portrait/vertical framing of scene",
+        "consistent camera angle across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two subjects framed diagonally in vertical shot",
+      "evidence": [
+        "practitioner positioned upper left, patient lower right in frame",
+        "vertical 1280x720 aspect suggests mobile video orientation"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is empty list"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected field is empty list"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Purpose of recording unclear",
+      "evidence": [
+        "no text overlays, branding, or contextual markers present in keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Documentation of a facial clinical procedure in progress",
+      "evidence": [
+        "patient reclined passively with markings on face",
+        "practitioner actively engaged with gloved hands near patient's face"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable for direct visual evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person reclines in a treatment chair with eyes closed, wearing a surgical cap with markings visible on their forehead, while a masked practitioner in teal scrubs leans over performing a procedure on their face using gloved hands. The setting appears to be a clinical or medical spa room with plain white walls.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "ab07c11c-62a8-4a55-8d3e-a74a4817cc7b",
+  "image_count": 2
+}

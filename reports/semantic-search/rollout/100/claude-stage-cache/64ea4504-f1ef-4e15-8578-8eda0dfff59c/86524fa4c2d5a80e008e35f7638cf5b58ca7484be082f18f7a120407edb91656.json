@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_1146.MP4",
+      "evidence": [
+        "Filename IMG_1146.MP4, single canonical scene with 2 keyframes"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short indoor clip of a person in scrubs",
+      "evidence": [
+        "13.7 second video showing one person in medical scrubs in an indoor setting across two keyframes"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, head movement over time",
+      "evidence": [
+        "One canonical scene spanning the clip; keyframe 1 shows head turned to the side, keyframe 2 shows head tilted back"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One individual in clinic scrubs",
+      "evidence": [
+        "Person wearing grey scrubs with an embroidered purple clinic logo, consistent with clinic staff attire"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short dark hair, earring, grey scrubs",
+      "evidence": [
+        "Short dark hair, visible earring in left ear, grey V-neck scrub top with purple logo"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, neck, and chin visible",
+      "evidence": [
+        "Keyframe 1 shows face in profile-ish turn; keyframe 2 shows chin and neck exposed from tilted-back head position"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure evidenced",
+      "evidence": [
+        "No procedure name appears in supplied text; images show only a person posing/moving head with no instruments or treatment context visible"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Head turning and tilting back",
+      "evidence": [
+        "Keyframe 1: head turned to look to the side; keyframe 2: head tilted back looking upward"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Only one person present",
+      "evidence": [
+        "Only a single individual appears in both keyframes, no interpersonal relationship to assess"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial skin with minor blemishes visible",
+      "evidence": [
+        "Close-up keyframes show visible skin texture including small marks/blemishes on cheeks and forehead"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor room with white cabinet and red stripes",
+      "evidence": [
+        "Background shows a white wall/cabinet with vertical red stripe accents and a door frame edge"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up selfie-style handheld framing",
+      "evidence": [
+        "Tight head-and-shoulders framing consistent with a front-facing handheld camera shot"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Centered subject, vertical orientation",
+      "evidence": [
+        "Subject centered in vertical 720x1280-oriented frame with symmetrical red stripes behind"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present being true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Possible small logo text, unreadable",
+      "evidence": [
+        "ocr_observations count is 2 but no legible text content is provided; small logo on scrub top is not clearly readable"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing usage evidenced",
+      "evidence": [
+        "Asset-level layer result reported as FALSE with no marketing text, branding overlay, or promotional framing described"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person in scrubs shifting head position indoors",
+      "evidence": [
+        "Sequential keyframes depict a narrative arc of head turning then tilting back within one indoor scene"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual content evaluation",
+      "evidence": [
+        "Search embeddings are a backend indexing construct, not a visually observable layer"
+      ]
+    }
+  ],
+  "narrative": "A person wearing grey medical scrubs with a purple clinic logo stands indoors in front of a white cabinet with vertical red stripes, first turning their head to look off to one side. In the second frame the same person has tilted their head far back, looking upward and exposing the chin and neck.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "64ea4504-f1ef-4e15-8578-8eda0dfff59c",
+  "image_count": 1
+}

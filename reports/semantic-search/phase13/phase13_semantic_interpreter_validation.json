@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-08-25T02:20:47.894Z",
+  "status": "PASS",
+  "provider": {
+    "provider": "kdi_local_ontology_interpreter",
+    "model": "kdi_semantic_lexicon_en_ms",
+    "model_version": "v1",
+    "local": true,
+    "production_capable": true,
+    "privacy": "query remains in process; no network transmission",
+    "write_boundary": "allowlisted semantic fields only"
+  },
+  "smoke": {
+    "status": "PASS",
+    "latency_ms": 0.38999999999998636,
+    "input_tokens": "UNAVAILABLE",
+    "output_tokens": "UNAVAILABLE",
+    "estimated_cost": 0
+  },
+  "checks": {
+    "roles": true,
+    "anatomy": true,
+    "treatment": true,
+    "actions": true,
+    "procedure_stage": true,
+    "transcript_intent": true,
+    "ocr_intent": true,
+    "modality_separation": true,
+    "unknown_preserved": true,
+    "english": true,
+    "malay": true,
+    "mixed": true,
+    "typo_schema_safe": true,
+    "no_match_safe": true
+  },
+  "degraded_mode": {
+    "status": "UNAVAILABLE",
+    "validation": "VALID"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_3967.MP4",
+      "evidence": [
+        "filename IMG_3967.MP4, duration 20.03s, 1280x720, h264, single scene, two keyframes sampled"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context unclear",
+      "evidence": [
+        "Scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN; no broader context beyond the single close-up scene is available"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1 with two keyframes showing the device moved from near the nose/upper lip to the cheek"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and reclined patient",
+      "evidence": [
+        "A masked, gloved individual leans over a reclined person lying on a treatment bed"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked practitioner, dark hair; patient with dark hair, black top",
+      "evidence": [
+        "Practitioner wears a blue surgical mask, latex gloves, and has dark hair visible",
+        "Reclined person has dark hair pulled back, wears a black tank top, gauze pad over eye area"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, nose, cheek, upper lip area",
+      "evidence": [
+        "Device tip is positioned near the person's nose, upper lip, and cheek region"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in evidence",
+      "evidence": [
+        "Only a handheld device with a pin-studded clear tip and red light is visible; no procedure name is present in supplied text, so it cannot be identified beyond that"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device applied to face, repositioned",
+      "evidence": [
+        "Practitioner holds device tip against the face near the nose/lip in one keyframe and near the cheek in the other, indicating movement across the face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner working directly on patient's face",
+      "evidence": [
+        "Gloved hand steadies the head while the other hand operates the device against the patient's skin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, mask, gauze eye protection, device with lit tip",
+      "evidence": [
+        "Latex gloves, surgical mask, gauze pad over the eyes, and a device tip illuminated with a red indicator are visible"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Indoor setting, details unclear",
+      "evidence": [
+        "Scene-level ENVIRONMENT marked UNKNOWN; only a blue drape, treatment bed, and blurred background equipment/cabling are visible without further identifying detail"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing",
+      "evidence": [
+        "Tight close-up composition on the face and device across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up centered on face and device",
+      "evidence": [
+        "Vertical 1280x720-derived frame centers the practitioner's hands and device tip over the reclined person's face"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "audio_stream_present true but transcript_state is NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text",
+      "evidence": [
+        "ocr_observations: 0 and OCR_VISIBLE_TEXT marked FALSE at scene level"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use unclear",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN; no captions, branding, or usage context supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up of facial device application in clinical setting",
+      "evidence": [
+        "Consistent narrative across keyframes of a gloved practitioner applying a handheld device to a reclined patient's face"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A gloved, masked practitioner holds a handheld device with a clear, pin-studded tip and a lit red indicator close to a reclined person's face, near the nose/upper lip and cheek area. The person lies on a treatment bed with a blue drape and a gauze pad protecting the eye area, in an indoor clinical setting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "0e518d7b-d4b1-4b26-bd0a-da5acdf5285c",
+  "image_count": 1
+}

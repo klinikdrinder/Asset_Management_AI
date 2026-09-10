@@ -1,0 +1,177 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2126.MP4, single scene",
+      "evidence": [
+        "asset_id a16873a2-0316-4c11-bf96-2ff203ed5c22, filename IMG_2126.MP4, scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical setting clip, ~17.5 seconds",
+      "evidence": [
+        "duration_seconds 17.466667, 1280x720, h264, single scene covering full asset"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene from 0.0s to 17.467s",
+      "evidence": [
+        "start_seconds 0.0, end_seconds 17.467, scene_index 0, keyframes_supplied 2 showing similar device positioning at different moments"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One patient reclining, one clinician standing over her",
+      "evidence": [
+        "person lying back wearing eye protection and draped covering",
+        "second person standing behind in scrubs, mask, gloves, and Apple Watch operating a device"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient with dark hair, earrings, lip color; clinician in rust-colored scrub top with mask",
+      "evidence": [
+        "patient has dark hair pulled back, small hoop earrings, pink/mauve lip tint, tan protective goggles",
+        "clinician wears rust/terracotta scrub top, blue surgical mask, white disposable gloves, dark wristwatch"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, forehead, and hairline visible",
+      "evidence": [
+        "face, forehead, and upper hairline area of patient visible beneath goggles and near where the device tip is positioned"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure using handheld device near hairline",
+      "evidence": [
+        "no on-screen text or spoken content names a procedure; only a gloved hand holding an instrument near the forehead/hairline is visible, which alone cannot establish a named clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positions device near patient's forehead/hairline",
+      "evidence": [
+        "in both keyframes the clinician's gloved hand holds the device tip close to the patient's forehead/hairline area"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-patient interaction during a session",
+      "evidence": [
+        "clinician positioned directly above and behind reclined patient, actively handling equipment near her head"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective eyewear and draping used on patient",
+      "evidence": [
+        "patient wears tan-colored protective goggles",
+        "blue disposable covering/drape over patient's torso",
+        "blue paper-like covering on headrest"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinic room with marble-pattern flooring and treatment chair",
+      "evidence": [
+        "tiled/marble-look floor visible in background",
+        "beige wall, reclined treatment chair/bed with blue paper covering",
+        "electrical outlet visible on wall in second image"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Overhead-angle handheld vertical video shot",
+      "evidence": [
+        "vertical 720-width frame with camera positioned above looking down at patient's face and clinician's hands, consistent across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered in frame, clinician and device fill upper portion",
+      "evidence": [
+        "patient's face and body centered and filling lower two-thirds of frame",
+        "clinician's torso, arms, and device occupy upper third in both images"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is empty array despite audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Partial text on mask not legible, no detected readable text",
+      "evidence": [
+        "readable_text_detected is empty array",
+        "faint printed text visible on clinician's surgical mask but not legible enough to transcribe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators present in supplied evidence",
+      "evidence": [
+        "no captions, logos, or promotional text detected in readable_text_detected or spoken_content"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment session in progress",
+      "evidence": [
+        "reclined patient with protective eyewear and draping, clinician actively operating handheld device near her forehead in a clinic-like room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually derivable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A patient reclines on a treatment bed wearing protective eye shields while a gloved clinician in scrubs positions a silver handheld device near her forehead/hairline. The clinician holds the device with an articulated arm attachment, and the patient is draped with a blue covering over her body.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "a16873a2-0316-4c11-bf96-2ff203ed5c22",
+  "image_count": 2
+}

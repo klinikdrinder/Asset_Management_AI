@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2934.MP4, scene 0",
+      "evidence": [
+        "filename IMG_2934.MP4",
+        "asset_id b0b6ba87-ef2b-4182-8df7-90b95d12b1f3",
+        "scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical room video clip, ~15 seconds",
+      "evidence": [
+        "duration_seconds 15.215",
+        "two keyframes supplied showing consistent setting and subjects"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene spanning 0 to 15.2 seconds",
+      "evidence": [
+        "start_seconds 0.0, end_seconds 15.215, scene_index 0",
+        "two keyframes show near-identical framing indicating a static continuous shot"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two clinical staff members in surgical attire",
+      "evidence": [
+        "two individuals wearing blue surgical caps, masks, gowns, gloves, and head-mounted loupes visible in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Both wear blue scrub caps, surgical masks, blue gowns, white gloves, head loupes",
+      "evidence": [
+        "visible blue surgical caps with strap-mounted magnification loupes",
+        "surgical masks covering lower face",
+        "blue gowns with white glove cuffs in both images"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Partial view of a person's head/facial area obscured by hands and drape",
+      "evidence": [
+        "a pale area consistent with a head is visible between the two clinicians' hands, largely occluded by gloves and instruments"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure indicated",
+      "evidence": [
+        "readable_text_detected is empty and spoken_content is empty, so no procedure name is supplied",
+        "gloves, instruments, and contact with a head are visible but do not by themselves establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two clinicians handling small instruments near a patient's head",
+      "evidence": [
+        "both figures hold small handheld tools angled toward a central point between them in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two clinicians working together side by side on the same subject",
+      "evidence": [
+        "both individuals' arms and instruments converge on the same central area in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clear clinical detail visible due to occlusion",
+      "evidence": [
+        "the working area is obscured by hands, gloves, and instruments in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical room with patterned wallpaper, wall clock, and equipment cart",
+      "evidence": [
+        "patterned wallpaper on the wall",
+        "wall clock showing approximately 12:52",
+        "a mobile cart with equipment visible in the lower left background",
+        "a signage placard mounted on the wall"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static vertical shot from behind the clinicians",
+      "evidence": [
+        "vertical (portrait) framing in both keyframes",
+        "camera angle positioned behind and slightly to the side of the two subjects, consistent across both frames"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two subjects fill the lower two-thirds of frame, wall and clock occupy upper background",
+      "evidence": [
+        "both clinicians positioned in lower and middle frame with heads near center",
+        "clock and wallpaper occupy the upper portion of the frame in both images"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Small wall sign present but text not extracted",
+      "evidence": [
+        "a small placard with markings is visible on the wall in both keyframes, but readable_text_detected is empty"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators present in supplied evidence",
+      "evidence": [
+        "no captions, logos, or promotional text provided in readable_text_detected or spoken_content"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two-person clinical team collaborating in a treatment room",
+      "evidence": [
+        "two gowned and masked individuals working together with instruments near a patient in a clinical-style room across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually assessable descriptive layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two clinicians in blue surgical gowns, caps, and loupes stand side by side working closely at a patient's head, which is draped in green, using small handheld instruments. The room has patterned wallpaper, a wall clock reading approximately 12:52, a signage placard, and a mobile equipment cart in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "b0b6ba87-ef2b-4182-8df7-90b95d12b1f3",
+  "image_count": 2
+}

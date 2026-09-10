@@ -1,0 +1,183 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1357.MP4, 13.2s, 1280x720",
+      "evidence": [
+        "filename IMG_1357.MP4",
+        "duration_seconds 13.166667, width 1280, height 720, codec h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical scene of a person receiving facial treatment",
+      "evidence": [
+        "scene narrative describes person on treatment table with corneal shields and gloved hands working near face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "scene_index 0 spans the asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One reclining patient and at least one gloved clinical staff member",
+      "evidence": [
+        "person lying down with cap and drape",
+        "gloved hand holding device near face",
+        "second person in teal scrubs standing nearby"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient in blue cap and drape; staff in teal scrubs and gloves",
+      "evidence": [
+        "blue surgical cap and drape visible on reclining person",
+        "teal scrub sleeve of second person",
+        "white/blue gloves on hands near face"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, closed eyes, forehead, and eyebrows visible",
+      "evidence": [
+        "metal corneal shields over closed eyes",
+        "eyebrows, nose, mouth, and forehead visible beneath surgical cap"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied evidence",
+      "evidence": [
+        "gloves, a device emitting green light, and facial contact are visible but no named procedure is present in the supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hand positioning a light-emitting device near the face",
+      "evidence": [
+        "gloved hand holds device emitting green light near face",
+        "second gloved person positioned close to patient's head"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff members positioned around and attending to the reclining patient",
+      "evidence": [
+        "gloved hand near patient's face",
+        "second person in teal scrubs standing adjacent to the table"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Corneal eye shields, gloves, and facial skin preparation visible",
+      "evidence": [
+        "metal corneal shields covering closed eyes",
+        "gloved hands",
+        "sheen on facial skin suggesting topical application"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite equipment and tiled floor partially visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing on the face",
+      "evidence": [
+        "tight vertical close-up composition centered on patient's face across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face-centered vertical frame with staff at edges",
+      "evidence": [
+        "patient's face fills the center of the vertical frame with gloved hands and staff at the periphery"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true",
+        "transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN with no supporting text or branding present"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose not determinable",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN in absence of named procedure or context"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/narrative evaluation",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person lies on a treatment table wearing a blue surgical cap and drape, with metal corneal eye shields covering their closed eyes while a gloved hand holds a device emitting a green light near their face. A second gloved individual in teal scrubs stands beside the table.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "d1b5cf10-123b-43ed-b17f-482934d473d2",
+  "image_count": 1
+}

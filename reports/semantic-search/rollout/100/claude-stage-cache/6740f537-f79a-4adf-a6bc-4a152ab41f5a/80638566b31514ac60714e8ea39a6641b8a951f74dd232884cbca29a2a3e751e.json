@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 clip with metadata",
+      "evidence": [
+        "filename IMG_3198.MP4, duration 17.5s, 1280x720, h264, decoded_locally true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall purpose not determinable",
+      "evidence": [
+        "Scene-level result for GLOBAL_ASSET_UNDERSTANDING was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 sampled across the clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "masked, gloved individual operating a device beside a patient reclined in a treatment chair"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked clinician, shaved-head patient",
+      "evidence": [
+        "clinician wears surgical mask, gloves, dark scrub top; patient has a shaved head and is draped in blue cloth"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp visible",
+      "evidence": [
+        "shaved scalp of patient visible under the device's red glow"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identified",
+      "evidence": [
+        "a handheld device, gloves, and scalp contact are shown but no named procedure appears in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held over scalp",
+      "evidence": [
+        "clinician holds corded device emitting red light against patient's scalp across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician attending to patient",
+      "evidence": [
+        "spatial arrangement shows clinician positioned over reclined patient, hand directly applying device to scalp"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Red-glowing device on scalp",
+      "evidence": [
+        "red glow visible at point of contact between device and scalp"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room type not confirmed",
+      "evidence": [
+        "Scene-level result for ENVIRONMENT was UNKNOWN despite visible sink, mirror, and air conditioner"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, handheld-style framing",
+      "evidence": [
+        "close vertical framing on clinician's hand and patient's head across the two keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient lower-left, clinician right",
+      "evidence": [
+        "patient reclined lower-left of frame, clinician standing upper-right holding device centrally"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No legible on-screen text",
+      "evidence": [
+        "scene-level OCR_VISIBLE_TEXT marked FALSE despite ocr_observations count of 3"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent undetermined",
+      "evidence": [
+        "Scene-level result for MARKETING_CONTENT_USAGE was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative undetermined",
+      "evidence": [
+        "Scene-level result for SEMANTIC_NARRATIVE was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this content",
+      "evidence": [
+        "Scene-level result for SEARCH_EMBEDDINGS was NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked, gloved clinician holds a black corded handheld device emitting a red glow over the shaved scalp of a patient reclined in a chair with a headrest, draped in blue medical cloth. The setting is a clinical exam room with a sink, mirror, and wall-mounted air conditioner, and the video has an audio track but no detected speech or on-screen text.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "6740f537-f79a-4adf-a6bc-4a152ab41f5a",
+  "image_count": 1
+}

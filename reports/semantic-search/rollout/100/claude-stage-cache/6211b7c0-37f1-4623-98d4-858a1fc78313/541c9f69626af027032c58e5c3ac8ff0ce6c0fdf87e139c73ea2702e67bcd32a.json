@@ -1,0 +1,177 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0998.MP4, scene 0",
+      "evidence": [
+        "asset_id 6211b7c0-37f1-4623-98d4-858a1fc78313",
+        "filename IMG_0998.MP4",
+        "scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clip of clinician operating a medical device console",
+      "evidence": [
+        "12.6 second scene with two keyframes showing a gloved hand interacting with a device touchscreen"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene, 0.0\u201312.6s, hand moves from touching screen to reaching toward handpiece",
+      "evidence": [
+        "scene start_seconds 0.0, end_seconds 12.6",
+        "keyframe 1 shows finger touching screen; keyframe 2 shows hand withdrawn near handpiece cradle"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One gloved hand/arm visible, likely operator",
+      "evidence": [
+        "a gloved forearm and hand extend into frame from the left in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Hand wearing white/beige latex glove",
+      "evidence": [
+        "visible gloved hand and forearm in both images, no other body parts or face visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No patient anatomy visible",
+      "evidence": [
+        "only an operator's gloved hand/arm is visible; no patient body area shown"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "no procedure name appears in readable_text_detected or spoken_content",
+        "gloved hand and device alone do not establish a named clinical procedure per rules"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operator adjusts device touchscreen settings",
+      "evidence": [
+        "keyframe 1 shows a finger pressing the touchscreen",
+        "keyframe 2 shows the hand pulled back near the handpiece holder with fingers curled"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operator interacting directly with device console",
+      "evidence": [
+        "gloved hand positioned at and touching the device's touchscreen and controls in both frames"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clinical findings observable",
+      "evidence": [
+        "no skin, wound, or treatment site is visible in either keyframe to assess"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room with tiled/marble floor",
+      "evidence": [
+        "cream-colored walls, marbled tile flooring, and a blue draped treatment bed edge visible in lower right of frame"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static handheld vertical video shot",
+      "evidence": [
+        "vertical 720x1280-oriented frame with device centered, consistent framing across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device centered in frame with hand entering from left",
+      "evidence": [
+        "device console occupies center of both keyframes with hand/arm entering from the left edge"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device brand logo and touchscreen UI text visible",
+      "evidence": [
+        "stylized 'BTL' style logo on device body in both keyframes",
+        "touchscreen displays small menu text and numeric values, though readable_text_detected list is empty indicating text not confidently extracted"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended use not determinable",
+      "evidence": [
+        "no caption, title, or promotional text supplied alongside the video"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician configuring a medical device before use",
+      "evidence": [
+        "gloved hand actively touching touchscreen controls of a branded medical device in a clinical room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "medical device, touchscreen, gloved hand, clinic room, control panel",
+      "evidence": [
+        "visual content of device console, gloves, handpieces, and clinical room setting across both keyframes"
+      ]
+    }
+  ],
+  "narrative": "Two keyframes show a gloved hand reaching toward the touchscreen control panel of a medical/aesthetic device branded 'BTL', with handpieces mounted on either side. The device sits on a stand in a tiled clinical room with a treatment bed partially visible in the corner.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "6211b7c0-37f1-4623-98d4-858a1fc78313",
+  "image_count": 2
+}

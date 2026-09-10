@@ -1,0 +1,175 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0625.MP4, single scene",
+      "evidence": [
+        "asset_id 82d7ffd3-b2b7-40bd-ab2d-cef67163e944, filename IMG_0625.MP4, scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short vertical clip of a clinic interaction",
+      "evidence": [
+        "13.9 second, 1280x720, h264 video with audio stream per technical metadata",
+        "Two keyframes show a seated client and a staff member in a clinic-like room"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene spanning 0 to 13.9 seconds",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 13.933"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Seated client and a masked, gloved staff member",
+      "evidence": [
+        "One person seated wearing an eye mask and drape; another person standing in green scrubs, surgical mask, and gloves adjusting something near the client's head"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Client has long dark hair and black top; staff wears green scrubs and blue surgical mask",
+      "evidence": [
+        "Client: long dark hair, black eye mask, black shirt, blue/white drape",
+        "Staff: hair tied back, blue disposable mask labeled 'M-CURE', green scrub top, white gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Client's head, hair, and scalp area visible",
+      "evidence": [
+        "Back and side of client's head and long hair visible with staff member's hands near the hairline/back of head"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure indicated",
+      "evidence": [
+        "No readable_text_detected or spoken_content provided naming any procedure",
+        "Gloves and hand contact near hair/scalp alone do not establish a specific named clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member adjusts strap/mask near client's head",
+      "evidence": [
+        "First keyframe: gloved hand positioned at back of client's head near a strap",
+        "Second keyframe: gloved hand raised in air near door, client's head lowered"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member positioned behind/beside seated client, in direct physical contact",
+      "evidence": [
+        "Staff member's hand touches the strap/hair at the back of the client's head while client remains seated"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Client wears protective eye covering and disposable drape typical of a clinic setting",
+      "evidence": [
+        "Black eye mask covering client's eyes",
+        "Blue and white disposable cape/drape covering shoulders and chest",
+        "Staff wearing surgical mask and gloves"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinic-style room with frosted glass door",
+      "evidence": [
+        "Textured wallpaper, wood-paneled lower wall, frosted glass door with floral pattern, reclined chair edge visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical handheld-style framing, medium shot",
+      "evidence": [
+        "Portrait orientation frames (1280x720 noted in technical but displayed vertically), medium shot capturing both people from chest/head level"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Client positioned left/lower, staff member positioned right/upper in frame",
+      "evidence": [
+        "Both keyframes show client seated in lower-left portion of frame and staff member standing on the right side"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small logo text on staff member's mask",
+      "evidence": [
+        "Text visible on the surgical mask reading 'M-CURE' in first keyframe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context supplied",
+      "evidence": [
+        "No caption, branding overlay, or usage information provided beyond the raw video metadata"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Preparatory clinic interaction between staff and seated client",
+      "evidence": [
+        "Client draped and blindfolded while staff member adjusts equipment near her head, suggesting a preparation moment in a clinic setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a retrievable text/embedding layer for this evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A seated client wears a black eye mask and is draped with a blue and white disposable cape while a masked, gloved staff member in green scrubs adjusts a strap at the back of her head. In the second frame the staff member's gloved hand is raised near a frosted glass door as the client sits with head lowered, hair loose over the drape.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "82d7ffd3-b2b7-40bd-ab2d-cef67163e944",
+  "image_count": 2
+}

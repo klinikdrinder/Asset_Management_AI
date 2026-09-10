@@ -1,0 +1,4125 @@
+{
+  "benchmark_version": "kdi_query_parser_benchmark_final_v1",
+  "case_count": 240,
+  "split_counts": {
+    "DEV": 160,
+    "VALIDATION": 40,
+    "BLIND": 40
+  },
+  "language_distribution": {
+    "ENGLISH": 240
+  },
+  "query_schema": "kdi_query_schema_v1_1",
+  "evaluator": "kdi_query_parser_evaluator_v2",
+  "evaluator_fingerprint": "9415e82e03c763bc422bf15edc609055bbca78700e062df82e772120c293e014",
+  "gold_validator": "kdi_query_gold_validator_v1",
+  "gold_validator_fingerprint": "5a0b48bb06070ab7ec7f91e9fa839290ae02b720a339db1d476f9fd21a838861",
+  "category_distribution": {
+    "RESULT_COUNT": 30,
+    "AGE": 20,
+    "GRAFT": 20,
+    "SESSION": 12,
+    "YEAR": 16,
+    "TIMESTAMP": 16,
+    "DURATION": 11,
+    "CURRENCY": 5,
+    "MEDIA_EXTENSION": 10,
+    "NEGATION": 20,
+    "MARKERS": 6,
+    "SEMANTIC": 12,
+    "MODALITY": 6,
+    "UNKNOWN": 12,
+    "MULTI_NUMERIC": 20,
+    "CONTRADICTION": 10,
+    "SIMILARITY": 6,
+    "RANGE": 8
+  },
+  "cases": [
+    {
+      "case_id": "QP14F1-001",
+      "split": "VALIDATION",
+      "category": "RESULT_COUNT",
+      "query": "provide two clips for review, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            2
+          ]
+        },
+        "media_type": "VIDEO"
+      }
+    },
+    {
+      "case_id": "QP14F1-002",
+      "split": "BLIND",
+      "category": "RESULT_COUNT",
+      "query": "send three photographs for review, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            3
+          ]
+        },
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-003",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "select four videos for review, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            4
+          ]
+        },
+        "media_type": "VIDEO"
+      }
+    },
+    {
+      "case_id": "QP14F1-004",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "bring five images for review, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            5
+          ]
+        },
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-005",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "get six files for review, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            6
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-006",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "display seven pictures for review, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            7
+          ]
+        },
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-007",
+      "split": "VALIDATION",
+      "category": "RESULT_COUNT",
+      "query": "retrieve eight media for review, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            8
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-008",
+      "split": "BLIND",
+      "category": "RESULT_COUNT",
+      "query": "fetch nine photos for review, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            9
+          ]
+        },
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-009",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "list ten results for review, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-010",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "pull up eleven items for review, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            11
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-011",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "show twelve footage for review, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            12
+          ]
+        },
+        "media_type": "VIDEO"
+      }
+    },
+    {
+      "case_id": "QP14F1-012",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "return 13 matches for review, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            13
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-013",
+      "split": "VALIDATION",
+      "category": "RESULT_COUNT",
+      "query": "find 14 videos for review, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            14
+          ]
+        },
+        "media_type": "VIDEO"
+      }
+    },
+    {
+      "case_id": "QP14F1-014",
+      "split": "BLIND",
+      "category": "RESULT_COUNT",
+      "query": "give me 15 images for review, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            15
+          ]
+        },
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-015",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "bring up 16 clips for review, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            16
+          ]
+        },
+        "media_type": "VIDEO"
+      }
+    },
+    {
+      "case_id": "QP14F1-016",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 2 videos featuring a patient aged 41, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            2
+          ]
+        },
+        "non_result_numbers": [
+          41
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 41
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-017",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 3 videos featuring a patient aged 42, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            3
+          ]
+        },
+        "non_result_numbers": [
+          42
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 42
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-018",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 4 videos featuring a patient aged 43, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            4
+          ]
+        },
+        "non_result_numbers": [
+          43
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 43
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-019",
+      "split": "VALIDATION",
+      "category": "AGE",
+      "query": "Please show 5 videos featuring a patient aged 44, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            5
+          ]
+        },
+        "non_result_numbers": [
+          44
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 44
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-020",
+      "split": "BLIND",
+      "category": "AGE",
+      "query": "Please show 6 videos featuring a patient aged 45, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            6
+          ]
+        },
+        "non_result_numbers": [
+          45
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 45
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-021",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 7 videos featuring a patient aged 46, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            7
+          ]
+        },
+        "non_result_numbers": [
+          46
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 46
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-022",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 8 videos featuring a patient aged 47, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            8
+          ]
+        },
+        "non_result_numbers": [
+          47
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 47
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-023",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 9 videos featuring a patient aged 48, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            9
+          ]
+        },
+        "non_result_numbers": [
+          48
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 48
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-024",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 10 videos featuring a patient aged 49, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            10
+          ]
+        },
+        "non_result_numbers": [
+          49
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 49
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-025",
+      "split": "VALIDATION",
+      "category": "AGE",
+      "query": "Please show 11 videos featuring a patient aged 50, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            11
+          ]
+        },
+        "non_result_numbers": [
+          50
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 50
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-026",
+      "split": "BLIND",
+      "category": "GRAFT",
+      "query": "Select 2 clips concerning approximately 2250 grafts, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            2
+          ]
+        },
+        "non_result_numbers": [
+          2250
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2250
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-027",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 3 clips concerning approximately 2375 grafts, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            3
+          ]
+        },
+        "non_result_numbers": [
+          2375
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2375
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-028",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 4 clips concerning approximately 2500 grafts, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            4
+          ]
+        },
+        "non_result_numbers": [
+          2500
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2500
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-029",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 5 clips concerning approximately 2625 grafts, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            5
+          ]
+        },
+        "non_result_numbers": [
+          2625
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2625
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-030",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 6 clips concerning approximately 2750 grafts, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            6
+          ]
+        },
+        "non_result_numbers": [
+          2750
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2750
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-031",
+      "split": "VALIDATION",
+      "category": "GRAFT",
+      "query": "Select 7 clips concerning approximately 2875 grafts, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            7
+          ]
+        },
+        "non_result_numbers": [
+          2875
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2875
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-032",
+      "split": "BLIND",
+      "category": "GRAFT",
+      "query": "Select 8 clips concerning approximately 3000 grafts, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            8
+          ]
+        },
+        "non_result_numbers": [
+          3000
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 3000
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-033",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 9 clips concerning approximately 3125 grafts, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            9
+          ]
+        },
+        "non_result_numbers": [
+          3125
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 3125
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-034",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 10 clips concerning approximately 3250 grafts, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            10
+          ]
+        },
+        "non_result_numbers": [
+          3250
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 3250
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-035",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 11 clips concerning approximately 3375 grafts, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            11
+          ]
+        },
+        "non_result_numbers": [
+          3375
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 3375
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-036",
+      "split": "DEV",
+      "category": "SESSION",
+      "query": "Content after four treatment sessions, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          4
+        ],
+        "numeric": {
+          "treatment_session_count": 4
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-037",
+      "split": "VALIDATION",
+      "category": "SESSION",
+      "query": "Material from the sixth session, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "numeric": {
+          "session_ordinal": 6
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-038",
+      "split": "BLIND",
+      "category": "SESSION",
+      "query": "Provide 3 videos showing session 8, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            3
+          ]
+        },
+        "non_result_numbers": [
+          8
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "treatment_session_count": 8
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-039",
+      "split": "DEV",
+      "category": "SESSION",
+      "query": "Patient during the 3rd session, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "numeric": {
+          "session_ordinal": 3
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-040",
+      "split": "DEV",
+      "category": "SESSION",
+      "query": "Five treatment sessions for a patient, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          5
+        ],
+        "numeric": {
+          "treatment_session_count": 5
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-041",
+      "split": "DEV",
+      "category": "SESSION",
+      "query": "Retrieve 4 clips after 7 sessions, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            4
+          ]
+        },
+        "non_result_numbers": [
+          7
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "treatment_session_count": 7
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-042",
+      "split": "DEV",
+      "category": "YEAR",
+      "query": "Material taken in 2017, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2017
+        ],
+        "media_type": "ANY",
+        "temporal": {
+          "year": {
+            "value": 2017
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-043",
+      "split": "VALIDATION",
+      "category": "YEAR",
+      "query": "Footage recorded in 2018, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2018
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2018
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-044",
+      "split": "BLIND",
+      "category": "YEAR",
+      "query": "Photos captured in 2019, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2019
+        ],
+        "media_type": "IMAGE",
+        "temporal": {
+          "year": {
+            "value": 2019
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-045",
+      "split": "DEV",
+      "category": "YEAR",
+      "query": "Videos from 2020, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2020
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2020
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-046",
+      "split": "DEV",
+      "category": "YEAR",
+      "query": "Material taken in 2021, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2021
+        ],
+        "media_type": "ANY",
+        "temporal": {
+          "year": {
+            "value": 2021
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-047",
+      "split": "DEV",
+      "category": "YEAR",
+      "query": "Footage recorded in 2022, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2022
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2022
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-048",
+      "split": "DEV",
+      "category": "YEAR",
+      "query": "Photos captured in 2023, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2023
+        ],
+        "media_type": "IMAGE",
+        "temporal": {
+          "year": {
+            "value": 2023
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-049",
+      "split": "VALIDATION",
+      "category": "YEAR",
+      "query": "Videos from 2024, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2024
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2024
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-050",
+      "split": "BLIND",
+      "category": "TIMESTAMP",
+      "query": "Footage near timestamp 00:19, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          19
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 19,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-051",
+      "split": "DEV",
+      "category": "TIMESTAMP",
+      "query": "Video at the 00:27 position, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          27
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 27,
+            "approximate": false
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-052",
+      "split": "DEV",
+      "category": "TIMESTAMP",
+      "query": "Clip around second 33, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          33
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 33,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-053",
+      "split": "DEV",
+      "category": "TIMESTAMP",
+      "query": "Media at timestamp 00:44, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          44
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 44,
+            "approximate": false
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-054",
+      "split": "DEV",
+      "category": "TIMESTAMP",
+      "query": "Footage near the 51 second mark, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          51
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 51,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-055",
+      "split": "VALIDATION",
+      "category": "TIMESTAMP",
+      "query": "Video around 01:07, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          67
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 67,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-056",
+      "split": "BLIND",
+      "category": "TIMESTAMP",
+      "query": "Clip at 00:58, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          58
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 58,
+            "approximate": false
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-057",
+      "split": "DEV",
+      "category": "TIMESTAMP",
+      "query": "Media around the 37-second mark, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          37
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 37,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-058",
+      "split": "DEV",
+      "category": "DURATION",
+      "query": "Clips less than 32 seconds, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          32
+        ],
+        "temporal": {
+          "duration": {
+            "max_seconds": 32
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-059",
+      "split": "DEV",
+      "category": "DURATION",
+      "query": "Videos no longer than 43 seconds, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          43
+        ],
+        "temporal": {
+          "duration": {
+            "max_seconds": 43
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-060",
+      "split": "DEV",
+      "category": "DURATION",
+      "query": "Footage maximum 54 seconds, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          54
+        ],
+        "temporal": {
+          "duration": {
+            "max_seconds": 54
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-061",
+      "split": "VALIDATION",
+      "category": "DURATION",
+      "query": "Media at most 65 seconds, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          65
+        ],
+        "temporal": {
+          "duration": {
+            "max_seconds": 65
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-062",
+      "split": "BLIND",
+      "category": "DURATION",
+      "query": "Clips more than 23 seconds, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          23
+        ],
+        "temporal": {
+          "duration": {
+            "min_seconds": 23
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-063",
+      "split": "DEV",
+      "category": "DURATION",
+      "query": "Videos minimum 34 seconds, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          34
+        ],
+        "temporal": {
+          "duration": {
+            "min_seconds": 34
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-064",
+      "split": "DEV",
+      "category": "DURATION",
+      "query": "Footage at least 45 seconds, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          45
+        ],
+        "temporal": {
+          "duration": {
+            "min_seconds": 45
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-065",
+      "split": "DEV",
+      "category": "DURATION",
+      "query": "Media longer than 56 seconds, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          56
+        ],
+        "temporal": {
+          "duration": {
+            "min_seconds": 56
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-066",
+      "split": "DEV",
+      "category": "CURRENCY",
+      "query": "Get 2 videos that mention RM 6,200, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            2
+          ]
+        },
+        "non_result_numbers": [
+          6200
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "currency_amount": 6200
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-067",
+      "split": "VALIDATION",
+      "category": "CURRENCY",
+      "query": "Get 3 videos that mention RM 6,875, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            3
+          ]
+        },
+        "non_result_numbers": [
+          6875
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "currency_amount": 6875
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-068",
+      "split": "BLIND",
+      "category": "CURRENCY",
+      "query": "Get 4 videos that mention RM 7,550, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            4
+          ]
+        },
+        "non_result_numbers": [
+          7550
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "currency_amount": 7550
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-069",
+      "split": "DEV",
+      "category": "CURRENCY",
+      "query": "Get 5 videos that mention RM 8,225, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            5
+          ]
+        },
+        "non_result_numbers": [
+          8225
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "currency_amount": 8225
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-070",
+      "split": "DEV",
+      "category": "CURRENCY",
+      "query": "Get 6 videos that mention RM 8,900, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            6
+          ]
+        },
+        "non_result_numbers": [
+          8900
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "currency_amount": 8900
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-071",
+      "split": "DEV",
+      "category": "MEDIA_EXTENSION",
+      "query": "Only WEBP photographs, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "IMAGE",
+        "extensions": [
+          "WEBP"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-072",
+      "split": "DEV",
+      "category": "MEDIA_EXTENSION",
+      "query": "JPEG files for the image review, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "IMAGE",
+        "extensions": [
+          "JPEG"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-073",
+      "split": "VALIDATION",
+      "category": "MEDIA_EXTENSION",
+      "query": "Review clips stored in MOV format only, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "extensions": [
+          "MOV"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-074",
+      "split": "BLIND",
+      "category": "MEDIA_EXTENSION",
+      "query": "MP4 files for video review, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "extensions": [
+          "MP4"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-075",
+      "split": "DEV",
+      "category": "MEDIA_EXTENSION",
+      "query": "PNG pictures only, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "IMAGE",
+        "extensions": [
+          "PNG"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-076",
+      "split": "DEV",
+      "category": "MEDIA_EXTENSION",
+      "query": "JPG photographic material, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "IMAGE",
+        "extensions": [
+          "JPG"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-077",
+      "split": "DEV",
+      "category": "MEDIA_EXTENSION",
+      "query": "WEBP video content, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "extensions": [
+          "WEBP"
+        ],
+        "conflict": "EXTENSION_MEDIA_CONFLICT"
+      }
+    },
+    {
+      "case_id": "QP14F1-078",
+      "split": "DEV",
+      "category": "MEDIA_EXTENSION",
+      "query": "MP4 photographs, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "IMAGE",
+        "extensions": [
+          "MP4"
+        ],
+        "conflict": "EXTENSION_MEDIA_CONFLICT"
+      }
+    },
+    {
+      "case_id": "QP14F1-079",
+      "split": "VALIDATION",
+      "category": "MEDIA_EXTENSION",
+      "query": "Ordinary footage, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO"
+      }
+    },
+    {
+      "case_id": "QP14F1-080",
+      "split": "BLIND",
+      "category": "MEDIA_EXTENSION",
+      "query": "A collection of pictures, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-081",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "Keep every injection clip out, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "INJECTING"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-082",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "Filter all syringe footage out, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "INJECTING"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-083",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "Leave scenes containing injections out, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "INJECTING"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-084",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "Leave every clip showing a syringe out, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "INJECTING"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-085",
+      "split": "VALIDATION",
+      "category": "NEGATION",
+      "query": "Filter cleansing scenes out, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "CLEANSING"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-086",
+      "split": "BLIND",
+      "category": "NEGATION",
+      "query": "Keep patient images out, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "PATIENT"
+        ],
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-087",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "No clinician in view, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "CLINICIAN"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-088",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "Without frontal scalp footage, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "FRONTAL_SCALP"
+        ],
+        "media_type": "VIDEO"
+      }
+    },
+    {
+      "case_id": "QP14F1-089",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "Exclude graft implantation, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "IMPLANTING_GRAFTS"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-090",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "Avoid every neck view, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "NECK"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-091",
+      "split": "VALIDATION",
+      "category": "NEGATION",
+      "query": "Omit all hairline drawing, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "DRAWING_HAIRLINE"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-092",
+      "split": "BLIND",
+      "category": "NEGATION",
+      "query": "Remove injection needle content, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "INJECTING"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-093",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "Do not include a patient, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-094",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "Anything except cleansing, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "CLEANSING"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-095",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "Not showing a doctor, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "CLINICIAN"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-096",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "Not containing a syringe, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "INJECTING"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-097",
+      "split": "VALIDATION",
+      "category": "NEGATION",
+      "query": "Leave out cheek images, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "CHEEK"
+        ],
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-098",
+      "split": "BLIND",
+      "category": "NEGATION",
+      "query": "Filter out hairline planning, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "DRAWING_HAIRLINE"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-099",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "Avoid injections but retain staff, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "INJECTING"
+        ],
+        "positive": [
+          "STAFF"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-100",
+      "split": "DEV",
+      "category": "NEGATION",
+      "query": "No patient, however show the clinician, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "PATIENT"
+        ],
+        "positive": [
+          "CLINICIAN"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-101",
+      "split": "DEV",
+      "category": "MARKERS",
+      "query": "Only video showing a patient, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-102",
+      "split": "DEV",
+      "category": "MARKERS",
+      "query": "A doctor must be visible, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "CLINICIAN"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-103",
+      "split": "VALIDATION",
+      "category": "MARKERS",
+      "query": "Exactly seven photographs, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            7
+          ]
+        },
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-104",
+      "split": "BLIND",
+      "category": "MARKERS",
+      "query": "Preferably a clinic room, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "CLINIC"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-105",
+      "split": "DEV",
+      "category": "MARKERS",
+      "query": "Ideally show the recipient area, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "RECIPIENT_REGION"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-106",
+      "split": "DEV",
+      "category": "MARKERS",
+      "query": "If possible include consultation, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "CONSULTATION"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-107",
+      "split": "DEV",
+      "category": "SEMANTIC",
+      "query": "Clinician planning a frontal hair line, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "CLINICIAN",
+          "DRAWING_HAIRLINE",
+          "FRONTAL_HAIRLINE"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-108",
+      "split": "DEV",
+      "category": "SEMANTIC",
+      "query": "Physician marking the front hairline, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "CLINICIAN",
+          "DRAWING_HAIRLINE",
+          "FRONTAL_HAIRLINE"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-109",
+      "split": "VALIDATION",
+      "category": "SEMANTIC",
+      "query": "Patient with implantation of grafts, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "PATIENT",
+          "IMPLANTING_GRAFTS"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-110",
+      "split": "BLIND",
+      "category": "SEMANTIC",
+      "query": "Doctor wiping the cheek, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "CLINICIAN",
+          "CLEANSING",
+          "CHEEK"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-111",
+      "split": "DEV",
+      "category": "SEMANTIC",
+      "query": "Pre-procedure context for hair transplantation, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "HAIR_TRANSPLANT",
+          "PRE_PROCEDURE"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-112",
+      "split": "DEV",
+      "category": "SEMANTIC",
+      "query": "FUE during procedure, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "HAIR_TRANSPLANT_FUE",
+          "DURING_PROCEDURE"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-113",
+      "split": "DEV",
+      "category": "SEMANTIC",
+      "query": "Patient post procedure, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "PATIENT",
+          "POST_PROCEDURE"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-114",
+      "split": "DEV",
+      "category": "SEMANTIC",
+      "query": "Staff in a procedure room, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "STAFF",
+          "TREATMENT_ROOM"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-115",
+      "split": "VALIDATION",
+      "category": "SEMANTIC",
+      "query": "Subject facing camera, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "SUBJECT",
+          "LOOKING_AT_CAMERA"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-116",
+      "split": "BLIND",
+      "category": "SEMANTIC",
+      "query": "A consultation taking place within a clinic, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "CONSULTATION",
+          "CLINIC"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-117",
+      "split": "DEV",
+      "category": "SEMANTIC",
+      "query": "Follow up of recipient region, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "FOLLOW_UP",
+          "RECIPIENT_REGION"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-118",
+      "split": "DEV",
+      "category": "SEMANTIC",
+      "query": "Presenter with frontal scalp view, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "PRESENTER",
+          "FRONTAL_SCALP"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-119",
+      "split": "DEV",
+      "category": "MODALITY",
+      "query": "Words visible saying SIGMA, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "modalities": [
+          "OCR"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-120",
+      "split": "DEV",
+      "category": "MODALITY",
+      "query": "The screen says THETA, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "modalities": [
+          "OCR"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-121",
+      "split": "VALIDATION",
+      "category": "MODALITY",
+      "query": "LAMBDA appears on screen, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "modalities": [
+          "OCR"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-122",
+      "split": "BLIND",
+      "category": "MODALITY",
+      "query": "Doctor speaks about recovery, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "modalities": [
+          "TRANSCRIPT"
+        ],
+        "positive": [
+          "CLINICIAN"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-123",
+      "split": "DEV",
+      "category": "MODALITY",
+      "query": "The patient verbally says no shaving, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "modalities": [
+          "TRANSCRIPT"
+        ],
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-124",
+      "split": "DEV",
+      "category": "MODALITY",
+      "query": "Audio says consultation, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "modalities": [
+          "TRANSCRIPT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-125",
+      "split": "DEV",
+      "category": "UNKNOWN",
+      "query": "donor spectral field, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "unresolved": true
+      }
+    },
+    {
+      "case_id": "QP14F1-126",
+      "split": "DEV",
+      "category": "UNKNOWN",
+      "query": "delta cranial resonance, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "unresolved": true
+      }
+    },
+    {
+      "case_id": "QP14F1-127",
+      "split": "VALIDATION",
+      "category": "UNKNOWN",
+      "query": "scalp procedure with indigo waveform, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "SCALP"
+        ],
+        "unresolved": true
+      }
+    },
+    {
+      "case_id": "QP14F1-128",
+      "split": "BLIND",
+      "category": "UNKNOWN",
+      "query": "face view with copper harmonic, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "FACE"
+        ],
+        "unresolved": true
+      }
+    },
+    {
+      "case_id": "QP14F1-129",
+      "split": "DEV",
+      "category": "UNKNOWN",
+      "query": "frntal sclap inspection, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "FRONTAL_SCALP"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-130",
+      "split": "DEV",
+      "category": "UNKNOWN",
+      "query": "graft implntation sequence, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "IMPLANTING_GRAFTS"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-131",
+      "split": "DEV",
+      "category": "UNKNOWN",
+      "query": "harline desgin session, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "DRAWING_HAIRLINE",
+          "FRONTAL_HAIRLINE"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-132",
+      "split": "DEV",
+      "category": "UNKNOWN",
+      "query": "violet follicle prism, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "unresolved": true
+      }
+    },
+    {
+      "case_id": "QP14F1-133",
+      "split": "VALIDATION",
+      "category": "UNKNOWN",
+      "query": "unknown orbital lattice, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "unresolved": true
+      }
+    },
+    {
+      "case_id": "QP14F1-134",
+      "split": "BLIND",
+      "category": "UNKNOWN",
+      "query": "patient with quartz resonance, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "PATIENT"
+        ],
+        "unresolved": true
+      }
+    },
+    {
+      "case_id": "QP14F1-135",
+      "split": "DEV",
+      "category": "UNKNOWN",
+      "query": "doctor with amber waveform, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "CLINICIAN"
+        ],
+        "unresolved": true
+      }
+    },
+    {
+      "case_id": "QP14F1-136",
+      "split": "DEV",
+      "category": "UNKNOWN",
+      "query": "neck view with zeta spectrum, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "positive": [
+          "NECK"
+        ],
+        "unresolved": true
+      }
+    },
+    {
+      "case_id": "QP14F1-137",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Show 2 videos of a 26-year-old with 1900 grafts, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            2
+          ]
+        },
+        "non_result_numbers": [
+          26,
+          1900
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 26,
+          "graft_count_exact": 1900
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-138",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Return 3 clips from 2019 under 31 seconds, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            3
+          ]
+        },
+        "non_result_numbers": [
+          2019,
+          31
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2019
+          },
+          "duration": {
+            "max_seconds": 31
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-139",
+      "split": "VALIDATION",
+      "category": "MULTI_NUMERIC",
+      "query": "Fetch 4 videos near 00:32 after 5 sessions, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            4
+          ]
+        },
+        "non_result_numbers": [
+          32,
+          5
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "treatment_session_count": 5
+        },
+        "temporal": {
+          "timestamp": {
+            "seconds": 32,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-140",
+      "split": "BLIND",
+      "category": "MULTI_NUMERIC",
+      "query": "Show 5 videos of a 29-year-old with 2140 grafts, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            5
+          ]
+        },
+        "non_result_numbers": [
+          29,
+          2140
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 29,
+          "graft_count_exact": 2140
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-141",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Return 6 clips from 2022 under 34 seconds, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            6
+          ]
+        },
+        "non_result_numbers": [
+          2022,
+          34
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2022
+          },
+          "duration": {
+            "max_seconds": 34
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-142",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Fetch 7 videos near 00:35 after 3 sessions, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            7
+          ]
+        },
+        "non_result_numbers": [
+          35,
+          3
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "treatment_session_count": 3
+        },
+        "temporal": {
+          "timestamp": {
+            "seconds": 35,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-143",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Show 8 videos of a 32-year-old with 2380 grafts, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            8
+          ]
+        },
+        "non_result_numbers": [
+          32,
+          2380
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 32,
+          "graft_count_exact": 2380
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-144",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Return 9 clips from 2025 under 37 seconds, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            9
+          ]
+        },
+        "non_result_numbers": [
+          2025,
+          37
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2025
+          },
+          "duration": {
+            "max_seconds": 37
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-145",
+      "split": "VALIDATION",
+      "category": "MULTI_NUMERIC",
+      "query": "Fetch 2 videos near 00:38 after 6 sessions, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            2
+          ]
+        },
+        "non_result_numbers": [
+          38,
+          6
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "treatment_session_count": 6
+        },
+        "temporal": {
+          "timestamp": {
+            "seconds": 38,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-146",
+      "split": "BLIND",
+      "category": "MULTI_NUMERIC",
+      "query": "Show 3 videos of a 35-year-old with 2620 grafts, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            3
+          ]
+        },
+        "non_result_numbers": [
+          35,
+          2620
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 35,
+          "graft_count_exact": 2620
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-147",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Return 4 clips from 2020 under 40 seconds, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            4
+          ]
+        },
+        "non_result_numbers": [
+          2020,
+          40
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2020
+          },
+          "duration": {
+            "max_seconds": 40
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-148",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Fetch 5 videos near 00:41 after 4 sessions, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            5
+          ]
+        },
+        "non_result_numbers": [
+          41,
+          4
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "treatment_session_count": 4
+        },
+        "temporal": {
+          "timestamp": {
+            "seconds": 41,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-149",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Show 6 videos of a 38-year-old with 2860 grafts, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            6
+          ]
+        },
+        "non_result_numbers": [
+          38,
+          2860
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 38,
+          "graft_count_exact": 2860
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-150",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Return 7 clips from 2023 under 43 seconds, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            7
+          ]
+        },
+        "non_result_numbers": [
+          2023,
+          43
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2023
+          },
+          "duration": {
+            "max_seconds": 43
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-151",
+      "split": "VALIDATION",
+      "category": "MULTI_NUMERIC",
+      "query": "Fetch 8 videos near 00:44 after 7 sessions, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            8
+          ]
+        },
+        "non_result_numbers": [
+          44,
+          7
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "treatment_session_count": 7
+        },
+        "temporal": {
+          "timestamp": {
+            "seconds": 44,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-152",
+      "split": "BLIND",
+      "category": "MULTI_NUMERIC",
+      "query": "Show 9 videos of a 41-year-old with 3100 grafts, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            9
+          ]
+        },
+        "non_result_numbers": [
+          41,
+          3100
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 41,
+          "graft_count_exact": 3100
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-153",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Return 2 clips from 2018 under 46 seconds, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            2
+          ]
+        },
+        "non_result_numbers": [
+          2018,
+          46
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2018
+          },
+          "duration": {
+            "max_seconds": 46
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-154",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Fetch 3 videos near 00:47 after 5 sessions, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            3
+          ]
+        },
+        "non_result_numbers": [
+          47,
+          5
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "treatment_session_count": 5
+        },
+        "temporal": {
+          "timestamp": {
+            "seconds": 47,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-155",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Show 4 videos of a 44-year-old with 3340 grafts, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            4
+          ]
+        },
+        "non_result_numbers": [
+          44,
+          3340
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 44,
+          "graft_count_exact": 3340
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-156",
+      "split": "DEV",
+      "category": "MULTI_NUMERIC",
+      "query": "Return 5 clips from 2021 under 49 seconds, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            5
+          ]
+        },
+        "non_result_numbers": [
+          2021,
+          49
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2021
+          },
+          "duration": {
+            "max_seconds": 49
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-157",
+      "split": "VALIDATION",
+      "category": "CONTRADICTION",
+      "query": "No injection although injection is required, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "INJECTING"
+        ],
+        "positive": [
+          "INJECTING"
+        ],
+        "conflict": "CONCEPT_POLARITY_CONFLICT"
+      }
+    },
+    {
+      "case_id": "QP14F1-158",
+      "split": "BLIND",
+      "category": "CONTRADICTION",
+      "query": "Exclude cleansing but cleansing must appear, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "CLEANSING"
+        ],
+        "positive": [
+          "CLEANSING"
+        ],
+        "conflict": "CONCEPT_POLARITY_CONFLICT"
+      }
+    },
+    {
+      "case_id": "QP14F1-159",
+      "split": "DEV",
+      "category": "CONTRADICTION",
+      "query": "Without a patient yet a patient has to be visible, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "PATIENT"
+        ],
+        "positive": [
+          "PATIENT"
+        ],
+        "conflict": "CONCEPT_POLARITY_CONFLICT"
+      }
+    },
+    {
+      "case_id": "QP14F1-160",
+      "split": "DEV",
+      "category": "CONTRADICTION",
+      "query": "Avoid the doctor though the doctor is required, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "CLINICIAN"
+        ],
+        "positive": [
+          "CLINICIAN"
+        ],
+        "conflict": "CONCEPT_POLARITY_CONFLICT"
+      }
+    },
+    {
+      "case_id": "QP14F1-161",
+      "split": "DEV",
+      "category": "CONTRADICTION",
+      "query": "Only photos however videos are required, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "conflict": "MEDIA_TYPE_CONFLICT"
+      }
+    },
+    {
+      "case_id": "QP14F1-162",
+      "split": "DEV",
+      "category": "CONTRADICTION",
+      "query": "Provide 3 items then retrieve 8 clips, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            3,
+            8
+          ],
+          "conflict": true
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-163",
+      "split": "VALIDATION",
+      "category": "CONTRADICTION",
+      "query": "Send five images then display 11 files, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            5,
+            11
+          ],
+          "conflict": true
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-164",
+      "split": "BLIND",
+      "category": "CONTRADICTION",
+      "query": "JPEG video material, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "extensions": [
+          "JPEG"
+        ],
+        "conflict": "EXTENSION_MEDIA_CONFLICT"
+      }
+    },
+    {
+      "case_id": "QP14F1-165",
+      "split": "DEV",
+      "category": "CONTRADICTION",
+      "query": "Picture files explicitly requested in MOV format, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "IMAGE",
+        "extensions": [
+          "MOV"
+        ],
+        "conflict": "EXTENSION_MEDIA_CONFLICT"
+      }
+    },
+    {
+      "case_id": "QP14F1-166",
+      "split": "DEV",
+      "category": "CONTRADICTION",
+      "query": "No neck but neck must be shown, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "negative": [
+          "NECK"
+        ],
+        "positive": [
+          "NECK"
+        ],
+        "conflict": "CONCEPT_POLARITY_CONFLICT"
+      }
+    },
+    {
+      "case_id": "QP14F1-167",
+      "split": "DEV",
+      "category": "SIMILARITY",
+      "query": "Locate media similar to the reference, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {}
+    },
+    {
+      "case_id": "QP14F1-168",
+      "split": "DEV",
+      "category": "SIMILARITY",
+      "query": "Bring up more footage like this, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {}
+    },
+    {
+      "case_id": "QP14F1-169",
+      "split": "VALIDATION",
+      "category": "SIMILARITY",
+      "query": "Find video content resembling this, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {}
+    },
+    {
+      "case_id": "QP14F1-170",
+      "split": "BLIND",
+      "category": "SIMILARITY",
+      "query": "Show related media of the same kind, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {}
+    },
+    {
+      "case_id": "QP14F1-171",
+      "split": "DEV",
+      "category": "SIMILARITY",
+      "query": "Retrieve similar visual material, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {}
+    },
+    {
+      "case_id": "QP14F1-172",
+      "split": "DEV",
+      "category": "SIMILARITY",
+      "query": "I need more like this, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {}
+    },
+    {
+      "case_id": "QP14F1-173",
+      "split": "DEV",
+      "category": "RANGE",
+      "query": "A patient aged 28 to 38, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "numeric": {
+          "age_min": 28,
+          "age_max": 38
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-174",
+      "split": "DEV",
+      "category": "RANGE",
+      "query": "Between 2100 and 2900 grafts, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "numeric": {
+          "graft_count_min": 2100,
+          "graft_count_max": 2900
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-175",
+      "split": "VALIDATION",
+      "category": "RANGE",
+      "query": "Duration between 18 and 42 seconds, for archive review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "temporal": {
+          "duration": {
+            "min_seconds": 18,
+            "max_seconds": 42
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-176",
+      "split": "BLIND",
+      "category": "RANGE",
+      "query": "At least 2400 grafts, for the media librarian; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "numeric": {
+          "graft_count_min": 2400
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-177",
+      "split": "DEV",
+      "category": "RANGE",
+      "query": "A graft quantity no greater than 3400, for this catalogue request; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "numeric": {
+          "graft_count_max": 3400
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-178",
+      "split": "DEV",
+      "category": "RANGE",
+      "query": "Under 49 years old, for the current library task; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "numeric": {
+          "age_max": 49
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-179",
+      "split": "DEV",
+      "category": "RANGE",
+      "query": "Around 2700 grafts, for the archive team; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "numeric": {
+          "graft_count_exact": 2700
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-180",
+      "split": "DEV",
+      "category": "RANGE",
+      "query": "Between 25 and 45 years old, for collection review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "numeric": {
+          "age_min": 25,
+          "age_max": 45
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-181",
+      "split": "VALIDATION",
+      "category": "RESULT_COUNT",
+      "query": "provide two clips for review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            2
+          ]
+        },
+        "media_type": "VIDEO"
+      }
+    },
+    {
+      "case_id": "QP14F1-182",
+      "split": "BLIND",
+      "category": "RESULT_COUNT",
+      "query": "send three photographs for review; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            3
+          ]
+        },
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-183",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "select four videos for review; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            4
+          ]
+        },
+        "media_type": "VIDEO"
+      }
+    },
+    {
+      "case_id": "QP14F1-184",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "bring five images for review; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            5
+          ]
+        },
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-185",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "get six files for review; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            6
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-186",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "display seven pictures for review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            7
+          ]
+        },
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-187",
+      "split": "VALIDATION",
+      "category": "RESULT_COUNT",
+      "query": "retrieve eight media for review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            8
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-188",
+      "split": "BLIND",
+      "category": "RESULT_COUNT",
+      "query": "fetch nine photos for review; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            9
+          ]
+        },
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-189",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "list ten results for review; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-190",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "pull up eleven items for review; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            11
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-191",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "show twelve footage for review; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            12
+          ]
+        },
+        "media_type": "VIDEO"
+      }
+    },
+    {
+      "case_id": "QP14F1-192",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "return 13 matches for review; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            13
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-193",
+      "split": "VALIDATION",
+      "category": "RESULT_COUNT",
+      "query": "find 14 videos for review; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            14
+          ]
+        },
+        "media_type": "VIDEO"
+      }
+    },
+    {
+      "case_id": "QP14F1-194",
+      "split": "BLIND",
+      "category": "RESULT_COUNT",
+      "query": "give me 15 images for review; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            15
+          ]
+        },
+        "media_type": "IMAGE"
+      }
+    },
+    {
+      "case_id": "QP14F1-195",
+      "split": "DEV",
+      "category": "RESULT_COUNT",
+      "query": "bring up 16 clips for review; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            16
+          ]
+        },
+        "media_type": "VIDEO"
+      }
+    },
+    {
+      "case_id": "QP14F1-196",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 2 videos featuring a patient aged 41; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            2
+          ]
+        },
+        "non_result_numbers": [
+          41
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 41
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-197",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 3 videos featuring a patient aged 42; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            3
+          ]
+        },
+        "non_result_numbers": [
+          42
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 42
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-198",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 4 videos featuring a patient aged 43; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            4
+          ]
+        },
+        "non_result_numbers": [
+          43
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 43
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-199",
+      "split": "VALIDATION",
+      "category": "AGE",
+      "query": "Please show 5 videos featuring a patient aged 44; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            5
+          ]
+        },
+        "non_result_numbers": [
+          44
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 44
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-200",
+      "split": "BLIND",
+      "category": "AGE",
+      "query": "Please show 6 videos featuring a patient aged 45; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            6
+          ]
+        },
+        "non_result_numbers": [
+          45
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 45
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-201",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 7 videos featuring a patient aged 46; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            7
+          ]
+        },
+        "non_result_numbers": [
+          46
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 46
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-202",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 8 videos featuring a patient aged 47; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            8
+          ]
+        },
+        "non_result_numbers": [
+          47
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 47
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-203",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 9 videos featuring a patient aged 48; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            9
+          ]
+        },
+        "non_result_numbers": [
+          48
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 48
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-204",
+      "split": "DEV",
+      "category": "AGE",
+      "query": "Please show 10 videos featuring a patient aged 49; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            10
+          ]
+        },
+        "non_result_numbers": [
+          49
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 49
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-205",
+      "split": "VALIDATION",
+      "category": "AGE",
+      "query": "Please show 11 videos featuring a patient aged 50; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            11
+          ]
+        },
+        "non_result_numbers": [
+          50
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "age_exact": 50
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-206",
+      "split": "BLIND",
+      "category": "GRAFT",
+      "query": "Select 2 clips concerning approximately 2250 grafts; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            2
+          ]
+        },
+        "non_result_numbers": [
+          2250
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2250
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-207",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 3 clips concerning approximately 2375 grafts; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            3
+          ]
+        },
+        "non_result_numbers": [
+          2375
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2375
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-208",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 4 clips concerning approximately 2500 grafts; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            4
+          ]
+        },
+        "non_result_numbers": [
+          2500
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2500
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-209",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 5 clips concerning approximately 2625 grafts; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            5
+          ]
+        },
+        "non_result_numbers": [
+          2625
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2625
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-210",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 6 clips concerning approximately 2750 grafts; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            6
+          ]
+        },
+        "non_result_numbers": [
+          2750
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2750
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-211",
+      "split": "VALIDATION",
+      "category": "GRAFT",
+      "query": "Select 7 clips concerning approximately 2875 grafts; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            7
+          ]
+        },
+        "non_result_numbers": [
+          2875
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 2875
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-212",
+      "split": "BLIND",
+      "category": "GRAFT",
+      "query": "Select 8 clips concerning approximately 3000 grafts; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            8
+          ]
+        },
+        "non_result_numbers": [
+          3000
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 3000
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-213",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 9 clips concerning approximately 3125 grafts; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            9
+          ]
+        },
+        "non_result_numbers": [
+          3125
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 3125
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-214",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 10 clips concerning approximately 3250 grafts; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            10
+          ]
+        },
+        "non_result_numbers": [
+          3250
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 3250
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-215",
+      "split": "DEV",
+      "category": "GRAFT",
+      "query": "Select 11 clips concerning approximately 3375 grafts; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            11
+          ]
+        },
+        "non_result_numbers": [
+          3375
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "graft_count_exact": 3375
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-216",
+      "split": "DEV",
+      "category": "SESSION",
+      "query": "Content after four treatment sessions; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          4
+        ],
+        "numeric": {
+          "treatment_session_count": 4
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-217",
+      "split": "VALIDATION",
+      "category": "SESSION",
+      "query": "Material from the sixth session; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "numeric": {
+          "session_ordinal": 6
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-218",
+      "split": "BLIND",
+      "category": "SESSION",
+      "query": "Provide 3 videos showing session 8; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            3
+          ]
+        },
+        "non_result_numbers": [
+          8
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "treatment_session_count": 8
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-219",
+      "split": "DEV",
+      "category": "SESSION",
+      "query": "Patient during the 3rd session; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "numeric": {
+          "session_ordinal": 3
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-220",
+      "split": "DEV",
+      "category": "SESSION",
+      "query": "Five treatment sessions for a patient; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          5
+        ],
+        "numeric": {
+          "treatment_session_count": 5
+        },
+        "positive": [
+          "PATIENT"
+        ]
+      }
+    },
+    {
+      "case_id": "QP14F1-221",
+      "split": "DEV",
+      "category": "SESSION",
+      "query": "Retrieve 4 clips after 7 sessions; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "result_count": {
+          "values": [
+            4
+          ]
+        },
+        "non_result_numbers": [
+          7
+        ],
+        "media_type": "VIDEO",
+        "numeric": {
+          "treatment_session_count": 7
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-222",
+      "split": "DEV",
+      "category": "YEAR",
+      "query": "Material taken in 2017; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2017
+        ],
+        "media_type": "ANY",
+        "temporal": {
+          "year": {
+            "value": 2017
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-223",
+      "split": "VALIDATION",
+      "category": "YEAR",
+      "query": "Footage recorded in 2018; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2018
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2018
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-224",
+      "split": "BLIND",
+      "category": "YEAR",
+      "query": "Photos captured in 2019; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2019
+        ],
+        "media_type": "IMAGE",
+        "temporal": {
+          "year": {
+            "value": 2019
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-225",
+      "split": "DEV",
+      "category": "YEAR",
+      "query": "Videos from 2020; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2020
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2020
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-226",
+      "split": "DEV",
+      "category": "YEAR",
+      "query": "Material taken in 2021; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2021
+        ],
+        "media_type": "ANY",
+        "temporal": {
+          "year": {
+            "value": 2021
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-227",
+      "split": "DEV",
+      "category": "YEAR",
+      "query": "Footage recorded in 2022; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2022
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2022
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-228",
+      "split": "DEV",
+      "category": "YEAR",
+      "query": "Photos captured in 2023; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2023
+        ],
+        "media_type": "IMAGE",
+        "temporal": {
+          "year": {
+            "value": 2023
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-229",
+      "split": "VALIDATION",
+      "category": "YEAR",
+      "query": "Videos from 2024; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          2024
+        ],
+        "media_type": "VIDEO",
+        "temporal": {
+          "year": {
+            "value": 2024
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-230",
+      "split": "BLIND",
+      "category": "TIMESTAMP",
+      "query": "Footage near timestamp 00:19; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          19
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 19,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-231",
+      "split": "DEV",
+      "category": "TIMESTAMP",
+      "query": "Video at the 00:27 position; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          27
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 27,
+            "approximate": false
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-232",
+      "split": "DEV",
+      "category": "TIMESTAMP",
+      "query": "Clip around second 33; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          33
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 33,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-233",
+      "split": "DEV",
+      "category": "TIMESTAMP",
+      "query": "Media at timestamp 00:44; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          44
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 44,
+            "approximate": false
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-234",
+      "split": "DEV",
+      "category": "TIMESTAMP",
+      "query": "Footage near the 51 second mark; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          51
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 51,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-235",
+      "split": "VALIDATION",
+      "category": "TIMESTAMP",
+      "query": "Video around 01:07; for the surgical media archive",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          67
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 67,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-236",
+      "split": "BLIND",
+      "category": "TIMESTAMP",
+      "query": "Clip at 00:58; for collection assessment",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          58
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 58,
+            "approximate": false
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-237",
+      "split": "DEV",
+      "category": "TIMESTAMP",
+      "query": "Media around the 37-second mark; for this archive lookup",
+      "language": "ENGLISH",
+      "expected": {
+        "non_result_numbers": [
+          37
+        ],
+        "temporal": {
+          "timestamp": {
+            "seconds": 37,
+            "approximate": true
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-238",
+      "split": "DEV",
+      "category": "DURATION",
+      "query": "Clips less than 32 seconds; for the media catalogue team",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          32
+        ],
+        "temporal": {
+          "duration": {
+            "max_seconds": 32
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-239",
+      "split": "DEV",
+      "category": "DURATION",
+      "query": "Videos no longer than 43 seconds; for the library curation request",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          43
+        ],
+        "temporal": {
+          "duration": {
+            "max_seconds": 43
+          }
+        }
+      }
+    },
+    {
+      "case_id": "QP14F1-240",
+      "split": "DEV",
+      "category": "DURATION",
+      "query": "Footage maximum 54 seconds; for the clinical collection review",
+      "language": "ENGLISH",
+      "expected": {
+        "media_type": "VIDEO",
+        "non_result_numbers": [
+          54
+        ],
+        "temporal": {
+          "duration": {
+            "max_seconds": 54
+          }
+        }
+      }
+    }
+  ],
+  "fingerprint": "84adfbfd79dc78fd18ce5ca5fee3a7c277b077933f0aed7cc5814aeff86750f0",
+  "frozen": true
+}

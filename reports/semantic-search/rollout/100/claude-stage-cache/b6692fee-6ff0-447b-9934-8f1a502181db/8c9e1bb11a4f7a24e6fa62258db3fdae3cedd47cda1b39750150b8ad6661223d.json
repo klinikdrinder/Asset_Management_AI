@@ -1,0 +1,180 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1428.MP4",
+      "evidence": [
+        "filename: IMG_1428.MP4",
+        "asset_id b6692fee-6ff0-447b-9934-8f1a502181db"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short 10.3s close-up clinical clip",
+      "evidence": [
+        "duration_seconds: 10.3",
+        "single scene, 2 keyframes supplied showing a close-up of a face with a handheld device"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene spanning 0.0s to 10.3s",
+      "evidence": [
+        "scene_index: 0, start_seconds: 0.0, end_seconds: 10.3",
+        "two keyframes show near-identical framing, indicating a static continuous shot"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined individual and a person in scrubs",
+      "evidence": [
+        "a person's face and neck reclined in frame",
+        "a second person wearing blue scrubs visible in background holding instruments"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined person with light skin tone, dark hair covered",
+      "evidence": [
+        "visible chin, neck, lips, and shoulder of reclined individual",
+        "hair appears covered/pulled back near a white cap-like object",
+        "wearing a dark striped garment at the shoulder"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Lower face, jaw, cheek, and neck visible",
+      "evidence": [
+        "chin, lips, cheek, jawline, and neck of the reclined person are visible in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure using handheld device",
+      "evidence": [
+        "no procedure name present in readable_text_detected or spoken_content",
+        "handheld device with green light contacting cheek does not by itself establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held against cheek while another instrument nears nose",
+      "evidence": [
+        "a hand presses a device emitting green light onto the cheek/jaw area in both frames",
+        "a separate dark cylindrical instrument is positioned near the nose/upper lip"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner applying device to reclined person",
+      "evidence": [
+        "hand of the scrubs-wearing person directly operates the device against the reclined person's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Green-lit device tip in contact with skin",
+      "evidence": [
+        "a glowing green circular light is visible at the contact point of the device on the cheek in both images"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical indoor setting",
+      "evidence": [
+        "blue scrub-like clothing and a light-colored wall/surface in the background",
+        "blue drape/covering visible near the reclined person's shoulder"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up static handheld framing",
+      "evidence": [
+        "tight close-up composition on face, neck, and device in both keyframes",
+        "vertical orientation (portrait) framing consistent across both images"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face and device centered, diagonal framing",
+      "evidence": [
+        "the face is angled diagonally across the frame with the device and instrument occupying the upper-center area in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content: [] despite audio_stream: true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial brand text on device housing",
+      "evidence": [
+        "readable_text_detected list is empty in supplied metadata",
+        "faint partial lettering visible on the white device casing in the image, though not clearly legible enough to confirm text content"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context indicated",
+      "evidence": [
+        "no captions, logos, or promotional text supplied alongside the images to indicate marketing intent"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up of a facial skin treatment moment",
+      "evidence": [
+        "repeated framing across both keyframes centers on a green-lit device applied to the cheek of a reclined person"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two close-up keyframes show a person reclined with their head tilted back while a handheld device emitting a green light is held against their cheek/jaw area. A second dark cylindrical instrument is positioned near the nose, and a person in blue scrubs is present in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "b6692fee-6ff0-447b-9934-8f1a502181db",
+  "image_count": 2
+}

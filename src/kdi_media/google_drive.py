@@ -391,6 +391,21 @@ def create_service_account_readonly_drive_service(
     credentials_path: str | Path | None = None,
 ) -> Resource:
     """Create the permanent KDI Master reader from a service-account key."""
+    return create_service_account_drive_service(credentials_path, DRIVE_READONLY_SCOPES)
+
+
+def create_service_account_write_drive_service(
+    credentials_path: str | Path | None = None,
+) -> Resource:
+    """Create the backend destination writer from the service-account key."""
+    return create_service_account_drive_service(credentials_path, DRIVE_DESTINATION_WRITE_SCOPES)
+
+
+def create_service_account_drive_service(
+    credentials_path: str | Path | None = None,
+    scopes: tuple[str, ...] = DRIVE_READONLY_SCOPES,
+) -> Resource:
+    """Create a non-interactive backend Drive service for explicit scopes."""
     configured = credentials_path or os.environ.get(
         "GOOGLE_DRIVE_SERVICE_ACCOUNT_CREDENTIALS_PATH",
         r"D:\Asset_Management_AI\.secrets\kdi-media-reader.json",
@@ -401,9 +416,7 @@ def create_service_account_readonly_drive_service(
             "Google Drive service-account credentials file is missing"
         )
     try:
-        credentials = service_account.Credentials.from_service_account_file(
-            str(path), scopes=list(DRIVE_READONLY_SCOPES)
-        )
+        credentials = service_account.Credentials.from_service_account_file(str(path), scopes=list(scopes))
         return build("drive", "v3", credentials=credentials, cache_discovery=False)
     except Exception as exc:
         raise GoogleDriveAuthenticationError(

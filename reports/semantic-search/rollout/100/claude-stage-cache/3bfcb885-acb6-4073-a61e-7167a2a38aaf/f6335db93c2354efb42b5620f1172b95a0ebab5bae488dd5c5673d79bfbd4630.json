@@ -1,0 +1,174 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_0950.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_0950.MP4, duration 11.43s, 1280x720, h264, one canonical scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short single-scene clinical/spa-style clip",
+      "evidence": [
+        "11.4-second video with one canonical scene and two keyframes showing a gloved hand operating a device on a reclined person's face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene",
+      "evidence": [
+        "canonical_scenes: 1, scene_index 0 spans the full clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and reclined client",
+      "evidence": [
+        "A masked, gloved individual's hands and lower face are visible operating a device; a second person lies reclined receiving the application"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked gloved practitioner; reclined person with dark hair, gel on face",
+      "evidence": [
+        "Practitioner wears a surgical mask and white gloves with a black wristband",
+        "Reclined person has dark hair secured by a black headband and visible clear gel on cheek/nose area"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face region: nose, cheek, forehead visible",
+      "evidence": [
+        "Reclined person's nose, cheek, and forehead are visible and covered in a clear gel",
+        "Practitioner's forearm, hand, and lower face are visible"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in evidence",
+      "evidence": [
+        "No supplied text names a specific procedure; only a handheld device with a blue light and gel contact are visible, which alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device applied to gel-covered face",
+      "evidence": [
+        "Gloved hand holds a handheld device with an illuminated blue light against the cheek/nose while the other hand steadies a connected corded handpiece"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner performing hands-on application to client",
+      "evidence": [
+        "Practitioner's gloved hands are in direct contact with the reclined person's face using the device"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clear gel on skin, gloved application",
+      "evidence": [
+        "Visible clear/glossy gel coating the cheek, nose, and forehead area of the reclined person",
+        "White disposable gloves worn by the practitioner"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting not clearly identifiable",
+      "evidence": [
+        "Background shows a treatment-style room with a light fixture, cabinet, and hanging cloth, but per-scene evidence marks ENVIRONMENT as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing",
+      "evidence": [
+        "Tight close-up composition on the face and hands filling most of the vertical frame"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up centered on face and device",
+      "evidence": [
+        "Vertical 720-width frame with the face, gloved hands, and device positioned centrally"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present being true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context established",
+      "evidence": [
+        "No supplied text or visual element indicates promotional intent or usage context"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose unclear",
+      "evidence": [
+        "Per-scene evaluation marks SEMANTIC_NARRATIVE as UNKNOWN despite visible device application"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/audio evaluation",
+      "evidence": [
+        "Per-scene evaluation marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A gloved practitioner holds a handheld device with a glowing blue indicator light against the cheek/nose area of a reclined person whose face is covered in a clear gel. The person lies back with a black headband holding their hair away from the face, on a table draped in blue disposable paper, in what appears to be a treatment room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "3bfcb885-acb6-4073-a61e-7167a2a38aaf",
+  "image_count": 1
+}

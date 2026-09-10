@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video file with metadata",
+      "evidence": [
+        "filename IMG_0479.MP4, duration 18.0667s, 1280x720, h264, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical clip",
+      "evidence": [
+        "1 canonical scene, 2 canonical keyframes sampled across the video"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene",
+      "evidence": [
+        "scene_results lists a single scene_index 0 spanning the asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "masked, gloved person in teal scrubs leaning over a reclined patient wearing a surgical bonnet"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Teal scrubs, mask, gloves; patient in bonnet",
+      "evidence": [
+        "clinician wears mask, gloves, teal scrub top with text; patient's head covered by surgical bonnet"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and forehead visible",
+      "evidence": [
+        "patient's face bears marked lines and pinpoint marks near forehead/hairline area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed",
+      "evidence": [
+        "scene result marks TREATMENT_PROCEDURE as UNKNOWN; gloves, gauze, and marked skin do not by themselves name a procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician wiping/dabbing patient's face",
+      "evidence": [
+        "clinician using gauze to wipe or dab the patient's forehead/face area"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician attending to patient",
+      "evidence": [
+        "clinician positioned directly over reclined patient, performing hands-on contact with gauze"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Marked lines and pinpoint marks on face",
+      "evidence": [
+        "patient's face bears marked lines and pinpoint marks"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not fully determined",
+      "evidence": [
+        "scene result marks ENVIRONMENT as UNKNOWN despite visible monitor, tripod, and IV pole"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, handheld-style framing",
+      "evidence": [
+        "two keyframes show a close vertical composition centered on clinician and patient"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient foreground, clinician above",
+      "evidence": [
+        "patient reclined in lower frame, clinician leaning over from upper frame across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state NO_SPEECH; SPEECH_TRANSCRIPT_AUDIO marked FALSE despite audio stream present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on scrub top",
+      "evidence": [
+        "ocr_observations count of 2; text visible on clinician's teal scrub top"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determined",
+      "evidence": [
+        "scene result marks MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical care moment in treatment room",
+      "evidence": [
+        "clinician performing hands-on care with gauze on a marked, reclined patient in a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable for this medium",
+      "evidence": [
+        "scene result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "Two keyframes show a masked, gloved clinician in teal scrubs leaning over a reclined patient wearing a surgical bonnet, whose face is marked with lines and pinpoint marks while the clinician wipes or dabs the forehead/face area with gauze. The clinical room includes a monitor, tripod, and IV pole in the background, with no speech captured on the audio track.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "bc68e3ce-5812-4af4-b99d-4d0781ad588d",
+  "image_count": 1
+}

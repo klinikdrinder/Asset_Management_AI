@@ -1,0 +1,169 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_7170.MP4",
+      "evidence": [
+        "filename IMG_7170.MP4, duration 11.6s, 1280x720 h264 video decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context of clip not determinable",
+      "evidence": [
+        "scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, one scene_index entry (0)"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A reclining patient and a clinician attending to them",
+      "evidence": [
+        "figure lying on table wearing plaid shirt; second person in teal scrubs and surgical mask holding a device near the patient's arm"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Green plaid shirt on patient; teal scrubs, mask, dark hair tied back on clinician",
+      "evidence": [
+        "patient wears a green plaid button shirt; clinician wears teal scrub top, disposable surgical mask, dark hair pulled back, wristwatch visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forearm with visible tattoo",
+      "evidence": [
+        "bare forearm resting on blue drape with a visible tattoo design near the elbow"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "a handheld metallic device is held near the arm and a finger points at the tattoo, but no procedure name appears in the supplied text; per rule, instrument and contact alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds a device near the arm and points at the tattoo",
+      "evidence": [
+        "hand holding a silver handheld instrument close to the forearm; other hand's finger touching/pointing at the tattoo"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned directly over and attending to the reclining patient",
+      "evidence": [
+        "clinician leans over the patient's arm, one hand holding the device and the other touching the patient's skin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Tattoo on forearm, blue paper drape, gloveless hand",
+      "evidence": [
+        "visible tattoo marking on the skin; blue disposable paper drape under the arm; hand near instrument appears without a glove"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting not fully determinable",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible stool, lamp, and blinds in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Overhead handheld-style shot, vertical framing",
+      "evidence": [
+        "vertical (portrait) 1280x720 frame with an elevated angle looking down on the patient's arm and clinician"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's arm and clinician's hands centered in frame",
+      "evidence": [
+        "forearm and instrument occupy the visual center, with clinician's head and shoulders in the lower right of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present: true, audio_state: AUDIO_PRESENT, transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated: true, ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting interaction focused on a tattooed forearm",
+      "evidence": [
+        "scene narrative describes patient on treatment table with clinician attending to a tattoo on the forearm"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this asset",
+      "evidence": []
+    }
+  ],
+  "narrative": "A patient in a green plaid shirt lies on a treatment table with a tattooed forearm resting on a blue paper drape, while a masked clinician in teal scrubs holds a metallic handheld device near the arm and points at the tattoo. The clip has an audio track but no spoken words, and no on-screen text is visible.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "6b1694e2-0dfb-45b3-8f78-e477637e8c75",
+  "image_count": 1
+}

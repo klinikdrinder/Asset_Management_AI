@@ -1,0 +1,183 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2976.MP4, single scene",
+      "evidence": [
+        "filename \"IMG_2976.MP4\" and asset_id supplied in metadata",
+        "single SCENE unit spanning 0.0-14.367 seconds"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical hand-work video on scalp skin",
+      "evidence": [
+        "both keyframes show a magnified view of scalp skin with gloved hands and forceps",
+        "14.4 second single-scene video with audio track"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, two keyframes",
+      "evidence": [
+        "scene_index 0 spanning start_seconds 0.0 to end_seconds 14.367",
+        "2 keyframes supplied showing similar framing with instrument position changed"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands manipulating instruments over skin",
+      "evidence": [
+        "two sets of white gloved hands visible in both keyframes",
+        "one hand holds fine forceps near the illuminated skin area"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Only gloved hands visible, no faces",
+      "evidence": [
+        "white/beige surgical-style gloves cover all visible hands",
+        "no face, hair, or clothing of any person is visible in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp skin with dense hair follicles",
+      "evidence": [
+        "skin surface covered in tiny dark follicular dots typical of a scalp",
+        "an illuminated, cleared patch of skin bounded by surrounding hair-covered area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied evidence",
+      "evidence": [
+        "gloves, forceps, and scalp contact are visible but no procedure name appears in readable_text_detected or spoken_content"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forceps manipulating tissue on illuminated skin",
+      "evidence": [
+        "forceps tip touches the skin near small red marks in the first keyframe",
+        "forceps position and blood pattern differ between the two keyframes, indicating ongoing manipulation"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instrument-to-skin contact by gloved hands",
+      "evidence": [
+        "forceps held by gloved fingers make direct contact with the illuminated skin region in both frames"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small bleeding points and streaks on skin",
+      "evidence": [
+        "multiple small red spots and thin red streaks visible on the illuminated skin in both keyframes",
+        "dense small papular texture across the exposed skin surface"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting inferred from equipment",
+      "evidence": [
+        "gloved hands and metal forceps visible",
+        "focused bright overhead light illuminating the work area"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Macro close-up, top-down POV framing",
+      "evidence": [
+        "extreme close-up macro framing filling the entire vertical frame",
+        "point-of-view angle looking directly down at the skin with instruments entering from frame edges"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Illuminated skin centered, hands entering from edges",
+      "evidence": [
+        "bright spotlighted skin area occupies the center of both frames",
+        "gloved hands and forceps enter from the top and bottom/right edges of the frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio track present but no speech detected",
+      "evidence": [
+        "technical.audio_stream is true",
+        "spoken_content array is empty"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected array is empty",
+        "no text or graphics visible in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing elements present",
+      "evidence": [
+        "no logos, captions, watermarks, or promotional overlays visible in either keyframe",
+        "readable_text_detected is empty"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up hand procedure on scalp skin",
+      "evidence": [
+        "gloved hands using forceps on an illuminated, bleeding scalp area across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "The images show an extreme close-up of a scalp densely covered with small hair follicles, with two gloved hands using fine-tipped forceps near a brightly lit patch of skin. Small red blood spots and streaks are visible on the skin surface near the tips of the instruments.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "6bf8210f-893d-481c-a535-aee954f5cf78",
+  "image_count": 2
+}

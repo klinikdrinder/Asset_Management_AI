@@ -1,0 +1,10 @@
+{
+  "id":"DEFERRED_SOURCE_REPOSITORY_PERMISSION","status":"DEFERRED",
+  "description":"Backend service account lacks verified access to two configured source repositories.",
+  "service_account":"kdi-media-reader@kdi-media.iam.gserviceaccount.com",
+  "affected_sources":[{"name":"ALL PATIENT REVIEW","folder_id":"1kYX3KIEFkerRMrTvZk2zPpVaFQoCLE4v"},{"name":"Photo/Video for Marketing (Consented by patient)","folder_id":"1TkV6WEH5ymgqZmU7WgYFwYeZUxGYkEUt"}],
+  "required_later_action":"Share both verified folders with the backend service account using minimum Viewer access.",
+  "mandatory_gate":"PHASE_19_FULL_LIBRARY_REPOSITORY_LIFECYCLE_CERTIFICATION",
+  "source_sync_status":"PARTIALLY_CONFIGURED_DEFERRED_PERMISSION",
+  "historical_blockers":{"BLOCKED_SCHEDULER_NOT_IDENTIFIED":"RESOLVED","BLOCKED_SCHEDULER_BOUNDED_EXECUTION":"DEFERRED_SOURCE_PERMISSION","BLOCKED_SOURCE_OAUTH_INVALID_GRANT":"RESOLVED_BY_ARCHITECTURE_CORRECTION"}
+}

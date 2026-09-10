@@ -1,6 +1,7 @@
 import "server-only";
 import { AuthenticationRequired, AuthorizationDenied, requireDownloadPermission, requireStaffOrAdmin } from "./auth";
 import { isLibraryDevBypassEnabled } from "./lib/library/dev-bypass";
+import { isLocalLibraryMediaConfigured } from "./lib/library/local-preview";
 import { liveRest } from "./lib/library/live-transport";
 import { DriveApiError, downloadDriveFile, fetchDriveThumbnailLinkBytes, getDriveFileMetadata } from "./lib/google/drive-client";
 import { GoogleServiceAccountError } from "./lib/google/service-account";
@@ -34,10 +35,31 @@ async function fetchDevAssetRow(assetId: string): Promise<ResolvableAssetRow | n
 
 export async function authorizedMedia(assetId: string, operation: MediaOperation, download = false) {
   const user = download ? await requireDownloadPermission() : await requireStaffOrAdmin();
+  // Authorize before resolving the Drive location. Some trusted server paths use
+  // service credentials and therefore cannot rely on caller RLS alone.
+  const service = createServiceClient();
+  const { data: decisions, error: authorizationError } = await service.rpc("phase18_authorize_candidates_for", {
+    p_user_id: user.userId,
+    p_asset_ids: [assetId],
+  });
+  const decision = Array.isArray(decisions) ? decisions[0] : null;
+  if (
+    authorizationError ||
+    decision?.discover !== true ||
+    decision?.view_metadata !== true ||
+    decision?.preview !== true
+  ) {
+    throw new AuthorizationDenied("Access denied");
+  }
+  if (download && decision.download !== true) {
+    throw new AuthorizationDenied("Access denied");
+  }
   const location = await resolveAssetMediaLocation(assetId, operation, fetchProductionAssetRow);
   if (!location) throw new Error("Not found");
   if (download) {
-    const { data: allowed, error } = await createServiceClient().rpc("can_user_download_asset_for", {
+    // Retain the canonical single-asset check as defense in depth and to prove
+    // the batch contract stays equivalent to the established download policy.
+    const { data: allowed, error } = await service.rpc("can_user_download_asset_for", {
       p_user_id: user.userId,
       p_asset_id: assetId,
     });
@@ -47,7 +69,7 @@ export async function authorizedMedia(assetId: string, operation: MediaOperation
 }
 
 async function devAuthorizedMedia(assetId: string, operation: MediaOperation): Promise<ResolvedMediaLocation> {
-  if (!isLibraryDevBypassEnabled()) throw new Error("Not found");
+  if (!isLocalLibraryMediaConfigured()) throw new Error("Not found");
   const location = await resolveAssetMediaLocation(assetId, operation, fetchDevAssetRow);
   if (!location) throw new Error("Not found");
   return location;

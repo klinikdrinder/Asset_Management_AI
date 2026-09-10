@@ -1,0 +1,1501 @@
+{
+  "benchmark_run_id": "6d91f336-d458-4115-8fd6-74fa9ea843c1",
+  "benchmark_version": "kdi_semantic_benchmark_v1",
+  "suite_id": "kdi_pilot_framework_validation_v1",
+  "started_at": "2026-08-28T07:57:12.431Z",
+  "completed_at": "2026-08-28T07:58:11.614Z",
+  "duration_ms": 59178.0613,
+  "status": "PASS",
+  "versions": {
+    "benchmark": "kdi_semantic_benchmark_runner_v1",
+    "query_parser": "kdi_query_parser_v3",
+    "requirement_classifier": "kdi_requirement_classifier_v1",
+    "query_expander": "kdi_query_expander_v1",
+    "retriever": "kdi_candidate_retriever_v1",
+    "authorization": "kdi_candidate_authorizer_v1",
+    "reranker": "kdi_deterministic_reranker_v1",
+    "result_count": "kdi_result_count_controller_v1",
+    "response": "kdi_database_grounded_response_v1",
+    "conversation": "kdi_conversational_search_memory_v1",
+    "semantic_spec": "kdi_semantic_18_layer_v1"
+  },
+  "environment": "development",
+  "case_runs": [
+    {
+      "case_id": "C01",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:12.434Z",
+      "completed_at": "2026-08-28T07:57:14.489Z",
+      "duration_ms": 2055.6768999999986,
+      "turns": [
+        {
+          "query": "neck injection",
+          "parsed_intent": {
+            "fingerprint": "df148ed3449800d3b5e91872daecb44b905c8ebfd54339151a2918d92639a35b",
+            "positive": [
+              "NECK",
+              "INJECTING"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C02",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:14.493Z",
+      "completed_at": "2026-08-28T07:57:16.576Z",
+      "duration_ms": 2082.6043999999965,
+      "turns": [
+        {
+          "query": "show me neck injection video",
+          "parsed_intent": {
+            "fingerprint": "12aa3a11c36b5363430f7d23ec13facface7020a791fdcb607307fd65e1de29f",
+            "positive": [
+              "NECK",
+              "INJECTING"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C03",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:16.578Z",
+      "completed_at": "2026-08-28T07:57:18.516Z",
+      "duration_ms": 1938.7344000000012,
+      "turns": [
+        {
+          "query": "lower face injection",
+          "parsed_intent": {
+            "fingerprint": "c979070b5d1bb659799f5a5be5178b57cb820052e2144e10ad47b905602b53e8",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C04",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:18.517Z",
+      "completed_at": "2026-08-28T07:57:20.752Z",
+      "duration_ms": 2234.789700000001,
+      "turns": [
+        {
+          "query": "clinician cleansing cheek",
+          "parsed_intent": {
+            "fingerprint": "514d03b7ef1a1c6a1e7994746da4c4e6e345f8d9e6d38f7dbc99e79fe26e2dfc",
+            "positive": [
+              "CLINICIAN",
+              "CLEANSING",
+              "CHEEK"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C05",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:20.754Z",
+      "completed_at": "2026-08-28T07:57:22.355Z",
+      "duration_ms": 1601.4792000000016,
+      "turns": [
+        {
+          "query": "frontal hairline thinning",
+          "parsed_intent": {
+            "fingerprint": "8ed1fc2a8b9ef90e367697c7e675f8c0f2dc16070fa6185bd9de5071c3c3b656",
+            "positive": [
+              "FRONTAL_HAIRLINE"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C06",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:22.357Z",
+      "completed_at": "2026-08-28T07:57:23.624Z",
+      "duration_ms": 1267.2632999999987,
+      "turns": [
+        {
+          "query": "hair transplant implantation",
+          "parsed_intent": {
+            "fingerprint": "2c6cbe271fcb7533ebde4fe671038065685b2e7937e1a0bd2b34231fef722114",
+            "positive": [
+              "HAIR_TRANSPLANT"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C07",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:23.625Z",
+      "completed_at": "2026-08-28T07:57:24.850Z",
+      "duration_ms": 1224.7469999999958,
+      "turns": [
+        {
+          "query": "show me scalp treatment",
+          "parsed_intent": {
+            "fingerprint": "904fc0723a0520e16791a09b26c928b86f1fed751b2df17d467be80f6f7ac67d",
+            "positive": [
+              "SCALP"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C08",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:24.852Z",
+      "completed_at": "2026-08-28T07:57:26.113Z",
+      "duration_ms": 1261.3006999999998,
+      "turns": [
+        {
+          "query": "clinician with patient",
+          "parsed_intent": {
+            "fingerprint": "c05a9dbb92305ae7b72070700d0917fb8c7de97fdbf258541628c9e41487457b",
+            "positive": [
+              "CLINICIAN",
+              "PATIENT"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C09",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:26.114Z",
+      "completed_at": "2026-08-28T07:57:27.173Z",
+      "duration_ms": 1058.5444999999963,
+      "turns": [
+        {
+          "query": "clinical treatment room",
+          "parsed_intent": {
+            "fingerprint": "6d2f64d5dac8b2558a76aee360226afd9f16e9bc076719145f712f4d8b8a264a",
+            "positive": [
+              "TREATMENT_ROOM"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C10",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:27.174Z",
+      "completed_at": "2026-08-28T07:57:28.162Z",
+      "duration_ms": 987.4349999999977,
+      "turns": [
+        {
+          "query": "close-up vertical clinical footage",
+          "parsed_intent": {
+            "fingerprint": "133e52f625a9d4794005ba6f85839bb7c0b0e34e8259901b160ebbe9033b592b",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C11",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:28.163Z",
+      "completed_at": "2026-08-28T07:57:29.014Z",
+      "duration_ms": 850.9421999999977,
+      "turns": [
+        {
+          "query": "give me 3 clinical videos",
+          "parsed_intent": {
+            "fingerprint": "c602c215d3e2e4e3079dbffea025fc4e8125206d179d2e71ab7dfb68e715535e",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": 3,
+          "effective_count": 3,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C12",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:29.015Z",
+      "completed_at": "2026-08-28T07:57:29.917Z",
+      "duration_ms": 901.4035999999978,
+      "turns": [
+        {
+          "query": "show me the best result",
+          "parsed_intent": {
+            "fingerprint": "c7ac82d196560b39ab79150fdc1778e595ef9a81d682a0b271ca8aef8de49554",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": 1,
+          "effective_count": 1,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C13",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:29.918Z",
+      "completed_at": "2026-08-28T07:57:30.618Z",
+      "duration_ms": 700.6269000000029,
+      "turns": [
+        {
+          "query": "show me 7 files",
+          "parsed_intent": {
+            "fingerprint": "906103a34529ae51ecccc764240fbeaae98f90889719860c5649f01cbaf3e27c",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": 7,
+          "effective_count": 7,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C14",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:30.619Z",
+      "completed_at": "2026-08-28T07:57:31.417Z",
+      "duration_ms": 797.5011999999988,
+      "turns": [
+        {
+          "query": "show me a 30 year old patient",
+          "parsed_intent": {
+            "fingerprint": "bbb1f2009ab4cc7f5506bad46126f91e884d5967805cc90ac3f261b5c79b6c15",
+            "positive": [
+              "PATIENT"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C15",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:31.418Z",
+      "completed_at": "2026-08-28T07:57:32.516Z",
+      "duration_ms": 1098.0011999999988,
+      "turns": [
+        {
+          "query": "show me 3 videos of a 30 year old patient",
+          "parsed_intent": {
+            "fingerprint": "995cc6a599788f8e8f566c6f4ec66400a18c778e589a892a5245d1f588765875",
+            "positive": [
+              "PATIENT"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": 3,
+          "effective_count": 3,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C16",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:32.517Z",
+      "completed_at": "2026-08-28T07:57:33.859Z",
+      "duration_ms": 1342.7540000000008,
+      "turns": [
+        {
+          "query": "hair transplant with 3000 grafts",
+          "parsed_intent": {
+            "fingerprint": "2ba3c1f2b2041ac989b26576627cc76f87fa6a119c0d6462e84854bc78ee23ec",
+            "positive": [
+              "HAIR_TRANSPLANT"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C17",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:33.860Z",
+      "completed_at": "2026-08-28T07:57:35.211Z",
+      "duration_ms": 1350.6064000000042,
+      "turns": [
+        {
+          "query": "show me 3 hair transplant videos with 3000 grafts",
+          "parsed_intent": {
+            "fingerprint": "af7e878930eec37f72b4ca52d8b7eacee77a92643475fec9d990d2748dbefe2f",
+            "positive": [
+              "HAIR_TRANSPLANT"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": 3,
+          "effective_count": 3,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C18",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:35.212Z",
+      "completed_at": "2026-08-28T07:57:36.299Z",
+      "duration_ms": 1086.3899999999994,
+      "turns": [
+        {
+          "query": "exclude neck",
+          "parsed_intent": {
+            "fingerprint": "8e7edea3ceb1eb003a9d3aca14a002d7536b2448bbf53256a4ca07f749d77797",
+            "positive": [],
+            "negative": [
+              "NECK"
+            ]
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C19",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:36.302Z",
+      "completed_at": "2026-08-28T07:57:37.130Z",
+      "duration_ms": 823.0822000000044,
+      "turns": [
+        {
+          "query": "nek injecton",
+          "parsed_intent": {
+            "fingerprint": "c6b7079867dd9a71ab2720c46b7af64dc8be031e1404553fb1e3f8d25c186289",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C20",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:37.131Z",
+      "completed_at": "2026-08-28T07:57:38.120Z",
+      "duration_ms": 989.3108999999968,
+      "turns": [
+        {
+          "query": "needle action at the neck",
+          "parsed_intent": {
+            "fingerprint": "161ddb43711de55d85aae12c3f0dfd7c24ca24e30c0818c366f89e1c07ddf93d",
+            "positive": [
+              "NECK"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C21",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:38.121Z",
+      "completed_at": "2026-08-28T07:57:40.120Z",
+      "duration_ms": 1998.655899999998,
+      "turns": [
+        {
+          "query": "cleaning the cheek by clinical staff",
+          "parsed_intent": {
+            "fingerprint": "a6604b14fffc731f094cc43dd86d57ef9bad4c875f98cb1bfdd61bf6a55ac59f",
+            "positive": [
+              "CLEANSING",
+              "CHEEK"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C22",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:40.122Z",
+      "completed_at": "2026-08-28T07:57:41.081Z",
+      "duration_ms": 958.6354999999967,
+      "turns": [
+        {
+          "query": "implanting hair grafts",
+          "parsed_intent": {
+            "fingerprint": "93ebbbcbd7ce570ba844ea29da3dfb76c53c3acb58d894ebbb800351d0198594",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C23",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:41.082Z",
+      "completed_at": "2026-08-28T07:57:43.299Z",
+      "duration_ms": 2216.955999999991,
+      "turns": [
+        {
+          "query": "clinician injects patient at neck",
+          "parsed_intent": {
+            "fingerprint": "6f17ba5d5c312785d5b169c020804d87b144642802cad4ee42499650869ab0cd",
+            "positive": [
+              "CLINICIAN",
+              "NECK",
+              "INJECTING"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C24",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:43.300Z",
+      "completed_at": "2026-08-28T07:57:44.522Z",
+      "duration_ms": 1222.0132999999914,
+      "turns": [
+        {
+          "query": "what exact injectable treatment is shown",
+          "parsed_intent": {
+            "fingerprint": "27793a2a91d88ba3f4b11a62336462b0cb514b36b9b13952fd6e421f41e9f6c7",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C25",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:44.523Z",
+      "completed_at": "2026-08-28T07:57:46.403Z",
+      "duration_ms": 1879.6785999999993,
+      "turns": [
+        {
+          "query": "assets explicitly not showing injection",
+          "parsed_intent": {
+            "fingerprint": "a64be5c8fbc68ada779a40a75ab52bda4a79b32cfc76caa3f9e29c618d46251f",
+            "positive": [],
+            "negative": [
+              "INJECTING"
+            ]
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C26",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:46.405Z",
+      "completed_at": "2026-08-28T07:57:47.361Z",
+      "duration_ms": 955.3538000000117,
+      "turns": [
+        {
+          "query": "assets where speech is not applicable",
+          "parsed_intent": {
+            "fingerprint": "d5982d32a94ef1434c76e23f805f140bef4713ca9b57ca441e593b09ab4b3e97",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C27",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:47.363Z",
+      "completed_at": "2026-08-28T07:57:49.227Z",
+      "duration_ms": 1864.1226000000024,
+      "turns": [
+        {
+          "query": "unknown treatment with visible injection",
+          "parsed_intent": {
+            "fingerprint": "4c4718a26e9f3c5c2de9262016e5262f8fbbf3364c71dd8606024ec5d8ae490a",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C28",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:49.228Z",
+      "completed_at": "2026-08-28T07:57:50.516Z",
+      "duration_ms": 1288.0256000000081,
+      "turns": [
+        {
+          "query": "prefer treatment footage without neck",
+          "parsed_intent": {
+            "fingerprint": "3b07054f9bbedfb18ee279be0347466404063dd1ccbcdb98df7a3081fb0ccacb",
+            "positive": [],
+            "negative": [
+              "NECK"
+            ]
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C29",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:50.518Z",
+      "completed_at": "2026-08-28T07:57:51.261Z",
+      "duration_ms": 742.9872000000032,
+      "turns": [
+        {
+          "query": "underwater coral reef",
+          "parsed_intent": {
+            "fingerprint": "b5cd68fd5788acadd4dec1062790ee2e42c90767888c354ac95fc0c4cac0f9c1",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C30",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:51.263Z",
+      "completed_at": "2026-08-28T07:57:51.875Z",
+      "duration_ms": 612.1745000000083,
+      "turns": [
+        {
+          "query": "airplane cockpit",
+          "parsed_intent": {
+            "fingerprint": "183f9bde59ee6a9376db78da5973d40067a83b05acba55bd12ccb55ee244436f",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C31",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:51.876Z",
+      "completed_at": "2026-08-28T07:57:52.641Z",
+      "duration_ms": 765.6910000000062,
+      "turns": [
+        {
+          "query": "football stadium",
+          "parsed_intent": {
+            "fingerprint": "618ec8178d6e3ff0abc777dee2e8bb7651acdeda7364cbab0ba0cfbafd8afc19",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C32",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:52.642Z",
+      "completed_at": "2026-08-28T07:57:53.580Z",
+      "duration_ms": 937.3510000000097,
+      "turns": [
+        {
+          "query": "give me the short description of IMG_3429.MP4",
+          "parsed_intent": {
+            "fingerprint": "e56f946ca1bbdeb605c022d8fbb3e71cd19938f946ea188599b1fab2801d5904",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C33",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:53.581Z",
+      "completed_at": "2026-08-28T07:57:54.430Z",
+      "duration_ms": 849.5549000000028,
+      "turns": [
+        {
+          "query": "give me the detailed description of IMG_3429.MP4",
+          "parsed_intent": {
+            "fingerprint": "7f8d4891507c98a310ed2368fc12f9d2371150dd237416e622d2dac1c36813ae",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C34",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:54.433Z",
+      "completed_at": "2026-08-28T07:57:55.309Z",
+      "duration_ms": 876.2841999999946,
+      "turns": [
+        {
+          "query": "show authorized clinical assets",
+          "parsed_intent": {
+            "fingerprint": "5f541b57bcb33af5731034c201b12f116ea6cf06ed36e7ae6b1fa6992f389fa2",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C35",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:55.310Z",
+      "completed_at": "2026-08-28T07:57:56.156Z",
+      "duration_ms": 845.4234999999899,
+      "turns": [
+        {
+          "query": "show me clinical images",
+          "parsed_intent": {
+            "fingerprint": "b16ce8eebc46cfcb8be0d7ced0aafe6a93a70581767b5c51c7d36af209e85a7c",
+            "positive": [],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C36",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:56.157Z",
+      "completed_at": "2026-08-28T07:57:59.598Z",
+      "duration_ms": 3440.364200000011,
+      "turns": [
+        {
+          "query": "show me injection videos",
+          "parsed_intent": {
+            "fingerprint": "5e440d40239dc6a803f7e6211dfb4da2264991a450758e7dac2c76cac8375c49",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        },
+        {
+          "query": "only neck ones",
+          "parsed_intent": {
+            "fingerprint": "50aeda26436fe92b4567d26ad73a054b58afa097672516f9950926931be3e4fd",
+            "positive": [
+              "INJECTING",
+              "NECK"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NARROW",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        },
+        {
+          "query": "give me the detailed description of the first one",
+          "parsed_intent": {
+            "status": "ORDINAL_OUT_OF_RANGE"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 0,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "ORDINAL_OUT_OF_RANGE",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "UNRESOLVED",
+            "status": "ORDINAL_OUT_OF_RANGE",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C37",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:57:59.599Z",
+      "completed_at": "2026-08-28T07:58:02.821Z",
+      "duration_ms": 3221.8166999999958,
+      "turns": [
+        {
+          "query": "show me injection videos",
+          "parsed_intent": {
+            "fingerprint": "5e440d40239dc6a803f7e6211dfb4da2264991a450758e7dac2c76cac8375c49",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        },
+        {
+          "query": "give me 2",
+          "parsed_intent": {
+            "fingerprint": "5e440d40239dc6a803f7e6211dfb4da2264991a450758e7dac2c76cac8375c49",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "CONTINUE",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C38",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:58:02.822Z",
+      "completed_at": "2026-08-28T07:58:06.463Z",
+      "duration_ms": 3641.2952000000078,
+      "turns": [
+        {
+          "query": "show me injection videos",
+          "parsed_intent": {
+            "fingerprint": "5e440d40239dc6a803f7e6211dfb4da2264991a450758e7dac2c76cac8375c49",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        },
+        {
+          "query": "actually lower face",
+          "parsed_intent": {
+            "fingerprint": "748d3b12eb6be0ac8d7dd66baaa28530fec7a3fad1d4998986f80c20c0d3c220",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "MODIFY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C39",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:58:06.466Z",
+      "completed_at": "2026-08-28T07:58:08.169Z",
+      "duration_ms": 1703.4046999999991,
+      "turns": [
+        {
+          "query": "show me frontal hairline thinning",
+          "parsed_intent": {
+            "fingerprint": "ff3907ab593c725d3d90f73c9e89c0264ffe0dfaf196bad814f4a1afbf51303f",
+            "positive": [
+              "FRONTAL_HAIRLINE"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        },
+        {
+          "query": "give me the first one",
+          "parsed_intent": {
+            "status": "ORDINAL_OUT_OF_RANGE"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 0,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "ORDINAL_OUT_OF_RANGE",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "UNRESOLVED",
+            "status": "ORDINAL_OUT_OF_RANGE",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C40",
+      "status": "PASS",
+      "started_at": "2026-08-28T07:58:08.171Z",
+      "completed_at": "2026-08-28T07:58:11.612Z",
+      "duration_ms": 3440.3325999999943,
+      "turns": [
+        {
+          "query": "show me injection videos",
+          "parsed_intent": {
+            "fingerprint": "5e440d40239dc6a803f7e6211dfb4da2264991a450758e7dac2c76cac8375c49",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        },
+        {
+          "query": "exclude neck",
+          "parsed_intent": {
+            "fingerprint": "50aeda26436fe92b4567d26ad73a054b58afa097672516f9950926931be3e4fd",
+            "positive": [
+              "INJECTING",
+              "NECK"
+            ],
+            "negative": []
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NARROW",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    }
+  ]
+}

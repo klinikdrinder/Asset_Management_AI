@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2132.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_2132.MP4, duration 16.57s, 1280x720, h264, single scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clip of a facial mask application",
+      "evidence": [
+        "One canonical scene with two keyframes showing consistent action of mask application"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, ~16.6 seconds",
+      "evidence": [
+        "canonical_scenes: 1, duration_seconds: 16.566667, single scene_index 0 result"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked practitioner and reclined client",
+      "evidence": [
+        "Person in rust scrubs with mask and gloves actively working on the face of a reclined person covered by a blanket"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner: dark hair in bun, surgical mask, rust scrubs, gloves",
+      "evidence": [
+        "Image shows dark-haired person with hair in a bun wearing a blue surgical mask, rust-colored V-neck scrub top and pants, white gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Client's face, cheeks and jaw visible",
+      "evidence": [
+        "Face partially covered by sheet mask, visible eyes, nose, lips, jaw and ear of reclined client"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "Per-scene TREATMENT_PROCEDURE is UNKNOWN; gloves and facial contact alone do not establish a named clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Applying and pressing a sheet mask onto the face",
+      "evidence": [
+        "Gloved hands positioned at cheek and jaw pressing a white sheet mask onto the reclined client's face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner leaning over and attending to client",
+      "evidence": [
+        "Practitioner bent forward directly over the reclined client, hands in contact with client's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "White sheet mask with eye/lip cutouts on face",
+      "evidence": [
+        "Visible white perforated sheet mask covering forehead, cheeks, and chin with openings for eyes, nose and mouth"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Indoor setting, specifics unclear",
+      "evidence": [
+        "Plain light wall backdrop visible but no signage or identifying details to confirm setting type"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static medium shot, vertical framing",
+      "evidence": [
+        "Vertical 1280x720-sourced frame with stable close/medium framing on subjects, no camera motion evident across keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and client centered, client in lower frame",
+      "evidence": [
+        "Client's face occupies lower-center portion of frame while practitioner's upper body fills upper-center portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small text visible on mask and scrub top",
+      "evidence": [
+        "ocr_evaluated true with 5 ocr_observations",
+        "Visible partial text on mask packaging area ('M-CURE') and embroidered text on scrub top"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "No captions, branding overlays, or supplied text indicating intended marketing use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Narrative intent unclear",
+      "evidence": [
+        "No supplied context establishing storyline purpose beyond visible mask application activity"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual evaluation",
+      "evidence": [
+        "Per-scene result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked practitioner in rust-colored scrubs applies and adjusts a white sheet facial mask on a reclined client's face, pressing it around the cheeks and jaw with gloved hands. The client lies covered with a blue garment and gray blanket against a plain light-colored wall backdrop.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "af395a48-6dee-4e02-855a-3cf8b2b65c5f",
+  "image_count": 1
+}

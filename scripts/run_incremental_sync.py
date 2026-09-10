@@ -17,8 +17,8 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from kdi_media.daily_sync import IncrementalSyncRunner
 from kdi_media.google_drive import (
-    create_destination_write_drive_service,
-    create_readonly_drive_service,
+    create_service_account_readonly_drive_service,
+    create_service_account_write_drive_service,
 )
 from kdi_media.production_sync_adapter import ProductionSyncAdapter
 from kdi_media.step9_hashing import RetryableHashingError, iter_drive_content
@@ -42,10 +42,10 @@ def main(argv: list[str] | None = None) -> int:
     load_dotenv(ROOT / ".env")
     try:
         client = create_client(_required("SUPABASE_URL"), _required("SUPABASE_SERVICE_ROLE_KEY"))
-        source_service = create_readonly_drive_service()
+        source_service = create_service_account_readonly_drive_service()
 
         def adapter_factory() -> ProductionSyncAdapter:
-            destination_service = create_destination_write_drive_service()
+            destination_service = create_service_account_write_drive_service()
             root_id = os.getenv("DESTINATION_FOLDER_ID", "").strip() or APPROVED_ROOT
             if root_id != APPROVED_ROOT:
                 raise RuntimeError("Configured destination is not the approved KDI Master root")

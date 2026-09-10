@@ -1,0 +1,1032 @@
+{
+  "generated_at": "2026-08-27T01:46:50.635Z",
+  "counts": [
+    {
+      "table_name": "app_users",
+      "row_count": 2
+    },
+    {
+      "table_name": "asset_access_control",
+      "row_count": 881
+    },
+    {
+      "table_name": "asset_search_concepts_v2",
+      "row_count": 270
+    },
+    {
+      "table_name": "asset_search_documents",
+      "row_count": 10
+    },
+    {
+      "table_name": "asset_sources",
+      "row_count": 881
+    },
+    {
+      "table_name": "assets",
+      "row_count": 881
+    },
+    {
+      "table_name": "scene_search_documents",
+      "row_count": 10
+    },
+    {
+      "table_name": "semantic_assertion_evidence",
+      "row_count": 270
+    },
+    {
+      "table_name": "semantic_assertions",
+      "row_count": 333
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "row_count": 106
+    },
+    {
+      "table_name": "source_files",
+      "row_count": 890
+    },
+    {
+      "table_name": "source_folders",
+      "row_count": 4
+    }
+  ],
+  "authorization_coverage": [
+    {
+      "classification_status": "UNCLASSIFIED",
+      "is_clinical": null,
+      "sensitivity_level": "GENERAL",
+      "consent_status": "UNKNOWN",
+      "internal_usage_status": "UNKNOWN",
+      "marketing_usage_status": "UNKNOWN",
+      "external_ai_status": "NOT_REVIEWED",
+      "requires_clinical_permission": null,
+      "download_allowed": null,
+      "review_status": "NOT_REVIEWED",
+      "count": 871
+    },
+    {
+      "classification_status": "UNCLASSIFIED",
+      "is_clinical": null,
+      "sensitivity_level": "GENERAL",
+      "consent_status": "UNKNOWN",
+      "internal_usage_status": "UNKNOWN",
+      "marketing_usage_status": "UNKNOWN",
+      "external_ai_status": "ALLOWED",
+      "requires_clinical_permission": null,
+      "download_allowed": null,
+      "review_status": "REVIEWED",
+      "count": 10
+    }
+  ],
+  "status_models": [
+    {
+      "scope": "assets",
+      "state": {
+        "upload_status": "PENDING",
+        "migration_status": "PENDING"
+      },
+      "count": 881
+    },
+    {
+      "scope": "source_files",
+      "state": {
+        "trashed": false,
+        "is_missing": false,
+        "processing_status": "READY",
+        "sync_classification": "UNCHANGED"
+      },
+      "count": 881
+    },
+    {
+      "scope": "source_files",
+      "state": {
+        "trashed": false,
+        "is_missing": false,
+        "processing_status": "SKIPPED",
+        "sync_classification": "UNCHANGED"
+      },
+      "count": 9
+    },
+    {
+      "scope": "source_folders",
+      "state": {
+        "active": true,
+        "access_status": "PENDING"
+      },
+      "count": 3
+    },
+    {
+      "scope": "source_folders",
+      "state": {
+        "active": false,
+        "access_status": "ACCESSIBLE"
+      },
+      "count": 1
+    }
+  ],
+  "application_users": [
+    {
+      "role": "STAFF",
+      "management_role": "user",
+      "is_active": false,
+      "can_view_clinical": false,
+      "can_download": true,
+      "count": 1
+    },
+    {
+      "role": "ADMIN",
+      "management_role": "super_admin",
+      "is_active": true,
+      "can_view_clinical": true,
+      "can_download": true,
+      "count": 1
+    }
+  ],
+  "functions": [
+    {
+      "schema_name": "private",
+      "proname": "authorized_asset_ids",
+      "arguments": "",
+      "security_definer": true,
+      "proconfig": [
+        "search_path=\"\""
+      ],
+      "definition": "CREATE OR REPLACE FUNCTION private.authorized_asset_ids()\n RETURNS TABLE(asset_id uuid)\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO ''\nAS $function$\n  select a.id from public.assets a\n  where private.can_user_view_asset_for(private.current_app_user_id(),a.id);\n$function$\n",
+      "execute_roles": [
+        "authenticated",
+        "service_role"
+      ]
+    },
+    {
+      "schema_name": "private",
+      "proname": "can_user_download_asset",
+      "arguments": "p_asset_id uuid",
+      "security_definer": true,
+      "proconfig": [
+        "search_path=\"\""
+      ],
+      "definition": "CREATE OR REPLACE FUNCTION private.can_user_download_asset(p_asset_id uuid)\n RETURNS boolean\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO ''\nAS $function$\n select private.can_user_download_asset_for(private.current_app_user_id(),p_asset_id);\n$function$\n",
+      "execute_roles": [
+        "authenticated",
+        "service_role"
+      ]
+    },
+    {
+      "schema_name": "private",
+      "proname": "can_user_download_asset_for",
+      "arguments": "p_user_id uuid, p_asset_id uuid",
+      "security_definer": true,
+      "proconfig": [
+        "search_path=\"\""
+      ],
+      "definition": "CREATE OR REPLACE FUNCTION private.can_user_download_asset_for(p_user_id uuid, p_asset_id uuid)\n RETURNS boolean\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO ''\nAS $function$\n  select private.can_user_view_asset_for(p_user_id,p_asset_id)\n    and exists(select 1 from public.app_users u where u.user_id=p_user_id and u.is_active and u.can_download=true)\n    and exists(select 1 from public.asset_access_control ac where ac.asset_id=p_asset_id and ac.download_allowed=true);\n$function$\n",
+      "execute_roles": [
+        "service_role"
+      ]
+    },
+    {
+      "schema_name": "private",
+      "proname": "can_user_view_asset",
+      "arguments": "p_asset_id uuid",
+      "security_definer": true,
+      "proconfig": [
+        "search_path=\"\""
+      ],
+      "definition": "CREATE OR REPLACE FUNCTION private.can_user_view_asset(p_asset_id uuid)\n RETURNS boolean\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO ''\nAS $function$\n select private.can_user_view_asset_for(private.current_app_user_id(),p_asset_id);\n$function$\n",
+      "execute_roles": [
+        "authenticated",
+        "service_role"
+      ]
+    },
+    {
+      "schema_name": "private",
+      "proname": "can_user_view_asset_for",
+      "arguments": "p_user_id uuid, p_asset_id uuid",
+      "security_definer": true,
+      "proconfig": [
+        "search_path=\"\""
+      ],
+      "definition": "CREATE OR REPLACE FUNCTION private.can_user_view_asset_for(p_user_id uuid, p_asset_id uuid)\n RETURNS boolean\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO ''\nAS $function$\n  select exists(\n    select 1 from public.app_users u\n    join public.assets a on a.id=p_asset_id\n    join public.asset_access_control ac on ac.asset_id=a.id\n    where u.user_id=p_user_id and u.is_active\n      and a.upload_status not in ('FAILED','MISSING')\n      and private.is_asset_source_available(a.id)\n      and ac.internal_usage_status='ALLOWED'\n      and ac.sensitivity_level is not null\n      and ac.is_clinical is not null\n      and (\n        (ac.is_clinical=false\n          and coalesce(ac.requires_clinical_permission,false)=false\n          and ac.sensitivity_level in ('GENERAL','INTERNAL'))\n        or\n        (u.can_view_clinical=true and (\n          ac.is_clinical=true\n          or ac.requires_clinical_permission=true\n          or ac.sensitivity_level in ('RESTRICTED','CLINICAL','HIGHLY_RESTRICTED')\n        ))\n      )\n  );\n$function$\n",
+      "execute_roles": [
+        "service_role"
+      ]
+    },
+    {
+      "schema_name": "private",
+      "proname": "current_app_user_id",
+      "arguments": "",
+      "security_definer": true,
+      "proconfig": [
+        "search_path=\"\""
+      ],
+      "definition": "CREATE OR REPLACE FUNCTION private.current_app_user_id()\n RETURNS uuid\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO ''\nAS $function$\r\n  select case\r\n    when (auth.jwt() ->> 'iss') = 'https://securetoken.google.com/kdi-media-library'\r\n      then (\r\n        select u.user_id from public.app_users u\r\n        where private.is_verified_firebase_identity()\r\n          and u.firebase_uid = (auth.jwt() ->> 'sub')\r\n        limit 1\r\n      )\r\n    when (auth.jwt() ->> 'iss') ~ '^https://wcqqjpndlwsvatjuqnol[.]supabase[.]co/auth/v1/?$'\r\n      then auth.uid()\r\n    else null\r\n  end;\r\n$function$\n",
+      "execute_roles": [
+        "anon",
+        "authenticated",
+        "service_role"
+      ]
+    },
+    {
+      "schema_name": "public",
+      "proname": "can_asset_use_external_ai",
+      "arguments": "p_asset_id uuid",
+      "security_definer": false,
+      "proconfig": [
+        "search_path=\"\""
+      ],
+      "definition": "CREATE OR REPLACE FUNCTION public.can_asset_use_external_ai(p_asset_id uuid)\n RETURNS boolean\n LANGUAGE sql\n STABLE\n SET search_path TO ''\nAS $function$ select private.can_asset_use_external_ai(p_asset_id); $function$\n",
+      "execute_roles": [
+        "service_role"
+      ]
+    },
+    {
+      "schema_name": "public",
+      "proname": "can_user_download_asset",
+      "arguments": "p_asset_id uuid",
+      "security_definer": false,
+      "proconfig": [
+        "search_path=\"\""
+      ],
+      "definition": "CREATE OR REPLACE FUNCTION public.can_user_download_asset(p_asset_id uuid)\n RETURNS boolean\n LANGUAGE sql\n STABLE\n SET search_path TO ''\nAS $function$ select private.can_user_download_asset(p_asset_id); $function$\n",
+      "execute_roles": [
+        "authenticated",
+        "service_role"
+      ]
+    },
+    {
+      "schema_name": "public",
+      "proname": "can_user_download_asset_for",
+      "arguments": "p_user_id uuid, p_asset_id uuid",
+      "security_definer": false,
+      "proconfig": [
+        "search_path=\"\""
+      ],
+      "definition": "CREATE OR REPLACE FUNCTION public.can_user_download_asset_for(p_user_id uuid, p_asset_id uuid)\n RETURNS boolean\n LANGUAGE sql\n STABLE\n SET search_path TO ''\nAS $function$ select private.can_user_download_asset_for(p_user_id,p_asset_id); $function$\n",
+      "execute_roles": [
+        "service_role"
+      ]
+    },
+    {
+      "schema_name": "public",
+      "proname": "can_user_view_asset",
+      "arguments": "p_asset_id uuid",
+      "security_definer": false,
+      "proconfig": [
+        "search_path=\"\""
+      ],
+      "definition": "CREATE OR REPLACE FUNCTION public.can_user_view_asset(p_asset_id uuid)\n RETURNS boolean\n LANGUAGE sql\n STABLE\n SET search_path TO ''\nAS $function$ select private.can_user_view_asset(p_asset_id); $function$\n",
+      "execute_roles": [
+        "authenticated",
+        "service_role"
+      ]
+    },
+    {
+      "schema_name": "public",
+      "proname": "match_phase17_semantic_embeddings",
+      "arguments": "query_embedding vector, requested_representation text, requested_provider text, requested_model text, requested_model_version text, requested_dimension integer, result_limit integer, minimum_similarity real",
+      "security_definer": false,
+      "proconfig": [
+        "search_path=\"\""
+      ],
+      "definition": "CREATE OR REPLACE FUNCTION public.match_phase17_semantic_embeddings(query_embedding vector, requested_representation text, requested_provider text, requested_model text, requested_model_version text, requested_dimension integer, result_limit integer DEFAULT 25, minimum_similarity real DEFAULT 0)\n RETURNS TABLE(embedding_id uuid, asset_id uuid, filename text, representation_type text, raw_similarity real, scene_id uuid, event_id uuid, keyframe_id uuid, transcript_chunk_id bigint, ocr_observation_id uuid, time_start numeric, time_end numeric, source_document_id text, embedding_family text, embedding_dimension integer, evidence_source text)\n LANGUAGE sql\n STABLE\n SET search_path TO ''\nAS $function$\n  with compatible as materialized (\n    select e.*\n    from public.semantic_embeddings e\n    where e.active and not e.stale\n      and e.representation_type=requested_representation\n      and e.provider=requested_provider and e.model=requested_model\n      and e.model_version=requested_model_version\n      and e.dimensions=requested_dimension\n      and public.vector_dims(e.embedding)=requested_dimension\n      and public.vector_dims(query_embedding)=requested_dimension\n  ), scored as (\n    select e.*, (1-(e.embedding OPERATOR(public.<=>) query_embedding))::real similarity\n    from compatible e\n  )\n  select s.id,a.id,a.file_name,s.representation_type,s.similarity,\n    s.scene_id,s.event_id,s.keyframe_id,s.transcript_chunk_id,s.ocr_observation_id,\n    coalesce(tc.start_seconds,k.timestamp_seconds,o.timestamp_seconds,ev.start_time,sc.start_seconds)::numeric,\n    coalesce(tc.end_seconds,o.end_time,ev.end_time,sc.end_seconds)::numeric,\n    coalesce(s.metadata->>'source_unit_id',s.source_document_fingerprint),\n    concat_ws(':',s.provider,s.model,s.model_version),s.dimensions,'semantic_embeddings'\n  from scored s join public.assets a on a.id=s.asset_id\n  left join public.asset_scenes sc on sc.id=s.scene_id\n  left join public.asset_events ev on ev.id=s.event_id\n  left join public.asset_keyframes k on k.id=s.keyframe_id\n  left join public.asset_transcript_chunks tc on tc.id=s.transcript_chunk_id\n  left join public.ocr_observations o on o.id=s.ocr_observation_id\n  where s.similarity>=greatest(-1,least(coalesce(minimum_similarity,0),1))\n  order by s.similarity desc,s.id\n  limit greatest(1,least(coalesce(result_limit,25),100));\n$function$\n",
+      "execute_roles": [
+        "authenticated",
+        "service_role"
+      ]
+    }
+  ],
+  "policies": [
+    {
+      "table_name": "asset_access_control",
+      "rls_enabled": true,
+      "policyname": "asset_access_control_asset_permission_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(asset_access_control.asset_id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "asset_events",
+      "rls_enabled": true,
+      "policyname": "semantic_events_asset_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(asset_events.asset_id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "asset_keyframes",
+      "rls_enabled": true,
+      "policyname": "asset_keyframes_asset_permission_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(asset_keyframes.asset_id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "asset_scenes",
+      "rls_enabled": true,
+      "policyname": "asset_scenes_asset_permission_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(asset_scenes.asset_id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "asset_search_documents",
+      "rls_enabled": true,
+      "policyname": "asset_search_documents_asset_permission_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(asset_search_documents.asset_id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "asset_sources",
+      "rls_enabled": true,
+      "policyname": "asset_sources_asset_permission_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(asset_sources.asset_id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "asset_transcript_chunks",
+      "rls_enabled": true,
+      "policyname": "asset_transcript_chunks_asset_permission_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(asset_transcript_chunks.asset_id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "assets",
+      "rls_enabled": true,
+      "policyname": "assets_asset_permission_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(assets.id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "ocr_observations",
+      "rls_enabled": true,
+      "policyname": "ocr_observations_asset_permission_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(ocr_observations.asset_id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "scene_search_documents",
+      "rls_enabled": true,
+      "policyname": "scene_search_documents_asset_permission_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(scene_search_documents.asset_id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "search_document_builds",
+      "rls_enabled": true,
+      "policyname": "search_document_builds_asset_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(search_document_builds.asset_id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "search_document_concepts",
+      "rls_enabled": true,
+      "policyname": "search_document_concepts_asset_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(search_document_concepts.asset_id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "search_document_evidence",
+      "rls_enabled": true,
+      "policyname": "search_document_evidence_asset_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(search_document_evidence.asset_id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "rls_enabled": true,
+      "policyname": "semantic_embeddings_asset_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(semantic_embeddings.asset_id) AS can_user_view_asset)"
+    },
+    {
+      "table_name": "semantic_narratives",
+      "rls_enabled": true,
+      "policyname": "semantic_narratives_asset_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT",
+      "qual": "( SELECT private.can_user_view_asset(semantic_narratives.asset_id) AS can_user_view_asset)"
+    }
+  ],
+  "grants": [
+    {
+      "table_name": "asset_access_control",
+      "grantee": "service_role",
+      "privilege_type": "DELETE"
+    },
+    {
+      "table_name": "asset_access_control",
+      "grantee": "service_role",
+      "privilege_type": "INSERT"
+    },
+    {
+      "table_name": "asset_access_control",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "asset_access_control",
+      "grantee": "service_role",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "asset_access_control",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "asset_access_control",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "asset_access_control",
+      "grantee": "service_role",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "table_name": "asset_events",
+      "grantee": "anon",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "asset_events",
+      "grantee": "anon",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "asset_events",
+      "grantee": "authenticated",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "asset_events",
+      "grantee": "authenticated",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "asset_events",
+      "grantee": "authenticated",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "asset_events",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "asset_events",
+      "grantee": "service_role",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "asset_events",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "asset_events",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "asset_keyframes",
+      "grantee": "service_role",
+      "privilege_type": "DELETE"
+    },
+    {
+      "table_name": "asset_keyframes",
+      "grantee": "service_role",
+      "privilege_type": "INSERT"
+    },
+    {
+      "table_name": "asset_keyframes",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "asset_keyframes",
+      "grantee": "service_role",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "asset_keyframes",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "asset_keyframes",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "asset_keyframes",
+      "grantee": "service_role",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "table_name": "asset_scenes",
+      "grantee": "service_role",
+      "privilege_type": "DELETE"
+    },
+    {
+      "table_name": "asset_scenes",
+      "grantee": "service_role",
+      "privilege_type": "INSERT"
+    },
+    {
+      "table_name": "asset_scenes",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "asset_scenes",
+      "grantee": "service_role",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "asset_scenes",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "asset_scenes",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "asset_scenes",
+      "grantee": "service_role",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "table_name": "asset_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "DELETE"
+    },
+    {
+      "table_name": "asset_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "INSERT"
+    },
+    {
+      "table_name": "asset_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "asset_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "asset_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "asset_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "asset_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "table_name": "asset_sources",
+      "grantee": "authenticated",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "asset_sources",
+      "grantee": "authenticated",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "asset_sources",
+      "grantee": "authenticated",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "asset_sources",
+      "grantee": "service_role",
+      "privilege_type": "DELETE"
+    },
+    {
+      "table_name": "asset_sources",
+      "grantee": "service_role",
+      "privilege_type": "INSERT"
+    },
+    {
+      "table_name": "asset_sources",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "asset_sources",
+      "grantee": "service_role",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "asset_sources",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "asset_sources",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "asset_sources",
+      "grantee": "service_role",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "table_name": "asset_transcript_chunks",
+      "grantee": "service_role",
+      "privilege_type": "DELETE"
+    },
+    {
+      "table_name": "asset_transcript_chunks",
+      "grantee": "service_role",
+      "privilege_type": "INSERT"
+    },
+    {
+      "table_name": "asset_transcript_chunks",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "asset_transcript_chunks",
+      "grantee": "service_role",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "asset_transcript_chunks",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "asset_transcript_chunks",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "asset_transcript_chunks",
+      "grantee": "service_role",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "table_name": "assets",
+      "grantee": "authenticated",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "assets",
+      "grantee": "authenticated",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "assets",
+      "grantee": "authenticated",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "assets",
+      "grantee": "service_role",
+      "privilege_type": "DELETE"
+    },
+    {
+      "table_name": "assets",
+      "grantee": "service_role",
+      "privilege_type": "INSERT"
+    },
+    {
+      "table_name": "assets",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "assets",
+      "grantee": "service_role",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "assets",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "assets",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "assets",
+      "grantee": "service_role",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "table_name": "ocr_observations",
+      "grantee": "service_role",
+      "privilege_type": "DELETE"
+    },
+    {
+      "table_name": "ocr_observations",
+      "grantee": "service_role",
+      "privilege_type": "INSERT"
+    },
+    {
+      "table_name": "ocr_observations",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "ocr_observations",
+      "grantee": "service_role",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "ocr_observations",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "ocr_observations",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "ocr_observations",
+      "grantee": "service_role",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "table_name": "scene_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "DELETE"
+    },
+    {
+      "table_name": "scene_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "INSERT"
+    },
+    {
+      "table_name": "scene_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "scene_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "scene_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "scene_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "scene_search_documents",
+      "grantee": "service_role",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "table_name": "search_document_builds",
+      "grantee": "anon",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "search_document_builds",
+      "grantee": "anon",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "search_document_builds",
+      "grantee": "authenticated",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "search_document_builds",
+      "grantee": "authenticated",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "search_document_builds",
+      "grantee": "authenticated",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "search_document_builds",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "search_document_builds",
+      "grantee": "service_role",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "search_document_builds",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "search_document_builds",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "search_document_concepts",
+      "grantee": "anon",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "search_document_concepts",
+      "grantee": "anon",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "search_document_concepts",
+      "grantee": "authenticated",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "search_document_concepts",
+      "grantee": "authenticated",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "search_document_concepts",
+      "grantee": "authenticated",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "search_document_concepts",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "search_document_concepts",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "search_document_concepts",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "search_document_evidence",
+      "grantee": "anon",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "search_document_evidence",
+      "grantee": "anon",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "search_document_evidence",
+      "grantee": "authenticated",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "search_document_evidence",
+      "grantee": "authenticated",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "search_document_evidence",
+      "grantee": "authenticated",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "search_document_evidence",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "search_document_evidence",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "search_document_evidence",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "grantee": "anon",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "grantee": "anon",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "grantee": "authenticated",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "grantee": "authenticated",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "grantee": "authenticated",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "grantee": "service_role",
+      "privilege_type": "INSERT"
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "grantee": "service_role",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "grantee": "service_role",
+      "privilege_type": "UPDATE"
+    },
+    {
+      "table_name": "semantic_narratives",
+      "grantee": "anon",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "semantic_narratives",
+      "grantee": "anon",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "semantic_narratives",
+      "grantee": "authenticated",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "semantic_narratives",
+      "grantee": "authenticated",
+      "privilege_type": "SELECT"
+    },
+    {
+      "table_name": "semantic_narratives",
+      "grantee": "authenticated",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "semantic_narratives",
+      "grantee": "service_role",
+      "privilege_type": "REFERENCES"
+    },
+    {
+      "table_name": "semantic_narratives",
+      "grantee": "service_role",
+      "privilege_type": "TRIGGER"
+    },
+    {
+      "table_name": "semantic_narratives",
+      "grantee": "service_role",
+      "privilege_type": "TRUNCATE"
+    }
+  ]
+}

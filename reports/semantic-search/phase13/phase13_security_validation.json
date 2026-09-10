@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-08-25T02:20:47.894Z",
+  "status": "PASS",
+  "trusted_metadata_backend_owned": true,
+  "arbitrary_user_plan_write_denied": true,
+  "write_test": {
+    "denied": true,
+    "status": 400,
+    "detail": "{\"message\":\"Failed to run sql query: ERROR:  42501: permission denied for table search_queries\\nHINT:  Grant the required privileges to the current role with: GRANT INSERT ON public.search_queries TO authenticated;\\n\"}"
+  },
+  "rls_weakened": false,
+  "retrieval_performed": false,
+  "ranking_performed": false
+}

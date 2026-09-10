@@ -1,0 +1,180 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0571.MP4, single scene, 4.1 seconds",
+      "evidence": [
+        "asset_id and filename IMG_0571.MP4 provided",
+        "scene_index 0, start 0.0 end 4.1 seconds"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical video clip showing a laser facial treatment session",
+      "evidence": [
+        "two keyframes show consistent setting of practitioner treating patient with laser device"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene of ~4 seconds",
+      "evidence": [
+        "scene metadata start_seconds 0.0 to end_seconds 4.1, only one scene listed"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One practitioner performing treatment on one reclining patient",
+      "evidence": [
+        "person in teal scrubs, mask, gloves, laser glasses holding device near second person's face",
+        "second person lying down wearing hairnet and eye shields, passive recipient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner: dark hair in bun, teal scrubs, mask, dark laser glasses, gloves, smartwatch; patient: older adult with hairnet, glasses/metal eye shields, purple towel",
+      "evidence": [
+        "visible teal scrub top with name text, dark tinted safety glasses, blue surgical mask, white gloves, black smartwatch on wrist",
+        "patient's face shows visible skin texture, wearing metal eye shield over glasses, blue hairnet, purple towel around neck"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's facial area including cheek, nose, mouth, and periorbital region visible",
+      "evidence": [
+        "close-up of patient's face with nose, mouth, cheek and eye area exposed under metal shield"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure type not specified in supplied text",
+      "evidence": [
+        "no named procedure present in readable_text_detected or spoken_content fields",
+        "only generic laser handpiece and fiber optic cable visible, insufficient to name a specific clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner holding laser handpiece near patient's face, cable guided by other hand",
+      "evidence": [
+        "handpiece with illuminated yellow tip positioned near patient's upper lip/nose area in both frames",
+        "practitioner's other gloved hand holds orange cable aloft"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Direct clinician-patient interaction during treatment",
+      "evidence": [
+        "practitioner leaning over patient, physical proximity of instrument to patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's skin shows visible texture and aging signs; metal eye shield used for protection",
+      "evidence": [
+        "visible fine lines and skin texture on patient's cheek and forehead in close-up",
+        "metallic eye shield placed over patient's eyes, indicating light/laser safety precaution"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room with medical cart and instrument case",
+      "evidence": [
+        "white walls, red accent strip, medical cart with tray, glasses case and instrument case visible in background",
+        "blue disposable drape/pillow cover on treatment chair"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing focused on practitioner and patient's upper body/face",
+      "evidence": [
+        "portrait orientation 720x1280 dimensions",
+        "tight framing centered on face and hands with laser device"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned upper frame leaning over patient occupying lower/center frame",
+      "evidence": [
+        "practitioner's face and torso in upper portion of both images, patient's face centered lower in frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected despite audio track present",
+      "evidence": [
+        "spoken_content field is empty array",
+        "audio_stream marked true but no transcript supplied"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial name text visible on practitioner's scrub top",
+      "evidence": [
+        "text reading 'DR LEIVA MAR...' partially visible on teal scrub top in both images"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No explicit marketing indicators identified",
+      "evidence": [
+        "no captions, logos, or promotional text detected in readable_text_detected field beyond scrub name text"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts a clinical skin/facial treatment session using a laser device",
+      "evidence": [
+        "visual elements of laser handpiece, safety glasses, and facial focus indicate a cosmetic/dermatological treatment context"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": [
+        "layer pertains to backend indexing, not visual content description"
+      ]
+    }
+  ],
+  "narrative": "A practitioner in teal scrubs, mask, and laser safety glasses holds an orange fiber-optic cable connected to a handheld laser device with a glowing yellow tip near a reclining patient's face. The patient wears protective metal eye shields, a blue hairnet, and has a purple towel draped around the neck, appearing to undergo a facial laser treatment in a clinical setting.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "ccfc6b3d-03fa-4261-b8df-cb23fe52716f",
+  "image_count": 2
+}

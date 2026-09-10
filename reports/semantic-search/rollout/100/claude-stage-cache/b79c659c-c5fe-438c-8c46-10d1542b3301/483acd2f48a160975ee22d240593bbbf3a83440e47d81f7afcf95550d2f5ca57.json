@@ -1,0 +1,170 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0911.MP4",
+      "evidence": [
+        "filename IMG_0911.MP4, asset_id b79c659c-c5fe-438c-8c46-10d1542b3301, MP4/h264, 1280x720, 19.1s duration"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clinic scene, close-up on forehead/hairline area",
+      "evidence": [
+        "One scene spanning 0-19.1s with two keyframes showing consistent setting, subjects, and framing"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene, camera moves closer between keyframes",
+      "evidence": [
+        "scene_index 0, start 0.0s end 19.1s, two keyframes showing a wider shot followed by a tighter close-up of the same pose"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining male patient and standing clinician in blue scrubs",
+      "evidence": [
+        "One person lies back with eyes closed under a blanket/drape; another person wearing blue scrub top, watch, and lanyard stands over them holding an instrument to the forehead"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient: short dark hair, beard stubble; clinician: blue scrubs, watch, lanyard, bracelet",
+      "evidence": [
+        "Reclining man has short dark hair and facial stubble, eyes closed",
+        "Standing person wears navy blue scrub top, a dark wristwatch, a beaded bracelet, and a lanyard with a badge/pendant"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forehead, hairline, and face visible",
+      "evidence": [
+        "Close-up keyframes show the man's forehead, hairline, eyes, nose, and lower face"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure being performed with handheld device",
+      "evidence": [
+        "A metallic handheld device is held against the forehead/hairline by the clinician, but no procedure name is present in the supplied text or readable text/spoken content"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applies handheld device to patient's forehead/hairline",
+      "evidence": [
+        "Both keyframes show the clinician's hand holding a silver cylindrical device in contact with the patient's upper forehead/hairline"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-patient interaction",
+      "evidence": [
+        "One individual actively applies an instrument to a second, passive, reclined individual, indicating a caregiver-patient relationship"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient reclined with eyes closed, drape/blanket over torso",
+      "evidence": [
+        "Man lies back with eyes closed, gray drape covering torso, textured blanket over lower body, blue paper/plastic sheeting visible near headrest"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinic room with blinds",
+      "evidence": [
+        "Background shows horizontal window blinds and a light-colored wall, consistent with a clinic or treatment room; a folded towel is visible at right"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld close-up shots, vertical framing",
+      "evidence": [
+        "Vertical (portrait) 720x1280-oriented framing typical of phone video, tight close-up angled shots of the forehead across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject centered, clinician's hands and device dominate upper frame",
+      "evidence": [
+        "Patient's face and the clinician's hands/instrument are centered in frame, with the device positioned at the visual focal point near the forehead"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is empty despite audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected field is empty"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing intent indicated",
+      "evidence": [
+        "No text overlays, captions, or branding present in supplied evidence to indicate marketing usage"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinic visit showing hands-on care of a reclined patient",
+      "evidence": [
+        "Visuals depict a clinical setting with a clinician actively using a handheld instrument on a reclined, relaxed patient"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a distinct visual layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person reclines in a treatment chair with eyes closed while a clinician in blue scrubs holds a metallic handheld device against their forehead/hairline area. The setting appears to be a medical or aesthetic clinic room with blinds visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "b79c659c-c5fe-438c-8c46-10d1542b3301",
+  "image_count": 2
+}

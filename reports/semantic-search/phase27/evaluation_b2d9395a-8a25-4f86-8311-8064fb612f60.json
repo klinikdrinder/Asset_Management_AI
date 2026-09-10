@@ -1,0 +1,2289 @@
+{
+  "implementation_version": "kdi_accuracy_measurement_v1",
+  "evaluation_contract": "kdi_semantic_accuracy_v1",
+  "benchmark_version": "kdi_semantic_benchmark_v1",
+  "benchmark_run_id": "b2d9395a-8a25-4f86-8311-8064fb612f60",
+  "gold_version": "kdi_gold_answers_v1",
+  "gold_fingerprint": "979389e6b045a4913f9e82b96687e46a65e789753e2598be601cb3a6d5663763",
+  "spec_version": "kdi_semantic_18_layer_v1",
+  "spec_fingerprint": "6da50e2153f6fcb6c9ef27c308ad44d0d2024e702e3faad47586b0068ba64fd7",
+  "evaluated_at": "2026-08-31T17:11:39.734Z",
+  "gain_mapping": {
+    "EXACT_RELEVANT": 3,
+    "RELEVANT": 2,
+    "PARTIAL_RELEVANT": 1,
+    "NOT_RELEVANT": 0,
+    "EXCLUDED": 0
+  },
+  "unresolved_policy": "UNJUDGED_NOT_NEGATIVE",
+  "case_pass_policy": "Retrieval: at least one strict relevant result (lenient when no strict gold), or empty output for zero-result gold; no EXCLUDED exposure. Control: every certified behavioral expectation observable in the run artifact must match.",
+  "counts": {
+    "total": 40,
+    "retrieval": 27,
+    "control_only": 13
+  },
+  "cases": [
+    {
+      "case_id": "C01",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C02",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C03",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C04",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C05",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C06",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C07",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C08",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C09",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C10",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C11",
+      "evaluation_modes": [
+        "RESULT_COUNT_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESULT_COUNT_CONTROL",
+          "pass": true,
+          "expected": {
+            "requested": 3,
+            "effective": 3
+          },
+          "actual": {
+            "requested": 3,
+            "effective": 3
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C12",
+      "evaluation_modes": [
+        "RESULT_COUNT_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESULT_COUNT_CONTROL",
+          "pass": true,
+          "expected": {
+            "requested": 1,
+            "effective": 1
+          },
+          "actual": {
+            "requested": 1,
+            "effective": 1
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C13",
+      "evaluation_modes": [
+        "RESULT_COUNT_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESULT_COUNT_CONTROL",
+          "pass": true,
+          "expected": {
+            "requested": 7,
+            "effective": 7
+          },
+          "actual": {
+            "requested": 7,
+            "effective": 7
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C14",
+      "evaluation_modes": [
+        "PARSER_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "PARSER_CONTROL",
+          "pass": true,
+          "expected": {
+            "age": 30,
+            "age_role": "SEMANTIC_REQUIREMENT",
+            "requested_count": null,
+            "exact_age_supported_assets": [],
+            "unknown_age_not_false": true
+          },
+          "actual": {
+            "requested_count": null,
+            "age": 30,
+            "graft_quantity": null,
+            "media_type": "ANY"
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C15",
+      "evaluation_modes": [
+        "PARSER_CONTROL",
+        "RESULT_COUNT_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "PARSER_CONTROL",
+          "pass": true,
+          "expected": {
+            "age": 30,
+            "age_role": "SEMANTIC_REQUIREMENT",
+            "requested_count": 3,
+            "media_type": "VIDEO",
+            "exact_age_supported_assets": [],
+            "unknown_age_not_false": true
+          },
+          "actual": {
+            "requested_count": 3,
+            "age": 30,
+            "graft_quantity": null,
+            "media_type": "VIDEO"
+          }
+        },
+        {
+          "mode": "RESULT_COUNT_CONTROL",
+          "pass": true,
+          "expected": {
+            "requested": 3,
+            "effective": 3
+          },
+          "actual": {
+            "requested": 3,
+            "effective": 3
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C16",
+      "evaluation_modes": [
+        "PARSER_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "PARSER_CONTROL",
+          "pass": true,
+          "expected": {
+            "graft_quantity": 3000,
+            "quantity_role": "PROCEDURE_QUANTITY",
+            "requested_count": null,
+            "exact_quantity_supported_assets": [],
+            "unknown_quantity_not_false": true
+          },
+          "actual": {
+            "requested_count": null,
+            "age": null,
+            "graft_quantity": 3000,
+            "media_type": "ANY"
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C17",
+      "evaluation_modes": [
+        "PARSER_CONTROL",
+        "RESULT_COUNT_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "PARSER_CONTROL",
+          "pass": true,
+          "expected": {
+            "graft_quantity": 3000,
+            "quantity_role": "PROCEDURE_QUANTITY",
+            "requested_count": 3,
+            "media_type": "VIDEO",
+            "exact_quantity_supported_assets": [],
+            "unknown_quantity_not_false": true
+          },
+          "actual": {
+            "requested_count": 3,
+            "age": null,
+            "graft_quantity": 3000,
+            "media_type": "VIDEO"
+          }
+        },
+        {
+          "mode": "RESULT_COUNT_CONTROL",
+          "pass": true,
+          "expected": {
+            "requested": 3,
+            "effective": 3
+          },
+          "actual": {
+            "requested": 3,
+            "effective": 3
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C18",
+      "evaluation_modes": [
+        "FILTER_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "FILTER_CONTROL",
+          "pass": true,
+          "expected": {
+            "excluded_concept": "NECK",
+            "filter_strength": "HARD_EXCLUSION",
+            "positive_subject": null,
+            "neck_must_not_be_positive": true
+          },
+          "actual": {
+            "fingerprint": "8e7edea3ceb1eb003a9d3aca14a002d7536b2448bbf53256a4ca07f749d77797",
+            "positive": [],
+            "negative": [
+              "NECK"
+            ],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C19",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C20",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C21",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C22",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C23",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C24",
+      "evaluation_modes": [
+        "RESPONSE_STATE"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESPONSE_STATE",
+          "pass": false,
+          "failure": "STATE_MISMATCH",
+          "expected": {
+            "field": "SPECIFIC_INJECTABLE_TREATMENT",
+            "semantic_state": "UNKNOWN",
+            "canonical_response_state": "CANNOT_RELIABLY_DETERMINE",
+            "evidence": [
+              {
+                "filename": "IMG_0531.MP4",
+                "source_type": "NARRATIVE",
+                "source_id": "e005faae-b5f7-59e2-926c-794c5b56c616"
+              },
+              {
+                "filename": "IMG_3429.MP4",
+                "source_type": "NARRATIVE",
+                "source_id": "8498f993-0213-5ebe-ac2e-ce04c3145ff3"
+              }
+            ],
+            "prohibited_inferences": [
+              "BOTOX",
+              "FILLER",
+              "PRP"
+            ]
+          },
+          "actual": "GROUNDED"
+        }
+      ],
+      "pass": false,
+      "failure_signals": [
+        "STATE_MISMATCH"
+      ]
+    },
+    {
+      "case_id": "C25",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          }
+        },
+        "mrr": 0,
+        "ndcg3": null,
+        "ndcg5": null,
+        "zero_result_expected": true,
+        "zero_result_correct": true,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": []
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C26",
+      "evaluation_modes": [
+        "RESPONSE_STATE"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESPONSE_STATE",
+          "pass": false,
+          "failure": "STATE_MISMATCH",
+          "expected": {
+            "field": "SPEECH_TRANSCRIPT_AUDIO",
+            "semantic_state": "NOT_APPLICABLE",
+            "evidence": [
+              {
+                "filename": "DSC03753.JPG",
+                "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+                "source_type": "ASSET_SEMANTIC_LAYER",
+                "source_id": "ff183915-383e-4a06-8cff-e65447e790d3",
+                "semantic_state": "NOT_APPLICABLE",
+                "applicability": "NOT_APPLICABLE"
+              },
+              {
+                "filename": "DSC08097.JPG",
+                "asset_id": "6215ad8b-12be-4a8e-bc49-f6b3dcf55c21",
+                "source_type": "ASSET_SEMANTIC_LAYER",
+                "source_id": "9a7f0cd1-370c-4b38-bbd7-69fe02cf2524",
+                "semantic_state": "NOT_APPLICABLE",
+                "applicability": "NOT_APPLICABLE"
+              }
+            ]
+          },
+          "actual": "GROUNDED"
+        }
+      ],
+      "pass": false,
+      "failure_signals": [
+        "STATE_MISMATCH"
+      ]
+    },
+    {
+      "case_id": "C27",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C28",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C29",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          }
+        },
+        "mrr": 0,
+        "ndcg3": null,
+        "ndcg5": null,
+        "zero_result_expected": true,
+        "zero_result_correct": true,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": []
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C30",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          }
+        },
+        "mrr": 0,
+        "ndcg3": null,
+        "ndcg5": null,
+        "zero_result_expected": true,
+        "zero_result_correct": true,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": []
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C31",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          }
+        },
+        "mrr": 0,
+        "ndcg3": null,
+        "ndcg5": null,
+        "zero_result_expected": true,
+        "zero_result_correct": true,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": []
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C32",
+      "evaluation_modes": [
+        "RESPONSE_STATE"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESPONSE_STATE",
+          "pass": true,
+          "expected": "GROUNDED",
+          "actual": "GROUNDED"
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C33",
+      "evaluation_modes": [
+        "RESPONSE_STATE"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESPONSE_STATE",
+          "pass": true,
+          "expected": "GROUNDED",
+          "actual": "GROUNDED"
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C34",
+      "evaluation_modes": [
+        "AUTHORIZATION_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "AUTHORIZATION_CONTROL",
+          "pass": true,
+          "expected": {
+            "benchmark_principal_id": "00000000-0000-4000-8000-000000000099",
+            "principal_kind": "ISOLATED_PHASE18_TEST_FIXTURE",
+            "production_principal": false,
+            "authorization_before_exposure": true,
+            "unknown_or_unauthorized_behavior": "FAIL_CLOSED",
+            "authorized_asset_ids": [],
+            "production_acl_modified": false
+          },
+          "actual": {
+            "returned_asset_ids": [],
+            "fail_closed": true
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C35",
+      "evaluation_modes": [
+        "FILTER_CONTROL",
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [
+        {
+          "mode": "FILTER_CONTROL",
+          "pass": false,
+          "failure": "FILTER_MISMATCH",
+          "expected": {},
+          "actual": {
+            "filter_semantics": "NOT_CAPTURED"
+          }
+        }
+      ],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT",
+        "FILTER_MISMATCH"
+      ]
+    },
+    {
+      "case_id": "C36",
+      "evaluation_modes": [
+        "CONVERSATION_CONTROL",
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [
+        {
+          "mode": "CONVERSATION_CONTROL",
+          "pass": false,
+          "failure": "CONVERSATION_MISMATCH",
+          "expected": {},
+          "actual": [
+            {
+              "mode": "NEW_QUERY",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            },
+            {
+              "mode": "NARROW",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            },
+            {
+              "mode": "UNRESOLVED",
+              "status": "ORDINAL_OUT_OF_RANGE",
+              "referenced_asset_id": null
+            }
+          ]
+        }
+      ],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT",
+        "CONVERSATION_MISMATCH"
+      ]
+    },
+    {
+      "case_id": "C37",
+      "evaluation_modes": [
+        "CONVERSATION_CONTROL",
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [
+        {
+          "mode": "CONVERSATION_CONTROL",
+          "pass": true,
+          "expected": [
+            {
+              "reference": null,
+              "target": "show me injection videos"
+            },
+            {
+              "reference": null,
+              "target": "injection videos count 2"
+            }
+          ],
+          "actual": [
+            {
+              "mode": "NEW_QUERY",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            },
+            {
+              "mode": "CONTINUE",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            }
+          ]
+        }
+      ],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C38",
+      "evaluation_modes": [
+        "CONVERSATION_CONTROL",
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [
+        {
+          "mode": "CONVERSATION_CONTROL",
+          "pass": true,
+          "expected": [
+            {
+              "reference": null,
+              "target": "show me injection videos"
+            },
+            {
+              "reference": null,
+              "target": "lower-face injection"
+            }
+          ],
+          "actual": [
+            {
+              "mode": "NEW_QUERY",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            },
+            {
+              "mode": "MODIFY",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            }
+          ]
+        }
+      ],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    },
+    {
+      "case_id": "C39",
+      "evaluation_modes": [
+        "CONVERSATION_CONTROL",
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [
+        {
+          "mode": "CONVERSATION_CONTROL",
+          "pass": false,
+          "failure": "CONVERSATION_MISMATCH",
+          "expected": {},
+          "actual": [
+            {
+              "mode": "NEW_QUERY",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            },
+            {
+              "mode": "UNRESOLVED",
+              "status": "ORDINAL_OUT_OF_RANGE",
+              "referenced_asset_id": null
+            }
+          ]
+        }
+      ],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT",
+        "CONVERSATION_MISMATCH"
+      ]
+    },
+    {
+      "case_id": "C40",
+      "evaluation_modes": [
+        "CONVERSATION_CONTROL",
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          }
+        },
+        "mrr": 0,
+        "ndcg3": 0,
+        "ndcg5": 0,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "NO_RELEVANT_RESULT"
+        ]
+      },
+      "controls": [
+        {
+          "mode": "CONVERSATION_CONTROL",
+          "pass": true,
+          "expected": [
+            {
+              "reference": null,
+              "target": "show me injection videos"
+            },
+            {
+              "reference": null,
+              "target": "injection excluding neck"
+            }
+          ],
+          "actual": [
+            {
+              "mode": "NEW_QUERY",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            },
+            {
+              "mode": "NARROW",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            }
+          ]
+        }
+      ],
+      "pass": false,
+      "failure_signals": [
+        "NO_RELEVANT_RESULT"
+      ]
+    }
+  ],
+  "metrics": {
+    "top1_exact": 0,
+    "top1_strict": 0,
+    "hit1": 0,
+    "hit3": 0,
+    "hit5": 0,
+    "strict_precision1": 0,
+    "strict_precision3": 0,
+    "strict_precision5": 0,
+    "lenient_precision1": 0,
+    "lenient_precision3": 0,
+    "lenient_precision5": 0,
+    "strict_recall1": 0,
+    "strict_recall3": 0,
+    "strict_recall5": 0,
+    "lenient_recall1": 0,
+    "lenient_recall3": 0,
+    "lenient_recall5": 0,
+    "mrr": 0,
+    "ndcg3": 0,
+    "ndcg5": 0,
+    "judgment_coverage1": 1,
+    "judgment_coverage3": 1,
+    "judgment_coverage5": 1,
+    "unjudged_rate1": 0,
+    "unjudged_rate3": 0,
+    "unjudged_rate5": 0,
+    "zero_result": {
+      "passed": 4,
+      "total": 4
+    },
+    "excluded_result_exposures": [],
+    "control_categories": {
+      "PARSER_CONTROL": {
+        "passed": 4,
+        "total": 4,
+        "accuracy": 1
+      },
+      "RESULT_COUNT_CONTROL": {
+        "passed": 5,
+        "total": 5,
+        "accuracy": 1
+      },
+      "FILTER_CONTROL": {
+        "passed": 1,
+        "total": 2,
+        "accuracy": 0.5
+      },
+      "RESPONSE_STATE": {
+        "passed": 2,
+        "total": 4,
+        "accuracy": 0.5
+      },
+      "CONVERSATION_CONTROL": {
+        "passed": 3,
+        "total": 5,
+        "accuracy": 0.6
+      },
+      "AUTHORIZATION_CONTROL": {
+        "passed": 1,
+        "total": 1,
+        "accuracy": 1
+      }
+    },
+    "case_pass": {
+      "passed": 15,
+      "total": 40,
+      "rate": 0.375
+    },
+    "failure_symptoms": {
+      "NO_RELEVANT_RESULT": 23,
+      "STATE_MISMATCH": 2,
+      "FILTER_MISMATCH": 1,
+      "CONVERSATION_MISMATCH": 2
+    }
+  }
+}

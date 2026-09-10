@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video asset with technical metadata",
+      "evidence": [
+        "filename IMG_3418.MP4, 1280x720, 30fps, h264, 15.4s duration with audio stream"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical documentation clip of a skin site",
+      "evidence": [
+        "Single-scene video sampled by two keyframes showing a close-up of a person's shoulder/neck skin with a gloved clinician's hand present"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, single scene_index 0 spanning the clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Seated patient and gloved clinician",
+      "evidence": [
+        "A person faces away from camera wearing a black headband; a second person's gloved arm and wristwatch enter frame from above, consistent with a caregiver/clinician role"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark-haired person in black headband and pink garment",
+      "evidence": [
+        "Visible dark hair pulled back, black headband/cap, pink top on the person facing away from camera",
+        "Gloved arm with a wristwatch belonging to the second individual"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Posterior neck, shoulder, and upper back skin",
+      "evidence": [
+        "Close-up view of the back of the neck, shoulder blade area, and upper back skin surface"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied evidence",
+      "evidence": [
+        "Gloved hand and an instrument are visible near the skin, but no procedure name is present in the supplied text or narrative, so the specific treatment cannot be determined"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hand working near marked skin area",
+      "evidence": [
+        "A gloved hand holding an instrument is positioned directly above/near the marked skin on the shoulder"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned behind/above seated patient",
+      "evidence": [
+        "The gloved arm extends into frame from behind and above the seated person, indicating a caregiver-patient spatial relationship"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small skin marks with dried discharge",
+      "evidence": [
+        "Several small linear marks resembling closed wounds/sutures on the upper back/neck skin",
+        "Patches of dried reddish-brown to orange discharge or crusting near the marks"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly established",
+      "evidence": [
+        "Per-scene evaluation marked ENVIRONMENT as UNKNOWN despite background objects such as a blue-draped table and tray visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up handheld framing",
+      "evidence": [
+        "Tight vertical close-up composition centered on the shoulder/neck skin area across the two sampled keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient fills foreground, clinician's arm upper right",
+      "evidence": [
+        "Patient's head, neck, and shoulder occupy the left/lower frame; the gloved arm and instrument enter from the upper right"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no meaningful speech",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, but transcript_state NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "On-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 1 recorded for this asset"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not established",
+      "evidence": [
+        "No caption, branding, or usage context is present in the supplied evidence to determine marketing use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close inspection of a healing skin site by a gloved individual",
+      "evidence": [
+        "Combined visual content of marked/discharging skin with a gloved hand and instrument supports a documentation-style clinical narrative"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a directly observable visual/audio layer",
+      "evidence": [
+        "Embeddings are a derived indexing artifact, not something visually or audibly present in the asset"
+      ]
+    }
+  ],
+  "narrative": "The images show a close-up of the back of a person's neck and shoulder with several small skin marks, including sutures/closures and areas of dried reddish-brown discharge, while a gloved hand holding an instrument reaches in from above. The person, wearing a black headband and pink garment, sits facing away from the camera in a room with a blue-draped table and an instrument tray visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "a1f5685e-e72a-4535-8ff9-2d11644060d1",
+  "image_count": 1
+}

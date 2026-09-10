@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 asset with technical metadata",
+      "evidence": [
+        "filename IMG_0529.MP4, duration 15.83s, 1280x720, h264, fps 30/1, decoded_locally true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical close-up video",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, one scene result covering the whole asset"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across two keyframes",
+      "evidence": [
+        "scene_index 0 spans the full 15.83s duration; narrative notes syringe position across the two keyframes"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined individual and a gloved teal-uniformed attendant",
+      "evidence": [
+        "woman reclined wearing hairnet and towel; second person in teal scrub top with gloved hand holding a syringe"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue hairnet, closed eyes, nasal bandage, purple towel",
+      "evidence": [
+        "visible blue hairnet covering hair, eyes closed, white bandage across nose bridge, purple/lilac towel over shoulders"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face and nose region visible",
+      "evidence": [
+        "frontal facial view showing nose, eyes, cheeks, chin with bandage over nasal area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "only a gloved hand holding a syringe near a bandaged nose is visible; no named procedure appears in supplied text, so nature of treatment cannot be determined"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Syringe held close to bandaged nose",
+      "evidence": [
+        "gloved hand positions a syringe near the nasal bandage across the two keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Attendant positioned over reclined patient",
+      "evidence": [
+        "teal-uniformed person leans over the reclined woman, hand near her face with syringe"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Nasal bandage and gloved instrument handling",
+      "evidence": [
+        "white bandage/tape across nose bridge; latex glove on hand holding a syringe-like instrument"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly determinable",
+      "evidence": [
+        "per-scene ENVIRONMENT marked UNKNOWN despite visible bed, pillow, and dark equipment in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing of face and hand",
+      "evidence": [
+        "tight vertical framing centered on the woman's face and the attendant's gloved hand"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face-centered vertical composition",
+      "evidence": [
+        "subject's face fills lower-left frame, attendant's arm and hand occupy upper-right frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Audio track with meaningful speech present",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, transcript_state MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0; per-scene OCR_VISIBLE_TEXT FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "per-scene MARKETING_CONTENT_USAGE marked UNKNOWN; no branding or promotional cues supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative meaning not determinable",
+      "evidence": [
+        "per-scene SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a content layer for this asset type",
+      "evidence": [
+        "per-scene SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A woman with closed eyes lies reclined on a treatment bed wearing a blue hairnet and a purple towel draped over her shoulders, with a bandage across her nose. A person in a teal uniform and white gloves holds a syringe positioned close to the bandaged area of her nose.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "a17d440c-6f1a-4ae8-86bb-8143745a8c1f",
+  "image_count": 1
+}

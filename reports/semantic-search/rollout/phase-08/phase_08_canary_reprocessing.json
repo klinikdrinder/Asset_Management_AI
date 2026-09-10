@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "run_id": "eb033c75-7964-453e-ba2e-b10a659375e0",
+  "configuration_fingerprint": "ab35045338f6b75018e0e31c2521f2aaf86694607dd73963022fce8907d99f4c",
+  "captured": 4,
+  "expected": 5,
+  "missed": [
+    "clinical-room environment"
+  ],
+  "clinical_false_positives": 0,
+  "unsupported_accepted_observations": 0,
+  "invalid_evidence": 0,
+  "exact_procedure_promoted": false,
+  "search_tests": [
+    {
+      "query": "person or body part visible",
+      "canary_returned": true
+    },
+    {
+      "query": "handheld instrument and protective gloves visible",
+      "canary_returned": true
+    },
+    {
+      "query": "exposed body region visible",
+      "canary_returned": true
+    },
+    {
+      "query": "physical contact, holding, or manipulation visible",
+      "canary_returned": true
+    },
+    {
+      "query": "surgery",
+      "canary_returned": false
+    },
+    {
+      "query": "procedure",
+      "canary_returned": false
+    },
+    {
+      "query": "treatment",
+      "canary_returned": false
+    },
+    {
+      "query": "hair transplant",
+      "canary_returned": false
+    },
+    {
+      "query": "fue",
+      "canary_returned": false
+    },
+    {
+      "query": "implantation",
+      "canary_returned": false
+    },
+    {
+      "query": "extraction",
+      "canary_returned": false
+    }
+  ],
+  "database": {
+    "assets": 881,
+    "complete": 11,
+    "pending": 869,
+    "unsupported": 1,
+    "search_ready": 11
+  }
+}

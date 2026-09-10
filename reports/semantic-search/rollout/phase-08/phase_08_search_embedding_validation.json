@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "positive_queries": [
+    {
+      "query": "person or body part visible",
+      "canary_returned": true
+    },
+    {
+      "query": "handheld instrument and protective gloves visible",
+      "canary_returned": true
+    },
+    {
+      "query": "exposed body region visible",
+      "canary_returned": true
+    },
+    {
+      "query": "physical contact, holding, or manipulation visible",
+      "canary_returned": true
+    }
+  ],
+  "negative_queries": [
+    {
+      "query": "surgery",
+      "canary_returned": false
+    },
+    {
+      "query": "procedure",
+      "canary_returned": false
+    },
+    {
+      "query": "treatment",
+      "canary_returned": false
+    },
+    {
+      "query": "hair transplant",
+      "canary_returned": false
+    },
+    {
+      "query": "fue",
+      "canary_returned": false
+    },
+    {
+      "query": "implantation",
+      "canary_returned": false
+    },
+    {
+      "query": "extraction",
+      "canary_returned": false
+    }
+  ],
+  "search_grounding": "PASS",
+  "e5_model": "intfloat/multilingual-e5-small",
+  "e5_dimensions": 384,
+  "historical_rejected_surgery_excluded": true
+}

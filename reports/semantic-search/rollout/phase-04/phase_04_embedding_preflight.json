@@ -1,0 +1,55 @@
+{
+  "bundle": "kdi_embedding_bundle_v1",
+  "visual": {
+    "family": "VISUAL_ASSET",
+    "provider": "open_clip",
+    "model": "ViT-B-32",
+    "modelVersion": "laion2b_s34b_b79k",
+    "dimensions": 512,
+    "preprocessingVersion": "open_clip_preprocess_v1",
+    "normalizationVersion": "L2",
+    "activeForNewIndexing": true,
+    "metric": "cosine",
+    "sourceDocument": "canonical search document plus representative visual evidence"
+  },
+  "text": {
+    "family": "TEXT_SEMANTIC",
+    "provider": "sentence_transformers",
+    "model": "intfloat/multilingual-e5-small",
+    "modelVersion": "hf-main-pinned-runtime-v1",
+    "dimensions": 384,
+    "preprocessingVersion": "search_text_v1",
+    "normalizationVersion": "Unicode NFKC + whitespace v1",
+    "activeForNewIndexing": true,
+    "metric": "cosine",
+    "sourceDocument": "kdi_search_document_v1 normalized search text"
+  },
+  "historicalOllama": {
+    "dimensions": 1024,
+    "activeForNewIndexing": false,
+    "isolated": true
+  },
+  "checks": [
+    {
+      "name": "visual512",
+      "passed": true
+    },
+    {
+      "name": "text384",
+      "passed": true
+    },
+    {
+      "name": "text1024rejected",
+      "passed": true
+    },
+    {
+      "name": "visual384rejected",
+      "passed": true
+    },
+    {
+      "name": "unknownProviderRejected",
+      "passed": true
+    }
+  ],
+  "mixedDimensionRejection": true
+}

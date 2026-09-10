@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_1016.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_1016.MP4, duration 11.67s, 1280x720, h264, single scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result for GLOBAL_ASSET_UNDERSTANDING is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2; scene marked OBSERVED for TEMPORAL_SCENE_STRUCTURE"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Role of person not determinable",
+      "evidence": [
+        "Scene-level result for PEOPLE_ROLES is UNKNOWN; only one person visible with no role indicators"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman with hair bun, black headband, black cardigan, magenta top",
+      "evidence": [
+        "Keyframes show hair tied up under a black headband, black cardigan over a magenta strapless top, pearl earring visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, forehead, scalp area visible",
+      "evidence": [
+        "Keyframes show the woman's face, forehead, and head reclined against a headrest"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in evidence",
+      "evidence": [
+        "Scene-level result is UNKNOWN; no procedure name appears in supplied text, and gloves/instruments/scalp contact are not shown or named"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman reclines and appears to speak",
+      "evidence": [
+        "First frame shows closed slight smile, second frame shows open mouth as if speaking"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No interpersonal relationship shown",
+      "evidence": [
+        "Scene-level result for RELATIONSHIPS is FALSE; only one person appears in the keyframes"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining on medical-style sheeted table",
+      "evidence": [
+        "Blue medical sheeting draped over the table/headrest area, purple headrest pillow, woman reclined on it"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly determinable",
+      "evidence": [
+        "Scene-level result for ENVIRONMENT is UNKNOWN despite visible sheeting and marble-like floor/wall in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up selfie-style framing",
+      "evidence": [
+        "Both keyframes show a tight, near head-on framing typical of a handheld selfie angle"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject centered, face fills frame",
+      "evidence": [
+        "Woman's face and upper body are centered and dominate the vertical frame in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Audio present with meaningful speech",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, transcript_state MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0; scene-level OCR_VISIBLE_TEXT is FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level result for MARKETING_CONTENT_USAGE is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Personal video diary-style clip on a treatment table",
+      "evidence": [
+        "Scene narrative describes a woman reclining on a sheeted table, first smiling then speaking to camera"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable at content level",
+      "evidence": [
+        "Scene-level result for SEARCH_EMBEDDINGS is NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A woman with her hair in a bun under a black headband reclines on a treatment table draped in blue medical sheeting, wearing a black cardigan over a magenta top. Across the two keyframes she shifts from a closed, slight smile to an open mouth as if speaking.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "9bbf9a96-3de5-45f7-b12e-8ed6be84a5f8",
+  "image_count": 1
+}

@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_0625.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_0625.MP4, 1280x720, 13.93s, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical-setting clip, one scene",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 spanning a brief indoor interaction"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, two sampled moments",
+      "evidence": [
+        "Two keyframes show strap adjustment then a later moment with hand raised near the door"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Client seated; masked staff member standing behind",
+      "evidence": [
+        "One person seated wearing eye mask and drape; another in green scrubs, surgical mask, and gloves positioned behind/beside her adjusting a strap"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Long dark hair, black top; staff in green scrubs",
+      "evidence": [
+        "Seated person has long dark hair and wears a black top; staff member wears green scrubs, surgical mask, hair tied back, and white gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Head, hair, and scalp area visible",
+      "evidence": [
+        "Client's head, long hair, and back of head/scalp area visible under staff member's hands"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied evidence",
+      "evidence": [
+        "Scene-level TREATMENT_PROCEDURE marked UNKNOWN; gloves and contact with head do not by themselves name a procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff adjusts a strap/mask at client's head",
+      "evidence": [
+        "Gloved hand shown adjusting a strap near the back of the client's head; later hand raised near the door"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member positioned behind/beside seated client",
+      "evidence": [
+        "Staff member stands directly behind the seated, draped client, hands engaged with her head strap"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Disposable cape, gloves, mask, eye covering",
+      "evidence": [
+        "Blue/white disposable drape on client, white nitrile-type gloves, surgical mask on staff, black eye mask on client"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinic room with frosted glass door",
+      "evidence": [
+        "Patterned wall, wood-textured panel, and frosted glass door with floral design visible in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical handheld-style framing, medium shot",
+      "evidence": [
+        "Vertical 720-width frame composition centered on client and staff member at medium distance"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Client foreground-left, staff member right side",
+      "evidence": [
+        "Seated client occupies lower-left/center of frame; staff member stands upright on the right side interacting with her head"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech detected",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "No readable on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0, indicating OCR was run and found no text"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing intent indicated in evidence",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN with no supporting text or branding cues"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Client prepared/attended to by clinic staff",
+      "evidence": [
+        "Sequence shows a seated, draped, eye-masked client being attended to by a gloved, masked staff member in a clinic-like room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable at asset content level",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A seated client wears a black eye mask and is draped with a blue and white disposable cape while a masked, gloved staff member in green scrubs adjusts a strap at the back of her head. In a second moment the staff member's gloved hand is raised near a frosted glass door as the client sits with head lowered, hair loose over the drape.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "82d7ffd3-b2b7-40bd-ab2d-cef67163e944",
+  "image_count": 1
+}

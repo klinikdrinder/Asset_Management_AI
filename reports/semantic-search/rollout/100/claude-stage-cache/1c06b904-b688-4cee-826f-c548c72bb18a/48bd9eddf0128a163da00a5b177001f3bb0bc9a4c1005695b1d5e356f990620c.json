@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_9764.MP4, single scene",
+      "evidence": [
+        "asset_id and filename IMG_9764.MP4 with scene_index 0, duration 5.97s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical/aesthetic treatment room clip",
+      "evidence": [
+        "Two keyframes show a person being treated by a gloved, masked clinician near a medical device"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, ~6 seconds",
+      "evidence": [
+        "scene start_seconds 0.0 to end_seconds 5.973, one scene only"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One clinician/practitioner and one reclined patient",
+      "evidence": [
+        "Person in purple scrub top, mask, gloves, and smartwatch leaning over a reclined person wearing a headband and eye/nose patch"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in lavender scrubs with hair bun and scrunchie; patient in black headband",
+      "evidence": [
+        "Clinician has dark hair in a bun with a fluffy scrunchie, surgical mask, purple scrub top and pants, white gloves, white smartwatch",
+        "Patient has a black headband and a white patch over nose/eye area, covered with a blue-gray towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, nose and eye area visible",
+      "evidence": [
+        "White patch placed over the patient's nose/eye region in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unspecified facial treatment",
+      "evidence": [
+        "No procedure name present in readable_text_detected or spoken_content; gloves and device alone do not identify a specific procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician touching/adjusting patient's face area",
+      "evidence": [
+        "Gloved hand positioned near patient's nose/eye patch across both frames, slight change in hand position between the two keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing hands-on care for patient",
+      "evidence": [
+        "Clinician is bent over the reclined patient with direct hand contact near the face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective coverings and patch on patient's face",
+      "evidence": [
+        "Blue disposable sheet over headrest, towel draped near patient's head, small white patch on nose/eye area"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room with aesthetic device",
+      "evidence": [
+        "White walled room, treatment bed with blue disposable cover, tiled floor, a device with touchscreen and two handpieces in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static vertical shot from side angle",
+      "evidence": [
+        "Both keyframes show near-identical framing from the same side angle, vertical orientation typical of phone video (1280x720 but portrait crop)"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and patient centered, device visible in background right",
+      "evidence": [
+        "Clinician occupies left/foreground, patient reclined center-right, device positioned upper right background in both frames"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech content provided",
+      "evidence": [
+        "spoken_content is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Possible social/marketing clip, unconfirmed",
+      "evidence": [
+        "Vertical video format suggests social media style but no explicit marketing text or branding visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A clinician attends to a patient's face during a treatment session",
+      "evidence": [
+        "Consistent visual narrative across both keyframes of hands-on facial care in a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "clinic, facial treatment, gloves, mask, aesthetic device",
+      "evidence": [
+        "Visual elements: scrubs, gloves, mask, reclined patient, treatment device with handpieces"
+      ]
+    }
+  ],
+  "narrative": "A clinician in purple scrubs, gloves, and a face mask leans over a reclined person whose eyes are covered with a small nose/eye patch, applying a hand near the face while a towel and blue disposable drape cover the headrest area. A skincare/aesthetic device with a touchscreen and two handpieces stands beside the treatment bed in a plain, well-lit room.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "1c06b904-b688-4cee-826f-c548c72bb18a",
+  "image_count": 2
+}

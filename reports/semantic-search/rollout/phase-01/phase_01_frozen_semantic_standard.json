@@ -1,0 +1,194 @@
+{
+  "production_standard_version": "KDI_SEMANTIC_INDEX_V1",
+  "status": "FROZEN",
+  "semantic_spec_version": "semantic_index_v1",
+  "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+  "locked_extraction_spec_version": "kdi_semantic_18_layer_v1",
+  "locked_extraction_spec_fingerprint": "6da50e2153f6fcb6c9ef27c308ad44d0d2024e702e3faad47586b0068ba64fd7",
+  "ontology_version": "KDI_SEMANTIC_V2",
+  "evidence_schema_version": "phase10_semantic_assertion_evidence_v1",
+  "search_document_version": "kdi_search_document_v1",
+  "search_document_builder_version": "kdi_search_document_builder_v1",
+  "embedding_bundle_version": "open_clip:ViT-B-32:laion2b_s34b_b79k|ollama:qwen3-embedding:0.6b:v1",
+  "pipeline_version": "kdi_automatic_indexing_pipeline_v1",
+  "system_version": "kdi_semantic_system_v1",
+  "system_fingerprint": "ba59fb115bd96b878971a74cd3ee1c6a4601930110b29b3505a586c69acf4751",
+  "layers": [
+    {
+      "number": 1,
+      "id": "ASSET_IDENTITY_PROVENANCE",
+      "name": "Asset Identity & Provenance",
+      "meaning": "Canonical asset identity, source lineage, technical identity, rights context, and assertion origin."
+    },
+    {
+      "number": 2,
+      "id": "GLOBAL_ASSET_UNDERSTANDING",
+      "name": "Global Asset Understanding",
+      "meaning": "Asset-level content type, synopsis, primary subject, purpose, and overall interpretation."
+    },
+    {
+      "number": 3,
+      "id": "TEMPORAL_SCENE_STRUCTURE",
+      "name": "Temporal / Scene Structure",
+      "meaning": "Time-based segmentation, scenes, events, keyframes, and their exact asset locations."
+    },
+    {
+      "number": 4,
+      "id": "PEOPLE_ROLES",
+      "name": "People & Roles",
+      "meaning": "Visible or supported people, identity status, participant roles, and role evidence."
+    },
+    {
+      "number": 5,
+      "id": "PERSON_APPEARANCE",
+      "name": "Person Appearance",
+      "meaning": "Evidence-based per-person visible appearance attributes without unsupported identity inference."
+    },
+    {
+      "number": 6,
+      "id": "ANATOMY",
+      "name": "Anatomy",
+      "meaning": "Canonical anatomical regions and their observed, discussed, examined, or treated relationships."
+    },
+    {
+      "number": 7,
+      "id": "TREATMENT_PROCEDURE",
+      "name": "Treatment / Procedure",
+      "meaning": "Canonical treatments, procedures, stages, and their relationship to the asset or scene."
+    },
+    {
+      "number": 8,
+      "id": "ACTIONS_EVENTS",
+      "name": "Actions & Events",
+      "meaning": "Actions and events, participants, targets, and time/evidence scope."
+    },
+    {
+      "number": 9,
+      "id": "RELATIONSHIPS",
+      "name": "Relationships",
+      "meaning": "Evidence-supported interactions and relationships among people, actions, anatomy, and treatments."
+    },
+    {
+      "number": 10,
+      "id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "name": "Clinical Visual Observations",
+      "meaning": "Visible clinical observations explicitly separated from diagnoses and medically verified facts."
+    },
+    {
+      "number": 11,
+      "id": "ENVIRONMENT",
+      "name": "Environment",
+      "meaning": "Location, setting, surroundings, activity, and visible environmental qualities."
+    },
+    {
+      "number": 12,
+      "id": "CINEMATOGRAPHY",
+      "name": "Cinematography",
+      "meaning": "Shot size, angle, camera motion, focus, lighting, visual style, and technical visual qualities."
+    },
+    {
+      "number": 13,
+      "id": "COMPOSITION",
+      "name": "Composition",
+      "meaning": "Subject placement, negative space, safe areas, clutter, logo visibility, and compositional qualities."
+    },
+    {
+      "number": 14,
+      "id": "SPEECH_TRANSCRIPT_AUDIO",
+      "name": "Speech / Transcript / Audio",
+      "meaning": "Speech, transcript, speakers, language, audio events, topics, and exact timing."
+    },
+    {
+      "number": 15,
+      "id": "OCR_VISIBLE_TEXT",
+      "name": "OCR / Visible Text",
+      "meaning": "Visible text, captions, labels, signs, devices, language, and exact visual/time location."
+    },
+    {
+      "number": 16,
+      "id": "MARKETING_CONTENT_USAGE",
+      "name": "Marketing & Content Usage",
+      "meaning": "Descriptive content roles, possible uses, funnel stages, and suitability; never usage permission by inference."
+    },
+    {
+      "number": 17,
+      "id": "SEMANTIC_NARRATIVE",
+      "name": "Semantic Narrative",
+      "meaning": "Evidence-grounded literal, clinical-visual, storytelling, marketing, and emotional interpretations."
+    },
+    {
+      "number": 18,
+      "id": "SEARCH_EMBEDDINGS",
+      "name": "Search & Embeddings",
+      "meaning": "Search documents, concepts, vector representations, model identifiers, and retrieval-facing semantic material."
+    }
+  ],
+  "semantic_states": [
+    {
+      "id": "OBSERVED",
+      "meaning": "There is sufficient evidence supporting the value."
+    },
+    {
+      "id": "FALSE",
+      "meaning": "The concept was evaluated and evidence supports that it is not present or false."
+    },
+    {
+      "id": "UNKNOWN",
+      "meaning": "The system cannot determine the value reliably from available evidence."
+    },
+    {
+      "id": "NOT_APPLICABLE",
+      "meaning": "The concept does not logically apply to that asset or context."
+    }
+  ],
+  "state_rules": {
+    "null_is_semantic_state": false,
+    "static_image_defaults": {
+      "TEMPORAL_SCENE_STRUCTURE": "NOT_APPLICABLE",
+      "SPEECH_TRANSCRIPT_AUDIO": "NOT_APPLICABLE"
+    }
+  },
+  "evidence_types": [
+    "ASSET_LEVEL",
+    "SCENE_LEVEL",
+    "EVENT_LEVEL",
+    "KEYFRAME_LEVEL",
+    "TRANSCRIPT",
+    "OCR",
+    "HUMAN_REVIEW"
+  ],
+  "provenance_origins": [
+    "AI_MODEL",
+    "DETERMINISTIC_PROCESSOR",
+    "DATABASE_METADATA",
+    "HUMAN_REVIEW"
+  ],
+  "processing_states": [
+    "PENDING_ANALYSIS",
+    "NOT_ANALYZED",
+    "PROCESSING",
+    "VALIDATION_FAILED",
+    "FAILED",
+    "COMPLETE",
+    "SEARCH_READY",
+    "UNSUPPORTED"
+  ],
+  "search_ready_requirements": [
+    "supported asset and valid provenance",
+    "18 valid layer evaluations",
+    "required evidence for search-critical positives",
+    "current grounded descriptions and narrative",
+    "current search document",
+    "required current embeddings",
+    "matching spec/pipeline lineage",
+    "authorization record",
+    "no unresolved critical validation failure"
+  ],
+  "acl_separation": "Semantic completion and SEARCH_READY do not grant access, consent, marketing approval, or external-AI eligibility.",
+  "spec_fingerprint": "ba43dab744dedfd590e81be5c8ec5ec8ab7c0bda79f8aca16c0b24d198294888",
+  "source_contract_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+  "reproducibility": {
+    "algorithm": "SHA-256",
+    "canonicalization": "UTF-8 JSON with recursively sorted object keys and compact separators; omit spec_fingerprint"
+  }
+}

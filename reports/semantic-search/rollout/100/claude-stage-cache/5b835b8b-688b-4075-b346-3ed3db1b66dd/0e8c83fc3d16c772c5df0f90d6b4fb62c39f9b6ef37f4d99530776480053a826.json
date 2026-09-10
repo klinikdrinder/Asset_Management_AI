@@ -1,0 +1,169 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_3961.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_3961.MP4, duration 13.51s, 1280x720, h264, one canonical scene with two keyframes"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result lists GLOBAL_ASSET_UNDERSTANDING as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "Asset has 1 canonical scene sampled by 2 keyframes showing continuous close-up activity"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider and reclined patient",
+      "evidence": [
+        "A masked, gloved person in olive scrubs is positioned over a reclined individual with eyes covered by a pad"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider in olive scrubs, mask, gloves, watch",
+      "evidence": [
+        "Provider has dark hair in a bun, wears a surgical mask, olive-green scrub top, white gloves, and a smartwatch on left wrist"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face/forehead area visible",
+      "evidence": [
+        "Patient's forehead, nose bridge, and eye area (covered by white pad) are visible, head reclined and tilted back"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from visuals alone",
+      "evidence": [
+        "Gloves, a handheld gold device on a hose, and physical contact are visible but no named procedure appears in supplied text, so per rules this cannot be labeled a specific treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider handles device near patient's face",
+      "evidence": [
+        "Provider's gloved hands hold a gold handheld device and manipulate something near the patient's nose/forehead while the patient lies still with eyes covered"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider positioned directly over patient",
+      "evidence": [
+        "Provider leans closely over the reclined patient, hands in direct contact near the patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, mask, eye protection pad, device with hose",
+      "evidence": [
+        "Visible white gloves, blue surgical mask, a white eye-covering pad on the patient, and a gold handheld device connected via hose to tray equipment"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "Scene-level result lists ENVIRONMENT as UNKNOWN despite a plain white wall with red stripe and a treatment bed being visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing",
+      "evidence": [
+        "Vertical 1280x720 frame with close, slightly elevated angle focused on provider's hands and patient's face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subjects centered against plain backdrop",
+      "evidence": [
+        "Provider and patient are centered in frame against a plain white wall with a vertical red stripe on the right edge"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH though audio_stream_present is true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0, ocr_evaluated true"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level result lists MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose unclear",
+      "evidence": [
+        "Scene-level result lists SEMANTIC_NARRATIVE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked, gloved provider in olive scrubs leans over a reclined patient whose eyes are covered with a white pad, holding a gold handheld device connected by a hose to equipment on a tray. The two keyframes show close-up views of the provider's hands working near the patient's forehead/nose area against a plain white wall with a red vertical stripe.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "5b835b8b-688b-4075-b346-3ed3db1b66dd",
+  "image_count": 1
+}

@@ -1,0 +1,13 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+import { FROZEN_LAYER_IDS, LEGACY_LAYER_COMPATIBILITY, PRODUCTION_EMBEDDINGS, assertCompatibleVector, enrollmentDecision, selectEmbedding, validateFrozenLayerSet } from "../db/production-indexing-contract";
+import { ORIGINAL_ROLLOUT_COHORT, classifySource, reconcileMaster, searchAvailability } from "../db/repository-lifecycle-contract";
+
+test("all frozen layers map deterministically", () => { validateFrozenLayerSet(FROZEN_LAYER_IDS); assert.equal(LEGACY_LAYER_COMPATIBILITY.length, 18); assert.equal(new Set(LEGACY_LAYER_COMPATIBILITY.map(x => x.frozenLayerId)).size, 18); });
+test("embedding families are isolated", () => { const v=selectEmbedding("VISUAL_ASSET"), t=selectEmbedding("TEXT_SEMANTIC"); assert.notEqual(v.dimensions,t.dimensions); assert.throws(()=>assertCompatibleVector(v,t),/MIXED/); });
+test("enrollment is operational and does not fabricate semantic truth", () => { const e=enrollmentDecision({assetId:"a",contentHash:"h",mediaType:"VIDEO",physicallyAvailable:true}); assert.deepEqual(e,{status:"PENDING_ANALYSIS",eligible:true,realAnalysisRequired:true}); });
+test("unsupported and unavailable enrollment remain distinct", () => { assert.equal(enrollmentDecision({assetId:"a",contentHash:"h",mediaType:"DOCUMENT",physicallyAvailable:true,unsupported:true}).status,"UNSUPPORTED"); assert.equal(enrollmentDecision({assetId:"b",contentHash:"h2",mediaType:"VIDEO",physicallyAvailable:false}).status,"BLOCKED_BEFORE_ANALYSIS"); });
+test("source lifecycle detects new, change, removal and unchanged", () => { assert.equal(classifySource(undefined,{hash:"h",accessible:true}),"NEW"); assert.equal(classifySource({hash:"h"},{hash:"h",accessible:true}),"UNCHANGED"); assert.equal(classifySource({hash:"h"},{hash:"x",accessible:true}),"CHANGED"); assert.equal(classifySource({hash:"h"},undefined),"REMOVED_FROM_SOURCE"); });
+test("master reconciliation handles missing, moved, changed and present", () => { assert.equal(reconcileMaster("h",{exists:false}),"MISSING"); assert.equal(reconcileMaster("h",{exists:true,hash:"h",pathChanged:true}),"MOVED_OR_RENAMED"); assert.equal(reconcileMaster("h",{exists:true,hash:"x"}),"CHANGED"); assert.equal(reconcileMaster("h",{exists:true,hash:"h"}),"PRESENT"); });
+test("cohort is immutable and post-baseline is separate", () => { assert.equal(ORIGINAL_ROLLOUT_COHORT.baselineAssetCount,881); assert.equal(ORIGINAL_ROLLOUT_COHORT.membershipImmutable,true); });
+test("missing master media suppresses active retrieval", () => { assert.equal(searchAvailability({semanticReady:true,masterState:"MISSING",authorized:true}),false); assert.equal(searchAvailability({semanticReady:true,masterState:"PRESENT",authorized:true}),true); });

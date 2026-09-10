@@ -1,0 +1,187 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3388.MP4",
+      "evidence": [
+        "filename: IMG_3388.MP4",
+        "asset_id provided in metadata"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical-setting video clip",
+      "evidence": [
+        "6-second scene duration",
+        "1280x720 resolution video with audio stream"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene, two keyframes showing similar moment",
+      "evidence": [
+        "scene_index 0, start 0.0 to end 6.033 seconds",
+        "two keyframes supplied showing near-identical poses"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Person in scrubs handling instrument, role unclear",
+      "evidence": [
+        "Individual wears dark scrub top and gloves, suggesting clinical setting",
+        "No text or audio confirms specific role such as doctor or technician"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person with dark curly hair, glasses, black face mask, black top",
+      "evidence": [
+        "Visible dark curly hair and glasses in both images",
+        "Black face mask covering nose and mouth",
+        "Black short-sleeve scrub-style top"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No patient anatomy clearly visible",
+      "evidence": [
+        "Only the gloved hands and forearm of the person holding the instrument are visible",
+        "No other body part or patient is shown"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evidence": [
+        "A syringe-like instrument is held by gloved hands but no procedure is named in supplied text",
+        "No spoken content or on-screen text specifies a procedure"
+      ],
+      "evaluated": true,
+      "display_text": "Procedure not specified"
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person holding and adjusting a syringe-like tool",
+      "evidence": [
+        "Both keyframes show gloved hands manipulating a thin metallic/glass instrument",
+        "Fingers positioned around the object as if preparing or inspecting it"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No interpersonal relationship depicted",
+      "evidence": [
+        "Only one person is visible in the frame",
+        "No other individual present to establish relationship"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Clinical setting implied but no specific findings visible",
+      "evidence": [
+        "Gloves, mask, and instrument suggest a clinical environment",
+        "No visible skin condition, wound, or treatment site shown"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical or treatment room",
+      "evidence": [
+        "White cabinetry, countertop with equipment, and a mirror-like panel in background",
+        "Visible electrical sockets, a blue tray, water bottle, and white storage unit"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style shot focusing on hands and upper body",
+      "evidence": [
+        "Vertical framing centered on the person's torso, hands, and face",
+        "Consistent close framing across both keyframes suggesting static or handheld camera"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject positioned right-of-frame with background workspace visible",
+      "evidence": [
+        "Person occupies right two-thirds of frame in both images",
+        "Background counter and equipment fill left portion of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is empty in supplied metadata"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected field is empty in supplied metadata"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Purpose of video unclear",
+      "evidence": [
+        "No branding, captions, or marketing elements visible in the frames",
+        "No supplied text indicates intended use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts a person preparing an instrument in a clinical setting",
+      "evidence": [
+        "Gloved hands hold and inspect a syringe-like tool",
+        "Setting resembles a treatment or procedure room with medical supplies"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually evaluable layer",
+      "evidence": [
+        "This layer pertains to backend indexing, not visual content"
+      ]
+    }
+  ],
+  "narrative": "A person wearing a black mask, glasses, and dark scrub top holds a syringe-like instrument with gloved hands in what appears to be a clinical or treatment room. The setting includes a counter with equipment, a water bottle, and a blue towel draped over the person's shoulder or nearby.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "d2705b50-c484-4c65-80e0-eb5d80a9bc6a",
+  "image_count": 2
+}

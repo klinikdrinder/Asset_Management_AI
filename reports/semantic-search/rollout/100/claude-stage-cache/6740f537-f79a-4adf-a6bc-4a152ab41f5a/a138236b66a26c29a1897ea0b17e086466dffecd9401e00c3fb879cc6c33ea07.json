@@ -1,0 +1,167 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_3198.MP4",
+      "evidence": [
+        "filename \"IMG_3198.MP4\", asset_id 6740f537-f79a-4adf-a6bc-4a152ab41f5a, technical metadata: 1280x720, 30fps, h264, 17.5s duration, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single clinical scene, close-up scalp treatment",
+      "evidence": [
+        "one scene spanning 0.0-17.5s with 2 representative keyframes showing a clinician applying a handheld device to a patient's scalp in an exam room"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Continuous single scene, two keyframes",
+      "evidence": [
+        "scene_index 0 covering 0.0 to 17.5 seconds with 2 keyframes showing near-identical framing and slightly shifted hand/device position, indicating a continuous static-camera moment"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "a person in navy scrub top, surgical mask, and gloves operating a device near the head of a second person who is reclined in a chair with head tilted back"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked clinician; shaved-head patient in blue drape",
+      "evidence": [
+        "clinician has dark hair, wears a light blue surgical mask, navy scrub top, and white/gray gloves",
+        "patient has a shaved or closely cropped head and is covered with a blue disposable drape/gown"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient scalp, ear, and head visible",
+      "evidence": [
+        "top and side of the patient's bald/shaved scalp is visible and illuminated, along with the ear and side of the face"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not specified in supplied text",
+      "evidence": []
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held against patient's scalp",
+      "evidence": [
+        "clinician's gloved hand holds a corded black handheld device with its tip pressed against the patient's scalp, producing a visible red glow at the contact point in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider leaning over reclined patient",
+      "evidence": [
+        "clinician stands and leans over the seated/reclined patient, positioning the device directly against the patient's head, indicating a provider-patient interaction"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Red-lit device tip against shiny scalp skin",
+      "evidence": [
+        "scalp surface appears shiny/moist under the device",
+        "a bright red-orange glow with visible internal light pattern is emitted from the device tip in contact with the scalp"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "wall-mounted air conditioning unit, a sink and mirror in the background, a wall-mounted paper towel/tissue dispenser, and a reclining treatment chair with adjustable armrest hardware visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing, static shot",
+      "evidence": [
+        "tight vertical framing centered on the clinician's hands, device, and patient's head across both keyframes with minimal camera movement between them"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient lower-left, clinician right, device center",
+      "evidence": [
+        "patient's head and body occupy the lower-left of frame, clinician occupies the right side facing left/down, with the glowing device tip as the visual focal point in the center"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech content detected",
+      "evidence": [
+        "spoken_content field is an empty array despite an audio stream being present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected field is an empty array; no legible text visible in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended usage not indicated",
+      "evidence": []
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close clinical scalp treatment moment",
+      "evidence": [
+        "imagery depicts a focused clinical interaction: a gloved, masked provider applying a light-emitting handheld device to a reclined patient's scalp in an exam room setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two sequential keyframes show a masked, gloved clinician holding a black corded handheld device that emits a red glow against the shaved scalp of a patient reclined in a treatment chair with a headrest. The room is a clinical exam space with a sink, mirror, wall-mounted air conditioner, and the patient is draped in blue medical cloth.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "6740f537-f79a-4adf-a6bc-4a152ab41f5a",
+  "image_count": 2
+}

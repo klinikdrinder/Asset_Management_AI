@@ -125,3 +125,49 @@ dashboard/reports/
 .worktrees/
 .kdi-runtime/
 .kdi-candidate-verified.json
+
+# Local Python runtimes, virtualenvs, and installers
+.venv-*/
+python312/
+python-*-amd64.exe
+python-*.exe
+
+# Framework build output snapshots/backups
+.next-*/
+
+# Local model caches and large local fixtures
+.kdi-models/
+.kdi-test-fixtures/
+
+# Downloaded/derived media (Drive media, patient photos & videos, raw library files)
+# No media has ever been tracked in this repo; reports keep their JSON/MD artifacts only.
+*.mp4
+*.MP4
+*.mov
+*.MOV
+*.avi
+*.mkv
+*.webm
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
+*.png
+*.PNG
+*.gif
+*.webp
+*.heic
+*.HEIC
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.pptx
+*.zip
+*.7z
+*.tar.gz
+
+# Raw per-asset media working directory: patient photos, videos, and clinical
+# PDFs pulled from approved storage. Contains no report artifacts.
+reports/semantic-search/rollout/full/local-work/

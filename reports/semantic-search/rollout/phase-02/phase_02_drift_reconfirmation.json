@@ -1,0 +1,29 @@
+{
+  "P0": 0,
+  "P1": 2,
+  "P2": 1,
+  "P3": 0,
+  "findings": [
+    {
+      "id": "P1-A",
+      "component": "public.semantic_layer_catalog / semantic_layer_catalog",
+      "impact": "Legacy KDI_SEMANTIC_V2 catalog names/order differ from frozen semantic_index_v1; existing 10 are preserved, future new indexing must use locked versioned definitions.",
+      "affected_assets": "legacy catalog scope; no frozen V1 semantic truth mutated",
+      "phase3_fix": "Versioned mapping/validator boundary; do not rewrite historical rows."
+    },
+    {
+      "id": "P1-B",
+      "component": "embedding configuration",
+      "impact": "Active visual OpenCLIP 512-d vectors coexist with 384-d sentence-transformer text and 1024-d historical Ollama text vectors across tables.",
+      "affected_assets": "875 visual rows; 41 canonical pilot text rows; 20 legacy text rows",
+      "phase3_fix": "Explicitly lock model/provider/dimension per representation before new indexing; preserve historical vectors."
+    },
+    {
+      "id": "P2",
+      "component": "legacy semantic records",
+      "impact": "State/evidence fields are not uniform across older tables and records.",
+      "affected_assets": "legacy rows; no pending assets promoted",
+      "phase3_fix": "Require canonical validator fields for new V1 runs; do not rewrite history."
+    }
+  ]
+}

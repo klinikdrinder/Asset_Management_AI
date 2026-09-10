@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset with metadata",
+      "evidence": [
+        "filename IMG_1166.MP4, duration 9.67s, 1280x720, h264 codec"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short selfie-style video clip in a clinical setting",
+      "evidence": [
+        "single scene spanning 9.67 seconds with two keyframes"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene with two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Role of person not determinable from visuals alone",
+      "evidence": [
+        "scrub attire suggests medical setting but no explicit role indicator confirmed"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person in blue bouffant cap and gray scrub top",
+      "evidence": [
+        "blue surgical cap covering hair, gray v-neck scrub top with embroidered logo, earring visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, neck, and shoulders visible",
+      "evidence": [
+        "close-up framing shows face, ears, neck, and upper torso"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No procedure identifiable from images",
+      "evidence": [
+        "no named clinical procedure appears in supplied text or visible text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person shifts gaze direction between frames",
+      "evidence": [
+        "one keyframe shows gaze to the side, another shows gaze upward"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No interpersonal relationships depicted",
+      "evidence": [
+        "only one person visible in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Skin texture and shine visible on face",
+      "evidence": [
+        "visible skin sheen/oiliness and slight acne marks on cheeks and forehead"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor setting with white wall and red stripes",
+      "evidence": [
+        "background shows white wall with vertical red stripes resembling a door or panel"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Selfie-style handheld framing",
+      "evidence": [
+        "close, front-facing camera angle typical of selfie video capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Centered subject with vertical orientation",
+      "evidence": [
+        "subject centered in frame, vertical 1280x720 aspect suggests mobile portrait capture"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text and logo on scrub pocket",
+      "evidence": [
+        "embroidered logo and partially legible text reading something like 'HAIR TRANSPLANT CENTER' on chest pocket"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Possible promotional intent unclear",
+      "evidence": [
+        "scrub branding suggests clinic context but no explicit marketing indicators confirmed"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person in medical attire in clinical-looking space",
+      "evidence": [
+        "surgical cap, scrub top, and clinical background collectively suggest a healthcare setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual asset evaluation",
+      "evidence": [
+        "embedding generation is a backend process not represented in visual content"
+      ]
+    }
+  ],
+  "narrative": "A person wearing a blue surgical bouffant cap and gray scrub top appears in a selfie-style video, looking to the side and then upward against a white wall with red vertical stripes. A partially legible logo and text are visible on the scrub top's chest pocket.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "1db1c3fa-60df-48df-ae62-b2fd52cf7f74",
+  "image_count": 1
+}
