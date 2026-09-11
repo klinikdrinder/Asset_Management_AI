@@ -9,11 +9,12 @@
 import { NextRequest,NextResponse } from "next/server";
 import { requireStaffOrAdmin } from "../../auth";
 import { ASSET_SELECT,mapAsset } from "../../lib/media/repository";
-import { createServiceClient } from "../../lib/supabase/service";
+import { resolveSearchDb } from "../../lib/supabase/search-client";
 import { sameOrigin } from "../../lib/user-management";
 import { interpretQuery } from "../../../db/query-interpreter";
 import { executeCanonicalSearch,CANONICAL_SEARCH_VERSION } from "../../../db/canonical-production-retriever";
 import { buildDatabaseGroundedResponse,SupabaseGroundedResponseRepository } from "../../../db/database-grounded-search-response";
+import { computeReciprocalRankFusion,RRF_VERSION } from "../../../db/reciprocal-rank-fusion";
 import { memoryRecord,resolveConversationalSearch,type PriorSearchContext } from "../../../db/conversational-search-memory";
 
 const headers={"Cache-Control":"private, no-store"};
@@ -25,7 +26,14 @@ export async function POST(request:NextRequest){
   const body=await request.json().catch(()=>({})) as Record<string,unknown>;
   const raw=typeof body.query==="string"?body.query.trim().slice(0,300):"";
   if(!raw)return NextResponse.json({error:"A search query is required."},{status:400,headers});
-  const client=createServiceClient(); let sessionId=typeof body.sessionId==="string"&&uuid.test(body.sessionId)?body.sessionId:null;
+  // No service role in a normal user's search path: retrieval + telemetry run under the
+  // caller's own RLS identity. Break-glass/dev get a gated elevated client; everyone else
+  // without a usable identity fails closed rather than silently escalating.
+  const resolved=await resolveSearchDb(request,user);
+  if("error" in resolved)return NextResponse.json({error:"Please sign in again to search."},{status:401,headers});
+  const client=resolved.client;
+  if(resolved.mode==="SERVICE_ELEVATED")console.warn(`[search] elevated service-role search for ${user.userId} (${user.email})`);
+  let sessionId=typeof body.sessionId==="string"&&uuid.test(body.sessionId)?body.sessionId:null;
   let context:{resolvedQuery:string;filters:Record<string,unknown>;requestedCount:number|null;returnedAssetIds:string[]}|undefined; let priorContext:PriorSearchContext|undefined; let parentQueryId:string|null=null; let sequence=0;
   if(sessionId){
     const {data:session}=await client.from("search_sessions").select("id,user_id,last_activity_at").eq("id",sessionId).eq("user_id",user.userId).eq("status","ACTIVE").maybeSingle();
@@ -33,7 +41,7 @@ export async function POST(request:NextRequest){
     const {data:prior}=await client.from("search_queries").select("id,sequence_number,resolved_query,structured_filters,requested_count").eq("session_id",sessionId).order("sequence_number",{ascending:false}).limit(1).maybeSingle();
     if(prior){ const {data:results}=await client.from("search_results").select("asset_id,rank").eq("search_query_id",prior.id).order("rank",{ascending:true}); parentQueryId=prior.id; sequence=prior.sequence_number+1; const ids=(results||[]).map(r=>r.asset_id); context={resolvedQuery:prior.resolved_query||raw,filters:prior.structured_filters||{},requestedCount:prior.requested_count,returnedAssetIds:ids}; priorContext={sessionId,userId:user.userId,queryId:prior.id,resolvedQuery:prior.resolved_query||raw,filters:prior.structured_filters||{},requestedCount:prior.requested_count,resultAssetIds:ids,lastActivityAt:session.last_activity_at}; }
   }else{
-    const {data,error}=await client.from("search_sessions").insert({user_id:user.userId,metadata:{search_authority:CANONICAL_SEARCH_VERSION}}).select("id").single(); if(error||!data)return NextResponse.json({error:"Search session could not be created."},{status:500,headers}); sessionId=data.id;
+    const {data,error}=await client.from("search_sessions").insert({user_id:user.userId,metadata:{search_authority:CANONICAL_SEARCH_VERSION,rls_mode:resolved.mode}}).select("id").single(); if(error||!data)return NextResponse.json({error:"Search session could not be created."},{status:500,headers}); sessionId=data.id;
   }
   const canonicalPlan=await interpretQuery(raw);
   const resolution=resolveConversationalSearch({query:raw,sessionId:sessionId!,userId:user.userId,prior:priorContext});
@@ -62,9 +70,20 @@ export async function POST(request:NextRequest){
     const count={...controlled.count,returned_count:items.length,available_valid_count:page.total};
     const response=await buildDatabaseGroundedResponse({query:raw,userId:user.userId,count,candidates:page.items.map(item=>({asset_id:item.id,score:item.matchPercent??null}))},new SupabaseGroundedResponseRepository(client));
     if(response.grounding_status==="DATABASE_UNAVAILABLE"){await client.from("search_queries").update({status:"FAILED"}).eq("id",q.id);return NextResponse.json(response,{status:503,headers})}
-    if(page.items.length){const {error}=await client.from("search_results").insert(page.items.map((item,index)=>({search_query_id:q.id,asset_id:item.id,rank:index+1,overall_score:Math.max(0,Math.min(1,(item.matchPercent||0)/100)),match_reason:"KDI grounded deterministic hybrid match",matched_features:{search_version:CANONICAL_SEARCH_VERSION,ranking_version:canonical.fusion_version,channels:controlled.candidates[index]?.channels?.map((hit:any)=>hit.channel)??[],provenance:controlled.candidates[index]?.channels??[]},result_group_key:item.id})));if(error)throw error;}
+    // Per-result "why did this match?" — per-channel contributions from the canonical run,
+    // deduped to the best hit per channel. Carries no clinical text, no raw vectors, no paths.
+    const whyByAsset=new Map<string,unknown>(rankedCandidates.map((c:any)=>{const chan=new Map<string,any>();for(const h of c.channels??[]){const contribution=Number(h.normalized_channel_score??h.raw_score??0);const cur=chan.get(h.channel);if(!cur||contribution>cur.contribution)chan.set(h.channel,{channel:h.channel,representation:h.representation_type??null,contribution,rank:h.channel_rank??null});}return[c.asset_id,{score:c.phase19?.normalizedScore??null,channels:[...chan.values()].sort((a,b)=>b.contribution-a.contribution),matchedConcepts:[...new Set([...(c.matched_hard_constraints??[]),...(c.matched_strong_requirements??[]),...(c.matched_preferences??[])])]}]}));
+    // Evidence chips (matched concept + state + confidence) from the grounded, authorized response.
+    const evidenceByAsset=new Map<string,unknown>((response.results??[]).map((r:any)=>[r.asset_id,(r.matched_concepts??[]).map((c:any)=>({code:c.code,label:String(c.code??"").toLowerCase().replace(/_/g," "),state:c.state,confidence:c.confidence??null}))]));
+    // Reciprocal Rank Fusion is a logged comparison signal (deterministic reranker stays primary).
+    const rrf=computeReciprocalRankFusion(rankedCandidates);
+    page.items=page.items.map(item=>{const why=whyByAsset.get(item.id) as any;const rf=rrf.get(item.id);return {...item,whyMatched:why?{...why,rrf:rf?.rrf??null,channelScores:rf?.channelScores??{}}:null,evidence:evidenceByAsset.get(item.id)??[]}});
+    // How the query was read — always returned so users see the parse (spec requirement).
+    const d:any=canonical.diagnostics;
+    const parsedIntent={intent:d.parsed_intent??null,resolved_query:resolution.resolved_query,media_type:canonicalPlan.media?.media_type??null,requested_count:d.requested_count??null,effective_count:d.effective_count??null,sort:canonicalPlan.result_request?.sort_mode??"RELEVANCE",hard:d.hard_constraints??[],exclusions:d.exclusions??[],strong:d.strong_requirements??[],concepts:d.canonical_concepts??[]};
+    if(page.items.length){const {error}=await client.from("search_results").insert(page.items.map((item,index)=>{const rf=rrf.get(item.id);const cs:any=rf?.channelScores??{};return {search_query_id:q.id,asset_id:item.id,rank:index+1,overall_score:Math.max(0,Math.min(1,(item.matchPercent||0)/100)),structured_score:cs.structured??null,semantic_score:cs.semantic??null,visual_score:cs.visual??null,transcript_score:cs.transcript??null,filename_score:cs.filename??null,match_reason:"KDI grounded deterministic hybrid match",matched_features:{search_version:CANONICAL_SEARCH_VERSION,ranking_version:canonical.fusion_version,rrf_version:RRF_VERSION,rrf_score:rf?.rrf??null,channel_ranks:rf?.channelRanks??{},channels:controlled.candidates[index]?.channels?.map((hit:any)=>hit.channel)??[],provenance:controlled.candidates[index]?.channels??[]},result_group_key:item.id}}));if(error)throw error;}
     await Promise.all([client.from("search_queries").update({status:"COMPLETED"}).eq("id",q.id),client.from("search_sessions").update({last_activity_at:new Date().toISOString()}).eq("id",sessionId).eq("user_id",user.userId)]);
-    return NextResponse.json({sessionId,queryId:q.id,searchVersion:CANONICAL_SEARCH_VERSION,queryType:resolution.context_mode,resolvedQuery:resolution.resolved_query,filters:resolution.filters,context:memoryRecord(resolution),...page,count,response},{headers});
+    return NextResponse.json({sessionId,queryId:q.id,searchVersion:CANONICAL_SEARCH_VERSION,queryType:resolution.context_mode,resolvedQuery:resolution.resolved_query,parsedIntent,filters:resolution.filters,context:memoryRecord(resolution),...page,count,response},{headers});
   }catch{
     await client.from("search_queries").update({status:"FAILED"}).eq("id",q.id);
     return NextResponse.json({error:"Search is temporarily unavailable."},{status:503,headers});

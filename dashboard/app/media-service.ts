@@ -7,7 +7,7 @@ import { DriveApiError, downloadDriveFile, fetchDriveThumbnailLinkBytes, getDriv
 import { GoogleServiceAccountError } from "./lib/google/service-account";
 import { isValidRangeHeader } from "./lib/media/range";
 import { resolveAssetMediaLocation, type MediaOperation, type ResolvableAssetRow, type ResolvedMediaLocation } from "./lib/media/resolve-location";
-import { readThumbnailCache, writeThumbnailCache } from "./lib/media/thumbnail-cache";
+import { readThumbnailCache, writeThumbnailCache, signedThumbnailUrl } from "./lib/media/thumbnail-cache";
 import { extractPosterFrame } from "./lib/media/video-poster";
 import { createServiceClient } from "./lib/supabase/service";
 
@@ -171,6 +171,16 @@ export async function fetchDriveThumbnail(assetId: string, clientSignal?: AbortS
 export async function fetchDevDriveThumbnail(assetId: string, clientSignal?: AbortSignal, ifNoneMatch?: string | null) {
   const location = await devAuthorizedMedia(assetId, "thumbnail");
   return resolveThumbnailResult(location, ifNoneMatch, clientSignal);
+}
+
+// Authorize the viewer, then return a short-lived signed URL to the pre-generated WebP thumbnail
+// if one exists in Storage (populated by scripts/backfill-thumbnails.ts). Returns null when no
+// pre-generated thumbnail is available, so the caller falls back to the on-demand stream. Auth
+// errors propagate (the caller must not fall through on a denied viewer).
+export async function resolveThumbnailSignedUrl(assetId: string): Promise<string | null> {
+  const { location } = await authorizedMedia(assetId, "thumbnail");
+  if (!location.mime.startsWith("image/") && !location.mime.startsWith("video/")) return null;
+  return signedThumbnailUrl(location.assetId, location.driveFileId, location.versionTag, "webp");
 }
 
 // ---- Response helpers -------------------------------------------------------
