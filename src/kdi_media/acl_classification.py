@@ -396,6 +396,13 @@ def canonical_hash(rows: Iterable[Mapping[str, Any]]) -> str:
     return sha256_text(json.dumps(projection, sort_keys=True, separators=(",", ":"), ensure_ascii=False))
 
 
+def immutable_row_hash(row: Mapping[str, Any]) -> str:
+    """Per-row SHA-256 over that row's immutable columns — lets a validator localise which row's
+    non-review data drifted from the generated snapshot (canonical_hash only proves the set changed)."""
+    proj = {k: ("" if row.get(k) is None else str(row.get(k))) for k in IMMUTABLE_FIELDS}
+    return sha256_text(json.dumps(proj, sort_keys=True, separators=(",", ":"), ensure_ascii=False))
+
+
 def worksheet_manifest(
     *,
     project_id: str,
@@ -419,6 +426,9 @@ def worksheet_manifest(
         "generated_at": generated_at,
         "cohort_count": len(cohort),
         "worksheet_sha256": worksheet_sha256,
+        # Per-row immutable snapshot: asset_id -> hash of that row's non-review columns. A validator
+        # uses this to pinpoint added/removed/edited rows (not just detect that something changed).
+        "immutable_row_hashes": {str(row.get("asset_id")): immutable_row_hash(row) for row in cohort},
         "suggestion_tally": tally,
         "source_unavailable": source_unavailable,
         "approved": False,
