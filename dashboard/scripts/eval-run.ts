@@ -33,6 +33,10 @@ function loadEnvLocal() {
 }
 
 const argv = process.argv.slice(2);
+// The RLS gate hides is_clinical=NULL assets from everyone (no super-admin bypass), so the
+// authorized pipeline is capped at the classified corpus. --ignore-acl scores the engine's
+// pre-authorization retrieval instead, to smoke-test retrieval quality independent of the ACL.
+const IGNORE_ACL = argv.includes("--ignore-acl");
 const pct = (x: number) => `${(x * 100).toFixed(1)}%`;
 
 async function main() {
@@ -47,17 +51,21 @@ async function main() {
   console.log(`[eval] scoring ${gold.length} gold cases (k=${K}) as user ${userId}`);
 
   const scores: CaseScore[] = [];
-  const channelHits = new Map<string, number>();
+  const channelHits = new Map<string, number>();          // channel -> relevant hits it touched
+  const channelQueries = new Map<string, Set<string>>();  // channel -> gold ids where it appeared at all
   const failures: string[] = [];
 
   for (const gc of gold) {
     let retrieved: string[] = [];
     try {
       const r = await executeCanonicalSearch(supa, { query: gc.query, userId, requestedCount: K });
-      const ranked = (r.eligible_candidates ?? []) as Array<{ asset_id: string; channels?: { channel: string }[] }>;
+      const ranked = ((IGNORE_ACL ? r.retrieved?.candidates : r.eligible_candidates) ?? []) as Array<{ asset_id: string; channels?: { channel: string }[] }>;
       retrieved = ranked.map((x) => x.asset_id);
       const relevant = new Set(gc.relevantAssetIds);
-      for (const cand of ranked) if (relevant.has(cand.asset_id)) for (const h of cand.channels ?? []) channelHits.set(h.channel, (channelHits.get(h.channel) ?? 0) + 1);
+      for (const cand of ranked) for (const h of cand.channels ?? []) {
+        let qs = channelQueries.get(h.channel); if (!qs) { qs = new Set(); channelQueries.set(h.channel, qs); } qs.add(gc.id);
+        if (relevant.has(cand.asset_id)) channelHits.set(h.channel, (channelHits.get(h.channel) ?? 0) + 1);
+      }
     } catch (e) {
       failures.push(`${gc.id}: ${e instanceof Error ? e.message : e}`);
     }
@@ -66,16 +74,21 @@ async function main() {
 
   const agg = aggregate(scores);
   const channels = [...channelHits.entries()].sort((a, b) => b[1] - a[1]);
-  const report = { generatedFor: userId, k: K, aggregate: agg, channelAttribution: Object.fromEntries(channels), failures, cases: scores };
+  const channelQueryContribution = [...channelQueries.entries()].map(([c, s]) => [c, s.size] as [string, number]).sort((a, b) => b[1] - a[1]);
+  const STRUCTURED = ["STRUCTURED_CANONICAL", "EXPANDED_STRUCTURED", "STRUCTURED_FALSE"];
+  const structuredQueries = new Set<string>();
+  for (const c of STRUCTURED) for (const q of channelQueries.get(c) ?? []) structuredQueries.add(q);
+  const report = { generatedFor: userId, k: K, mode: IGNORE_ACL ? "PRE_AUTH_RETRIEVAL" : "AUTHORIZED", aggregate: agg, channelAttribution: Object.fromEntries(channels), channelQueryContribution: Object.fromEntries(channelQueryContribution), structuredChannelQueryCount: structuredQueries.size, failures, cases: scores };
   mkdirSync(path.dirname(OUT_JSON), { recursive: true });
   writeFileSync(OUT_JSON, JSON.stringify(report, null, 2));
 
   const md = [
     `# Search eval report`,
     ``,
-    `Cases: ${agg.cases} · k=${K} · user ${userId}`,
+    `Cases: ${agg.cases} · k=${K} · user ${userId} · mode ${IGNORE_ACL ? "PRE_AUTH_RETRIEVAL" : "AUTHORIZED"}`,
     failures.length ? `\n> ${failures.length} case(s) errored (search unavailable?). Metrics cover the rest.\n` : ``,
-    `> Retrieval is ACL-bounded — until the is_clinical backfill runs, recall is capped by the visible corpus.`,
+    `> mode=AUTHORIZED is ACL-bounded (is_clinical=NULL hidden from everyone incl. super-admin) — recall is capped until the backfill runs. mode=PRE_AUTH_RETRIEVAL scores the engine before the ACL gate.`,
+    `> Structured channel contributed to ${structuredQueries.size}/${agg.cases} queries.`,
     ``,
     `| Metric | Value |`,
     `|---|---|`,
@@ -89,6 +102,10 @@ async function main() {
     `## Per-channel attribution (relevant hits touched)`,
     ``,
     channels.length ? channels.map(([c, n]) => `- ${c}: ${n}`).join("\n") : `_none_`,
+    ``,
+    `## Per-channel query contribution (queries where the channel appeared at all)`,
+    ``,
+    channelQueryContribution.length ? channelQueryContribution.map(([c, n]) => `- ${c}: ${n}`).join("\n") : `_none_`,
     ``,
     `## Per-query`,
     ``,

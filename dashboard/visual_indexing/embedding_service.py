@@ -41,6 +41,17 @@ E5_MODEL = "intfloat/multilingual-e5-small"
 E5_MODEL_VERSION = "hf-main-pinned-runtime-v1"
 E5_DIMS = 384
 
+# Refuse to boot on a checkpoint mismatch: the 875 stored 512d vectors were built with
+# laion2b_s34b_b79k. A different pretrained tag produces vectors in a different space and degrades
+# relevance silently with no error, so fail loudly at startup instead.
+EXPECTED_CLIP_CHECKPOINT = "laion2b_s34b_b79k"
+if CLIP_VERSION != EXPECTED_CLIP_CHECKPOINT:
+    raise RuntimeError(
+        f"OPENCLIP_CHECKPOINT_MISMATCH: sidecar loaded pretrained='{CLIP_VERSION}' but the stored "
+        f"vectors require '{EXPECTED_CLIP_CHECKPOINT}'. Set KDI_VISUAL_PRETRAINED={EXPECTED_CLIP_CHECKPOINT} "
+        f"(and KDI_VISUAL_MODEL=ViT-B-32) before starting the sidecar."
+    )
+
 MAX_CHARS = 300
 MAX_BATCH = 32
 CACHE_CAPACITY = int(os.getenv("KDI_EMBED_CACHE", "2048"))
