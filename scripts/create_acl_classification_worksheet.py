@@ -99,6 +99,10 @@ def build_rows(db, manifest: dict[str, dict], *, asset_ids=None, ordinal_start=N
     source_avail: dict[str, bool] = {}
     source_name: dict[str, str] = {}
     ready_docs: set[str] = set()
+    clinical_visual: dict[str, list[str]] = {}
+    anatomy: dict[str, list[str]] = {}
+    treatment: dict[str, list[str]] = {}
+    people: set[str] = set()
     for batch in chunked(ordered, 100):
         for r in (db.table("assets").select("id,original_file_name,file_name,mime_type,upload_status").in_("id", batch).execute().data or []):
             assets[str(r["id"])] = r
@@ -106,6 +110,21 @@ def build_rows(db, manifest: dict[str, dict], *, asset_ids=None, ordinal_start=N
             profiles[str(r["asset_id"])] = r
         for r in (db.table("asset_search_documents").select("asset_id,build_status").in_("asset_id", batch).eq("build_status", "READY").execute().data or []):
             ready_docs.add(str(r["asset_id"]))
+        # Stored 18-layer observations (people/anatomy/clinical-visual/treatment) as ADVISORY
+        # evidence for the reviewer. Read-only; value_text is AI visual-description prose.
+        for r in (db.table("semantic_assertions").select("asset_id,layer_id,value_text")
+                  .in_("asset_id", batch).eq("semantic_state", "OBSERVED").eq("active", True)
+                  .in_("layer_id", ["PEOPLE_ROLES", "PERSON_APPEARANCE", "ANATOMY", "CLINICAL_VISUAL_OBSERVATIONS", "TREATMENT_PROCEDURE"])
+                  .execute().data or []):
+            aid = str(r["asset_id"]); lid = str(r.get("layer_id") or ""); txt = str(r.get("value_text") or "").strip()
+            if lid in ("PEOPLE_ROLES", "PERSON_APPEARANCE"):
+                people.add(aid)
+            if txt and lid == "CLINICAL_VISUAL_OBSERVATIONS":
+                clinical_visual.setdefault(aid, []).append(txt)
+            elif txt and lid == "ANATOMY":
+                anatomy.setdefault(aid, []).append(txt)
+            elif txt and lid == "TREATMENT_PROCEDURE":
+                treatment.setdefault(aid, []).append(txt)
         for r in (db.table("asset_sources").select("asset_id,source_files(is_missing,trashed,sync_classification,source_folders(active,source_name))").in_("asset_id", batch).execute().data or []):
             aid = str(r["asset_id"])
             ok = False
@@ -125,17 +144,23 @@ def build_rows(db, manifest: dict[str, dict], *, asset_ids=None, ordinal_start=N
         m = manifest.get(aid, {})
         c = acl.get(aid, {})
         prof = profiles.get(aid, {})
+        cv_summary = "; ".join(clinical_visual.get(aid, [])[:2])[:200]
+        anat_summary = " ".join(anatomy.get(aid, [])[:5])[:200]
+        treat_summary = "; ".join(treatment.get(aid, [])[:1])[:120]
+        has_people = aid in people
         ev = AssetEvidence(
             asset_id=aid,
             filename=str(a.get("file_name") or m.get("filename") or ""),
-            source_folder=str(m.get("source_folder") or ""),
+            source_folder=str(m.get("source_folder") or ""),  # keyword hints only; NOT emitted (relative path / PII)
             source_name=source_name.get(aid, ""),
             description_summary=str(prof.get("short_description") or ""),
             content_type=str(prof.get("content_type") or ""),
             ocr_text=" ".join(str(x) for x in (m.get("ocr_texts_by_scene") or {}).values()) if isinstance(m.get("ocr_texts_by_scene"), dict) else "",
             transcript_text="",  # transcripts not evaluated for the cohort; left blank
-            has_semantic_evidence=(aid in ready_docs) or bool(prof),
-            has_people_evidence=False,
+            clinical_visual_text=cv_summary,
+            anatomy_text=anat_summary,
+            has_semantic_evidence=(aid in ready_docs) or bool(prof) or bool(cv_summary or anat_summary or has_people),
+            has_people_evidence=has_people,
         )
         suggestion, reason, confidence = suggest_classification(ev)
         rows.append({
@@ -145,8 +170,6 @@ def build_rows(db, manifest: dict[str, dict], *, asset_ids=None, ordinal_start=N
             "original_filename": str(a.get("original_file_name") or ""),
             "media_type": str(m.get("media_type") or a.get("mime_type") or ""),
             "source_name": ev.source_name,
-            "source_folder": ev.source_folder,
-            "source_reference": str(m.get("source_path") or ""),  # relative path only; no URL/token
             "current_internal_usage_status": c.get("internal_usage_status", ""),
             "current_sensitivity_level": c.get("sensitivity_level", ""),
             "current_is_clinical": c.get("is_clinical", ""),
@@ -155,9 +178,9 @@ def build_rows(db, manifest: dict[str, dict], *, asset_ids=None, ordinal_start=N
             "source_available": source_avail.get(aid, False),
             "existing_description_summary": ev.description_summary,
             "existing_content_type": ev.content_type,
-            "existing_treatment": "",
+            "existing_treatment": treat_summary,
             "existing_subject": "",
-            "existing_clinical_visual_summary": "",
+            "existing_clinical_visual_summary": cv_summary,
             "existing_semantic_evidence_available": ev.has_semantic_evidence,
             "existing_people_evidence_available": ev.has_people_evidence,
             "suggested_classification": suggestion,

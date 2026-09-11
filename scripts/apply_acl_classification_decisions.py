@@ -84,12 +84,24 @@ def fetch_live_state(db, asset_ids: list[str]):
     return acl, source_available
 
 
+def acl_distribution(db) -> dict[str, int]:
+    """Live is_clinical distribution across all asset_access_control rows — the RLS visibility gate
+    requires is_clinical IS NOT NULL, so 'null' is exactly the still-hidden cohort."""
+    rows = db.table("asset_access_control").select("is_clinical").execute().data or []
+    dist = {"null": 0, "true": 0, "false": 0}
+    for r in rows:
+        v = r.get("is_clinical")
+        dist["null" if v is None else "true" if v else "false"] += 1
+    return dist
+
+
 def main() -> None:
     p = argparse.ArgumentParser(description="Validate/apply a reviewed ACL classification worksheet")
     p.add_argument("--worksheet", type=Path, required=True)
     p.add_argument("--manifest", type=Path)
     p.add_argument("--apply", action="store_true", help="perform writes (default: dry-run only)")
     p.add_argument("--allow-reclassification", action="store_true", help="permit overwriting rows whose is_clinical is already set")
+    p.add_argument("--confirm-count", type=int, default=None, help="required with --apply: must equal the planned write count (guards against surprise mass writes)")
     p.add_argument("--batch-size", type=int, default=50)
     p.add_argument("--audit-out", type=Path, default=ROOT / "audit/acl_backfill")
     args = p.parse_args()
@@ -122,6 +134,7 @@ def main() -> None:
     from supabase import create_client
     db = create_client(url, key)
     acl, source_available = fetch_live_state(db, [i for i in ids if i])
+    distribution_before = acl_distribution(db)
 
     # --- plan every row (pure) ---
     plans = []
@@ -146,6 +159,7 @@ def main() -> None:
         "planned_writes": len(to_apply),
         "predicted_visible_after_apply": predicted_visible,
         "errors": [{"asset_id": pl.asset_id, "errors": pl.errors} for pl in errors],
+        "acl_distribution_before": distribution_before,
         "writes_performed": 0,
     }
 
@@ -156,8 +170,16 @@ def main() -> None:
         print(json.dumps(report, indent=2))
         raise SystemExit(2)
 
+    # Reviewed-row count confirmation: --apply must be accompanied by --confirm-count equal to the
+    # exact number of planned writes, so a mass write can never happen without an explicit number.
+    if args.apply and (args.confirm_count is None or args.confirm_count != len(to_apply)):
+        report["status"] = "ABORTED_BEFORE_WRITE"
+        report["reason"] = f"--confirm-count must equal the {len(to_apply)} planned write(s); received {args.confirm_count}"
+        print(json.dumps(report, indent=2))
+        raise SystemExit(2)
+
     if not args.apply:
-        report["note"] = "DRY RUN — 0 database writes. Re-run with --apply to write approved decisions."
+        report["note"] = "DRY RUN — 0 database writes. Re-run with --apply --confirm-count <N> to write approved decisions."
         print(json.dumps(report, indent=2))
         return
 
@@ -173,6 +195,8 @@ def main() -> None:
         audit_path.write_text(json.dumps(audit, indent=2) + "\n", encoding="utf-8")
         report["writes_performed"] = audit.get("applied", 0)
         report["audit_log"] = str(audit_path)
+    # Post-run RLS visibility recount: is_clinical distribution after writes (null = still hidden).
+    report["acl_distribution_after"] = acl_distribution(db)
     print(json.dumps(report, indent=2))
 
 

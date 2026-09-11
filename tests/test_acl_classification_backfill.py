@@ -181,6 +181,17 @@ class SuggestionTests(unittest.TestCase):
         s, _, _ = suggest_classification(AssetEvidence("E", source_folder="patient", filename="clinic_logo.png"))
         self.assertEqual(s, "UNRESOLVED")
 
+    def test_clinical_visual_keyword_suggests_clinical(self):
+        # A clinical keyword *inside* stored clinical-visual observation prose counts.
+        s, _, _ = suggest_classification(AssetEvidence("F", clinical_visual_text="graft extraction sites visible on scalp"))
+        self.assertEqual(s, "CLINICAL")
+
+    def test_anatomy_presence_alone_not_clinical(self):
+        # Bare anatomy visibility (nearly every asset) must NOT force CLINICAL.
+        s, _, conf = suggest_classification(AssetEvidence("G", anatomy_text="face and shoulders visible"))
+        self.assertEqual(s, "UNRESOLVED")
+        self.assertEqual(conf, "NONE")
+
 
 class PredictionAndHashTests(unittest.TestCase):
     def test_null_is_clinical_hidden(self):
@@ -203,7 +214,7 @@ class PredictionAndHashTests(unittest.TestCase):
 
     def test_canonical_hash_ignores_review_edits(self):
         base = {f: "" for f in ("asset_id", "ordinal", "filename", "original_filename", "media_type",
-                                "source_name", "source_folder", "source_reference",
+                                "source_name",
                                 "current_internal_usage_status", "current_sensitivity_level",
                                 "current_is_clinical", "current_requires_clinical_permission",
                                 "current_download_allowed", "source_available",

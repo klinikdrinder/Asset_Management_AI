@@ -68,8 +68,6 @@ WORKSHEET_FIELDS = [
     "original_filename",
     "media_type",
     "source_name",
-    "source_folder",
-    "source_reference",
     "current_internal_usage_status",
     "current_sensitivity_level",
     "current_is_clinical",
@@ -124,6 +122,8 @@ class AssetEvidence:
     content_type: str = ""
     ocr_text: str = ""
     transcript_text: str = ""
+    clinical_visual_text: str = ""
+    anatomy_text: str = ""
     has_semantic_evidence: bool = False
     has_people_evidence: bool = False
 
@@ -142,6 +142,11 @@ def suggest_classification(ev: AssetEvidence) -> tuple[str, str, str]:
         "content_type": _norm(ev.content_type),
         "ocr": _norm(ev.ocr_text),
         "transcript": _norm(ev.transcript_text),
+        # Stored 18-layer observation prose (people/anatomy/clinical-visual). Only clinical
+        # KEYWORDS inside this text count — the mere presence of an anatomy/people assertion
+        # (nearly every asset has one) must never by itself push a suggestion to CLINICAL.
+        "clinical_visual": _norm(ev.clinical_visual_text),
+        "anatomy": _norm(ev.anatomy_text),
     }
     joined = " | ".join(v for v in haystacks.values() if v)
 
