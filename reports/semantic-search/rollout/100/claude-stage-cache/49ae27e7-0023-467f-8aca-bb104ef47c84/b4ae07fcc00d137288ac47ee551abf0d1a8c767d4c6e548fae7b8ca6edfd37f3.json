@@ -1,0 +1,188 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 asset, IMG_3199.MP4",
+      "evidence": [
+        "asset_id and filename IMG_3199.MP4 provided",
+        "duration 7.47s, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up of a medical device screen (TRICOPAT)",
+      "evidence": [
+        "Single canonical scene showing device screen with settings and branding"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, short duration",
+      "evidence": [
+        "canonical_scenes: 1",
+        "duration_seconds: 7.466667"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No people visible in frame",
+      "evidence": [
+        "Scene result PEOPLE_ROLES: FALSE",
+        "Only the device and screen are visible in the images"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No person present to describe",
+      "evidence": [
+        "Scene result PERSON_APPEARANCE: NOT_APPLICABLE",
+        "No human figures visible in images"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No anatomy visible",
+      "evidence": [
+        "Scene result ANATOMY: NOT_APPLICABLE",
+        "Only device screen and casing shown"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Device settings visible but no named procedure confirmed",
+      "evidence": [
+        "Screen shows 'PATTING', 'CNOSTIM', 'ED' settings without a named clinical procedure",
+        "Scene result TREATMENT_PROCEDURE: UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device timer running, no other action",
+      "evidence": [
+        "Timer displayed at approximately 00:04:27 to 00:04:31 across frames",
+        "Scene result ACTIONS_EVENTS: OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No relational subjects present",
+      "evidence": [
+        "Scene result RELATIONSHIPS: NOT_APPLICABLE",
+        "No people or interacting subjects visible"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Device parameters visible but clinical significance unclear",
+      "evidence": [
+        "Scene result CLINICAL_VISUAL_OBSERVATIONS: UNKNOWN",
+        "Screen shows percentage settings without further clinical context"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical-style room with beige walls and wall fixture",
+      "evidence": [
+        "Beige wall and white wall-mounted fixture visible in background",
+        "Device resting on dark countertop surface"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing of device screen",
+      "evidence": [
+        "Image shows tight framing on the device screen from an angled perspective",
+        "Scene result CINEMATOGRAPHY: OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device centered, screen dominates frame",
+      "evidence": [
+        "Device and screen occupy majority of the frame with wall as background",
+        "Scene result COMPOSITION: OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected in audio",
+      "evidence": [
+        "transcript_state: NO_SPEECH",
+        "audio_stream_present true but no speech content"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "On-screen text: TRICOPAT, PATTING, CNOSTIM, 100%, ED, 20%, ON, timer 00:04:31",
+      "evidence": [
+        "ocr_observations: 17",
+        "Visible text on device screen including brand name TRICOPAT and setting labels"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unclear if content intended for marketing use",
+      "evidence": [
+        "Scene result MARKETING_CONTENT_USAGE: UNKNOWN",
+        "No explicit marketing indicators such as logos beyond device branding"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Demonstration of a device's operational screen",
+      "evidence": [
+        "Scene narrative describes device settings and timer display",
+        "Scene result SEMANTIC_NARRATIVE: OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indexable visual content of device interface",
+      "evidence": [
+        "Scene result SEARCH_EMBEDDINGS: OBSERVED",
+        "Distinct visual and textual elements present for embedding"
+      ]
+    }
+  ],
+  "narrative": "The video shows a close-up view of a TRICOPAT device touchscreen displaying settings labeled 'PATTING', 'CNOSTIM' at 100%, 'ED' at 20%, and a countdown timer near 00:04:31, with a small head-icon graphic on the right side of the screen. The device sits on a dark counter in a clinical-style room with beige walls and a wall-mounted fixture visible in the background.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "49ae27e7-0023-467f-8aca-bb104ef47c84",
+  "image_count": 1
+}

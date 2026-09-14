@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_4621.MP4",
+      "evidence": [
+        "filename IMG_4621.MP4, 13.75s h264 video with audio stream, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical device application on leg skin",
+      "evidence": [
+        "Single scene, two keyframes showing a handheld device applied near a pigmented skin mark"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across 13.7s clip",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 sampled from a single scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One person's hands operate device; second person is patient",
+      "evidence": [
+        "A hand holds the metal device against the leg while a second hand steadies the skin",
+        "patient sits on blue drape wearing plaid clothing"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient wears plaid-patterned garment",
+      "evidence": [
+        "visible plaid/checkered fabric near the leg in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Leg skin with pigmented mark visible",
+      "evidence": [
+        "close-up of a leg showing a dark purple, feather-like mark on the skin surface"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed",
+      "evidence": [
+        "Only a handheld device with a red targeting dot near skin is visible; no procedure name is present in supplied text, so it cannot be identified beyond that"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device positioned with targeting dot on skin mark",
+      "evidence": [
+        "red targeting dot from the device aligned on the pigmented mark",
+        "second hand stabilizing adjacent skin"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operator and patient in direct physical contact via device and hand",
+      "evidence": [
+        "one hand holds device against patient's leg while another hand steadies the skin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark purple, feather-shaped pigmented skin mark",
+      "evidence": [
+        "visible dark purple, feather-like mark on the leg skin in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting with blue drape",
+      "evidence": [
+        "blue drape or covering visible beneath/around the leg"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing of skin and device",
+      "evidence": [
+        "tight close-up composition centered on the device and skin mark in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device and mark centered, hands framing the shot",
+      "evidence": [
+        "device and targeting dot positioned centrally with hands entering from top and left edges"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT but transcript_state: NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing usage determinable",
+      "evidence": [
+        "no captions, branding, or usage context present in the supplied text or keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical care moment on leg skin mark",
+      "evidence": [
+        "consistent narrative across both keyframes of device applied near a pigmented skin mark in a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual synthesis",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two close-up keyframes show a handheld metal device with a red targeting dot held against a person's leg near a dark purple, feather-like pigmented mark on the skin. A second hand steadies the skin while the patient sits on a blue drape wearing plaid-patterned clothing.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "11ee1d16-caa2-4cd4-97db-f352ea721fc8",
+  "image_count": 1
+}

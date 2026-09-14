@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "baseline": {
+    "system_version": "kdi_semantic_system_v1",
+    "system_fingerprint": "ba59fb115bd96b878971a74cd3ee1c6a4601930110b29b3505a586c69acf4751",
+    "spec_version": "kdi_semantic_18_layer_v1",
+    "spec_fingerprint": "6da50e2153f6fcb6c9ef27c308ad44d0d2024e702e3faad47586b0068ba64fd7",
+    "rollout_manifest_version": "kdi_30_asset_rollout_v1",
+    "rollout_manifest_fingerprint": "ad43dc6875c62adef10fbcc78767e7c6d6f3fff341330c19616f0fdc522ea31d"
+  },
+  "inventory": {
+    "total_assets": 881,
+    "total_canonical_assets": 881,
+    "unique_asset_ids": 881,
+    "unique_hashes": 881,
+    "missing_hashes": 0,
+    "duplicate_hash_groups": 0,
+    "images": 293,
+    "videos": 585,
+    "documents": 2,
+    "other": 1,
+    "missing_provenance": 0,
+    "category_reconciliation": true
+  },
+  "document_difference": {
+    "historical_documents": 3,
+    "current_documents": 2,
+    "unsupported_asset": {
+      "asset_id": "3bcdd832-b504-4641-9729-0d965e01411a",
+      "filename": "REVIEW.pptx",
+      "extension": "pptx",
+      "mime_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "content_hash": "7bcd6c314c60707d3064ef5709b9e76a5869bd5097c3d9e6c138a883d52b4f0b",
+      "media_type": "OTHER",
+      "source_id": "e7339238-1d9e-4cf2-bbc2-bdd77f7440ba",
+      "source_resolvable": true,
+      "status": "BLOCKED_UNSUPPORTED",
+      "existing_layers": 0,
+      "existing_runs": 0,
+      "existing_docs": 0,
+      "existing_embeddings": 0,
+      "has_profile": false
+    },
+    "explanation": "The third historical document is REVIEW.pptx (PPTX). Current Phase 1 supported-document policy includes PDF only; PPTX is correctly classified as unsupported/other and was not enrolled for semantic analysis.",
+    "status": "EXPLAINED"
+  },
+  "semantic_state": {
+    "complete": 10,
+    "pending": 870,
+    "unsupported": 1,
+    "unclassified": 0,
+    "multi_classified": 0,
+    "false_search_ready": 0,
+    "false_complete": 0,
+    "false_pending_as_unknown": 0,
+    "false_pending_as_not_applicable": 0
+  },
+  "backlog": {
+    "expected": 870,
+    "records": 870,
+    "unique_asset_ids": 870,
+    "unique_hashes": 870,
+    "duplicate_records": 0,
+    "missing_from_backlog": 0,
+    "orphan_records": 0,
+    "fields_complete": true
+  },
+  "future_eligibility": {
+    "ready_for_real_analysis": 870,
+    "blocked_before_analysis": 0,
+    "partial_legacy_requires_review": 0,
+    "unsupported": 1
+  },
+  "legacy": {
+    "pending_with_semantics": 0,
+    "pending_with_description": 0,
+    "pending_with_search_doc": 0,
+    "pending_with_embedding": 0
+  },
+  "visual_embeddings": {
+    "pending_with_existing": 865,
+    "pending_without": 5
+  },
+  "canary": {
+    "asset_id": "a9c4cf6f-c86c-4d9d-8a6d-2a815fe211bd",
+    "status": "PENDING_ANALYSIS",
+    "search_ready": false
+  },
+  "protection": {
+    "semantic_facts_created": 0,
+    "media_analysis": 0,
+    "openai_calls": 0,
+    "acl_weakened": false,
+    "consent_auto_approved": 0,
+    "phase2": "BLOCKED_OPENAI_QUOTA",
+    "official_phase3": "NOT_STARTED"
+  }
+}

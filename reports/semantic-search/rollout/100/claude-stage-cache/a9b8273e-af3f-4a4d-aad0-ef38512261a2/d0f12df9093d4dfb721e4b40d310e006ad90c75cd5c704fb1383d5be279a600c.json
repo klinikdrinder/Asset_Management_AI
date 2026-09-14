@@ -1,0 +1,170 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1380.MP4",
+      "evidence": [
+        "filename IMG_1380.MP4, duration 19.37s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene close-up clinical video",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, one scene result covering the full asset"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, ~19 seconds",
+      "evidence": [
+        "duration_seconds 19.366667 with a single scene_index 0 spanning the asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One staff member and one reclined patient",
+      "evidence": [
+        "figure in teal scrubs, mask, and gloves positioned above a reclined person wearing eye shields"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff in teal scrubs and mask; patient with dark hair",
+      "evidence": [
+        "teal scrub top, blue surgical mask, tinted glasses, white gloves, smartwatch on staff member's wrist",
+        "patient has dark hair, closed eyes covered by metal shields, lying on blue pillow/blanket"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, forehead and brow area visible",
+      "evidence": [
+        "patient's face, nose, mouth, and forehead/brow region visible with eye shields placed over the eyes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied text",
+      "evidence": [
+        "scene_results TREATMENT_PROCEDURE listed as UNKNOWN; only a handheld device and articulated arm are visible with no named procedure text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member applies handheld device near patient's brow",
+      "evidence": [
+        "gloved hand holding a handheld tip connected via cable to an articulated arm, positioned near the patient's forehead/brow"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member positioned directly over reclined patient",
+      "evidence": [
+        "staff member leans over the patient, hands near the patient's face, indicating direct physical proximity and interaction"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Metal eye shields, gloves, and a connected instrument visible",
+      "evidence": [
+        "scenes 0 CLINICAL_VISUAL_OBSERVATIONS OBSERVED; metal corneal-style eye shields on patient, white gloves on staff, articulated instrument arm"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "scene_results ENVIRONMENT listed as UNKNOWN; background is a plain light-colored wall with no identifying signage or room context"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, vertical-frame handheld-style shot",
+      "evidence": [
+        "vertical 9:16-oriented framing tightly cropped on the patient's face and staff member's upper body"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered lower frame, staff member upper frame",
+      "evidence": [
+        "patient's face fills the lower-center portion of frame while staff member's head and hands occupy the upper portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, but transcript_state NO_SPEECH; scene SPEECH_TRANSCRIPT_AUDIO FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No on-screen text confirmed",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0; scene OCR_VISIBLE_TEXT listed as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene_results MARKETING_CONTENT_USAGE listed as UNKNOWN with no supporting caption or branding text supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts a clinical treatment moment on a patient's face",
+      "evidence": [
+        "scene narrative describes a masked, gloved staff member using a device near a reclined, eye-shielded patient's forehead"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this analysis output",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person in teal scrubs, a surgical mask, and tinted protective glasses leans over a reclined patient whose eyes are covered by metal corneal-style eye shields, holding a handheld device connected to a long articulated arm near the patient's forehead/brow area. The patient lies back under a blue textured blanket against a plain light-colored wall background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "a9b8273e-af3f-4a4d-aad0-ef38512261a2",
+  "image_count": 1
+}

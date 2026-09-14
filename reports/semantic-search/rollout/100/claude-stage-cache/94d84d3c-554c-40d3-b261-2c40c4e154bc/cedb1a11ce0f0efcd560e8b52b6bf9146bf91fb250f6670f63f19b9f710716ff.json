@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_2940.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_2940.MP4, duration 10.63s, 1280x720, h264, single canonical scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short close-up clip of two clinical staff working on a patient",
+      "evidence": [
+        "Single scene, two keyframes showing two gowned/masked individuals with instruments near tissue"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across the 10.6s clip",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 sampling a single continuous shot"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two masked, gowned individuals, likely clinical staff",
+      "evidence": [
+        "Foreground and background person both in blue surgical gowns, caps, masks, and loupes, consistent with clinical staff roles"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue scrub caps, blue surgical gowns, surgical masks, loupe/headlight devices; one wears AirPods",
+      "evidence": [
+        "Foreground person has visible AirPods under scrub cap, surgical mask, blue gown; background person similarly attired with loupes"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Body region not clearly identifiable",
+      "evidence": [
+        "Scene-level ANATOMY marked UNKNOWN; only gloved hands, instrument, and tissue with blood are visible without clear anatomical landmarks"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not determinable from evidence",
+      "evidence": [
+        "Scene-level TREATMENT_PROCEDURE marked UNKNOWN; gloves, instrument, and tissue contact alone do not establish a named procedure per rules"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands manipulating an instrument near tissue",
+      "evidence": [
+        "Foreground person's gloved hands hold a surgical instrument near tissue showing blood"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two clinicians working side by side in close proximity",
+      "evidence": [
+        "Foreground and background individuals positioned close together, both focused on the same work area"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Visible blood on tissue near the instrument",
+      "evidence": [
+        "Reddish blood visible on tissue near the gloved hands and instrument tip"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting with IV pole and plain white wall",
+      "evidence": [
+        "IV pole with hanging bags visible in background against a white wall"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing on subjects",
+      "evidence": [
+        "Tight close-up composition centering on the foreground person's head and hands, background person partially in frame"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical frame, foreground subject dominant, background subject offset",
+      "evidence": [
+        "Portrait-oriented 1280x720 rendered vertically with foreground person occupying most of frame, second person visible behind"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio stream",
+      "evidence": [
+        "audio_stream_present: true, transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No visible text detected",
+      "evidence": [
+        "ocr_evaluated: true, ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing content indicated",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked FALSE; no branding, logos, or promotional text observed"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two clinicians performing close-up hands-on clinical work",
+      "evidence": [
+        "Consistent depiction across the scene of gowned/masked staff using an instrument near tissue with blood in a clinical environment"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual narrative synthesis",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "Two clinicians in blue surgical gowns, caps, and masks work closely together, both wearing loupe/headlight devices, with the foreground person using AirPods and gloved hands manipulating an instrument near tissue with visible blood. An IV pole with hanging bags stands in the background against a plain white wall.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "94d84d3c-554c-40d3-b261-2c40c4e154bc",
+  "image_count": 1
+}

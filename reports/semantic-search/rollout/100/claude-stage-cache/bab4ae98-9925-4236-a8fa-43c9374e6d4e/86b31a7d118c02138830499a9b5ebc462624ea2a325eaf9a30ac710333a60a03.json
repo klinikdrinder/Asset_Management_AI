@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_0506.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_0506.MP4, duration 24.53s, 1280x720, h264, 1 canonical scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clinical scene",
+      "evidence": [
+        "Scene-level synthesis reports one scene covering the entire 24.5s clip with consistent setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, two sampled keyframe moments",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 showing a marking tool near the ear then a phone near the face"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined client and gloved practitioner",
+      "evidence": [
+        "Image shows a person with eyes closed reclined and a second person's gloved hands holding a tool near her face"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue hairnet, nose stud, closed eyes",
+      "evidence": [
+        "Image shows woman wearing a blue hairnet, a nose stud, eyes closed, purple towel draped over shoulder"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, ear, and jawline visible",
+      "evidence": [
+        "Image shows facial anatomy including eyes, nose, lips, ear, and jawline near the marking tool"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied evidence",
+      "evidence": [
+        "Scene result marks TREATMENT_PROCEDURE as UNKNOWN; gloves and a marking tool near the ear do not by themselves establish a named clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Marking near ear/jaw with a pen-like tool",
+      "evidence": [
+        "Image shows a gloved hand holding a dark pen-like tool positioned near the subject's ear and jawline"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner working directly on client",
+      "evidence": [
+        "Gloved hands are positioned in direct contact/proximity to the reclined subject's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, marking tool, towel drape visible",
+      "evidence": [
+        "Image shows white latex/nitrile gloves, a marking implement, hairnet, and towel drape consistent with a clinical setting"
+      ]
+    },
+    {
+      "layer_name": "ENVIRONMENT",
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "White-walled clinical room with outlet and signage",
+      "evidence": [
+        "Image shows plain white walls, a wall-mounted electrical outlet, and a partial signboard reading \"ONIC\""
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing",
+      "evidence": [
+        "Image is a tight close-up on the subject's face and the practitioner's hands, vertical framing typical of handheld capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face-centered close-up composition",
+      "evidence": [
+        "Subject's face fills most of the frame with gloved hands and tool occupying the lower-left foreground"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no meaningful speech",
+      "evidence": [
+        "audio_stream_present: true, transcript_state: NO_MEANINGFUL_SPEECH, scene layer SPEECH_TRANSCRIPT_AUDIO: FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial signboard text visible",
+      "evidence": [
+        "ocr_observations: 2; image shows partial text \"ONIC\" on a wall-mounted signboard"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators identified",
+      "evidence": [
+        "Scene result marks MARKETING_CONTENT_USAGE as UNKNOWN with no branding or promotional text discernible beyond a partial sign"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose unclear",
+      "evidence": [
+        "Scene result marks SEMANTIC_NARRATIVE as UNKNOWN given no procedure name or context is confirmed"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/audio content",
+      "evidence": [
+        "Scene result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A woman wearing a blue hairnet lies reclined with a purple towel over her shoulder while a gloved practitioner holds a dark pen-like marking tool near her ear and jawline. She keeps her eyes closed in a white-walled clinical room with a wall-mounted electrical outlet and a partially visible signboard reading \"ONIC\".",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "bab4ae98-9925-4236-a8fa-43c9374e6d4e",
+  "image_count": 1
+}

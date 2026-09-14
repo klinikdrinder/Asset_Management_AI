@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0541.MP4",
+      "evidence": [
+        "filename IMG_0541.MP4, duration 7.33s, 1280x720"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical/aesthetic treatment clip",
+      "evidence": [
+        "Two keyframes show consistent setting of a laser device being used on a patient's face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, 0-7.3s",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 7.333"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and patient",
+      "evidence": [
+        "One person in teal scrubs holding a device performing an action on a reclined second person"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in teal scrubs, mask, tinted glasses, hair bun; patient with eye shields, purple towel",
+      "evidence": [
+        "Teal scrub top with visible name text, surgical mask, orange-tinted safety glasses, dark hair in bun",
+        "Patient reclined wearing metallic eye shields and a purple towel around neck"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and neck area",
+      "evidence": [
+        "Device tip is positioned near the patient's cheek/eye area",
+        "Neck covered by towel, face visible with skin texture"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unspecified facial treatment",
+      "evidence": [
+        "No procedure name appears in readable_text_detected or spoken_content",
+        "Handheld device with fiber cable and yellow light emitted onto face, but no named procedure given"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device applied to patient's face",
+      "evidence": [
+        "Gloved hand holds a probe emitting yellow light near the patient's cheek in both frames"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner performing action on patient",
+      "evidence": [
+        "Practitioner's hands and instrument directly contact/hover over patient's face while patient reclines passively"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Skin appears shiny/moist, protective eye shields on patient",
+      "evidence": [
+        "Patient's skin has a glossy sheen consistent with gel or product",
+        "Metallic round eye shields visible over patient's eyes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "White wall background with red vertical stripe, medical tray with instruments visible in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static vertical close-up shot",
+      "evidence": [
+        "Both keyframes show same vertical framing and camera angle with minimal change"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient and practitioner centered, tray in background right",
+      "evidence": [
+        "Practitioner occupies upper-left/center, patient reclined lower-right, tray of tools visible on right edge"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is empty list"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Text on scrub top not clearly legible",
+      "evidence": [
+        "readable_text_detected is empty despite partial text visible on scrub top reading something like 'DR. LEW...'"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Possible promotional/clinic content",
+      "evidence": [
+        "Vertical video format and close-up treatment shot suggest social media style content, but no explicit marketing text or branding confirmed"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial skin treatment being administered",
+      "evidence": [
+        "Consistent visual of device application to patient's face across both frames"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this content",
+      "evidence": []
+    }
+  ],
+  "narrative": "A practitioner in teal scrubs, a face mask, and tinted protective glasses applies a handheld laser device with a yellow light tip to a reclined patient's face. The patient wears eye shields, a purple towel around the neck, and lies back while a tray with instruments sits nearby.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "1a7a9485-c7d2-4898-b194-75b38d1d5253",
+  "image_count": 2
+}

@@ -1,0 +1,170 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2125.MP4, single scene",
+      "evidence": [
+        "asset_id f41969d7-7dac-43d3-b655-6c49977143ab, filename IMG_2125.MP4, scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical treatment room video clip",
+      "evidence": [
+        "12.98 second scene, 1280x720, h264, depicting a clinician working near a patient's face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two keyframes show similar close-up positioning",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 12.98, keyframes_supplied 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One clinician-role person and one reclined patient-role person",
+      "evidence": [
+        "person in reddish scrubs, mask, gloves holding an instrument near the face of a reclined person wearing a blue gown"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician: dark hair in bun with bangs, surgical mask, reddish-brown scrub outfit; patient: dark hair, earring, reclined",
+      "evidence": [
+        "visible dark hair bun and bangs, blue/white surgical mask labeled 'M-CURE', rust-colored scrub top",
+        "reclined individual with an earring visible, head resting on a blue-covered headrest"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, nose, upper lip, and ear visible",
+      "evidence": [
+        "close-up framing shows the patient's nose, upper lip area, and ear with earring"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure being performed near the face",
+      "evidence": [
+        "no readable text or spoken content naming any procedure; only gloves, an instrument, and facial contact are visible, which alone cannot establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds instrument to patient's face while patient lies still",
+      "evidence": [
+        "gloved hands positioning a handheld device and holding the patient's face/nose in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing hands-on work directly on reclined patient",
+      "evidence": [
+        "direct physical proximity and hand contact between the clinician and the patient's face in both frames"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, surgical mask, disposable coverings, and metallic instrument visible",
+      "evidence": [
+        "white disposable gloves, surgical mask 'M-CURE', blue disposable headrest cover, boxed gloves and bottles on counter, silver articulated instrument arm"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room with sink and supplies",
+      "evidence": [
+        "pedestal sink, mirror, wall-mounted cabinet, boxed gloves, bottles on counter in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing on clinician and patient",
+      "evidence": [
+        "vertical 720-width portrait-oriented frame tightly cropped around the clinician's upper body and patient's head"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician centered above reclined patient occupying lower frame",
+      "evidence": [
+        "clinician's torso and face fill the upper-right of frame while patient's head fills the lower portion in both images"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected despite audio track",
+      "evidence": [
+        "spoken_content field is empty array; audio_stream true but no transcript provided"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Mask brand text visible",
+      "evidence": [
+        "mask text reading 'M-CURE' visible on clinician's mask in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No indication of intended marketing use",
+      "evidence": [
+        "no captions, logos, or promotional overlays present in the supplied keyframes or text"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical close-up of a facial treatment moment",
+      "evidence": [
+        "masked clinician using an instrument on the face of a reclined patient in a treatment room setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked clinician in reddish-brown scrubs uses a handheld device connected to an articulated arm near the face of a reclined person wearing a blue gown. The clinician wears white gloves and works close to the patient's nose/upper lip area in what appears to be a clinical treatment room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "f41969d7-7dac-43d3-b655-6c49977143ab",
+  "image_count": 2
+}

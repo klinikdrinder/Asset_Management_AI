@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_2984.MP4",
+      "evidence": [
+        "filename IMG_2984.MP4, single canonical scene with 2 keyframes"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical examination clip",
+      "evidence": [
+        "scene narrative describes a gloved hand pulling back clothing to reveal skin during a close-up examination"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single ~12.4s scene, no cuts",
+      "evidence": [
+        "duration_seconds 12.4, canonical_scenes 1"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved examiner and a patient present",
+      "evidence": [
+        "gloved hand shown manipulating clothing; second person wearing an Apple Watch stands beside the patient per scene narrative"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient in dark undergarment under blue scrubs; examiner in white/tan gloves",
+      "evidence": [
+        "image shows blue scrub top, black undergarment, and a white/tan glove on the examiner's hand"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Upper chest/underarm skin area",
+      "evidence": [
+        "image shows skin at the shoulder/underarm region exposed by pulling back clothing"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "gloved hand and skin contact are visible but no procedure is named in the supplied text, so per rules this remains UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clothing pulled back to expose skin for viewing",
+      "evidence": [
+        "gloved hand is shown gripping and pulling back the scrub collar to reveal underlying skin"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Examiner interacting directly with patient",
+      "evidence": [
+        "gloved hand in direct contact with patient's clothing/skin; second person standing beside patient per scene narrative"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small reddish mark and brown spot on skin",
+      "evidence": [
+        "image shows a small reddish/pink mark and a separate brown spot on the exposed skin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not identifiable from frame",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN; no background or room context visible beyond clothing and skin"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing",
+      "evidence": [
+        "tight close-up composition centered on the exposed skin area, portrait orientation"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Frame dominated by blue scrub fabric and gloved hand",
+      "evidence": [
+        "blue scrub fabric fills most of the frame with a gloved hand and small skin area as focal point"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech in audio track",
+      "evidence": [
+        "transcript_state NO_MEANINGFUL_SPEECH despite audio_state AUDIO_PRESENT"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations 0, scene-level OCR_VISIBLE_TEXT FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN with no branding or promotional cues visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close examination of a skin mark under clothing",
+      "evidence": [
+        "scene narrative describes clothing being pulled back to reveal and examine skin marks"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable at content-analysis level",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A gloved hand pulls back a patient's blue scrub top to expose skin on the upper chest/underarm area, revealing a small reddish mark and a nearby brown spot. Another person wearing an Apple Watch is positioned beside the patient during this close-up examination.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "d666ba57-2e5d-4b2f-ab1f-b4d18472c765",
+  "image_count": 1
+}

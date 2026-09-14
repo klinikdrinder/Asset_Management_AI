@@ -1,0 +1,180 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2962.MP4, single scene",
+      "evidence": [
+        "asset_id 3cc7b5b3-008d-4296-a2eb-6bcc9f5bdd13, filename IMG_2962.MP4, scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical-setting video clip, ~11 seconds",
+      "evidence": [
+        "duration_seconds 10.866667, width 1280, height 720, single scene 0.0-10.867s"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two nearly identical keyframes",
+      "evidence": [
+        "scene spans 0.0 to 10.867 seconds with 2 keyframes supplied, both showing the same pose and setup"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined individual and two gloved clinicians",
+      "evidence": [
+        "one person lies reclined with head draped and masked",
+        "one figure wears blue gown, surgical cap, mask, and loupes with headlight leaning over the head",
+        "a second gloved arm holding an instrument enters from the left side"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined person masked and draped; clinicians in blue gowns and gloves",
+      "evidence": [
+        "reclined individual wears a surgical mask and dark shirt with gauze wrapped around the head",
+        "standing figure wears blue surgical gown, white surgical cap, mask, and binocular loupes with an attached headlight",
+        "both clinicians wear white/pale surgical gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Top of scalp exposed and visible",
+      "evidence": [
+        "the crown/top of the reclined person's head is visible, discolored reddish-purple in areas with lighter skin tone patches"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed clinical activity on scalp",
+      "evidence": [
+        "no procedure name appears in readable_text_detected or spoken_content",
+        "gloves, instruments, and scalp contact are visible but per rules cannot establish a named procedure on their own"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holding instrument near scalp",
+      "evidence": [
+        "the standing figure holds a small pointed instrument close to the exposed scalp in both keyframes",
+        "a second gloved hand holds another instrument near the head from the side"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinicians positioned around a reclined patient",
+      "evidence": [
+        "two gowned/gloved individuals are positioned on either side of and above the reclined person's head, both engaged with the scalp area"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reddish-purple discoloration across scalp surface",
+      "evidence": [
+        "the exposed scalp shows a reddish-purple tint across the upper portion contrasted with lighter skin tone at the edges"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical room with cart and stool",
+      "evidence": [
+        "a black rolling stool and metal cart with equipment are visible in the background",
+        "white walls with red vertical stripe decoration visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Overhead angle, handheld point-of-view style shot",
+      "evidence": [
+        "both keyframes are shot from a high overhead angle looking down at the reclined person's head",
+        "portrait/vertical framing (1280x720 metadata but displayed vertically) suggests a close, personal shooting position"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Head centered, clinician framed above",
+      "evidence": [
+        "the reclined person's head and draped face occupy the center-lower frame while the standing clinician's upper body and loupes occupy the upper frame in both images"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content is an empty array despite audio_stream being present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected is an empty array",
+        "no legible text visible on equipment or drapes in the keyframes"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context supplied",
+      "evidence": [
+        "no caption, branding, or usage metadata provided in the supplied text"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical scalp-focused activity in progress",
+      "evidence": [
+        "draped, masked reclined person with exposed scalp attended by two gloved clinicians using small instruments under magnification loupes"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a descriptive content layer",
+      "evidence": [
+        "this layer is a technical embedding representation, not derivable as observed content from images or text"
+      ]
+    }
+  ],
+  "narrative": "Two keyframes show a person reclined in a chair with their head draped in surgical towels, most of the face covered by a surgical mask and gauze, while a gloved clinician wearing loupes and a headlight leans over the exposed scalp holding a small instrument. A second gloved person stands to the side also holding an instrument, in a room with a rolling stool and cart visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "3cc7b5b3-008d-4296-a2eb-6bcc9f5bdd13",
+  "image_count": 2
+}

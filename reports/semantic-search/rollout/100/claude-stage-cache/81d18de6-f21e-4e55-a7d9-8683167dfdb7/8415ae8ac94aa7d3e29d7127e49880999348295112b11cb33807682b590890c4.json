@@ -1,0 +1,169 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video asset, IMG_0527.MP4",
+      "evidence": [
+        "filename IMG_0527.MP4, duration 20.33s, 1280x720, 30fps, h264, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical close-up clip",
+      "evidence": [
+        "1 canonical scene, 2 keyframes showing a practitioner working near a reclining patient's face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes: 1; frame 1 shows tool near nose/lip, frame 2 shows hand resting near chin without the tool"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved practitioner and reclining patient",
+      "evidence": [
+        "one figure wearing mask, cap and gloves actively handling a tool; second figure reclining in a blue surgical cap being touched near the face"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Mask/cap/gloves on practitioner; blue cap on patient",
+      "evidence": [
+        "practitioner in surgical mask, head covering, and white gloves; patient wearing a blue surgical/hair cap, reclining on purple and grey towels"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's nose, upper lip, jaw and chin visible",
+      "evidence": [
+        "close-up view of patient's nose, upper lip, cheek, jaw and chin with practitioner's hand positioned at the jaw"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in evidence",
+      "evidence": [
+        "supplied text does not name any clinical procedure; gloves, a pen-like tool, and facial contact alone do not establish a named procedure per instructions"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Tool held near nose/lip while jaw is steadied",
+      "evidence": [
+        "frame 1 shows practitioner holding a white pen-like tool with red tip close to the patient's nose/upper lip while the other hand steadies the jaw; frame 2 shows hand resting near chin, patient smiling"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in direct physical contact with patient",
+      "evidence": [
+        "practitioner's gloved hands are in direct contact with the patient's jaw/chin in both frames"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "PPE and a slim instrument visible",
+      "evidence": [
+        "white gloves, surgical mask, surgical caps, and a slim white pen-like tool with a red tip are visible"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "background shows a white wall, a door handle, and a dark equipment case, but the setting cannot be confidently classified from the images"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up, low-angle framing on patient's face",
+      "evidence": [
+        "tight close-up shot centered on the patient's face and the practitioner's hands, consistent across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face and hands fill the frame",
+      "evidence": [
+        "patient's face occupies the lower/central frame with practitioner's gloved hands and tool overlaid in the upper portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state is NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No legible on-screen text observed",
+      "evidence": [
+        "scene-level OCR_VISIBLE_TEXT recorded as FALSE despite one OCR pass being run"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "no branding, captions, or promotional framing evident, and scene-level layer is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close facial care/attention moment",
+      "evidence": [
+        "sequence depicts a practitioner closely attending to a reclining patient's face with a handheld tool, then resting a hand near the chin as the patient smiles"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual/descriptive layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A gloved medical practitioner wearing a surgical mask and cap leans over a reclining female patient, holding a slim white pen-like tool with a red tip near her nose and upper lip while steadying her jaw with the other hand. A second frame shows the same patient in a blue surgical cap lying back with the practitioner's gloved hand resting near her chin and no instrument visible.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "81d18de6-f21e-4e55-a7d9-8683167dfdb7",
+  "image_count": 1
+}

@@ -1,0 +1,11 @@
+{
+  "requirement_policy_version": "kdi_requirement_policy_v1",
+  "requirement_schema_version": "kdi_requirement_schema_v1",
+  "semantic_default": "STRONG_REQUIREMENT",
+  "deterministic_hard_fields": ["MEDIA_TYPE", "EXTENSION", "YEAR", "DATE", "DURATION", "TIMESTAMP"],
+  "response_control_fields": ["REQUESTED_RESULT_COUNT", "SORT", "SIMILARITY_INTENT"],
+  "hard_markers": ["EXPLICIT_MUST", "EXPLICIT_EXACT"],
+  "preference_markers": ["PREFERENCE"],
+  "hard_exclusion_markers": ["EXPLICIT_EXCLUDE"],
+  "reason_codes": ["EXPLICIT_MEDIA_TYPE", "EXPLICIT_EXTENSION", "EXPLICIT_TEMPORAL_CONSTRAINT", "EXPLICIT_NUMERIC_RANGE", "EXPLICIT_HARD_MARKER", "EXPLICIT_NEGATION", "SOFT_PREFERENCE_MARKER", "NEGATIVE_PREFERENCE_MARKER", "DEFAULT_SEMANTIC_REQUIREMENT", "RESPONSE_CONTROL_FIELD", "UNRESOLVED_SEMANTIC", "PARSER_CONFLICT", "CONTEXT_ONLY"]
+}

@@ -1,0 +1,32 @@
+{
+  "validator_version": "kdi_semantic_consistency_v1",
+  "configuration_version": "kdi_semantic_consistency_config_v1",
+  "result_states": ["PASS", "PASS_WITH_UNCERTAINTY", "INCOMPLETE", "CONFLICT", "REVIEW_REQUIRED", "NOT_APPLICABLE"],
+  "severity": {"P0": "CRITICAL", "P1": "SEARCH_CRITICAL", "P2": "IMPORTANT", "P3": "LOW_IMPACT"},
+  "action_anatomy_compatibility": {
+    "INJECTING": ["LOWER_FACE", "LIPS", "NECK", "FACE", "CHEEK"],
+    "IMPLANTING_GRAFTS": ["SCALP", "FRONTAL_SCALP", "FRONTAL_HAIRLINE", "RECIPIENT_REGION"],
+    "CLEANSING": ["FACE", "CHEEK", "LOWER_FACE"],
+    "LOOKING_AT_CAMERA": ["FACE"],
+    "POSING_FOR_CAMERA": ["FACE", "FRONTAL_SCALP", "FRONTAL_HAIRLINE"],
+    "TOUCHING": ["FACE", "LOWER_FACE", "CHEEK", "SCALP", "FRONTAL_SCALP"],
+    "USING_DEVICE": ["FACE", "LOWER_FACE", "CHEEK", "SCALP", "FRONTAL_SCALP"]
+  },
+  "treatment_action_compatibility": {
+    "INJECTABLES": ["INJECTING", "HOLDING_SYRINGE"],
+    "HAIR_TRANSPLANT": ["IMPLANTING_GRAFTS"],
+    "HAIR_TRANSPLANT_FUE": ["IMPLANTING_GRAFTS"],
+    "FUE_IMPLANTATION": ["IMPLANTING_GRAFTS"]
+  },
+  "treatment_anatomy_compatibility": {
+    "INJECTABLES": ["LOWER_FACE", "LIPS", "NECK", "FACE", "CHEEK"],
+    "HAIR_TRANSPLANT": ["SCALP", "FRONTAL_SCALP", "RECIPIENT_REGION"],
+    "HAIR_TRANSPLANT_FUE": ["SCALP", "FRONTAL_SCALP", "RECIPIENT_REGION"],
+    "FUE_IMPLANTATION": ["SCALP", "FRONTAL_SCALP", "RECIPIENT_REGION"]
+  },
+  "actor_required_actions": ["INJECTING", "IMPLANTING_GRAFTS", "CLEANSING", "USING_DEVICE", "TOUCHING", "POSING_FOR_CAMERA", "LOOKING_AT_CAMERA"],
+  "shadow_mode": true,
+  "database_writes": false,
+  "media_analysis": false,
+  "database_migrations": false
+}

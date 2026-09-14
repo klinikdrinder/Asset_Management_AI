@@ -1,0 +1,175 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical clinical video file, IMG_0537.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_0537.MP4, 1280x720, 14.83s, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result for GLOBAL_ASSET_UNDERSTANDING is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "Two keyframes show closely related sequential moments"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles not confirmed by supplied text",
+      "evidence": [
+        "Scene-level result for PEOPLE_ROLES is UNKNOWN; no textual confirmation of titles/roles"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked provider and reclined patient with protective gear",
+      "evidence": [
+        "Provider wears teal scrubs, surgical mask, laser safety goggles, gloves, hair covered",
+        "Patient wears blue hairnet, glasses, metal eye shield, purple towel, shiny/wet facial skin"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, nose, and upper lip area visible",
+      "evidence": [
+        "Tool is held near the patient's nose and upper lip in the keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied text",
+      "evidence": [
+        "Only gloves, a spatula-like tool, and facial contact are visible; no procedure name is present in supplied text, so per rules this remains UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider applying a tool to patient's face",
+      "evidence": [
+        "Provider's gloved hand holds a white spatula-like tool near patient's nose/upper lip"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider positioned over reclined patient",
+      "evidence": [
+        "Provider leans over the reclined patient in direct physical proximity"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Shiny/wet skin and protective eye shield visible",
+      "evidence": [
+        "Patient's facial skin appears visibly shiny/wet",
+        "Metal eye shield covers one eye"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not confirmed beyond visible room",
+      "evidence": [
+        "Scene-level result for ENVIRONMENT is UNKNOWN despite visible trolley and white walls"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical handheld-style framing",
+      "evidence": [
+        "Vertical 1280x720 aspect, close-up framing on patient's face and provider's hands"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered lower frame, provider upper frame",
+      "evidence": [
+        "Patient reclined across lower portion of frame; provider's arm and tool occupy upper portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH",
+        "Scene-level SPEECH_TRANSCRIPT_AUDIO is FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Text presence not confirmed",
+      "evidence": [
+        "ocr_observations: 1 but scene-level OCR_VISIBLE_TEXT is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing content evident",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE is FALSE"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose not determinable",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS is NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "Two sequential keyframes from a vertical clinical video show a masked provider in teal scrubs, laser safety goggles, and gloves leaning over a reclined patient, holding a white spatula-like tool near the patient's nose and upper lip. The patient wears a blue hairnet, a metal eye shield over one eye, glasses, and a purple towel around the neck, with visibly shiny/wet facial skin, while a medical trolley with small equipment cases and containers sits in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "86d0116e-0fc0-49e8-93d1-f5549b89b175",
+  "image_count": 1
+}

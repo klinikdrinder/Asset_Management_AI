@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3398.MP4",
+      "evidence": [
+        "filename: IMG_3398.MP4",
+        "asset_id: b13b7506-8d3c-4b1f-812e-40664557f66b"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short vertical clinical clip",
+      "evidence": [
+        "13.1 second duration, 1280x720 h264 video with audio stream",
+        "two near-identical keyframes of a close-up clinical scene"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, 0-13.1s",
+      "evidence": [
+        "scene_index 0 spanning start_seconds 0.0 to end_seconds 13.1",
+        "both keyframes show the same pose/moment with minor variation"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "person in black scrubs with name tag \"DR ASHRUL IKHMAL\" wearing mask and gloves",
+        "second person lying back with eyes closed, draped with towel, in patient position"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked clinician, dark-haired patient",
+      "evidence": [
+        "clinician has curly dark hair, glasses, black surgical mask, black scrub top",
+        "patient has dark hair pulled back, eyes closed, small red marks on cheek"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and cheek visible",
+      "evidence": [
+        "patient's nose, closed eyes, cheek and jaw are visible in frame",
+        "clinician's gloved hand near patient's chin/cheek"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identified",
+      "evidence": [
+        "no procedure name present in supplied readable_text_detected or spoken_content",
+        "gloves, a handheld device, and facial contact alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds device near patient's face",
+      "evidence": [
+        "gloved hand steadying patient's chin while a blue-tipped device is held near the upper face",
+        "patient remains still with eyes closed throughout both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-patient interaction",
+      "evidence": [
+        "clinician leaning directly over reclined patient in a hands-on care position"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small red marks on cheek",
+      "evidence": [
+        "several small red/dark spots visible on the patient's left cheek in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "plain white wall background",
+        "dark equipment/light fixture visible at top of frame",
+        "blue towel and plastic drape covering patient on a treatment bed"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing",
+      "evidence": [
+        "vertical 720-width frame tightly cropped on the two faces",
+        "static close camera angle from above the patient"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient foreground, clinician above",
+      "evidence": [
+        "patient's face fills the lower half of frame",
+        "clinician's head and torso occupy the upper half, centered over patient"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is an empty array despite audio_stream being present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Name embroidered on scrub top",
+      "evidence": [
+        "text \"DR ASHRUL IKHMAL\" visible embroidered on the clinician's black scrub top in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Usage intent not determinable",
+      "evidence": [
+        "no captions, logos, or promotional text supplied beyond the clinician's name tag, insufficient to determine marketing intent"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician attending to patient's face",
+      "evidence": [
+        "close physical interaction between a scrub-clad clinician and a reclined patient centered on the facial area"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked, gloved clinician wearing black scrubs with a name tag reading \"DR ASHRUL IKHMAL\" leans over a reclined patient, holding a blue-tipped handheld device near her cheek. The patient lies on a treatment bed draped with a blue towel and plastic cover, eyes closed, with several small red marks visible on her cheek.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "b13b7506-8d3c-4b1f-812e-40664557f66b",
+  "image_count": 2
+}

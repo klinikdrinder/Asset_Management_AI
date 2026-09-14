@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3387.MP4",
+      "evidence": [
+        "filename IMG_3387.MP4, asset_id 99a2ce67-83ba-401c-9859-ab94909a0520"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short 12-second clinical-setting clip, two keyframes",
+      "evidence": [
+        "duration_seconds 12.033, 2 keyframes supplied showing a chair-side scene"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene spanning 0 to 12.03 seconds",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 12.033"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Seated woman and a masked man in black scrubs behind her",
+      "evidence": [
+        "first keyframe shows only the seated woman and an arm/torso in black behind her",
+        "second keyframe shows a man wearing glasses, a black face mask, and black scrub top with text, making a peace sign, standing behind the seated woman"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman with damp hair in headband, blue towel around shoulders",
+      "evidence": [
+        "woman has hair tied up under a black towel-headband, wears a dark blue towel/wrap over shoulders",
+        "man wears glasses, black mask, black scrub top, smartwatch"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, hairline, and scalp area under headband visible",
+      "evidence": [
+        "woman's face, forehead, and hairline are visible; hair pulled back under headband exposing forehead/scalp margin"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "no readable_text_detected or spoken_content provided naming any procedure; presence of clinic-like chair and staff alone does not establish a specific treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman looks at camera while man gestures a peace sign",
+      "evidence": [
+        "keyframe 1 shows woman facing camera with arms crossed behind her",
+        "keyframe 2 shows the man raising two fingers in a peace sign behind the seated woman"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Man positioned behind seated woman, staff-client arrangement",
+      "evidence": [
+        "man stands directly behind the reclined woman in both keyframes, suggesting a staff/client spatial relationship"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small red mark on woman's forehead",
+      "evidence": [
+        "a small red/pink spot is visible on the woman's forehead in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical-style room with blue treatment chair",
+      "evidence": [
+        "white cabinetry/wall, blue vinyl-textured chair with plastic headrest cover, red vertical panel accents in second keyframe"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical selfie-style handheld framing, close-up",
+      "evidence": [
+        "portrait 1280x720 aspect suggests vertical mobile video, close facial framing typical of a selfie angle held by the seated subject"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject centered and dominant in frame, second figure behind",
+      "evidence": [
+        "woman's face fills lower-center of frame in both images; man appears upper-background in second keyframe"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No transcript content supplied despite audio track",
+      "evidence": [
+        "audio_stream true but spoken_content array is empty"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Text on man's scrub top not legible",
+      "evidence": [
+        "readable_text_detected is empty; scrub top text appears mirrored/garbled and unreadable in keyframe 2"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators supplied",
+      "evidence": [
+        "no captions, logos, or promotional text provided in readable_text_detected or spoken_content"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Client sitting in treatment chair interacting playfully with staff member",
+      "evidence": [
+        "seated woman facing camera followed by a masked staff member appearing behind her with a peace-sign gesture"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A woman with damp hair pulled back under a black headband sits in a blue treatment chair wrapped in a blue towel, first alone facing the camera and then with a masked man in black scrubs standing behind her making a peace sign. Text on his scrub top is present but illegible due to mirrored/obscured framing.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "99a2ce67-83ba-401c-9859-ab94909a0520",
+  "image_count": 2
+}

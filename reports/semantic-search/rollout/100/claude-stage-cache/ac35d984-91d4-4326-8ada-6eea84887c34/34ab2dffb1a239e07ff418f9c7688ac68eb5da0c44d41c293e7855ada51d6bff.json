@@ -1,0 +1,185 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_4602.MP4, 18.6s, 1280x720",
+      "evidence": [
+        "filename IMG_4602.MP4",
+        "duration_seconds 18.566667",
+        "width 1280, height 720, fps 30/1, codec h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical treatment room clip",
+      "evidence": [
+        "single canonical scene showing a clinician working near a reclined patient's face with a device"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across the clip",
+      "evidence": [
+        "canonical_scenes: 1",
+        "scene_index 0 spans the asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "one person in dark scrubs, mask, and gloves handling equipment near the other person's face",
+        "second person reclined on a treatment bed with eyes closed"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician masked with hair bun; patient with black headband",
+      "evidence": [
+        "clinician wears surgical mask, glasses, hair in a bun, navy scrub top",
+        "patient has a black headband and is draped in blue cloth"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forehead and eyebrow/periorbital area visible",
+      "evidence": [
+        "handheld device positioned near the patient's forehead and eyebrow region",
+        "patient's face, closed eyes visible"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN",
+        "gloves, instruments, and device contact with skin do not by themselves name a procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held near patient's forehead while spatula tool is held in other hand",
+      "evidence": [
+        "clinician holds handheld device connected to console near forehead/eyebrow",
+        "clinician simultaneously holds a white spatula-like tool"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing hands-on activity on patient",
+      "evidence": [
+        "clinician positioned above and in direct contact/proximity to patient's face with tools"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, mask, console device, blue draping",
+      "evidence": [
+        "latex gloves on clinician",
+        "surgical mask worn",
+        "console machine with dials and screen",
+        "blue surgical draping over patient"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not further specified",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible room wall, door, and light switches"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Camera style not determinable",
+      "evidence": [
+        "scene-level CINEMATOGRAPHY marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical framing centered on patient's face and clinician's hands",
+      "evidence": [
+        "portrait-oriented keyframes focus on the patient's face with clinician's hands and device in frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "audio_stream_present true",
+        "transcript_state NO_MEANINGFUL_SPEECH",
+        "scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on clinician's scrub logo and equipment",
+      "evidence": [
+        "ocr_observations: 2",
+        "partial logo text visible on clinician's scrub top"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Narrative purpose not determinable",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked clinician in dark scrubs and gloves holds a handheld device connected to a console machine near the forehead/eyebrow area of a reclined patient, while holding a white spatula-like tool in the other hand. The patient lies on a treatment bed wrapped in blue draping with a black headband, eyes closed, in a clinical setting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "ac35d984-91d4-4326-8ada-6eea84887c34",
+  "image_count": 1
+}

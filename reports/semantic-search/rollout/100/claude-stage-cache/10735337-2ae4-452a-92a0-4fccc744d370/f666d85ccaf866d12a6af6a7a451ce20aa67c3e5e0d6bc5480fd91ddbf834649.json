@@ -1,0 +1,178 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, 16.5s, 1280x720",
+      "evidence": [
+        "Technical metadata: duration_seconds 16.533333, width 1280, height 720, fps 30/1, codec h264, filename IMG_0921.MP4"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical close-up video",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "Scene-level narrative describes one continuous close interaction"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "Two near-identical vertical keyframes shown"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician attending to a reclined patient",
+      "evidence": [
+        "Masked person in scrub top with gloved hands positioned over the head of a reclined, draped individual"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Olive scrubs, surgical mask, gloves, smartwatch",
+      "evidence": [
+        "Clinician wears an olive-green scrub top with embroidered name text, a blue surgical mask, white disposable gloves, hair in a bun, and a black smartwatch"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's head/scalp visible",
+      "evidence": [
+        "Patient's head and hairline/scalp area visible beneath the clinician's gloved hands"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "Scene layer result lists TREATMENT_PROCEDURE as UNKNOWN",
+        "Gloves, hand contact with scalp, and equipment are present but no named procedure appears in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician's gloved hands working at patient's hairline",
+      "evidence": [
+        "Gloved hands positioned at the patient's hairline/scalp in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned directly over patient",
+      "evidence": [
+        "Clinician leans closely over the reclined patient's head, hands in direct contact with scalp area"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue/grey surgical draping over patient",
+      "evidence": [
+        "Patient draped in blue and grey coverings while reclined",
+        "Clinician wearing mask and gloves consistent with a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Indoor room, specific setting unclear",
+      "evidence": [
+        "Scene layer result lists ENVIRONMENT as UNKNOWN",
+        "Window blinds and equipment visible but exact facility type not established by evidence"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical framing on clinician and patient",
+      "evidence": [
+        "Two near-identical vertical keyframes framed closely on the clinician's upper body and the patient's head"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician centered above reclined patient",
+      "evidence": [
+        "Clinician occupies the upper/central frame leaning over the patient positioned in the lower frame across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "audio_stream_present: true, audio_state: AUDIO_PRESENT, transcript_state: NO_MEANINGFUL_SPEECH",
+        "Scene layer result lists SPEECH_TRANSCRIPT_AUDIO as FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Embroidered name text on scrub top",
+      "evidence": [
+        "ocr_evaluated: true, ocr_observations: 2",
+        "Visible embroidered text on the clinician's olive scrub top"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing content indicated",
+      "evidence": [
+        "Scene layer result lists MARKETING_CONTENT_USAGE as FALSE"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall meaning/purpose not established",
+      "evidence": [
+        "Scene layer result lists SEMANTIC_NARRATIVE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable at content level",
+      "evidence": [
+        "Scene layer result lists SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked clinician in an olive scrub top works closely over the head of a reclined, draped patient, with gloved hands positioned at the patient's hairline/scalp. The setting is an indoor room with window blinds and nearby equipment, captured across two near-identical vertical keyframes.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "10735337-2ae4-452a-92a0-4fccc744d370",
+  "image_count": 1
+}

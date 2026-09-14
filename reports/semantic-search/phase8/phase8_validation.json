@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+  "configuration_fingerprint": "a84a43f5124843e404126e84f32911d0d361df67e60961759a24635fcbaa57ca",
+  "checks": {
+    "specification_fingerprint": true,
+    "exact_assets": true,
+    "source_fingerprints": true,
+    "evidence_bundles": true,
+    "four_narratives": true,
+    "scene_narratives": true,
+    "semantic_event_narratives": true,
+    "technical_events_safe": true,
+    "images_non_temporal": true,
+    "img1238_review": true,
+    "claim_evidence": true,
+    "unsupported_high_confidence": true,
+    "transcript_safety": true,
+    "ocr_safety": true,
+    "unknown_safety": true,
+    "search_safe": true,
+    "idempotency": true,
+    "template_fallback": true,
+    "no_forbidden_writes": true,
+    "production_preserved": true
+  },
+  "fixtures": {
+    "strong_evidence": "PASS",
+    "unknown_treatment": "PASS",
+    "ocr_only": "PASS",
+    "transcript_only": "PASS",
+    "conflict": "PASS",
+    "unknown_scene": "PASS"
+  },
+  "targeted_tests": {
+    "passed": 13,
+    "failed": 0
+  },
+  "claims": {
+    "total": 38,
+    "accepted": 37,
+    "with_evidence": 37,
+    "unsupported": 0,
+    "coverage_percent": 100.0,
+    "high_confidence": 7,
+    "unsupported_high_confidence": 0
+  },
+  "modalities": {
+    "VISUAL": 36,
+    "TRANSCRIPT": 0,
+    "OCR": 1,
+    "METADATA": 0,
+    "MULTIMODAL": 0
+  },
+  "reconciliation": {
+    "UNCHANGED": 9,
+    "REFINED": 1,
+    "CORRECTED": 0,
+    "REJECTED": 0
+  },
+  "unknown_promotions": {
+    "treatment": 0,
+    "anatomy": 0,
+    "actions": 0,
+    "roles": 0
+  },
+  "cross_level": {
+    "asset_scene": "PASS",
+    "scene_event": "PASS",
+    "temporal": "PASS",
+    "modality": "PASS",
+    "contradictions": 0
+  },
+  "production_counts_before": {
+    "assets": 881,
+    "keyframes": 301,
+    "asset_scenes": 301,
+    "source_files": 890,
+    "asset_sources": 881,
+    "text_embeddings": 20,
+    "ocr_observations": 0,
+    "scene_narratives": 16,
+    "application_users": 2,
+    "asset_ai_profiles": 16,
+    "visual_embeddings": 875,
+    "asset_destinations": 881,
+    "authorization_rows": 881,
+    "asset_search_documents": 10,
+    "scene_search_documents": 10,
+    "production_transcript_chunks": 0
+  },
+  "production_counts_after": {
+    "assets": 881,
+    "keyframes": 301,
+    "asset_scenes": 301,
+    "source_files": 890,
+    "asset_sources": 881,
+    "text_embeddings": 20,
+    "ocr_observations": 0,
+    "scene_narratives": 16,
+    "application_users": 2,
+    "asset_ai_profiles": 16,
+    "visual_embeddings": 875,
+    "asset_destinations": 881,
+    "authorization_rows": 881,
+    "asset_search_documents": 10,
+    "scene_search_documents": 10,
+    "production_transcript_chunks": 0
+  },
+  "forbidden_operations": {
+    "database_migrations": 0,
+    "production_narrative_writes": 0,
+    "production_semantic_writes": 0,
+    "production_search_document_writes": 0,
+    "production_embedding_writes": 0
+  }
+}

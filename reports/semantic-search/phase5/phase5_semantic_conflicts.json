@@ -1,0 +1,133 @@
+{
+  "conflict_count": 7,
+  "conflicts": [
+    {
+      "conflict_type": "POSSIBLE_UNDER_SEGMENTATION",
+      "asset_id": "babae120-9372-42ad-b535-02a3276ea2be",
+      "filename": "IMG_1238.MP4",
+      "layer_number": 3,
+      "layer": "TEMPORAL_SCENE_STRUCTURE",
+      "existing_value": "One Phase 3 scene",
+      "new_candidate_value": "Six technical events indicate internal change",
+      "evidence": {
+        "source": "PHASE3_TIMELINE"
+      },
+      "confidence": 1.0,
+      "status": "UNRESOLVED",
+      "recommended_resolution": "Human review before semantic ingestion"
+    },
+    {
+      "conflict_type": "SEARCH_DOCUMENT_INTERNAL_ACTION_MISMATCH",
+      "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+      "filename": "DSC03753.JPG",
+      "source_a": "asset_search_documents.structured_document.actions",
+      "value_a": [],
+      "source_b": "asset_search_documents.structured_document.rich_semantic_v2.actions and scene_actions",
+      "value_b": [
+        "POSING_FOR_CAMERA"
+      ],
+      "recommended_future_action": "NORMALIZE and rebuild the search document from canonical structured facts",
+      "layer_number": 8,
+      "layer": "ACTIONS_EVENTS",
+      "status": "UNRESOLVED",
+      "evidence": {
+        "source": "PHASE2_AUDIT"
+      },
+      "confidence": 1.0,
+      "recommended_resolution": "NORMALIZE and rebuild the search document from canonical structured facts"
+    },
+    {
+      "conflict_type": "LEGACY_COMPLETENESS_WITH_ZERO_EVIDENCE",
+      "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+      "filename": "DSC03753.JPG",
+      "source_a": "asset_layer_status",
+      "value_a": "TREATMENT=COMPLETE and OCR=COMPLETE with evidence_count=0",
+      "source_b": "semantic_index_v1 audit",
+      "value_b": "SEARCH_DOC_ONLY; no structured treatment/OCR assertion",
+      "recommended_future_action": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states",
+      "layer_number": 7,
+      "layer": "TREATMENT_PROCEDURE",
+      "status": "UNRESOLVED",
+      "evidence": {
+        "source": "PHASE2_AUDIT"
+      },
+      "confidence": 1.0,
+      "recommended_resolution": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states"
+    },
+    {
+      "conflict_type": "LEGACY_COMPLETENESS_WITH_ZERO_EVIDENCE",
+      "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+      "filename": "DSC03753.JPG",
+      "source_a": "asset_layer_status",
+      "value_a": "TREATMENT=COMPLETE and OCR=COMPLETE with evidence_count=0",
+      "source_b": "semantic_index_v1 audit",
+      "value_b": "SEARCH_DOC_ONLY; no structured treatment/OCR assertion",
+      "recommended_future_action": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states",
+      "layer_number": 15,
+      "layer": "OCR_VISIBLE_TEXT",
+      "status": "UNRESOLVED",
+      "evidence": {
+        "source": "PHASE2_AUDIT"
+      },
+      "confidence": 1.0,
+      "recommended_resolution": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states"
+    },
+    {
+      "conflict_type": "SEARCH_DOCUMENT_INTERNAL_ACTION_MISMATCH",
+      "asset_id": "6215ad8b-12be-4a8e-bc49-f6b3dcf55c21",
+      "filename": "DSC08097.JPG",
+      "source_a": "asset_search_documents.structured_document.actions",
+      "value_a": [],
+      "source_b": "asset_search_documents.structured_document.rich_semantic_v2.actions and scene_actions",
+      "value_b": [
+        "POSING_FOR_CAMERA",
+        "LOOKING_AT_CAMERA"
+      ],
+      "recommended_future_action": "NORMALIZE and rebuild the search document from canonical structured facts",
+      "layer_number": 8,
+      "layer": "ACTIONS_EVENTS",
+      "status": "UNRESOLVED",
+      "evidence": {
+        "source": "PHASE2_AUDIT"
+      },
+      "confidence": 1.0,
+      "recommended_resolution": "NORMALIZE and rebuild the search document from canonical structured facts"
+    },
+    {
+      "conflict_type": "LEGACY_COMPLETENESS_WITH_ZERO_EVIDENCE",
+      "asset_id": "6215ad8b-12be-4a8e-bc49-f6b3dcf55c21",
+      "filename": "DSC08097.JPG",
+      "source_a": "asset_layer_status",
+      "value_a": "TREATMENT=COMPLETE and OCR=COMPLETE with evidence_count=0",
+      "source_b": "semantic_index_v1 audit",
+      "value_b": "SEARCH_DOC_ONLY; no structured treatment/OCR assertion",
+      "recommended_future_action": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states",
+      "layer_number": 7,
+      "layer": "TREATMENT_PROCEDURE",
+      "status": "UNRESOLVED",
+      "evidence": {
+        "source": "PHASE2_AUDIT"
+      },
+      "confidence": 1.0,
+      "recommended_resolution": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states"
+    },
+    {
+      "conflict_type": "LEGACY_COMPLETENESS_WITH_ZERO_EVIDENCE",
+      "asset_id": "6215ad8b-12be-4a8e-bc49-f6b3dcf55c21",
+      "filename": "DSC08097.JPG",
+      "source_a": "asset_layer_status",
+      "value_a": "TREATMENT=COMPLETE and OCR=COMPLETE with evidence_count=0",
+      "source_b": "semantic_index_v1 audit",
+      "value_b": "SEARCH_DOC_ONLY; no structured treatment/OCR assertion",
+      "recommended_future_action": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states",
+      "layer_number": 15,
+      "layer": "OCR_VISIBLE_TEXT",
+      "status": "UNRESOLVED",
+      "evidence": {
+        "source": "PHASE2_AUDIT"
+      },
+      "confidence": 1.0,
+      "recommended_resolution": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states"
+    }
+  ]
+}

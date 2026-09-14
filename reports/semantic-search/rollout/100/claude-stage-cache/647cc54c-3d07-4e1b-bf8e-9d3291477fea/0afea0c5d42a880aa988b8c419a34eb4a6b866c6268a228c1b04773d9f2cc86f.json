@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0589.MP4, 9.18s, 1280x720",
+      "evidence": [
+        "Technical metadata: filename IMG_0589.MP4, duration 9.175011s, resolution 1280x720, h264 codec"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context of the clip not fully determinable",
+      "evidence": [
+        "Only two keyframes sampled; scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles inferred but not confirmed by text",
+      "evidence": [
+        "Scene-level PEOPLE_ROLES marked UNKNOWN despite visual cues of clinician and patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs, mask, goggles, gloves; patient with metal eye shield and purple towel",
+      "evidence": [
+        "Image shows clinician wearing teal scrubs, blue face mask, dark laser goggles, latex gloves, Apple Watch",
+        "Patient reclined with metal eye shield, blue hair net, purple towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial area of patient visible",
+      "evidence": [
+        "Patient's face, cheek, and area around eye visible with metal shield covering eye"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not named in supplied text",
+      "evidence": [
+        "No named procedure in supplied text; only generic device and gloves visible",
+        "Scene-level TREATMENT_PROCEDURE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds handheld device near patient's face",
+      "evidence": [
+        "Image shows clinician's hand holding a metal handpiece connected to orange cable near patient's cheek"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned over reclined patient performing hands-on treatment",
+      "evidence": [
+        "Clinician leaning over patient with device close to face, patient lying on treatment bed"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective eye shield, gloves, and laser safety goggles indicate a laser-based skin treatment setting",
+      "evidence": [
+        "Metal eye shield on patient, orange fiber optic cable, laser safety goggles worn by clinician"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Clinical room setting, specifics unknown",
+      "evidence": [
+        "Background shows white walls, a door, and a tray with instruments; scene-level ENVIRONMENT marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld shot focusing on patient's face and clinician's hands",
+      "evidence": [
+        "Image framing shows tight close-up composition centered on patient's face and clinician's hands"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical framing with patient centered, clinician above",
+      "evidence": [
+        "Portrait-oriented image with patient's face in lower center and clinician's upper body above"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No marketing content indicated",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked NOT_APPLICABLE"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this asset",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A clinician wearing teal scrubs, a face mask, and laser safety goggles holds a handheld device connected to an orange fiber optic cable near the face of a reclined patient who wears a metal eye shield. The treatment room includes protective drapes, a purple towel, and a tray with instruments and additional goggles.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "647cc54c-3d07-4e1b-bf8e-9d3291477fea",
+  "image_count": 1
+}

@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-08-25T02:20:47.894Z",
+  "legacy_components": [
+    {
+      "component": "app/lib/media/search-v3.ts",
+      "classification": "LEGACY_ACTIVE_V3",
+      "reusable": [
+        "narrow explicit-count regex",
+        "basic media/ontology patterns"
+      ],
+      "conflicts": [
+        "flat filters",
+        "interpretation coupled to retrieval route",
+        "limited numeric typing",
+        "inferred concepts can become filters"
+      ]
+    },
+    {
+      "component": "app/lib/media/conversation.ts",
+      "classification": "LEGACY_CONVERSATIONAL",
+      "reusable": [
+        "provider-neutral interface shape",
+        "basic state vocabulary"
+      ],
+      "conflicts": [
+        "state mutation mixed with interpretation",
+        "Phase 23 concerns"
+      ]
+    },
+    {
+      "component": "search_sessions/search_queries/search_results/search_feedback",
+      "classification": "REUSABLE_BACKEND_OWNED",
+      "reusable": [
+        "service-only writes",
+        "JSON plan storage capacity",
+        "session ownership"
+      ],
+      "conflicts": []
+    }
+  ],
+  "historical_numeric_bug": {
+    "cause": "position/first-integer extraction in earlier search logic",
+    "phase13_prevention": "approved quantity grammar plus occurrence spans and typed numeric slots; bare integers never count"
+  },
+  "historical_all_of_bug": {
+    "cause": "inferred semantic concepts were flattened into simultaneous mandatory filters",
+    "phase13_prevention": "positive, negative, deterministic constraints, preferences, modalities, and surface markers remain separate; Phase 13 emits no mandatory-filter policy"
+  },
+  "deprecated": [
+    "query-to-flat-filter interpretation as canonical contract",
+    "parser-driven retrieval/ranking",
+    "implicit conversational state mutation"
+  ],
+  "retrieval_imports_in_phase13": 0
+}

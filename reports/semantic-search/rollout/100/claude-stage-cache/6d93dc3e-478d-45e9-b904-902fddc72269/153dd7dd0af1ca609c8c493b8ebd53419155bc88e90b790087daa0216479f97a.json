@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0590.MP4, 9.44s, 1280x720",
+      "evidence": [
+        "Technical metadata specifies filename, duration, resolution, codec"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context of video not determinable",
+      "evidence": [
+        "Scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across the clip",
+      "evidence": [
+        "canonical_scenes: 1, single scene_index with continuous action"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles of individuals not explicitly confirmed",
+      "evidence": [
+        "Scene-level PEOPLE_ROLES marked UNKNOWN despite visible clinician-like attire"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs, mask, safety glasses; patient reclined with eye shield and purple towel",
+      "evidence": [
+        "Keyframes show clinician's attire and patient's appearance"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific anatomical structures not clearly identifiable beyond face region",
+      "evidence": [
+        "Scene-level ANATOMY marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Named procedure cannot be confirmed from evidence",
+      "evidence": [
+        "No named procedure in supplied text; device and gloves alone do not establish one"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician directs a handpiece with light beam near patient's face",
+      "evidence": [
+        "Keyframes show handpiece positioned near nose/upper lip with visible glow"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician actively working over reclined patient",
+      "evidence": [
+        "Spatial arrangement in keyframes shows clinician leaning over patient"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Yellow-green glow visible on skin near nose/upper lip during device use",
+      "evidence": [
+        "Keyframes show illuminated skin area under device tip"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting details beyond partial room view not confirmed",
+      "evidence": [
+        "Scene-level ENVIRONMENT marked UNKNOWN despite visible clinical furniture in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld shot focusing on treatment area",
+      "evidence": [
+        "Tight framing on faces and instrument in keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical framing centered on clinician and patient's overlapping faces",
+      "evidence": [
+        "Portrait-oriented keyframes with subjects filling frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track presence",
+      "evidence": [
+        "transcript_state: NO_SPEECH",
+        "audio_stream_present true but no speech"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended use of footage not determinable",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose not confirmed",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Embedding-based indexing details not assessed",
+      "evidence": [
+        "No embedding data supplied in evidence"
+      ]
+    }
+  ],
+  "narrative": "A clinician wearing a mask, safety glasses, and gloves holds a handpiece connected to an orange fiber cable, directing a light-based device near a patient's face. The patient lies reclined with a metal eye shield over closed eyes and a purple towel draped around the neck, while a green-yellow glow appears on the treated skin near the nose and upper lip.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "6d93dc3e-478d-45e9-b904-902fddc72269",
+  "image_count": 1
+}

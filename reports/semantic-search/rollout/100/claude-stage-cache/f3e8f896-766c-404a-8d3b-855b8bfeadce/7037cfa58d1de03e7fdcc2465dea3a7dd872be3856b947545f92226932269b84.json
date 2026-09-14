@@ -1,0 +1,179 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2123.MP4, 1280x720, 12.4s",
+      "evidence": [
+        "filename IMG_2123.MP4",
+        "technical metadata: 1280x720, 30fps, h264, 12.4s duration, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall asset purpose not determinable",
+      "evidence": [
+        "scene-level GLOBAL_ASSET_UNDERSTANDING reported as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, ~12.4s",
+      "evidence": [
+        "canonical_scenes: 1",
+        "canonical_keyframes: 2",
+        "duration_seconds: 12.4"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient present",
+      "evidence": [
+        "one person in gloves, mask and rose-colored top leaning over a second person",
+        "second person reclined on a treatment bed wearing eye goggles"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked/gloved clinician; patient with goggles",
+      "evidence": [
+        "clinician wears surgical mask, disposable gloves, dark hair, rose-colored short-sleeve top, earrings",
+        "patient wears white protective eye goggles and has dark hair, lying down"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and forehead visible",
+      "evidence": [
+        "patient's nose, mouth, chin and forehead visible with goggles covering eyes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identified",
+      "evidence": [
+        "only a handheld corded device and gloves/goggles are visible; no procedure is named in supplied text",
+        "scene-level TREATMENT_PROCEDURE reported as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device positioned near patient's face",
+      "evidence": [
+        "clinician's gloved hand holds a handheld device angled toward the patient's forehead/upper face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician attending to patient",
+      "evidence": [
+        "clinician leans directly over reclined patient in close physical proximity, one hand near patient's head for support"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "PPE and handheld instrument in clinical setting",
+      "evidence": [
+        "surgical mask, disposable gloves, protective eye goggles, corded handheld device, treatment bed"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not fully determinable",
+      "evidence": [
+        "scene-level ENVIRONMENT reported as UNKNOWN despite visible wall, dispenser and bed"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static close vertical framing",
+      "evidence": [
+        "vertical frame, close-up angle on clinician and patient's upper body/head"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-over-patient composition",
+      "evidence": [
+        "clinician positioned above and over the reclined patient, device centered in frame between them"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT",
+        "transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on mask",
+      "evidence": [
+        "printed text visible on clinician's surgical mask",
+        "ocr_observations: 1"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE reported as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE reported as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS reported as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked, gloved clinician in a rose-colored top leans over a reclined patient to position a handheld corded device near the patient's forehead/upper face, while the patient wears protective eye goggles and rests on a treatment bed with a blue covering. The room shows a plain wall with a wall-mounted paper/tissue dispenser, and no speech is present on the audio track.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "f3e8f896-766c-404a-8d3b-855b8bfeadce",
+  "image_count": 1
+}

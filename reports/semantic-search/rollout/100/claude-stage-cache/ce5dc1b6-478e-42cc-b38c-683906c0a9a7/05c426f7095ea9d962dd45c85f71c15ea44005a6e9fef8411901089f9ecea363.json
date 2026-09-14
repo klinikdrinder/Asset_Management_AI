@@ -1,0 +1,180 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1157.MP4, scene 0",
+      "evidence": [
+        "asset_id ce5dc1b6-478e-42cc-b38c-683906c0a9a7, filename IMG_1157.MP4, scene_index 0, start 0.0 end 24.933"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical setting video clip",
+      "evidence": [
+        "1280x720 h264 video, 24.933s duration, with audio stream present",
+        "two keyframes show a person in a medical setting with eye pads and a gloved hand near the face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene spanning full clip",
+      "evidence": [
+        "scene_index 0 covers start_seconds 0.0 to end_seconds 24.933, the entire clip duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One reclining individual, one gloved attendant",
+      "evidence": [
+        "a person lies with head back wearing a blue hairnet and gown in both keyframes",
+        "a gloved hand and forearm enter frame from the upper left holding an applicator, indicating a second person performing hands-on care"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue hairnet, dark gown, eye pads, small earring",
+      "evidence": [
+        "reclining person wears a blue mesh surgical cap and a dark navy gown/drape",
+        "square white gauze pads cover both eyes in both keyframes",
+        "a small earring is visible on the visible ear in both frames"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, forehead, and periorbital area visible",
+      "evidence": [
+        "forehead, eyebrows, nose, cheeks, mouth, and chin are visible with eyes covered by gauze pads in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed clinical activity, procedure not specified",
+      "evidence": [
+        "no readable_text_detected or spoken_content naming any procedure was supplied",
+        "gloved hand, applicator, and eye pads alone do not establish a named clinical procedure per instructions"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hand applying or wiping near face with a swab",
+      "evidence": [
+        "in keyframe 1 a gloved hand holds a swab-like tool near a small cup/vial below the face",
+        "in keyframe 2 the gloved hand touches the cheek area near the eye pad with a cotton-tipped applicator"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Caregiver-patient interaction",
+      "evidence": [
+        "gloved hand positioned directly over and touching the reclining person's face across both keyframes, indicating a caregiver attending to the patient"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gauze eye protection, gloved hand, small vial",
+      "evidence": [
+        "white square gauze pads taped over both eyes in both keyframes",
+        "latex glove on the attending hand in both keyframes",
+        "a small clear cup or vial visible near the bottom left in keyframe 1"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinic room with tiled wall and red accent",
+      "evidence": [
+        "white tiled wall with a vertical red stripe visible in the background of both keyframes",
+        "a red headrest/chair component and light blue draping visible behind the person"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld overhead angle",
+      "evidence": [
+        "both keyframes are tight close-up framing of the face shot from an elevated angle looking down",
+        "1280x720 resolution at 0 degrees rotation consistent with a smartphone-style close shot"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Centered face, vertical-oriented crop within 16:9 frame",
+      "evidence": [
+        "the face is centered horizontally and fills the middle-to-lower portion of the frame in both keyframes",
+        "gloved hand enters from upper left corner in both images"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content supplied",
+      "evidence": [
+        "spoken_content field is an empty array despite an audio_stream being present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators evaluable",
+      "evidence": [
+        "no text overlays, logos, or captions are present in readable_text_detected to assess marketing intent"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient care moment in a clinic setting",
+      "evidence": [
+        "reclining person with eyes protected by gauze and a gloved attendant working near the face conveys an in-progress clinical care scene"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person wearing a blue surgical cap and dark gown lies on a medical chair with square gauze pads taped over both eyes; a gloved hand holds a cotton-tipped applicator or swab near the face, appearing to clean or apply liquid to the skin.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "ce5dc1b6-478e-42cc-b38c-683906c0a9a7",
+  "image_count": 2
+}

@@ -1,0 +1,1552 @@
+{
+  "generator_version": "kdi_narrative_generator_v1",
+  "configuration_version": "kdi_narrative_generator_config_v1",
+  "configuration_fingerprint": "a84a43f5124843e404126e84f32911d0d361df67e60961759a24635fcbaa57ca",
+  "semantic_spec_version": "semantic_index_v1",
+  "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+  "ontology_version": "KDI_SEMANTIC_V2",
+  "pilot_manifest_version": "kdi_semantic_pilot_v1",
+  "analysis_run_id": "7eeedb2f-5c67-554e-96c6-8538fe7627ea",
+  "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+  "filename": "IMG_1160.MP4",
+  "media_type": "video",
+  "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705",
+  "input_evidence_fingerprint": "ac1a0859f4f3c8df93eb1a8ff9d781e9bf4c0073232b30cd463fd217906ad997",
+  "generated_at": "2026-08-24T05:47:50.754619+00:00",
+  "generation": {
+    "method": "DETERMINISTIC_TEMPLATE",
+    "provider": "LOCAL_DETERMINISTIC_TEMPLATES",
+    "model": "kdi_evidence_renderer_v1",
+    "temperature": 0.0,
+    "template_fallback_available": true,
+    "template_fallback_used": true,
+    "external_payload_transmission": false
+  },
+  "evidence_bundle": {
+    "asset": {
+      "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+      "filename": "IMG_1160.MP4",
+      "media_type": "video",
+      "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+    },
+    "structured_facts": [
+      {
+        "fact_id": "de320e1b-0c06-5636-ba20-607ba87bc81e",
+        "concept": "ASSET_IDENTITY",
+        "layer": "ASSET_IDENTITY_PROVENANCE",
+        "state": "OBSERVED",
+        "value": {
+          "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "filename": "IMG_1160.MP4",
+          "media_type": "video",
+          "extension": "mp4",
+          "mime_type": "video/mp4",
+          "size_bytes": 10918586,
+          "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+        },
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "FROZEN_MANIFEST_AND_PHASE_EVIDENCE",
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "DATABASE_METADATA",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 1,
+        "layer_id": "ASSET_IDENTITY_PROVENANCE"
+      },
+      {
+        "fact_id": "162de8d4-6f13-5454-8165-39c5343cdc54",
+        "concept": "MEDIA_SUMMARY",
+        "layer": "GLOBAL_ASSET_UNDERSTANDING",
+        "state": "OBSERVED",
+        "value": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 2,
+        "layer_id": "GLOBAL_ASSET_UNDERSTANDING"
+      },
+      {
+        "fact_id": "8ae7d936-5e71-54e7-813f-207c647948da",
+        "concept": "TIMELINE_STRUCTURE",
+        "layer": "TEMPORAL_SCENE_STRUCTURE",
+        "state": "OBSERVED",
+        "value": {
+          "scene_count": 3,
+          "event_candidate_count": 6,
+          "keyframe_count": 12,
+          "timeline_coverage_percent": 100.0
+        },
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "analysis_run_id": "8f79fd11-9f56-56ab-a9d3-5991ea798cb7",
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "DETERMINISTIC_PROCESSOR",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "NEW_OBSERVATION",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 3,
+        "layer_id": "TEMPORAL_SCENE_STRUCTURE"
+      },
+      {
+        "fact_id": "419828ca-72ed-5997-81cd-6aad310b6713",
+        "concept": "PATIENT",
+        "layer": "PEOPLE_ROLES",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 4,
+        "layer_id": "PEOPLE_ROLES"
+      },
+      {
+        "fact_id": "00c9b80c-eab9-55ca-8a5a-6a0018597609",
+        "concept": "CLINICIAN",
+        "layer": "PEOPLE_ROLES",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 4,
+        "layer_id": "PEOPLE_ROLES"
+      },
+      {
+        "fact_id": "6c9e28c6-7b47-5406-97a3-103358d0c922",
+        "concept": "ADULT_PRESENTATION",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "8e8b68d4-6073-536e-b493-a138901d83d7",
+        "concept": "PATIENT_RECLINING",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "574ea65c-6f74-5ebb-8a4e-a7cc8cbe1268",
+        "concept": "EYE_PROTECTION_VISIBLE",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "b826aa22-9913-52fd-8744-2c6a5f0b9a4e",
+        "concept": "CLINICIAN_GLOVED",
+        "layer": "PERSON_APPEARANCE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 5,
+        "layer_id": "PERSON_APPEARANCE"
+      },
+      {
+        "fact_id": "bbd0b09d-bca3-5096-ad49-24db2fb8b3a4",
+        "concept": "FACE",
+        "layer": "ANATOMY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 6,
+        "layer_id": "ANATOMY"
+      },
+      {
+        "fact_id": "d29987fe-6453-5ba7-8588-fe02e262bfab",
+        "concept": "CHEEK",
+        "layer": "ANATOMY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 6,
+        "layer_id": "ANATOMY"
+      },
+      {
+        "fact_id": "3e399c78-286f-52f9-9e3d-c27744beff65",
+        "concept": "LOWER_FACE",
+        "layer": "ANATOMY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 6,
+        "layer_id": "ANATOMY"
+      },
+      {
+        "fact_id": "2f23ded9-392f-5d4b-9c3f-56744a3fd4a7",
+        "concept": "CLEANSING",
+        "layer": "ACTIONS_EVENTS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 8,
+        "layer_id": "ACTIONS_EVENTS"
+      },
+      {
+        "fact_id": "19e33189-5d77-5358-aa92-d9b4e21a0ba7",
+        "concept": "TOUCHING",
+        "layer": "ACTIONS_EVENTS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 8,
+        "layer_id": "ACTIONS_EVENTS"
+      },
+      {
+        "fact_id": "0bacf968-880f-53f8-a0d2-fce959dac1fe",
+        "concept": "CLINICIAN_TREATS_PATIENT",
+        "layer": "RELATIONSHIPS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 9,
+        "layer_id": "RELATIONSHIPS"
+      },
+      {
+        "fact_id": "c515d8c7-d832-5881-860d-f44e57740301",
+        "concept": "CLINICIAN_WORKS_ON_ANATOMY",
+        "layer": "RELATIONSHIPS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 9,
+        "layer_id": "RELATIONSHIPS"
+      },
+      {
+        "fact_id": "3a96c0c2-769e-5a20-8887-93760a486e22",
+        "concept": "PATIENT_POSITIONED_IN_TREATMENT_CHAIR",
+        "layer": "RELATIONSHIPS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 9,
+        "layer_id": "RELATIONSHIPS"
+      },
+      {
+        "fact_id": "259ad184-c076-51b0-afee-8ae242c4e5a0",
+        "concept": "SKIN_CLEANSING_IN_PROGRESS",
+        "layer": "CLINICAL_VISUAL_OBSERVATIONS",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 10,
+        "layer_id": "CLINICAL_VISUAL_OBSERVATIONS"
+      },
+      {
+        "fact_id": "80b14e6d-5e6c-586c-a529-8a7e4bdbcee4",
+        "concept": "TREATMENT_ROOM",
+        "layer": "ENVIRONMENT",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 11,
+        "layer_id": "ENVIRONMENT"
+      },
+      {
+        "fact_id": "e23ca394-64bd-5c3c-836e-7eae034e5c2a",
+        "concept": "EXTREME_CLOSEUP",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "a97f6edd-2f2c-5fb1-be20-1be1645c7d0a",
+        "concept": "VERTICAL",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "9d2c9953-5b9d-5595-b341-8590e3206013",
+        "concept": "HANDHELD",
+        "layer": "CINEMATOGRAPHY",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 12,
+        "layer_id": "CINEMATOGRAPHY"
+      },
+      {
+        "fact_id": "e9c26cf3-4f14-58fa-b0f2-ce3419c3bc78",
+        "concept": "CHEEK_AND_LOWER_FACE_DOMINANT",
+        "layer": "COMPOSITION",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 13,
+        "layer_id": "COMPOSITION"
+      },
+      {
+        "fact_id": "cf97c21d-f6f1-5683-9797-4f35c6c2b587",
+        "concept": "SWAB_IN_FOREGROUND",
+        "layer": "COMPOSITION",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 13,
+        "layer_id": "COMPOSITION"
+      },
+      {
+        "fact_id": "db02f32f-7b26-56c3-9071-249c46a6ec51",
+        "concept": "AUDIO_STREAM_PRESENT",
+        "layer": "SPEECH_TRANSCRIPT_AUDIO",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE3_TECHNICAL_METADATA",
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "DETERMINISTIC_PROCESSOR",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "NEW_OBSERVATION",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 14,
+        "layer_id": "SPEECH_TRANSCRIPT_AUDIO"
+      },
+      {
+        "fact_id": "bf4aa99b-62e8-5e84-8d7e-2cf82b2a0d66",
+        "concept": "PROCEDURE_PREPARATION_CONTENT",
+        "layer": "MARKETING_CONTENT_USAGE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 16,
+        "layer_id": "MARKETING_CONTENT_USAGE"
+      },
+      {
+        "fact_id": "a138d5e7-8544-5deb-a985-aa3435b29efe",
+        "concept": "CLINICAL_REFERENCE",
+        "layer": "MARKETING_CONTENT_USAGE",
+        "state": "OBSERVED",
+        "value": true,
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "VERIFIED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 16,
+        "layer_id": "MARKETING_CONTENT_USAGE"
+      },
+      {
+        "fact_id": "dd5975d0-6a44-58ce-8c16-edf648d6ddf8",
+        "concept": "PROVISIONAL_ASSET_NARRATIVE",
+        "layer": "SEMANTIC_NARRATIVE",
+        "state": "OBSERVED",
+        "value": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+        "confidence": 0.92,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "KEYFRAME_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6",
+            "timestamp_start": 0.0,
+            "timestamp_end": 0.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "AI_MODEL",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "NEW_OBSERVATION",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 17,
+        "layer_id": "SEMANTIC_NARRATIVE"
+      },
+      {
+        "fact_id": "2067ed55-2d49-59cb-ba60-85ef5e56d6ff",
+        "concept": "CURRENT_SEARCH_REPRESENTATION",
+        "layer": "SEARCH_EMBEDDINGS",
+        "state": "OBSERVED",
+        "value": {
+          "visual_embedding": true,
+          "asset_search_document": true,
+          "scene_search_document": true,
+          "scene_embedding": true,
+          "keyframe_embedding": true,
+          "semantic_index_v1_embedding_status": "PENDING_REGENERATION",
+          "canonical_search_document": "PENDING_LATER_PHASE"
+        },
+        "confidence": 1.0,
+        "confidence_band": "HIGH",
+        "evidence": [
+          {
+            "type": "ASSET_LEVEL",
+            "source_artifact": "PHASE2_AUDIT",
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705"
+          }
+        ],
+        "provenance": "DATABASE_METADATA",
+        "provider": "openai_codex_visual_review",
+        "model": "current_codex_model_identifier_unavailable",
+        "provider_version": "phase5_evidence_review_v1",
+        "source_disposition": "RETAINED_EXISTING",
+        "human_review_status": "UNVERIFIED",
+        "layer_number": 18,
+        "layer_id": "SEARCH_EMBEDDINGS"
+      }
+    ],
+    "scenes": [
+      {
+        "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+        "scene_index": 0,
+        "start_time": 0.0,
+        "end_time": 17.033333333333335,
+        "semantic_label": "FACE_CLEANSING",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.87,
+        "evidence": [
+          {
+            "type": "SCENE_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "timestamp_start": 0.0,
+            "timestamp_end": 17.033333333333335,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705",
+            "keyframe_id": "8f1ed595-575c-5fc0-8fc7-e8db7df8dca6"
+          }
+        ],
+        "narrative": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+        "human_review_status": "UNVERIFIED"
+      },
+      {
+        "scene_id": "7c81c650-364d-5d3a-807b-ebbebf4fd50e",
+        "scene_index": 1,
+        "start_time": 17.033333333333335,
+        "end_time": 18.133333333333333,
+        "semantic_label": "FACE_CLEANSING",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.87,
+        "evidence": [
+          {
+            "type": "SCENE_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "7c81c650-364d-5d3a-807b-ebbebf4fd50e",
+            "timestamp_start": 17.033333333333335,
+            "timestamp_end": 18.133333333333333,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705",
+            "keyframe_id": "9a744569-e0f9-5832-bcf3-e916ec414ff1"
+          }
+        ],
+        "narrative": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+        "human_review_status": "UNVERIFIED"
+      },
+      {
+        "scene_id": "60def3df-0034-5db8-a205-912a2760818e",
+        "scene_index": 2,
+        "start_time": 18.133333333333333,
+        "end_time": 23.666666666666668,
+        "semantic_label": "FACE_CLEANSING",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.87,
+        "evidence": [
+          {
+            "type": "SCENE_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "60def3df-0034-5db8-a205-912a2760818e",
+            "timestamp_start": 18.133333333333333,
+            "timestamp_end": 23.666666666666668,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705",
+            "keyframe_id": "bdf925d3-3c9d-5e8b-8369-4ebd1432f186"
+          }
+        ],
+        "narrative": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+        "human_review_status": "UNVERIFIED"
+      }
+    ],
+    "events": [
+      {
+        "event_id": "01de755f-6ca7-5092-b6cf-dda8248c6170",
+        "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+        "start_time": 0.6666666666666666,
+        "end_time": 1.4333333333333333,
+        "peak_time": 1.0333333333333334,
+        "semantic_action": "CLEANSING",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.87,
+        "evidence": [
+          {
+            "type": "EVENT_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "event_id": "01de755f-6ca7-5092-b6cf-dda8248c6170",
+            "timestamp_start": 0.6666666666666666,
+            "timestamp_end": 1.4333333333333333,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705",
+            "keyframe_id": "84814315-6797-5e9a-93fc-a6d96fb64d70"
+          }
+        ],
+        "narrative": "Candidate interval visually supports CLEANSING.",
+        "human_review_status": "UNVERIFIED"
+      },
+      {
+        "event_id": "0c27a088-1aa3-53b2-9274-38c2d89461fb",
+        "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+        "start_time": 6.4,
+        "end_time": 7.0,
+        "peak_time": 6.7,
+        "semantic_action": "CLEANSING",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.87,
+        "evidence": [
+          {
+            "type": "EVENT_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "event_id": "0c27a088-1aa3-53b2-9274-38c2d89461fb",
+            "timestamp_start": 6.4,
+            "timestamp_end": 7.0,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705",
+            "keyframe_id": "1fadbd67-f98e-56fd-9863-312aa956585c"
+          }
+        ],
+        "narrative": "Candidate interval visually supports CLEANSING.",
+        "human_review_status": "UNVERIFIED"
+      },
+      {
+        "event_id": "f0a1c0be-a888-5dce-a87c-2530aa480434",
+        "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+        "start_time": 7.8,
+        "end_time": 8.933333333333334,
+        "peak_time": 8.6,
+        "semantic_action": "CLEANSING",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.87,
+        "evidence": [
+          {
+            "type": "EVENT_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "event_id": "f0a1c0be-a888-5dce-a87c-2530aa480434",
+            "timestamp_start": 7.8,
+            "timestamp_end": 8.933333333333334,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705",
+            "keyframe_id": "e9f43a7a-297b-54e4-88c6-0d592a44e595"
+          }
+        ],
+        "narrative": "Candidate interval visually supports CLEANSING.",
+        "human_review_status": "UNVERIFIED"
+      },
+      {
+        "event_id": "766c1dc4-d6bf-5885-932b-819e696aed99",
+        "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+        "start_time": 12.266666666666667,
+        "end_time": 14.166666666666666,
+        "peak_time": 13.733333333333333,
+        "semantic_action": "CLEANSING",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.87,
+        "evidence": [
+          {
+            "type": "EVENT_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "event_id": "766c1dc4-d6bf-5885-932b-819e696aed99",
+            "timestamp_start": 12.266666666666667,
+            "timestamp_end": 14.166666666666666,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705",
+            "keyframe_id": "a7907b99-d929-570a-becc-cb4ef1cc7376"
+          }
+        ],
+        "narrative": "Candidate interval visually supports CLEANSING.",
+        "human_review_status": "UNVERIFIED"
+      },
+      {
+        "event_id": "c9c75f60-b4fa-55ad-835c-95ede6ac4b20",
+        "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+        "start_time": 14.533333333333333,
+        "end_time": 15.5,
+        "peak_time": 15.2,
+        "semantic_action": "CLEANSING",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.87,
+        "evidence": [
+          {
+            "type": "EVENT_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "event_id": "c9c75f60-b4fa-55ad-835c-95ede6ac4b20",
+            "timestamp_start": 14.533333333333333,
+            "timestamp_end": 15.5,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705",
+            "keyframe_id": "22d2523a-d8c9-5453-88bb-941503b1359a"
+          }
+        ],
+        "narrative": "Candidate interval visually supports CLEANSING.",
+        "human_review_status": "UNVERIFIED"
+      },
+      {
+        "event_id": "57b516c8-ff2a-5cb6-b373-f7a145c1775e",
+        "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+        "start_time": 16.566666666666666,
+        "end_time": 18.633333333333333,
+        "peak_time": 16.966666666666665,
+        "semantic_action": "CLEANSING",
+        "semantic_state": "OBSERVED",
+        "confidence": 0.87,
+        "evidence": [
+          {
+            "type": "EVENT_LEVEL",
+            "source_artifact": "PHASE3_TIMELINE",
+            "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+            "event_id": "57b516c8-ff2a-5cb6-b373-f7a145c1775e",
+            "timestamp_start": 16.566666666666666,
+            "timestamp_end": 18.633333333333333,
+            "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705",
+            "keyframe_id": "8cbb605b-1aaf-54d4-ba48-e360c804a92e"
+          }
+        ],
+        "narrative": "Candidate interval visually supports CLEANSING.",
+        "human_review_status": "UNVERIFIED"
+      }
+    ],
+    "transcript_evidence": [
+      {
+        "transcript_chunk_id": "89b0b9fb-180e-59b7-adea-88481f9f1ba0",
+        "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+        "start_time": 6.97,
+        "end_time": 7.95,
+        "raw_text": "White Dot di sini,",
+        "normalized_text": "White Dot di sini,",
+        "language": "ms",
+        "confidence": 0.808,
+        "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+        "quality_flags": [],
+        "accepted_for_search": true,
+        "speaker_id": "UNKNOWN_SPEAKER",
+        "speaker_role": "UNKNOWN_SPEAKER",
+        "speaker_role_confidence": null,
+        "analysis_run_id": "aadcf848-f4ef-5e14-97aa-a006ea38d08e",
+        "primary_scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+        "overlapping_scene_ids": [
+          "9885f819-8290-53ae-b430-e51d158de57f"
+        ],
+        "temporally_overlapping_event_ids": [
+          "0c27a088-1aa3-53b2-9274-38c2d89461fb",
+          "f0a1c0be-a888-5dce-a87c-2530aa480434"
+        ],
+        "event_relationship": "TEMPORAL_OVERLAP_ONLY",
+        "topics": [],
+        "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: ms\nTranscript: White Dot di sini,",
+        "source_text_fingerprint": "6ade1e3c09ed5eba9562375d74285b6786bfe5c7b0ed88b090eca4a65b6f2024",
+        "embedding_id": null,
+        "embedding_state": "DEFERRED"
+      },
+      {
+        "transcript_chunk_id": "3742a7a7-c2c1-5456-9540-3abb99273fa9",
+        "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+        "start_time": 8.41,
+        "end_time": 9.31,
+        "raw_text": "White Dot di sini.",
+        "normalized_text": "White Dot di sini.",
+        "language": "ms",
+        "confidence": 0.773,
+        "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+        "quality_flags": [],
+        "accepted_for_search": true,
+        "speaker_id": "UNKNOWN_SPEAKER",
+        "speaker_role": "UNKNOWN_SPEAKER",
+        "speaker_role_confidence": null,
+        "analysis_run_id": "aadcf848-f4ef-5e14-97aa-a006ea38d08e",
+        "primary_scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+        "overlapping_scene_ids": [
+          "9885f819-8290-53ae-b430-e51d158de57f"
+        ],
+        "temporally_overlapping_event_ids": [
+          "f0a1c0be-a888-5dce-a87c-2530aa480434"
+        ],
+        "event_relationship": "TEMPORAL_OVERLAP_ONLY",
+        "topics": [],
+        "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: ms\nTranscript: White Dot di sini.",
+        "source_text_fingerprint": "5ff1988d129a02f34d618c85ee97e9af351890fefb9bf48a0cafb4d897f25a9d",
+        "embedding_id": null,
+        "embedding_state": "DEFERRED"
+      },
+      {
+        "transcript_chunk_id": "96f863d6-d53f-5570-a3b7-56f911c939c8",
+        "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+        "start_time": 11.79,
+        "end_time": 15.23,
+        "raw_text": "Ini adalah beberapa Fosting yang kita dapat melihat daripada dia.",
+        "normalized_text": "Ini adalah beberapa Fosting yang kita dapat melihat daripada dia.",
+        "language": "ms",
+        "confidence": 0.718,
+        "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+        "quality_flags": [],
+        "accepted_for_search": true,
+        "speaker_id": "UNKNOWN_SPEAKER",
+        "speaker_role": "UNKNOWN_SPEAKER",
+        "speaker_role_confidence": null,
+        "analysis_run_id": "aadcf848-f4ef-5e14-97aa-a006ea38d08e",
+        "primary_scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+        "overlapping_scene_ids": [
+          "9885f819-8290-53ae-b430-e51d158de57f"
+        ],
+        "temporally_overlapping_event_ids": [
+          "766c1dc4-d6bf-5885-932b-819e696aed99",
+          "c9c75f60-b4fa-55ad-835c-95ede6ac4b20"
+        ],
+        "event_relationship": "TEMPORAL_OVERLAP_ONLY",
+        "topics": [],
+        "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: ms\nTranscript: Ini adalah beberapa Fosting yang kita dapat melihat daripada dia.",
+        "source_text_fingerprint": "99b24a976a232ab3f0320da1dfdb0fc503c563adbc4f2da662d6f6a9b2f12597",
+        "embedding_id": null,
+        "embedding_state": "DEFERRED"
+      }
+    ],
+    "ocr_evidence": [],
+    "conflicts": [],
+    "unknowns": [
+      {
+        "layer_number": 7,
+        "layer_id": "TREATMENT_PROCEDURE"
+      },
+      {
+        "layer_number": 14,
+        "layer_id": "SPEECH_TRANSCRIPT_AUDIO"
+      },
+      {
+        "layer_number": 15,
+        "layer_id": "OCR_VISIBLE_TEXT"
+      }
+    ],
+    "human_review": [],
+    "source_artifacts": {
+      "phase3": true,
+      "phase4": false,
+      "phase5": true,
+      "phase6": true,
+      "phase7": true
+    }
+  },
+  "asset_narrative": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+  "short_semantic_summary": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+  "search_summary": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+  "search_safe_narrative": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+  "claims": [
+    {
+      "claim_id": "857286a4-b1a8-5b60-902b-ddbebe1c0b54",
+      "text": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+      "supports": [
+        "162de8d4-6f13-5454-8165-39c5343cdc54"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.92,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "67e9f0df-a34e-5c02-a5c2-6373db7c79d2",
+      "text": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+      "supports": [
+        "scene:9885f819-8290-53ae-b430-e51d158de57f"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.87,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "d59613c7-b251-5299-97f5-50576cc2e6fd",
+      "text": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+      "supports": [
+        "scene:7c81c650-364d-5d3a-807b-ebbebf4fd50e"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.87,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "63710678-7009-51fd-bb00-f07cb7f13db2",
+      "text": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+      "supports": [
+        "scene:60def3df-0034-5db8-a205-912a2760818e"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.87,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "f4db9113-eac6-5140-89ab-bca7ed46f00f",
+      "text": "From 0.67s to 1.43s, a clinician cleanses the treatment area.",
+      "supports": [
+        "event:01de755f-6ca7-5092-b6cf-dda8248c6170",
+        "419828ca-72ed-5997-81cd-6aad310b6713",
+        "00c9b80c-eab9-55ca-8a5a-6a0018597609"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.87,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "28d350fa-aacd-5ee9-b520-cbc9a4aa5406",
+      "text": "From 6.40s to 7.00s, a clinician cleanses the treatment area.",
+      "supports": [
+        "event:0c27a088-1aa3-53b2-9274-38c2d89461fb",
+        "419828ca-72ed-5997-81cd-6aad310b6713",
+        "00c9b80c-eab9-55ca-8a5a-6a0018597609"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.87,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "cd32e258-478c-5955-b372-65b40ba58f0b",
+      "text": "From 7.80s to 8.93s, a clinician cleanses the treatment area.",
+      "supports": [
+        "event:f0a1c0be-a888-5dce-a87c-2530aa480434",
+        "419828ca-72ed-5997-81cd-6aad310b6713",
+        "00c9b80c-eab9-55ca-8a5a-6a0018597609"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.87,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "e0f4b60d-2024-53ee-809a-9366e36ad54a",
+      "text": "From 12.27s to 14.17s, a clinician cleanses the treatment area.",
+      "supports": [
+        "event:766c1dc4-d6bf-5885-932b-819e696aed99",
+        "419828ca-72ed-5997-81cd-6aad310b6713",
+        "00c9b80c-eab9-55ca-8a5a-6a0018597609"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.87,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "91a4eab9-59d2-5d68-888d-ce813fe19726",
+      "text": "From 14.53s to 15.50s, a clinician cleanses the treatment area.",
+      "supports": [
+        "event:c9c75f60-b4fa-55ad-835c-95ede6ac4b20",
+        "419828ca-72ed-5997-81cd-6aad310b6713",
+        "00c9b80c-eab9-55ca-8a5a-6a0018597609"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.87,
+      "status": "SUPPORTED",
+      "accepted": true
+    },
+    {
+      "claim_id": "72c33629-436e-5ce0-932c-fac6fd6ce9af",
+      "text": "From 16.57s to 18.63s, a clinician cleanses the treatment area.",
+      "supports": [
+        "event:57b516c8-ff2a-5cb6-b373-f7a145c1775e",
+        "419828ca-72ed-5997-81cd-6aad310b6713",
+        "00c9b80c-eab9-55ca-8a5a-6a0018597609"
+      ],
+      "assertion_type": "VISUAL",
+      "confidence": 0.87,
+      "status": "SUPPORTED",
+      "accepted": true
+    }
+  ],
+  "scene_narratives": [
+    {
+      "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "start_time": 0.0,
+      "end_time": 17.033333333333335,
+      "narrative": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+      "semantic_state": "OBSERVED",
+      "claim_ids": [
+        "67e9f0df-a34e-5c02-a5c2-6373db7c79d2"
+      ],
+      "evidence_references": [
+        "scene:9885f819-8290-53ae-b430-e51d158de57f"
+      ],
+      "confidence": 0.87,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    },
+    {
+      "scene_id": "7c81c650-364d-5d3a-807b-ebbebf4fd50e",
+      "start_time": 17.033333333333335,
+      "end_time": 18.133333333333333,
+      "narrative": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+      "semantic_state": "OBSERVED",
+      "claim_ids": [
+        "d59613c7-b251-5299-97f5-50576cc2e6fd"
+      ],
+      "evidence_references": [
+        "scene:7c81c650-364d-5d3a-807b-ebbebf4fd50e"
+      ],
+      "confidence": 0.87,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    },
+    {
+      "scene_id": "60def3df-0034-5db8-a205-912a2760818e",
+      "start_time": 18.133333333333333,
+      "end_time": 23.666666666666668,
+      "narrative": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+      "semantic_state": "OBSERVED",
+      "claim_ids": [
+        "63710678-7009-51fd-bb00-f07cb7f13db2"
+      ],
+      "evidence_references": [
+        "scene:60def3df-0034-5db8-a205-912a2760818e"
+      ],
+      "confidence": 0.87,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    }
+  ],
+  "event_narratives": [
+    {
+      "event_id": "01de755f-6ca7-5092-b6cf-dda8248c6170",
+      "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "start_time": 0.6666666666666666,
+      "end_time": 1.4333333333333333,
+      "narrative": "From 0.67s to 1.43s, a clinician cleanses the treatment area.",
+      "semantic_action": "CLEANSING",
+      "claim_ids": [
+        "f4db9113-eac6-5140-89ab-bca7ed46f00f"
+      ],
+      "evidence_references": [
+        "event:01de755f-6ca7-5092-b6cf-dda8248c6170",
+        "419828ca-72ed-5997-81cd-6aad310b6713",
+        "00c9b80c-eab9-55ca-8a5a-6a0018597609"
+      ],
+      "confidence": 0.87,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    },
+    {
+      "event_id": "0c27a088-1aa3-53b2-9274-38c2d89461fb",
+      "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "start_time": 6.4,
+      "end_time": 7.0,
+      "narrative": "From 6.40s to 7.00s, a clinician cleanses the treatment area.",
+      "semantic_action": "CLEANSING",
+      "claim_ids": [
+        "28d350fa-aacd-5ee9-b520-cbc9a4aa5406"
+      ],
+      "evidence_references": [
+        "event:0c27a088-1aa3-53b2-9274-38c2d89461fb",
+        "419828ca-72ed-5997-81cd-6aad310b6713",
+        "00c9b80c-eab9-55ca-8a5a-6a0018597609"
+      ],
+      "confidence": 0.87,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    },
+    {
+      "event_id": "f0a1c0be-a888-5dce-a87c-2530aa480434",
+      "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "start_time": 7.8,
+      "end_time": 8.933333333333334,
+      "narrative": "From 7.80s to 8.93s, a clinician cleanses the treatment area.",
+      "semantic_action": "CLEANSING",
+      "claim_ids": [
+        "cd32e258-478c-5955-b372-65b40ba58f0b"
+      ],
+      "evidence_references": [
+        "event:f0a1c0be-a888-5dce-a87c-2530aa480434",
+        "419828ca-72ed-5997-81cd-6aad310b6713",
+        "00c9b80c-eab9-55ca-8a5a-6a0018597609"
+      ],
+      "confidence": 0.87,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    },
+    {
+      "event_id": "766c1dc4-d6bf-5885-932b-819e696aed99",
+      "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "start_time": 12.266666666666667,
+      "end_time": 14.166666666666666,
+      "narrative": "From 12.27s to 14.17s, a clinician cleanses the treatment area.",
+      "semantic_action": "CLEANSING",
+      "claim_ids": [
+        "e0f4b60d-2024-53ee-809a-9366e36ad54a"
+      ],
+      "evidence_references": [
+        "event:766c1dc4-d6bf-5885-932b-819e696aed99",
+        "419828ca-72ed-5997-81cd-6aad310b6713",
+        "00c9b80c-eab9-55ca-8a5a-6a0018597609"
+      ],
+      "confidence": 0.87,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    },
+    {
+      "event_id": "c9c75f60-b4fa-55ad-835c-95ede6ac4b20",
+      "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "start_time": 14.533333333333333,
+      "end_time": 15.5,
+      "narrative": "From 14.53s to 15.50s, a clinician cleanses the treatment area.",
+      "semantic_action": "CLEANSING",
+      "claim_ids": [
+        "91a4eab9-59d2-5d68-888d-ce813fe19726"
+      ],
+      "evidence_references": [
+        "event:c9c75f60-b4fa-55ad-835c-95ede6ac4b20",
+        "419828ca-72ed-5997-81cd-6aad310b6713",
+        "00c9b80c-eab9-55ca-8a5a-6a0018597609"
+      ],
+      "confidence": 0.87,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    },
+    {
+      "event_id": "57b516c8-ff2a-5cb6-b373-f7a145c1775e",
+      "scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "start_time": 16.566666666666666,
+      "end_time": 18.633333333333333,
+      "narrative": "From 16.57s to 18.63s, a clinician cleanses the treatment area.",
+      "semantic_action": "CLEANSING",
+      "claim_ids": [
+        "72c33629-436e-5ce0-932c-fac6fd6ce9af"
+      ],
+      "evidence_references": [
+        "event:57b516c8-ff2a-5cb6-b373-f7a145c1775e",
+        "419828ca-72ed-5997-81cd-6aad310b6713",
+        "00c9b80c-eab9-55ca-8a5a-6a0018597609"
+      ],
+      "confidence": 0.87,
+      "search_status": "ACCEPTED_FOR_SEARCH"
+    }
+  ],
+  "technical_only_events": [],
+  "canonical_concepts": {
+    "people": [
+      "PATIENT",
+      "CLINICIAN"
+    ],
+    "roles": [
+      "PATIENT",
+      "CLINICIAN"
+    ],
+    "anatomy": [
+      "FACE",
+      "CHEEK",
+      "LOWER_FACE"
+    ],
+    "treatments": [],
+    "actions": [
+      "CLEANSING",
+      "TOUCHING"
+    ],
+    "environment": [
+      "TREATMENT_ROOM"
+    ],
+    "stage": []
+  },
+  "quality": {
+    "evidence_complete": true,
+    "contains_unknowns": true,
+    "contains_review_required_fact": false,
+    "contains_transcript": false,
+    "contains_ocr": false,
+    "contains_legacy_fact": false,
+    "human_review_status": "UNVERIFIED",
+    "search_status": "ACCEPTED_FOR_SEARCH",
+    "narrative_confidence": 0.87,
+    "narrative_embedding_status": "PENDING_LATER_PHASE"
+  },
+  "claim_validation": {
+    "valid": true,
+    "failures": [],
+    "total_claims": 10,
+    "supported_claims": 10,
+    "unsupported_claims": 0
+  },
+  "phase5_reconciliation": {
+    "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+    "filename": "IMG_1160.MP4",
+    "phase5_narrative": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+    "phase8_narrative": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+    "disposition": "UNCHANGED",
+    "reason": "Phase 5 evidence-grounded wording retained."
+  },
+  "img_1238_segmentation": null,
+  "performance": {
+    "input_facts": 29,
+    "scene_count": 3,
+    "event_count": 6,
+    "accepted_transcript_chunks_available": 3,
+    "transcript_chunks_used": 0,
+    "accepted_ocr_observations_available": 0,
+    "ocr_observations_used": 0,
+    "template_generation_seconds": 0.043843,
+    "llm_calls": 0,
+    "llm_generation_seconds": 0.0,
+    "validation_seconds": 0.0,
+    "retries": 0,
+    "cost": "LOCAL_NO_API_COST"
+  },
+  "prohibitions": {
+    "production_writes": false,
+    "search_documents_rebuilt": false,
+    "embeddings_generated": false,
+    "phase3_modified": false,
+    "phase4_modified": false,
+    "phase5_modified": false,
+    "phase6_modified": false,
+    "phase7_modified": false
+  },
+  "idempotency": {
+    "verified": true,
+    "functional_fingerprint": "fb845226628f76b3d5f62ef37794dd5a1b312da4c341232c5256b2e26826020b"
+  }
+}

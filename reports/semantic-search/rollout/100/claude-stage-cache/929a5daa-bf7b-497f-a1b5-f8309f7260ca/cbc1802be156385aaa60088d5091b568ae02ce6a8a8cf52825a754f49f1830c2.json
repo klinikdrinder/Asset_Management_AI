@@ -1,0 +1,169 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_3960.MP4",
+      "evidence": [
+        "Filename IMG_3960.MP4, single-scene video, 1280x720, h264, 11.41s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall purpose of asset unclear",
+      "evidence": [
+        "Scene-level result lists GLOBAL_ASSET_UNDERSTANDING as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, one scene_result entry"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "Person in olive scrubs with mask and gloves performing an action on a reclined person with eye covered by a pad"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician: dark hair bun, surgical mask, olive scrubs, gloves, smartwatch",
+      "evidence": [
+        "Visible dark hair in bun, light blue surgical mask, pearl earrings, olive-green scrub top with embroidered text, white gloves, silver smartwatch on wrist"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face/forehead and brow area visible",
+      "evidence": [
+        "Reclined patient's face, nose, and forehead visible with a white pad covering the eye area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied text",
+      "evidence": [
+        "Only a handheld metallic device and gloved contact are visible; no procedure name appears in supplied text, so per rule this remains UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applies handheld device to patient's brow",
+      "evidence": [
+        "Clinician's gloved hand holds a metallic handheld device positioned near the patient's forehead/brow"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned over patient, providing care",
+      "evidence": [
+        "Clinician leans over reclined patient in close physical proximity, one hand stabilizing, other operating device"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Eye protection pad and instrument tray visible",
+      "evidence": [
+        "White pad covering patient's eye area; tray with metal instruments and blue drape beside the bed"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting unclear beyond general clinical impression",
+      "evidence": [
+        "Scene-level result lists ENVIRONMENT as UNKNOWN despite visible wall, door, and switches"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static handheld vertical framing, close-up angle",
+      "evidence": [
+        "Vertical 1280x720 frame, close medium shot centered on clinician and patient's upper body"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subjects centered with tray and wall as background",
+      "evidence": [
+        "Clinician and patient occupy center-left of frame, tray upper right, plain wall background"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio stream present but no speech detected",
+      "evidence": [
+        "audio_stream_present true, transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial embroidered text on scrub top",
+      "evidence": [
+        "ocr_observations: 2; partial text visible on clinician's scrub top reading 'DR LEW...'"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level result lists MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical care moment being documented",
+      "evidence": [
+        "Consistent depiction of clinician attending to reclined patient with protective pad and instrument tray"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this content layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked clinician in olive-green scrubs leans over a reclined patient, holding a handheld metallic device near the patient's brow while the patient's eyes are covered with a white pad. A blue-draped tray with metal instruments sits beside them in a clinical treatment room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "929a5daa-bf7b-497f-a1b5-f8309f7260ca",
+  "image_count": 1
+}

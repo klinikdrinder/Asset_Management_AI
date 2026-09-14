@@ -1,0 +1,2439 @@
+{
+  "benchmark_run_id": "c3b15655-d71f-41ff-bc46-5b2284d78d5d",
+  "benchmark_version": "kdi_semantic_benchmark_v1",
+  "suite_id": "kdi_pilot_framework_validation_v1",
+  "started_at": "2026-08-31T17:10:14.385Z",
+  "completed_at": "2026-08-31T17:11:18.505Z",
+  "duration_ms": 64114.22280000002,
+  "status": "PASS",
+  "versions": {
+    "benchmark": "kdi_semantic_benchmark_runner_v1",
+    "query_parser": "kdi_query_parser_v3",
+    "requirement_classifier": "kdi_requirement_classifier_v1",
+    "query_expander": "kdi_query_expander_v1",
+    "retriever": "kdi_candidate_retriever_v1",
+    "authorization": "kdi_candidate_authorizer_v1",
+    "reranker": "kdi_deterministic_reranker_v1",
+    "result_count": "kdi_result_count_controller_v1",
+    "response": "kdi_database_grounded_response_v1",
+    "conversation": "kdi_conversational_search_memory_v1",
+    "semantic_spec": "kdi_semantic_18_layer_v1"
+  },
+  "environment": "development",
+  "case_runs": [
+    {
+      "case_id": "C01",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:14.385Z",
+      "completed_at": "2026-08-31T17:10:15.845Z",
+      "duration_ms": 1453.373900000006,
+      "turns": [
+        {
+          "query": "neck injection",
+          "parsed_intent": {
+            "fingerprint": "df148ed3449800d3b5e91872daecb44b905c8ebfd54339151a2918d92639a35b",
+            "positive": [
+              "NECK",
+              "INJECTING"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C02",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:15.846Z",
+      "completed_at": "2026-08-31T17:10:17.675Z",
+      "duration_ms": 1829.5966999999946,
+      "turns": [
+        {
+          "query": "show me neck injection video",
+          "parsed_intent": {
+            "fingerprint": "12aa3a11c36b5363430f7d23ec13facface7020a791fdcb607307fd65e1de29f",
+            "positive": [
+              "NECK",
+              "INJECTING"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C03",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:17.679Z",
+      "completed_at": "2026-08-31T17:10:19.499Z",
+      "duration_ms": 1819.4168000000063,
+      "turns": [
+        {
+          "query": "lower face injection",
+          "parsed_intent": {
+            "fingerprint": "c979070b5d1bb659799f5a5be5178b57cb820052e2144e10ad47b905602b53e8",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C04",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:19.500Z",
+      "completed_at": "2026-08-31T17:10:21.855Z",
+      "duration_ms": 2355.1063999999897,
+      "turns": [
+        {
+          "query": "clinician cleansing cheek",
+          "parsed_intent": {
+            "fingerprint": "514d03b7ef1a1c6a1e7994746da4c4e6e345f8d9e6d38f7dbc99e79fe26e2dfc",
+            "positive": [
+              "CLINICIAN",
+              "CLEANSING",
+              "CHEEK"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C05",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:21.856Z",
+      "completed_at": "2026-08-31T17:10:23.377Z",
+      "duration_ms": 1521.5234000000055,
+      "turns": [
+        {
+          "query": "frontal hairline thinning",
+          "parsed_intent": {
+            "fingerprint": "8ed1fc2a8b9ef90e367697c7e675f8c0f2dc16070fa6185bd9de5071c3c3b656",
+            "positive": [
+              "FRONTAL_HAIRLINE"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C06",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:23.378Z",
+      "completed_at": "2026-08-31T17:10:25.259Z",
+      "duration_ms": 1880.4774000000034,
+      "turns": [
+        {
+          "query": "hair transplant implantation",
+          "parsed_intent": {
+            "fingerprint": "2c6cbe271fcb7533ebde4fe671038065685b2e7937e1a0bd2b34231fef722114",
+            "positive": [
+              "HAIR_TRANSPLANT"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C07",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:25.260Z",
+      "completed_at": "2026-08-31T17:10:26.506Z",
+      "duration_ms": 1245.2277999999933,
+      "turns": [
+        {
+          "query": "show me scalp treatment",
+          "parsed_intent": {
+            "fingerprint": "904fc0723a0520e16791a09b26c928b86f1fed751b2df17d467be80f6f7ac67d",
+            "positive": [
+              "SCALP"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C08",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:26.507Z",
+      "completed_at": "2026-08-31T17:10:29.606Z",
+      "duration_ms": 3099.045299999998,
+      "turns": [
+        {
+          "query": "clinician with patient",
+          "parsed_intent": {
+            "fingerprint": "c05a9dbb92305ae7b72070700d0917fb8c7de97fdbf258541628c9e41487457b",
+            "positive": [
+              "CLINICIAN",
+              "PATIENT"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C09",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:29.608Z",
+      "completed_at": "2026-08-31T17:10:30.612Z",
+      "duration_ms": 1004.4941000000108,
+      "turns": [
+        {
+          "query": "clinical treatment room",
+          "parsed_intent": {
+            "fingerprint": "6d2f64d5dac8b2558a76aee360226afd9f16e9bc076719145f712f4d8b8a264a",
+            "positive": [
+              "TREATMENT_ROOM"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C10",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:30.613Z",
+      "completed_at": "2026-08-31T17:10:31.560Z",
+      "duration_ms": 946.5724999999802,
+      "turns": [
+        {
+          "query": "close-up vertical clinical footage",
+          "parsed_intent": {
+            "fingerprint": "133e52f625a9d4794005ba6f85839bb7c0b0e34e8259901b160ebbe9033b592b",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C11",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:31.562Z",
+      "completed_at": "2026-08-31T17:10:32.281Z",
+      "duration_ms": 719.1442000000097,
+      "turns": [
+        {
+          "query": "give me 3 clinical videos",
+          "parsed_intent": {
+            "fingerprint": "c602c215d3e2e4e3079dbffea025fc4e8125206d179d2e71ab7dfb68e715535e",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [
+                {
+                  "value": 3,
+                  "raw_text": "3",
+                  "numeric_type": "RESULT_COUNT",
+                  "status": "MATCHED",
+                  "rule_id": "RESULT_COUNT_APPROVED_GRAMMAR",
+                  "start_char": 8,
+                  "end_char": 9,
+                  "approximate": false,
+                  "operator": "EXACT",
+                  "min_value": null,
+                  "max_value": null,
+                  "inclusive_min": null,
+                  "inclusive_max": null
+                }
+              ],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": 3,
+          "effective_count": 3,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C12",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:32.283Z",
+      "completed_at": "2026-08-31T17:10:33.311Z",
+      "duration_ms": 1027.6050000000105,
+      "turns": [
+        {
+          "query": "show me the best result",
+          "parsed_intent": {
+            "fingerprint": "c7ac82d196560b39ab79150fdc1778e595ef9a81d682a0b271ca8aef8de49554",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [
+                {
+                  "value": 1,
+                  "raw_text": "result",
+                  "numeric_type": "RESULT_COUNT",
+                  "status": "MATCHED",
+                  "rule_id": "RESULT_COUNT_BEST_SINGULAR",
+                  "start_char": 17,
+                  "end_char": 23,
+                  "approximate": false,
+                  "operator": "EXACT",
+                  "min_value": null,
+                  "max_value": null,
+                  "inclusive_min": null,
+                  "inclusive_max": null
+                }
+              ],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": 1,
+          "effective_count": 1,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C13",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:33.313Z",
+      "completed_at": "2026-08-31T17:10:34.363Z",
+      "duration_ms": 1049.9544999999925,
+      "turns": [
+        {
+          "query": "show me 7 files",
+          "parsed_intent": {
+            "fingerprint": "906103a34529ae51ecccc764240fbeaae98f90889719860c5649f01cbaf3e27c",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [
+                {
+                  "value": 7,
+                  "raw_text": "7",
+                  "numeric_type": "RESULT_COUNT",
+                  "status": "MATCHED",
+                  "rule_id": "RESULT_COUNT_APPROVED_GRAMMAR",
+                  "start_char": 8,
+                  "end_char": 9,
+                  "approximate": false,
+                  "operator": "EXACT",
+                  "min_value": null,
+                  "max_value": null,
+                  "inclusive_min": null,
+                  "inclusive_max": null
+                }
+              ],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": 7,
+          "effective_count": 7,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C14",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:34.366Z",
+      "completed_at": "2026-08-31T17:10:35.681Z",
+      "duration_ms": 1314.9671999999846,
+      "turns": [
+        {
+          "query": "show me a 30 year old patient",
+          "parsed_intent": {
+            "fingerprint": "bbb1f2009ab4cc7f5506bad46126f91e884d5967805cc90ac3f261b5c79b6c15",
+            "positive": [
+              "PATIENT"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [
+                {
+                  "value": 30,
+                  "raw_text": "30",
+                  "numeric_type": "AGE_EXACT",
+                  "status": "MATCHED",
+                  "rule_id": "AGE_EXACT",
+                  "start_char": 10,
+                  "end_char": 12,
+                  "unit": "years",
+                  "approximate": false,
+                  "operator": "EXACT",
+                  "min_value": null,
+                  "max_value": null,
+                  "inclusive_min": null,
+                  "inclusive_max": null
+                }
+              ],
+              "age_exact": 30,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C15",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:35.683Z",
+      "completed_at": "2026-08-31T17:10:37.470Z",
+      "duration_ms": 1786.9244999999937,
+      "turns": [
+        {
+          "query": "show me 3 videos of a 30 year old patient",
+          "parsed_intent": {
+            "fingerprint": "995cc6a599788f8e8f566c6f4ec66400a18c778e589a892a5245d1f588765875",
+            "positive": [
+              "PATIENT"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [
+                {
+                  "value": 3,
+                  "raw_text": "3",
+                  "numeric_type": "RESULT_COUNT",
+                  "status": "MATCHED",
+                  "rule_id": "RESULT_COUNT_APPROVED_GRAMMAR",
+                  "start_char": 8,
+                  "end_char": 9,
+                  "approximate": false,
+                  "operator": "EXACT",
+                  "min_value": null,
+                  "max_value": null,
+                  "inclusive_min": null,
+                  "inclusive_max": null
+                },
+                {
+                  "value": 30,
+                  "raw_text": "30",
+                  "numeric_type": "AGE_EXACT",
+                  "status": "MATCHED",
+                  "rule_id": "AGE_EXACT",
+                  "start_char": 22,
+                  "end_char": 24,
+                  "unit": "years",
+                  "approximate": false,
+                  "operator": "EXACT",
+                  "min_value": null,
+                  "max_value": null,
+                  "inclusive_min": null,
+                  "inclusive_max": null
+                }
+              ],
+              "age_exact": 30,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": 3,
+          "effective_count": 3,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C16",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:37.472Z",
+      "completed_at": "2026-08-31T17:10:39.853Z",
+      "duration_ms": 2380.836899999995,
+      "turns": [
+        {
+          "query": "hair transplant with 3000 grafts",
+          "parsed_intent": {
+            "fingerprint": "2ba3c1f2b2041ac989b26576627cc76f87fa6a119c0d6462e84854bc78ee23ec",
+            "positive": [
+              "HAIR_TRANSPLANT"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [
+                {
+                  "value": 3000,
+                  "raw_text": "3000",
+                  "numeric_type": "GRAFT_COUNT_EXACT",
+                  "status": "MATCHED",
+                  "rule_id": "GRAFT_EXACT",
+                  "start_char": 21,
+                  "end_char": 25,
+                  "unit": "grafts",
+                  "approximate": true,
+                  "operator": "APPROXIMATE",
+                  "min_value": null,
+                  "max_value": null,
+                  "inclusive_min": null,
+                  "inclusive_max": null
+                }
+              ],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": 3000,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C17",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:39.854Z",
+      "completed_at": "2026-08-31T17:10:41.274Z",
+      "duration_ms": 1420.029600000009,
+      "turns": [
+        {
+          "query": "show me 3 hair transplant videos with 3000 grafts",
+          "parsed_intent": {
+            "fingerprint": "af7e878930eec37f72b4ca52d8b7eacee77a92643475fec9d990d2748dbefe2f",
+            "positive": [
+              "HAIR_TRANSPLANT"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [
+                {
+                  "value": 3,
+                  "raw_text": "3",
+                  "numeric_type": "RESULT_COUNT",
+                  "status": "MATCHED",
+                  "rule_id": "RESULT_COUNT_APPROVED_GRAMMAR",
+                  "start_char": 8,
+                  "end_char": 9,
+                  "approximate": false,
+                  "operator": "EXACT",
+                  "min_value": null,
+                  "max_value": null,
+                  "inclusive_min": null,
+                  "inclusive_max": null
+                },
+                {
+                  "value": 3000,
+                  "raw_text": "3000",
+                  "numeric_type": "GRAFT_COUNT_EXACT",
+                  "status": "MATCHED",
+                  "rule_id": "GRAFT_EXACT",
+                  "start_char": 38,
+                  "end_char": 42,
+                  "unit": "grafts",
+                  "approximate": true,
+                  "operator": "APPROXIMATE",
+                  "min_value": null,
+                  "max_value": null,
+                  "inclusive_min": null,
+                  "inclusive_max": null
+                }
+              ],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": 3000,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": 3,
+          "effective_count": 3,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C18",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:41.275Z",
+      "completed_at": "2026-08-31T17:10:42.473Z",
+      "duration_ms": 1197.6607000000076,
+      "turns": [
+        {
+          "query": "exclude neck",
+          "parsed_intent": {
+            "fingerprint": "8e7edea3ceb1eb003a9d3aca14a002d7536b2448bbf53256a4ca07f749d77797",
+            "positive": [],
+            "negative": [
+              "NECK"
+            ],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C19",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:42.474Z",
+      "completed_at": "2026-08-31T17:10:43.189Z",
+      "duration_ms": 715.3466999999946,
+      "turns": [
+        {
+          "query": "nek injecton",
+          "parsed_intent": {
+            "fingerprint": "c6b7079867dd9a71ab2720c46b7af64dc8be031e1404553fb1e3f8d25c186289",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C20",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:43.191Z",
+      "completed_at": "2026-08-31T17:10:44.109Z",
+      "duration_ms": 918.1833000000042,
+      "turns": [
+        {
+          "query": "needle action at the neck",
+          "parsed_intent": {
+            "fingerprint": "161ddb43711de55d85aae12c3f0dfd7c24ca24e30c0818c366f89e1c07ddf93d",
+            "positive": [
+              "NECK"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C21",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:44.111Z",
+      "completed_at": "2026-08-31T17:10:46.311Z",
+      "duration_ms": 2199.841700000019,
+      "turns": [
+        {
+          "query": "cleaning the cheek by clinical staff",
+          "parsed_intent": {
+            "fingerprint": "a6604b14fffc731f094cc43dd86d57ef9bad4c875f98cb1bfdd61bf6a55ac59f",
+            "positive": [
+              "CLEANSING",
+              "CHEEK"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C22",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:46.312Z",
+      "completed_at": "2026-08-31T17:10:47.155Z",
+      "duration_ms": 843.0562999999966,
+      "turns": [
+        {
+          "query": "implanting hair grafts",
+          "parsed_intent": {
+            "fingerprint": "93ebbbcbd7ce570ba844ea29da3dfb76c53c3acb58d894ebbb800351d0198594",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C23",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:47.157Z",
+      "completed_at": "2026-08-31T17:10:49.778Z",
+      "duration_ms": 2620.895599999989,
+      "turns": [
+        {
+          "query": "clinician injects patient at neck",
+          "parsed_intent": {
+            "fingerprint": "6f17ba5d5c312785d5b169c020804d87b144642802cad4ee42499650869ab0cd",
+            "positive": [
+              "CLINICIAN",
+              "NECK",
+              "INJECTING"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C24",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:49.780Z",
+      "completed_at": "2026-08-31T17:10:50.812Z",
+      "duration_ms": 1031.9671999999846,
+      "turns": [
+        {
+          "query": "what exact injectable treatment is shown",
+          "parsed_intent": {
+            "fingerprint": "27793a2a91d88ba3f4b11a62336462b0cb514b36b9b13952fd6e421f41e9f6c7",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C25",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:50.813Z",
+      "completed_at": "2026-08-31T17:10:52.497Z",
+      "duration_ms": 1684.6886000000231,
+      "turns": [
+        {
+          "query": "assets explicitly not showing injection",
+          "parsed_intent": {
+            "fingerprint": "a64be5c8fbc68ada779a40a75ab52bda4a79b32cfc76caa3f9e29c618d46251f",
+            "positive": [],
+            "negative": [
+              "INJECTING"
+            ],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C26",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:52.499Z",
+      "completed_at": "2026-08-31T17:10:53.310Z",
+      "duration_ms": 810.6698000000033,
+      "turns": [
+        {
+          "query": "assets where speech is not applicable",
+          "parsed_intent": {
+            "fingerprint": "d5982d32a94ef1434c76e23f805f140bef4713ca9b57ca441e593b09ab4b3e97",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C27",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:53.312Z",
+      "completed_at": "2026-08-31T17:10:55.374Z",
+      "duration_ms": 2061.8616999999795,
+      "turns": [
+        {
+          "query": "unknown treatment with visible injection",
+          "parsed_intent": {
+            "fingerprint": "4c4718a26e9f3c5c2de9262016e5262f8fbbf3364c71dd8606024ec5d8ae490a",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C28",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:55.377Z",
+      "completed_at": "2026-08-31T17:10:56.512Z",
+      "duration_ms": 1135.3208999999915,
+      "turns": [
+        {
+          "query": "prefer treatment footage without neck",
+          "parsed_intent": {
+            "fingerprint": "3b07054f9bbedfb18ee279be0347466404063dd1ccbcdb98df7a3081fb0ccacb",
+            "positive": [],
+            "negative": [
+              "NECK"
+            ],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C29",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:56.513Z",
+      "completed_at": "2026-08-31T17:10:57.319Z",
+      "duration_ms": 805.8207000000111,
+      "turns": [
+        {
+          "query": "underwater coral reef",
+          "parsed_intent": {
+            "fingerprint": "b5cd68fd5788acadd4dec1062790ee2e42c90767888c354ac95fc0c4cac0f9c1",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C30",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:57.322Z",
+      "completed_at": "2026-08-31T17:10:58.134Z",
+      "duration_ms": 812.7355999999854,
+      "turns": [
+        {
+          "query": "airplane cockpit",
+          "parsed_intent": {
+            "fingerprint": "183f9bde59ee6a9376db78da5973d40067a83b05acba55bd12ccb55ee244436f",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C31",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:58.137Z",
+      "completed_at": "2026-08-31T17:10:58.783Z",
+      "duration_ms": 646.8083999999799,
+      "turns": [
+        {
+          "query": "football stadium",
+          "parsed_intent": {
+            "fingerprint": "618ec8178d6e3ff0abc777dee2e8bb7651acdeda7364cbab0ba0cfbafd8afc19",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C32",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:58.787Z",
+      "completed_at": "2026-08-31T17:10:59.860Z",
+      "duration_ms": 1073.0365999999922,
+      "turns": [
+        {
+          "query": "give me the short description of IMG_3429.MP4",
+          "parsed_intent": {
+            "fingerprint": "e56f946ca1bbdeb605c022d8fbb3e71cd19938f946ea188599b1fab2801d5904",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C33",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:10:59.862Z",
+      "completed_at": "2026-08-31T17:11:00.776Z",
+      "duration_ms": 913.9059000000125,
+      "turns": [
+        {
+          "query": "give me the detailed description of IMG_3429.MP4",
+          "parsed_intent": {
+            "fingerprint": "7f8d4891507c98a310ed2368fc12f9d2371150dd237416e622d2dac1c36813ae",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C34",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:11:00.778Z",
+      "completed_at": "2026-08-31T17:11:02.164Z",
+      "duration_ms": 1385.8086999999941,
+      "turns": [
+        {
+          "query": "show authorized clinical assets",
+          "parsed_intent": {
+            "fingerprint": "5f541b57bcb33af5731034c201b12f116ea6cf06ed36e7ae6b1fa6992f389fa2",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C35",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:11:02.166Z",
+      "completed_at": "2026-08-31T17:11:03.023Z",
+      "duration_ms": 856.7739000000001,
+      "turns": [
+        {
+          "query": "show me clinical images",
+          "parsed_intent": {
+            "fingerprint": "b16ce8eebc46cfcb8be0d7ced0aafe6a93a70581767b5c51c7d36af209e85a7c",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "IMAGE"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C36",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:11:03.025Z",
+      "completed_at": "2026-08-31T17:11:06.481Z",
+      "duration_ms": 3456.169499999989,
+      "turns": [
+        {
+          "query": "show me injection videos",
+          "parsed_intent": {
+            "fingerprint": "5e440d40239dc6a803f7e6211dfb4da2264991a450758e7dac2c76cac8375c49",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        },
+        {
+          "query": "only neck ones",
+          "parsed_intent": {
+            "fingerprint": "50aeda26436fe92b4567d26ad73a054b58afa097672516f9950926931be3e4fd",
+            "positive": [
+              "INJECTING",
+              "NECK"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NARROW",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        },
+        {
+          "query": "give me the detailed description of the first one",
+          "parsed_intent": {
+            "status": "ORDINAL_OUT_OF_RANGE"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 0,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "ORDINAL_OUT_OF_RANGE",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "UNRESOLVED",
+            "status": "ORDINAL_OUT_OF_RANGE",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C37",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:11:06.483Z",
+      "completed_at": "2026-08-31T17:11:09.904Z",
+      "duration_ms": 3421.5181999999913,
+      "turns": [
+        {
+          "query": "show me injection videos",
+          "parsed_intent": {
+            "fingerprint": "5e440d40239dc6a803f7e6211dfb4da2264991a450758e7dac2c76cac8375c49",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        },
+        {
+          "query": "give me 2",
+          "parsed_intent": {
+            "fingerprint": "5e440d40239dc6a803f7e6211dfb4da2264991a450758e7dac2c76cac8375c49",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "CONTINUE",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C38",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:11:09.907Z",
+      "completed_at": "2026-08-31T17:11:13.453Z",
+      "duration_ms": 3546.4567000000097,
+      "turns": [
+        {
+          "query": "show me injection videos",
+          "parsed_intent": {
+            "fingerprint": "5e440d40239dc6a803f7e6211dfb4da2264991a450758e7dac2c76cac8375c49",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        },
+        {
+          "query": "actually lower face",
+          "parsed_intent": {
+            "fingerprint": "748d3b12eb6be0ac8d7dd66baaa28530fec7a3fad1d4998986f80c20c0d3c220",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "MODIFY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C39",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:11:13.455Z",
+      "completed_at": "2026-08-31T17:11:15.172Z",
+      "duration_ms": 1716.2658999999985,
+      "turns": [
+        {
+          "query": "show me frontal hairline thinning",
+          "parsed_intent": {
+            "fingerprint": "ff3907ab593c725d3d90f73c9e89c0264ffe0dfaf196bad814f4a1afbf51303f",
+            "positive": [
+              "FRONTAL_HAIRLINE"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        },
+        {
+          "query": "give me the first one",
+          "parsed_intent": {
+            "status": "ORDINAL_OUT_OF_RANGE"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 0,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "ORDINAL_OUT_OF_RANGE",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "UNRESOLVED",
+            "status": "ORDINAL_OUT_OF_RANGE",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C40",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:11:15.173Z",
+      "completed_at": "2026-08-31T17:11:18.503Z",
+      "duration_ms": 3329.3097000000125,
+      "turns": [
+        {
+          "query": "show me injection videos",
+          "parsed_intent": {
+            "fingerprint": "5e440d40239dc6a803f7e6211dfb4da2264991a450758e7dac2c76cac8375c49",
+            "positive": [
+              "INJECTING"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        },
+        {
+          "query": "exclude neck",
+          "parsed_intent": {
+            "fingerprint": "50aeda26436fe92b4567d26ad73a054b58afa097672516f9950926931be3e4fd",
+            "positive": [
+              "INJECTING",
+              "NECK"
+            ],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "VIDEO"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NARROW",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    }
+  ]
+}

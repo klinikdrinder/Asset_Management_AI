@@ -1,0 +1,178 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "IMG_3482.MP4, scene 0, 0-14.567s",
+      "evidence": [
+        "filename IMG_3482.MP4",
+        "asset_id e8f7ce20-661b-4e6b-a128-d5b134a3e41d",
+        "scene_index 0, start 0.0, end 14.567 seconds"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical video clip with medical device in use",
+      "evidence": [
+        "two keyframes show a handheld device connected to a console being held near a draped patient in a treatment room"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single short scene with minimal handpiece movement",
+      "evidence": [
+        "scene spans 0.0 to 14.567 seconds with 2 supplied keyframes showing near-identical handpiece position and angle"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved provider and draped patient",
+      "evidence": [
+        "a gloved hand and forearm belonging to a provider hold the device handpiece",
+        "a person's lower body in black pants, partially draped, is positioned on the table as the patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider in white glove; patient in black pants",
+      "evidence": [
+        "provider's visible arm wears a white/beige disposable glove",
+        "patient wears black pants and lies on a table with a blue cushion"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Treatment area obscured by drape",
+      "evidence": [
+        "the handpiece is held above a navy blue drape covering the patient's lower torso/hip region",
+        "no skin or specific anatomical landmark is visible beneath the drape"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied evidence",
+      "evidence": [
+        "no spoken content or readable text naming a procedure was supplied",
+        "device and gloves alone do not establish a specific named procedure per rules"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider holding device handpiece near patient",
+      "evidence": [
+        "gloved hand grips the gray handpiece and positions it close to the draped area of the patient's body in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider operating device on patient",
+      "evidence": [
+        "the provider's gloved hand and device are positioned directly over the patient's draped body, indicating a provider-patient treatment interaction"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No visible skin or clinical findings",
+      "evidence": [
+        "the treatment area is fully covered by a blue drape in both keyframes, preventing observation of skin condition or clinical findings"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room with device cart",
+      "evidence": [
+        "a medical device console with a touchscreen display, control knobs, and connected hose/handpiece stands on a cart against a plain white wall",
+        "patient rests on a table with a blue cushioned surface"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static close-up vertical video framing",
+      "evidence": [
+        "both keyframes are vertical-orientation, close-up framing on the handpiece and hand with minimal camera movement between them"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handpiece and hand centered, device screen in background",
+      "evidence": [
+        "the gloved hand and handpiece occupy the center-left of frame",
+        "the device console and screen are visible in the upper background",
+        "the draped patient fills the right and lower portion of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field supplied as an empty array despite an audio stream being present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected field supplied as an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Vertical format consistent with social content, unconfirmed",
+      "evidence": [
+        "vertical 720x1280 mobile-style framing is typical of social media clips, but no marketing text, captions, or branding elements are present in the supplied evidence"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device applied near patient in clinical setting",
+      "evidence": [
+        "gloved provider holds and positions a console-connected handpiece close to a draped patient's body on a treatment table"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two near-identical keyframes show a gloved provider's hand holding a gray device handpiece connected to a cart-based machine with a touchscreen display, positioned near a patient's lower body which is covered by a navy blue drape. The patient, wearing black pants, lies on an exam table with a blue cushion in a plain clinical room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "e8f7ce20-661b-4e6b-a128-d5b134a3e41d",
+  "image_count": 2
+}

@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2928.MP4, single scene",
+      "evidence": [
+        "filename 'IMG_2928.MP4' and asset_id e70a4b8b-b4bd-495b-b7e4-460368ecdf2b supplied",
+        "scene spans 0.0-21.367s of a 21.37s h264 video at 1280x720"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical hands-on activity",
+      "evidence": [
+        "both keyframes show gloved hands using instruments on a small object under bright light in an indoor clinical-looking setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene with a sharp and a blurred frame",
+      "evidence": [
+        "scene_index 0 covering 0.0-21.367s",
+        "first keyframe is sharp and well-lit, second keyframe is dark and motion-blurred, suggesting camera movement within the same scene"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One individual in surgical attire performing close work",
+      "evidence": [
+        "a person wearing a blue gown, surgical gloves, and head-mounted loupes with a light is visible manipulating an object with two instruments"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue gown, white gloves, loupes and headlight",
+      "evidence": [
+        "visible blue surgical gown, white latex-style gloves, head-mounted magnifying loupes with a circular headlight, and partially visible ear/hair"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Small tissue-like object, not clearly identifiable",
+      "evidence": [
+        "a small pinkish/tan fragment sits on a light-colored pad but its specific anatomical identity cannot be determined from the frames"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied evidence",
+      "evidence": [
+        "gloves, instruments, and a tissue fragment are visible but no procedure name is present in supplied text, so per rules this cannot be identified"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Manipulating a small object with two instruments",
+      "evidence": [
+        "one hand holds forceps/tweezers and the other holds a pointed instrument, both directed at a small illuminated object on a pad"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No interpersonal interaction visible",
+      "evidence": [
+        "only a single individual appears in both frames; no other person or interpersonal interaction is shown"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Bright focused light on small tissue fragment",
+      "evidence": [
+        "a small moist-looking fragment is illuminated directly under a strong light source while being handled with fine instruments"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor room with blue drapes and shelf items",
+      "evidence": [
+        "blue fabric drapes cover the surface and person",
+        "background shelf shows scissors, bottles, and a partial wall sign reading 'OOM 2'"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld close-up vertical shot with motion blur",
+      "evidence": [
+        "vertical framing typical of handheld phone capture",
+        "second keyframe shows directional motion blur and reduced exposure compared to the first"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Tight framing centered on hands and light source",
+      "evidence": [
+        "both frames center the bright light and instruments in the middle-left of frame with the person's head and shoulders occupying the right/lower portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "technical metadata indicates an audio_stream is present but spoken_content supplied is an empty list"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial signage text visible in background",
+      "evidence": [
+        "a wall-mounted sign showing partial text 'OOM 2' (likely 'ROOM 2') is visible in the upper left of the first keyframe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing overlays or branding present",
+      "evidence": [
+        "no logos, watermarks, captions, or promotional graphics appear in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical handling of a small tissue fragment",
+      "evidence": [
+        "gloved hands under bright light manipulate a small fragment with forceps and a pointed instrument in an indoor setting resembling a clinical room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "The images show a person wearing a blue surgical gown, gloves, and head-mounted loupes with an attached light, using forceps and a pointed instrument to manipulate a small piece of tissue on a light-colored pad under an intense focused light source. One keyframe is sharp and close-up while the second is dark and motion-blurred, indicating camera movement within the same continuous shot.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "e70a4b8b-b4bd-495b-b7e4-460368ecdf2b",
+  "image_count": 2
+}

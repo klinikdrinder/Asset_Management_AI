@@ -1,0 +1,62 @@
+{
+  "candidates": [
+    {
+      "name": "OpenCLIP ViT-B-32",
+      "runtime": "PyTorch/open_clip",
+      "installed": true,
+      "raw_media_inference": false,
+      "18_layer_integration": false,
+      "status": "EMBEDDING_ONLY"
+    },
+    {
+      "name": "Faster-Whisper small",
+      "runtime": "faster-whisper",
+      "installed": true,
+      "raw_media_inference": false,
+      "18_layer_integration": false,
+      "status": "AUDIO_ONLY"
+    },
+    {
+      "name": "OpenCV/Pillow/FFmpeg",
+      "runtime": "native media tooling",
+      "installed": true,
+      "raw_media_inference": false,
+      "18_layer_integration": false,
+      "status": "PREPROCESSING_ONLY"
+    },
+    {
+      "name": "SmolVLM2-256M-Video-Instruct",
+      "runtime": "Transformers",
+      "installed": true,
+      "raw_media_inference": true,
+      "18_layer_integration": false,
+      "status": "REJECTED_TESTED",
+      "reason": "caption inference passed; strict 18-layer JSON failed"
+    },
+    {
+      "name": "Ollama/Qwen",
+      "runtime": "Ollama",
+      "installed": false,
+      "raw_media_inference": "unverified",
+      "18_layer_integration": false,
+      "status": "HISTORICAL_NOT_APPROVED"
+    },
+    {
+      "name": "Gemini",
+      "runtime": "external API",
+      "installed": false,
+      "raw_media_inference": true,
+      "18_layer_integration": "historical",
+      "status": "ABANDONED_NOT_PRODUCTION"
+    },
+    {
+      "name": "OpenAI",
+      "runtime": "external API",
+      "installed": "adapter only",
+      "raw_media_inference": true,
+      "18_layer_integration": "historical",
+      "status": "NOT_ALLOWED_FOR_INDEXING"
+    }
+  ],
+  "approved_existing_analyzer": false
+}

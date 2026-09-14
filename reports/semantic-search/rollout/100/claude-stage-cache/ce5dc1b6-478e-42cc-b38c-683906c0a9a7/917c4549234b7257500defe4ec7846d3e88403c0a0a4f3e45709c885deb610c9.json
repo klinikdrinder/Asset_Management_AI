@@ -1,0 +1,169 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_1157.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_1157.MP4, duration 24.93s, 1280x720, h264/aac, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene close-up clip of a person's face during a clinical procedure",
+      "evidence": [
+        "1 canonical scene, 2 canonical keyframes covering the full 24.93s clip"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene spanning the full clip",
+      "evidence": [
+        "canonical_scenes: 1, scene_index 0 covers the entire asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A reclining patient and a gloved attendant's hand",
+      "evidence": [
+        "Person lying in chair with eyes covered by gauze; a separate gloved hand enters frame from above holding a swab"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue surgical cap, dark gown, gauze over both eyes",
+      "evidence": [
+        "Image shows blue hairnet-style cap, navy gown/drape covering shoulders and chest, white square gauze pads taped over each eye, an earring visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, forehead, nose, mouth, chin, neck visible",
+      "evidence": [
+        "Facial region below the gauze pads is visible including nose, lips, chin, and neck"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not identifiable from evidence",
+      "evidence": [
+        "Per-scene result marks TREATMENT_PROCEDURE UNKNOWN; only a gloved hand with a swab near the face is visible with no named procedure in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hand applying or wiping something near the face",
+      "evidence": [
+        "Gloved hand holds a cotton-tipped applicator close to the person's cheek/eye area"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Attendant working directly on the reclining person",
+      "evidence": [
+        "Gloved hand and instrument positioned directly over the reclining person's face, indicating a caregiver-patient interaction"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Eye protection pads and glove use visible",
+      "evidence": [
+        "Square gauze pads taped over both eyes; latex glove on the hand holding a cotton-tipped applicator; small container also visible near the hand"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical room with medical chair and tiled wall",
+      "evidence": [
+        "Red/blue medical chair headrest, blue drapes, white tiled wall with a red stripe accent in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, top-down handheld angle on the face",
+      "evidence": [
+        "Frame is a tight overhead/near-vertical shot centered on the face and upper torso, typical of a point-of-view clinical recording"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face centered vertically, hand entering from upper left",
+      "evidence": [
+        "Person's face is centered in frame with the gloved hand and applicator entering from the upper-left corner"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, but transcript_state is NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0; no text visible in keyframes"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "No branding, captions, or usage context present in the supplied evidence to indicate marketing purpose"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical care moment with eyes shielded and face attended to",
+      "evidence": [
+        "Scene depicts a reclining person with eyes covered undergoing hands-on attention from a gloved individual in a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to descriptive analysis",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person wearing a blue surgical cap and dark gown lies back on a medical chair with square white gauze pads taped over both eyes. A gloved hand holds a cotton-tipped applicator near the person's face against a backdrop of blue drapes and white tiled wall.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "ce5dc1b6-478e-42cc-b38c-683906c0a9a7",
+  "image_count": 1
+}

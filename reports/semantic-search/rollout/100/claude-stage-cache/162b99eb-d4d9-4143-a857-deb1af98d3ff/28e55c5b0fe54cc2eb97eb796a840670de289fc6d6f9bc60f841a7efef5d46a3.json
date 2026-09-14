@@ -1,0 +1,183 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "IMG_1383.MP4, scene 30",
+      "evidence": [
+        "filename IMG_1383.MP4",
+        "asset_id 162b99eb-d4d9-4143-a857-deb1af98d3ff",
+        "scene_index 30"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single keyframe from clinical video clip",
+      "evidence": [
+        "1 keyframe supplied for a 23.09s h264 video",
+        "close-up clinical scene of a face with a device"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Brief sub-second scene segment",
+      "evidence": [
+        "start_seconds 19.333, end_seconds 19.7 within a 23.09s clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining patient and gloved practitioner",
+      "evidence": [
+        "face of a person lying down fills lower/left frame",
+        "gloved hand with wrist wearing an Apple Watch holds a device over the face"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's lower face visible; practitioner in yellow-green gloves",
+      "evidence": [
+        "visible nose, mouth, chin, eyebrow of patient",
+        "practitioner wearing bright yellow-green nitrile gloves and light-colored sleeve"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Nose, mouth, chin, eyebrow region",
+      "evidence": [
+        "nostril, lips, chin, and eyebrow visible in frame",
+        "metal shield positioned over eyebrow/eye area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied text",
+      "evidence": [
+        "no readable_text_detected or spoken_content naming a procedure",
+        "gloves, a light/laser device, and an eye shield alone do not establish a specific named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device tip applying light to skin near mouth",
+      "evidence": [
+        "a metallic wand tip emits a bright green beam onto the skin below the nose",
+        "bright white-orange glowing spot at point of contact"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner working directly on patient's face",
+      "evidence": [
+        "gloved hand positioned directly over patient's lower face",
+        "device tip in contact with patient's skin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Bright light spot and eye-protection shield on skin",
+      "evidence": [
+        "intense white-orange glowing light spot with green halo on cheek/mouth area",
+        "small metal dome shield with wire clipped near eyebrow, consistent with eye protection"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room setting",
+      "evidence": [
+        "blue surgical drape visible upper left",
+        "white bowl and green-tinted background objects suggesting a treatment room",
+        "green cloth/towel visible at bottom left"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing",
+      "evidence": [
+        "tight close-up crop on face and hand",
+        "shallow depth of field with blurred background bowl and drape"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face and instrument dominate frame",
+      "evidence": [
+        "patient's face occupies left/lower portion of frame",
+        "gloved hand and device occupy right portion, light beam central"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "spoken_content is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing overlay present",
+      "evidence": [
+        "no logos, captions, or promotional graphics visible in the keyframe"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up of a clinical light/laser device applied to face",
+      "evidence": [
+        "gloved practitioner applying a beam-emitting device to a reclining patient's face in a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A close-up shows a patient lying down with a gloved practitioner's hand directing a green laser or light device onto the lower face near the mouth and chin, with a metal eye-shield clipped over the eyebrow area. The clinical setting includes a blue surgical drape and a bowl in the background, with a bright white-orange light spot visible where the device contacts the skin.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "162b99eb-d4d9-4143-a857-deb1af98d3ff",
+  "image_count": 1
+}

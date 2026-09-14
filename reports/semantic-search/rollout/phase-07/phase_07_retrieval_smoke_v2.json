@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "query": "IMG_2951",
+      "canary_returned": true,
+      "channel": "asset_search_documents.searchable_text",
+      "structured_evidence_support": true
+    },
+    {
+      "query": "surgery",
+      "canary_returned": false,
+      "channel": "asset_search_documents.searchable_text",
+      "structured_evidence_support": false
+    },
+    {
+      "query": "procedure",
+      "canary_returned": false,
+      "channel": "asset_search_documents.searchable_text",
+      "structured_evidence_support": false
+    },
+    {
+      "query": "treatment",
+      "canary_returned": false,
+      "channel": "asset_search_documents.searchable_text",
+      "structured_evidence_support": false
+    },
+    {
+      "query": "unsupported_nonexistent_concept",
+      "canary_returned": false,
+      "channel": "asset_search_documents.searchable_text",
+      "structured_evidence_support": false
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video file IMG_0586.MP4, 3.6s clip",
+      "evidence": [
+        "filename IMG_0586.MP4, duration 3.636667s, h264 codec"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context of clip beyond single scene unclear",
+      "evidence": [
+        "Only one canonical scene/keyframe provided, no broader context given"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene of a device being applied to the face",
+      "evidence": [
+        "canonical_scenes: 1, scene_index 0 covering full clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient lying down and gloved practitioner performing treatment",
+      "evidence": [
+        "Person lying on bed with eye shields; gloved hands holding handpiece and steadying head"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient wearing blue hair cap and metal eye shields; practitioner in teal scrubs with gloves and mask",
+      "evidence": [
+        "Image shows blue surgical cap on patient's head, metal eye shields on face, teal scrub top and white gloves on practitioner"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evidence": [
+        "Facial skin, forehead, cheek, nose area visible under treatment"
+      ],
+      "evaluated": true,
+      "display_text": "Facial region including forehead, cheek, and nose visible"
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific named procedure cannot be determined",
+      "evidence": [
+        "Only a handpiece and Lutronic device are visible; no named procedure text provided"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner applies handpiece to face while steadying head",
+      "evidence": [
+        "Gloved hand holding handpiece near facial skin, other hand stabilizing patient's head"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Relationship between patient and practitioner beyond clinical roles unclear",
+      "evidence": [
+        "No text or context establishing personal relationship, only clinical setup visible"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Visible skin texture and pigmentation on facial area during device use",
+      "evidence": [
+        "Reddish/brownish skin tone with visible texture around cheek and forehead in image"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room with tiled floor and medical equipment",
+      "evidence": [
+        "White tiled floor, wheeled cart with Lutronic device, wall outlet visible in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld shot focused on face and hands",
+      "evidence": [
+        "Tight framing on face, hands, and device cable, vertical video format"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical frame centered on patient's face with device cable arcing across",
+      "evidence": [
+        "Orange cable arcs from top of frame to handpiece near patient's face, hands frame the composition"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track present",
+      "evidence": [
+        "audio_stream_present true but transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Brand text 'LUTRONIC' visible on device",
+      "evidence": [
+        "Vertical text 'LUTRONIC' printed on the equipment cart in background"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended use of clip for marketing unclear",
+      "evidence": [
+        "No captions, branding overlays, or context indicating marketing purpose"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose of the clip not determinable",
+      "evidence": [
+        "Only a short clinical clip without accompanying explanation of intent"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to asset-level synthesis",
+      "evidence": [
+        "Layer explicitly marked NOT_APPLICABLE in scene-level results"
+      ]
+    }
+  ],
+  "narrative": "A person lies on a treatment bed with metal eye shields in place while a gloved practitioner uses a handpiece connected by an orange cable to a Lutronic-branded laser device. A second gloved hand steadies the patient's head, which is covered by a blue surgical cap, as the device is applied near the facial area.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "3546e355-f5b2-4e96-9e8c-3c5aec9c2f60",
+  "image_count": 1
+}

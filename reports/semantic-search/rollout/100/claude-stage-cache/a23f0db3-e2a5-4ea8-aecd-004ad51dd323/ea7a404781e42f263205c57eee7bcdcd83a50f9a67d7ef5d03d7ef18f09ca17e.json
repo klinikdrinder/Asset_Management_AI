@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, 21.8s, 1280x720",
+      "evidence": [
+        "technical metadata: duration 21.8s, 1280x720, h264, filename IMG_3577.MP4"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical-setting video clip",
+      "evidence": [
+        "canonical_scenes: 1",
+        "scene narrative describes a clinician and seated person with a handheld device"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across two sampled keyframes",
+      "evidence": [
+        "canonical_keyframes: 2 within canonical_scenes: 1",
+        "scene_index 0 spans the full asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved clinician and seated person present",
+      "evidence": [
+        "gloved hand operating device near a seated person's scalp",
+        "blue drape over the seated person suggesting a client/patient role"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Seated person has long dark hair; clinician wears gloves and dark sleeve",
+      "evidence": [
+        "long dark hair visible on seated person",
+        "clinician's arm in dark sleeve with latex glove"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp and hair part visible",
+      "evidence": [
+        "scalp/hair part area visible with red aiming dot in second frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN",
+        "device and gloves alone do not establish a named clinical procedure per rules"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held near scalp with visible aiming point",
+      "evidence": [
+        "handheld device positioned near hair/scalp",
+        "red aiming dot appears on the part area in second keyframe"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned directly over seated person",
+      "evidence": [
+        "gloved hand and device directly above seated person's head",
+        "second gloved hand steadying the person's head/shoulder"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Laser warning label and aiming dot visible",
+      "evidence": [
+        "laser warning label on device",
+        "red aiming dot on scalp/hair in second frame"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable beyond equipment cart",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible cart and equipment in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing of device and scalp",
+      "evidence": [
+        "tight close-up composition centered on device, hand, and scalp across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device and cable dominate foreground, person's head lower frame",
+      "evidence": [
+        "thick cable and device occupy upper/left frame",
+        "seated person's head and shoulders occupy lower portion of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT",
+        "transcript_state: NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated: true with ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing intent determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical device application to scalp depicted",
+      "evidence": [
+        "scene narrative describes gloved clinician holding laser-labeled device near seated person's scalp with visible aiming dot"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to media content evaluation",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A gloved clinician holds a handheld device with a laser warning label above a seated person's scalp, with a visible red aiming point on the hair/part area. A blue drape covers the seated person's shoulders, and additional equipment sits on a cart in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "a23f0db3-e2a5-4ea8-aecd-004ad51dd323",
+  "image_count": 1
+}

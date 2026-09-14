@@ -1,0 +1,407 @@
+{
+  "status": "BLOCKED",
+  "blocker_classification": "PARSER_DEFECT",
+  "blocker": {
+    "case_id": "QP14V7-109",
+    "query": "Patient with implantation of grafts, for archive review",
+    "root_cause": "SEMANTIC_CHUNKING",
+    "details": "The 'of' chunk boundary prevents the exact ontology alias IMPLANTING_GRAFTS from matching. Protected semantic accuracy was 90.909%, below 95%."
+  },
+  "versions": {
+    "parser": "kdi_query_parser_v2",
+    "deterministic_parser": "kdi_deterministic_query_parser_v2",
+    "semantic_interpreter": "kdi_semantic_query_interpreter_v2",
+    "query_schema": "kdi_query_schema_v1_1",
+    "evaluator": "kdi_query_parser_evaluator_v2",
+    "gold_validator": "kdi_query_gold_validator_v1",
+    "benchmark": "kdi_query_parser_benchmark_v7"
+  },
+  "fingerprints": {
+    "parser_source_sha256": "80ad0e12f33935df2e4371418dab38ee66c21d93fa173e25f051c0279d566482",
+    "configuration_fingerprint": "41afaf5b0c5b70e787347c66735dae8fc85f7afbe5a47d6889c03a194528f719",
+    "configuration_file_sha256": "2e13dd1323b25f5cc423a1f5ad5b2e8a2b7b7b81c7c78c1b1092ac377be855be",
+    "evaluator_fingerprint": "9415e82e03c763bc422bf15edc609055bbca78700e062df82e772120c293e014",
+    "evaluator_source_sha256": "9470fa5cd425aca9c3ab6852b41dd7cbf0aa6878cd771dc81583b6ae3eb8fdaa",
+    "gold_validator_fingerprint": "5a0b48bb06070ab7ec7f91e9fa839290ae02b720a339db1d476f9fd21a838861",
+    "gold_validator_source_sha256": "55af371e3017ac6a833cef140fd85d2632ba627ab08bd43003518618a36efccb",
+    "v6_logical_fingerprint": "6ad4aed2ad3653eeb8110c5ea0fe7747c25b8cc97cf8f5e2345dc31dab494ce2",
+    "v6_file_sha256": "ea647bfb9adaf93e02e3a872f9910a7044f46dd0a2c1a741bcf400ee8cf09402",
+    "v7_fingerprint": "c0f2862270b9524c0c8aee095cfdeb81859866add2a1974e6edd8611784d9757"
+  },
+  "v6_gold_defect": {
+    "records_audited": 180,
+    "semantically_valid": 178,
+    "invalid": [
+      "QP14V6-042",
+      "QP14V6-046"
+    ],
+    "root_cause": "Generic 'material' was incorrectly labeled VIDEO; canonical media type is ANY."
+  },
+  "gold_quality": {
+    "structural": "180/180",
+    "canonical_shape": "180/180",
+    "semantic": "180/180",
+    "ambiguous": 0,
+    "unsupported": 0
+  },
+  "dev": {
+    "split": "DEV",
+    "cases": 120,
+    "passed": 120,
+    "errors": 0,
+    "result_count_accuracy": 1,
+    "false_result_count": 0,
+    "missed_explicit_result_count": 0,
+    "count_conflict_accuracy": 1,
+    "numeric_accuracy": 1,
+    "year_date_accuracy": 1,
+    "timestamp_accuracy": 1,
+    "duration_accuracy": 1,
+    "media_accuracy": 1,
+    "extension_accuracy": 1,
+    "negation_accuracy": 1,
+    "phrasal_negation_accuracy": 1,
+    "contradiction_accuracy": 1,
+    "semantic_accuracy": 1,
+    "unknown_fabrication": 0,
+    "unsafe_fuzzy": 0,
+    "ocr_treatment_promotion": 0,
+    "trusted_override": 0,
+    "malformed_validated_plan": 0,
+    "schema_valid": 1,
+    "english_accuracy": 1,
+    "micro": 1,
+    "macro": 1,
+    "critical_slot_exact": 1,
+    "latency_ms": {
+      "p50": 2.6825000000000045,
+      "p95": 5.492799999999988,
+      "max": 30.499300000000005
+    },
+    "queries_per_second": 349.72748942584303
+  },
+  "validation": {
+    "split": "VALIDATION",
+    "cases": 30,
+    "passed": 29,
+    "errors": 1,
+    "result_count_accuracy": 1,
+    "false_result_count": 0,
+    "missed_explicit_result_count": 0,
+    "count_conflict_accuracy": 1,
+    "numeric_accuracy": 1,
+    "year_date_accuracy": 1,
+    "timestamp_accuracy": 1,
+    "duration_accuracy": 1,
+    "media_accuracy": 1,
+    "extension_accuracy": 1,
+    "negation_accuracy": 1,
+    "phrasal_negation_accuracy": 1,
+    "contradiction_accuracy": 1,
+    "semantic_accuracy": 0.9090909090909091,
+    "unknown_fabrication": 0,
+    "unsafe_fuzzy": 0,
+    "ocr_treatment_promotion": 0,
+    "trusted_override": 0,
+    "malformed_validated_plan": 0,
+    "schema_valid": 1,
+    "english_accuracy": 0.9859154929577465,
+    "micro": 0.9859154929577465,
+    "macro": 0.9666666666666667,
+    "critical_slot_exact": 0.9859154929577465,
+    "latency_ms": {
+      "p50": 2.5982999999999947,
+      "p95": 7.736100000000022,
+      "max": 27.06359999999995
+    },
+    "queries_per_second": 250.77489442376904
+  },
+  "blind": {
+    "run": false,
+    "reason": "Validation protected semantic gate failed"
+  },
+  "reproducibility": "NOT_RUN",
+  "database": {
+    "generated_at": "2026-08-25T04:57:04.087Z",
+    "status": "PASS",
+    "semantic_data_changed": false,
+    "production_query_pollution": 0,
+    "embeddings": {
+      "before": 106,
+      "after": 106
+    },
+    "comparison": [
+      {
+        "table": "assets",
+        "before": 881,
+        "after": 881,
+        "delta": 0
+      },
+      {
+        "table": "semantic_assertions",
+        "before": 333,
+        "after": 333,
+        "delta": 0
+      },
+      {
+        "table": "semantic_assertion_evidence",
+        "before": 270,
+        "after": 270,
+        "delta": 0
+      },
+      {
+        "table": "asset_scenes",
+        "before": 312,
+        "after": 312,
+        "delta": 0
+      },
+      {
+        "table": "asset_events",
+        "before": 22,
+        "after": 22,
+        "delta": 0
+      },
+      {
+        "table": "asset_keyframes",
+        "before": 345,
+        "after": 345,
+        "delta": 0
+      },
+      {
+        "table": "asset_transcript_chunks",
+        "before": 14,
+        "after": 14,
+        "delta": 0
+      },
+      {
+        "table": "ocr_observations",
+        "before": 19,
+        "after": 19,
+        "delta": 0
+      },
+      {
+        "table": "semantic_narratives",
+        "before": 37,
+        "after": 37,
+        "delta": 0
+      },
+      {
+        "table": "asset_search_concepts_v2",
+        "before": 270,
+        "after": 270,
+        "delta": 0
+      },
+      {
+        "table": "semantic_embeddings",
+        "before": 106,
+        "after": 106,
+        "delta": 0
+      },
+      {
+        "table": "semantic_review_decisions",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      {
+        "table": "gold_standard_assets",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      {
+        "table": "search_queries",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      }
+    ]
+  },
+  "retrieval": "NOT_STARTED",
+  "ranking": "NOT_STARTED",
+  "frontend": "DEFERRED",
+  "human_gold": "DEFERRED",
+  "phase15": "NOT_STARTED",
+  "acceptance_gate": [
+    {
+      "criterion": "Existing V6 preserved",
+      "status": "PASS"
+    },
+    {
+      "criterion": "V6 semantic-gold defect documented",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Semantic gold validator implemented",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Gold validator independent from parser output",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Gold validator contract tests pass",
+      "status": "PASS"
+    },
+    {
+      "criterion": "V7 created",
+      "status": "PASS"
+    },
+    {
+      "criterion": "V7 180/120/30/30",
+      "status": "PASS"
+    },
+    {
+      "criterion": "V7 fresh vs V1-V6",
+      "status": "PASS"
+    },
+    {
+      "criterion": "V7 structural gold validity 180/180",
+      "status": "PASS"
+    },
+    {
+      "criterion": "V7 canonical shape validity 180/180",
+      "status": "PASS"
+    },
+    {
+      "criterion": "V7 semantic gold validity 180/180",
+      "status": "PASS"
+    },
+    {
+      "criterion": "V7 ambiguous gold 0",
+      "status": "PASS"
+    },
+    {
+      "criterion": "V7 unsupported gold 0",
+      "status": "PASS"
+    },
+    {
+      "criterion": "V7 evaluator-shape mismatch 0",
+      "status": "PASS"
+    },
+    {
+      "criterion": "DEV thresholds",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Parser frozen before validation",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation result count 100%",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation FALSE_RESULT_COUNT 0",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation missed counts 0",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation COUNT_CONFLICT 100%",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation numeric 100%",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation temporal 100%",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation media 100%",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation extension 100%",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation negation 100%",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation phrasal negation 100%",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation contradiction 100%",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation unknown fabrication 0",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation unsafe fuzzy 0",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation schema-valid 100%",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation semantic >=95%",
+      "status": "FAIL"
+    },
+    {
+      "criterion": "Validation English >=98%",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation micro >=98%",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation macro >=95%",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Validation critical-slot exact >=99%",
+      "status": "FAIL"
+    },
+    {
+      "criterion": "Blind run only after validation passes",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Blind all protected gates",
+      "status": "FAIL"
+    },
+    {
+      "criterion": "Final reproducibility 100%",
+      "status": "FAIL"
+    },
+    {
+      "criterion": "Semantic database unchanged",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Embeddings unchanged",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Retrieval not started",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Ranking not started",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Frontend untouched",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Human gold not fabricated",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Phase 15 not started",
+      "status": "PASS"
+    }
+  ]
+}

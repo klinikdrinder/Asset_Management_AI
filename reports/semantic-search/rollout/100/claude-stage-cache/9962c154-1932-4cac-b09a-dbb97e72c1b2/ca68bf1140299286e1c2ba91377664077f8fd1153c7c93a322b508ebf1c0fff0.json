@@ -1,0 +1,175 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video asset with technical metadata",
+      "evidence": [
+        "filename IMG_3399.MP4, 1280x720, 30fps, h264, duration 11.77s, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene facial skincare/treatment session clip",
+      "evidence": [
+        "one canonical scene with two keyframes showing a reclined woman receiving facial attention from gloved hands"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, two sampled keyframes showing progression",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "first keyframe shows device on forehead, second shows a syringe-like object approaching cheek/jaw while device remains in place"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles of individuals not confirmed",
+      "evidence": [
+        "scene-level PEOPLE_ROLES marked UNKNOWN",
+        "only gloved hands and hair of a second person are visible, no role labels or dialogue"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Young woman, dark hair, eyes closed, reclined",
+      "evidence": [
+        "visible dark hair, closed eyes, black headband, blue towel around neck/shoulders"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forehead, cheek, jaw, and neck visible",
+      "evidence": [
+        "forehead in contact with device, cheek showing marks, jaw/neck near second gloved hand"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed",
+      "evidence": [
+        "gloved hands, a handheld device, and a syringe-like object are visible but no procedure name is present in supplied text",
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held to forehead; object brought toward cheek/jaw",
+      "evidence": [
+        "gloved hand pressing blue-and-white device against forehead",
+        "second gloved hand moving a syringe-like object toward lower cheek/jaw"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One person tending to another's face",
+      "evidence": [
+        "gloved hands of a second individual interacting directly with the reclined woman's forehead and cheek/jaw"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small red marks and a mole on cheek",
+      "evidence": [
+        "visible small red spots scattered on the cheek and a dark mole near the mouth/cheek area"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN",
+        "plain light-colored backdrop with a treatment bed and towel visible, but no signage or identifying context"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing on face",
+      "evidence": [
+        "vertical 720-wide frame tightly cropped around the woman's face and upper torso"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face centered, hands entering from top/side",
+      "evidence": [
+        "woman's face fills center of frame with gloved hands entering from top and right side of composition"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "audio_stream_present true but transcript_state NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No visible on-screen text",
+      "evidence": [
+        "ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not established",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN",
+        "no supplied text indicating promotional purpose"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts a facial skincare/treatment session",
+      "evidence": [
+        "reclined subject with closed eyes receiving hands-on facial attention with a device and gloved hands"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this medium",
+      "evidence": []
+    }
+  ],
+  "narrative": "A young woman with dark hair lies reclined on a treatment bed, eyes closed, wearing a black headband with a blue towel around her shoulders, while a gloved hand presses a blue-and-white handheld device against her forehead. A second gloved hand, holding a syringe-like object, approaches her lower cheek/jaw area; small red marks and a dark mole are visible on her cheek.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "9962c154-1932-4cac-b09a-dbb97e72c1b2",
+  "image_count": 1
+}

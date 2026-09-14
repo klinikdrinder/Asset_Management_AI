@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_3482.MP4",
+      "evidence": [
+        "Filename IMG_3482.MP4, duration 14.57s, 1280x720 h264 with audio stream, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result is UNKNOWN; no supplementary text establishes broader context"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1 with two near-identical keyframes showing consistent framing across the clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved provider and patient present",
+      "evidence": [
+        "A gloved hand/arm operating the handpiece belongs to a provider; a person in black pants lying on the exam table is the patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider glove and patient clothing visible",
+      "evidence": [
+        "Provider wears a white/beige disposable glove; patient wears black pants and is covered by a navy blue drape"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Treated anatomy not visible",
+      "evidence": [
+        "Patient's lower body is covered by a navy drape, obscuring the specific anatomical area being addressed"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable",
+      "evidence": [
+        "Only a handpiece, cart device, and gloved contact are visible; no named procedure appears in supplied text, so the specific treatment cannot be established"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider holding device handpiece near patient",
+      "evidence": [
+        "Gloved hand grips the gray handpiece, positioned close to the draped patient area across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Provider-patient interaction unclear in detail",
+      "evidence": [
+        "Scene-level RELATIONSHIPS marked UNKNOWN; specific nature of interaction beyond proximity not established"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clinical findings discernible",
+      "evidence": [
+        "Treatment area is covered by drape and clothing, preventing visual assessment of skin or tissue"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting not fully confirmed",
+      "evidence": [
+        "Scene-level ENVIRONMENT marked UNKNOWN despite plain wall and exam table visible in frame"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static close framing on device and patient",
+      "evidence": [
+        "Two keyframes show a fixed, close-up vertical composition centered on the handpiece and patient's lower body"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handpiece and drape dominate frame",
+      "evidence": [
+        "Gray handpiece and navy drape occupy the central and right portion of the vertical frame, with the device cart at left"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0, scene-level OCR_VISIBLE_TEXT FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN; no supplied text indicates intended use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative meaning unclear",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN with insufficient context beyond device operation"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual narrative",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A gloved provider holds a gray handpiece connected to a cart-based device with a touchscreen display, positioning it near a patient's lower body draped in navy blue fabric. The patient, wearing black pants, lies on an exam table with a blue cushion in a plain clinical room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "e8f7ce20-661b-4e6b-a128-d5b134a3e41d",
+  "image_count": 1
+}

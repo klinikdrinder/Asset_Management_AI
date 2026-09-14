@@ -1,0 +1,188 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0987.MP4",
+      "evidence": [
+        "filename IMG_0987.MP4",
+        "asset_id 8710b812-ff55-46df-9530-91418de1ebbb"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device demonstration/setup video",
+      "evidence": [
+        "screen showing device settings and START button",
+        "handpieces visible on device"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene, 8 seconds",
+      "evidence": [
+        "start_seconds 0.0 end_seconds 8.067"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Gloved individual, role not specified",
+      "evidence": [
+        "gloved hands visible interacting with device",
+        "no identifying text or context about role"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Hands wearing white disposable gloves",
+      "evidence": [
+        "white gloves visible on both hands in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No patient anatomy visible",
+      "evidence": [
+        "only hands and device visible in both keyframes",
+        "no body part being treated is shown"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unspecified procedure using device",
+      "evidence": [
+        "device screen shows energy setting 0.8J and START button",
+        "handpiece held but no named procedure in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Adjusting device settings via touchscreen",
+      "evidence": [
+        "finger pointing at touchscreen displaying 0.8 J",
+        "hand holding handpiece with blue indicator light"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person interacting with medical device",
+      "evidence": [
+        "gloved hands touching screen and handpiece of device"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clinical findings visible",
+      "evidence": [
+        "no skin or tissue visible in frame",
+        "focus is on device interface only"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "beige walls",
+        "wall-mounted AC remote control",
+        "electrical outlets visible",
+        "blue cloth item in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static close-up shot of device",
+      "evidence": [
+        "vertical framing consistent across both keyframes",
+        "camera focused on device screen and handpieces"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device centered, hands in foreground",
+      "evidence": [
+        "touchscreen and device body centered in frame",
+        "gloved hands occupy lower and middle portions of image"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech content detected",
+      "evidence": [
+        "spoken_content field is empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Screen text: 0.8 J, START, CLASSYS",
+      "evidence": [
+        "touchscreen displays '0.8' and '0.8 J' with START button",
+        "CLASSYS logo visible below screen",
+        "ULTRAFORMER III text visible on screen"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Possible promotional/demo content",
+      "evidence": [
+        "clean device interface shown prominently",
+        "no explicit marketing text or branding overlay present"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operator configuring aesthetic device settings",
+      "evidence": [
+        "hand adjusting energy parameter on touchscreen",
+        "handpiece being held in preparation"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Ultraformer device, touchscreen, gloved hands, handpiece",
+      "evidence": [
+        "CLASSYS Ultraformer III branding visible",
+        "gloved hands interacting with medical device interface"
+      ]
+    }
+  ],
+  "narrative": "A gloved hand points to a touchscreen control panel on a Classys Ultraformer III device displaying '0.8 J' and a START button, while another gloved hand holds a handpiece attachment. The setting appears to be a clinical or aesthetic treatment room with beige walls and an air conditioning remote visible.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "8710b812-ff55-46df-9530-91418de1ebbb",
+  "image_count": 2
+}

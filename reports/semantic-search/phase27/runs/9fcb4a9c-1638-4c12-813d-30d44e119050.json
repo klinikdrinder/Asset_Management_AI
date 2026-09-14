@@ -1,0 +1,647 @@
+{
+  "benchmark_run_id": "9fcb4a9c-1638-4c12-813d-30d44e119050",
+  "benchmark_version": "kdi_semantic_benchmark_v1",
+  "suite_id": "kdi_pilot_framework_validation_v1",
+  "started_at": "2026-08-31T17:13:10.388Z",
+  "completed_at": "2026-08-31T17:14:09.068Z",
+  "duration_ms": 58671.452900000004,
+  "status": "FAIL",
+  "versions": {
+    "benchmark": "kdi_semantic_benchmark_runner_v1",
+    "query_parser": "kdi_query_parser_v3",
+    "requirement_classifier": "kdi_requirement_classifier_v1",
+    "query_expander": "kdi_query_expander_v1",
+    "retriever": "kdi_candidate_retriever_v1",
+    "authorization": "kdi_candidate_authorizer_v1",
+    "reranker": "kdi_deterministic_reranker_v1",
+    "result_count": "kdi_result_count_controller_v1",
+    "response": "kdi_database_grounded_response_v1",
+    "conversation": "kdi_conversational_search_memory_v1",
+    "semantic_spec": "kdi_semantic_18_layer_v1"
+  },
+  "environment": "development",
+  "case_runs": [
+    {
+      "case_id": "C01",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:10.391Z",
+      "completed_at": "2026-08-31T17:13:13.255Z",
+      "duration_ms": 2863.8880999999965,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C02",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:13.259Z",
+      "completed_at": "2026-08-31T17:13:15.156Z",
+      "duration_ms": 1897.100999999995,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C03",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:15.157Z",
+      "completed_at": "2026-08-31T17:13:17.044Z",
+      "duration_ms": 1887.0794999999998,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C04",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:17.045Z",
+      "completed_at": "2026-08-31T17:13:19.542Z",
+      "duration_ms": 2497.4703999999983,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C05",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:19.544Z",
+      "completed_at": "2026-08-31T17:13:21.640Z",
+      "duration_ms": 2095.9077999999936,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C06",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:21.641Z",
+      "completed_at": "2026-08-31T17:13:23.145Z",
+      "duration_ms": 1503.529499999997,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C07",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:23.146Z",
+      "completed_at": "2026-08-31T17:13:24.544Z",
+      "duration_ms": 1397.2195999999967,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C08",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:24.546Z",
+      "completed_at": "2026-08-31T17:13:26.024Z",
+      "duration_ms": 1478.6988999999958,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C09",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:26.026Z",
+      "completed_at": "2026-08-31T17:13:27.074Z",
+      "duration_ms": 1047.9573000000019,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C10",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:27.075Z",
+      "completed_at": "2026-08-31T17:13:28.197Z",
+      "duration_ms": 1122.0950999999986,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C11",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:28.198Z",
+      "completed_at": "2026-08-31T17:13:29.130Z",
+      "duration_ms": 931.8549999999959,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C12",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:29.132Z",
+      "completed_at": "2026-08-31T17:13:30.330Z",
+      "duration_ms": 1197.759299999998,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C13",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:13:30.330Z",
+      "completed_at": "2026-08-31T17:13:31.044Z",
+      "duration_ms": 714.0668000000005,
+      "turns": [
+        {
+          "query": "show me 7 files",
+          "parsed_intent": {
+            "fingerprint": "906103a34529ae51ecccc764240fbeaae98f90889719860c5649f01cbaf3e27c",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [
+                {
+                  "value": 7,
+                  "raw_text": "7",
+                  "numeric_type": "RESULT_COUNT",
+                  "status": "MATCHED",
+                  "rule_id": "RESULT_COUNT_APPROVED_GRAMMAR",
+                  "start_char": 8,
+                  "end_char": 9,
+                  "approximate": false,
+                  "operator": "EXACT",
+                  "min_value": null,
+                  "max_value": null,
+                  "inclusive_min": null,
+                  "inclusive_max": null
+                }
+              ],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": 7,
+          "effective_count": 7,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C14",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:31.047Z",
+      "completed_at": "2026-08-31T17:13:31.969Z",
+      "duration_ms": 921.9867000000013,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C15",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:31.970Z",
+      "completed_at": "2026-08-31T17:13:33.161Z",
+      "duration_ms": 1190.366900000001,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C16",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:33.162Z",
+      "completed_at": "2026-08-31T17:13:34.509Z",
+      "duration_ms": 1346.589199999995,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C17",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:34.510Z",
+      "completed_at": "2026-08-31T17:13:35.991Z",
+      "duration_ms": 1480.939400000003,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C18",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:35.993Z",
+      "completed_at": "2026-08-31T17:13:37.067Z",
+      "duration_ms": 1074.6003000000055,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C19",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:37.069Z",
+      "completed_at": "2026-08-31T17:13:38.189Z",
+      "duration_ms": 1111.5573999999979,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C20",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:38.191Z",
+      "completed_at": "2026-08-31T17:13:39.536Z",
+      "duration_ms": 1345.4400999999998,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C21",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:39.537Z",
+      "completed_at": "2026-08-31T17:13:41.541Z",
+      "duration_ms": 2003.650800000003,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C22",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:41.542Z",
+      "completed_at": "2026-08-31T17:13:42.710Z",
+      "duration_ms": 1167.8194999999978,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C23",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:42.711Z",
+      "completed_at": "2026-08-31T17:13:45.294Z",
+      "duration_ms": 2582.7930999999953,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C24",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:45.295Z",
+      "completed_at": "2026-08-31T17:13:46.569Z",
+      "duration_ms": 1273.1870999999956,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C25",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:46.570Z",
+      "completed_at": "2026-08-31T17:13:49.089Z",
+      "duration_ms": 2518.7252000000008,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C26",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:13:49.090Z",
+      "completed_at": "2026-08-31T17:13:50.617Z",
+      "duration_ms": 1526.6719000000012,
+      "turns": [
+        {
+          "query": "assets where speech is not applicable",
+          "parsed_intent": {
+            "fingerprint": "d5982d32a94ef1434c76e23f805f140bef4713ca9b57ca441e593b09ab4b3e97",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C27",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:50.619Z",
+      "completed_at": "2026-08-31T17:13:52.843Z",
+      "duration_ms": 2223.375,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C28",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:52.844Z",
+      "completed_at": "2026-08-31T17:13:54.280Z",
+      "duration_ms": 1436.1402999999991,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C29",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:13:54.282Z",
+      "completed_at": "2026-08-31T17:13:55.160Z",
+      "duration_ms": 877.9989999999962,
+      "turns": [
+        {
+          "query": "underwater coral reef",
+          "parsed_intent": {
+            "fingerprint": "b5cd68fd5788acadd4dec1062790ee2e42c90767888c354ac95fc0c4cac0f9c1",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C30",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:13:55.161Z",
+      "completed_at": "2026-08-31T17:13:55.806Z",
+      "duration_ms": 644.948900000003,
+      "turns": [
+        {
+          "query": "airplane cockpit",
+          "parsed_intent": {
+            "fingerprint": "183f9bde59ee6a9376db78da5973d40067a83b05acba55bd12ccb55ee244436f",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C31",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:13:55.808Z",
+      "completed_at": "2026-08-31T17:13:56.547Z",
+      "duration_ms": 739.1695999999938,
+      "turns": [
+        {
+          "query": "football stadium",
+          "parsed_intent": {
+            "fingerprint": "618ec8178d6e3ff0abc777dee2e8bb7651acdeda7364cbab0ba0cfbafd8afc19",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C32",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:56.549Z",
+      "completed_at": "2026-08-31T17:13:57.620Z",
+      "duration_ms": 1071.5255999999936,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C33",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:57.621Z",
+      "completed_at": "2026-08-31T17:13:58.713Z",
+      "duration_ms": 1091.6202000000048,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C34",
+      "status": "PASS",
+      "started_at": "2026-08-31T17:13:58.714Z",
+      "completed_at": "2026-08-31T17:13:59.623Z",
+      "duration_ms": 908.5193999999901,
+      "turns": [
+        {
+          "query": "show authorized clinical assets",
+          "parsed_intent": {
+            "fingerprint": "5f541b57bcb33af5731034c201b12f116ea6cf06ed36e7ae6b1fa6992f389fa2",
+            "positive": [],
+            "negative": [],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          },
+          "asset_ids": [],
+          "scores": [],
+          "requested_count": null,
+          "effective_count": 5,
+          "returned_count": 0,
+          "count_clamped": false,
+          "grounding_status": "GROUNDED",
+          "media_types": [],
+          "evidence_refs": [],
+          "conversation": {
+            "mode": "NEW_QUERY",
+            "status": "RESOLVED",
+            "referenced_asset_id": null
+          }
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "C35",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:13:59.625Z",
+      "completed_at": "2026-08-31T17:14:00.516Z",
+      "duration_ms": 891.244000000006,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C36",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:14:00.517Z",
+      "completed_at": "2026-08-31T17:14:02.112Z",
+      "duration_ms": 1595.4260000000068,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C37",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:14:02.114Z",
+      "completed_at": "2026-08-31T17:14:03.827Z",
+      "duration_ms": 1713.6322999999975,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C38",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:14:03.829Z",
+      "completed_at": "2026-08-31T17:14:05.522Z",
+      "duration_ms": 1692.4789000000019,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C39",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:14:05.524Z",
+      "completed_at": "2026-08-31T17:14:07.396Z",
+      "duration_ms": 1871.9206000000122,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    },
+    {
+      "case_id": "C40",
+      "status": "ERROR",
+      "started_at": "2026-08-31T17:14:07.397Z",
+      "completed_at": "2026-08-31T17:14:09.065Z",
+      "duration_ms": 1667.5932999999932,
+      "turns": [],
+      "error": "DATABASE_UNAVAILABLE"
+    }
+  ]
+}

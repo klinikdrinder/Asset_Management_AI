@@ -1,0 +1,50 @@
+{
+  "conflict_count": 4,
+  "conflicts": [
+    {
+      "conflict_type": "SEARCH_DOCUMENT_INTERNAL_ACTION_MISMATCH",
+      "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+      "filename": "DSC03753.JPG",
+      "source_a": "asset_search_documents.structured_document.actions",
+      "value_a": [],
+      "source_b": "asset_search_documents.structured_document.rich_semantic_v2.actions and scene_actions",
+      "value_b": [
+        "POSING_FOR_CAMERA"
+      ],
+      "recommended_future_action": "NORMALIZE and rebuild the search document from canonical structured facts"
+    },
+    {
+      "conflict_type": "SEARCH_DOCUMENT_INTERNAL_ACTION_MISMATCH",
+      "asset_id": "6215ad8b-12be-4a8e-bc49-f6b3dcf55c21",
+      "filename": "DSC08097.JPG",
+      "source_a": "asset_search_documents.structured_document.actions",
+      "value_a": [],
+      "source_b": "asset_search_documents.structured_document.rich_semantic_v2.actions and scene_actions",
+      "value_b": [
+        "POSING_FOR_CAMERA",
+        "LOOKING_AT_CAMERA"
+      ],
+      "recommended_future_action": "NORMALIZE and rebuild the search document from canonical structured facts"
+    },
+    {
+      "conflict_type": "LEGACY_COMPLETENESS_WITH_ZERO_EVIDENCE",
+      "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+      "filename": "DSC03753.JPG",
+      "source_a": "asset_layer_status",
+      "value_a": "TREATMENT=COMPLETE and OCR=COMPLETE with evidence_count=0",
+      "source_b": "semantic_index_v1 audit",
+      "value_b": "SEARCH_DOC_ONLY; no structured treatment/OCR assertion",
+      "recommended_future_action": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states"
+    },
+    {
+      "conflict_type": "LEGACY_COMPLETENESS_WITH_ZERO_EVIDENCE",
+      "asset_id": "6215ad8b-12be-4a8e-bc49-f6b3dcf55c21",
+      "filename": "DSC08097.JPG",
+      "source_a": "asset_layer_status",
+      "value_a": "TREATMENT=COMPLETE and OCR=COMPLETE with evidence_count=0",
+      "source_b": "semantic_index_v1 audit",
+      "value_b": "SEARCH_DOC_ONLY; no structured treatment/OCR assertion",
+      "recommended_future_action": "Do not trust legacy completeness; normalize explicit FALSE/UNKNOWN states"
+    }
+  ]
+}

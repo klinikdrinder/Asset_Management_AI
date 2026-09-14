@@ -1,0 +1,516 @@
+{
+  "generated_at": "2026-09-02T05:56:43.196564+00:00",
+  "phase": 10,
+  "status": "PASS",
+  "assets": 11,
+  "queries": 12,
+  "passed": 12,
+  "failed": [],
+  "semantic_truth_preserved": true,
+  "search_ready_preserved": true,
+  "filename_retrieval_preserved": true,
+  "phase_9_grounded_behavior_preserved": true,
+  "new_unsupported_clinical_leakage": 0,
+  "authorization_regression": false,
+  "ranking_corruption": false,
+  "certified_phase_09_suite": {
+    "total": 52,
+    "passed": 51,
+    "failed": [
+      "p2"
+    ],
+    "determinism_stable": true,
+    "interpretation": "INDEX_GROWTH_DISPLACEMENT_NOT_REGRESSION"
+  },
+  "p2_displacement_analysis": {
+    "query": "visible tool",
+    "canary_rank": 6,
+    "canary_score": 26.702405,
+    "canary_retrievable": true,
+    "authorized_candidates": 29,
+    "displaced_by": [
+      {
+        "rank": 1,
+        "filename": "IMG_0534.MP4",
+        "score": 26.71696
+      },
+      {
+        "rank": 2,
+        "filename": "IMG_2933.MP4",
+        "score": 26.71582
+      },
+      {
+        "rank": 3,
+        "filename": "IMG_3564.MP4",
+        "score": 26.71499
+      },
+      {
+        "rank": 4,
+        "filename": "IMG_3592.MP4",
+        "score": 26.71262
+      },
+      {
+        "rank": 5,
+        "filename": "IMG_3575.MP4",
+        "score": 26.706535
+      }
+    ],
+    "score_gap_to_last_returned_slot": 0.00413,
+    "filename_literal_hits": 0,
+    "caused_by_retriever_fix": false,
+    "conclusion": "Phase 9 case p2 asserts the canary appears within the default 5 results. With the index grown from 11 to 30 SEARCH_READY assets, five Phase 10 assets carrying the same generic instrument/glove concept score marginally above it and occupy those slots."
+  },
+  "tests": [
+    {
+      "id": "pilot-IMG_0531.MP4",
+      "category": "pilot",
+      "query": "IMG_0531.MP4",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "phase10_match_count": 0,
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "filename": "IMG_0531.MP4",
+          "score": 11.569432,
+          "phase10_batch": false
+        }
+      ],
+      "latency_ms": {
+        "parser": 2.6762000000162516,
+        "retrieval": 780.3540999999968,
+        "authorization": 158.54370000000927,
+        "ranking": 3.603899999987334,
+        "total": 1325.1598999999987
+      },
+      "note": null
+    },
+    {
+      "id": "pilot-IMG_1238.MP4",
+      "category": "pilot",
+      "query": "IMG_1238.MP4",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "phase10_match_count": 0,
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "babae120-9372-42ad-b535-02a3276ea2be",
+          "filename": "IMG_1238.MP4",
+          "score": 11.526531,
+          "phase10_batch": false
+        }
+      ],
+      "latency_ms": {
+        "parser": 3.1829999999899883,
+        "retrieval": 826.6656000000075,
+        "authorization": 154.8222999999998,
+        "ranking": 1.2300000000104774,
+        "total": 1365.9734000000171
+      },
+      "note": null
+    },
+    {
+      "id": "pilot-IMG_3429.MP4",
+      "category": "pilot",
+      "query": "IMG_3429.MP4",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "phase10_match_count": 0,
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "c86344e9-5b32-4d86-9205-67952d508651",
+          "filename": "IMG_3429.MP4",
+          "score": 11.616964,
+          "phase10_batch": false
+        }
+      ],
+      "latency_ms": {
+        "parser": 3.2494999999762513,
+        "retrieval": 759.6903999999922,
+        "authorization": 168.1304999999993,
+        "ranking": 3.411599999992177,
+        "total": 1312.6699999999837
+      },
+      "note": null
+    },
+    {
+      "id": "pilot-IMG_9871.MOV",
+      "category": "pilot",
+      "query": "IMG_9871.MOV",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "phase10_match_count": 0,
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "444da390-0117-4380-8c87-d7c32f2903ff",
+          "filename": "IMG_9871.MOV",
+          "score": 11.909429,
+          "phase10_batch": false
+        }
+      ],
+      "latency_ms": {
+        "parser": 3.4603000000061,
+        "retrieval": 1158.6184000000067,
+        "authorization": 84.64609999998356,
+        "ranking": 0.3028999999805819,
+        "total": 1571.3722999999882
+      },
+      "note": null
+    },
+    {
+      "id": "pilot-DSC03753.JPG",
+      "category": "pilot",
+      "query": "DSC03753.JPG",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "phase10_match_count": 0,
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+          "filename": "DSC03753.JPG",
+          "score": 11.461904,
+          "phase10_batch": false
+        }
+      ],
+      "latency_ms": {
+        "parser": 2.622299999988172,
+        "retrieval": 745.5900000000256,
+        "authorization": 109.26889999999548,
+        "ranking": 0.4285000000090804,
+        "total": 1185.3824999999779
+      },
+      "note": null
+    },
+    {
+      "id": "pilot-DSC08097.JPG",
+      "category": "pilot",
+      "query": "DSC08097.JPG",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "phase10_match_count": 0,
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "6215ad8b-12be-4a8e-bc49-f6b3dcf55c21",
+          "filename": "DSC08097.JPG",
+          "score": 11.540431,
+          "phase10_batch": false
+        }
+      ],
+      "latency_ms": {
+        "parser": 2.5560999999870546,
+        "retrieval": 987.1985999999742,
+        "authorization": 133.5576000000001,
+        "ranking": 0.6423999999824446,
+        "total": 1490.522799999977
+      },
+      "note": null
+    },
+    {
+      "id": "pilot-IMG_0493.MP4",
+      "category": "pilot",
+      "query": "IMG_0493.MP4",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "phase10_match_count": 0,
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "64712c6a-c02c-46e9-9f73-16786109468b",
+          "filename": "IMG_0493.MP4",
+          "score": 7.519922,
+          "phase10_batch": false
+        }
+      ],
+      "latency_ms": {
+        "parser": 3.994700000010198,
+        "retrieval": 734.635500000004,
+        "authorization": 140.30960000000778,
+        "ranking": 3.7326999999932013,
+        "total": 1187.1526000000013
+      },
+      "note": null
+    },
+    {
+      "id": "pilot-IMG_1148.MP4",
+      "category": "pilot",
+      "query": "IMG_1148.MP4",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "phase10_match_count": 0,
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+          "filename": "IMG_1148.MP4",
+          "score": 11.490875,
+          "phase10_batch": false
+        }
+      ],
+      "latency_ms": {
+        "parser": 1.591599999985192,
+        "retrieval": 762.9155000000028,
+        "authorization": 201.06640000001062,
+        "ranking": 3.3928000000014435,
+        "total": 1347.7098000000115
+      },
+      "note": null
+    },
+    {
+      "id": "pilot-IMG_2963.MP4",
+      "category": "pilot",
+      "query": "IMG_2963.MP4",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "phase10_match_count": 0,
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "filename": "IMG_2963.MP4",
+          "score": 11.526944,
+          "phase10_batch": false
+        }
+      ],
+      "latency_ms": {
+        "parser": 5.755600000004051,
+        "retrieval": 840.6984999999986,
+        "authorization": 114.44800000000396,
+        "ranking": 3.7383999999728985,
+        "total": 1287.7270999999892
+      },
+      "note": null
+    },
+    {
+      "id": "pilot-IMG_1160.MP4",
+      "category": "pilot",
+      "query": "IMG_1160.MP4",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "phase10_match_count": 0,
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "filename": "IMG_1160.MP4",
+          "score": 11.674002,
+          "phase10_batch": false
+        }
+      ],
+      "latency_ms": {
+        "parser": 3.548399999999674,
+        "retrieval": 843.0689999999886,
+        "authorization": 112.4433999999892,
+        "ranking": 3.413200000009965,
+        "total": 1341.2240999999922
+      },
+      "note": null
+    },
+    {
+      "id": "canary-IMG_2951.MP4",
+      "category": "canary",
+      "query": "IMG_2951.MP4",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "phase10_match_count": 0,
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "a9c4cf6f-c86c-4d9d-8a6d-2a815fe211bd",
+          "filename": "IMG_2951.MP4",
+          "score": 7,
+          "phase10_batch": false
+        }
+      ],
+      "latency_ms": {
+        "parser": 3.718800000002375,
+        "retrieval": 900.272100000002,
+        "authorization": 116.04339999999502,
+        "ranking": 3.7074999999895226,
+        "total": 1361.1738999999943
+      },
+      "note": null
+    },
+    {
+      "id": "canary-grounded",
+      "category": "canary",
+      "query": "give me 30 files with gloved hands holding an instrument",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": 30,
+      "effective_count": 30,
+      "returned_count": 14,
+      "target_returned": true,
+      "target_rank": 1,
+      "phase10_match_count": 8,
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "a9c4cf6f-c86c-4d9d-8a6d-2a815fe211bd",
+          "filename": "IMG_2951.MP4",
+          "score": 26.680345,
+          "phase10_batch": false
+        },
+        {
+          "rank": 2,
+          "asset_id": "2f81c26a-eb3b-4dbb-9325-a0da9eaf526f",
+          "filename": "IMG_2933.MP4",
+          "score": 26.64371,
+          "phase10_batch": true
+        },
+        {
+          "rank": 3,
+          "asset_id": "aaf3f7d0-42b5-401d-8005-c0b26dcb92c5",
+          "filename": "IMG_3587.MP4",
+          "score": 26.640785,
+          "phase10_batch": true
+        },
+        {
+          "rank": 4,
+          "asset_id": "00166f3b-d16f-4f6c-9b8d-d57f6875766b",
+          "filename": "IMG_3564.MP4",
+          "score": 26.63866,
+          "phase10_batch": true
+        },
+        {
+          "rank": 5,
+          "asset_id": "5c8e8f05-1703-4f00-9cd2-f1fccbf17d94",
+          "filename": "IMG_3592.MP4",
+          "score": 26.63596,
+          "phase10_batch": true
+        },
+        {
+          "rank": 6,
+          "asset_id": "b17c5b6e-8b53-45b6-b8de-83f02d482d77",
+          "filename": "IMG_3575.MP4",
+          "score": 26.635445,
+          "phase10_batch": true
+        },
+        {
+          "rank": 7,
+          "asset_id": "963376ad-9cc1-46e3-a80a-9249b71839d1",
+          "filename": "IMG_0534.MP4",
+          "score": 26.627815,
+          "phase10_batch": true
+        },
+        {
+          "rank": 8,
+          "asset_id": "f33dfc19-8fd2-4909-927b-5c1362f8fb55",
+          "filename": "IMG_1461.MP4",
+          "score": 26.610105,
+          "phase10_batch": true
+        },
+        {
+          "rank": 9,
+          "asset_id": "b972b81a-1565-45aa-8e53-48cdc397646e",
+          "filename": "IMG_3568.MP4",
+          "score": 26.598735,
+          "phase10_batch": true
+        },
+        {
+          "rank": 10,
+          "asset_id": "c86344e9-5b32-4d86-9205-67952d508651",
+          "filename": "IMG_3429.MP4",
+          "score": 7.509346,
+          "phase10_batch": false
+        },
+        {
+          "rank": 11,
+          "asset_id": "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "filename": "IMG_0531.MP4",
+          "score": 6.935455,
+          "phase10_batch": false
+        },
+        {
+          "rank": 12,
+          "asset_id": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+          "filename": "IMG_1148.MP4",
+          "score": 4.07745,
+          "phase10_batch": false
+        },
+        {
+          "rank": 13,
+          "asset_id": "babae120-9372-42ad-b535-02a3276ea2be",
+          "filename": "IMG_1238.MP4",
+          "score": 4.028335,
+          "phase10_batch": false
+        },
+        {
+          "rank": 14,
+          "asset_id": "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "filename": "IMG_2963.MP4",
+          "score": 0.445576,
+          "phase10_batch": false
+        }
+      ],
+      "latency_ms": {
+        "parser": 4.572200000024168,
+        "retrieval": 2298.373099999997,
+        "authorization": 114.07499999998254,
+        "ranking": 3.3920000000216532,
+        "total": 2994.1003999999957
+      },
+      "note": null
+    }
+  ]
+}

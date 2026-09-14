@@ -1,0 +1,38 @@
+{
+  "visual": {
+    "provider": "open_clip",
+    "model": "ViT-B-32",
+    "model_version": "laion2b_s34b_b79k",
+    "dimensions": 512,
+    "table": "asset_visual_embeddings",
+    "rows": 875,
+    "active_rows": 875
+  },
+  "text": {
+    "provider": "sentence_transformers",
+    "model": "intfloat/multilingual-e5-small",
+    "model_version": "hf-main-pinned-runtime-v1",
+    "dimensions": 384,
+    "table": "semantic_embeddings",
+    "rows": 41,
+    "active_rows": 41
+  },
+  "legacy_text": {
+    "provider": "ollama",
+    "model": "qwen3-embedding:0.6b",
+    "model_version": "v1",
+    "dimensions": 1024,
+    "table": "asset_embeddings",
+    "rows": 20,
+    "active_rows": 20
+  },
+  "canonical_pilot_bundle_rows": 106,
+  "note": "Counts are read-only snapshots from phase12; no vectors were generated.",
+  "pending_assets_with_visual_embeddings": 865,
+  "pending_assets_without_visual_embeddings": 5,
+  "completed_assets_with_required_embeddings": 10,
+  "duplicate_vectors": 0,
+  "orphan_vectors": 0,
+  "invalid_dimensions": 0,
+  "lineage_ambiguity": "P1: historical 1024-d Ollama text rows coexist with 384-d sentence-transformer and 512-d OpenCLIP representations; explicit new-run configuration required."
+}

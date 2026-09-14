@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-08-24T03:58:44.780610+00:00",
+  "status": "PASS",
+  "analyzer_version": "kdi_semantic_analyzer_v1",
+  "configuration_version": "kdi_semantic_analyzer_config_v1",
+  "configuration_fingerprint": "65b40e1cddda8d0dd5ed2fb95e5f8bf76edf680cb751707087a6b38ab925a5b0",
+  "semantic_spec_version": "semantic_index_v1",
+  "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+  "pilot_manifest_version": "kdi_semantic_pilot_v1",
+  "asset_count": 10,
+  "video_count": 8,
+  "image_count": 2,
+  "layer_evaluations": 180,
+  "evidence_coverage": {
+    "total_observed_facts": 267,
+    "observed_facts_with_evidence": 267,
+    "coverage_percent": 100.0,
+    "high_confidence_search_critical_facts": 44,
+    "unsupported_high_confidence_search_critical_facts": 0
+  },
+  "confidence_bands": {
+    "HIGH": 178,
+    "MEDIUM_HIGH": 89,
+    "MEDIUM": 0,
+    "LOW": 0,
+    "UNKNOWN": 56
+  },
+  "reconciliation": {
+    "RETAINED_EXISTING": 10,
+    "VERIFIED_EXISTING": 231,
+    "CORRECTED_EXISTING": 0,
+    "NEW_OBSERVATION": 26,
+    "CONFLICTING_EXISTING": 7,
+    "UNKNOWN": 56
+  },
+  "temporal_semantics": {
+    "scenes": 11,
+    "semantically_labeled_scenes": 10,
+    "unknown_scenes": 1,
+    "event_candidates": 22,
+    "semantically_labeled_events": 16,
+    "technical_only_events": 6
+  },
+  "human_review": {
+    "P0": 4,
+    "P1": 8,
+    "P2": 10,
+    "P3": 0,
+    "total": 22
+  },
+  "provider": {
+    "inspected": [
+      "existing provider abstraction",
+      "Ollama qwen3-vl:2b local worker",
+      "OpenAI adapter",
+      "local OpenCLIP"
+    ],
+    "used": "openai_codex_visual_review",
+    "model": "current_codex_model_identifier_unavailable",
+    "calls": 10,
+    "input_contact_sheets": 10,
+    "cost": "UNAVAILABLE",
+    "retries": 0,
+    "failures": 0
+  },
+  "forbidden_operations": {
+    "transcripts_generated": 0,
+    "ocr_runs": 0,
+    "embeddings_generated": 0,
+    "search_documents_written": 0,
+    "production_semantic_writes": 0,
+    "database_migrations": 0
+  },
+  "cross_layer_consistency": {
+    "treatment_action": "PASS_WITH_REVIEW_ITEMS",
+    "treatment_anatomy": "PASS_WITH_REVIEW_ITEMS",
+    "action_anatomy": "PASS",
+    "people_role": "PASS",
+    "people_action": "PASS",
+    "scene_event": "PASS_WITH_IMG_1238_REVIEW",
+    "conflicts_detected": 7
+  }
+}

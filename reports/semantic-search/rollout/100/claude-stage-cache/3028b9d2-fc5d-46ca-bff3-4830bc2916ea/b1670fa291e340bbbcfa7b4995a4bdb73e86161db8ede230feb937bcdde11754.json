@@ -1,0 +1,184 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3563.MP4",
+      "evidence": [
+        "filename IMG_3563.MP4",
+        "duration 7.665s, 1280x720"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical scalp examination clip",
+      "evidence": [
+        "gloved hands on scalp in first keyframe",
+        "masked staff member observing in second keyframe"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene spanning 0 to 7.6 seconds",
+      "evidence": [
+        "scene_index 0, start 0.0, end 7.665"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient with dark hair and two gloved staff members",
+      "evidence": [
+        "gloved hands touching patient's head in image 1",
+        "masked person in rust scrub with gloves in image 2"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient has long dark hair; staff wear gloves, mask, glasses, rust scrub",
+      "evidence": [
+        "long dark hair visible in both images",
+        "glasses and black mask on staff member in image 2",
+        "rust-colored scrub top"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp and hair region visible",
+      "evidence": [
+        "gloved hands positioned on top of patient's head",
+        "hair covering scalp visible in both frames"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from visuals",
+      "evidence": [
+        "no on-screen text or spoken content naming a procedure",
+        "gloved contact with scalp alone does not confirm a specific treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands positioned on patient's head while staff observe",
+      "evidence": [
+        "hands cupping top of head in image 1",
+        "second staff member standing and looking down at patient in image 2"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-patient interaction with a second staff member present",
+      "evidence": [
+        "gloved hands directly touching patient's head",
+        "second person standing nearby watching the interaction"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands in contact with scalp/hair area",
+      "evidence": [
+        "latex gloves visible on hands touching head",
+        "no visible wounds, blood, or markings noted"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room with equipment and tiled floor",
+      "evidence": [
+        "white walls and tiled floor visible",
+        "medical devices with blue components in background",
+        "reclined treatment chair visible in image 2"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld vertical video shot from above patient",
+      "evidence": [
+        "vertical framing (1280x720 reported but portrait-style crop in images)",
+        "close, tilted angle suggesting handheld camera"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up framing on head/hands, background staff and equipment visible",
+      "evidence": [
+        "hands and hair dominate foreground in image 1",
+        "staff member's face and shoulder fill left side of image 2"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is empty list"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected field is empty list"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators present",
+      "evidence": [
+        "no text overlays, logos, or branding visible in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical scalp check-up scene with staff interaction",
+      "evidence": [
+        "gloved hands examining head",
+        "second staff member present observing"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable for descriptive evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A gloved clinician examines a seated patient's scalp and dark hair while another masked, gloved staff member in a rust-colored scrub stands nearby observing. The room contains medical equipment and a patient seated in a treatment chair with a blue cap or wrap near the neck/shoulder area.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "3028b9d2-fc5d-46ca-bff3-4830bc2916ea",
+  "image_count": 2
+}

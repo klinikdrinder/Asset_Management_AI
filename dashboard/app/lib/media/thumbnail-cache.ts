@@ -105,3 +105,17 @@ export async function writeThumbnailCache(assetId: string, driveFileId: string, 
   const key = thumbnailCacheKey(assetId, driveFileId, versionTag, extension);
   return isDevCache() ? writeDevCache(key, value) : writeProdCache(key, value);
 }
+
+// A short-lived signed URL to a pre-generated thumbnail in the private bucket (backfilled as
+// 400px WebP). Returns null when the object does not exist yet or in dev (dev streams from the
+// local cache instead). Callers MUST authorize the viewer before minting this.
+export async function signedThumbnailUrl(assetId: string, driveFileId: string, versionTag: string, extension = "webp", expiresIn = 300): Promise<string | null> {
+  if (isDevCache()) return null;
+  const key = thumbnailCacheKey(assetId, driveFileId, versionTag, extension);
+  try {
+    const { data, error } = await createServiceClient().storage.from(BUCKET).createSignedUrl(key, expiresIn);
+    return error || !data?.signedUrl ? null : data.signedUrl;
+  } catch {
+    return null;
+  }
+}

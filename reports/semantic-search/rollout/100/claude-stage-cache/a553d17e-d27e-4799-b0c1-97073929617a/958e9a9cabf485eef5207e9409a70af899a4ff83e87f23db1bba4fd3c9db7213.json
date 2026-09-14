@@ -1,0 +1,187 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video asset with filename and technical metadata",
+      "evidence": [
+        "filename IMG_2338.MP4",
+        "asset_id a553d17e-d27e-4799-b0c1-97073929617a",
+        "technical metadata: 1280x720, 30fps, h264, duration 11.2s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short single-scene clinical close-up clip",
+      "evidence": [
+        "scene_index 0 spanning 0.0-11.2 seconds",
+        "two representative keyframes showing consistent close-up framing of a face and device"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, ~11 seconds",
+      "evidence": [
+        "scene start_seconds 0.0, end_seconds 11.2",
+        "keyframes_supplied: 2 showing minor device repositioning between them"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One reclined individual and one gloved clinician",
+      "evidence": [
+        "a person's face and neck reclined in frame",
+        "gloved hands holding a device and touching the person's cheek, indicating a practitioner role"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined individual with dark hair, visible face, neck, and shoulders",
+      "evidence": [
+        "dark hair visible around the head",
+        "bare shoulders/neck area draped with blue cloth",
+        "facial features including lips, nose, and cheek visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, eye area, nose, cheek, and neck visible",
+      "evidence": [
+        "periorbital region covered by black and metal eye shield",
+        "nose, lips, cheek, chin, ear, and neck visible in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure; specific treatment not identifiable from evidence",
+      "evidence": [
+        "no procedure name present in readable_text_detected or spoken_content",
+        "handheld device and eye shield alone do not establish a specific named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positions a handheld device near the eye/brow area",
+      "evidence": [
+        "gloved hand holding metallic device head close to the eyelid/brow in both frames",
+        "other gloved hand stabilizing the cheek"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-patient interaction during a close facial procedure",
+      "evidence": [
+        "gloved hands in direct contact with the reclined person's face",
+        "device positioned by the clinician directly over the patient's eye area"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective eye shield and gloves used near treatment site",
+      "evidence": [
+        "black cup-shaped eye shield covering one eye",
+        "metal ring-shaped nasal/eye protector visible",
+        "white surgical/exam gloves worn by clinician"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room setting",
+      "evidence": [
+        "blue medical drape/covering under the patient",
+        "neutral wall visible in background",
+        "sterile-appearing gloved hands and metallic instrument"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme close-up, handheld-style vertical framing",
+      "evidence": [
+        "tight vertical (portrait) framing cropping most of the head",
+        "shallow depth of field with blurred background"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face angled diagonally filling most of the frame",
+      "evidence": [
+        "face tilted with chin up and head turned, occupying majority of frame",
+        "device and hands positioned in upper portion of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content captured",
+      "evidence": [
+        "spoken_content field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent or usage not determinable",
+      "evidence": [
+        "no text overlays, branding, or captions present in the supplied evidence to indicate marketing purpose"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts a close-up clinical moment involving facial device application",
+      "evidence": [
+        "reclined patient with protective eye covering",
+        "gloved clinician actively positioning a device near the eye/brow"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two close-up keyframes show a person reclined with head tilted back while a gloved clinician holds a metallic handheld device near the eye/forehead area, with a metal eye-shield ring positioned over the nose. The device head rests close to the brow/eyelid region while the other gloved hand stabilizes the cheek.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "a553d17e-d27e-4799-b0c1-97073929617a",
+  "image_count": 2
+}

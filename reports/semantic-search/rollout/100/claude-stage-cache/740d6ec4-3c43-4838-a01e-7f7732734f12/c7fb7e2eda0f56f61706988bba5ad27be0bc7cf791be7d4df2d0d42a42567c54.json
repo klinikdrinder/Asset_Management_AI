@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2960.MP4, ~10.31s",
+      "evidence": [
+        "technical metadata lists filename IMG_2960.MP4, duration 10.31 seconds, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene close-up clinical scene",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 showing one continuous close-up of a clinician over a patient's head"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene sampled across two keyframes",
+      "evidence": [
+        "scene_results shows one scene (scene_index 0) spanning the asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician figure and patient present",
+      "evidence": [
+        "a person in blue surgical gown, cap, mask, and loupes is positioned over a patient's draped head"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in blue gown, cap, mask, loupes",
+      "evidence": [
+        "image shows blue surgical gown and cap, blue surgical mask, white head-mounted loupes with attached light, white gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp visible, reddish-purple and mottled",
+      "evidence": [
+        "image shows a rounded scalp surface with reddish-purple, mottled, dotted texture draped with white gauze"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied text",
+      "evidence": [
+        "per-scene layer marks TREATMENT_PROCEDURE as UNKNOWN; gloves, instrument, and scalp contact alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds instrument near scalp",
+      "evidence": [
+        "gloved hands hold a small instrument close to the scalp under the loupe light"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned directly over patient",
+      "evidence": [
+        "clinician leans over the patient's gauze-draped head, hands near the exposed scalp"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reddish-purple, dotted scalp surface",
+      "evidence": [
+        "visible scalp is mottled reddish-purple with small dots across its surface"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "per-scene layer marks ENVIRONMENT as UNKNOWN despite blurred background equipment"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up shot with focal lighting on scalp",
+      "evidence": [
+        "tight framing centers the loupe light illuminating the scalp against a blurred background"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical framing, subject centered",
+      "evidence": [
+        "portrait-oriented 1280x720 frame with clinician and patient's head centered"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0, ocr_evaluated true"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing content present",
+      "evidence": [
+        "per-scene layer marks MARKETING_CONTENT_USAGE as FALSE; no logos, branding, or promotional text visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "per-scene layer marks SEMANTIC_NARRATIVE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Embedding-level indexing not determinable from evidence",
+      "evidence": [
+        "per-scene layer marks SEARCH_EMBEDDINGS as UNKNOWN"
+      ]
+    }
+  ],
+  "narrative": "A clinician wearing a blue surgical gown, cap, mask, and head-mounted magnifying loupes with an attached light leans over a patient's head draped in white gauze. The exposed scalp appears reddish-purple and mottled with small dots, with the clinician's gloved hands positioned near the scalp under the loupe light.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "740d6ec4-3c43-4838-a01e-7f7732734f12",
+  "image_count": 1
+}

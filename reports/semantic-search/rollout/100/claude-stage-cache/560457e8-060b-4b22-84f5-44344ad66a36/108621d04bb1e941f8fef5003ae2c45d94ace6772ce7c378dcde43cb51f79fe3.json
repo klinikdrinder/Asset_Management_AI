@@ -1,0 +1,169 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1431.MP4",
+      "evidence": [
+        "filename IMG_1431.MP4, duration 15.57s, 1280x720, h264, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result marked GLOBAL_ASSET_UNDERSTANDING as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two keyframes",
+      "evidence": [
+        "1 canonical scene with 2 canonical keyframes sampled across the 15.57s clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner, observer, and reclined patient",
+      "evidence": [
+        "masked, gloved individual holding a device near the patient; second person in teal scrubs in background; reclined person in striped top"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scrubs, mask, gloves, safety glasses",
+      "evidence": [
+        "dark hair, safety glasses, surgical mask, white gloves on the practitioner; teal scrub top with logo on second person; black-and-white striped top on the reclined person"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Neck, jaw, and cheek area visible",
+      "evidence": [
+        "device positioned near the neck/jaw in the first frame and near the cheek in the second frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in evidence",
+      "evidence": [
+        "no procedure name appears in supplied text; only a handheld device with applicator tip and gloved contact are visible, which alone cannot establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device applied to skin near jaw/cheek",
+      "evidence": [
+        "practitioner holds and moves a handheld device with metallic tip from the neck/jaw area to the cheek area across the two keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner attends to reclined patient; colleague observes",
+      "evidence": [
+        "gloved practitioner leans over the reclined patient while a second scrub-wearing person stands behind watching"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Green light spot on skin near jaw",
+      "evidence": [
+        "a green light spot is visible on the skin near the jaw in the first frame"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly established",
+      "evidence": [
+        "Scene-level result marked ENVIRONMENT as UNKNOWN despite a clinical-looking scrub top with logo"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing",
+      "evidence": [
+        "tight close-up keyframes centered on the device and patient's face/jaw area, 1280x720 30fps h264 video"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device and hands dominate frame",
+      "evidence": [
+        "device and practitioner's gloved hands occupy the foreground while patient's face and background person are partially visible"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state is NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial clinic logo text on scrub top",
+      "evidence": [
+        "teal scrub top displays a red heart/hair-icon logo with partially visible text reading 'KLINIK DR. D...'"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level result marked MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "Scene-level result marked SEMANTIC_NARRATIVE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked, gloved practitioner wearing safety glasses holds a handheld device with a metallic applicator tip near the neck/jaw and then the cheek of a reclined patient in a black-and-white striped top, with a green light spot visible on the skin. A second person in teal scrubs bearing a partially visible clinic logo stands in the background observing.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "560457e8-060b-4b22-84f5-44344ad66a36",
+  "image_count": 1
+}

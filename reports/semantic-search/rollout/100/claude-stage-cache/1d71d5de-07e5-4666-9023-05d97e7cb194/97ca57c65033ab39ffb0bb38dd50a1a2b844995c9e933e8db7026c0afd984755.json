@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_2147.MP4",
+      "evidence": [
+        "filename IMG_2147.MP4, asset_id 1d71d5de-07e5-4666-9023-05d97e7cb194, 10.5s h264 video, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clip of staff member operating an aesthetic device",
+      "evidence": [
+        "Single canonical scene showing a person in scrubs interacting with a machine touchscreen"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, both keyframes show same setup and pose"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One masked individual in scrubs, apparent clinic staff",
+      "evidence": [
+        "person wearing pink/rust colored scrubs and a surgical mask standing at the device"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Hair in bun with scrunchie, glasses, surgical mask, pink/rust scrubs, smartwatch",
+      "evidence": [
+        "dark hair in a bun with a light-colored scrunchie, wearing glasses and a blue surgical mask, pink/rust short-sleeve scrub top and pants, a smartwatch on left wrist"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No patient anatomy visible",
+      "evidence": [
+        "scene_results ANATOMY marked UNKNOWN; only the staff member's arm and hand are visible, no patient body part shown"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure indicated",
+      "evidence": [
+        "scene_results TREATMENT_PROCEDURE marked UNKNOWN; only a device screen is being touched, no procedure name present in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person touching device touchscreen with index finger",
+      "evidence": [
+        "index finger pressed against one of the two touchscreen panels on the machine"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person positioned beside and operating the device",
+      "evidence": [
+        "person standing directly adjacent to the machine, hand extended to its screen"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clinical findings visible",
+      "evidence": [
+        "scene_results CLINICAL_VISUAL_OBSERVATIONS marked UNKNOWN; no skin condition or patient finding shown"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Plain room, setting not otherwise specified",
+      "evidence": [
+        "scene_results ENVIRONMENT marked UNKNOWN despite visible beige walls; specific room type not confirmed"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static side-angle shot of person and device",
+      "evidence": [
+        "two keyframes show consistent framing and camera position on the person's side profile"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person left-of-frame, device filling right side",
+      "evidence": [
+        "person positioned in left/center of frame with the dark blue and gold device occupying the right portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech detected",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT, transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "\"SYLFIRM X\" and \"ULTIMATE EDITION\" text on device",
+      "evidence": [
+        "ocr_evaluated true with 2 ocr_observations; visible text \"SYLFIRM X\" and \"ULTIMATE EDITION\" on the machine body"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Potential equipment/brand footage, use unconfirmed",
+      "evidence": [
+        "scene_results MARKETING_CONTENT_USAGE marked UNKNOWN; no caption or usage context supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Narrative intent not established",
+      "evidence": [
+        "scene_results SEMANTIC_NARRATIVE marked UNKNOWN; no accompanying text clarifies purpose of the clip"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to asset content",
+      "evidence": [
+        "scene_results SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked person in pink/rust scrubs stands beside a medical device labeled \"SYLFIRM X\" \"ULTIMATE EDITION\", touching one of its two touchscreen panels with an index finger. The device has a handpiece, a coiled hose, and a hanging folder or tablet attached, set in a plain, beige-walled room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "1d71d5de-07e5-4666-9023-05d97e7cb194",
+  "image_count": 1
+}

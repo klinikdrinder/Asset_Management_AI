@@ -1,0 +1,1 @@
+import assert from"node:assert/strict";import test from"node:test";import{interpretQuery}from"../db/query-interpreter";test("OCR and transcript remain separate",async()=>{assert.ok((await interpretQuery("SIGMA visible on screen")).textual.modalities.includes("OCR"));assert.ok((await interpretQuery("doctor says recovery")).textual.modalities.includes("TRANSCRIPT"))});

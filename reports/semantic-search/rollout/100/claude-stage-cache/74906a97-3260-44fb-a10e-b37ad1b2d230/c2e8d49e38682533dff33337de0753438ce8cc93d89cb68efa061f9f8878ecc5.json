@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_0594.MP4",
+      "evidence": [
+        "Filename IMG_0594.MP4, single canonical scene with 2 keyframes"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level GLOBAL_ASSET_UNDERSTANDING was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, ~11 seconds",
+      "evidence": [
+        "duration_seconds 11.245, canonical_scenes 1, scene-level TEMPORAL_SCENE_STRUCTURE OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and patient present",
+      "evidence": [
+        "Gloved person in teal scrubs and mask attending to a reclined patient in the keyframes"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs and orange eyewear; older male patient",
+      "evidence": [
+        "Clinician has dark hair, teal scrubs, mask, orange safety glasses; patient is an older man with glasses, blue surgical cap, purple towel drape"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and periocular area visible",
+      "evidence": [
+        "Patient's face, eye area, and forehead are visible with instrument positioned near the eye"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not identifiable",
+      "evidence": [
+        "No named procedure present in supplied text; gloves, eye shield, and handheld device alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds eye shield and operates handheld device near patient's face",
+      "evidence": [
+        "Keyframes show clinician's hands positioning a metal eye shield and a corded handheld device near the patient's eye/face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Relationship between individuals not specified",
+      "evidence": [
+        "Scene-level RELATIONSHIPS was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting with protective eyewear and gloved handling",
+      "evidence": [
+        "Orange safety glasses on clinician, metal eye shield on patient, gloved hands, corded device consistent with a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room type not confirmed",
+      "evidence": [
+        "Scene-level ENVIRONMENT was UNKNOWN despite visible wall and tray"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, handheld-style vertical framing",
+      "evidence": [
+        "Vertical 1280x720-oriented close shot centered on clinician's hands and patient's face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and patient fill frame, tray in background",
+      "evidence": [
+        "Foreground clinician and patient dominate frame; supply tray and red-striped wall visible behind"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state NO_MEANINGFUL_SPEECH; scene-level SPEECH_TRANSCRIPT_AUDIO FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on clinician's scrub top",
+      "evidence": [
+        "ocr_observations count of 5; partial text 'DR LEW' visible on scrubs in keyframe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical care scene depicting a treatment session",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE OBSERVED describing clinician attending to reclined patient"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual content layer",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS was NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A gloved clinician in teal scrubs, a mask, and orange safety eyewear leans over a reclined older male patient, holding a metal eye shield over his eye while operating a corded handheld device near his face. The patient, draped with a purple towel and wearing a blue surgical cap, lies in a treatment chair in a clinical room with a white and red-striped wall and a supply tray visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "74906a97-3260-44fb-a10e-b37ad1b2d230",
+  "image_count": 1
+}

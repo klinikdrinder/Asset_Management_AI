@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checks": {
+    "layer_count": true,
+    "unique_layer_ids": true,
+    "state_contract": true,
+    "evidence_contract": true,
+    "fingerprint_reproducible": true,
+    "baseline_match": true,
+    "original_10_current": true,
+    "pending_preserved": true,
+    "no_media_or_api_activity": true
+  },
+  "baseline": {
+    "system_version": "kdi_semantic_system_v1",
+    "system_fingerprint": "ba59fb115bd96b878971a74cd3ee1c6a4601930110b29b3505a586c69acf4751",
+    "spec_version": "kdi_semantic_18_layer_v1",
+    "spec_fingerprint": "6da50e2153f6fcb6c9ef27c308ad44d0d2024e702e3faad47586b0068ba64fd7",
+    "rollout_manifest_version": "kdi_30_asset_rollout_v1",
+    "rollout_manifest_fingerprint": "ad43dc6875c62adef10fbcc78767e7c6d6f3fff341330c19616f0fdc522ea31d"
+  },
+  "protection": {
+    "semantic_facts_created": 0,
+    "media_analysis": 0,
+    "openai_calls": 0,
+    "acl_weakened": false,
+    "consent_auto_approved": 0,
+    "phase2": "BLOCKED_OPENAI_QUOTA",
+    "official_phase3": "NOT_STARTED"
+  },
+  "database_counts": {
+    "canonical_assets": 881,
+    "complete": 10,
+    "pending": 870,
+    "unsupported": 1,
+    "unexpected_search_ready": 0
+  },
+  "artifacts_read": [
+    "config/semantic-search/kdi_semantic_search_spec_v1.json",
+    "config/semantic-search/kdi_semantic_18_layer_v1.json",
+    "reports/semantic-search/database-enrollment/database_semantic_readiness_audit.json"
+  ]
+}

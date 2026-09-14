@@ -1,0 +1,169 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_3430.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_3430.MP4, duration 19.27s, 1280x720, h264, one canonical scene with two keyframes"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical skin-preparation/injection scene",
+      "evidence": [
+        "Keyframes show a gloved hand holding a syringe near a patient's neck/clavicle skin marked with antiseptic staining and pen marks"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2; frame 1 shows syringe approaching skin, frame 2 shows needle tip at skin"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient and gloved practitioner",
+      "evidence": [
+        "Person lying back with visible chin/lips (patient); gloved hands holding syringe and stabilizing skin (practitioner)"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's chin, lips, neck and upper chest visible",
+      "evidence": [
+        "Keyframes show pale skin of chin, lips, neck and upper chest; practitioner's forearm and gloved hands visible, wearing dark clothing"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Neck, clavicle, and upper chest region",
+      "evidence": [
+        "Skin area at base of neck/clavicle and upper chest visible with antiseptic staining and pen marks"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in evidence",
+      "evidence": [
+        "Scene-level TREATMENT_PROCEDURE is UNKNOWN; only gloves, a syringe, and skin contact are visible, which do not by themselves establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Syringe brought to skin and positioned for injection",
+      "evidence": [
+        "Frame 1 shows syringe with teal-green liquid held near the neck/clavicle skin with a droplet at the tip; frame 2 shows the needle tip placed against the skin"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner performing hands-on action on patient",
+      "evidence": [
+        "Gloved fingers stabilize the patient's skin while another gloved hand holds and positions the syringe near/against the patient's body"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Antiseptic staining and marking pen X's on skin",
+      "evidence": [
+        "Yellow-brown antiseptic staining across neck and chest skin; white pen X marks on the skin surface; syringe filled with teal-green fluid"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment setting, close-up framing",
+      "evidence": [
+        "Gloved hands, syringe, and skin antisepsis consistent with a clinical setting; background obscured by close framing and dark clothing"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme close-up, handheld point-of-view style shot",
+      "evidence": [
+        "Both keyframes are tight close-ups focused on the syringe and injection site with shallow framing"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical frame centered on syringe and neck/chest skin",
+      "evidence": [
+        "1280x720 frame vertically oriented content centers the syringe tip and the patient's neck/clavicle area with gloved hands occupying right side"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial syringe label text visible",
+      "evidence": [
+        "Syringe barrel shows partial printed text such as 'USE ONLY' and 'STERIL' visible in frame 1"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing content indicators",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE is FALSE; no logos, captions, or promotional overlays present in keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up of a clinical injection-preparation moment",
+      "evidence": [
+        "Sequence of syringe approaching and then touching prepped, marked skin depicts a clinical procedural moment"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two close-up keyframes show a person lying back with chin and lips visible while a gloved practitioner holds a syringe with teal-green liquid near the base of the patient's neck/clavicle area, where the skin is stained yellow-brown with antiseptic and marked with white pen X marks. In the second frame the needle tip is positioned against the skin at the neck-shoulder junction, with the practitioner's gloved fingers stabilizing the area.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "c7b52ee6-3784-4b79-9831-62f81cd3e6f0",
+  "image_count": 1
+}

@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_3576.MP4",
+      "evidence": [
+        "Asset filename IMG_3576.MP4, duration 20.37s, 1280x720, h264, single canonical scene with two keyframes"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clip of a handheld device applied to scalp",
+      "evidence": [
+        "One continuous scene showing a gloved person operating a handheld corded device on a seated person's head"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single unbroken scene across the clip",
+      "evidence": [
+        "canonical_scenes: 1 with 2 keyframes sampled across a ~20 second duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One masked/gloved staff member and one seated individual",
+      "evidence": [
+        "Person in pink scrubs, mask, gloves standing and operating device; second person seated with head lowered, covered by a wrap"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Curly dark hair, glasses, mask, pink scrubs; long dark-haired seated person",
+      "evidence": [
+        "Standing person has curly dark hair, wears glasses and a black mask, pink/coral scrub top, white gloves",
+        "Seated person has long dark hair covered partly by a blue and floral cloth"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp and head region visible",
+      "evidence": [
+        "Device tip is positioned against the scalp/head of the seated individual whose hair is parted"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "Scene-level TREATMENT_PROCEDURE marked UNKNOWN; only a handheld device and gloved contact with scalp are visible, no named procedure text or speech present"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held against scalp while phone displays a photo",
+      "evidence": [
+        "Standing person holds a corded handheld device against the seated person's head",
+        "A smartphone showing an image is held near the seated person"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operator positioned over seated individual receiving contact",
+      "evidence": [
+        "Standing person leans over and applies the device directly to the seated person's head, indicating a caregiver/client-style spatial relationship"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, mask, and equipment consistent with a clinical setting",
+      "evidence": [
+        "White gloves, black face mask, corded device, and blue tubed machines visible in frame"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "Scene-level ENVIRONMENT marked UNKNOWN; plain white walls and tiled floor with equipment are visible but no signage or context confirms a specific facility type"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical handheld-style framing, side angle",
+      "evidence": [
+        "Frame is vertical (1280x720 rendered portrait-oriented per keyframes), shot from the side at close range on the two subjects"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two subjects fill frame with equipment in background",
+      "evidence": [
+        "Standing person and seated person occupy the left/center of frame; blue devices and tubing occupy the right background"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state NO_SPEECH; scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "No readable on-screen text found",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 0, indicating no legible text detected in frames"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN; no captions, branding, or usage context supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose unclear",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN; visual content shows a device-to-scalp interaction without contextual explanation"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/audio content evaluation",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person in pink scrubs, glasses, mask, and gloves holds a corded handheld device with a rounded tip against the scalp of a seated individual with long dark hair, who is wrapped in a blue and floral-patterned covering. A smartphone displaying a photo is held near the scene, and two blue medical devices with tubing sit in the background of a plain white-walled room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "8bacd21f-e17a-4f19-a931-2e84433bba61",
+  "image_count": 1
+}

@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-08-25T02:20:47.894Z",
+  "status": "PASS",
+  "malformed_provider": {
+    "semantic_status": "UNAVAILABLE",
+    "plan_validation": "VALID"
+  },
+  "trusted_override": {
+    "requested_count": 5,
+    "media_type": "VIDEO",
+    "rejected_fields": [
+      "PROVIDER_FIELD_REJECTED:requested_count",
+      "PROVIDER_FIELD_REJECTED:media_type",
+      "PROVIDER_FIELD_REJECTED:validation_status"
+    ],
+    "conflicts": [
+      {
+        "conflict_type": "PROVIDER_TRUST_BOUNDARY",
+        "provider_field": "requested_count",
+        "precedence": "BACKEND"
+      },
+      {
+        "conflict_type": "PROVIDER_TRUST_BOUNDARY",
+        "provider_field": "media_type",
+        "precedence": "BACKEND"
+      },
+      {
+        "conflict_type": "PROVIDER_TRUST_BOUNDARY",
+        "provider_field": "validation_status",
+        "precedence": "BACKEND"
+      }
+    ]
+  },
+  "unsafe_plans_reaching_search_layer": 0,
+  "immutable": true,
+  "fingerprint_reproducible": true
+}

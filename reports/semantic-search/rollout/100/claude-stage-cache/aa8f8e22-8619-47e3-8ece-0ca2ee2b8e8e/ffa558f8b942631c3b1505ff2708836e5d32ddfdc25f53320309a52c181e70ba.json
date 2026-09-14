@@ -1,0 +1,176 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2341.MP4, scene 0",
+      "evidence": [
+        "asset_id aa8f8e22-8619-47e3-8ece-0ca2ee2b8e8e, filename IMG_2341.MP4, scene_index 0, 0.0-11.7s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical close-up clip of face/neck area",
+      "evidence": [
+        "11.7-second video, 1280x720, h264, with audio stream, two keyframes showing a close-up of a person's lower face and neck with gloved hands and an instrument"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene spanning 0.0-11.7 seconds",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 11.7, keyframes_supplied 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One reclined individual and at least one gloved provider",
+      "evidence": [
+        "a person's face/neck is visible reclined on a pillow",
+        "gloved hands operate an instrument near the person's face in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark-haired individual with visible neck hair, moles on neck",
+      "evidence": [
+        "dark hair visible near hairline and jaw/neck",
+        "small dark moles visible on the neck in both images",
+        "wearing a dark head covering and blue-gray garment"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Lower face, jaw, ear, and neck region visible",
+      "evidence": [
+        "close-up framing shows ear, jawline, chin, and neck skin with fine hairs"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "gloves, a ring-shaped metal instrument, a tube/probe, and physical contact are visible but no procedure name appears in readable_text_detected or spoken_content",
+        "per rules, instruments and physical contact alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider positions instrument and probe near patient's face",
+      "evidence": [
+        "in frame 1 a hand steadies the temple while another holds the ringed device near the chin",
+        "in frame 2 the device and tube appear repositioned closer to the mouth/chin, showing movement between keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider hands interacting directly with patient's face/neck",
+      "evidence": [
+        "gloved hands are in direct contact with the patient's temple and jaw area across both frames"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small moles and fine vellus hair visible on neck skin",
+      "evidence": [
+        "small dark round moles on the neck visible in both keyframes",
+        "fine hairs scattered along the lower hairline and neck"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting with blue positioning pillow",
+      "evidence": [
+        "a blue pillow/headrest supports the patient's head and shoulder",
+        "blue-gray patient garment consistent with a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style vertical framing",
+      "evidence": [
+        "tight close-up crop on face/neck in vertical 720-wide frame across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face and instrument centered, hands framing the subject",
+      "evidence": [
+        "the ring-shaped instrument and gloved hands occupy the upper-center of frame, patient's neck fills the lower portion in both images"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators present in evidence",
+      "evidence": [
+        "no text overlays, logos, or promotional captions are present in the supplied keyframes or text fields"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical interaction between provider and reclined patient",
+      "evidence": [
+        "gloved provider hands manipulate an instrument near a reclined patient's jaw and neck across two sequential keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a distinct visual layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person reclines with their head tilted back and to the side on a blue pillow, while a gloved provider holds a metal ring-shaped instrument with an attached scope or light near the jaw and neck area, and another gloved hand touches the person's temple. A thin tube or probe is positioned near the mouth/chin in both frames.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "aa8f8e22-8619-47e3-8ece-0ca2ee2b8e8e",
+  "image_count": 2
+}

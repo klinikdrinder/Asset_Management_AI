@@ -1,0 +1,15 @@
+{
+  "processor_version": "kdi_ocr_intelligence_v1",
+  "configuration_version": "kdi_ocr_intelligence_config_v1",
+  "text_detector": {"name": "opencv_blackhat_sobel", "version": "v1", "scan_width": 480, "minimum_region_area_ratio": 0.00035, "maximum_region_area_ratio": 0.35, "minimum_aspect_ratio": 0.7, "candidate_score_threshold": 0.42},
+  "ocr_engine": {"name": "EasyOCR", "version": "1.7.2", "languages": ["en"], "gpu": false, "decoder": "greedy", "rotation_info": [90, 180, 270], "maximum_variants": 3, "canvas_size": 1600, "maximum_track_representatives_per_video": 6},
+  "preprocessing": {"version": "kdi_ocr_preprocess_v1", "variants": ["original", "contrast", "grayscale_threshold"], "upscale_limit": 2.0, "perspective_correction": false},
+  "tracking": {"version": "kdi_text_track_v1", "merge_gap_frames": 8, "spatial_iou_threshold": 0.12, "content_change_hash_threshold": 18},
+  "acceptance": {"accepted_confidence": 0.75, "review_confidence": 0.45, "minimum_useful_characters": 2, "dedup_similarity": 0.88},
+  "embedding": {"status": "DEFERRED", "provider": "UNAVAILABLE", "model": "UNASSIGNED", "version": "UNASSIGNED", "dimensions": null, "reason": "Configured local Ollama text embedding service remains unreachable and OpenAI quota remains unavailable."},
+  "debug": {"enabled": true, "maximum_overlays_per_asset": 8},
+  "shadow_mode": true,
+  "production_database_writes": false,
+  "external_ai_required": false,
+  "external_media_transmission": false
+}

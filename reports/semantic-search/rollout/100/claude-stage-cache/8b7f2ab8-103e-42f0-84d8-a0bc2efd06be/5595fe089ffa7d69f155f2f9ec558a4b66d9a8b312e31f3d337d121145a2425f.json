@@ -1,0 +1,184 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1384.MP4, scene 2",
+      "evidence": [
+        "filename IMG_1384.MP4",
+        "asset_id 8b7f2ab8-103e-42f0-84d8-a0bc2efd06be",
+        "scene_index 2"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short close-up clip of a device applied to skin",
+      "evidence": [
+        "12.03s duration video, 1280x720, h264",
+        "single keyframe at 2.3-2.667s showing a close-up medical/cosmetic scene"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scene 2 spans 2.3s to 2.667s of clip",
+      "evidence": [
+        "start_seconds 2.3, end_seconds 2.667",
+        "scene_index 2 of larger video"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One recipient and at least one gloved operator",
+      "evidence": [
+        "person's face/head visible lying down",
+        "two gloved hands visible, one holding the device, one stabilizing near the face"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial view of a person's face, nose, and forehead/scalp skin",
+      "evidence": [
+        "visible nose and lower face at left",
+        "skin on forehead/scalp area illuminated green"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forehead/scalp and nasal area visible",
+      "evidence": [
+        "nose and surrounding facial skin visible on left",
+        "green-lit skin region above/around forehead consistent with scalp or forehead"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure type not identifiable from evidence",
+      "evidence": [
+        "no procedure name present in readable_text_detected or spoken_content",
+        "gloves, device, and skin contact alone do not establish a named procedure per rules"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held against skin, emitting light",
+      "evidence": [
+        "handheld device tip touching/near skin with visible glow",
+        "gloved hand positioned to stabilize the head/skin"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operator hands interacting directly with recipient's skin",
+      "evidence": [
+        "gloved hands positioned directly on and around the person's face/forehead",
+        "device tip in contact with skin surface"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Bright glowing spot with orange-white halo on skin",
+      "evidence": [
+        "intense white-orange glow surrounded by green light at device contact point",
+        "surrounding skin appears illuminated green from device light"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting inferred from blue drape and gloved hands",
+      "evidence": [
+        "blue surgical-type drape/fabric visible near top of frame",
+        "gloved hands and clinical instrument suggest a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme close-up, vertical framing, handheld angle",
+      "evidence": [
+        "tight close-up crop of face and device",
+        "portrait/vertical aspect ratio composition"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device and glowing light centered mid-frame",
+      "evidence": [
+        "glowing device tip and light halo positioned centrally",
+        "gloved hands frame the edges of the shot"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content present",
+      "evidence": [
+        "spoken_content is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context indicated",
+      "evidence": [
+        "no supplied text or on-screen graphics indicating marketing use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up moment of a device applied to skin in a clinical-looking setting",
+      "evidence": [
+        "visual focus on glowing device tip against skin",
+        "gloved hands and drape suggest a clinical procedure context"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual evidence description",
+      "evidence": []
+    }
+  ],
+  "narrative": "A close-up shows a gloved hand holding a green-glowing handheld device emitting light against a person's forehead/scalp area, with another gloved hand steadying the head. The green light illuminates the skin with a bright orange-white glowing spot at the point of contact.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "8b7f2ab8-103e-42f0-84d8-a0bc2efd06be",
+  "image_count": 1
+}

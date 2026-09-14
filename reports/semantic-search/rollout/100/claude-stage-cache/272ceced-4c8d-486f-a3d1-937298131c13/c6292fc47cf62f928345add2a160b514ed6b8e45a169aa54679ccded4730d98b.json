@@ -1,0 +1,170 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_0502.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_0502.MP4, 1280x720, 17.83s, h264, single canonical scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context of clip not determinable",
+      "evidence": [
+        "Scene-level GLOBAL_ASSET_UNDERSTANDING is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across the clip",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 spanning one scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician attending to a reclined patient",
+      "evidence": [
+        "One person in teal scrubs, mask, and gloves leaning over a second person reclined in a treatment chair"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in scrubs/mask/gloves; patient in cap and gown",
+      "evidence": [
+        "Clinician wears teal scrub top, surgical mask, hair tied up with a hair accessory, latex gloves, and a smartwatch",
+        "Patient wears a blue surgical cap, teal gown, and has a navy towel draped over the chest"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, cheek, and temple visible",
+      "evidence": [
+        "Patient's face is visible with eyes closed; gloved hand is positioned at the cheek/temple area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not identifiable",
+      "evidence": [
+        "No named procedure appears in the supplied text; gloved hand-to-face contact alone does not establish any specific clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician touching patient's cheek/temple with gloved hand",
+      "evidence": [
+        "Gloved hand of the clinician is in contact with the patient's cheek/temple area in the keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-patient interaction",
+      "evidence": [
+        "Clinician leans over and makes direct physical contact with the reclined patient, indicating a caregiver-patient relationship"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No discernible clinical findings",
+      "evidence": [
+        "Scene-level CLINICAL_VISUAL_OBSERVATIONS is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room",
+      "evidence": [
+        "Overhead adjustable lamp/equipment arm, wall-mounted power sockets and switches, sliding door with red stripe, white walls consistent with a clinic room"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical handheld-style framing",
+      "evidence": [
+        "Both keyframes are vertical (portrait) format consistent with phone video capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and patient framed close together",
+      "evidence": [
+        "Frame centers on clinician leaning over patient, with equipment visible in the background at right"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No visible text detected",
+      "evidence": [
+        "ocr_observations: 0, scene-level OCR_VISIBLE_TEXT is FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing hands-on care on a reclined patient",
+      "evidence": [
+        "Consistent depiction across both keyframes of a gloved clinician attending closely to a reclined, gowned patient in a clinic setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this layer type",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two vertical keyframes show a clinician in teal scrubs, mask, gloves, and a smartwatch leaning over a reclined patient wearing a blue surgical cap and gown with a towel draped over the chest, with a gloved hand touching the patient's cheek/temple area. The setting is a clinical treatment room with an adjustable overhead lamp, wall power sockets, and a sliding door marked with a red stripe.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "272ceced-4c8d-486f-a3d1-937298131c13",
+  "image_count": 1
+}

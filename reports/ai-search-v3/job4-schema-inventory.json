@@ -1,0 +1,15 @@
+{
+  "job": "KDI AI Search V3 Job 4",
+  "project_id": "wcqqjpndlwsvatjuqnol",
+  "migrations": [
+    "20260819062012_ai_search_v3_job4_embedding_schema.sql",
+    "20260819062016_ai_search_v3_job4_search_documents.sql",
+    "20260819062019_ai_search_v3_job4_conversation_search.sql",
+    "20260819063232_ai_search_v3_job4_fk_covering_indexes.sql"
+  ],
+  "tables": {"scene_embeddings":0,"keyframe_embeddings":0,"transcript_embeddings":0,"asset_search_documents":0,"scene_search_documents":0,"search_sessions":0,"search_queries":0,"search_results":0,"search_feedback":0},
+  "search_query_embeddings": "NOT CREATED - deferred until cache benefit and lifecycle are demonstrated",
+  "security": {"rls_all":true,"anon_truncate":false,"authenticated_truncate":false,"client_select":false,"client_write":false},
+  "vector": {"storage":"variable-dimension vector","metadata_check":"vector_dims(embedding)=embedding_dimensions","ann_indexes":0,"supports_dimensions":[512,1024]},
+  "production_rows_generated": 0
+}

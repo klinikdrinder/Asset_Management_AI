@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical MP4 video file, IMG_1963.MP4",
+      "evidence": [
+        "Filename IMG_1963.MP4, 1280x720, 30fps, h264, 20.07s duration with audio stream"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical setting video with clinician and reclined patient",
+      "evidence": [
+        "Two keyframes depict a clinician operating a device over a reclined patient in a treatment setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, scene_index 0 spans the full 20.07s duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient present",
+      "evidence": [
+        "A masked person in scrubs and goggles handles equipment near a reclined person's head, indicating clinician and patient roles"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in coral scrubs, goggles, mask; patient reclined under blue linens",
+      "evidence": [
+        "Clinician has dark hair in a bun, wears a coral/salmon scrub top, green-tinted safety goggles, and a surgical mask",
+        "Patient is reclined with head tilted back, eyes not visible, draped in blue linens"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's lower face, jaw, and neck visible",
+      "evidence": [
+        "Patient's chin, jaw, and neck area are visible near the handheld device tip",
+        "Clinician's hand stabilizes the patient's jaw/cheek area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not identifiable from evidence",
+      "evidence": [
+        "A handheld device connected to an overhead articulated arm is held near the patient's face, but no procedure name is stated in the supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positions device near patient's face while stabilizing jaw",
+      "evidence": [
+        "Clinician holds a handheld device tip close to the patient's lower face/chin while the other hand steadies the patient's jaw"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician working directly on patient in close physical contact",
+      "evidence": [
+        "Clinician's hands are in direct contact with the patient's face/jaw while operating the device"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld device with cable to overhead arm positioned at patient's lower face",
+      "evidence": [
+        "Silver handheld instrument with cable connects to a mounted articulated arm; the tip is positioned near the patient's chin/mouth area"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable beyond treatment bed",
+      "evidence": [
+        "Background shows a plain wall and treatment bed with blue linens, insufficient detail to determine specific facility type"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up framing at an overhead angle",
+      "evidence": [
+        "Vertical 1280x720 orientation with a close, overhead-angled shot centered on the clinician and patient's head area"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and equipment centered over reclined patient",
+      "evidence": [
+        "The overhead arm, handheld device, and clinician's hands are centrally framed above the patient's face"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state is NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing elements present",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked FALSE with no branding, logos, or promotional text visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical close-contact scene between clinician and patient",
+      "evidence": [
+        "Keyframes depict a sustained clinical interaction involving equipment near the patient's face"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to descriptive analysis",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two vertical video keyframes show a masked clinician in a coral scrub top and green-tinted safety goggles leaning over a reclined patient, holding a handheld device connected by a cable to a silver articulated arm mounted overhead. The patient lies on a treatment bed draped in blue linens with head tilted back and eyes shielded, while the clinician's other hand stabilizes the patient's jaw near the lower face and neck.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "2b4305db-7db7-4204-b391-7a9960e1cb80",
+  "image_count": 1
+}

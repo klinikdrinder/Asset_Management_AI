@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KDI Canonical Query Plan",
+  "version": "kdi_query_schema_v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "query_schema_version",
+    "intent",
+    "original_query",
+    "result_request",
+    "media",
+    "semantic",
+    "temporal",
+    "numeric",
+    "textual",
+    "constraints",
+    "preferences",
+    "ranking",
+    "conversation",
+    "retrieval_text",
+    "parser_metadata",
+    "validation"
+  ],
+  "properties": {
+    "query_schema_version": {
+      "const": "kdi_query_schema_v1"
+    },
+    "intent": {
+      "enum": [
+        "FIND_MEDIA",
+        "FIND_SIMILAR_MEDIA",
+        "REFINE_SEARCH",
+        "UNKNOWN"
+      ]
+    },
+    "original_query": {
+      "type": "string",
+      "minLength": 1
+    },
+    "result_request": {
+      "type": "object"
+    },
+    "media": {
+      "type": "object"
+    },
+    "semantic": {
+      "type": "object"
+    },
+    "temporal": {
+      "type": "object"
+    },
+    "numeric": {
+      "type": "object"
+    },
+    "textual": {
+      "type": "object"
+    },
+    "constraints": {
+      "type": "object"
+    },
+    "preferences": {
+      "type": "array"
+    },
+    "ranking": {
+      "type": "object"
+    },
+    "conversation": {
+      "type": "object"
+    },
+    "retrieval_text": {
+      "type": "object"
+    },
+    "parser_metadata": {
+      "type": "object"
+    },
+    "validation": {
+      "type": "object"
+    }
+  }
+}

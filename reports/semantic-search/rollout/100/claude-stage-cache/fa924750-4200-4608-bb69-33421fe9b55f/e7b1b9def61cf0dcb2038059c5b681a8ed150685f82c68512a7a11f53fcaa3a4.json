@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 clip IMG_3416.MP4, 10.5s",
+      "evidence": [
+        "filename IMG_3416.MP4",
+        "duration_seconds 10.5, 1280x720, h264, fps 30/1, decoded_locally true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical-setting clip",
+      "evidence": [
+        "single scene showing gloved hands, syringe, and skin contact in an indoor medical-looking room"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, two near-identical keyframes",
+      "evidence": [
+        "canonical_scenes 1, canonical_keyframes 2",
+        "the two sampled frames are nearly identical, taken moments apart"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved practitioner hands and a seated person",
+      "evidence": [
+        "one gloved hand holds a syringe while another gloved hand steadies the shoulder of a second person whose neck, shoulder and pink garment strap are visible"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark hair pulled back, pink top",
+      "evidence": [
+        "visible dark hair pulled up, bare shoulder/neck skin, pink garment strap on the person being touched"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Neck, shoulder, upper trapezius, arm",
+      "evidence": [
+        "frame shows neck, shoulder, upper trapezius area and upper arm of the person"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in evidence",
+      "evidence": [
+        "only gloves, a syringe, and skin contact are visible; no supplied text names a specific procedure, so it cannot be identified"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Syringe placed against shoulder skin",
+      "evidence": [
+        "a gloved hand holds a syringe positioned against the skin while another gloved hand steadies the shoulder"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Hands-on contact between two people",
+      "evidence": [
+        "one person's gloved hands are in direct physical contact with the shoulder of another person"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small red marks on skin and glove",
+      "evidence": [
+        "small red marks are visible on the skin and on the glove fingertips in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor room with medical equipment",
+      "evidence": [
+        "white walls, medical-looking equipment and a stool/chair visible in the background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up framing",
+      "evidence": [
+        "tight close-up shot on the shoulder and syringe, vertical 720-height orientation implied by framing"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands and syringe centered",
+      "evidence": [
+        "the syringe and gloved hands dominate the center of the frame with the shoulder skin as backdrop"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, but transcript_state NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No visible text detected",
+      "evidence": [
+        "ocr_evaluated true, ocr_observations 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "no supplied text or metadata indicates whether this clip is used for marketing purposes"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scene-level narrative synthesized",
+      "evidence": [
+        "per-scene narrative describes gloved hands, syringe, shoulder contact and red marks in an indoor room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": [
+        "scene-level result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "The video's keyframes show a close-up of a gloved hand holding a syringe positioned against the skin of a person's shoulder/upper trapezius, while a second gloved hand steadies the area; small red marks are visible on the skin and on the glove fingertips. The two sampled frames are nearly identical, captured moments apart in an indoor room with white walls and medical-looking equipment in the background, and the clip contains no meaningful speech or on-screen text.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "fa924750-4200-4608-bb69-33421fe9b55f",
+  "image_count": 1
+}

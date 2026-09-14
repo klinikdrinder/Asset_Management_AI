@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1369.MP4, 1280x720, 18.2s",
+      "evidence": [
+        "Technical metadata lists filename IMG_1369.MP4, duration 18.2s, 1280x720, h264, audio present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical facial procedure clip with dialogue and on-screen text",
+      "evidence": [
+        "Single-scene video showing facial markings, gloved clinician with instrument, audio and OCR text present per metadata"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, single scene_index 0 entry"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined patient and gloved clinician identified by scrub embroidery",
+      "evidence": [
+        "Person lying down with facial markings and eye shields; second person's teal scrubs embroidered \"DR LEW KAR MIN\" visible at top of frame"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient with dark hair, marker outlines on brows/nose/lips; clinician in teal scrubs and white gloves",
+      "evidence": [
+        "Dark marker lines on eyebrows, nose bridge, and around lips; metallic eye shields on patient; clinician wears white gloves and teal scrub top"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial region visible: forehead, eyebrows, nose, lips, chin",
+      "evidence": [
+        "Marker outlines on eyebrows, nasal bridge, and perioral area; nasal tip and nostrils clearly visible in frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed by evidence",
+      "evidence": [
+        "Gloves, instrument, and facial contact are visible but no procedure name is present in supplied text; per-scene layer also marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applies handheld instrument to patient's nasal tip",
+      "evidence": [
+        "Gloved hand holds metallic handheld instrument with tip touching a small red mark at the nasal tip"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing hands-on work directly on reclined patient",
+      "evidence": [
+        "Clinician's gloved hands are positioned directly over and touching the patient's face while patient lies still on the chair"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Pre-marked treatment lines and small red mark at nasal tip",
+      "evidence": [
+        "Dark marker delineation on eyebrows, nose, and lips; small red mark visible at the site where the instrument tip contacts the nose"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable beyond a treatment chair",
+      "evidence": [
+        "Blue chair headrest and green towel visible but broader room context is not shown; per-scene layer marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up overhead angle centered on patient's face",
+      "evidence": [
+        "Frame is tightly cropped on the face from an overhead/near-vertical angle with instrument entering from upper right"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face centered in frame, hands and instrument flank the edges",
+      "evidence": [
+        "Patient's face occupies the central vertical axis; gloved hands and instrument enter from left and right sides of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Audio track contains meaningful speech",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, transcript_state MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "On-screen embroidered text \"DR LEW KAR MIN\" and other OCR text detected",
+      "evidence": [
+        "Visible embroidered text \"DR LEW KA...\" on scrub top; ocr_evaluated true with 6 ocr_observations recorded"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not established by supplied evidence",
+      "evidence": [
+        "No text or metadata indicates promotional context; per-scene layer marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose not determinable from evidence",
+      "evidence": [
+        "No supplied text clarifies the purpose or storyline beyond the visible clinical scene; per-scene layer marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually assessable layer",
+      "evidence": [
+        "Per-scene layer explicitly marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person reclines on a treatment chair with dark marker outlines drawn on the eyebrows, nose bridge, and around the lips, wearing metallic eye shields and a green towel over the shoulders. A gloved clinician in teal scrubs embroidered \"DR LEW KAR MIN\" holds a handheld metallic instrument near the patient's nose, where a small red mark is visible at the nasal tip.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "f4314c72-0c32-4f45-8305-f442820e690b",
+  "image_count": 1
+}

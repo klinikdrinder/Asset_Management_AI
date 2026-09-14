@@ -1,0 +1,187 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_9766.MP4, 4.5s clip",
+      "evidence": [
+        "filename IMG_9766.MP4 provided in asset metadata",
+        "duration 4.5 seconds, 1280x720 resolution"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context of clip unclear",
+      "evidence": [
+        "scene-level result marked GLOBAL_ASSET_UNDERSTANDING as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1",
+        "two keyframes show consistent single setting"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and patient present",
+      "evidence": [
+        "masked person in purple scrubs labeled with name tag standing over a reclining patient",
+        "patient lying down with eyes covered"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in purple scrubs and mask; patient with eye patches",
+      "evidence": [
+        "clinician wears purple scrub top, surgical mask, hair in bun, glove on hand, smartwatch visible",
+        "patient has white eye patches over both eyes, dark hair, covered in blanket"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, eyes region visible",
+      "evidence": [
+        "patient's nose, mouth, and eye area with patches visible in frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "no text names a specific procedure",
+        "gloves and device presence alone do not confirm a named clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific action unclear from stills",
+      "evidence": [
+        "scene-level ACTIONS_EVENTS marked UNKNOWN",
+        "clinician's hand position near patient but exact action not discernible"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned over reclining patient",
+      "evidence": [
+        "clinician leaning over patient who is lying on a treatment chair/table",
+        "gloved hand resting near patient's shoulder/chest area"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Eye patches, gloves, medical device visible",
+      "evidence": [
+        "white eye patches on patient's eyes",
+        "clinician wearing single visible glove",
+        "medical device with dials and screen in background"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting details not fully clear",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible room elements",
+        "background shows door, stool, device, but specific facility type unconfirmed"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical framing, close-up shot",
+      "evidence": [
+        "portrait orientation image",
+        "close medium shot capturing clinician and patient upper body"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician centered over patient in foreground",
+      "evidence": [
+        "clinician positioned upper-center, patient reclining lower portion of frame",
+        "background medical equipment visible behind clinician"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH",
+        "audio_stream_present true but no discernible dialogue"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on clinician's scrub top",
+      "evidence": [
+        "ocr_observations: 3",
+        "partial text 'DR LEW KAR' visible on scrub top embroidery"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent unclear",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN",
+        "no overlays, branding graphics, or promotional text visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Narrative purpose not fully determined",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN",
+        "context of treatment session not explicitly stated"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual asset evaluation",
+      "evidence": [
+        "scene-level result marked SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked clinician in purple scrubs wearing gloves attends to a patient lying down with white eye patches covering both eyes in a clinical treatment room. A medical device with dials and a screen, along with a stool, mirror, and folded towels, are visible in the background of the setting.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "4c324fc1-c037-41e1-8354-3ee25cba2185",
+  "image_count": 1
+}

@@ -1,0 +1,178 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3576.MP4",
+      "evidence": [
+        "filename IMG_3576.MP4, asset_id 8bacd21f-e17a-4f19-a931-2e84433bba61, MP4/h264 video, 20.37s duration"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical-setting video clip with two keyframes",
+      "evidence": [
+        "single scene spanning 0.0-20.367s",
+        "2 keyframes supplied showing a person operating a handheld device near another person's scalp in a room with medical equipment"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, ~20 seconds",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 20.367"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One gloved masked individual and one seated individual",
+      "evidence": [
+        "first keyframe shows a person in pink scrubs, glasses, and a face mask wearing gloves, working near a seated person's head",
+        "second keyframe shows a gloved hand near the same seated person's hair from behind"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Pink scrubs, glasses, mask, gloves; seated person with long dark hair",
+      "evidence": [
+        "curly-haired individual wearing pink/mauve scrub top, dark-framed glasses, black face mask, white gloves",
+        "seated individual has long dark hair, wrapped in white and blue draping with a floral-patterned cushion visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp and hair region visible",
+      "evidence": [
+        "gloved hand and device tip positioned at the crown/scalp area of the seated person's head in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "no readable_text_detected or spoken_content naming any procedure",
+        "gloves, a handheld device, and scalp contact alone do not establish a named clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld device applied to scalp/hair",
+      "evidence": [
+        "gloved hand holds a corded handheld device with a rounded metallic tip against the seated person's head in both frames"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider-attendant working directly on seated individual",
+      "evidence": [
+        "close physical proximity and direct hand-to-head contact between the standing gloved person and the seated person in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, mask, and medical-style equipment present",
+      "evidence": [
+        "white disposable gloves on both hands of the standing individual",
+        "black face mask worn",
+        "two blue-and-white machines with tubing/hoses in background"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "plain white walls, tiled floor, medical equipment with tubing, a cart with a tote bag, and a reclined treatment chair visible in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld vertical video, close-range framing",
+      "evidence": [
+        "vertical 720x1280 aspect ratio typical of handheld phone recording",
+        "close-up framing on the head and hands in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject off-center with equipment cable crossing frame",
+      "evidence": [
+        "a thick black hose/cable curves prominently across the lower frame in both keyframes",
+        "seated person's head positioned right-of-center with standing figure at left"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text visible on background equipment",
+      "evidence": [
+        "a label reading 'SMP MACHINE...' is partially visible on equipment in the first keyframe background",
+        "readable_text_detected list is empty, so text is only visually noted, not confirmed transcribed"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended use not determinable",
+      "evidence": [
+        "no captions, branding overlays, or usage context supplied beyond the raw video file"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp treatment session in a clinical setting",
+      "evidence": [
+        "gloved individual applying handheld device to seated person's scalp amid visible medical equipment, consistent with an in-progress clinical appointment"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually derivable attribute",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person in pink scrubs, glasses, mask, and gloves holds a corded handheld device with a rounded tip against the scalp of a seated individual with long dark hair, who is wrapped in a blue and floral-patterned covering. A smartphone displaying a photo is held near the scene, and two blue medical devices with tubing sit in the background of a plain white-walled room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "8bacd21f-e17a-4f19-a931-2e84433bba61",
+  "image_count": 2
+}

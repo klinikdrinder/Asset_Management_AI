@@ -1,0 +1,92 @@
+{
+  "processor_version": "kdi_ocr_intelligence_v1",
+  "configuration_version": "kdi_ocr_intelligence_config_v1",
+  "configuration_fingerprint": "3749888c499007c0d77a4530ffa069549ba3ad216f3333247fc02c74318fd280",
+  "semantic_spec_version": "semantic_index_v1",
+  "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+  "pilot_manifest_version": "kdi_semantic_pilot_v1",
+  "analysis_run_id": "ec10fcde-91f4-55af-8b70-41e4ff34855e",
+  "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+  "filename": "DSC03753.JPG",
+  "media_type": "image",
+  "source_fingerprint": "fc7f573ef3d971acc9233bd5dee5aff8282a34f7cb06ff99aa8010a8e3c2463b",
+  "generated_at": "2026-08-24T05:27:24.108731+00:00",
+  "status": "COMPLETED",
+  "authorization": {
+    "external_ai_eligible": true,
+    "provider_used": "LOCAL_EASYOCR",
+    "media_transmitted_externally": false,
+    "reason": "Local OCR selected; live authorization controls rechecked independently.",
+    "separate_controls": {
+      "external_ai_status": "ALLOWED",
+      "review_status": "REVIEWED",
+      "classification_status": "UNCLASSIFIED",
+      "is_clinical": null,
+      "sensitivity_level": "GENERAL",
+      "consent_status": "UNKNOWN",
+      "marketing_usage_status": "UNKNOWN",
+      "requires_clinical_permission": null
+    }
+  },
+  "scan_coverage": {
+    "full_image_scanned": true,
+    "frames_in_timeline": 1,
+    "frames_text_scanned": 1,
+    "coverage_percent": 100.0,
+    "scan_complete": true,
+    "candidate_text_frames": true,
+    "candidate_text_regions": 3,
+    "phase3_keyframes_prioritized": 0
+  },
+  "text_tracks": [],
+  "ocr_observations": [],
+  "layer_15": {
+    "applicability": "APPLICABLE",
+    "visible_text_state": "FALSE",
+    "semantic_state": "FALSE",
+    "processing_status": "COMPLETED_PHASE_7",
+    "evidence": "Complete local text-presence scan plus representative OCR",
+    "searchable_ocr": "NO",
+    "human_review": "UNVERIFIED"
+  },
+  "legacy_image_ocr_reconciliation": {
+    "previous_claim": "NO_VISIBLE_TEXT / legacy OCR COMPLETE with evidence_count=0",
+    "actual_phase7_state": "FALSE",
+    "decision": "NO_TEXT_SUPPORTED",
+    "production_modified": false
+  },
+  "reconciliation": [],
+  "embedding": {
+    "status": "DEFERRED",
+    "reason": "Configured local Ollama text embedding service remains unreachable and OpenAI quota remains unavailable.",
+    "searchable_texts": 0,
+    "embeddings_generated": 0,
+    "text_fingerprints_present": true
+  },
+  "performance": {
+    "frames_scanned": 1,
+    "ocr_frames": 1,
+    "ocr_regions": 0,
+    "text_detection_seconds": 0.04,
+    "ocr_seconds": 11.099,
+    "total_seconds": 12.774,
+    "provider_calls": 0,
+    "retries": 0,
+    "cost": "LOCAL_NO_API_COST",
+    "temporary_storage_bytes": 0
+  },
+  "debug_artifacts": [
+    "reports/semantic-search/phase7/debug/37838d30-a0ce-4f90-8cc3-c986db0aaa65/full_image_ocr_overlay.jpg"
+  ],
+  "prohibitions": {
+    "production_writes": false,
+    "search_documents_rebuilt": false,
+    "production_embeddings_written": false,
+    "phase5_modified": false,
+    "phase6_modified": false
+  },
+  "idempotency": {
+    "verified": true,
+    "functional_fingerprint": "fb3e83576f92acaa7f967736a7ec4bbef4d278f962f349044dba0d6cb3eb5101"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_2339.MP4",
+      "evidence": [
+        "filename IMG_2339.MP4",
+        "asset_id 96d0c36b-694a-433c-b374-0febbacaf5df",
+        "single scene, duration 10.267s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical facial treatment clip",
+      "evidence": [
+        "vertical 1280x720 video showing a close-up of a face with a handheld device and gloved hands"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two similar keyframes",
+      "evidence": [
+        "scene_index 0 spans 0.0-10.267s with 2 keyframes supplied showing near-identical framing"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One reclining patient, one gloved practitioner",
+      "evidence": [
+        "a person lies with head tilted back wearing eye protection",
+        "gloved hands hold a device and touch the patient's cheek, indicating a practitioner"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark-haired patient with black eye shields",
+      "evidence": [
+        "dark hair visible around the head/neck",
+        "black cup-shaped eye protection covering the eyes",
+        "clear skin visible on cheek, nose, and neck"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face and neck region: eyes, nose, cheek, lips, neck",
+      "evidence": [
+        "visible eye area covered by shields, nose, philtrum, lips, cheek, and neck in both frames"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure using handheld device",
+      "evidence": [
+        "no procedure name present in supplied text (readable_text_detected and spoken_content are both empty)",
+        "only gloves, a metallic handheld device, and physical contact are visible, which per rules cannot establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held near nose/under-eye while cheek is stabilized",
+      "evidence": [
+        "silver device tip positioned close to the nose and under-eye area in both keyframes",
+        "gloved fingers pressed against the cheek to stabilize the face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner-patient physical interaction",
+      "evidence": [
+        "gloved hand contacting patient's cheek while another gloved hand operates the device near the face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Skin appears smooth with no visible lesions or bleeding",
+      "evidence": [
+        "visible cheek, nose, and neck skin shows no redness, swelling, or wounds in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room with blue drape",
+      "evidence": [
+        "blue surgical-style drape beneath the patient",
+        "red vertical object and light-colored wall visible in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static close-up, vertical framing",
+      "evidence": [
+        "both keyframes show a tight close-up crop of the face filling the vertical 1280x720 frame with minimal camera movement between them"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face centered with device as focal point",
+      "evidence": [
+        "the face occupies most of the frame with the silver device positioned centrally near the nose/eyes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech content detected",
+      "evidence": [
+        "spoken_content array is empty despite audio_stream being present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected array is empty",
+        "no visible text, labels, or watermarks in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing or branding elements present",
+      "evidence": [
+        "no logos, watermarks, captions, or promotional text visible in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical facial treatment moment",
+      "evidence": [
+        "framing centers on a device applied near the face of a reclining, eye-protected patient with a practitioner's gloved hands present"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": [
+        "this layer represents an indexing artifact rather than content visible in the keyframes"
+      ]
+    }
+  ],
+  "narrative": "The two keyframes show a close-up of a person lying supine wearing black protective eye shields while a gloved hand holds a silver handheld device near the nose and under-eye area; a second gloved hand stabilizes the cheek. The setting is a clinical treatment room with blue drape material and a red vertical object visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "96d0c36b-694a-433c-b374-0febbacaf5df",
+  "image_count": 2
+}

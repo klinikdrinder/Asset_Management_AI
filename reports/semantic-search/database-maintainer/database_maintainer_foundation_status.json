@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "implementation_version": "kdi_semantic_database_maintainer_v1",
+  "instruction_contract": "kdi_semantic_database_maintainer_v1",
+  "mode": "READ_ONLY",
+  "architecture": {
+    "database": "PostgreSQL",
+    "vector_search": "pgvector",
+    "openai_role": "DATABASE_MAINTENANCE_AGENT",
+    "raw_media_indexing_role": "NOT_PART_OF_MAINTAINER"
+  },
+  "current_database": {
+    "canonical_assets": 881,
+    "current_v1_complete": 10,
+    "pending_analysis": 870,
+    "unsupported": 1,
+    "pending_with_visual_embeddings": 865,
+    "pending_without_visual_embeddings": 5
+  },
+  "health": {
+    "totalAssets": 881,
+    "completeV1": 10,
+    "pendingAnalysis": 870,
+    "unsupported": 1,
+    "searchReady": 0,
+    "falseSearchReady": 0,
+    "falseComplete": 0,
+    "missingHash": 0,
+    "missingProvenance": 0,
+    "orphanRecords": 0,
+    "staleSearchDocuments": 0,
+    "staleEmbeddings": 0,
+    "failedJobs": 0,
+    "stuckJobs": 0,
+    "duplicateActiveVersions": 0,
+    "backlogCount": 870,
+    "backlogDuplicates": 0,
+    "aclAnomalies": 0,
+    "consentAnomalies": 0,
+    "pendingIsHealthy": true,
+    "findings": []
+  },
+  "findings": [],
+  "tool_definitions": [
+    {
+      "name": "get_database_health",
+      "description": "Controlled KDI get database health tool; no arbitrary SQL."
+    },
+    {
+      "name": "get_asset_semantic_health",
+      "description": "Controlled KDI get asset semantic health tool; no arbitrary SQL."
+    },
+    {
+      "name": "list_maintenance_findings",
+      "description": "Controlled KDI list maintenance findings tool; no arbitrary SQL."
+    },
+    {
+      "name": "find_stale_search_documents",
+      "description": "Controlled KDI find stale search documents tool; no arbitrary SQL."
+    },
+    {
+      "name": "find_stale_embeddings",
+      "description": "Controlled KDI find stale embeddings tool; no arbitrary SQL."
+    },
+    {
+      "name": "find_invalid_lineage",
+      "description": "Controlled KDI find invalid lineage tool; no arbitrary SQL."
+    },
+    {
+      "name": "find_failed_jobs",
+      "description": "Controlled KDI find failed jobs tool; no arbitrary SQL."
+    },
+    {
+      "name": "find_false_search_ready",
+      "description": "Controlled KDI find false search ready tool; no arbitrary SQL."
+    },
+    {
+      "name": "create_maintenance_finding",
+      "description": "Controlled KDI create maintenance finding tool; no arbitrary SQL."
+    },
+    {
+      "name": "queue_asset_for_reindex",
+      "description": "Controlled KDI queue asset for reindex tool; no arbitrary SQL."
+    },
+    {
+      "name": "queue_search_document_rebuild",
+      "description": "Controlled KDI queue search document rebuild tool; no arbitrary SQL."
+    },
+    {
+      "name": "queue_embedding_rebuild",
+      "description": "Controlled KDI queue embedding rebuild tool; no arbitrary SQL."
+    }
+  ],
+  "generic_sql_tool": false,
+  "semantic_truth_direct_write": false,
+  "acl_weakening": false,
+  "consent_auto_approval": false,
+  "protection": {
+    "original_10_modified": false,
+    "gold_modified": false,
+    "benchmark_modified": false,
+    "spec_modified": false,
+    "acl_modified": false,
+    "phase2": "BLOCKED_OPENAI_QUOTA",
+    "phase3": "NOT_STARTED"
+  },
+  "activity": {
+    "openai_api_calls": 0,
+    "media_analysis": 0,
+    "semantic_writes": 0
+  }
+}

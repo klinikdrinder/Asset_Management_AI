@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3386.MP4",
+      "evidence": [
+        "filename IMG_3386.MP4, asset_id e87426e2-fbe0-40e6-817d-c0cfbd456e24, duration 10.1s, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinic selfie-style video clip",
+      "evidence": [
+        "Single scene, 10.1 seconds, two keyframes showing a woman in a treatment setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene spanning 0.0\u201310.1 seconds",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 10.1"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman in foreground, masked man in background",
+      "evidence": [
+        "Woman with headband and plastic cape fills foreground in both keyframes",
+        "Man wearing glasses, black mask, black shirt with watch, positioned behind her in both frames"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Headband, bare shoulders, plastic drape",
+      "evidence": [
+        "Woman has dark hair tied up under a dark green headband, bare shoulders, pink garment visible at bottom, plastic cape around neck/shoulders",
+        "Background man has short dark curly hair, glasses, black surgical-style mask, black shirt, wristwatch"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, neck, and shoulders visible",
+      "evidence": [
+        "Woman's face, neck, and bare shoulders/upper chest are visible in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied evidence",
+      "evidence": [
+        "No readable_text_detected or spoken_content naming any procedure",
+        "Setting suggests a clinic/spa but no specific treatment is identified in the text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Expression change and thumbs-up gesture",
+      "evidence": [
+        "First keyframe shows neutral/closed-eye expression; second keyframe shows the woman smiling and the man giving a thumbs-up gesture"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff-like figure positioned behind the woman",
+      "evidence": [
+        "Man in dark uniform-style shirt stands/sits behind the woman, appearing to interact with her via a thumbs-up gesture"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clean skin, no visible marks or bandaging",
+      "evidence": [
+        "Facial skin appears smooth and unbandaged in both keyframes",
+        "A small dark mole/spot is visible on the forehead in both images"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinic or spa treatment room",
+      "evidence": [
+        "White walls with a vertical red accent stripe, mirrored cabinet doors, medical-style equipment on a stand, blue draped chair, plastic sheeting visible in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up selfie-style front-facing shot",
+      "evidence": [
+        "Both keyframes are tight vertical close-ups framed as a selfie/POV shot at face level"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical framing centered on subject's face",
+      "evidence": [
+        "Vertical 1280x720-derived portrait-style keyframes with the woman centered and the man positioned upper right background"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content captured",
+      "evidence": [
+        "spoken_content field is an empty array despite audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators supplied",
+      "evidence": [
+        "No text, captions, or branding elements present in the supplied evidence to indicate marketing intent"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Before/after-style mood shift in a clinical setting",
+      "evidence": [
+        "First frame shows a neutral/tired expression, second frame shows a smile and thumbs-up, suggesting a positive shift within the same scene"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A woman with her hair wrapped in a headband and shoulders draped in plastic sits in a clinic-like room, first with a neutral expression and then smiling toward the camera with a masked man behind her giving a thumbs-up. The setting includes medical-looking equipment, a blue draped chair, and a mirrored wall with a red accent stripe.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "e87426e2-fbe0-40e6-817d-c0cfbd456e24",
+  "image_count": 2
+}

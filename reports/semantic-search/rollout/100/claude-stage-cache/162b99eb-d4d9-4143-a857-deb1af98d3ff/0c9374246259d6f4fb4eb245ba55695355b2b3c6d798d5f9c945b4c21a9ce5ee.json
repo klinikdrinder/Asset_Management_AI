@@ -1,0 +1,179 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1383.MP4, scene 14",
+      "evidence": [
+        "filename IMG_1383.MP4",
+        "asset_id 162b99eb-d4d9-4143-a857-deb1af98d3ff",
+        "scene_index 14"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical scene with laser device on face",
+      "evidence": [
+        "Single keyframe shows a close-up of a face with a handheld light-emitting device near the cheek"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short scene segment, ~0.37 seconds within a 23s video",
+      "evidence": [
+        "start_seconds 10.867, end_seconds 11.233",
+        "duration_seconds 23.09 for full asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined patient and gloved practitioner hand",
+      "evidence": [
+        "A face with closed eyes reclined in frame",
+        "A gloved hand holding a device is visible entering from the right side"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Light-skinned individual, eyebrows visible, eye covered by metal shield",
+      "evidence": [
+        "Visible nose, lips, eyebrow, and jaw of a person",
+        "Metal oval shield covering the eye area"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Lower face: nose, cheek, jaw, lips visible",
+      "evidence": [
+        "Nose, lips, cheek, and jaw region are visible in the keyframe"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure using light-emitting device",
+      "evidence": [
+        "No procedure name appears in readable_text_detected or spoken_content",
+        "Only a device emitting yellow-green light and a gloved hand are visible, which alone cannot establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device applied to cheek/jaw area",
+      "evidence": [
+        "The tip of the handheld device is pressed against the skin of the cheek, emitting light with a grid pattern visible on the skin"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner hand applying device to patient's face",
+      "evidence": [
+        "Gloved hand holds the device directly against the reclined person's cheek"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Grid-pattern light projection and bright spot on skin",
+      "evidence": [
+        "A dotted grid pattern of light is visible across the cheek",
+        "A bright white-yellow glowing point where the device tip contacts the skin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting with drape and equipment in background",
+      "evidence": [
+        "Blue surgical drape visible in upper background",
+        "Blurred round white/green object (possibly a bowl or light) in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme close-up, shallow depth of field",
+      "evidence": [
+        "Tight framing on face and device with background blurred",
+        "Foreground in sharp focus, background blurred"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face fills frame diagonally, device enters from right",
+      "evidence": [
+        "Face occupies left and center of frame",
+        "Gloved hand and device occupy right portion of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators present",
+      "evidence": [
+        "No text, logos, or captions are present in the keyframe or supplied metadata to indicate marketing use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up of light-based device applied to facial skin",
+      "evidence": [
+        "Consistent visual theme of a device emitting patterned light onto a reclined person's face"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person lies reclined with eyes closed while a gloved hand directs a green/yellow laser device with a fiber-optic tip onto their lower cheek and jaw area, producing a visible grid-pattern light projection on the skin. A metal eye shield covers the eye area and a blue surgical drape is visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "162b99eb-d4d9-4143-a857-deb1af98d3ff",
+  "image_count": 1
+}

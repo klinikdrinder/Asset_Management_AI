@@ -1,0 +1,2582 @@
+{
+  "implementation_version": "kdi_accuracy_measurement_v1",
+  "evaluation_contract": "kdi_semantic_accuracy_v1",
+  "benchmark_version": "kdi_semantic_benchmark_v1",
+  "benchmark_run_id": "b26708f3-ea82-4b10-932c-acb804872c7c",
+  "gold_version": "kdi_gold_answers_v1",
+  "gold_fingerprint": "979389e6b045a4913f9e82b96687e46a65e789753e2598be601cb3a6d5663763",
+  "spec_version": "kdi_semantic_18_layer_v1",
+  "spec_fingerprint": "6da50e2153f6fcb6c9ef27c308ad44d0d2024e702e3faad47586b0068ba64fd7",
+  "evaluated_at": "2026-08-31T17:19:45.595Z",
+  "gain_mapping": {
+    "EXACT_RELEVANT": 3,
+    "RELEVANT": 2,
+    "PARTIAL_RELEVANT": 1,
+    "NOT_RELEVANT": 0,
+    "EXCLUDED": 0
+  },
+  "unresolved_policy": "UNJUDGED_NOT_NEGATIVE",
+  "case_pass_policy": "Retrieval: at least one strict relevant result (lenient when no strict gold), or empty output for zero-result gold; no EXCLUDED exposure. Control: every certified behavioral expectation observable in the run artifact must match.",
+  "counts": {
+    "total": 40,
+    "retrieval": 27,
+    "control_only": 13
+  },
+  "cases": [
+    {
+      "case_id": "C01",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "babae120-9372-42ad-b535-02a3276ea2be",
+          "bfae6c51-5d71-47ae-a3e1-6d07092b8896"
+        ],
+        "labels": [
+          "EXACT_RELEVANT",
+          "PARTIAL_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 0.5,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 0.5,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.6666666666666666,
+            "unjudged_rate": 0.3333333333333333,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 0.5,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.4,
+            "unjudged_rate": 0.6,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C02",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "babae120-9372-42ad-b535-02a3276ea2be",
+          "bfae6c51-5d71-47ae-a3e1-6d07092b8896"
+        ],
+        "labels": [
+          "EXACT_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.3333333333333333,
+            "unjudged_rate": 0.6666666666666666,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.2,
+            "unjudged_rate": 0.8,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C03",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "64712c6a-c02c-46e9-9f73-16786109468b",
+          "6215ad8b-12be-4a8e-bc49-f6b3dcf55c21"
+        ],
+        "labels": [
+          "UNRESOLVED",
+          "EXACT_RELEVANT",
+          "PARTIAL_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 0,
+            "unjudged_rate": 1,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 0.5,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.6666666666666666,
+            "unjudged_rate": 0.3333333333333333,
+            "ndcg": 0.6442869262030828
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 0.5,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.4,
+            "unjudged_rate": 0.6,
+            "ndcg": 0.6442869262030828
+          }
+        },
+        "mrr": 0.5,
+        "ndcg3": 0.6442869262030828,
+        "ndcg5": 0.6442869262030828,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "WRONG_TOP1",
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "WRONG_TOP1",
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C04",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "64712c6a-c02c-46e9-9f73-16786109468b",
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "bfae6c51-5d71-47ae-a3e1-6d07092b8896"
+        ],
+        "labels": [
+          "EXACT_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.3333333333333333,
+            "unjudged_rate": 0.6666666666666666,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.2,
+            "unjudged_rate": 0.8,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C05",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+          "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "6215ad8b-12be-4a8e-bc49-f6b3dcf55c21",
+          "babae120-9372-42ad-b535-02a3276ea2be",
+          "47611c6d-7923-42a4-87b6-c2a416a90f5c"
+        ],
+        "labels": [
+          "EXACT_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.3333333333333333,
+            "unjudged_rate": 0.6666666666666666,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.2,
+            "unjudged_rate": 0.8,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C06",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "babae120-9372-42ad-b535-02a3276ea2be",
+          "c86344e9-5b32-4d86-9205-67952d508651"
+        ],
+        "labels": [
+          "EXACT_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.3333333333333333,
+            "unjudged_rate": 0.6666666666666666,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.2,
+            "unjudged_rate": 0.8,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C07",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+          "babae120-9372-42ad-b535-02a3276ea2be",
+          "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619"
+        ],
+        "labels": [
+          "EXACT_RELEVANT",
+          "RELEVANT",
+          "RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.3333333333333333,
+            "lenient_recall": 0.3333333333333333,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.6,
+            "unjudged_rate": 0.4,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C08",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "47611c6d-7923-42a4-87b6-c2a416a90f5c"
+        ],
+        "labels": [
+          "RELEVANT",
+          "RELEVANT",
+          "RELEVANT",
+          "RELEVANT",
+          "RELEVANT"
+        ],
+        "top1_exact": 0,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.14285714285714285,
+            "lenient_recall": 0.14285714285714285,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.42857142857142855,
+            "lenient_recall": 0.42857142857142855,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.7142857142857143,
+            "lenient_recall": 0.7142857142857143,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": []
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C09",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+          "babae120-9372-42ad-b535-02a3276ea2be"
+        ],
+        "labels": [
+          "RELEVANT",
+          "RELEVANT",
+          "RELEVANT",
+          "RELEVANT",
+          "RELEVANT"
+        ],
+        "top1_exact": 0,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.16666666666666666,
+            "lenient_recall": 0.16666666666666666,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.5,
+            "lenient_recall": 0.5,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.8333333333333334,
+            "lenient_recall": 0.8333333333333334,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": []
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C10",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "babae120-9372-42ad-b535-02a3276ea2be",
+          "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95"
+        ],
+        "labels": [
+          "RELEVANT",
+          "EXACT_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "RELEVANT"
+        ],
+        "top1_exact": 0,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.3333333333333333,
+            "lenient_recall": 0.3333333333333333,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0.42857142857142855
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.6666666666666666,
+            "lenient_recall": 0.6666666666666666,
+            "judgment_coverage": 0.6666666666666666,
+            "unjudged_rate": 0.3333333333333333,
+            "ndcg": 0.7136205775898136
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.6,
+            "unjudged_rate": 0.4,
+            "ndcg": 0.8252901585453934
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 0.7136205775898136,
+        "ndcg5": 0.8252901585453934,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C11",
+      "evaluation_modes": [
+        "RESULT_COUNT_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESULT_COUNT_CONTROL",
+          "pass": true,
+          "expected": {
+            "requested": 3,
+            "effective": 3
+          },
+          "actual": {
+            "requested": 3,
+            "effective": 3
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C12",
+      "evaluation_modes": [
+        "RESULT_COUNT_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESULT_COUNT_CONTROL",
+          "pass": true,
+          "expected": {
+            "requested": 1,
+            "effective": 1
+          },
+          "actual": {
+            "requested": 1,
+            "effective": 1
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C13",
+      "evaluation_modes": [
+        "RESULT_COUNT_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESULT_COUNT_CONTROL",
+          "pass": true,
+          "expected": {
+            "requested": 7,
+            "effective": 7
+          },
+          "actual": {
+            "requested": 7,
+            "effective": 7
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C14",
+      "evaluation_modes": [
+        "PARSER_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "PARSER_CONTROL",
+          "pass": true,
+          "expected": {
+            "age": 30,
+            "age_role": "SEMANTIC_REQUIREMENT",
+            "requested_count": null,
+            "exact_age_supported_assets": [],
+            "unknown_age_not_false": true
+          },
+          "actual": {
+            "requested_count": null,
+            "age": 30,
+            "graft_quantity": null,
+            "media_type": "ANY"
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C15",
+      "evaluation_modes": [
+        "PARSER_CONTROL",
+        "RESULT_COUNT_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "PARSER_CONTROL",
+          "pass": true,
+          "expected": {
+            "age": 30,
+            "age_role": "SEMANTIC_REQUIREMENT",
+            "requested_count": 3,
+            "media_type": "VIDEO",
+            "exact_age_supported_assets": [],
+            "unknown_age_not_false": true
+          },
+          "actual": {
+            "requested_count": 3,
+            "age": 30,
+            "graft_quantity": null,
+            "media_type": "VIDEO"
+          }
+        },
+        {
+          "mode": "RESULT_COUNT_CONTROL",
+          "pass": true,
+          "expected": {
+            "requested": 3,
+            "effective": 3
+          },
+          "actual": {
+            "requested": 3,
+            "effective": 3
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C16",
+      "evaluation_modes": [
+        "PARSER_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "PARSER_CONTROL",
+          "pass": true,
+          "expected": {
+            "graft_quantity": 3000,
+            "quantity_role": "PROCEDURE_QUANTITY",
+            "requested_count": null,
+            "exact_quantity_supported_assets": [],
+            "unknown_quantity_not_false": true
+          },
+          "actual": {
+            "requested_count": null,
+            "age": null,
+            "graft_quantity": 3000,
+            "media_type": "ANY"
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C17",
+      "evaluation_modes": [
+        "PARSER_CONTROL",
+        "RESULT_COUNT_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "PARSER_CONTROL",
+          "pass": true,
+          "expected": {
+            "graft_quantity": 3000,
+            "quantity_role": "PROCEDURE_QUANTITY",
+            "requested_count": 3,
+            "media_type": "VIDEO",
+            "exact_quantity_supported_assets": [],
+            "unknown_quantity_not_false": true
+          },
+          "actual": {
+            "requested_count": 3,
+            "age": null,
+            "graft_quantity": 3000,
+            "media_type": "VIDEO"
+          }
+        },
+        {
+          "mode": "RESULT_COUNT_CONTROL",
+          "pass": true,
+          "expected": {
+            "requested": 3,
+            "effective": 3
+          },
+          "actual": {
+            "requested": 3,
+            "effective": 3
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C18",
+      "evaluation_modes": [
+        "FILTER_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "FILTER_CONTROL",
+          "pass": true,
+          "expected": {
+            "excluded_concept": "NECK",
+            "filter_strength": "HARD_EXCLUSION",
+            "positive_subject": null,
+            "neck_must_not_be_positive": true
+          },
+          "actual": {
+            "fingerprint": "8e7edea3ceb1eb003a9d3aca14a002d7536b2448bbf53256a4ca07f749d77797",
+            "positive": [],
+            "negative": [
+              "NECK"
+            ],
+            "numeric": {
+              "occurrences": [],
+              "age_exact": null,
+              "age_min": null,
+              "age_max": null,
+              "age_decade": null,
+              "graft_count_exact": null,
+              "graft_count_min": null,
+              "graft_count_max": null,
+              "graft_count_inclusive_min": null,
+              "graft_count_inclusive_max": null,
+              "age_inclusive_min": null,
+              "age_inclusive_max": null,
+              "treatment_session_count": null,
+              "session_ordinal": null,
+              "currency_amount": null
+            },
+            "media_type": "ANY"
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C19",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+          "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "babae120-9372-42ad-b535-02a3276ea2be"
+        ],
+        "labels": [
+          "EXACT_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 0.5,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 0.5,
+            "judgment_coverage": 0.3333333333333333,
+            "unjudged_rate": 0.6666666666666666,
+            "ndcg": 0.9173194127129571
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 0.5,
+            "judgment_coverage": 0.2,
+            "unjudged_rate": 0.8,
+            "ndcg": 0.9173194127129571
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 0.9173194127129571,
+        "ndcg5": 0.9173194127129571,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C20",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "babae120-9372-42ad-b535-02a3276ea2be",
+          "47611c6d-7923-42a4-87b6-c2a416a90f5c"
+        ],
+        "labels": [
+          "EXACT_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.3333333333333333,
+            "unjudged_rate": 0.6666666666666666,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.2,
+            "unjudged_rate": 0.8,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C21",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "64712c6a-c02c-46e9-9f73-16786109468b",
+          "babae120-9372-42ad-b535-02a3276ea2be",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "c86344e9-5b32-4d86-9205-67952d508651"
+        ],
+        "labels": [
+          "EXACT_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.3333333333333333,
+            "unjudged_rate": 0.6666666666666666,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.2,
+            "unjudged_rate": 0.8,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C22",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "babae120-9372-42ad-b535-02a3276ea2be",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619"
+        ],
+        "labels": [
+          "EXACT_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.3333333333333333,
+            "unjudged_rate": 0.6666666666666666,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.2,
+            "unjudged_rate": 0.8,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C23",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "47611c6d-7923-42a4-87b6-c2a416a90f5c"
+        ],
+        "labels": [
+          "EXACT_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.3333333333333333,
+            "unjudged_rate": 0.6666666666666666,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.2,
+            "unjudged_rate": 0.8,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C24",
+      "evaluation_modes": [
+        "RESPONSE_STATE"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESPONSE_STATE",
+          "pass": false,
+          "failure": "STATE_MISMATCH",
+          "expected": {
+            "field": "SPECIFIC_INJECTABLE_TREATMENT",
+            "semantic_state": "UNKNOWN",
+            "canonical_response_state": "CANNOT_RELIABLY_DETERMINE",
+            "evidence": [
+              {
+                "filename": "IMG_0531.MP4",
+                "source_type": "NARRATIVE",
+                "source_id": "e005faae-b5f7-59e2-926c-794c5b56c616"
+              },
+              {
+                "filename": "IMG_3429.MP4",
+                "source_type": "NARRATIVE",
+                "source_id": "8498f993-0213-5ebe-ac2e-ce04c3145ff3"
+              }
+            ],
+            "prohibited_inferences": [
+              "BOTOX",
+              "FILLER",
+              "PRP"
+            ]
+          },
+          "actual": "GROUNDED"
+        }
+      ],
+      "pass": false,
+      "failure_signals": [
+        "STATE_MISMATCH"
+      ]
+    },
+    {
+      "case_id": "C25",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "64712c6a-c02c-46e9-9f73-16786109468b",
+          "6215ad8b-12be-4a8e-bc49-f6b3dcf55c21",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619"
+        ],
+        "labels": [
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 0,
+            "unjudged_rate": 1,
+            "ndcg": null
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 0,
+            "unjudged_rate": 1,
+            "ndcg": null
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 0,
+            "unjudged_rate": 1,
+            "ndcg": null
+          }
+        },
+        "mrr": 0,
+        "ndcg3": null,
+        "ndcg5": null,
+        "zero_result_expected": true,
+        "zero_result_correct": false,
+        "false_positive_count": 3,
+        "excluded_exposures": [],
+        "pass": false,
+        "failures": [
+          "ZERO_RESULT_FALSE_POSITIVE",
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": false,
+      "failure_signals": [
+        "ZERO_RESULT_FALSE_POSITIVE",
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C26",
+      "evaluation_modes": [
+        "RESPONSE_STATE"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESPONSE_STATE",
+          "pass": false,
+          "failure": "STATE_MISMATCH",
+          "expected": {
+            "field": "SPEECH_TRANSCRIPT_AUDIO",
+            "semantic_state": "NOT_APPLICABLE",
+            "evidence": [
+              {
+                "filename": "DSC03753.JPG",
+                "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+                "source_type": "ASSET_SEMANTIC_LAYER",
+                "source_id": "ff183915-383e-4a06-8cff-e65447e790d3",
+                "semantic_state": "NOT_APPLICABLE",
+                "applicability": "NOT_APPLICABLE"
+              },
+              {
+                "filename": "DSC08097.JPG",
+                "asset_id": "6215ad8b-12be-4a8e-bc49-f6b3dcf55c21",
+                "source_type": "ASSET_SEMANTIC_LAYER",
+                "source_id": "9a7f0cd1-370c-4b38-bbd7-69fe02cf2524",
+                "semantic_state": "NOT_APPLICABLE",
+                "applicability": "NOT_APPLICABLE"
+              }
+            ]
+          },
+          "actual": "GROUNDED"
+        }
+      ],
+      "pass": false,
+      "failure_signals": [
+        "STATE_MISMATCH"
+      ]
+    },
+    {
+      "case_id": "C27",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "64712c6a-c02c-46e9-9f73-16786109468b",
+          "47611c6d-7923-42a4-87b6-c2a416a90f5c"
+        ],
+        "labels": [
+          "EXACT_RELEVANT",
+          "EXACT_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.5,
+            "lenient_recall": 0.5,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.6666666666666666,
+            "unjudged_rate": 0.3333333333333333,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.4,
+            "unjudged_rate": 0.6,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C28",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "64712c6a-c02c-46e9-9f73-16786109468b",
+          "babae120-9372-42ad-b535-02a3276ea2be",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "47611c6d-7923-42a4-87b6-c2a416a90f5c"
+        ],
+        "labels": [
+          "RELEVANT",
+          "UNRESOLVED",
+          "RELEVANT",
+          "RELEVANT",
+          "RELEVANT"
+        ],
+        "top1_exact": 0,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.2,
+            "lenient_recall": 0.2,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.4,
+            "lenient_recall": 0.4,
+            "judgment_coverage": 0.6666666666666666,
+            "unjudged_rate": 0.3333333333333333,
+            "ndcg": 0.7039180890341348
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.8,
+            "lenient_recall": 0.8,
+            "judgment_coverage": 0.8,
+            "unjudged_rate": 0.2,
+            "ndcg": 0.7860137352654724
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 0.7039180890341348,
+        "ndcg5": 0.7860137352654724,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C29",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          }
+        },
+        "mrr": 0,
+        "ndcg3": null,
+        "ndcg5": null,
+        "zero_result_expected": true,
+        "zero_result_correct": true,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": []
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C30",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          }
+        },
+        "mrr": 0,
+        "ndcg3": null,
+        "ndcg5": null,
+        "zero_result_expected": true,
+        "zero_result_correct": true,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": []
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C31",
+      "evaluation_modes": [
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [],
+        "labels": [],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "3": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          },
+          "5": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": null,
+            "lenient_recall": null,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": null
+          }
+        },
+        "mrr": 0,
+        "ndcg3": null,
+        "ndcg5": null,
+        "zero_result_expected": true,
+        "zero_result_correct": true,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": []
+      },
+      "controls": [],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C32",
+      "evaluation_modes": [
+        "RESPONSE_STATE"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESPONSE_STATE",
+          "pass": true,
+          "expected": "GROUNDED",
+          "actual": "GROUNDED"
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C33",
+      "evaluation_modes": [
+        "RESPONSE_STATE"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "RESPONSE_STATE",
+          "pass": true,
+          "expected": "GROUNDED",
+          "actual": "GROUNDED"
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C34",
+      "evaluation_modes": [
+        "AUTHORIZATION_CONTROL"
+      ],
+      "scored_for_retrieval_metrics": false,
+      "retrieval": null,
+      "controls": [
+        {
+          "mode": "AUTHORIZATION_CONTROL",
+          "pass": true,
+          "expected": {
+            "benchmark_principal_id": "00000000-0000-4000-8000-000000000099",
+            "principal_kind": "ISOLATED_PHASE18_TEST_FIXTURE",
+            "production_principal": false,
+            "authorization_before_exposure": true,
+            "unknown_or_unauthorized_behavior": "FAIL_CLOSED",
+            "authorized_asset_ids": [],
+            "production_acl_modified": false
+          },
+          "actual": {
+            "returned_asset_ids": [],
+            "fail_closed": true
+          }
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C35",
+      "evaluation_modes": [
+        "FILTER_CONTROL",
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "6215ad8b-12be-4a8e-bc49-f6b3dcf55c21",
+          "37838d30-a0ce-4f90-8cc3-c986db0aaa65"
+        ],
+        "labels": [
+          "UNRESOLVED",
+          "EXACT_RELEVANT"
+        ],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 0,
+            "unjudged_rate": 1,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.5,
+            "unjudged_rate": 0.5,
+            "ndcg": 0.6309297535714575
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.5,
+            "unjudged_rate": 0.5,
+            "ndcg": 0.6309297535714575
+          }
+        },
+        "mrr": 0.5,
+        "ndcg3": 0.6309297535714575,
+        "ndcg5": 0.6309297535714575,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "WRONG_TOP1",
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [
+        {
+          "mode": "FILTER_CONTROL",
+          "pass": false,
+          "failure": "FILTER_MISMATCH",
+          "expected": {},
+          "actual": {
+            "filter_semantics": "NOT_CAPTURED"
+          }
+        }
+      ],
+      "pass": false,
+      "failure_signals": [
+        "WRONG_TOP1",
+        "UNJUDGED_RESULT_RETURNED",
+        "FILTER_MISMATCH"
+      ]
+    },
+    {
+      "case_id": "C36",
+      "evaluation_modes": [
+        "CONVERSATION_CONTROL",
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "c86344e9-5b32-4d86-9205-67952d508651"
+        ],
+        "labels": [
+          "EXACT_RELEVANT"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": []
+      },
+      "controls": [
+        {
+          "mode": "CONVERSATION_CONTROL",
+          "pass": true,
+          "expected": [
+            {
+              "reference": null,
+              "target": "show me injection videos"
+            },
+            {
+              "reference": null,
+              "target": "injection at neck"
+            },
+            {
+              "reference": "c86344e9-5b32-4d86-9205-67952d508651",
+              "target": "detailed description of gold top result"
+            }
+          ],
+          "actual": [
+            {
+              "mode": "NEW_QUERY",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            },
+            {
+              "mode": "NARROW",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            },
+            {
+              "mode": "ASSET_REFERENCE",
+              "status": "RESOLVED",
+              "referenced_asset_id": "c86344e9-5b32-4d86-9205-67952d508651"
+            }
+          ]
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C37",
+      "evaluation_modes": [
+        "CONVERSATION_CONTROL",
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "babae120-9372-42ad-b535-02a3276ea2be",
+          "444da390-0117-4380-8c87-d7c32f2903ff"
+        ],
+        "labels": [
+          "RELEVANT",
+          "RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 0,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 0.5,
+            "lenient_recall": 0.5,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.6666666666666666,
+            "unjudged_rate": 0.3333333333333333,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.4,
+            "unjudged_rate": 0.6,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [
+        {
+          "mode": "CONVERSATION_CONTROL",
+          "pass": true,
+          "expected": [
+            {
+              "reference": null,
+              "target": "show me injection videos"
+            },
+            {
+              "reference": null,
+              "target": "injection videos count 2"
+            }
+          ],
+          "actual": [
+            {
+              "mode": "NEW_QUERY",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            },
+            {
+              "mode": "CONTINUE",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            }
+          ]
+        }
+      ],
+      "pass": true,
+      "failure_signals": [
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C38",
+      "evaluation_modes": [
+        "CONVERSATION_CONTROL",
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "64712c6a-c02c-46e9-9f73-16786109468b",
+          "444da390-0117-4380-8c87-d7c32f2903ff"
+        ],
+        "labels": [
+          "UNRESOLVED",
+          "EXACT_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 0,
+            "unjudged_rate": 1,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.3333333333333333,
+            "unjudged_rate": 0.6666666666666666,
+            "ndcg": 0.6309297535714575
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.2,
+            "unjudged_rate": 0.8,
+            "ndcg": 0.6309297535714575
+          }
+        },
+        "mrr": 0.5,
+        "ndcg3": 0.6309297535714575,
+        "ndcg5": 0.6309297535714575,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": [
+          "WRONG_TOP1",
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [
+        {
+          "mode": "CONVERSATION_CONTROL",
+          "pass": true,
+          "expected": [
+            {
+              "reference": null,
+              "target": "show me injection videos"
+            },
+            {
+              "reference": null,
+              "target": "lower-face injection"
+            }
+          ],
+          "actual": [
+            {
+              "mode": "NEW_QUERY",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            },
+            {
+              "mode": "MODIFY",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            }
+          ]
+        }
+      ],
+      "pass": true,
+      "failure_signals": [
+        "WRONG_TOP1",
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    },
+    {
+      "case_id": "C39",
+      "evaluation_modes": [
+        "CONVERSATION_CONTROL",
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "37838d30-a0ce-4f90-8cc3-c986db0aaa65"
+        ],
+        "labels": [
+          "EXACT_RELEVANT"
+        ],
+        "top1_exact": 1,
+        "top1_strict": 1,
+        "at": {
+          "1": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 1,
+            "lenient_precision": 1,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 1
+          }
+        },
+        "mrr": 1,
+        "ndcg3": 1,
+        "ndcg5": 1,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [],
+        "pass": true,
+        "failures": []
+      },
+      "controls": [
+        {
+          "mode": "CONVERSATION_CONTROL",
+          "pass": true,
+          "expected": [
+            {
+              "reference": null,
+              "target": "show me frontal hairline thinning"
+            },
+            {
+              "reference": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+              "target": "gold first frontal hairline thinning result"
+            }
+          ],
+          "actual": [
+            {
+              "mode": "NEW_QUERY",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            },
+            {
+              "mode": "ASSET_REFERENCE",
+              "status": "RESOLVED",
+              "referenced_asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65"
+            }
+          ]
+        }
+      ],
+      "pass": true,
+      "failure_signals": []
+    },
+    {
+      "case_id": "C40",
+      "evaluation_modes": [
+        "CONVERSATION_CONTROL",
+        "RETRIEVAL_RELEVANCE"
+      ],
+      "scored_for_retrieval_metrics": true,
+      "retrieval": {
+        "asset_ids": [
+          "c86344e9-5b32-4d86-9205-67952d508651",
+          "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "babae120-9372-42ad-b535-02a3276ea2be",
+          "444da390-0117-4380-8c87-d7c32f2903ff"
+        ],
+        "labels": [
+          "EXCLUDED",
+          "EXACT_RELEVANT",
+          "UNRESOLVED",
+          "UNRESOLVED",
+          "UNRESOLVED"
+        ],
+        "top1_exact": 0,
+        "top1_strict": 0,
+        "at": {
+          "1": {
+            "hit": 0,
+            "strict_precision": 0,
+            "lenient_precision": 0,
+            "strict_recall": 0,
+            "lenient_recall": 0,
+            "judgment_coverage": 1,
+            "unjudged_rate": 0,
+            "ndcg": 0
+          },
+          "3": {
+            "hit": 1,
+            "strict_precision": 0.5,
+            "lenient_precision": 0.5,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.6666666666666666,
+            "unjudged_rate": 0.3333333333333333,
+            "ndcg": 0.6309297535714575
+          },
+          "5": {
+            "hit": 1,
+            "strict_precision": 0.5,
+            "lenient_precision": 0.5,
+            "strict_recall": 1,
+            "lenient_recall": 1,
+            "judgment_coverage": 0.4,
+            "unjudged_rate": 0.6,
+            "ndcg": 0.6309297535714575
+          }
+        },
+        "mrr": 0.5,
+        "ndcg3": 0.6309297535714575,
+        "ndcg5": 0.6309297535714575,
+        "zero_result_expected": false,
+        "zero_result_correct": null,
+        "false_positive_count": 0,
+        "excluded_exposures": [
+          {
+            "asset_id": "c86344e9-5b32-4d86-9205-67952d508651",
+            "rank": 1
+          }
+        ],
+        "pass": false,
+        "failures": [
+          "WRONG_TOP1",
+          "EXCLUDED_RESULT_RETURNED",
+          "UNJUDGED_RESULT_RETURNED"
+        ]
+      },
+      "controls": [
+        {
+          "mode": "CONVERSATION_CONTROL",
+          "pass": true,
+          "expected": [
+            {
+              "reference": null,
+              "target": "show me injection videos"
+            },
+            {
+              "reference": null,
+              "target": "injection excluding neck"
+            }
+          ],
+          "actual": [
+            {
+              "mode": "NEW_QUERY",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            },
+            {
+              "mode": "NARROW",
+              "status": "RESOLVED",
+              "referenced_asset_id": null
+            }
+          ]
+        }
+      ],
+      "pass": false,
+      "failure_signals": [
+        "WRONG_TOP1",
+        "EXCLUDED_RESULT_RETURNED",
+        "UNJUDGED_RESULT_RETURNED"
+      ]
+    }
+  ],
+  "metrics": {
+    "top1_exact": 0.5185185185185185,
+    "top1_strict": 0.7037037037037037,
+    "hit1": 0.7037037037037037,
+    "hit3": 0.8518518518518519,
+    "hit5": 0.8518518518518519,
+    "strict_precision1": 0.7037037037037037,
+    "strict_precision3": 0.7962962962962963,
+    "strict_precision5": 0.7962962962962963,
+    "lenient_precision1": 0.7037037037037037,
+    "lenient_precision3": 0.8333333333333334,
+    "lenient_precision5": 0.8333333333333334,
+    "strict_recall1": 0.6163561076604555,
+    "strict_recall3": 0.9128364389233954,
+    "strict_recall5": 0.9716356107660455,
+    "lenient_recall1": 0.5728778467908903,
+    "lenient_recall3": 0.8910973084886128,
+    "lenient_recall5": 0.949896480331263,
+    "mrr": 0.7777777777777778,
+    "ndcg3": 0.9074754028806243,
+    "ndcg5": 0.9158999779757078,
+    "judgment_coverage1": 0.8518518518518519,
+    "judgment_coverage3": 0.6111111111111109,
+    "judgment_coverage5": 0.5,
+    "unjudged_rate1": 0.14814814814814814,
+    "unjudged_rate3": 0.38888888888888895,
+    "unjudged_rate5": 0.5,
+    "zero_result": {
+      "passed": 3,
+      "total": 4
+    },
+    "excluded_result_exposures": [
+      {
+        "case_id": "C40",
+        "asset_id": "c86344e9-5b32-4d86-9205-67952d508651",
+        "rank": 1
+      }
+    ],
+    "control_categories": {
+      "PARSER_CONTROL": {
+        "passed": 4,
+        "total": 4,
+        "accuracy": 1
+      },
+      "RESULT_COUNT_CONTROL": {
+        "passed": 5,
+        "total": 5,
+        "accuracy": 1
+      },
+      "FILTER_CONTROL": {
+        "passed": 1,
+        "total": 2,
+        "accuracy": 0.5
+      },
+      "RESPONSE_STATE": {
+        "passed": 2,
+        "total": 4,
+        "accuracy": 0.5
+      },
+      "CONVERSATION_CONTROL": {
+        "passed": 5,
+        "total": 5,
+        "accuracy": 1
+      },
+      "AUTHORIZATION_CONTROL": {
+        "passed": 1,
+        "total": 1,
+        "accuracy": 1
+      }
+    },
+    "case_pass": {
+      "passed": 35,
+      "total": 40,
+      "rate": 0.875
+    },
+    "failure_symptoms": {
+      "UNJUDGED_RESULT_RETURNED": 20,
+      "WRONG_TOP1": 4,
+      "STATE_MISMATCH": 2,
+      "ZERO_RESULT_FALSE_POSITIVE": 1,
+      "FILTER_MISMATCH": 1,
+      "EXCLUDED_RESULT_RETURNED": 1
+    }
+  }
+}

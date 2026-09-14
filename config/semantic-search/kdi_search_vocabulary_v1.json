@@ -1,0 +1,563 @@
+{
+  "search_vocabulary_version": "kdi_search_vocabulary_v1",
+  "supersedes": [
+    "config/semantic-search/kdi_query_parser_v1_4.json#semantic_aliases"
+  ],
+  "policy": "One canonical natural-language to canonical-concept mapping for the entire search pipeline. Additions are query-side only and never alter semantic truth. A named clinical procedure is reachable only from explicit procedure wording; generic gloves, instrument, scalp or contact wording never resolves to a named procedure.",
+  "categories": {
+    "ROLE": {
+      "CLINICIAN": [
+        "doctor",
+        "clinician",
+        "physician",
+        "medical practitioner",
+        "doktor"
+      ],
+      "PATIENT": [
+        "patient",
+        "pesakit"
+      ],
+      "STAFF": [
+        "staff",
+        "medical staff",
+        "kakitangan"
+      ],
+      "SUBJECT": [
+        "subject",
+        "person in the video",
+        "filmed subject"
+      ],
+      "PRESENTER": [
+        "presenter"
+      ]
+    },
+    "OBSERVATION": {
+      "PERSON_OR_BODY_PART_VISIBLE": [
+        "person or body part visible",
+        "visible person",
+        "person visible",
+        "body part visible"
+      ],
+      "HANDHELD_INSTRUMENT_AND_PROTECTIVE_GLOVES_VISIBLE": [
+        "handheld instrument and protective gloves visible",
+        "gloved hands",
+        "hands wearing gloves",
+        "protective gloves",
+        "handheld instrument",
+        "visible instrument",
+        "visible tool"
+      ],
+      "EXPOSED_BODY_REGION_VISIBLE": [
+        "exposed body region visible",
+        "exposed body region",
+        "visible exposed body region",
+        "exposed body area",
+        "visible body region"
+      ],
+      "PHYSICAL_CONTACT_HOLDING_OR_MANIPULATION_VISIBLE": [
+        "physical contact holding or manipulation visible",
+        "physical contact",
+        "holding or manipulation",
+        "instrument contact",
+        "tool in contact",
+        "object touching body region"
+      ],
+      "BROAD_ENVIRONMENT_VISIBLE": [
+        "broad environment",
+        "wider environment",
+        "indoor or outdoor environment",
+        "surrounding environment"
+      ],
+      "SCALP_UNDER_ACTIVE_CLINICAL_ATTENTION": [
+        "scalp under clinical attention",
+        "scalp being worked on"
+      ],
+      "FACE_UNDER_ACTIVE_CLINICAL_ATTENTION": [
+        "face under clinical attention",
+        "face being worked on"
+      ],
+      "PREPARED_FRONTAL_SCALP": [
+        "prepared frontal scalp"
+      ],
+      "SKIN_CLEANSING_IN_PROGRESS": [
+        "skin cleansing in progress",
+        "skin being cleansed"
+      ],
+      "VISIBLE_FRONTAL_HAIR_THINNING": [
+        "frontal hair thinning",
+        "hair thinning",
+        "thinning hair",
+        "reduced hair density"
+      ],
+      "VISIBLE_INJECTION_AT_LOWER_FACE": [
+        "injection at the lower face",
+        "lower face injection"
+      ],
+      "VISIBLE_INJECTION_AT_NECK": [
+        "injection at the neck",
+        "neck injection"
+      ],
+      "VISIBLE_RECIPIENT_AREA_PROCEDURE": [
+        "recipient area procedure"
+      ]
+    },
+    "ANATOMY": {
+      "FRONTAL_HAIRLINE": [
+        "frontal hairline",
+        "frontal hair line",
+        "front hairline",
+        "front hair line",
+        "hairline",
+        "hair line",
+        "garisan rambut"
+      ],
+      "FRONTAL_SCALP": [
+        "frontal scalp",
+        "front scalp"
+      ],
+      "RECIPIENT_REGION": [
+        "recipient region",
+        "recipient area"
+      ],
+      "SCALP": [
+        "scalp",
+        "kulit kepala",
+        "the scalp"
+      ],
+      "LOWER_FACE": [
+        "lower face",
+        "lower facial area",
+        "lower facial region"
+      ],
+      "FACE": [
+        "face",
+        "muka",
+        "wajah",
+        "the face",
+        "human face"
+      ],
+      "CHEEK": [
+        "cheek",
+        "cheeks",
+        "pipi",
+        "the cheek"
+      ],
+      "NECK": [
+        "neck",
+        "leher",
+        "the neck"
+      ],
+      "LIPS": [
+        "lips",
+        "the lips"
+      ]
+    },
+    "TREATMENT": {
+      "HAIR_TRANSPLANT": [
+        "hair transplant",
+        "hair transplantation",
+        "transplant rambut",
+        "transplant"
+      ],
+      "HAIR_TRANSPLANT_FUE": [
+        "fue",
+        "follicular unit extraction"
+      ]
+    },
+    "ACTION": {
+      "DRAWING_HAIRLINE": [
+        "hairline design",
+        "designing hairline",
+        "designing the hairline",
+        "hairline drawing",
+        "drawing hairline",
+        "drawing the hairline",
+        "drawing the hair line",
+        "hairline planning",
+        "planning hairline",
+        "planning the hairline",
+        "planning the hair line",
+        "marking hairline",
+        "marking the hairline",
+        "lukis hairline",
+        "lukis garisan rambut",
+        "buat hairline"
+      ],
+      "IMPLANTING_GRAFTS": [
+        "implanting grafts",
+        "graft implantation",
+        "implant grafts",
+        "placing grafts"
+      ],
+      "INJECTING": [
+        "injection",
+        "injections",
+        "inject",
+        "injecting",
+        "syringe",
+        "syringes",
+        "needle injection",
+        "injection needle",
+        "suntikan",
+        "jarum"
+      ],
+      "CLEANSING": [
+        "cleansing",
+        "cleaning",
+        "wiping",
+        "membersihkan",
+        "cleaning the skin",
+        "wiping the skin"
+      ],
+      "LOOKING_AT_CAMERA": [
+        "looking at camera",
+        "facing camera",
+        "pandang kamera"
+      ],
+      "CONSULTING": [
+        "consultation",
+        "consulting",
+        "konsultasi"
+      ],
+      "TOUCHING": [
+        "touching",
+        "making contact"
+      ],
+      "POSING_FOR_CAMERA": [
+        "posing for the camera",
+        "posing for camera"
+      ],
+      "RECORDING_VIDEO": [
+        "recording video",
+        "filming themselves"
+      ],
+      "USING_DEVICE": [
+        "using a device",
+        "operating a device",
+        "handling a device"
+      ],
+      "HOLDING_SYRINGE": [
+        "holding a syringe",
+        "syringe in hand"
+      ],
+      "PHYSICAL_CONTACT_HOLDING_OR_MANIPULATION_VISIBLE": [
+        "physical contact",
+        "contact or manipulation",
+        "holding or manipulation"
+      ]
+    },
+    "ENVIRONMENT": {
+      "CLINIC": [
+        "clinic",
+        "clinical room",
+        "clinic room",
+        "bilik klinik"
+      ],
+      "CONSULTATION_ROOM": [
+        "consultation room"
+      ],
+      "TREATMENT_ROOM": [
+        "treatment room",
+        "procedure room"
+      ],
+      "OPERATING_ROOM": [
+        "operating room",
+        "operating theatre",
+        "operating theater"
+      ]
+    },
+    "PROCEDURE_STAGE": {
+      "PRE_PROCEDURE": [
+        "before treatment",
+        "before transplant",
+        "before procedure",
+        "pre procedure",
+        "sebelum prosedur",
+        "sebelum rawatan",
+        "sebelum treatment"
+      ],
+      "DURING_PROCEDURE": [
+        "during procedure",
+        "during treatment",
+        "semasa prosedur",
+        "masa procedure"
+      ],
+      "POST_PROCEDURE": [
+        "after procedure",
+        "after treatment",
+        "post procedure",
+        "selepas prosedur",
+        "selepas rawatan",
+        "selepas procedure",
+        "lepas procedure"
+      ],
+      "FOLLOW_UP": [
+        "follow up",
+        "aftercare",
+        "susulan"
+      ],
+      "CONSULTATION": [
+        "consultation",
+        "konsultasi"
+      ]
+    },
+    "CINEMATOGRAPHY": {
+      "CLOSEUP": [
+        "close-up",
+        "close up",
+        "closeup",
+        "close-up shot",
+        "close up shot",
+        "tight shot"
+      ],
+      "EXTREME_CLOSEUP": [
+        "extreme close-up",
+        "extreme close up",
+        "extreme closeup",
+        "macro shot"
+      ],
+      "MEDIUM_CLOSEUP": [
+        "medium close-up",
+        "medium close up",
+        "medium closeup"
+      ],
+      "MEDIUM": [
+        "medium shot"
+      ],
+      "HANDHELD": [
+        "handheld camera",
+        "hand-held camera",
+        "handheld shot",
+        "shaky camera",
+        "moving camera"
+      ],
+      "STATIC": [
+        "static camera",
+        "static shot",
+        "fixed camera",
+        "tripod shot"
+      ],
+      "VERTICAL": [
+        "vertical video",
+        "vertical framing",
+        "portrait orientation"
+      ],
+      "LANDSCAPE": [
+        "landscape orientation",
+        "horizontal video",
+        "landscape framing"
+      ],
+      "FRONT_ANGLE": [
+        "front angle",
+        "frontal angle",
+        "front-on view"
+      ],
+      "SELF_RECORDED": [
+        "self recorded",
+        "self-recorded",
+        "selfie video"
+      ]
+    },
+    "COMPOSITION": {
+      "FACE_PROMINENT": [
+        "face prominent",
+        "prominent face",
+        "face fills the frame"
+      ],
+      "PATIENT_FACE_PROMINENT": [
+        "patient face prominent"
+      ],
+      "PATIENT_HEAD_PROMINENT": [
+        "patient head prominent"
+      ],
+      "PATIENT_HEAD_AND_CLINICIAN_DOMINANT": [
+        "patient head and clinician dominant"
+      ],
+      "SINGLE_CENTRAL_SUBJECT": [
+        "single central subject",
+        "one central subject",
+        "centred subject",
+        "centered subject"
+      ],
+      "SINGLE_CENTRAL_FACE": [
+        "single central face",
+        "one central face"
+      ],
+      "CLINICIAN_HANDS_IN_FOREGROUND": [
+        "clinician hands in the foreground",
+        "hands in the foreground"
+      ],
+      "MULTIPLE_CLINICAL_HANDS_VISIBLE": [
+        "multiple clinical hands",
+        "several hands visible"
+      ],
+      "CLINICIAN_AND_DEVICE_IN_FRAME": [
+        "clinician and device in frame"
+      ],
+      "DARK_NEUTRAL_BACKGROUND": [
+        "dark neutral background",
+        "dark background"
+      ],
+      "PLAIN_LIGHT_BACKGROUND": [
+        "plain light background",
+        "plain background",
+        "light background"
+      ],
+      "PATIENT_AND_CLINICIAN_VISIBLE": [
+        "patient and clinician visible",
+        "both patient and clinician"
+      ],
+      "TOOL_VISIBLE_NEAR_TREATMENT_AREA": [
+        "tool near the treatment area"
+      ],
+      "SWAB_IN_FOREGROUND": [
+        "swab in the foreground"
+      ],
+      "FRONTAL_SCALP_CENTRAL": [
+        "frontal scalp central"
+      ],
+      "FACE_AND_FRONTAL_SCALP_PROMINENT": [
+        "face and frontal scalp prominent"
+      ],
+      "CHEEK_AND_LOWER_FACE_DOMINANT": [
+        "cheek and lower face dominant"
+      ],
+      "NECK_TREATMENT_AREA_DOMINANT": [
+        "neck treatment area dominant"
+      ],
+      "TREATMENT_AREA_PARTIALLY_VISIBLE": [
+        "treatment area partially visible"
+      ]
+    },
+    "APPEARANCE": {
+      "ADULT_PRESENTATION": [
+        "adult presentation",
+        "adult subject",
+        "an adult"
+      ],
+      "CLINICIAN_GLOVED": [
+        "gloved clinician",
+        "clinician wearing gloves"
+      ],
+      "CLINICIAN_MASKED": [
+        "masked clinician",
+        "clinician wearing a mask"
+      ],
+      "CLINICAL_PPE_VISIBLE": [
+        "clinical ppe",
+        "protective equipment visible",
+        "ppe visible"
+      ],
+      "EYE_PROTECTION_VISIBLE": [
+        "eye protection",
+        "protective eyewear",
+        "eye pads"
+      ],
+      "PATIENT_RECLINING": [
+        "reclining patient",
+        "patient lying back",
+        "patient reclined"
+      ],
+      "FRONT_FACING": [
+        "front facing",
+        "facing the camera"
+      ],
+      "SEATED_OR_STANDING_UNKNOWN": [
+        "seated or standing unknown"
+      ],
+      "SHORT_DARK_HAIR": [
+        "short dark hair"
+      ],
+      "DARK_CLOTHING": [
+        "dark clothing"
+      ],
+      "DARK_HEAD_COVERING": [
+        "dark head covering",
+        "head covering"
+      ],
+      "WHITE_COLLARED_SHIRT": [
+        "white collared shirt",
+        "collared shirt"
+      ],
+      "SCALP_PREPARED": [
+        "prepared scalp",
+        "scalp prepared"
+      ]
+    },
+    "RELATIONSHIP": {
+      "CLINICIAN_TREATS_PATIENT": [
+        "clinician treating a patient",
+        "doctor treating a patient",
+        "clinician treats patient"
+      ],
+      "CLINICIAN_WORKS_ON_ANATOMY": [
+        "clinician working on",
+        "clinician works on"
+      ],
+      "PATIENT_POSITIONED_IN_TREATMENT_CHAIR": [
+        "patient in the treatment chair",
+        "patient positioned in a chair",
+        "treatment chair"
+      ],
+      "PERSON_LOOKS_AT_CAMERA": [
+        "person looking at the camera",
+        "looking at the camera"
+      ]
+    },
+    "CONTENT_USAGE": {
+      "CLINICAL_REFERENCE": [
+        "clinical reference",
+        "clinical reference material"
+      ],
+      "PORTRAIT_CONTENT": [
+        "portrait content",
+        "portrait photo"
+      ],
+      "PROCEDURE_CONTENT": [
+        "procedure content"
+      ],
+      "PROCEDURE_PREPARATION_CONTENT": [
+        "procedure preparation content",
+        "preparation content"
+      ],
+      "EDUCATIONAL_CANDIDATE": [
+        "educational content"
+      ],
+      "PROMOTIONAL_CANDIDATE": [
+        "promotional content",
+        "marketing content"
+      ],
+      "CLINICAL_DOCUMENTATION_CANDIDATE": [
+        "clinical documentation"
+      ],
+      "SELF_RECORDED_CONTENT": [
+        "self recorded content"
+      ],
+      "HAIR_TRANSPLANT_PROCEDURE_CONTENT": [
+        "hair transplant procedure content"
+      ]
+    },
+    "VISIBLE_TEXT": {
+      "VISIBLE_TEXT": [
+        "visible text",
+        "text on screen",
+        "on-screen text",
+        "on screen text",
+        "readable text",
+        "readable on-screen text",
+        "writing visible",
+        "words shown",
+        "text overlay"
+      ]
+    },
+    "AUDIO": {
+      "AUDIO_STREAM_PRESENT": [
+        "audio track",
+        "an audio track",
+        "has audio",
+        "with sound",
+        "audio present"
+      ]
+    }
+  }
+}

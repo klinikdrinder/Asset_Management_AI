@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1388.MP4, scene 15",
+      "evidence": [
+        "filename IMG_1388.MP4",
+        "asset_id df817eac-fbf8-46bd-9817-940e66de50b3",
+        "scene_index 15"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical video clip, ~15s duration",
+      "evidence": [
+        "technical.duration_seconds 15.0817",
+        "1280x720 h264 video with audio stream"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short sub-clip from 4.767s to 5.667s of a longer video",
+      "evidence": [
+        "start_seconds 4.767, end_seconds 5.667",
+        "scene_index 15 of larger asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved practitioner hands and a patient's jaw/neck area",
+      "evidence": [
+        "two white latex-gloved hands visible",
+        "partial view of a patient's chin, ear, and neck"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Only partial skin, ear, and chin visible",
+      "evidence": [
+        "face largely out of frame except lower jaw, chin, and ear",
+        "no clothing or identifying features clearly visible besides a blue garment edge at bottom"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Lower jaw, neck, and ear region of skin",
+      "evidence": [
+        "visible chin, jawline, neck skin, and part of an ear in frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed by supplied text",
+      "evidence": [
+        "readable_text_detected is empty and spoken_content is empty, so no procedure name is confirmed",
+        "gloved hands and a handheld device with a tip on skin do not by themselves establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device tip held against skin of the neck/jaw",
+      "evidence": [
+        "metallic pen-like device tip is in direct contact with the skin surface",
+        "gloved fingers stabilize the skin near the device tip"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner hands positioned around patient's skin",
+      "evidence": [
+        "one gloved hand holds the device while another gloved hand steadies adjacent skin",
+        "device tip oriented directly at the patient's neck/jaw skin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Textured, whitish patch of skin at contact site",
+      "evidence": [
+        "area of skin beneath device tip appears rough/flaky with a whitish sheen compared to surrounding smooth skin",
+        "a couple of small dark spots visible on nearby skin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not visible beyond skin and equipment",
+      "evidence": [
+        "frame is a tight close-up showing only skin, gloves, device, and a cable, with no visible room or background context"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme close-up, handheld-style framing",
+      "evidence": [
+        "tight macro-style framing on skin and device tip filling most of the frame",
+        "vertical (portrait) 1280x720 aspect orientation"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device and hands centered, patient skin fills lower right",
+      "evidence": [
+        "device and gloved hands occupy upper-center/left of frame",
+        "patient's chin, ear, and neck occupy right and lower portion of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content supplied",
+      "evidence": [
+        "spoken_content is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing framing indicated in supplied evidence",
+      "evidence": [
+        "no text, branding, or promotional overlay present in readable_text_detected or the image"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical skin contact moment",
+      "evidence": [
+        "image depicts a device tip in contact with a patient's skin under gloved hand supervision"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A close-up shows two gloved hands and a metallic pen-shaped device with a cable, its tip touching the skin of a person's lower jaw/neck area near the ear. The treated skin patch appears textured with a whitish residue compared to surrounding smooth skin.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "df817eac-fbf8-46bd-9817-940e66de50b3",
+  "image_count": 1
+}

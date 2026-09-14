@@ -739,6 +739,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     except ProviderPermanentError as exc:
         raise SystemExit(str(exc)) from exc
     client = create_client(os.environ["SUPABASE_URL"], os.environ["SUPABASE_SERVICE_ROLE_KEY"])
+    from kdi_media.semantic_specification import resolve_locked_semantic_specification
+    locked_spec = resolve_locked_semantic_specification(client)
+    print(json.dumps({"event": "semantic_spec_verified", "semantic_spec_version": locked_spec.spec_version,
+                      "semantic_spec_fingerprint": locked_spec.spec_fingerprint}, sort_keys=True))
     repository = SupabaseSemanticIndexRepository(client)
     repository.require_schema()
     repository.configure_index_identity(description, embedding)

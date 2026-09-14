@@ -1,0 +1,182 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1373.MP4, scene 0",
+      "evidence": [
+        "filename IMG_1373.MP4",
+        "asset_id e21dcbea-86fc-4c12-ab2f-217f48f3031d",
+        "scene_index 0, 0.0-16.7s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting close-up video",
+      "evidence": [
+        "two keyframes show a gloved, masked practitioner working near a reclined patient's face with a handheld device",
+        "1280x720 h264 video with audio stream"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single 16.7s scene, two similar keyframes",
+      "evidence": [
+        "scene spans 0.0 to 16.7 seconds",
+        "two supplied keyframes show nearly identical framing of the same moment"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and reclined patient",
+      "evidence": [
+        "one person in teal scrubs, mask, and gloves actively handling a device",
+        "second person reclined in a chair with eyes shielded, passive posture"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in scrubs and mask; patient reclined",
+      "evidence": [
+        "practitioner has dark hair in a bun, teal short-sleeve scrub top, surgical mask, white gloves, smartwatch on wrist",
+        "patient's face visible with dark hair, reclined against a headrest, blue blanket over body"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and periorbital region",
+      "evidence": [
+        "patient's forehead, nose, mouth, and eye area are visible in both keyframes",
+        "metal shields placed over the eyes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure type not identifiable from evidence",
+      "evidence": [
+        "no procedure name appears in readable_text_detected or spoken_content",
+        "gloves, instrument, and facial contact alone do not establish a specific named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner operates handheld device near patient's face",
+      "evidence": [
+        "practitioner's gloved hand holds a metallic handpiece connected to an articulated arm positioned at the patient's eye/forehead area",
+        "other gloved hand stabilizes the patient's face/head"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned directly over patient",
+      "evidence": [
+        "practitioner leans over the reclined patient, one hand bracing the patient's head/face while the other manipulates the device"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "PPE and eye protection visible",
+      "evidence": [
+        "surgical mask and gloves worn by practitioner",
+        "metal corneal-type eye shields placed over patient's eyes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "plain white wall with a red vertical accent strip",
+        "tiled floor and reclining treatment chair with a blue cover/blanket visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical shot",
+      "evidence": [
+        "tight vertical framing centered on practitioner and patient's face",
+        "camera angle positioned above and to the side of the patient"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subjects centered in portrait frame",
+      "evidence": [
+        "practitioner and patient occupy the center of a vertical 9:16-style frame",
+        "device arm enters from top of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "spoken_content array is empty despite audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected array is empty"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context supplied",
+      "evidence": [
+        "no caption, branding, or usage metadata provided in the evidence"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment session on a reclined patient",
+      "evidence": [
+        "gloved, masked staff member working on a reclined, eye-shielded patient with a specialized handheld device in a clinical room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked, gloved practitioner in teal scrubs leans over a reclined patient, holding a metallic handheld device attached to an articulated arm close to the patient's eye/forehead area. The patient lies back in a chair with a blue blanket, wearing metal eye shields, in a plain indoor room with white walls and a red accent strip.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "e21dcbea-86fc-4c12-ab2f-217f48f3031d",
+  "image_count": 2
+}

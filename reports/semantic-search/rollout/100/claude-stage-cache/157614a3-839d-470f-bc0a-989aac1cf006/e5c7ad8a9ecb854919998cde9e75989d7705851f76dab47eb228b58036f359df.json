@@ -1,0 +1,176 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3421.MP4, single scene",
+      "evidence": [
+        "asset_id 157614a3-839d-470f-bc0a-989aac1cf006, filename IMG_3421.MP4, scene_index 0, duration 15.933s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clinical close-up scene",
+      "evidence": [
+        "One scene spanning 0.0-15.933s with 2 representative keyframes, 1280x720 h264 video with audio track"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Brief ~16 second single-scene clip",
+      "evidence": [
+        "scene start_seconds 0.0, end_seconds 15.933, scene_index 0 indicating one continuous segment"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Seated patient and a gloved examiner",
+      "evidence": [
+        "One person with hair up in a headband is seated with back/shoulder exposed to camera",
+        "A second person's gloved hand(s) are positioned at the patient's neck/shoulder in both frames"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark-haired individual with black headband, bare shoulder",
+      "evidence": [
+        "Person has dark hair gathered up under a black fleece headband",
+        "Bare upper back and shoulder visible, small red marks near ear/cheek in first image"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Back of neck and upper shoulder/scapular region",
+      "evidence": [
+        "Gloved fingers point to and rest on the posterior neck and upper trapezius/shoulder area",
+        "Ear and side of face also visible"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed",
+      "evidence": [
+        "Only gloved hands touching/examining skin are visible; no procedure name appears in supplied text, so per rules this cannot be labeled as a specific treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hand examining/pointing to marks on skin",
+      "evidence": [
+        "First image shows a gloved finger pointing directly at red marks on the neck/shoulder",
+        "Second image shows a gloved hand resting flat on the shoulder near the same marks, suggesting inspection or palpation"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Examiner-patient interaction",
+      "evidence": [
+        "Gloved hands consistently positioned in contact with or near the seated person's neck/shoulder across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small reddish abrasions/scratches with crusting on skin",
+      "evidence": [
+        "Cluster of small red-brown marks with what appears to be scabbing/crusting visible on the back of the neck and shoulder in both images",
+        "Additional small red marks visible near the ear/cheek in the first image"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical or spa treatment room",
+      "evidence": [
+        "Patterned tile wall, wall-mounted clock, wheeled medical/spa cart, blue cushioned equipment visible in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical handheld framing",
+      "evidence": [
+        "Vertical 1280x720 aspect framing tightly cropped on the neck/shoulder area, consistent across two keyframes suggesting a static or minimally moving close-up shot"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject off-center, back-facing close-up",
+      "evidence": [
+        "Person's head and back positioned right-of-center with gloved hands and injury site as the visual focal point in both frames"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is an empty array despite an audio_stream being present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Purpose of clip not determinable",
+      "evidence": [
+        "No supplied text or on-screen indicators (captions, logos, branding) indicate whether this footage is for marketing, documentation, or another use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical inspection of skin marks on neck/shoulder",
+      "evidence": [
+        "Sequence shows a gloved examiner pointing to and touching small abrasions on a seated person's neck and shoulder in a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a distinct observable layer",
+      "evidence": [
+        "This layer represents an internal indexing construct rather than visual or audio content observable in the keyframes"
+      ]
+    }
+  ],
+  "narrative": "Two keyframes show a person with dark hair pulled up under a black headband, seated with their back to the camera in a clinical/spa-like room with patterned tile walls; a gloved clinician's hands are examining or touching several small reddish abrasions/scrapes on the back of the person's neck and upper shoulder.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "157614a3-839d-470f-bc0a-989aac1cf006",
+  "image_count": 2
+}

@@ -1,0 +1,177 @@
+{
+  "total": 1,
+  "errors": [
+    {
+      "category": "EXCLUSION",
+      "query": "Leave any syringe scenes out",
+      "expected": {
+        "negative": [
+          "INJECTING"
+        ]
+      },
+      "case_id": "QP14V5-082",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "evaluation": {
+        "passed": false,
+        "differences": [
+          {
+            "field": "negative.INJECTING",
+            "expected": true,
+            "actual": false,
+            "critical": true
+          }
+        ],
+        "false_result_count": 0,
+        "missed_explicit_result_count": 0,
+        "schema_valid": true,
+        "actual": {
+          "count": {
+            "values": [],
+            "requested": null
+          },
+          "media_type": "ANY",
+          "extensions": [],
+          "numeric": {
+            "occurrences": [],
+            "age_exact": null,
+            "age_min": null,
+            "age_max": null,
+            "age_decade": null,
+            "graft_count_exact": null,
+            "graft_count_min": null,
+            "graft_count_max": null,
+            "graft_count_inclusive_min": null,
+            "graft_count_inclusive_max": null,
+            "age_inclusive_min": null,
+            "age_inclusive_max": null,
+            "treatment_session_count": null,
+            "session_ordinal": null,
+            "currency_amount": null
+          },
+          "temporal": {},
+          "positive": [],
+          "negative": [],
+          "modalities": [
+            "VISUAL"
+          ],
+          "conflicts": [],
+          "unresolved": true,
+          "schema_valid": true
+        }
+      },
+      "plan": {
+        "query_schema_version": "kdi_query_schema_v1_1",
+        "intent": "FIND_MEDIA",
+        "original_query": "Leave any syringe scenes out",
+        "result_request": {
+          "requested_count": null,
+          "system_default_count": 5,
+          "effective_count": 5,
+          "requested_count_raw": null,
+          "normalization_status": "NOT_FOUND",
+          "extraction": null,
+          "requested_count_occurrences": []
+        },
+        "media": {
+          "media_type": "ANY",
+          "media_type_extraction": null,
+          "extensions": [],
+          "extension_extractions": []
+        },
+        "semantic": {
+          "positive_concepts": [],
+          "negative_concepts": [],
+          "unresolved_concepts": [
+            {
+              "concept_type": "UNRESOLVED",
+              "raw_text": "Leave any syringe scenes out",
+              "canonical_code": null,
+              "normalization_status": "UNRESOLVED",
+              "source": "SEMANTIC_INTERPRETER",
+              "confidence": null,
+              "start_char": 0,
+              "end_char": 28,
+              "modality": "ANY",
+              "surface_strength": "NEUTRAL",
+              "clause_id": 0,
+              "polarity": "POSITIVE",
+              "marker": null
+            }
+          ]
+        },
+        "temporal": {},
+        "numeric": {
+          "occurrences": [],
+          "age_exact": null,
+          "age_min": null,
+          "age_max": null,
+          "age_decade": null,
+          "graft_count_exact": null,
+          "graft_count_min": null,
+          "graft_count_max": null,
+          "graft_count_inclusive_min": null,
+          "graft_count_inclusive_max": null,
+          "age_inclusive_min": null,
+          "age_inclusive_max": null,
+          "treatment_session_count": null,
+          "session_ordinal": null,
+          "currency_amount": null
+        },
+        "textual": {
+          "transcript": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "ocr": {
+            "required_terms": [],
+            "raw_phrases": []
+          },
+          "modalities": [
+            "VISUAL"
+          ]
+        },
+        "constraints": {
+          "surface_markers": []
+        },
+        "preferences": [],
+        "ranking": {
+          "sort": "MOST_RELEVANT_FIRST",
+          "source": "SYSTEM_DEFAULT",
+          "raw_text": null
+        },
+        "conversation": {
+          "reference_asset_identifier": null,
+          "reference_status": "NOT_APPLICABLE"
+        },
+        "retrieval_text": {
+          "visual_semantic_query": null,
+          "text_semantic_query": null,
+          "full_text_query": null
+        },
+        "parser_metadata": {
+          "query_parser_version": "kdi_query_parser_v1_4",
+          "deterministic_parser_version": "kdi_deterministic_query_parser_v1_4",
+          "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1_4",
+          "query_schema_version": "kdi_query_schema_v1_1",
+          "configuration_version": "kdi_query_parser_config_v1_4",
+          "configuration_fingerprint": "1f20397ec64cf9c1dcc02fe72deea0f379cd8534756954c8e4f2c52c08fe93dc",
+          "semantic_provider": "kdi_local_ontology_interpreter",
+          "semantic_provider_model": "kdi_semantic_lexicon_en",
+          "semantic_provider_model_version": "v1_4",
+          "semantic_interpretation_status": "READY",
+          "detected_language": "UNKNOWN",
+          "validation_status": "VALID",
+          "warnings": [],
+          "conflicts": [],
+          "query_fingerprint": "d291c68ac897f4691d2add94e4125193328cdca829c92e494f59b789f5b80a0a"
+        },
+        "validation": {
+          "status": "VALID",
+          "errors": []
+        }
+      },
+      "latency_ms": 0.8821000000000083
+    }
+  ]
+}

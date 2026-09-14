@@ -1,0 +1,3720 @@
+{
+  "benchmark_version": "kdi_query_expansion_benchmark_v1",
+  "language": "ENGLISH",
+  "splits": {
+    "dev": 120,
+    "validation": 30,
+    "blind": 30
+  },
+  "cases": [
+    {
+      "id": "QX16-001",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 1",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-002",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 2",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-003",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 3",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-004",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 4",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-005",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 5",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-006",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 6",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-007",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 7",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-008",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 8",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-009",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 9",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-010",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 10",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-011",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 11",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-012",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 12",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-013",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 13",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-014",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 14",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-015",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 15",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-016",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 16",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-017",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 17",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-018",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 18",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-019",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 19",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-020",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 20",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-021",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 21",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-022",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 22",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-023",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 23",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-024",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 24",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-025",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 25",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-026",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 26",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-027",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 27",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-028",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 28",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-029",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 29",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-030",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 30",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-031",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 31",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-032",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 32",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-033",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 33",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-034",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 34",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-035",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 35",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-036",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 36",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-037",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 37",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-038",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 38",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-039",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 39",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-040",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 40",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-041",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 41",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-042",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 42",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-043",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 43",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-044",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 44",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-045",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 45",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-046",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 46",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-047",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 47",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-048",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 48",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-049",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 49",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-050",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 50",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-051",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 51",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-052",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 52",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-053",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 53",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-054",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 54",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-055",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 55",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-056",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 56",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-057",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 57",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-058",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 58",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-059",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 59",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-060",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 60",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-061",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 61",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-062",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 62",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-063",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 63",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-064",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 64",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-065",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 65",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-066",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 66",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-067",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 67",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-068",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 68",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-069",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 69",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-070",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 70",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-071",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 71",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-072",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 72",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-073",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 73",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-074",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 74",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-075",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 75",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-076",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 76",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-077",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 77",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-078",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 78",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-079",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 79",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-080",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 80",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-081",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 81",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-082",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 82",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-083",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 83",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-084",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 84",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-085",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 85",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-086",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 86",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-087",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 87",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-088",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 88",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-089",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 89",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-090",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 90",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-091",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 91",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-092",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 92",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-093",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 93",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-094",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 94",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-095",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 95",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-096",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 96",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-097",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 97",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-098",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 98",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-099",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 99",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-100",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 100",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-101",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 101",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-102",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 102",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-103",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 103",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-104",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 104",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-105",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 105",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-106",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 106",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-107",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 107",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-108",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 108",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-109",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 109",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-110",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 110",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-111",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 111",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-112",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 112",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-113",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 113",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-114",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 114",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-115",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 115",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-116",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 116",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-117",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 117",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-118",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 118",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-119",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 119",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-120",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 120",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-121",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 121",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-122",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 122",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-123",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 123",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-124",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 124",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-125",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 125",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-126",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 126",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-127",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 127",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-128",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 128",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-129",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 129",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-130",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 130",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-131",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 131",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-132",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 132",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-133",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 133",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-134",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 134",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-135",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 135",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-136",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 136",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-137",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 137",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-138",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 138",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-139",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 139",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-140",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 140",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-141",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 141",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-142",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 142",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-143",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 143",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-144",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 144",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-145",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 145",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-146",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 146",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-147",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 147",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-148",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 148",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-149",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 149",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-150",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 150",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-151",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 151",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-152",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 152",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-153",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 153",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-154",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 154",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-155",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 155",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-156",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 156",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-157",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 157",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-158",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 158",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-159",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 159",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-160",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 160",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-161",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 161",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-162",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 162",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-163",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 163",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-164",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 164",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-165",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 165",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-166",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 166",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-167",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 167",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-168",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 168",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-169",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 169",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-170",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 170",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-171",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find a doctor for frontal hairline design 171",
+      "requirements": [
+        {
+          "code": "CLINICIAN",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "doctor",
+            "physician",
+            "clinician"
+          ]
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hairline drawing",
+            "drawing hairline",
+            "hairline design",
+            "hairline planning",
+            "hairline marking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-172",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Only frontal hairline images 172",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-173",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Exclude injection footage 173",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-174",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Prefer frontal hairline planning 174",
+      "requirements": [
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "class": "PREFERENCE",
+          "allowed": [
+            "frontal hairline",
+            "front hairline",
+            "frontal hair line",
+            "front hair line",
+            "hairline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-175",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "If possible avoid injection scenes 175",
+      "requirements": [
+        {
+          "code": "INJECTING",
+          "class": "NEGATIVE_PREFERENCE",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-176",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show M-CURE visible on screen 176",
+      "requirements": [
+        {
+          "field": "OCR_LITERAL",
+          "class": "STRONG_REQUIREMENT",
+          "literal": "M-CURE"
+        }
+      ]
+    },
+    {
+      "id": "QX16-177",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show videos with delta resonance 177",
+      "requirements": [
+        {
+          "field": "UNRESOLVED",
+          "class": "UNRESOLVED",
+          "literal": "delta resonance"
+        }
+      ]
+    },
+    {
+      "id": "QX16-178",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show frontal scalp procedure 178",
+      "requirements": [
+        {
+          "code": "FRONTAL_SCALP",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "frontal scalp",
+            "front scalp",
+            "scalp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-179",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show hair transplant, not graft implantation 179",
+      "requirements": [
+        {
+          "code": "HAIR_TRANSPLANT",
+          "class": "STRONG_REQUIREMENT",
+          "allowed": [
+            "hair transplant",
+            "hair transplantation",
+            "transplant"
+          ]
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "graft implantation",
+            "implanting grafts",
+            "implantation of grafts",
+            "graft placement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QX16-180",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Only videos but exclude injecting 180",
+      "requirements": [
+        {
+          "field": "MEDIA_TYPE",
+          "class": "HARD_CONSTRAINT",
+          "allowed": [
+            "video"
+          ]
+        },
+        {
+          "code": "INJECTING",
+          "class": "HARD_EXCLUSION",
+          "allowed": [
+            "injecting",
+            "injection",
+            "inject",
+            "syringe injection"
+          ]
+        }
+      ]
+    }
+  ],
+  "fingerprint": "30c0381d6d1233cc1ecf629319b753f3cfe00c2707ae07ef3e7a23115c7b7893"
+}

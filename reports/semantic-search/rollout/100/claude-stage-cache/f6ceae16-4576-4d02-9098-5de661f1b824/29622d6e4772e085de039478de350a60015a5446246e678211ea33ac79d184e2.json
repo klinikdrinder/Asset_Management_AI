@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1939.MP4",
+      "evidence": [
+        "filename IMG_1939.MP4, 1280x720, 13.65s, h264 with audio stream"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result listed GLOBAL_ASSET_UNDERSTANDING as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 spanning the clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "masked clinician in coral scrubs operating a device near a reclined patient wearing eye shields"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Coral scrubs, mask, tinted goggles; patient with white eye shields",
+      "evidence": [
+        "clinician wears coral scrubs, surgical mask, tinted safety goggles, hair in a bun",
+        "patient reclined with white protective eye shields and a gray knit head wrap"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forehead and face region visible",
+      "evidence": [
+        "handheld device positioned near the patient's forehead/face across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied evidence",
+      "evidence": [
+        "no text names a specific procedure; device and goggles alone do not establish one per rules"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician operates handheld device near patient's face",
+      "evidence": [
+        "first keyframe: device on articulated arm held near forehead; second keyframe: smaller handheld device held near face, goggles pushed up"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned over reclined patient",
+      "evidence": [
+        "clinician stands behind/above the reclined patient, hands near patient's head with device"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective eyewear and draping used",
+      "evidence": [
+        "patient wears white eye shields, blue surgical drape covers torso, clinician wears tinted safety goggles and mask"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly determinable",
+      "evidence": [
+        "Scene-level result listed ENVIRONMENT as UNKNOWN despite visible wall-mounted dispenser and reclined chair"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical handheld framing",
+      "evidence": [
+        "vertical 1280x720 frame tightly framing clinician and patient's upper body/head"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient lower frame, clinician upper frame",
+      "evidence": [
+        "patient reclined across bottom of frame, clinician and device occupy upper portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text on clinician's scrub top",
+      "evidence": [
+        "scrub top shows partially legible embroidered text near collar"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "Scene-level result listed MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative not determinable",
+      "evidence": [
+        "Scene-level result listed SEMANTIC_NARRATIVE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual narrative",
+      "evidence": [
+        "Scene-level result listed SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "Two keyframes show a masked clinician in coral scrubs and tinted safety goggles operating a handheld device attached to an articulated arm near the forehead of a reclined patient wearing white protective eye shields, with a blue drape and gray knit wrap visible. In the second frame the clinician's goggles are pushed up and she holds a smaller handheld device near the patient's face while the patient remains reclined.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "f6ceae16-4576-4d02-9098-5de661f1b824",
+  "image_count": 1
+}

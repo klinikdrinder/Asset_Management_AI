@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1953.MP4",
+      "evidence": [
+        "filename IMG_1953.MP4, duration 16.37s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical close-up clip",
+      "evidence": [
+        "scene_results reports 1 canonical scene with consistent close-up framing of face and handpiece"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across ~16 seconds",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, scene_index 0 spans the full duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked staff member and reclined patient",
+      "evidence": [
+        "masked person in scrub top holding handpiece near patient's face; reclined person in black top under blue drape; third person standing in background"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scrub top, surgical mask, pearl necklace",
+      "evidence": [
+        "staff member wears peach/coral scrubs, surgical mask, hair pulled back, earrings; patient has dark hair, black top, pearl necklace"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Nose and upper lip/philtrum area",
+      "evidence": [
+        "handpiece tip is positioned directly on the patient's nose/upper lip region in the image"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "per-scene layer marked UNKNOWN; a handpiece and physical contact alone do not name a specific clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member applies handpiece to patient's face",
+      "evidence": [
+        "thumb pressing device button while tip contacts skin near nose in the image"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member positioned over reclined patient",
+      "evidence": [
+        "staff member leans over the reclined patient, hand stabilizing patient's face while operating device"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Metal handpiece connected to a tabletop device",
+      "evidence": [
+        "cylindrical metal handpiece with ring-shaped tip visible against skin; device with dial display visible in background"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "per-scene ENVIRONMENT marked UNKNOWN despite plain wall and equipment visible; no signage confirms setting type"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Camera technique not assessable",
+      "evidence": [
+        "per-scene CINEMATOGRAPHY marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical framing on face and hands",
+      "evidence": [
+        "portrait-oriented frame tightly cropped around patient's face, staff member's hands, and device"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT but transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "\"M-CURE\" mask label and embroidered name",
+      "evidence": [
+        "ocr_observations: 4; visible text \"M-CURE\" on mask and \"DR LEW KAR...\" embroidered on scrub top"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "per-scene MARKETING_CONTENT_USAGE marked UNKNOWN; no caption or branding context supplied beyond visible text"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up of clinical device applied to patient's face",
+      "evidence": [
+        "consistent scene narrative of staff member applying handpiece near patient's nose while patient reclines under drape"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to media content",
+      "evidence": [
+        "per-scene SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked clinical staff member wearing a peach/coral scrub top embroidered \"DR LEW KAR...\" holds a metal handpiece near the nose and upper lip area of a reclined patient wearing a black top and pearl necklace, who is covered with a blue drape. A second person stands in the background near a device displaying dials on a screen.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "d606c806-2427-4ff8-8ffe-13ef2b22cf3d",
+  "image_count": 1
+}

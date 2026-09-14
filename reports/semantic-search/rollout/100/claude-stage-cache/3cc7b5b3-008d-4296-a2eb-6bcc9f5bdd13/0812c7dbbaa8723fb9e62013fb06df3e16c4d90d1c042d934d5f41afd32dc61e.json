@@ -1,0 +1,178 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2962.MP4, 10.87s, 1280x720",
+      "evidence": [
+        "technical metadata: filename IMG_2962.MP4, duration 10.866667s, 1280x720, h264, 30fps"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical close-up video",
+      "evidence": [
+        "1 canonical scene, 2 canonical keyframes sampled across the video"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across the clip",
+      "evidence": [
+        "canonical_scenes: 1",
+        "scene_index 0 spans the sampled keyframes"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined patient and two gloved clinical staff",
+      "evidence": [
+        "person reclined in chair with head draped and face largely covered",
+        "gloved clinician wearing loupes and headlight leaning over the scalp",
+        "second gloved person standing to the side holding an instrument"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient draped in towels/gauze; staff in blue gowns and gloves",
+      "evidence": [
+        "patient's head wrapped in surgical towels and gauze, face covered by surgical mask",
+        "clinician wearing blue gown, white gloves, loupes, and headlight",
+        "second person wearing blue gloves and gown"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Exposed scalp visible on reclined patient",
+      "evidence": [
+        "top of the head/scalp exposed and visible between draped towels"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure specified in supplied text",
+      "evidence": [
+        "gloves, instruments, loupes, and scalp contact are visible but no procedure name is present in the supplied text, so the specific treatment cannot be established"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician handling instrument near scalp",
+      "evidence": [
+        "clinician holds a small instrument near the exposed scalp",
+        "second person also holds an instrument nearby"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical staff positioned around the patient",
+      "evidence": [
+        "clinician leaning directly over the patient's scalp",
+        "second gloved person positioned alongside, also engaged with an instrument"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reddened/prepped scalp area visible",
+      "evidence": [
+        "exposed scalp shows discoloration/redness consistent with a prepped surgical site",
+        "gauze and towel draping around the site"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical room with stool and cart",
+      "evidence": [
+        "rolling stool and cart visible in the background",
+        "clinical setting with overhead lighting equipment (headlight/loupes)"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Overhead close-up framing of the procedure area",
+      "evidence": [
+        "top-down close-up shot centered on the patient's head and scalp"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered, staff framing the sides",
+      "evidence": [
+        "patient's head centered in frame with clinician above and second person to the side"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context established",
+      "evidence": [
+        "no supplied text indicates intended marketing or promotional use of this footage"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up of clinical staff working on a draped, reclined patient's scalp",
+      "evidence": [
+        "keyframes depict clinicians in surgical attire attending to a draped patient's exposed scalp with instruments"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable at asset level",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two keyframes show a person reclined in a chair with their head draped in surgical towels, gauze, and a mask covering most of the face, while a gloved clinician wearing loupes and a headlight leans over the exposed scalp holding a small instrument. A second gloved person stands beside them also holding an instrument, in a clinical room with a rolling stool and cart visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "3cc7b5b3-008d-4296-a2eb-6bcc9f5bdd13",
+  "image_count": 1
+}

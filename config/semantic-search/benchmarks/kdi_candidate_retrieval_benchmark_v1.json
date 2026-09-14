@@ -1,0 +1,2984 @@
+{
+  "benchmark_version": "kdi_candidate_retrieval_benchmark_v1",
+  "language": "ENGLISH",
+  "gold_source": "CANONICAL_INDEX_RETRIEVAL_GOLD",
+  "splits": {
+    "dev": 90,
+    "validation": 30,
+    "blind": 30
+  },
+  "corpus_scope": "CURRENT_CANONICAL_INDEX_10_PILOT",
+  "cases": [
+    {
+      "id": "CR17-001",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 1",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-002",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 2",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-003",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 3",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-004",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 4",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-005",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 5",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-006",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 6",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-007",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 7",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-008",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 8",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-009",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 9",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-010",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 10",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-011",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 11",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-012",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 12",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-013",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 13",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-014",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 14",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-015",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 15",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-016",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 16",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-017",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 17",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-018",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 18",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-019",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 19",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-020",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 20",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-021",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 21",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-022",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 22",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-023",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 23",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-024",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 24",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-025",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 25",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-026",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 26",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-027",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 27",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-028",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 28",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-029",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 29",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-030",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 30",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-031",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 31",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-032",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 32",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-033",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 33",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-034",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 34",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-035",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 35",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-036",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 36",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-037",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 37",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-038",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 38",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-039",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 39",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-040",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 40",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-041",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 41",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-042",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 42",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-043",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 43",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-044",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 44",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-045",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 45",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-046",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 46",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-047",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 47",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-048",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 48",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-049",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 49",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-050",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 50",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-051",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 51",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-052",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 52",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-053",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 53",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-054",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 54",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-055",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 55",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-056",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 56",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-057",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 57",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-058",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 58",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-059",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 59",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-060",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 60",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-061",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 61",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-062",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 62",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-063",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 63",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-064",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 64",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-065",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 65",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-066",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 66",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-067",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 67",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-068",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 68",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-069",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 69",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-070",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 70",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-071",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 71",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-072",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 72",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-073",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 73",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-074",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 74",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-075",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 75",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-076",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 76",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-077",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 77",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-078",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 78",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-079",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 79",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-080",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 80",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-081",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 81",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-082",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 82",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-083",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 83",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-084",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 84",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-085",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 85",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-086",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 86",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-087",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 87",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-088",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 88",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-089",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 89",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-090",
+      "split": "DEV",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 90",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-091",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 91",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-092",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 92",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-093",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 93",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-094",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 94",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-095",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 95",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-096",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 96",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-097",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 97",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-098",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 98",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-099",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 99",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-100",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 100",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-101",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 101",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-102",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 102",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-103",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 103",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-104",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 104",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-105",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 105",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-106",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 106",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-107",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 107",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-108",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 108",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-109",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 109",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-110",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 110",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-111",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 111",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-112",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 112",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-113",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 113",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-114",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 114",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-115",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 115",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-116",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 116",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-117",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 117",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-118",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 118",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-119",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 119",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-120",
+      "split": "VALIDATION",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 120",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-121",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 121",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-122",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 122",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-123",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 123",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-124",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 124",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-125",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 125",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-126",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 126",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-127",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 127",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-128",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 128",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-129",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 129",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-130",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 130",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-131",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 131",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-132",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 132",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-133",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 133",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-134",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 134",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-135",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 135",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-136",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 136",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-137",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 137",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-138",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 138",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-139",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 139",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-140",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 140",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-141",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find doctor footage 141",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "CLINICIAN"
+      ]
+    },
+    {
+      "id": "CR17-142",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show frontal hairline design 142",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_EXPANDED_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE",
+        "DRAWING_HAIRLINE"
+      ]
+    },
+    {
+      "id": "CR17-143",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find M-CURE visible on screen 143",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_OCR"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-144",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find spoken no shaving 144",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_LITERAL_TRANSCRIPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-145",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show MP4 videos 145",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "EXACT_METADATA_EXTENSION_MEDIA"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-146",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find similar clinical material 146",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "FULL_TEXT_SEARCH_DOCUMENT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-147",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show graft implantation before treatment 147",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "IMPLANTING_GRAFTS",
+        "PRE_PROCEDURE"
+      ]
+    },
+    {
+      "id": "CR17-148",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Find clips with patient 148",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "STRUCTURED_CANONICAL_CONCEPT"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "PATIENT"
+      ]
+    },
+    {
+      "id": "CR17-149",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Show unknown delta resonance 149",
+      "required_retrievable_assets": [],
+      "acceptable_retrievable_assets": [],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "NO_MATCH"
+      ],
+      "no_match_expected": true,
+      "candidate_recall_target": 0,
+      "canonical_concepts": []
+    },
+    {
+      "id": "CR17-150",
+      "split": "BLIND",
+      "language": "ENGLISH",
+      "query": "Give me seven videos showing hairline 150",
+      "required_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "acceptable_retrievable_assets": [
+        "CANONICAL_INDEX_ANY_MATCH"
+      ],
+      "known_nonmatching_assets": [],
+      "expected_channels": [
+        "HYBRID_UNION"
+      ],
+      "no_match_expected": false,
+      "candidate_recall_target": 1,
+      "canonical_concepts": [
+        "FRONTAL_HAIRLINE"
+      ]
+    }
+  ],
+  "fingerprint": "580deb93af43fed99311da01e0aeeb3160046e6d25d439e4df00b4f96120a5bf"
+}

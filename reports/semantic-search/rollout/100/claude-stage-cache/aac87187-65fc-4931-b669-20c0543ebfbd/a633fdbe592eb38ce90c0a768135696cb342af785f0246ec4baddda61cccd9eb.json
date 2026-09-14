@@ -1,0 +1,178 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3479.MP4, single 10.6s scene",
+      "evidence": [
+        "filename IMG_3479.MP4",
+        "duration_seconds 10.643333",
+        "scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clip of device screen navigation",
+      "evidence": [
+        "Two keyframes show a touchscreen interface being navigated on a plastic-wrapped device console"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Home screen tap followed by settings screen with dial adjustment",
+      "evidence": [
+        "First keyframe shows a finger tapping 'Protocols' icon on a home screen labeled 'Gentle Pro'",
+        "Second keyframe shows a parameter screen with Energy/Frequency and a hand turning a physical dial"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One gloved hand/arm operating the device",
+      "evidence": [
+        "A gloved hand and forearm are visible interacting with the touchscreen and dial in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Light-skinned forearm wearing a white/beige latex glove",
+      "evidence": [
+        "Bare forearm with a white latex glove visible in both images"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No patient anatomy shown",
+      "evidence": [
+        "Only the operator's own gloved hand and forearm are visible; no patient body part is depicted"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure evidenced",
+      "evidence": [
+        "Only device menu navigation (Protocols, Energy, Frequency, Start) is shown; no procedure name appears in readable_text_detected or spoken_content"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Tapping screen icon and turning a dial",
+      "evidence": [
+        "First image shows a fingertip touching the 'Protocols' icon",
+        "Second image shows a gloved hand gripping and turning the device's control dial"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No interpersonal relationship depicted",
+      "evidence": [
+        "Only one person's hand interacting with a machine is visible; no other people present"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No clinical/anatomical findings visible",
+      "evidence": [
+        "Scene shows only a device interface and gloved hand, no skin or tissue findings"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Plain white-walled indoor room",
+      "evidence": [
+        "Flat white/light gray wall visible behind the device in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static handheld vertical shot, close on device screen",
+      "evidence": [
+        "Vertical 720x1280-oriented framing centered on the device screen in both keyframes",
+        "fps 95700/3193 indicates standard video capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device screen centered, hand entering from bottom/left",
+      "evidence": [
+        "Screen occupies the central/upper portion of frame with hand and dial at the bottom in both images"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected despite audio track",
+      "evidence": [
+        "spoken_content is an empty list",
+        "technical.audio_stream is true but no transcript provided"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "On-screen text: Gentle Pro, Zimmer Aesthetic Division, Settings, Protocols, Energy, Frequency, Mode, Continuous, Preselection, Current, Count direction, Reset, Start, Save, Back",
+      "evidence": [
+        "First keyframe shows 'Gentle Pro' and 'Zimmer AestheticDivision' text plus 'Settings' and 'Protocols' icon labels",
+        "Second keyframe shows 'Energy', 'Frequency', 'Mode', 'Continuous', 'Preselection', 'Current', 'Count direction', 'Reset', 'Start', 'Save', 'Back', and 'Continuous 10 Hz' labels"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended use not specified in supplied data",
+      "evidence": [
+        "No metadata or caption indicating marketing purpose is provided beyond the raw scene data"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operator demonstrating device interface setup",
+      "evidence": [
+        "Sequential keyframes show navigation from a home menu into a protocol/parameter screen with dial adjustment"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": [
+        "This layer is a backend indexing construct, not derivable from visual/text content directly"
+      ]
+    }
+  ],
+  "narrative": "A gloved hand interacts with a plastic-wrapped touchscreen on a white device labeled 'Gentle Pro, Zimmer Aesthetic Division,' first tapping a 'Protocols' icon on a home screen, then adjusting a dial on a settings screen showing Energy and Frequency parameters with a Start button.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "aac87187-65fc-4931-b669-20c0543ebfbd",
+  "image_count": 2
+}

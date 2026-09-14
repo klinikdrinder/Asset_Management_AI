@@ -1,0 +1,174 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_2121.MP4, scene 0",
+      "evidence": [
+        "asset_id 49ec310e-b11b-44a6-a401-20cd8598a735, filename IMG_2121.MP4, scene_index 0, 0.0-17.1s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clinical treatment clip",
+      "evidence": [
+        "17.1 second h264 video with audio stream, two representative keyframes showing consistent setting and subjects"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, two keyframes, similar setup",
+      "evidence": [
+        "scene spans 0.0 to 17.1 seconds with 2 keyframes supplied showing near-identical framing from slightly different angles"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner attending to a reclined patient",
+      "evidence": [
+        "one person in scrubs, mask, and gloves stands and operates a device",
+        "second person lies reclined with eye protection, consistent with patient/client role"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in maroon scrubs; patient with eye covering",
+      "evidence": [
+        "practitioner wears rust/maroon short-sleeve scrub top and pants, blue surgical mask, dark hair partly tied up, white gloves, smartwatch on left wrist",
+        "patient wears dark head covering and white/clear goggles-style eye protection, tan skin tone visible on face"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and forehead visible",
+      "evidence": [
+        "patient's forehead, nose, cheeks, and chin are visible in both keyframes; eyes are covered by protective eyewear"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "no readable text or spoken content names a procedure; gloves, mask, and device alone do not establish a specific named treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positions device near patient's face",
+      "evidence": [
+        "practitioner's gloved hand holds a handpiece connected to a metal articulated arm, aimed toward the patient's forehead/eye area in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner standing over reclined patient",
+      "evidence": [
+        "practitioner is positioned directly above and close to the patient's head, hands near patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "PPE and eye protection in use",
+      "evidence": [
+        "practitioner wears surgical mask and gloves",
+        "patient wears protective eyewear over closed/covered eyes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor treatment room",
+      "evidence": [
+        "plain beige wall, wall-mounted control panel/device in background, treatment bed with blue drape and white knit blanket, teal headrest cushion"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical medium shot, side angle",
+      "evidence": [
+        "portrait-oriented 720x1280-style framing",
+        "two keyframes show slightly different camera/subject angle suggesting handheld or repositioned shot"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and arm dominate upper frame",
+      "evidence": [
+        "metal articulated arm crosses top of frame",
+        "practitioner occupies left/upper portion, reclined patient fills lower right portion of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "spoken_content field is an empty array despite audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text",
+      "evidence": [
+        "readable_text_detected field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended use not indicated",
+      "evidence": [
+        "no supplied text or metadata indicates marketing, promotional, or usage context for this clip"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts an in-progress clinical facial treatment session",
+      "evidence": [
+        "visual composition of PPE-wearing practitioner operating equipment on a reclined, eye-protected patient in a treatment room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a directly observable visual layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked, gloved practitioner in maroon scrubs leans over a reclined patient, positioning a handheld device attached to an articulated support arm near the patient's face. The patient lies on a treatment bed with blue and white linens, wearing protective eyewear, in a plain indoor clinical room with a wall-mounted control panel.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "49ec310e-b11b-44a6-a401-20cd8598a735",
+  "image_count": 2
+}

@@ -1,0 +1,174 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "IMG_1947.MP4, single scene",
+      "evidence": [
+        "asset_id 95e1a93f-197e-4e2e-8339-9a1b4dffad78, filename IMG_1947.MP4, scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical close-up video of a facial procedure",
+      "evidence": [
+        "Both keyframes show a masked, goggled clinician operating a laser-type device over a reclined patient's face in a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single ~19.3s scene, two near-identical keyframes",
+      "evidence": [
+        "scene spans start_seconds 0.0 to end_seconds 19.333",
+        "keyframes_supplied: 2, both showing the same static setup with minor hand/device position differences"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One clinician, one patient",
+      "evidence": [
+        "A person in scrubs, mask, and goggles holds the device (clinician role)",
+        "A reclined person wearing a bouffant cap and eye shields is being treated (patient role)"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in coral scrubs; patient in cap and drape",
+      "evidence": [
+        "Clinician has dark hair in a bun, wears a peach/coral scrub top, surgical mask, green-tinted safety goggles, and a smartwatch",
+        "Patient has a blue bouffant cap, white oval eye shields over closed eyes, a blue drape, and a black sweater"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's periorbital/facial region visible",
+      "evidence": [
+        "Patient's face, forehead, nose, and mouth are visible; eyes are covered by white oval shields"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Named procedure not identifiable",
+      "evidence": [
+        "No procedure name appears in readable_text_detected or spoken_content",
+        "A silver handpiece/device and eye protection are visible, but instruments and physical contact alone do not establish a specific named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioning device near patient's face",
+      "evidence": [
+        "Clinician's hand steadies the patient's forehead/cap while the other hand holds the handpiece close to the patient's brow/eye area in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician treating patient in close proximity",
+      "evidence": [
+        "Clinician leans directly over the reclined patient, one hand stabilizing the patient's head, the other operating the device pointed at the patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Laser-type handpiece, eye protection on both parties",
+      "evidence": [
+        "Silver cylindrical handpiece with blue accents attached to an articulated arm",
+        "Green-tinted safety goggles on clinician; white oval eye shields on patient"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "Plain beige wall, a wall-mounted light switch/panel, and a treatment chair/headrest with blue disposable coverings"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up, static framing",
+      "evidence": [
+        "1280x720 frame presented in vertical/portrait crop, tight close-up on faces and device across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Centered subjects, device dominates upper frame",
+      "evidence": [
+        "Patient's face centered lower frame, clinician's face and the device occupy upper/center frame in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "audio_stream is true but spoken_content list is empty"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected list is empty"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "No supplied text or visual branding/captions indicate promotional use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical laser device treatment scene",
+      "evidence": [
+        "Consistent visual narrative across both keyframes of a masked, goggled clinician applying a device near a protected patient's face in a treatment room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A clinician in coral scrubs, a surgical mask, and green-tinted safety goggles holds a silver laser handpiece connected to an overhead articulated arm above a reclined patient's face. The patient wears a blue bouffant cap, white oval eye shields, and a blue drape, with a light switch on a plain wall visible behind them.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "95e1a93f-197e-4e2e-8339-9a1b4dffad78",
+  "image_count": 2
+}

@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2936.MP4",
+      "evidence": [
+        "filename IMG_2936.MP4, duration 10.6s, 1280x720, h264, asset_id 7cadaea8-b55f-41f2-878d-82ae1013a197"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical room video",
+      "evidence": [
+        "1 canonical scene, 2 keyframes sampled showing consistent indoor clinical setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across the clip",
+      "evidence": [
+        "canonical_scenes: 1 with two near-identical keyframes indicating a static continuous shot"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles of gowned individuals not determinable",
+      "evidence": [
+        "Per-scene result lists PEOPLE_ROLES as UNKNOWN; gowned attire alone does not identify specific roles"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue surgical cap, gown, and headlamp device worn",
+      "evidence": [
+        "Person facing away wears a blue patterned surgical cap, blue gown, ear tube/earpiece, and a gray headlamp/loupe apparatus strapped to the head"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp/head area visible under drape",
+      "evidence": [
+        "A draped head with visible scalp area is shown under bright light in the background of the frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed",
+      "evidence": [
+        "Gloves, instruments, and scalp contact are visible but no procedure name is present in supplied text, so this remains unconfirmed per instructions"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person standing near a draped patient under light",
+      "evidence": [
+        "Figures stand near a head draped in surgical fabric with an instrument visible near it under bright illumination"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Relationship between figures not determinable",
+      "evidence": [
+        "Per-scene result lists RELATIONSHIPS as UNKNOWN; spatial proximity alone does not establish role relationships"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Draped head under bright light with visible instrument",
+      "evidence": [
+        "A pink/draped scalp area is illuminated with an instrument visible near it in the background of the frame"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical room with tiled wall",
+      "evidence": [
+        "Patterned beige tile wall, white door with red accent strip, and a wall-mounted outlet/device are visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld vertical shot from behind subject",
+      "evidence": [
+        "Vertical 720p framing captured from behind the standing person, angled toward the lit procedure area"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject fills left/foreground, activity in background right",
+      "evidence": [
+        "The gowned person occupies the majority of the frame in the foreground while the draped head and second gowned person appear smaller in the background"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, but transcript_state is NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Per-scene result lists MARKETING_CONTENT_USAGE as UNKNOWN; no supplied text indicates intended usage"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Behind-the-scenes clinical room footage",
+      "evidence": [
+        "Consistent visual narrative of a gowned figure in a clinical room near a draped, illuminated head across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this content type",
+      "evidence": [
+        "Per-scene result lists SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "Two near-identical keyframes show a person filmed from behind wearing a blue surgical cap, a headlamp/loupe device, and a blue gown, standing beside another gowned individual near a person whose head is draped in surgical fabric under bright light. The setting is an indoor clinical room with a patterned tile wall and a partially visible door.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "7cadaea8-b55f-41f2-878d-82ae1013a197",
+  "image_count": 1
+}

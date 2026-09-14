@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0551.MP4, 6.9s clip",
+      "evidence": [
+        "filename IMG_0551.MP4, duration 6.906667s, codec h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context beyond single scene unclear",
+      "evidence": [
+        "Only one canonical scene with limited context provided"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene of laser application",
+      "evidence": [
+        "canonical_scenes: 1, scene_index 0 shows continuous procedure moment"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles not explicitly confirmed",
+      "evidence": [
+        "Scene-level PEOPLE_ROLES marked UNKNOWN despite visual cues of clinician and patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs, goggles, mask, gloves; patient covered with purple towel",
+      "evidence": [
+        "Image shows person with dark hair bun, tinted safety glasses, surgical mask, teal scrub top, white gloves, smartwatch; patient's face visible under purple towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's facial area including nose, cheek, eye region visible",
+      "evidence": [
+        "Laser spot visible on patient's cheek/nose near eye, face reclined and exposed"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not named",
+      "evidence": [
+        "No text names a specific clinical procedure; only a laser device and handpiece are visible"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician directs laser handpiece toward patient's face",
+      "evidence": [
+        "Handheld device with orange cable emitting yellow-green light spot on patient's face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Relationship between clinician and patient not detailed",
+      "evidence": [
+        "Scene-level RELATIONSHIPS marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Bright laser spot and reflective skin surface visible",
+      "evidence": [
+        "Yellow-green light spot on patient's cheek/nose; skin appears shiny/wet under light"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting only partially discernible",
+      "evidence": [
+        "Plain white wall background, small cart with items visible but no further identifying environment details"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Camera technique not clearly determinable",
+      "evidence": [
+        "Scene-level CINEMATOGRAPHY marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical frame centers clinician and patient close-up",
+      "evidence": [
+        "Portrait 720x1280 orientation, clinician positioned above reclining patient, laser spot centrally lit"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No visible text found",
+      "evidence": [
+        "OCR_VISIBLE_TEXT marked FALSE in scene results despite 2 OCR observations logged"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose unclear",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable for this evaluation",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A clinician wearing teal scrubs, a mask, protective goggles, and gloves operates a handheld laser device connected by an orange cable, directing a bright yellow-green laser spot onto the face of a reclining patient covered with a purple towel. The setting appears to be a treatment room with a white wall background and a nearby cart holding additional items.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "fd3b8667-8020-4ebb-bce3-beb2e770830c",
+  "image_count": 1
+}

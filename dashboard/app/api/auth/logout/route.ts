@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { FIREBASE_CSRF_COOKIE, FIREBASE_SESSION_COOKIE } from "../../../lib/firebase/session";
 import { FIREBASE_SUPABASE_TOKEN_COOKIE } from "../../../lib/library/authenticated-token";
+import { createRouteClient } from "../../../lib/supabase/route-client";
 
 export const runtime = "nodejs";
 
@@ -11,6 +12,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ status: "denied" }, { status: 403 });
   }
   const response = NextResponse.json({ status: "signed_out" });
+  await createRouteClient(request, response).auth.signOut({ scope: "local" });
   response.cookies.delete(FIREBASE_SESSION_COOKIE);
   response.cookies.delete(FIREBASE_CSRF_COOKIE);
   response.cookies.delete(FIREBASE_SUPABASE_TOKEN_COOKIE);

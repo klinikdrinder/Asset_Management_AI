@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "winner": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+  "candidates": {
+    "500M": {
+      "tested": true,
+      "recall": "4/5",
+      "clinical_false_positives": 0,
+      "load_seconds": 12.0,
+      "canary_inference_seconds": 351.7,
+      "cpu_viable": true
+    },
+    "2.2B": {
+      "tested": false,
+      "reason": "not required after 500M pass"
+    }
+  },
+  "selection_rule": "smallest passing approved model"
+}

@@ -23,6 +23,34 @@ export function countSourceFolderFiles(folderId:string){return isUuid(folderId)?
 export async function listFiles(input:Record<string,string|undefined>={}){if(!await getPreviewRole())return(await import("./lib/library/live-provider")).listFiles(input);const folder=input.folder;if(folder&&!isUuid(folder))return{data:null,error:null};return listFileQuery(input,folder||null)}
 async function listFileQuery(input:Record<string,string|undefined>,folderId:string|null){return safe(async()=>{const p=parseFileParams(input),filters:string[]=[];if(folderId)filters.push(`source_folder_id=eq.${folderId}`);if(p.query){const q=encodeURIComponent(`*${p.query.replace(/[*,()]/g,"")}*`);filters.push(`or=(file_name.ilike.${q},relative_path.ilike.${q})`)}if(p.extension)filters.push(`file_extension=eq.${encodeURIComponent(p.extension)}`);if(p.decision)filters.push(`decision=eq.${p.decision}`);if(p.status)filters.push(`processing_status=eq.${p.status}`);if(p.type){const t:Record<string,string>={image:"mime_type=like.image/*",video:"mime_type=like.video/*",document:"or=(file_extension.in.(pdf,pptx),mime_type.ilike.*pdf*,mime_type.ilike.*presentation*)",other:"and=(mime_type=not.like.image/*,mime_type=not.like.video/*,file_extension=not.in.(pdf,pptx))"};filters.push(t[p.type])}const offset=(p.page-1)*p.pageSize,r=await rest(`source_files?select=${select}${filters.length?`&${filters.join("&")}`:""}&order=${p.sort}.${p.direction}.nullslast&offset=${offset}&limit=${p.pageSize}`,{headers:{Prefer:"count=exact"}}),raw=await r.json() as Record<string,unknown>[];return{rows:raw.map(mapFile),total:Number((r.headers.get("content-range")||"").split("/")[1]||0),params:p}})}
 export async function getFileById(fileId:string){if(!isUuid(fileId))return{data:null,error:null};if(!await getPreviewRole())return(await import("./lib/library/live-provider")).getFileById(fileId);return safe(async()=>{const x=(await rows<Record<string,unknown>>(`source_files?select=${select}&id=eq.${fileId}&limit=1`))[0];return x?mapFile(x):null})}
+// ---- Asset semantic detail (18-layer evidence + scene timeline) -----------
+export type SemanticEvidenceItem={state:string;confidence:number|null;code:string|null;text:string|null;sceneId:string|null;searchCritical:boolean};
+export type SemanticLayerGroup={layerId:string;label:string;items:SemanticEvidenceItem[]};
+export type AssetSceneRow={index:number;start:number|null;end:number|null;description:string|null};
+export type AssetSemanticDetail={layers:SemanticLayerGroup[];scenes:AssetSceneRow[]};
+const LAYER_ORDER=["ASSET_IDENTITY_PROVENANCE","GLOBAL_ASSET_UNDERSTANDING","TEMPORAL_SCENE_STRUCTURE","PEOPLE_ROLES","PERSON_APPEARANCE","ANATOMY","TREATMENT_PROCEDURE","ACTIONS_EVENTS","RELATIONSHIPS","CLINICAL_VISUAL_OBSERVATIONS","ENVIRONMENT","CINEMATOGRAPHY","COMPOSITION","SPEECH_TRANSCRIPT_AUDIO","OCR_VISIBLE_TEXT","MARKETING_CONTENT_USAGE","SEMANTIC_NARRATIVE","SEARCH_EMBEDDINGS"];
+const prettyLayer=(id:string)=>id.toLowerCase().replace(/_/g," ").replace(/\b\w/g,c=>c.toUpperCase());
+// Loads an asset's active assertions grouped into the canonical 18 layers, plus its scenes for the
+// video timeline. Reads only AI-derived semantic fields (state/confidence/value_text/scene) - never
+// source_files.relative_path (patient-name path). RLS on semantic_assertions/asset_scenes gates rows
+// to what the viewer may see; the page itself is requireProtectedPage-gated.
+export async function getAssetSemanticDetail(assetId:string|null):Promise<Result<AssetSemanticDetail>>{
+  if(!assetId||!isUuid(assetId))return{data:{layers:[],scenes:[]},error:null};
+  if(await getPreviewRole())return{data:{layers:[],scenes:[]},error:null};
+  return safe(async()=>{
+    const [assertions,scenes]=await Promise.all([
+      rows<Record<string,unknown>>(`semantic_assertions?select=layer_id,canonical_concept_code,semantic_state,confidence,value_text,scene_id,search_critical&asset_id=eq.${assetId}&active=is.true&superseded_by=is.null&limit=2000`),
+      rows<Record<string,unknown>>(`asset_scenes?select=scene_index,start_seconds,end_seconds,short_description,literal_description&asset_id=eq.${assetId}&order=scene_index.asc&limit=500`),
+    ]);
+    const byLayer=new Map<string,SemanticEvidenceItem[]>();
+    for(const a of assertions){const layer=String(a.layer_id||"");if(!layer)continue;const code=a.canonical_concept_code==null?null:String(a.canonical_concept_code);let arr=byLayer.get(layer);if(!arr){arr=[];byLayer.set(layer,arr);}arr.push({state:String(a.semantic_state||"UNKNOWN"),confidence:a.confidence==null?null:Number(a.confidence),code:code&&code!==layer?code:null,text:a.value_text==null?null:String(a.value_text),sceneId:a.scene_id==null?null:String(a.scene_id),searchCritical:Boolean(a.search_critical)});}
+    const ordered=[...LAYER_ORDER,...[...byLayer.keys()].filter(l=>!LAYER_ORDER.includes(l))];
+    const layers=ordered.filter(l=>byLayer.has(l)).map(l=>({layerId:l,label:prettyLayer(l),items:byLayer.get(l)!}));
+    const sceneRows=scenes.map(sc=>({index:n(sc.scene_index),start:sc.start_seconds==null?null:Number(sc.start_seconds),end:sc.end_seconds==null?null:Number(sc.end_seconds),description:s(sc.short_description)||s(sc.literal_description)}));
+    return{layers,scenes:sceneRows};
+  });
+}
+
 // Canonical Drive-media resolution (thumbnail/preview/download) lives in
 // media-service.ts -> lib/media/resolve-location.ts, not here - it always
 // resolves an asset's verified destination directly rather than by

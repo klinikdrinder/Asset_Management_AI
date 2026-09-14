@@ -1,0 +1,185 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_4105.MP4, 3.8s clip of a medical monitor",
+      "evidence": [
+        "filename IMG_4105.MP4",
+        "duration_seconds 3.833333",
+        "single canonical scene and keyframe"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clip of a COMEN NC3 patient monitor on a stand",
+      "evidence": [
+        "monitor labeled COMEN and NC3 visible on screen bezel",
+        "single scene depicting device on stand"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, no cuts",
+      "evidence": [
+        "canonical_scenes: 1",
+        "canonical_keyframes: 1"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Reflected figure's role cannot be determined",
+      "evidence": [
+        "faint reflection of a person wearing surgical cap and mask on screen",
+        "no identifying role information available"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Person's appearance obscured by reflection distortion",
+      "evidence": [
+        "reflection shows only cap, mask outline, blurred features"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No anatomy depicted",
+      "evidence": [
+        "scene shows only a medical monitor device and reflected figure"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure evident",
+      "evidence": [
+        "only a monitor display with vital signs shown",
+        "no procedure name present in image or text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clear action being performed",
+      "evidence": [
+        "static shot of monitor with no visible movement or event captured"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Relationship between reflected person and monitor unclear",
+      "evidence": [
+        "reflection appears on screen but context of interaction not shown"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "SpO2 reads 100%, NIBP and Temp show dashes",
+      "evidence": [
+        "SpO2 100 displayed",
+        "NIBP (--) and Temp -- shown on screen"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Plain wall backdrop with blue table covering",
+      "evidence": [
+        "white/gray wall visible behind monitor",
+        "blue fabric covering table beneath stand"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static close-up shot of monitor screen",
+      "evidence": [
+        "fixed framing centered on monitor display",
+        "single keyframe indicating minimal camera movement"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Monitor centered vertically in frame",
+      "evidence": [
+        "device occupies central vertical axis of image",
+        "background kept plain to emphasize monitor"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected in audio",
+      "evidence": [
+        "transcript_state: NO_SPEECH",
+        "audio_stream_present true but no spoken content"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "On-screen text: COMEN, NC3, NIBP, SpO2, Temp, PR bpm",
+      "evidence": [
+        "ocr_observations: 8",
+        "visible labels COMEN, NC3, NIBP, SpO2, Temp on device screen and bezel"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Purpose of clip unclear",
+      "evidence": [
+        "no marketing text or branding context beyond device manufacturer name"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts a patient monitor showing normal SpO2 reading",
+      "evidence": [
+        "SpO2 100% displayed",
+        "device labeled as patient monitor (NIBP, SpO2, Temp fields)"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Medical monitor, COMEN NC3, vital signs display",
+      "evidence": [
+        "device brand and model visible",
+        "vital sign parameters SpO2, NIBP, Temp shown on screen"
+      ]
+    }
+  ],
+  "narrative": "A COMEN patient monitor (model NC3) is mounted on a stand, displaying a SpO2 reading of 100% while NIBP and Temp fields show dashes indicating no active data. The screen's glossy surface reflects a faint image of a person wearing a surgical cap and mask, with a blue table cover and plain wall visible in the background.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "7db917d1-13f9-4540-a835-9b9a7c2c2842",
+  "image_count": 1
+}

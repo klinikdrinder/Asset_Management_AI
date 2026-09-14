@@ -1,0 +1,184 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0474.MP4, 19.9s, 1280x720",
+      "evidence": [
+        "filename IMG_0474.MP4",
+        "duration_seconds 19.9",
+        "width 1280, height 720, fps 30/1"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene of a marking activity near a patient's hairline",
+      "evidence": [
+        "scene_index 0 spans 0.0 to 19.9 seconds",
+        "two keyframes show consistent setting and pose across the scene"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, two keyframes showing sequential hand/pencil positions",
+      "evidence": [
+        "keyframes_supplied: 2",
+        "first frame shows pencil near forehead/hairline from the side, second frame shows pencil marking closer to the hairline from above"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A reclined individual and a second person performing a hands-on task",
+      "evidence": [
+        "a person lies with eyes closed wearing a surgical cap and towel drape",
+        "a second person's hands hold a pencil-like tool and steady the cap"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined person has dark hair, eyes closed, wearing teal surgical cap and blue towel",
+      "evidence": [
+        "dark hair visible under the teal surgical cap",
+        "eyes closed in both frames",
+        "blue towel draped over shoulders/chest"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forehead, hairline, face, and ear visible",
+      "evidence": [
+        "forehead and hairline area shown in both frames",
+        "nose, lips, cheek, and ear visible in the frames"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure indicated by supplied text",
+      "evidence": [
+        "readable_text_detected is empty and spoken_content is empty",
+        "a hand marks the forehead/hairline with a pencil-like tool but no procedure name is present in the supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A hand draws/marks on the forehead near the hairline",
+      "evidence": [
+        "pencil-like tool held against forehead in frame 1",
+        "pencil tip touching skin near hairline with cap held back in frame 2"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One person performs a task directly on the reclined individual",
+      "evidence": [
+        "second person's hands are in direct contact with the reclined person's forehead and cap"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Pencil markings near hairline, small skin marks visible on forehead",
+      "evidence": [
+        "dark pencil lines/dots visible on the forehead near the hairline in frame 2",
+        "small blemishes or marks visible on forehead skin in both frames"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical-looking setting with white wall and blue linens",
+      "evidence": [
+        "white wall and wall outlet visible in background",
+        "blue pillow/headrest and blue towel drape visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style vertical framing on the face and hands",
+      "evidence": [
+        "vertical aspect framing tightly cropped on face, hand, and forehead",
+        "close-up perspective consistent across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face and marking hand centered, diagonal arm crossing the frame",
+      "evidence": [
+        "forearm cuts diagonally across the frame in both images",
+        "face positioned in lower portion of frame with hands/tool upper portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators supplied",
+      "evidence": [
+        "no text overlays, branding, or promotional captions present in readable_text_detected or spoken_content"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Pre-procedure marking scene at hairline",
+      "evidence": [
+        "reclined person with cap and drape suggests a prepared clinical setting",
+        "pencil marking near hairline indicates a planning or marking step"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a distinct observable content layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person lies reclined with eyes closed, wearing a blue surgical cap and covered with a blue towel, while another individual's hand marks or draws on their forehead with a dark pencil-like tool. The second person's other hand steadies the cap near the hairline as the marking is done close to the frontal hairline area.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "43813de6-2037-4ccc-bda9-96d8e491d8f1",
+  "image_count": 2
+}

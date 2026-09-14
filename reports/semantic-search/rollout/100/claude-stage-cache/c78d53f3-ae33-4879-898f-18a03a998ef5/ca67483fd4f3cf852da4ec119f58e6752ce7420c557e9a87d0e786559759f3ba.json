@@ -1,0 +1,174 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 clip, IMG_0538.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_0538.MP4, duration 16.7s, 1280x720, h264, one canonical scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical treatment room clip",
+      "evidence": [
+        "Keyframes show a single continuous indoor clinical scene with a clinician treating a reclined person"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, scene_results lists a single scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "One figure in teal scrubs, gloves, and protective glasses holding a device near a second reclined figure wearing a hair net and eye shields"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Teal scrub top, orange-lens glasses; patient in hair net, metal eye shields, striped garment under towel",
+      "evidence": [
+        "Image shows clinician's teal scrub top with visible partial text/logo and orange-tinted goggles",
+        "Patient wears a blue hair net, round metal eye coverings, and a yellow-striped garment under a purple towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face/cheek and jaw area visible",
+      "evidence": [
+        "Patient's face, cheek, jaw, and neck are visible and exposed near the handpiece tip"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in evidence",
+      "evidence": [
+        "Per-scene layer result lists TREATMENT_PROCEDURE as UNKNOWN",
+        "Handpiece with green light and gloved contact are visible but no named procedure appears in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds handpiece to patient's cheek",
+      "evidence": [
+        "Image shows gloved hand holding an orange-corded device with a glowing green tip against the patient's cheek/jaw"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned over reclined patient",
+      "evidence": [
+        "Clinician leans over the reclined patient, hand and device in direct contact with patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Skin appears moist/glossy with a green light applied",
+      "evidence": [
+        "Patient's facial skin appears glossy/wet under a green glowing light at the device tip"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room type not confirmed",
+      "evidence": [
+        "Per-scene layer result lists ENVIRONMENT as UNKNOWN despite a plain wall and medical tray being visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-range handheld-style framing",
+      "evidence": [
+        "Image is a vertical 720-width frame tightly framing the clinician and patient's upper body/face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and patient fill frame, tray at right",
+      "evidence": [
+        "Clinician and patient occupy the left/center of frame with an instrument tray positioned at right against the wall"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Audio present but no meaningful speech identified",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH; audio_state: AUDIO_PRESENT"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text visible on clinician's scrub top",
+      "evidence": [
+        "ocr_evaluated true with 4 ocr_observations",
+        "Partial lettering visible on the teal scrub top near the shoulder in the image"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing intent confirmed",
+      "evidence": [
+        "Per-scene layer result lists MARKETING_CONTENT_USAGE as UNKNOWN; no supplied text indicates promotional use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not established",
+      "evidence": [
+        "Per-scene layer result lists SEMANTIC_NARRATIVE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a descriptive visual layer",
+      "evidence": [
+        "Per-scene layer result lists SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person reclines with protective eyewear, a hair net, and a draped towel while a clinician in teal scrubs and orange-tinted protective glasses holds a handpiece emitting a green light near the person's cheek/jaw area. A rolling tray holding a case, eyewear, small dishes, and a container sits beside the chair against a plain wall with a red accent strip.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "c78d53f3-ae33-4879-898f-18a03a998ef5",
+  "image_count": 1
+}

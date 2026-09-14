@@ -1,0 +1,18 @@
+{
+  "gold_standard_version": "kdi_gold_pilot_v1",
+  "review_workflow_version": "kdi_human_gold_review_v1",
+  "semantic_spec_version": "semantic_index_v1",
+  "pilot_manifest_version": "kdi_semantic_pilot_v1",
+  "decision_states": ["APPROVE_AS_IS", "CORRECT", "REJECT", "CONFIRM_UNKNOWN", "NOT_APPLICABLE"],
+  "canonical_semantic_states": ["OBSERVED", "FALSE", "UNKNOWN", "NOT_APPLICABLE"],
+  "asset_review_states": ["AWAITING_HUMAN_REVIEW", "IN_REVIEW", "READY_TO_SIGN_OFF", "SIGNED_OFF"],
+  "reviewer_label_default": "KDI_REVIEWER_01",
+  "required_layer_decisions": 18,
+  "correction_reason_required": true,
+  "p0_p1_resolution_required": true,
+  "explicit_signoff_required": true,
+  "append_only_history": true,
+  "gold_precedence": ["HUMAN_GOLD_OVERRIDE", "APPROVED_AI_SEMANTIC_FACT", "UNVERIFIED_AI_FACT", "LEGACY_SEARCH_DOCUMENT"],
+  "production_database_writes": false,
+  "database_migrations": false
+}

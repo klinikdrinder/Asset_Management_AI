@@ -1,0 +1,188 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2147.MP4",
+      "evidence": [
+        "filename \"IMG_2147.MP4\"",
+        "asset_id 1d71d5de-07e5-4666-9023-05d97e7cb194 supplied in metadata"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clip of staff member operating a device",
+      "evidence": [
+        "single 10.5-second scene",
+        "two keyframes show a person interacting with a touchscreen-equipped machine"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene, 0.0s-10.5s",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 10.5",
+        "two supplied keyframes show near-identical framing/pose, indicating a continuous static moment"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One clinical staff member present",
+      "evidence": [
+        "person wearing scrub-style top/pants and a surgical mask",
+        "standing at and operating a clinical device console"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Pink scrubs, mask, glasses, hair bun",
+      "evidence": [
+        "rust/pink colored short-sleeve scrub top and matching pants",
+        "light blue surgical mask covering nose and mouth",
+        "dark hair pulled into a bun with a scrunchie",
+        "glasses visible on face",
+        "watch on left wrist"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operator's hand and arm visible only",
+      "evidence": [
+        "person's forearm and index finger extended to touch the device screen",
+        "no separate patient or treatment-area anatomy is visible in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "no patient is visible on a treatment surface",
+        "device and handpiece are present but no procedure name appears in supplied text or on-screen"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person pressing device touchscreen",
+      "evidence": [
+        "index finger extended and touching one of the two screens on the console in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operator interacting with the machine",
+      "evidence": [
+        "person positioned directly in front of and facing the console, hand in contact with its screen"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clinical findings visible",
+      "evidence": [
+        "no patient skin, wound, or treatment site is shown in either keyframe",
+        "only device screens with indistinct blue-toned imagery are visible"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Plain clinical treatment room",
+      "evidence": [
+        "beige/cream wall",
+        "plain door visible in background",
+        "medical device on wheels with hoses and hanging chart holder"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static vertical side-angle shot",
+      "evidence": [
+        "vertical (portrait) 1280x720-derived framing typical of phone video",
+        "camera positioned to the side, capturing subject's profile",
+        "near-identical composition across both keyframes suggesting minimal camera movement"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject and device fill frame, right of center",
+      "evidence": [
+        "person occupies left-to-center frame in profile",
+        "device occupies right portion of frame with screens roughly at eye level of subject"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "spoken_content supplied as empty list",
+        "audio_stream present but no transcribed speech provided"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "\"SYLFIRM X\" and \"ULTIMATE EDITION\" visible on device",
+      "evidence": [
+        "text \"SYLFIRM X\" printed on top of the console in both keyframes",
+        "text \"ULTIMATE EDITION\" printed on the lower band of the device"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended usage not determinable",
+      "evidence": [
+        "no overlays, captions, or promotional graphics present in the keyframes",
+        "readable_text_detected list supplied as empty"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member preparing/operating aesthetic device",
+      "evidence": [
+        "masked staff member actively pressing controls on a named device console in a treatment room setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked person in pink/rust scrubs stands beside a machine labeled \"SYLFIRM X\" \"ULTIMATE EDITION\", touching one of its touchscreen panels with an index finger. The device has a handpiece, a coiled hose, and a hanging folder or tablet attached, and the two keyframes show the same setup and pose in a plain, beige-walled room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "1d71d5de-07e5-4666-9023-05d97e7cb194",
+  "image_count": 2
+}

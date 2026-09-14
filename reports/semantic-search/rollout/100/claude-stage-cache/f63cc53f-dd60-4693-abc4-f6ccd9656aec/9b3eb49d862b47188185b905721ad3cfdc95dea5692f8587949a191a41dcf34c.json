@@ -1,0 +1,182 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0555.MP4, 8.9s, 1280x720",
+      "evidence": [
+        "technical metadata: filename IMG_0555.MP4, duration 8.9s, resolution 1280x720, h264 codec"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical/aesthetic procedure video",
+      "evidence": [
+        "one canonical scene depicting a practitioner performing a facial treatment on a reclined patient"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, 8.9 seconds",
+      "evidence": [
+        "canonical_scenes: 1",
+        "two keyframes sampled from the same continuous action"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner treating a reclined patient",
+      "evidence": [
+        "person in teal scrubs with gloves and instrument acting as practitioner",
+        "reclined person with eye shields acting as patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner: dark hair, tinted safety glasses, mask, teal scrubs; Patient: older male, glasses, metal eye shields",
+      "evidence": [
+        "visible dark hair and tinted glasses on practitioner",
+        "visible mustache/glasses on reclined male patient"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial region including forehead, cheek, nose visible",
+      "evidence": [
+        "patient's face, forehead and cheek area shown under treatment"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not identifiable from evidence",
+      "evidence": [
+        "handheld device and gloves visible but no named procedure text provided",
+        "per-scene TREATMENT_PROCEDURE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner applies handheld device near patient's face",
+      "evidence": [
+        "hand holding a corded instrument near forehead",
+        "yellow light visible at device tip"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner-patient interaction during treatment",
+      "evidence": [
+        "practitioner leaning over reclined patient performing an action on the face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Wet, glistening skin on patient's face under light",
+      "evidence": [
+        "skin appears shiny/wet near forehead and cheek in image",
+        "bright yellow light visible on skin surface"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "plain light-colored background with no distinguishing clinical signage",
+        "per-scene ENVIRONMENT marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing on patient's face",
+      "evidence": [
+        "tight vertical framing centered on face and practitioner's hands"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned above, patient reclined below in frame",
+      "evidence": [
+        "practitioner occupies upper portion of frame",
+        "patient's face fills lower-center of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio stream",
+      "evidence": [
+        "audio_stream_present true but transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text 'DR LEW KAR' visible on scrub top",
+      "evidence": [
+        "partial text 'DR LEW KAR' printed on teal scrub garment",
+        "ocr_observations count of 5"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not confirmed",
+      "evidence": [
+        "no branding overlay or promotional caption visible",
+        "per-scene MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose unclear",
+      "evidence": [
+        "per-scene SEMANTIC_NARRATIVE marked UNKNOWN",
+        "no contextual captions or explanation provided"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this asset type",
+      "evidence": [
+        "per-scene SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A practitioner in teal scrubs, protective eyewear, and a surgical mask holds a handheld laser device near the face of a reclined male patient who wears metal eye shields for protection. The patient's skin appears wet and glistening under a bright light, with a blue drape and purple towel visible around him.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "f63cc53f-dd60-4693-abc4-f6ccd9656aec",
+  "image_count": 1
+}

@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-08-25T01:47:14.687Z",
+  "rls": "PASS",
+  "authorized": {
+    "rows": 106,
+    "families": 8
+  },
+  "unauthorized": {
+    "rows": 0,
+    "families": 0
+  },
+  "unauthorized_vector_exposure": 0,
+  "normal_client_write_denied": true,
+  "write_test": {
+    "denied": true,
+    "status": 400,
+    "detail": "{\"message\":\"Failed to run sql query: ERROR:  42501: permission denied for table semantic_embeddings\\nHINT:  Grant the required privileges to the current role with: GRANT INSERT ON public.semantic_embeddings TO authenticated;\\n\"}"
+  }
+}

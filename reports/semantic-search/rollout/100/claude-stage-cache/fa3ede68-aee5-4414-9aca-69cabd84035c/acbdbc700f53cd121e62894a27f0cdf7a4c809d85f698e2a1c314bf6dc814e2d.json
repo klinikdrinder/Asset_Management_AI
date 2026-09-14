@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two keyframes from scene 0 of IMG_0971.MP4",
+      "evidence": [
+        "Supplied metadata identifies asset fa3ede68-aee5-4414-9aca-69cabd84035c, filename IMG_0971.MP4, scene index 0, and two representative keyframes."
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial treatment scene using a handheld device",
+      "evidence": [
+        "Both keyframes show a reclining person and a gloved practitioner applying a handheld device to the forehead or brow area."
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One 88.9-second scene represented by two moments",
+      "evidence": [
+        "Metadata specifies scene 0 from 0.0 to 88.9 seconds with two supplied keyframes.",
+        "The device appears in slightly different positions across the two keyframes."
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining client and gloved practitioner",
+      "evidence": [
+        "One person lies on the bed receiving contact from a device held by another person's gloved hands."
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Client wears a black headband and pearl-like stud earrings",
+      "evidence": [
+        "The reclining person has closed eyes, dark hair held by a black headband, a black garment, and round light-colored stud earrings."
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, forehead, brow, nose, lips, chin, ear, and neck visible",
+      "evidence": [
+        "The close views clearly show the reclining person's face and adjacent head and neck regions."
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Exact procedure is not established",
+      "evidence": [
+        "A handheld device contacts the forehead and brow area, but the supplied text does not name a procedure."
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner presses and repositions device on forehead",
+      "evidence": [
+        "The gloved practitioner holds the device against the upper face in both keyframes, with a changed placement between frames."
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner provides hands-on care to client",
+      "evidence": [
+        "The practitioner's gloved hands control the device while the other person reclines with eyes closed."
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Eyes closed; clear gel present; no visible bleeding",
+      "evidence": [
+        "The client's eyes are closed in both frames, clear gel is visible around the nose, upper lip, and chin, and no blood is visible."
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor treatment setting with blue bed covering",
+      "evidence": [
+        "The person lies on a padded surface covered in bright blue material beside treatment equipment."
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up with steady treatment-focused framing",
+      "evidence": [
+        "Both portrait-oriented keyframes tightly frame the client's head, upper torso, gloved hands, and device."
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face centered with device entering from above",
+      "evidence": [
+        "The reclining face occupies the center and lower-right area while the device and hands dominate the upper portion."
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content supplied",
+      "evidence": [
+        "Supplied metadata lists an audio stream but provides an empty spoken_content array."
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device markings include ULTRAFORMER and M2",
+      "evidence": [
+        "The second keyframe visibly shows the labels \u201cULTRAFORMER\u201d and \u201cM2\u201d on the handheld device."
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended promotional use cannot be determined",
+      "evidence": [
+        "The keyframes document a treatment interaction but provide no explicit call to action, campaign context, or stated publishing purpose."
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A calm client receives device-based facial care",
+      "evidence": [
+        "Across both keyframes, the client remains reclined with eyes closed while a practitioner works over the forehead."
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial care, handheld device, forehead, gloved practitioner, treatment bed",
+      "evidence": [
+        "These concepts are directly grounded in the visible people, equipment, body region, and setting."
+      ]
+    }
+  ],
+  "narrative": "Two keyframes show a person lying on a blue-covered treatment bed with eyes closed while a gloved practitioner holds a handheld device against the forehead and brow area. Clear gel is visible on parts of the face, and the device is repositioned between the two views.",
+  "provider": "codex_cli",
+  "model": "codex-default",
+  "asset_id": "fa3ede68-aee5-4414-9aca-69cabd84035c",
+  "image_count": 2
+}

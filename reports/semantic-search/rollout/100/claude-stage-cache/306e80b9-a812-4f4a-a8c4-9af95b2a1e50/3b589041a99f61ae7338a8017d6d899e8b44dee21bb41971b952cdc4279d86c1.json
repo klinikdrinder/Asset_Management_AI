@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video asset, single scene",
+      "evidence": [
+        "filename IMG_2982.MP4, duration 16.38s, 1280x720 h264 with audio stream, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene close-up clinical setting clip",
+      "evidence": [
+        "scene_results shows one scene covering the full asset with consistent clinical imagery"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, 2 keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined patient and a gloved attendant",
+      "evidence": [
+        "person lying on table with head tilted back",
+        "gloved hand holding gauze near the person's skin, gowned figure standing in background"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined person, eyes closed, relaxed expression",
+      "evidence": [
+        "face visible with closed eyes and relaxed expression, head tilted back, dark hair visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Neck, lower jaw, and upper chest/collarbone area",
+      "evidence": [
+        "visible chin, neck, and upper chest/collarbone region exposed above a blue drape"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure evidenced",
+      "evidence": [
+        "only gloves, gauze, and skin contact are visible; no named procedure appears in supplied text, so per rules this remains UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gauze dabbing/wiping motion near stained skin",
+      "evidence": [
+        "a gloved hand holds white gauze near the stained skin, appearing to wipe or dab the area per scene narrative"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Attendant positioned over reclined patient",
+      "evidence": [
+        "gowned individual stands above/behind the reclined person's head, gloved hand working near the patient's neck/chest"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Brownish-orange antiseptic-like skin staining",
+      "evidence": [
+        "patch of brownish-orange staining visible on lower neck/upper chest near collarbone consistent with antiseptic prep"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room setting",
+      "evidence": [
+        "medical table, blue sterile drape, gowned figure, plain wall background visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld/static angled shot",
+      "evidence": [
+        "vertical close-up framing angled across the reclined person's neck and chest"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Diagonal framing centered on neck/chest area",
+      "evidence": [
+        "subject's face and neck occupy upper-left, stained skin and drape fill lower frame in diagonal composition"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context indicated",
+      "evidence": [
+        "no supplied text or visual overlay indicates marketing use; scene-level flagged UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical skin-prep moment on reclined patient",
+      "evidence": [
+        "overall scene depicts a reclined patient with stained skin being attended to by a gloved individual with gauze"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual layer for this medium",
+      "evidence": [
+        "scene-level result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person lies reclined on a medical table with head tilted back and eyes closed, exposing the lower neck and upper chest where a patch of brownish-orange antiseptic staining is visible near the collarbone. A gloved hand holds white gauze near the stained area, appearing to dab or wipe the skin while a blue sterile drape and a standing gowned individual are visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "306e80b9-a812-4f4a-a8c4-9af95b2a1e50",
+  "image_count": 1
+}

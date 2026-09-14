@@ -1,0 +1,8 @@
+{
+  "task_name":"KDI Repository Maintenance",
+  "technology":"Windows Task Scheduler",
+  "enabled":true,
+  "trigger":{"type":"DAILY","time":"21:00","timezone":"Asia/Kuala_Lumpur","start_boundary":"2026-09-01T21:00:00+08:00"},
+  "action":{"executable":"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe","arguments":"-NoProfile -NonInteractive -ExecutionPolicy Bypass -File D:\\Asset_Management_AI\\scripts\\run-repository-maintenance.ps1","working_directory":"D:\\Asset_Management_AI"},
+  "settings":{"multiple_instances":"IgnoreNew","restart_count":3,"restart_interval_minutes":10,"start_when_available":true,"execution_limit_hours":2}
+}

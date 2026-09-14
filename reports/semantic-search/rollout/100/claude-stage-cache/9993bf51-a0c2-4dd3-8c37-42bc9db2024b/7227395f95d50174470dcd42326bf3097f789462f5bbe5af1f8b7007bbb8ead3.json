@@ -1,0 +1,183 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_2345.MP4",
+      "evidence": [
+        "filename IMG_2345.MP4, duration 18.73s, 1280x720, h264, decoded_locally true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical close-up video",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "scene-level narrative describes provider and reclined patient"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, ~18.7 seconds",
+      "evidence": [
+        "canonical_scenes: 1",
+        "duration_seconds: 18.733333"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One provider, one reclined patient",
+      "evidence": [
+        "masked, gloved individual with 'DR LEW' visible on scrub collar leaning over subject",
+        "reclined person with head on blue cushion being attended to"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider in blue scrubs, mask, gloves, watch; patient in blue draping",
+      "evidence": [
+        "provider wears light blue scrub top, teal surgical mask, white gloves, dark hair in bun, smartwatch on wrist",
+        "patient has dark hair, eyes closed/covered, wrapped in blue fabric"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forehead, hairline, and face visible",
+      "evidence": [
+        "close-up of patient's forehead and upper hairline area with visible redness/marking",
+        "patient's nose, closed eyes, and lower face visible"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "gloves, a syringe-like tool, and scalp/forehead contact are visible but no procedure name is present in supplied text",
+        "per rules, tools/contact alone cannot establish a named clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider handling small tool near patient's forehead",
+      "evidence": [
+        "provider holds a syringe-like object near the patient's hairline while other hand steadies the head",
+        "scene narrative: 'holding a syringe near the patient's forehead/scalp hairline area'"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider positioned directly over patient, hands-on contact",
+      "evidence": [
+        "provider's gloved hand rests on patient's forehead/temple while the other hand holds a tool close to the skin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Redness/marking visible on patient's forehead/hairline",
+      "evidence": [
+        "visible reddened patch of skin on the patient's forehead near the hairline"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "plain wall and a dark equipment arm/stand are visible but insufficient to confirm a specific room type",
+        "scene-level ENVIRONMENT marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing, vertical orientation",
+      "evidence": [
+        "tight close-up composition centered on provider's hands and patient's face",
+        "vertical 1280x720 frame suggests mobile/vertical video capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider fills upper frame, patient reclined diagonally below",
+      "evidence": [
+        "provider's head and hands occupy top portion of frame, patient's face and torso fill lower portion diagonally"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH",
+        "scene-level SPEECH_TRANSCRIPT_AUDIO: FALSE despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on provider's scrub top",
+      "evidence": [
+        "ocr_observations: 2",
+        "name text resembling 'DR LEW' visible on scrub collar in image"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "no captions, branding overlays, or usage context provided beyond raw clinical footage",
+        "scene-level MARKETING_CONTENT_USAGE: UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical provider attending to reclined patient's forehead area",
+      "evidence": [
+        "overall visual narrative of a masked, gloved provider examining/treating a reclined patient's forehead/hairline with a small tool"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS: NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked, gloved clinical provider leans over a reclined patient, holding a small syringe-like tool near the patient's forehead/hairline while steadying the head with the other gloved hand. The patient lies back with eyes closed, head on a blue cushion, wrapped in blue draping, in what appears to be a clinical treatment room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "9993bf51-a0c2-4dd3-8c37-42bc9db2024b",
+  "image_count": 1
+}

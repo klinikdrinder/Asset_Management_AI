@@ -1,0 +1,169 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, one scene, two keyframes",
+      "evidence": [
+        "Technical metadata: IMG_3398.MP4, 1280x720, 30fps, h264, 13.1s, one canonical scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical close-up clip of a facial treatment moment",
+      "evidence": [
+        "Keyframes show a clinician and reclined patient in a single continuous close-up setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene spanning the full 13.1-second duration",
+      "evidence": [
+        "canonical_scenes: 1, scene_index 0 covers the whole clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One clinician, one patient",
+      "evidence": [
+        "Masked, gloved person in black scrubs with name tag positioned as provider; reclined person with eyes closed positioned as patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician: dark curly hair, glasses, mask; patient: dark hair, eyes closed",
+      "evidence": [
+        "Image shows clinician's glasses, mask, and hair; patient's face, hair, and closed eyes are visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and cheek visible",
+      "evidence": [
+        "Cheek, nose, mouth, and closed eyes of patient visible with small red marks on cheek"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed",
+      "evidence": [
+        "Per-scene result marks TREATMENT_PROCEDURE as UNKNOWN; only gloves, a handheld device, and physical contact are visible, none of which name a procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds a device near patient's cheek",
+      "evidence": [
+        "Gloved hand holds a blue-tipped handheld device positioned against the patient's cheek/jaw"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned over and attending to patient",
+      "evidence": [
+        "Clinician leans directly over reclined patient in close physical proximity"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small red marks on patient's cheek",
+      "evidence": [
+        "Several small red spots visible on the patient's cheek in the image"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "Per-scene result marks ENVIRONMENT as UNKNOWN; background shows only a plain wall and treatment bed with no distinguishing signage"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing",
+      "evidence": [
+        "Tight vertical close-up composition centered on patient's face and clinician"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face in foreground, clinician above filling upper frame",
+      "evidence": [
+        "Vertical frame with patient face lower/center and clinician's torso and face upper portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state is NO_SPEECH; scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Name tag text \"DR ASHRUL IKHMAL\" visible",
+      "evidence": [
+        "Text \"DR ASHRUL IKHMAL\" printed on clinician's scrubs; ocr_observations count is 3"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Per-scene result marks MARKETING_CONTENT_USAGE as UNKNOWN; no captions, branding, or promotional context supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-patient close-up during a facial treatment moment",
+      "evidence": [
+        "Combined visual evidence of clinician attending to reclined patient's cheek with a handheld device"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual content layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked, gloved clinician in black scrubs labeled \"DR ASHRUL IKHMAL\" leans over a reclined female patient, holding a blue-tipped handheld device near her cheek. The patient lies with eyes closed on a treatment bed draped in a blue towel and plastic cover, with several small red marks visible on her cheek.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "b13b7506-8d3c-4b1f-812e-40664557f66b",
+  "image_count": 1
+}

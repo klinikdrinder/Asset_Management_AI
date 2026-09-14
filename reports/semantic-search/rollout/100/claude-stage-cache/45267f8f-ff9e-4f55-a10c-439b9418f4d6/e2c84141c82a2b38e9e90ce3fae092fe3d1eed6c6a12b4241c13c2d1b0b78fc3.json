@@ -1,0 +1,176 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, ~20s, 1280x720",
+      "evidence": [
+        "technical metadata: duration_seconds 20.033333, width 1280, height 720, fps 30/1, codec h264, filename IMG_0918.MP4"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene close-up clinical video clip",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "scene-level GLOBAL_ASSET_UNDERSTANDING: OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across both keyframes",
+      "evidence": [
+        "canonical_scenes: 1 with scene_index 0 spanning the sampled keyframes",
+        "scene-level TEMPORAL_SCENE_STRUCTURE: OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining male subject and a gloved clinician hand",
+      "evidence": [
+        "image shows a man's face/neck reclined with a gloved hand holding an instrument near his jaw",
+        "scene-level PEOPLE_ROLES: OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Young man, short dark hair, light stubble, blue gown",
+      "evidence": [
+        "image shows dark curly hair, facial stubble, and a blue garment/drape visible at neck and shoulders"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, chin, jawline, neck, nose, and ear visible",
+      "evidence": [
+        "image shows close-up of nose, eye, mouth, jaw, chin, neck and ear region"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure supported by evidence",
+      "evidence": [
+        "gloved hand with instrument near jaw/mouth does not by itself establish any named clinical procedure",
+        "scene-level TREATMENT_PROCEDURE: UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instrument tip held/touching skin near jaw and mouth",
+      "evidence": [
+        "image shows a syringe-like tip touching skin near the chin/jaw and a metal instrument positioned near the mouth",
+        "scene-level ACTIONS_EVENTS: OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician hand interacting directly with patient's face",
+      "evidence": [
+        "gloved hand holding an instrument in direct contact with the subject's jaw area in the image"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small discolored/marked area on chin skin visible",
+      "evidence": [
+        "image shows a small brownish mark or lesion on the chin skin near the instrument tip"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical setting with blinds and blue drapery",
+      "evidence": [
+        "image background shows horizontal blinds and blue fabric drape typical of a clinical room"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme close-up, low angle, handheld-style framing",
+      "evidence": [
+        "image is a tight close-up shot from a low angle looking up at the reclined face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical frame tightly centered on face and instrument",
+      "evidence": [
+        "portrait-oriented image with the face filling most of the frame and instrument entering from the right edge"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio track present but no meaningful speech",
+      "evidence": [
+        "audio_stream_present: true, audio_state: AUDIO_PRESENT, transcript_state: NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No legible on-screen text identified",
+      "evidence": [
+        "scene-level OCR_VISIBLE_TEXT: FALSE despite ocr_evaluated true"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing or branding elements present",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE: FALSE"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up of clinical hand contact with reclined patient's face",
+      "evidence": [
+        "scene narrative describes a gloved hand with syringe and a metal instrument near the patient's mouth/chin in a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/audio content evaluation",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS: NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A man lies reclined with his head tilted back while a gloved hand holds a syringe-like instrument with its tip touching skin near his jaw/chin, and a metal instrument is held near his mouth in close-up framing. The scene shows only his face, neck, and the clinician's gloved hands against an indoor background with blinds and blue drapery, consistent with a clinical setting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "45267f8f-ff9e-4f55-a10c-439b9418f4d6",
+  "image_count": 1
+}

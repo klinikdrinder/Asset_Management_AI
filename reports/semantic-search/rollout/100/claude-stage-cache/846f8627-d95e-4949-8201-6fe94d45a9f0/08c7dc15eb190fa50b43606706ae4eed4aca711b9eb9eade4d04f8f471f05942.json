@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1945.MP4",
+      "evidence": [
+        "asset_id 846f8627-d95e-4949-8201-6fe94d45a9f0, filename IMG_1945.MP4, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall purpose not determinable",
+      "evidence": [
+        "Scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, ~17.5s",
+      "evidence": [
+        "canonical_scenes: 1, duration_seconds: 17.5, two near-identical keyframes sampled"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider and reclined patient",
+      "evidence": [
+        "Person in orange scrubs, mask, and safety glasses holding device; second person reclined with eye shields and hairnet"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scrubs, mask, safety glasses, hairnet, eye shields",
+      "evidence": [
+        "Provider wears orange/coral scrubs, blue surgical mask, green-tinted safety glasses, hair in a bun; patient wears blue hairnet, white eye shields, black sweater, covered with a blanket"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face/forehead visible",
+      "evidence": [
+        "Patient's forehead, nose, mouth, and chin are visible; eyes covered by white shields"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in evidence",
+      "evidence": [
+        "No procedure name present in supplied text; device and instrument alone do not establish a named procedure per rules"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider positions handheld device near patient's face",
+      "evidence": [
+        "Frames show provider holding device close to patient's forehead/upper face with other hand stabilizing patient's head"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider attending to reclined patient",
+      "evidence": [
+        "Provider positioned above and leaning over the reclined patient, one hand on patient's head"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective eyewear and device tip near face",
+      "evidence": [
+        "Patient's eyes covered with white protective shields; laser safety glasses on provider; device tip positioned near forehead"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room type not clearly identifiable",
+      "evidence": [
+        "Scene-level ENVIRONMENT marked UNKNOWN despite plain wall and treatment chair visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical framing, static angle",
+      "evidence": [
+        "Vertical 1280x720 frame orientation cues, close-up composition on provider and patient's upper body/face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider centered above reclined patient",
+      "evidence": [
+        "Provider occupies upper frame, patient reclined in lower/foreground of frame with blue and grey drapes visible"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT but transcript_state: NO_SPEECH; scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text on provider's scrub top",
+      "evidence": [
+        "ocr_observations: 1; embroidered text visible on scrub reading 'DR. [name]' partially legible"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual analysis",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked provider wearing orange scrubs and green-tinted laser safety glasses holds a handheld laser device above the face of a reclined patient who wears white eye shields and a blue hairnet. The two sampled frames show the provider positioning the device near the patient's forehead/upper face in a clinical treatment setting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "846f8627-d95e-4949-8201-6fe94d45a9f0",
+  "image_count": 1
+}

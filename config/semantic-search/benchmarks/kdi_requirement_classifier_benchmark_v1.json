@@ -1,0 +1,3900 @@
+{
+  "benchmark_version": "kdi_requirement_classifier_benchmark_v1",
+  "case_count": 180,
+  "split_counts": {
+    "DEV": 120,
+    "VALIDATION": 30,
+    "BLIND": 30
+  },
+  "language_distribution": {
+    "ENGLISH": 180
+  },
+  "requirement_schema_version": "kdi_requirement_schema_v1",
+  "classifier_version": "kdi_requirement_classifier_v1",
+  "policy_version": "kdi_requirement_policy_v1",
+  "policy_fingerprint": "c8b6a95fa723dec9cea7a9673b8409f5e99333f8f175cc80707c1a427d5b9a0f",
+  "cases": [
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 2 videos with a doctor for archive review",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 2
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-001",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 3 videos with a doctor for library review",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 3
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-002",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 4 videos with a doctor for catalogue review",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 4
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-003",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 5 videos with a doctor for the collection team",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 5
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-004",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 6 videos with a doctor for media curation",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 6
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-005",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 7 videos with a doctor for clinical review",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 7
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-006",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 8 videos with a doctor for internal review",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 8
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-007",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 9 videos with a doctor for quality review",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 9
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-008",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 10 videos with a doctor for the archive team",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 10
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-009",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 11 videos with a doctor for the library team",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 11
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-010",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 12 videos with a doctor for catalogue assessment",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 12
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-011",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 13 videos with a doctor for collection assessment",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 13
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-012",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 14 videos with a doctor for media assessment",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 14
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-013",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 15 videos with a doctor for clinical assessment",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 15
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-014",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 16 videos with a doctor for internal assessment",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 16
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-015",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 17 videos with a doctor for quality assessment",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 17
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-016",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 18 videos with a doctor for archive selection",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 18
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-017",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 19 videos with a doctor for library selection",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 19
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-018",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 20 videos with a doctor for catalogue selection",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 20
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-019",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONTROL_HARD_STRONG",
+      "gold_rule": "CONTROL_MEDIA_SEMANTIC",
+      "query": "Show 2 videos with a doctor for collection selection",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 2
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "CLINICIAN"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-020",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for archive review",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-021",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for library review",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-022",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for catalogue review",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-023",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for the collection team",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-024",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for media curation",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-025",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for clinical review",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-026",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for internal review",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-027",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for quality review",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-028",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for the archive team",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-029",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for the library team",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-030",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for catalogue assessment",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-031",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for collection assessment",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-032",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for media assessment",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-033",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for clinical assessment",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-034",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for internal assessment",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-035",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for quality assessment",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-036",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for archive selection",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-037",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for library selection",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-038",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for catalogue selection",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-039",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "ONLY_SCOPE",
+      "gold_rule": "ONLY_MEDIA_SCOPE",
+      "query": "Only videos showing a patient for collection selection",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "MEDIA_TYPE",
+            "reason": "EXPLICIT_MEDIA_TYPE",
+            "value": "VIDEO"
+          }
+        ],
+        "strong_requirements": [
+          {
+            "field": "ROLE",
+            "reason": "DEFAULT_SEMANTIC_REQUIREMENT",
+            "canonical_code": "PATIENT"
+          }
+        ]
+      },
+      "case_id": "QP15-040",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for archive review",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-041",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for library review",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-042",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for catalogue review",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-043",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for the collection team",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-044",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for media curation",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-045",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for clinical review",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-046",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for internal review",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-047",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for quality review",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-048",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for the archive team",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-049",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for the library team",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-050",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for catalogue assessment",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-051",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for collection assessment",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-052",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for media assessment",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-053",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for clinical assessment",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-054",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for internal assessment",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-055",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for quality assessment",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-056",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for archive selection",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-057",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for library selection",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-058",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for catalogue selection",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-059",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "MUST",
+      "gold_rule": "MUST_CONCEPT",
+      "query": "Doctor must be visible for collection selection",
+      "expected": {
+        "hard_constraints": [
+          {
+            "field": "ROLE",
+            "reason": "EXPLICIT_HARD_MARKER",
+            "canonical_code": "CLINICIAN"
+          }
+        ]
+      },
+      "case_id": "QP15-060",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for archive review",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-061",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for library review",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-062",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for catalogue review",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-063",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for the collection team",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-064",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for media curation",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-065",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for clinical review",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-066",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for internal review",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-067",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for quality review",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-068",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for the archive team",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-069",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for the library team",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-070",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for catalogue assessment",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-071",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for collection assessment",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-072",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for media assessment",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-073",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for clinical assessment",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-074",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for internal assessment",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-075",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for quality assessment",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-076",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for archive selection",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-077",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for library selection",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-078",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for catalogue selection",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-079",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "EXCLUSION",
+      "gold_rule": "NEGATION_CONCEPT",
+      "query": "Exclude injection scenes for collection selection",
+      "expected": {
+        "hard_exclusions": [
+          {
+            "field": "ACTION",
+            "reason": "EXPLICIT_NEGATION",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-080",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for archive review",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-081",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for library review",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-082",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for catalogue review",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-083",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for the collection team",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-084",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for media curation",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-085",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for clinical review",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-086",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for internal review",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-087",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for quality review",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-088",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for the archive team",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-089",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for the library team",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-090",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for catalogue assessment",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-091",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for collection assessment",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-092",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for media assessment",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-093",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for clinical assessment",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-094",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for internal assessment",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-095",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for quality assessment",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-096",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for archive selection",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-097",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for library selection",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-098",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for catalogue selection",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-099",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "PREFERENCE",
+      "gold_rule": "PREFERENCE_CONCEPT",
+      "query": "Preferably show frontal hairline for collection selection",
+      "expected": {
+        "preferences": [
+          {
+            "field": "ANATOMY",
+            "reason": "SOFT_PREFERENCE_MARKER",
+            "canonical_code": "FRONTAL_HAIRLINE"
+          }
+        ]
+      },
+      "case_id": "QP15-100",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for archive review",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-101",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for library review",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-102",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for catalogue review",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-103",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for the collection team",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-104",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for media curation",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-105",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for clinical review",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-106",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for internal review",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-107",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for quality review",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-108",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for the archive team",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-109",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for the library team",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-110",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for catalogue assessment",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-111",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for collection assessment",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-112",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for media assessment",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-113",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for clinical assessment",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-114",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for internal assessment",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-115",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for quality assessment",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-116",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for archive selection",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-117",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for library selection",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-118",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for catalogue selection",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-119",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "NEGATIVE_PREFERENCE",
+      "gold_rule": "NEGATIVE_PREFERENCE_CONCEPT",
+      "query": "If possible avoid injection scenes for collection selection",
+      "expected": {
+        "negative_preferences": [
+          {
+            "field": "ACTION",
+            "reason": "NEGATIVE_PREFERENCE_MARKER",
+            "canonical_code": "INJECTING"
+          }
+        ]
+      },
+      "case_id": "QP15-120",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 2 files from 2010 under 20 seconds for archive review",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 2
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-121",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 3 files from 2011 under 21 seconds for library review",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 3
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-122",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 4 files from 2012 under 22 seconds for catalogue review",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 4
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-123",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 5 files from 2013 under 23 seconds for the collection team",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 5
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-124",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 6 files from 2014 under 24 seconds for media curation",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 6
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-125",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 7 files from 2015 under 25 seconds for clinical review",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 7
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-126",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 8 files from 2016 under 26 seconds for internal review",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 8
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-127",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 9 files from 2017 under 27 seconds for quality review",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 9
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-128",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 10 files from 2018 under 28 seconds for the archive team",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 10
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-129",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 11 files from 2019 under 29 seconds for the library team",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 11
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-130",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 2 files from 2020 under 30 seconds for catalogue assessment",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 2
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-131",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 3 files from 2021 under 31 seconds for collection assessment",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 3
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-132",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 4 files from 2022 under 32 seconds for media assessment",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 4
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-133",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 5 files from 2023 under 33 seconds for clinical assessment",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 5
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-134",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 6 files from 2024 under 34 seconds for internal assessment",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 6
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-135",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 7 files from 2010 under 35 seconds for quality assessment",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 7
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-136",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 8 files from 2011 under 36 seconds for archive selection",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 8
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-137",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 9 files from 2012 under 37 seconds for library selection",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 9
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-138",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 10 files from 2013 under 38 seconds for catalogue selection",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 10
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-139",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "TEMPORAL_CONTROL",
+      "gold_rule": "TEMPORAL_HARD",
+      "query": "Find 11 files from 2014 under 39 seconds for collection selection",
+      "expected": {
+        "response_controls": [
+          {
+            "field": "REQUESTED_RESULT_COUNT",
+            "reason": "RESPONSE_CONTROL_FIELD",
+            "value": 11
+          }
+        ],
+        "hard_constraints": [
+          {
+            "field": "YEAR",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          },
+          {
+            "field": "DURATION",
+            "reason": "EXPLICIT_TEMPORAL_CONSTRAINT"
+          }
+        ]
+      },
+      "case_id": "QP15-140",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "Show 4 files then show 9 videos for archive review",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-141",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "Only images but show videos for library review",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-142",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "PNG videos for catalogue review",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-143",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "No injection but injection must be visible for the collection team",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-144",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "Show 4 files then show 9 videos for media curation",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-145",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "Only images but show videos for clinical review",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-146",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "PNG videos for internal review",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-147",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "No injection but injection must be visible for quality review",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-148",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "Show 4 files then show 9 videos for the archive team",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-149",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "Only images but show videos for the library team",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-150",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "PNG videos for catalogue assessment",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-151",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "No injection but injection must be visible for collection assessment",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-152",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "Show 4 files then show 9 videos for media assessment",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-153",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "Only images but show videos for clinical assessment",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-154",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "PNG videos for internal assessment",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-155",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "No injection but injection must be visible for quality assessment",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-156",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "Show 4 files then show 9 videos for archive selection",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-157",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "Only images but show videos for library selection",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-158",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "PNG videos for catalogue selection",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-159",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "CONFLICT",
+      "gold_rule": "PARSER_CONFLICT",
+      "query": "No injection but injection must be visible for collection selection",
+      "expected": {
+        "conflicts": [
+          {
+            "field": "PARSER_CONFLICT",
+            "reason": "PARSER_CONFLICT"
+          }
+        ]
+      },
+      "case_id": "QP15-160",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for archive review",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-161",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for library review",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-162",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for catalogue review",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-163",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for the collection team",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-164",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for media curation",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-165",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for clinical review",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-166",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for internal review",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-167",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for quality review",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-168",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for the archive team",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-169",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for the library team",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-170",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for catalogue assessment",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-171",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for collection assessment",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-172",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for media assessment",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-173",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for clinical assessment",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-174",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for internal assessment",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-175",
+      "split": "VALIDATION",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for quality assessment",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-176",
+      "split": "BLIND",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for archive selection",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-177",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for library selection",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-178",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for catalogue selection",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-179",
+      "split": "DEV",
+      "language": "ENGLISH"
+    },
+    {
+      "category": "UNKNOWN_CONTEXT",
+      "gold_rule": "UNKNOWN_CONTEXT",
+      "query": "delta resonance for collection selection",
+      "expected": {
+        "unresolved": [
+          {
+            "field": "UNRESOLVED",
+            "reason": "UNRESOLVED_SEMANTIC"
+          }
+        ],
+        "context": [
+          {
+            "field": "USAGE_CONTEXT",
+            "reason": "CONTEXT_ONLY"
+          }
+        ]
+      },
+      "case_id": "QP15-180",
+      "split": "DEV",
+      "language": "ENGLISH"
+    }
+  ],
+  "fingerprint": "fbd36033fd43d8d9db324a8bd0de37fdc0098aa6875b7b5534ecb9900a1d9f76",
+  "frozen": true
+}

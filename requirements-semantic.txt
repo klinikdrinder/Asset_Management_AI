@@ -1,0 +1,29 @@
+# Dedicated local semantic-worker dependencies. Install only in .venv-semantic
+# with a supported CPython 3.12 runtime and binary wheels; never compile native
+# packages through Visual Studio/MSVC.
+--only-binary=:all:
+torch==2.3.1
+numpy==1.26.4
+transformers==4.57.6
+accelerate==1.10.1
+Pillow==11.3.0
+opencv-python==4.10.0.84
+opencv-python-headless==4.10.0.84
+sentence-transformers==5.1.0
+open-clip-torch==3.3.0
+ftfy==6.3.1
+timm==1.0.28
+faster-whisper==1.2.1
+easyocr==1.7.2
+lm-format-enforcer==0.10.12
+pydantic==2.11.7
+num2words==0.5.14
+python-dotenv==1.1.1
+supabase==2.17.0
+google-api-python-client==2.177.0
+google-auth==2.40.3
+scipy==1.14.1
+scikit-image==0.24.0
+# Query-embedding sidecar (visual_indexing/embedding_service.py)
+fastapi==0.141.1
+uvicorn==0.52.4

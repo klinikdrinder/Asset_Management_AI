@@ -1,0 +1,183 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2341.MP4, 11.7s, 1280x720",
+      "evidence": [
+        "filename IMG_2341.MP4",
+        "duration_seconds 11.7",
+        "width 1280, height 720",
+        "codec h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical close-up video clip",
+      "evidence": [
+        "single canonical scene with 2 keyframes showing a close-up of a person's head/neck with gloved hands and an instrument"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, no cuts",
+      "evidence": [
+        "canonical_scenes: 1",
+        "scene_index 0 spans the full 11.7s duration with consistent framing across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining person and a gloved provider",
+      "evidence": [
+        "gloved hands manipulating an instrument near the person's jaw/neck",
+        "another gloved hand touching the person's temple"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person with dark hair, head tilted back, wearing dark head covering and blue-gray top",
+      "evidence": [
+        "dark hair visible along hairline and neck",
+        "black head covering/wrap",
+        "blue-gray garment on shoulders"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Jaw, neck, ear, temple, and hairline visible",
+      "evidence": [
+        "close-up framing shows jawline, neck, ear, temple, and frontal hairline"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure confirmed by evidence",
+      "evidence": [
+        "gloves, a ring-shaped instrument, and a tube near the mouth are visible but no procedure name appears in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider positions instrument and touches temple",
+      "evidence": [
+        "gloved hand holds ring-shaped instrument with scope/light near jaw and neck",
+        "separate gloved hand contacts the temple",
+        "thin tube/probe positioned near mouth/chin in both frames"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider hands interacting directly with patient's head/neck",
+      "evidence": [
+        "two distinct gloved hands engaging different parts of the person's head simultaneously"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Skin markings and moles visible on neck and jaw",
+      "evidence": [
+        "small dark spots/moles visible on the neck and near the jaw in the images"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting with blue pillow/drape",
+      "evidence": [
+        "blue pillow supporting the head",
+        "blue-gray fabric consistent with medical drape or scrub garment"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing",
+      "evidence": [
+        "tight close-up crop on jaw/neck/temple region across both keyframes",
+        "vertical orientation framing typical of handheld capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Head positioned diagonally filling frame",
+      "evidence": [
+        "person's head and neck occupy the majority of the vertical frame, tilted diagonally"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT",
+        "transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No visible text despite OCR pass",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 3 but scene layer result for OCR_VISIBLE_TEXT is FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing usage information available",
+      "evidence": [
+        "no supplied text indicates intended use or marketing context; scene-level result is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical interaction on head and neck",
+      "evidence": [
+        "consistent depiction across both keyframes of gloved hands and instrument engaging the reclined person's head/neck"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": [
+        "scene-level result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person reclines with their head tilted back on a blue pillow while a gloved provider holds a metal ring-shaped instrument with an attached scope or light near the jaw and neck area. Another gloved hand touches the person's temple while a thin tube or probe is positioned near the mouth and chin.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "aa8f8e22-8619-47e3-8ece-0ca2ee2b8e8e",
+  "image_count": 1
+}

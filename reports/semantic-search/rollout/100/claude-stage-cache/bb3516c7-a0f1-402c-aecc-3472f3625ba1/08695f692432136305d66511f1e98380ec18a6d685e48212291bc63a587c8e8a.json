@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 clip, IMG_1351.MP4",
+      "evidence": [
+        "asset technical metadata: filename IMG_1351.MP4, duration 11.31s, 1280x720, h264, decoded_locally true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short macro close-up clip of a facial skin procedure",
+      "evidence": [
+        "all 21 scenes consistently show extreme close-up framing of a gloved hand with an instrument near a person's cheek/nose"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "21 continuous close-up scenes across an 11-second clip",
+      "evidence": [
+        "canonical_scenes: 21, canonical_keyframes: 21, each scene narrative shows near-identical instrument position with incremental changes"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved practitioner hand and a reclining patient",
+      "evidence": [
+        "most scenes describe 'a gloved hand' operating an instrument on 'a person's' or 'a patient's' face (e.g. scenes 0-13, 15-19)"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Cheek/nose skin with redness, pores, and papules; eyebrow visible",
+      "evidence": [
+        "scene narratives repeatedly note 'redness, visible pores, and small papules/dark spots' and an eyebrow visible at frame edge"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Nose, cheek, nasolabial fold, eyebrow, lower eyelid area",
+      "evidence": [
+        "scenes describe nose/cheek/nasolabial fold (e.g. scene 2, 15, 18) and eyebrow/lower eyelid (scene 5, 16, 20)"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure type not identifiable from visuals alone",
+      "evidence": [
+        "every one of the 21 scene-level TREATMENT_PROCEDURE values is UNKNOWN; only a gloved hand, metal instrument, and wired electrode contacts are visible with no named procedure in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instrument tip held/positioned at skin surface",
+      "evidence": [
+        "all scenes describe the instrument tip 'touching' or 'positioned near/against' the skin, held steady across the clip"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner hand interacting directly with patient's face",
+      "evidence": [
+        "scenes consistently show the gloved hand's instrument in direct spatial contact with the patient's cheek/nose, with wired contacts also touching the skin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Skin redness, enlarged pores, papules, discoloration",
+      "evidence": [
+        "most scenes note redness along nasolabial fold/cheek, visible pores, small dark spots/papules, and in scene 20 dark discoloration under the eye"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not discernible beyond a dark, blurred background",
+      "evidence": [
+        "most scenes (1-5, 7-13, 15-20) mark ENVIRONMENT as UNKNOWN, with only a dark out-of-focus background noted"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme macro close-up, static handheld framing",
+      "evidence": [
+        "all scenes describe extreme close-up/macro shots with shallow depth of field and dark blurred background"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical frame centered on cheek/nose with instrument upper right",
+      "evidence": [
+        "scene 4 notes 'vertically framed shot'; consistently the gloved hand and instrument occupy the upper right with skin filling the rest of the frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio track present but no speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH",
+        "every scene's SPEECH_TRANSCRIPT_AUDIO value is FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 0",
+        "every scene's OCR_VISIBLE_TEXT value is FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No branding/marketing elements confirmed either way",
+      "evidence": [
+        "scene-level values are split between FALSE (scenes 2, 6, 8, 14, 17, 19) and UNKNOWN (remaining scenes), with no scene positively observing marketing content"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up documentation of a facial skin treatment moment",
+      "evidence": [
+        "a majority of scenes (0,1,4,6,7,8,10,11,15,16,17,18,20) provide a coherent narrative of an instrument being applied to reddened facial skin"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/narrative evaluation",
+      "evidence": [
+        "every scene marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A close-up vertical video shows a gloved hand holding a slender metal instrument with a fine curved/hooked tip near the nose, cheek, and nasolabial fold of a reclining person's face, which shows redness, visible pores, and small papules; a looped wire with two metal spring-type connectors rests on the skin near the eyebrow and lower eyelid throughout, and one frame shows a bright green-toned light/glow at the instrument tip. The framing is an extreme macro close-up with a dark, out-of-focus background, and no on-screen text or speech is present.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "bb3516c7-a0f1-402c-aecc-3472f3625ba1",
+  "image_count": 12
+}

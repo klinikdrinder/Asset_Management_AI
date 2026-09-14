@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_1943.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_1943.MP4, duration 15.85s, 1280x720, h264, single scene with 2 keyframes"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result marked GLOBAL_ASSET_UNDERSTANDING as UNKNOWN; only a single short clip with no broader context provided"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene",
+      "evidence": [
+        "canonical_scenes: 1 with 2 keyframes sampled across the clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "One person in pink scrub top, mask, and protective eyewear positioned as caregiver; second person reclined and passive as patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician masked/gowned; patient in eye shields and hairnet",
+      "evidence": [
+        "Clinician has dark hair in a bun, surgical mask, green-tinted glasses, pink scrub top",
+        "Patient wears white oval eye shields, blue hairnet, gray sweater, black top"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial/periorbital region visible",
+      "evidence": [
+        "Patient's face, brow, nose, and eye area (covered by white shields) are visible under the device"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in evidence",
+      "evidence": [
+        "No supplied text names a specific clinical procedure; only a handheld device with a metal tip and protective eyewear/eye shields are visible",
+        "Scene result lists TREATMENT_PROCEDURE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applies device near patient's brow/eye",
+      "evidence": [
+        "Clinician holds a handheld device with metal tip positioned close to the patient's eye/brow region"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing hands-on care on patient",
+      "evidence": [
+        "Direct physical proximity and device contact between clinician and reclined patient"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective eyewear, eye shields, handheld device",
+      "evidence": [
+        "Green-tinted safety glasses on clinician, white protective eye shields on patient, metal-tipped handheld device near face"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "Scene result marks ENVIRONMENT as UNKNOWN; background shows plain wall and a cabinet but no clear identifying signage or context"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical handheld-style framing",
+      "evidence": [
+        "Vertical 720-width frame tightly framing clinician and patient's upper body/face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient reclined lower frame, clinician leaning in above",
+      "evidence": [
+        "Patient occupies lower/central frame reclined on blue drape; clinician leans over from upper frame holding device"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No text confirmed present or absent",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 0, and scene result lists OCR_VISIBLE_TEXT as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene result marks MARKETING_CONTENT_USAGE as UNKNOWN; no captions, branding, or usage context supplied"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical care moment captured on video",
+      "evidence": [
+        "Continuous depiction of a clinician administering a handheld device treatment to a reclined, protected patient"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/textual analysis",
+      "evidence": [
+        "Scene result explicitly marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked, gowned clinician wearing green-tinted protective eyewear holds a handheld device with a metal tip near the eye/brow area of a reclined patient. The patient wears white protective eye shields, a blue hairnet, and lies under a blue drape with a gray sweater and black top visible.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "919bb9a9-e424-47d6-900c-389741e32be8",
+  "image_count": 1
+}

@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical MP4 clip, IMG_2964.MP4",
+      "evidence": [
+        "filename IMG_2964.MP4, 1280x720, 24.67s, h264 with audio stream, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical scene, single setting",
+      "evidence": [
+        "single canonical scene across the 24.67s clip depicting two clinicians over a patient's scalp"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 showing a wider view then a closer follow-up view"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two masked clinicians, patient present",
+      "evidence": [
+        "two individuals in surgical caps, masks, and loupes positioned over a patient's scalp"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue scrubs, caps, masks, loupes, gloves",
+      "evidence": [
+        "clinicians wear blue surgical caps and gowns, surgical masks, magnifying loupes, and white gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Exposed scalp visible",
+      "evidence": [
+        "a patient's scalp is exposed and illuminated with visible skin and small areas of redness"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in evidence",
+      "evidence": [
+        "gloves, instrument, and scalp contact are visible but no procedure name is present in the supplied text, per rule this remains UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instrument held near scalp surface",
+      "evidence": [
+        "gloved hand holds a fine instrument near the skin in the first frame; instrument tip contacts scalp surface in the closer frame"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinicians working together over patient",
+      "evidence": [
+        "two clinicians positioned closely together, both focused on the same site on the patient's scalp"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Redness and gauze at treated site",
+      "evidence": [
+        "small areas of redness on scalp and gauze drapes visible around the illuminated site"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "background shows a plain wall/partition with no distinguishing features to confirm a specific setting"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical framing, focused lighting",
+      "evidence": [
+        "vertical 1280x720 orientation, tight close-up framing, one frame slightly blurred, bright focused light on the scalp site"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Centered subject, hands and instrument in foreground",
+      "evidence": [
+        "scalp and instrument centered in frame with gloved hands occupying the foreground of both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text observed",
+      "evidence": [
+        "scene-level OCR_VISIBLE_TEXT marked FALSE despite ocr_observations count of 1"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "no text or context provided indicating intended marketing or promotional usage"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close clinical work on scalp",
+      "evidence": [
+        "scene narrative describes clinicians working closely over a patient's scalp with instrument and gauze visible"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual evaluation",
+      "evidence": [
+        "scene-level layer explicitly marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A vertical video shows two masked clinicians wearing surgical caps and magnifying loupes working closely over a patient's exposed, illuminated scalp, one holding a fine instrument near the skin. A second, slightly blurred frame shows gloved hands and an instrument tip at the scalp surface amid gauze drapes and small areas of redness.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "46a32324-a3bf-490e-8236-c4d535caf0f2",
+  "image_count": 1
+}

@@ -1,0 +1,182 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video file, IMG_0530.MP4",
+      "evidence": [
+        "filename IMG_0530.MP4",
+        "duration 11.07s, 1280x720, 30fps, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall purpose of clip unclear",
+      "evidence": [
+        "scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, ~11 seconds",
+      "evidence": [
+        "canonical_scenes: 1",
+        "two keyframes show progression from eyes open to eyes closed"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining subject and gloved practitioner",
+      "evidence": [
+        "woman lying on bed with hairnet and towel drape",
+        "gloved hand of a second person in teal scrubs holding a syringe near her face"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark-haired woman in blue hairnet, purple towel",
+      "evidence": [
+        "blue hairnet covering hair",
+        "purple/lavender towel draped over shoulders and chest",
+        "practitioner arm in teal scrub sleeve with white glove"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face: nose, upper lip, eyes visible",
+      "evidence": [
+        "close-up of nose, upper lip, mouth, eyes, eyebrows in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied text",
+      "evidence": [
+        "syringe and gloved hand near face do not by themselves establish a named clinical procedure",
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Syringe held near upper lip/nose",
+      "evidence": [
+        "gloved hand holds a syringe positioned close to the woman's upper lip and nose",
+        "her eyes shift from open to closed between the two keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned over reclining subject",
+      "evidence": [
+        "gloved hand and arm in teal scrubs positioned above the reclining woman, syringe close to her face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting cues: gloves, syringe, hairnet",
+      "evidence": [
+        "surgical-style hairnet",
+        "disposable glove on practitioner's hand",
+        "syringe held near patient's face",
+        "towel drape over patient"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identified",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible bed, wall, and equipment cart"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up framing on subject's face",
+      "evidence": [
+        "1280x720 vertical-oriented close-up shot centered on the face across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face-centered close-up, hand entering frame",
+      "evidence": [
+        "woman's face fills center-left of frame",
+        "gloved hand and syringe enter from upper right toward her face"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "audio_stream_present true but transcript_state: NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators identified",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative meaning unclear",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually inspectable layer",
+      "evidence": [
+        "embeddings are a derived indexing artifact, not directly observable in image content"
+      ]
+    }
+  ],
+  "narrative": "A woman reclines on a treatment bed wearing a blue hairnet and purple towel drape while a gloved hand holds a syringe near her upper lip and nose. Across the clip her eyes shift from open to closed while the syringe remains positioned close to her face, with a person in teal scrubs standing over her.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "ca9672e1-5d43-4ffe-a7d7-771b13aa4658",
+  "image_count": 1
+}

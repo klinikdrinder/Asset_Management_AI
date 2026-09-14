@@ -1,0 +1,186 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0542.MP4, single scene, ~4.37 seconds",
+      "evidence": [
+        "asset filename IMG_0542.MP4",
+        "duration_seconds 4.37",
+        "canonical_scenes 1"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context beyond single clip unclear",
+      "evidence": [
+        "scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene showing device application",
+      "evidence": [
+        "canonical_scenes 1, canonical_keyframes 2",
+        "scene-level TEMPORAL_SCENE_STRUCTURE OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles of individuals not explicitly confirmed",
+      "evidence": [
+        "scene-level PEOPLE_ROLES marked UNKNOWN despite visible clinician/patient dynamic"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs, glasses, mask, gloves; patient with purple towel",
+      "evidence": [
+        "image shows teal scrub top with embroidered name",
+        "tinted safety glasses and surgical mask on clinician",
+        "white gloves on clinician's hands",
+        "purple towel covering patient's shoulders/head area"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific anatomical site not clearly identified",
+      "evidence": [
+        "scene-level ANATOMY marked UNKNOWN",
+        "head/scalp area partially visible but obscured by towel and device glare"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Named procedure cannot be determined from evidence",
+      "evidence": [
+        "no procedure name present in supplied text",
+        "device and gloves alone do not establish a specific named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applies handheld laser device to patient's head",
+      "evidence": [
+        "image shows device tip touching patient's scalp/forehead area",
+        "yellow-green light visible at contact point"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Relationship between clinician and patient not specified",
+      "evidence": [
+        "scene-level RELATIONSHIPS marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Visible laser light and device application on scalp/skin",
+      "evidence": [
+        "bright yellow-green light visible at treatment point",
+        "orange cable connecting to handheld device"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting appears clinical but unconfirmed",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN",
+        "background shows white walls, small table with equipment"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical framing capturing procedure detail",
+      "evidence": [
+        "vertical portrait orientation",
+        "close-up framing on clinician and patient's head area"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned above reclined patient, centered composition",
+      "evidence": [
+        "clinician occupies upper-left frame, patient lower-right",
+        "device and light source central focal point"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio stream present",
+      "evidence": [
+        "transcript_state NO_SPEECH",
+        "audio_stream true but no dialogue"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on clinician's scrub top",
+      "evidence": [
+        "ocr_observations count 2",
+        "embroidered text partially visible on scrub reading 'DR. LEW...'"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable from clip alone",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose unclear",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual narrative synthesis",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A clinician wearing teal scrubs, tinted safety glasses, a surgical mask, and gloves holds a handheld laser device connected by an orange cable, directing a visible yellow-green beam onto the head/scalp area of a reclined patient covered with a purple towel. The setting appears to be a clinical treatment room with a small instrument table visible in the background.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "59b263d1-a589-41e6-b414-46e6f1281062",
+  "image_count": 1
+}

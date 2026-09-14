@@ -1,0 +1,75 @@
+{
+  "specification": {
+    "version_id": "semantic_index_v1",
+    "status": "LOCKED",
+    "description": "Authoritative semantic interpretation contract for KDI AI Search V3",
+    "layer_count": 18,
+    "ontology_version": "KDI_SEMANTIC_V2",
+    "pilot_manifest_version": "kdi_semantic_pilot_v1",
+    "specification_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c"
+  },
+  "layers": [
+    {"number": 1, "id": "ASSET_IDENTITY_PROVENANCE", "name": "Asset Identity & Provenance", "meaning": "Canonical asset identity, source lineage, technical identity, rights context, and assertion origin."},
+    {"number": 2, "id": "GLOBAL_ASSET_UNDERSTANDING", "name": "Global Asset Understanding", "meaning": "Asset-level content type, synopsis, primary subject, purpose, and overall interpretation."},
+    {"number": 3, "id": "TEMPORAL_SCENE_STRUCTURE", "name": "Temporal / Scene Structure", "meaning": "Time-based segmentation, scenes, events, keyframes, and their exact asset locations."},
+    {"number": 4, "id": "PEOPLE_ROLES", "name": "People & Roles", "meaning": "Visible or supported people, identity status, participant roles, and role evidence."},
+    {"number": 5, "id": "PERSON_APPEARANCE", "name": "Person Appearance", "meaning": "Evidence-based per-person visible appearance attributes without unsupported identity inference."},
+    {"number": 6, "id": "ANATOMY", "name": "Anatomy", "meaning": "Canonical anatomical regions and their observed, discussed, examined, or treated relationships."},
+    {"number": 7, "id": "TREATMENT_PROCEDURE", "name": "Treatment / Procedure", "meaning": "Canonical treatments, procedures, stages, and their relationship to the asset or scene."},
+    {"number": 8, "id": "ACTIONS_EVENTS", "name": "Actions & Events", "meaning": "Actions and events, participants, targets, and time/evidence scope."},
+    {"number": 9, "id": "RELATIONSHIPS", "name": "Relationships", "meaning": "Evidence-supported interactions and relationships among people, actions, anatomy, and treatments."},
+    {"number": 10, "id": "CLINICAL_VISUAL_OBSERVATIONS", "name": "Clinical Visual Observations", "meaning": "Visible clinical observations explicitly separated from diagnoses and medically verified facts."},
+    {"number": 11, "id": "ENVIRONMENT", "name": "Environment", "meaning": "Location, setting, surroundings, activity, and visible environmental qualities."},
+    {"number": 12, "id": "CINEMATOGRAPHY", "name": "Cinematography", "meaning": "Shot size, angle, camera motion, focus, lighting, visual style, and technical visual qualities."},
+    {"number": 13, "id": "COMPOSITION", "name": "Composition", "meaning": "Subject placement, negative space, safe areas, clutter, logo visibility, and compositional qualities."},
+    {"number": 14, "id": "SPEECH_TRANSCRIPT_AUDIO", "name": "Speech / Transcript / Audio", "meaning": "Speech, transcript, speakers, language, audio events, topics, and exact timing."},
+    {"number": 15, "id": "OCR_VISIBLE_TEXT", "name": "OCR / Visible Text", "meaning": "Visible text, captions, labels, signs, devices, language, and exact visual/time location."},
+    {"number": 16, "id": "MARKETING_CONTENT_USAGE", "name": "Marketing & Content Usage", "meaning": "Descriptive content roles, possible uses, funnel stages, and suitability; never usage permission by inference."},
+    {"number": 17, "id": "SEMANTIC_NARRATIVE", "name": "Semantic Narrative", "meaning": "Evidence-grounded literal, clinical-visual, storytelling, marketing, and emotional interpretations."},
+    {"number": 18, "id": "SEARCH_EMBEDDINGS", "name": "Search & Embeddings", "meaning": "Search documents, concepts, vector representations, model identifiers, and retrieval-facing semantic material."}
+  ],
+  "information_states": [
+    {"id": "OBSERVED", "meaning": "There is sufficient evidence supporting the value."},
+    {"id": "FALSE", "meaning": "The concept was evaluated and evidence supports that it is not present or false."},
+    {"id": "UNKNOWN", "meaning": "The system cannot determine the value reliably from available evidence."},
+    {"id": "NOT_APPLICABLE", "meaning": "The concept does not logically apply to that asset or context."}
+  ],
+  "state_rules": {"null_is_semantic_state": false, "static_image_defaults": {"TEMPORAL_SCENE_STRUCTURE": "NOT_APPLICABLE", "SPEECH_TRANSCRIPT_AUDIO": "NOT_APPLICABLE"}},
+  "evidence_types": ["ASSET_LEVEL", "SCENE_LEVEL", "EVENT_LEVEL", "KEYFRAME_LEVEL", "TRANSCRIPT", "OCR", "HUMAN_REVIEW"],
+  "provenance_origins": ["AI_MODEL", "DETERMINISTIC_PROCESSOR", "DATABASE_METADATA", "HUMAN_REVIEW"],
+  "assertion_contract": ["fact", "value", "state", "confidence", "evidence_type", "evidence_reference", "provenance", "analysis_run_id", "human_review_status"],
+  "relevance_grades": [
+    {"score": 3, "id": "EXACT", "meaning": "The asset strongly satisfies the important query requirements."},
+    {"score": 2, "id": "STRONG", "meaning": "The asset is clearly relevant but may miss a secondary or preference-level condition."},
+    {"score": 1, "id": "PARTIAL", "meaning": "The asset relates to the query but does not satisfy enough conditions to be considered strong."},
+    {"score": 0, "id": "IRRELEVANT", "meaning": "The asset does not meaningfully satisfy the search request."},
+    {"score": -1, "id": "CONTRADICTORY", "meaning": "The asset contains evidence directly conflicting with an explicit query requirement."}
+  ],
+  "ontology_contract": {
+    "version": "KDI_SEMANTIC_V2",
+    "frozen_scope": "Current live approved controlled concepts; Phase 1 performs no ontology expansion or row mutation.",
+    "concept_fields": ["canonical_concept", "canonical_code", "category", "aliases", "synonyms", "status", "version"],
+    "required_capabilities": ["treatments", "anatomy", "actions", "roles", "environments", "procedure_stages", "content_types", "marketing_uses", "synonyms", "negative_concepts_exclusions"]
+  },
+  "component_versions": {
+    "ontology_version": "KDI_SEMANTIC_V2",
+    "indexing_version": "semantic_index_v1",
+    "embedding_version": "open_clip:ViT-B-32:laion2b_s34b_b79k|ollama:qwen3-embedding:0.6b:v1",
+    "query_parser_version": "UNASSIGNED",
+    "retrieval_version": "UNASSIGNED",
+    "ranking_version": "job8-v3.5",
+    "llm_reranker_version": "UNASSIGNED",
+    "benchmark_version": "UNASSIGNED",
+    "pilot_manifest_version": "kdi_semantic_pilot_v1"
+  },
+  "change_control": {
+    "new_specification_version_required": ["add_remove_or_reorder_top_level_layer", "change_locked_layer_meaning", "change_information_state_definition", "change_evidence_semantics", "change_relevance_grade_semantics", "material_ontology_restructure"],
+    "minor_implementation_version_allowed_if_semantics_unchanged": ["bug_fix", "performance_improvement", "non_semantic_refactor", "logging_change"],
+    "silent_mutation_allowed": false,
+    "approval_required": true,
+    "regression_validation_required": true
+  },
+  "fingerprint_contract": {"algorithm": "SHA-256", "canonicalization": "UTF-8 JSON with lexicographically sorted object keys and separators comma/colon; omit specification.specification_fingerprint only"},
+  "pilot_manifest": {"path": "config/semantic-search/kdi_semantic_pilot_v1.json", "version": "kdi_semantic_pilot_v1"},
+  "legacy_definitions": [{"location": "public.semantic_layer_catalog", "version": "KDI_SEMANTIC_V2", "disposition": "LEGACY_NON_AUTHORITATIVE_FOR_NEW_INDEXING", "reason": "Its 18 names and order differ materially from semantic_index_v1; Phase 1 preserves the table without mutation."}]
+}

@@ -1,0 +1,178 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video file with technical metadata",
+      "evidence": [
+        "filename IMG_1950.MP4, duration 12.18s, 1280x720, h264, fps 30/1, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene, two near-identical keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "keyframes show near-identical framing of the same close-up moment"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One practitioner, one reclined individual",
+      "evidence": [
+        "person in mask, scrub top, and watch actively handling a device near another person's face",
+        "reclined individual wearing hair covering and drape"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Mask, scrub top, watch; hair net and drape",
+      "evidence": [
+        "practitioner wears surgical mask, coral scrub top, wristwatch",
+        "reclined person wears blue hair covering, drape, and pearl earring/necklace"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Nose, upper lip, and facial skin visible",
+      "evidence": [
+        "fingers pinching skin near the nostril and upper lip of the reclined person's face"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in evidence",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN",
+        "device and gloved contact alone do not establish any named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held near nose/upper lip with skin stabilized",
+      "evidence": [
+        "handheld metal device with rounded tip positioned near nose/upper lip",
+        "fingers pinching skin near nostril for stabilization"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Relationship between the two people not specified",
+      "evidence": [
+        "scene-level RELATIONSHIPS marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clinical findings determinable",
+      "evidence": [
+        "scene-level CLINICAL_VISUAL_OBSERVATIONS marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN",
+        "plain background with blue drape/pillow gives limited setting detail"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing",
+      "evidence": [
+        "tight vertical close-up composition on face and device across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Centered facial close-up with device",
+      "evidence": [
+        "reclined face centered in frame with device and hands occupying upper portion of both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT, transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on device",
+      "evidence": [
+        "ocr_evaluated true with 1 ocr_observation",
+        "\"M-CURL\" style text visible on the mask/device area in the image"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative meaning not determinable",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual layer for embeddings assessment",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked, gloved practitioner in a coral scrub top holds a metal handheld device with a rounded tip near the nose/upper lip of a reclined person wearing a blue hair covering and drape, stabilizing the area with pinched fingers. A gray knit blanket covers the reclined person's torso, and two near-identical keyframes capture this close-up facial moment with no audible speech.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "7ed9733e-89cb-49e4-a0a8-68c811f2f9ec",
+  "image_count": 1
+}

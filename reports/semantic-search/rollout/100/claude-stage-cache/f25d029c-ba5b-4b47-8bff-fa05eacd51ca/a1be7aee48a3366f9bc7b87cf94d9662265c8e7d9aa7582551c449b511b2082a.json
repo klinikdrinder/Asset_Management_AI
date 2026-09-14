@@ -1,0 +1,174 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video file IMG_1365.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_1365.MP4, duration 5.13s, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles not explicitly confirmed",
+      "evidence": [
+        "Scene-level PEOPLE_ROLES marked UNKNOWN despite visible scrubs and mask"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs, mask, gloves; patient with dark facial substance, metal eye shields",
+      "evidence": [
+        "Image shows clinician wearing teal scrub top labeled 'DR LEW...MIN', surgical mask, white gloves, Apple Watch; patient reclined with dark coating on face and metallic eye protectors"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific anatomical detail not confirmed",
+      "evidence": [
+        "Scene-level ANATOMY marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure name not confirmed by supplied text",
+      "evidence": [
+        "No named procedure present in supplied text; only a laser handpiece and dark facial substance are visible",
+        "Scene-level TREATMENT_PROCEDURE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positions device handpiece near patient's face",
+      "evidence": [
+        "Image shows gloved hand holding a metallic handpiece connected to an articulated arm, positioned close to patient's forehead area"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician actively treating reclined patient",
+      "evidence": [
+        "Clinician's gloved hand stabilizes patient's head while other hand holds device near face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark substance coats patient's face; metal eye shields in place",
+      "evidence": [
+        "Visible dark/black topical layer across cheeks, forehead, and jaw; reflective metal eye protectors covering eyes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific clinic setting not confirmed",
+      "evidence": [
+        "Scene-level ENVIRONMENT marked UNKNOWN; only a plain wall and equipment arm visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing of procedure",
+      "evidence": [
+        "Tall vertical composition centering on patient's face and clinician's hands/device"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered, clinician positioned upper left, device diagonal from top right",
+      "evidence": [
+        "Image shows patient's face centered lower frame, clinician leaning in from left, articulated device arm extending from upper right"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH",
+        "Scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on scrub top",
+      "evidence": [
+        "ocr_observations: 4",
+        "Partial text 'DR LEW...MIN' visible on clinician's scrub top"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not confirmed",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context unclear",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Embedding-level classification not available",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked UNKNOWN"
+      ]
+    }
+  ],
+  "narrative": "A masked clinician in teal scrubs holds a laser device handpiece over a reclined patient's face coated in a dark topical substance, with the patient's eyes protected by metal shields. The clinician steadies the patient's head with a gloved hand while the patient rests on a treatment bed draped in blue and green cloths.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "f25d029c-ba5b-4b47-8bff-fa05eacd51ca",
+  "image_count": 1
+}

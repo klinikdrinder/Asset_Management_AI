@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1381.MP4",
+      "evidence": [
+        "filename: IMG_1381.MP4",
+        "asset_id: 28fe6a72-e80f-4a00-90c2-839e424e9943"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical treatment room video clip",
+      "evidence": [
+        "17.27s duration, 1280x720, h264, audio stream present",
+        "two keyframes show a reclined patient undergoing a facial procedure with clinical staff"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene, 0.0s-5.733s",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 5.733",
+        "2 keyframes supplied representing this scene"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined patient and gloved clinical staff",
+      "evidence": [
+        "one person lies reclined wearing eye protection",
+        "two other individuals wear gloves and teal scrub sleeves, one holding a handheld device, one holding an orange lens shield"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient with dark hair, wearing metal eye shields",
+      "evidence": [
+        "patient has dark hair, visible facial skin with a glossy/moist appearance",
+        "patient wears silver goggle-like eye protection",
+        "wrapped in a blue textured blanket and pale green towel at shoulders/neck"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, cheek, and jaw area visible",
+      "evidence": [
+        "patient's face, cheek, jaw, and neck area are visible and being approached by a handheld device"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure type not stated in evidence",
+      "evidence": [
+        "no readable text or spoken content naming any procedure was supplied",
+        "gloves, a handheld device, and protective eyewear alone do not establish a specific named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds device near patient's cheek/jaw",
+      "evidence": [
+        "a gloved hand holds a metallic handheld device with an orange cable close to the patient's cheek and jaw in both keyframes",
+        "another gloved hand holds an orange-tinted lens/shield near the patient's face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinicians positioned around a reclined patient",
+      "evidence": [
+        "multiple gloved hands and arms surround and lean over the reclined patient's head and face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Moist/glossy skin on patient's cheek area",
+      "evidence": [
+        "patient's cheek and under-eye skin appears shiny/moist in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room with equipment tray",
+      "evidence": [
+        "white cabinetry/wall in background",
+        "side tray holds a bowl of yellowish liquid, gauze, and blue draping",
+        "patient positioned on a blue treatment chair/bed"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing of patient's face",
+      "evidence": [
+        "both keyframes are tight close-up shots angled down at the patient's face and the clinician's hands",
+        "vertical (portrait) framing typical of mobile video capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face centered with hands and tools framing it",
+      "evidence": [
+        "patient's face occupies the lower-left portion of frame",
+        "clinician's gloved hands, device, and lens shield occupy the upper-right portion of both frames"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content captured",
+      "evidence": [
+        "spoken_content field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context supplied",
+      "evidence": [
+        "no text, captions, or branding elements are present in the supplied evidence to indicate marketing usage"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment session on a reclined patient's face",
+      "evidence": [
+        "images depict a treatment-room setting with a reclined patient and clinical staff actively working near the face with a handheld device"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual/textual attribute layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person lies reclined on a treatment bed wearing protective eyewear while a gloved clinician holds a handheld device near the left side of their face/jaw. A second gloved person holds an orange-tinted protective eyewear/shield nearby, with a bowl of yellowish liquid and blue draping visible on a side tray.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "28fe6a72-e80f-4a00-90c2-839e424e9943",
+  "image_count": 2
+}

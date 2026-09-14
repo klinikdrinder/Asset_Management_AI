@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1385.MP4, scene 41",
+      "evidence": [
+        "filename \"IMG_1385.MP4\"",
+        "asset_id c215777b-8444-4c71-bbe9-d8f9957cda9b",
+        "scene_index 41"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single close-up clinical clip segment",
+      "evidence": [
+        "one keyframe supplied for a 2.1s scene within an 18.47s h264 video"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scene spans 16.367s\u201318.467s",
+      "evidence": [
+        "start_seconds 16.367",
+        "end_seconds 18.467",
+        "total duration_seconds 18.466667"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One reclined patient, one gloved practitioner hand",
+      "evidence": [
+        "face and neck of a reclined individual visible",
+        "a gloved hand holding an instrument enters frame near the chin"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Fair-skinned patient, dark hair; practitioner in white gloves",
+      "evidence": [
+        "visible lower face with fair skin tone, dark hair at frame edge",
+        "practitioner's hand covered by a white latex glove"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Nostril, lips, chin, jawline, neck visible",
+      "evidence": [
+        "nostril and upper lip visible at top of face",
+        "chin and jawline centered in frame",
+        "neck and towel below jaw"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure; instrument near chin",
+      "evidence": [
+        "gloved hand holds a thin metallic instrument near the chin but no procedure name is present in supplied text",
+        "readable_text_detected and spoken_content are both empty, so no procedure can be confirmed"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hand positioning instrument at chin/jaw",
+      "evidence": [
+        "fingers and an instrument are positioned directly against the patient's chin and jaw area"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner-patient physical contact",
+      "evidence": [
+        "gloved fingers make direct contact with the patient's chin/jaw skin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Mild skin redness near jaw",
+      "evidence": [
+        "a pinkish/reddened patch of skin is visible on the jaw beneath the gloved fingers"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting with drape and towel",
+      "evidence": [
+        "blue medical drape visible near the top left",
+        "green towel wrapped around the patient's neck"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme close-up framing of face",
+      "evidence": [
+        "keyframe is a tight close-up cropped to the lower face, hand, and instrument with no wider shot"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face fills frame, hand occupies right/upper side",
+      "evidence": [
+        "patient's chin and jaw occupy the lower-center frame while the gloved hand and instrument dominate the upper right"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "spoken_content array is empty despite an audio stream being present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text",
+      "evidence": [
+        "readable_text_detected array is empty",
+        "no text visible in the keyframe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing elements present",
+      "evidence": [
+        "no logos, captions, or branded overlays visible in the keyframe",
+        "no supplied text indicating marketing use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up moment of a clinical hand procedure on the face",
+      "evidence": [
+        "gloved hand actively engaging the patient's chin/jaw with an instrument in a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A close-up video keyframe shows the lower portion of a person's face (nose, lips, chin, jaw) while a gloved hand holds a thin metallic instrument near the chin/jaw area. The patient is reclined on a blue drape with a green towel at the neck, consistent with a clinical treatment setting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "c215777b-8444-4c71-bbe9-d8f9957cda9b",
+  "image_count": 1
+}

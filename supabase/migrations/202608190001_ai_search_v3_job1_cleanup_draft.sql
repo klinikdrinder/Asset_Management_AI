@@ -1,0 +1,38 @@
+-- KDI AI SEARCH V3 — JOB 1 CLEANUP DRAFT
+-- REVIEW ONLY. DO NOT APPLY.
+--
+-- This file deliberately contains no executable DDL/DML.
+-- Job 1 found two SECURITY DEFINER trigger/event-trigger functions with the
+-- PostgreSQL default PUBLIC EXECUTE grant. Supabase advisors report that anon
+-- and authenticated can therefore address them through the exposed RPC schema.
+--
+-- Proposed hardening for a separately approved migration:
+--
+--   revoke truncate, references, trigger
+--     on table public.asset_ai_profiles,
+--              public.asset_people,
+--              public.asset_video_segments,
+--              public.asset_transcript_chunks,
+--              public.asset_search_concepts,
+--              public.asset_metadata_assertions
+--     from anon, authenticated;
+--
+--   revoke execute on function public.queue_new_asset_visual_index() from public, anon, authenticated;
+--   revoke execute on function public.rls_auto_enable() from public, anon, authenticated;
+--
+-- Evidence:
+-- - has_table_privilege confirms anon/authenticated TRUNCATE on all six tables;
+-- - RLS does not govern TRUNCATE;
+-- - both are SECURITY DEFINER;
+-- - queue_new_asset_visual_index has SET search_path TO '';
+-- - rls_auto_enable has SET search_path TO pg_catalog;
+-- - both currently have ACL DEFAULT (PUBLIC EXECUTE);
+-- - neither is an application RPC; they are a trigger and event-trigger routine.
+--
+-- Exact duplicate-index candidates are documented in
+-- reports/ai-search-v3/job1-index-audit.md. No DROP INDEX statement is included.
+-- Any later cleanup must first prove constraint ownership, uniqueness semantics,
+-- query-plan equivalence, lock impact, and rollback procedure.
+--
+-- No tables, columns, rows, indexes, policies, grants, or functions are changed
+-- by this draft.

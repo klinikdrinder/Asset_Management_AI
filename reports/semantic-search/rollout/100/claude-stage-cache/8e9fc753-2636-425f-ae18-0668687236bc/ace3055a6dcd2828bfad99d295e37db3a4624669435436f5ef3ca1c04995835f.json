@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video asset, IMG_1944.MP4",
+      "evidence": [
+        "filename IMG_1944.MP4, duration 11.17s, 1280x720, h264, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical treatment clip",
+      "evidence": [
+        "one canonical scene spanning the full 11-second duration with two keyframes showing a practitioner and reclined patient"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, no cuts detected",
+      "evidence": [
+        "canonical_scenes: 1 across the 11.17s duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner and reclined patient present",
+      "evidence": [
+        "one figure in mask, safety glasses and scrub top standing over a second figure reclined in a chair wearing goggles and a hairnet"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "PPE and patient drapery visible",
+      "evidence": [
+        "standing figure wears green-tinted safety glasses, surgical mask, hair tie, coral short-sleeve scrub top; reclined figure wears white plastic eye shields, blue hairnet, black top, and is covered by a gray knit blanket over a blue disposable drape"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and upper body visible",
+      "evidence": [
+        "reclined patient's face, ears, and shoulders are visible beneath eye protection and hairnet"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied evidence",
+      "evidence": [
+        "a handheld device is held near the patient's face but no procedure name is present in the supplied text; per rule, instruments and contact alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held near patient's face/temple area",
+      "evidence": [
+        "standing figure's hand positions a silver handheld device close to the reclined patient's forehead/temple region"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned over patient",
+      "evidence": [
+        "standing figure leans over the reclined figure, hand and device directed at the patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "PPE and disposable drapes present",
+      "evidence": [
+        "mask, safety glasses, patient eye shields, hairnet, and blue disposable drape are visible"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not confirmed beyond room walls",
+      "evidence": [
+        "scene-level ENVIRONMENT was UNKNOWN; only a plain wall and reclining chair are visible with no signage or identifying room features"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, handheld vertical framing",
+      "evidence": [
+        "tight vertical 1280x720-sourced framing centered on the patient's face and practitioner's hands across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Compositional intent not determinable",
+      "evidence": [
+        "scene-level COMPOSITION was UNKNOWN; framing appears functional/documentary rather than deliberately composed"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present being true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "no captions, branding, or usage context supplied; scene-level MARKETING_CONTENT_USAGE was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose not determinable",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE was UNKNOWN with no supporting text or context beyond the visual clip"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually assessable layer",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked person wearing green-tinted safety glasses and a coral scrub top holds a handheld silver device near the face of a reclined individual who wears white protective goggles and a blue hairnet. The reclined individual is covered by a gray knit blanket over a blue disposable drape, consistent with a clinical treatment setting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "8e9fc753-2636-425f-ae18-0668687236bc",
+  "image_count": 1
+}

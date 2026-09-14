@@ -1,0 +1,317 @@
+{
+  "generated_at": "2026-08-25T02:31:28.476Z",
+  "status": "BLOCKED",
+  "benchmark": {
+    "benchmark_version": "kdi_query_parser_benchmark_v1",
+    "evaluation_version": "kdi_query_parser_eval_v1",
+    "created_at": "2026-08-25T00:00:00.000Z",
+    "query_count": 150,
+    "split_counts": {
+      "DEV": 90,
+      "VALIDATION": 30,
+      "BLIND": 30
+    },
+    "category_distribution": {
+      "AGE_VS_RESULT_COUNT": 8,
+      "CURRENCY": 5,
+      "DURATION": 6,
+      "GRAFT_COUNTS": 7,
+      "MALAY": 8,
+      "MEDIA_EXTENSION": 9,
+      "MIXED_LANGUAGE": 8,
+      "MULTI_NUMBER_ADVERSARIAL": 10,
+      "NEGATION_EXCLUSIONS": 9,
+      "NO_MATCH_UNKNOWN": 6,
+      "OCR_TRANSCRIPT_MODALITY": 7,
+      "ONLY_MUST_EXACTLY": 6,
+      "PREFERENCES": 6,
+      "RESULT_COUNT": 12,
+      "SEMANTIC_COMBINATIONS": 12,
+      "SESSION_COUNTS": 6,
+      "SIMILARITY_INTENT": 5,
+      "TIMESTAMP": 6,
+      "TYPO_MISSPELLING": 7,
+      "YEAR_DATE": 7
+    },
+    "fingerprint": "29557f950a7cffe82cbdb8fe70b71075176da988b4ea0d9e54872678423095d9",
+    "frozen": true,
+    "frozen_versions": {
+      "query_parser_version": "kdi_query_parser_v1",
+      "deterministic_parser_version": "kdi_deterministic_query_parser_v1",
+      "semantic_interpreter_version": "kdi_semantic_query_interpreter_v1",
+      "query_schema_version": "kdi_query_schema_v1",
+      "configuration_fingerprint": "8ee003b3d78168389d7ef653fa78c792e93c7cc140f8bf11db6531c0b4426391"
+    },
+    "duplicate_queries": 0,
+    "asset_expectations": 0
+  },
+  "dev": {
+    "split": "DEV",
+    "cases": 90,
+    "passed_cases": 40,
+    "critical_failures": 52,
+    "field_micro_accuracy": 0.8530701754385965,
+    "field_macro_accuracy": 0.8527513227513225,
+    "semantic_accuracy": 0.7625,
+    "result_count_accuracy": 0.8333333333333334,
+    "numeric_classification_accuracy": 0.7,
+    "media_type_accuracy": 0.6938775510204082,
+    "extension_accuracy": 1,
+    "timestamp_accuracy": 1,
+    "duration_accuracy": 0.16666666666666666,
+    "negation_accuracy": 0.8333333333333334,
+    "schema_valid_rate": 1,
+    "false_result_count": 0,
+    "missed_explicit_result_count": 15,
+    "errors": 50
+  },
+  "validation": {
+    "split": "VALIDATION",
+    "cases": 30,
+    "passed_cases": 14,
+    "critical_failures": 18,
+    "field_micro_accuracy": 0.8367346938775511,
+    "field_macro_accuracy": 0.8433333333333335,
+    "semantic_accuracy": 0.5652173913043478,
+    "result_count_accuracy": 0.9,
+    "numeric_classification_accuracy": 0.5,
+    "media_type_accuracy": 0.6428571428571429,
+    "extension_accuracy": 1,
+    "timestamp_accuracy": 1,
+    "duration_accuracy": 1,
+    "negation_accuracy": 0.25,
+    "schema_valid_rate": 1,
+    "false_result_count": 0,
+    "missed_explicit_result_count": 3,
+    "errors": 16
+  },
+  "blind": {
+    "split": "BLIND",
+    "cases": 0,
+    "status": "NOT_RUN_VALIDATION_FAILED"
+  },
+  "numeric_confusion": {
+    "false_result_count": {
+      "dev": 0,
+      "validation": 0,
+      "blind": "NOT_RUN"
+    },
+    "missed_explicit_count": {
+      "dev": 15,
+      "validation": 3,
+      "blind": "NOT_RUN"
+    },
+    "occurrence_based": true
+  },
+  "language": {
+    "ENGLISH": {
+      "cases": 134,
+      "field_micro_accuracy": 0.8567119155354449,
+      "field_macro_accuracy": 0.8566098081023452
+    },
+    "MALAY": {
+      "cases": 8,
+      "field_micro_accuracy": 0.6976744186046512,
+      "field_macro_accuracy": 0.7041666666666667
+    },
+    "MIXED": {
+      "cases": 8,
+      "field_micro_accuracy": 0.8367346938775511,
+      "field_macro_accuracy": 0.838095238095238
+    }
+  },
+  "provider_failure_safety": {
+    "timeout": {
+      "semantic_status": "UNAVAILABLE",
+      "validation_status": "VALID",
+      "requested_count": 3,
+      "warnings": [
+        "SEMANTIC_PROVIDER_UNAVAILABLE:timeout"
+      ],
+      "unsafe": false
+    },
+    "exception": {
+      "semantic_status": "UNAVAILABLE",
+      "validation_status": "VALID",
+      "requested_count": 3,
+      "warnings": [
+        "SEMANTIC_PROVIDER_UNAVAILABLE:exception"
+      ],
+      "unsafe": false
+    },
+    "malformed": {
+      "semantic_status": "UNAVAILABLE",
+      "validation_status": "VALID",
+      "requested_count": 3,
+      "warnings": [
+        "SEMANTIC_PROVIDER_UNAVAILABLE:INVALID_PROVIDER_POSITIVE_CONCEPTS"
+      ],
+      "unsafe": false
+    },
+    "trusted_override": {
+      "semantic_status": "READY",
+      "validation_status": "VALID",
+      "requested_count": 3,
+      "warnings": [
+        "PROVIDER_FIELD_REJECTED:requested_count",
+        "PROVIDER_FIELD_REJECTED:query_parser_version"
+      ],
+      "unsafe": false
+    }
+  },
+  "error_register": {
+    "total": 66,
+    "critical": 55,
+    "non_critical": 11,
+    "by_root_cause": {
+      "DETERMINISTIC_GRAMMAR": 37,
+      "NUMERIC_TYPING": 8,
+      "NEGATION": 4,
+      "ONTOLOGY_ALIAS": 14,
+      "SEMANTIC_LEXICON": 3
+    }
+  },
+  "reproducibility": {
+    "benchmark_runs": 2,
+    "identical_normalized_outputs": 150,
+    "query_fingerprints_stable": 150,
+    "metrics_identical": true,
+    "deterministic_reproducibility": 1
+  },
+  "latency": {
+    "cases": 150,
+    "deterministic": {
+      "p50_ms": 0.012799999999970169,
+      "p95_ms": 0.025300000000015643,
+      "max_ms": 0.06380000000001473
+    },
+    "semantic": {
+      "p50_ms": 0.05889999999999418,
+      "p95_ms": 0.10840000000001737,
+      "max_ms": 0.32529999999997017
+    },
+    "validation": {
+      "p50_ms": 0.09500000000002728,
+      "p95_ms": 0.2515999999999394,
+      "max_ms": 0.4895999999999958
+    },
+    "total": {
+      "p50_ms": 0.1560000000000059,
+      "p95_ms": 0.3821999999999548,
+      "max_ms": 0.5657999999999674
+    },
+    "queries_per_second": 5406.691321179112,
+    "retrieval": "NOT_APPLICABLE"
+  },
+  "cost": {
+    "semantic_provider_calls": 604,
+    "external_provider_calls": 0,
+    "external_tokens": 0,
+    "external_cost": 0
+  },
+  "boundaries": {
+    "retrieval_performed": false,
+    "ranking_performed": false,
+    "phase15_started": false,
+    "phase16_started": false,
+    "frontend_work": false,
+    "human_gold": "DEFERRED"
+  },
+  "database": {
+    "generated_at": "2026-08-25T02:35:15.413Z",
+    "status": "PASS",
+    "source": "Phase 13 post-count snapshot immediately preceding parser benchmark compared with current live counts",
+    "production_query_rows_added": 0,
+    "semantic_data_changed": false,
+    "embeddings": {
+      "before": 106,
+      "after": 106
+    },
+    "comparison": [
+      {
+        "table": "assets",
+        "before": 881,
+        "after": 881,
+        "delta": 0
+      },
+      {
+        "table": "semantic_assertions",
+        "before": 333,
+        "after": 333,
+        "delta": 0
+      },
+      {
+        "table": "semantic_assertion_evidence",
+        "before": 270,
+        "after": 270,
+        "delta": 0
+      },
+      {
+        "table": "asset_scenes",
+        "before": 312,
+        "after": 312,
+        "delta": 0
+      },
+      {
+        "table": "asset_events",
+        "before": 22,
+        "after": 22,
+        "delta": 0
+      },
+      {
+        "table": "asset_keyframes",
+        "before": 345,
+        "after": 345,
+        "delta": 0
+      },
+      {
+        "table": "asset_transcript_chunks",
+        "before": 14,
+        "after": 14,
+        "delta": 0
+      },
+      {
+        "table": "ocr_observations",
+        "before": 19,
+        "after": 19,
+        "delta": 0
+      },
+      {
+        "table": "semantic_narratives",
+        "before": 37,
+        "after": 37,
+        "delta": 0
+      },
+      {
+        "table": "asset_search_concepts_v2",
+        "before": 270,
+        "after": 270,
+        "delta": 0
+      },
+      {
+        "table": "semantic_embeddings",
+        "before": 106,
+        "after": 106,
+        "delta": 0
+      },
+      {
+        "table": "semantic_review_decisions",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      {
+        "table": "gold_standard_assets",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      },
+      {
+        "table": "search_queries",
+        "before": 0,
+        "after": 0,
+        "delta": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_2941.MP4",
+      "evidence": [
+        "filename IMG_2941.MP4, duration 12.85s, 1280x720 h264 video with audio stream"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical setting clip",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 showing a consistent draped clinical setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene",
+      "evidence": [
+        "scene_results lists a single scene_index 0 spanning the clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One masked, gowned individual visible",
+      "evidence": [
+        "person wearing blue surgical cap, mask, gown, and loupes with headlight visible in frame"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue cap, mask, gown, loupes, earring",
+      "evidence": [
+        "image shows blue surgical cap and mask, blue gown, binocular loupes with headlight, and a pearl stud earring visible on the ear"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No identifiable anatomy confirmed",
+      "evidence": [
+        "draped surface obscures the treated area; no anatomical region is clearly identifiable in the image",
+        "scene-level ANATOMY marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in evidence",
+      "evidence": [
+        "gloved hands with fine instruments near a draped, lit area, but no named procedure appears in the supplied text",
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Hands manipulating instruments under light",
+      "evidence": [
+        "two gloved hands holding fine tools positioned over an illuminated spot on the drape"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Individual working directly over draped area",
+      "evidence": [
+        "the gowned, masked person is positioned close over the draped surface where the hands are working"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clinical findings determinable",
+      "evidence": [
+        "the illuminated work area is too indistinct to assess any clinical detail",
+        "scene-level CLINICAL_VISUAL_OBSERVATIONS marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical room with drapes and headlight",
+      "evidence": [
+        "blue surgical drapes, a headlight/loupe apparatus, and a light-colored wall with patterned wallpaper and cabinetry in the background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing",
+      "evidence": [
+        "tight close-up vertical composition focused on the person's head and working hands with shallow depth of field on the background"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject upper-right, action lower-left",
+      "evidence": [
+        "the person's head and headlight occupy the upper right of frame while the illuminated hands/instruments occupy the lower left"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "no branding, captions, or promotional framing present in the image or metadata to establish marketing intent"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close clinical work scene",
+      "evidence": [
+        "scene depicts a gowned, masked individual with loupes performing close hand work over a draped, lit area"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person in blue surgical scrubs, cap, mask, and loupes with an attached headlight leans over a patient area covered in blue surgical drapes under bright focused light. Two gloved hands manipulate small fine instruments near an illuminated spot on the draped surface.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "e14590a2-6c4d-4ce8-ab28-0d7afed9a6bf",
+  "image_count": 1
+}

@@ -1,0 +1,56 @@
+{
+  "validator": "kdi_query_gold_validator_v1",
+  "records_audited": 180,
+  "semantically_valid": 178,
+  "ambiguous": 2,
+  "unsupported": 0,
+  "contradictory": 0,
+  "invalid_records": [
+    {
+      "case_id": "QP14V6-042",
+      "validator_version": "kdi_query_gold_validator_v1",
+      "query": "Material taken in 2017",
+      "findings": [
+        {
+          "field": "media_type",
+          "status": "AMBIGUOUS",
+          "reason": "Expected media family lacks an explicit supporting noun or extension"
+        },
+        {
+          "field": "temporal.year",
+          "status": "SUPPORTED",
+          "reason": "Temporal year grammar"
+        }
+      ],
+      "valid": false,
+      "ambiguous": 1,
+      "unsupported": 0,
+      "contradictory": 0
+    },
+    {
+      "case_id": "QP14V6-046",
+      "validator_version": "kdi_query_gold_validator_v1",
+      "query": "Material taken in 2021",
+      "findings": [
+        {
+          "field": "media_type",
+          "status": "AMBIGUOUS",
+          "reason": "Expected media family lacks an explicit supporting noun or extension"
+        },
+        {
+          "field": "temporal.year",
+          "status": "SUPPORTED",
+          "reason": "Temporal year grammar"
+        }
+      ],
+      "valid": false,
+      "ambiguous": 1,
+      "unsupported": 0,
+      "contradictory": 0
+    }
+  ],
+  "immutable_v6": {
+    "logical_fingerprint": "6ad4aed2ad3653eeb8110c5ea0fe7747c25b8cc97cf8f5e2345dc31dab494ce2",
+    "file_sha256": "ea647bfb9adaf93e02e3a872f9910a7044f46dd0a2c1a741bcf400ee8cf09402"
+  }
+}

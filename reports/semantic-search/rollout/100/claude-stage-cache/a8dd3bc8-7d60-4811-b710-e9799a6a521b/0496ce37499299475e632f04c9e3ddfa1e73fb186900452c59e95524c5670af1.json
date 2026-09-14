@@ -1,0 +1,175 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset IMG_1256.MP4",
+      "evidence": [
+        "File metadata: filename IMG_1256.MP4, duration 4.37s, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short interior lobby video",
+      "evidence": [
+        "Single canonical scene depicting a furnished waiting/reception area"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 showing same room from similar angle"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No people present",
+      "evidence": [
+        "Keyframes show empty furniture and room with no human figures",
+        "Scene-level PEOPLE_ROLES marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No persons to describe",
+      "evidence": [
+        "No people observed in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No anatomical content",
+      "evidence": [
+        "Scene contains only furniture and interior architecture"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No procedure depicted",
+      "evidence": [
+        "No clinical activity, instruments, or procedure visible in images"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static shot of empty room",
+      "evidence": [
+        "No movement of people; camera appears to pan slightly across the same static space"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No interpersonal relationships",
+      "evidence": [
+        "No people present to establish relationships"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unclear if clinical setting",
+      "evidence": [
+        "Room could be a clinic lobby or general office reception; no definitive clinical signage visible"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Modern lobby with wood-slat wall and marble floor",
+      "evidence": [
+        "Backlit vertical wood panels on wall",
+        "White marble-patterned tile flooring",
+        "Curved reception counter with boxes/materials on left"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Slight camera movement across static scene",
+      "evidence": [
+        "Two keyframes show a marginal shift in camera angle/position within same room"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Symmetrical framing of seating against paneled wall",
+      "evidence": [
+        "Bench and ottoman centered against repeating vertical wood slats",
+        "Reception desk partially visible at left edge of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state: NO_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "No legible text found",
+      "evidence": [
+        "ocr_evaluated true, ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Possible promotional interior showcase",
+      "evidence": [
+        "Polished, styled interior suggests possible use for business/marketing content, but no explicit branding confirmed"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Upscale waiting area ambiance",
+      "evidence": [
+        "Design elements (leather seating, warm lighting, marble floor) convey a modern, upscale lobby or clinic waiting room theme"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indexable interior design content",
+      "evidence": [
+        "Distinct visual features: white leather Barcelona chairs, wood slat backlit wall, marble floor suitable for embedding-based retrieval"
+      ]
+    }
+  ],
+  "narrative": "The video shows an elegant, empty waiting area featuring a white tufted leather bench and matching ottoman on chrome Barcelona-style frames, set against a backlit wood-slat wall. A marble tile floor and a curved reception counter with informational materials suggest this is a clinic or medical office lobby.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "a8dd3bc8-7d60-4811-b710-e9799a6a521b",
+  "image_count": 1
+}

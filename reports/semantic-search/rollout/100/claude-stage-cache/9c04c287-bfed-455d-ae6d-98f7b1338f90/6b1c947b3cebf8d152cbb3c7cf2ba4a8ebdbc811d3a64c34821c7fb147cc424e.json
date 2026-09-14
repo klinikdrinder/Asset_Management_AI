@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video asset, single scene",
+      "evidence": [
+        "filename IMG_1463.MP4, duration 12.87s, 1280x720, h264, decoded locally, one canonical scene with two keyframes"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall purpose not determinable",
+      "evidence": [
+        "Scene-level result marked GLOBAL_ASSET_UNDERSTANDING as UNKNOWN; no broader context text supplied"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two keyframes",
+      "evidence": [
+        "canonical_scenes=1, canonical_keyframes=2; keyframes show sequential moments of the same close-up interaction"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles not confirmed",
+      "evidence": [
+        "A gloved, masked individual and a reclined person are visible but no text identifies their specific roles; scene marked PEOPLE_ROLES as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two individuals visible",
+      "evidence": [
+        "Standing person with dark hair, surgical mask, black top, latex gloves; reclined person with head covering, eye patches, maroon towel around neck"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, eyebrow/forehead region visible",
+      "evidence": [
+        "Reclined person's face, closed/patched eyes, eyebrows, and forehead area are visible with an instrument near the eyebrow"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in evidence",
+      "evidence": [
+        "Gloves, a thin instrument, and facial contact are visible but no supplied text names a specific procedure, so it cannot be established"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner applying instrument near eyebrow",
+      "evidence": [
+        "Gloved hand holds a thin instrument close to the reclined person's eyebrow/forehead across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner-patient interaction",
+      "evidence": [
+        "One person leans over and makes direct hands-on contact with the reclined person's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Eye patches, gloves, instrument visible",
+      "evidence": [
+        "White patches over both eyes, latex gloves, a thin syringe-like instrument, and surgical mask are visible in the images"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Indoor room, specifics unclear",
+      "evidence": [
+        "A treatment bed with blue covering and plain wall are visible, but scene-level result marks ENVIRONMENT as UNKNOWN for further detail"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing",
+      "evidence": [
+        "Tight close-up composition centered on the practitioner's hands and the reclined person's face across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical frame, subject centered",
+      "evidence": [
+        "1280x720 frame displayed in vertical crop with practitioner and patient face filling most of the frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "audio_stream_present true but transcript_state is NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "No text or branding indicating marketing use; scene-level result marks MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative unclear",
+      "evidence": [
+        "Scene-level result marks SEMANTIC_NARRATIVE as UNKNOWN; only a brief clinical interaction is visible without further context"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual content layer",
+      "evidence": [
+        "Scene-level result marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "Two sequential keyframes show a gloved, masked practitioner leaning over a reclined person whose eyes are both covered with white patches, holding a thin syringe-like instrument near the person's eyebrow/forehead area. The setting is an indoor treatment room with the patient lying on a bed covered in blue material, a maroon towel around their neck, and a head covering on their hair.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "9c04c287-bfed-455d-ae6d-98f7b1338f90",
+  "image_count": 1
+}

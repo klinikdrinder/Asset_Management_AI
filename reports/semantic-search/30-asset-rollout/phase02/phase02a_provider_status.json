@@ -1,0 +1,17 @@
+{
+  "implementation_version": "kdi_openai_semantic_analysis_adapter_v1",
+  "prompt_contract_version": "kdi_semantic_analysis_prompt_v1",
+  "provider_interface": "dashboard/db/automatic-indexing-pipeline.ts:SemanticAnalysisProvider",
+  "provider_adapter": "dashboard/db/openai-semantic-analysis-provider.ts:OpenAISemanticAnalysisProvider",
+  "search_backend": "PostgreSQL + pgvector",
+  "external_ai_enabled": false,
+  "openai_api_key_configured": false,
+  "semantic_analysis_model_configured": false,
+  "network_preflight_performed": false,
+  "openai_requests": 0,
+  "canary_processed": false,
+  "semantic_writes": 0,
+  "assets_12_to_30_processed": 0,
+  "status": "BLOCKED_OPENAI_CREDENTIALS",
+  "blocker": "OPENAI_API_KEY and SEMANTIC_ANALYSIS_MODEL are not configured; EXTERNAL_AI_ENABLED remains false."
+}

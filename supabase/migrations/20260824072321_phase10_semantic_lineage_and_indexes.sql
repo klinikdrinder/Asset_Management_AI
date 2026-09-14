@@ -1,0 +1,25 @@
+begin;
+alter table public.asset_scenes add column if not exists semantic_analysis_run_id uuid references public.semantic_analysis_runs(id) on delete set null;
+alter table public.asset_keyframes add column if not exists semantic_analysis_run_id uuid references public.semantic_analysis_runs(id) on delete set null;
+alter table public.asset_transcript_chunks add column if not exists semantic_analysis_run_id uuid references public.semantic_analysis_runs(id) on delete set null;
+alter table public.ocr_observations add column if not exists semantic_analysis_run_id uuid references public.semantic_analysis_runs(id) on delete set null;
+
+create index if not exists asset_scenes_semantic_run_idx on public.asset_scenes(semantic_analysis_run_id) where semantic_analysis_run_id is not null;
+create index if not exists asset_keyframes_semantic_run_idx on public.asset_keyframes(semantic_analysis_run_id) where semantic_analysis_run_id is not null;
+create index if not exists transcript_chunks_semantic_run_idx on public.asset_transcript_chunks(semantic_analysis_run_id) where semantic_analysis_run_id is not null;
+create index if not exists ocr_observations_semantic_run_idx on public.ocr_observations(semantic_analysis_run_id) where semantic_analysis_run_id is not null;
+create index if not exists semantic_assertions_scene_idx on public.semantic_assertions(scene_id) where scene_id is not null;
+create index if not exists semantic_assertions_event_idx on public.semantic_assertions(event_id) where event_id is not null;
+create index if not exists semantic_assertions_source_idx on public.semantic_assertions(source_fingerprint);
+create index if not exists semantic_assertions_review_idx on public.semantic_assertions(human_review_status,asset_id);
+create index if not exists semantic_evidence_asset_idx on public.semantic_assertion_evidence(asset_id,evidence_type);
+create index if not exists semantic_evidence_scene_idx on public.semantic_assertion_evidence(scene_id) where scene_id is not null;
+create index if not exists semantic_evidence_event_idx on public.semantic_assertion_evidence(event_id) where event_id is not null;
+create index if not exists semantic_evidence_run_idx on public.semantic_assertion_evidence(analysis_run_id);
+create index if not exists semantic_evidence_source_idx on public.semantic_assertion_evidence(source_fingerprint);
+create index if not exists semantic_layers_run_idx on public.asset_semantic_layers(analysis_run_id);
+create index if not exists semantic_layers_review_idx on public.asset_semantic_layers(human_review_status,asset_id);
+create index if not exists semantic_events_scene_idx on public.asset_events(scene_id,start_time) where scene_id is not null;
+create index if not exists search_concepts_v2_run_idx on public.asset_search_concepts_v2(analysis_run_id);
+create index if not exists search_concepts_v2_review_idx on public.asset_search_concepts_v2(human_review_status,asset_id);
+commit;

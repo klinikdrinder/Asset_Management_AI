@@ -1,0 +1,178 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1936.MP4, single scene",
+      "evidence": [
+        "asset_id 7d268af4-cf7c-41a5-80f2-01f1b61ca153, filename IMG_1936.MP4, scene_index 0"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical treatment clip, ~11 seconds",
+      "evidence": [
+        "duration_seconds 11.333333, single scene spanning 0.0 to 11.333s, 1280x720 h264 video with audio stream"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two near-identical keyframes",
+      "evidence": [
+        "scene_index 0 covering the full clip duration",
+        "two supplied keyframes show nearly identical poses, indicating minimal change over the scene"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One practitioner and one reclining patient",
+      "evidence": [
+        "one person in pink scrub top, mask, and green safety glasses holding a handheld device near the other person's face",
+        "second person reclining on a treatment bed wearing protective eye goggles"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in pink scrubs and mask; patient with dark hair under a headband",
+      "evidence": [
+        "practitioner has dark hair tied up, wears a surgical mask and green tinted safety glasses, pink short-sleeved scrub top, pearl earring visible",
+        "patient has dark hair pulled back with a black headband, wears white cup-style eye protection, covered with a blue drape and a light-colored knit garment near the shoulders"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and forehead area visible",
+      "evidence": [
+        "patient's face, forehead, cheek, nose, and chin are visible and are the area nearest the handheld device"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure using a handheld device",
+      "evidence": [
+        "a handheld metallic device is held near the patient's face by a gloveless practitioner",
+        "no supplied readable text or spoken content names any specific procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner holds a device near patient's face",
+      "evidence": [
+        "practitioner's arm is extended, hand gripping a cylindrical handheld device pointed toward the patient's face in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned over reclining patient",
+      "evidence": [
+        "practitioner leans over the reclining patient, directing a handheld device toward the patient's face in close proximity"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective eyewear worn by both individuals",
+      "evidence": [
+        "patient wears white cup-shaped eye protection",
+        "practitioner wears green-tinted safety glasses and a surgical mask",
+        "blue disposable drape covers the patient's body"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "plain beige wall background",
+        "wall-mounted equipment panel and a box on a cart visible behind the practitioner",
+        "treatment bed with blue disposable covering"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up handheld framing",
+      "evidence": [
+        "vertical 1280x720-oriented portrait-style framing typical of phone video",
+        "close, slightly elevated angle centered on the patient's face and practitioner's upper body"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered lower frame, practitioner upper frame",
+      "evidence": [
+        "patient's face occupies the lower-center of the frame while the practitioner's head and arm occupy the upper portion in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content supplied",
+      "evidence": [
+        "spoken_content field is an empty array despite an audio_stream being present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators identified",
+      "evidence": [
+        "no logos, captions, calls-to-action, or branding are visible in the keyframes, and no supplied text indicates marketing intent"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Routine clinical facial treatment scene",
+      "evidence": [
+        "a masked and eye-protected practitioner applies a handheld device to the face of a protected, reclining patient in a treatment room setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a discrete visual/textual layer for direct evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A woman lies on a treatment bed wearing protective eye goggles while a practitioner in pink scrubs, a face mask, and green laser safety glasses aims a handheld device at her face. The setting is a clinical treatment room with a treatment bed and equipment cart visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "7d268af4-cf7c-41a5-80f2-01f1b61ca153",
+  "image_count": 2
+}

@@ -1,0 +1,10 @@
+{
+  "status": "BLOCKED",
+  "blocker": "SERVICE_ACCOUNT_SOURCE_PERMISSION_MISSING",
+  "original_blocker": "BLOCKED_SCHEDULER_NOT_IDENTIFIED",
+  "scheduler": {"technology":"Windows Task Scheduler","task_name":"KDI Repository Maintenance","enabled":true,"frequency":"DAILY","time":"21:00","timezone":"Asia/Kuala_Lumpur","next_run":"2026-09-01T21:00:00+08:00","working_directory":"D:\\Asset_Management_AI","entrypoint":"D:\\Asset_Management_AI\\scripts\\run-repository-maintenance.ps1"},
+  "workflow": {"source_sync":true,"master_reconciliation":true,"new_asset_enrollment":true,"health_telemetry":true},
+  "bounded_execution": {"triggered":true,"scheduler_last_result":0,"workflow_completed":false,"failure":"Backend service account receives Drive HTTP 404 for two configured source folders","root_cause":"SERVICE_ACCOUNT_SOURCE_PERMISSION_MISSING","host_google_connectivity":"PASS_HTTP_404_DNS_TCP","openai_calls":0,"rollout_media_analysis_calls":0},
+  "database_integrity_preserved": true,
+  "minimum_corrective_action": "Share the two configured source folders with the backend service-account identity using read access, verify metadata/file access, then run the exact scheduled task and retain a successful combined source-sync and Master-reconciliation log and telemetry record."
+}

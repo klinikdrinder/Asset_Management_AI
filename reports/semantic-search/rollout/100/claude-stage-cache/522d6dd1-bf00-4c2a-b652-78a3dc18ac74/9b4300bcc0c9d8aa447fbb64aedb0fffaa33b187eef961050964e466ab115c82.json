@@ -1,0 +1,177 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0563.MP4",
+      "evidence": [
+        "filename IMG_0563.MP4",
+        "asset_id 522d6dd1-bf00-4c2a-b652-78a3dc18ac74"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical treatment video clip",
+      "evidence": [
+        "8.77 second duration video with two keyframes showing a medical/aesthetic treatment scene"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene spanning 0 to 8.77 seconds",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 8.767"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One practitioner performing a procedure on one patient",
+      "evidence": [
+        "person in teal scrubs with mask and safety glasses actively holding device near second person's face",
+        "second person reclined with towel and eye protection, in patient position"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner with dark hair bun, teal scrubs, mask, laser goggles; patient with metal eye shields and hairnet",
+      "evidence": [
+        "practitioner has black hair in bun with bangs, wears teal scrub top labeled 'DR. LEW', tinted safety glasses, surgical mask, white gloves, smartwatch",
+        "patient's face visible with glasses/eye shields, blue hairnet, purple towel draped over torso"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial area including cheek, jaw, and periorbital region visible",
+      "evidence": [
+        "first keyframe shows green light near jaw/cheek area",
+        "second keyframe shows green light near eye/temple area with metal eye shield"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed procedure using handheld laser-like device",
+      "evidence": [
+        "no procedure name appears in readable_text_detected or spoken_content",
+        "device with orange fiber cable and green light tip observed near patient's face, but exact procedure not stated in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner applies handheld device to different facial areas",
+      "evidence": [
+        "device tip with green glow positioned near jaw in first keyframe and near eye in second keyframe, indicating movement across face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner-patient interaction during treatment",
+      "evidence": [
+        "practitioner's gloved hand holding device directly contacts/hovers over patient's face while patient remains reclined and still"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Green light emission from device tip on skin surface",
+      "evidence": [
+        "bright green glow visible at device tip touching skin in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical room with medical tray and equipment",
+      "evidence": [
+        "white wall background with red vertical stripe",
+        "tray with glasses/instruments visible in background",
+        "patient reclined on treatment chair with towel covering"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing focused on treatment area",
+      "evidence": [
+        "vertical aspect ratio 1280x720 rendered as tall portrait crop",
+        "close-up shots centering on practitioner's hands and patient's face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned above, patient reclined below in frame",
+      "evidence": [
+        "practitioner's upper body and face occupy top portion of frame, patient's face and torso occupy lower portion in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text 'DR. LEW' visible on scrub top",
+      "evidence": [
+        "text 'DR. LEW' partially visible printed on teal scrub top in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Possible promotional or documentation clip",
+      "evidence": [
+        "no explicit marketing text or branding overlay detected beyond scrub label, purpose unclear"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depiction of a skin treatment session in clinical setting",
+      "evidence": [
+        "visual sequence of device application to different facial regions during treatment"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual description task",
+      "evidence": []
+    }
+  ],
+  "narrative": "A practitioner in teal scrubs, mask, and laser safety glasses uses a handheld device with an orange fiber cable emitting a green light on a reclined patient's face. The patient wears protective eye shields and is covered with a purple towel and hairnet in what appears to be a clinical treatment room.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "522d6dd1-bf00-4c2a-b652-78a3dc18ac74",
+  "image_count": 2
+}

@@ -1,0 +1,174 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1383.MP4, scene 11",
+      "evidence": [
+        "filename IMG_1383.MP4, asset_id 162b99eb-d4d9-4143-a857-deb1af98d3ff, scene_index 11"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single close-up keyframe from a clinical video scene",
+      "evidence": [
+        "1280x720 h264 video, duration 23.09s, 1 keyframe supplied for this scene"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short scene segment spanning roughly 0.2 seconds",
+      "evidence": [
+        "scene start_seconds 5.7, end_seconds 5.9 within a 23.09s video"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A reclining patient and a gloved practitioner's hand",
+      "evidence": [
+        "face and neck of a reclined person visible",
+        "gloved hand holding a device near the person's face"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Light-skinned person with visible facial redness/sheen and a metallic eye shield",
+      "evidence": [
+        "lower face, chin, and neck visible with pink/reddish, glossy-looking skin",
+        "eye covered by a silver dome-shaped shield"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Lower face, cheek, jaw, and neck region",
+      "evidence": [
+        "visible nose, mouth, chin, cheek, and neck of the person"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from visual evidence alone",
+      "evidence": [
+        "gloved hand holds a silver instrument near the cheek but no procedure name appears in supplied text",
+        "readable_text_detected and spoken_content are both empty"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner holds a device against the patient's cheek/jaw",
+      "evidence": [
+        "gloved hand positions a cylindrical metal tool in contact with or near the cheek"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner performing hands-on contact with patient",
+      "evidence": [
+        "gloved hand directly touching/holding tool near patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial skin appears pink/glossy with possible surface moisture or redness",
+      "evidence": [
+        "cheek and chin area show a shiny, reddish surface texture"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting with towel drape and treatment table",
+      "evidence": [
+        "green textured towel and blue drape beneath the person's head/neck",
+        "gloved hand suggests a medical/aesthetic treatment room"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Extreme close-up, handheld-style framing",
+      "evidence": [
+        "tight crop on face and instrument filling most of the frame",
+        "vertical 720x1280-style orientation implied by portrait framing"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face and tool dominate the frame diagonally",
+      "evidence": [
+        "diagonal placement of face from upper left to lower right with instrument entering from lower right"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content present",
+      "evidence": [
+        "spoken_content field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing intent indicated by available evidence",
+      "evidence": [
+        "no text overlays, branding, or promotional cues present in the keyframe or metadata"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical moment of instrument contact with patient's face",
+      "evidence": [
+        "gloved hand applying a device to the cheek of a reclined, eye-shielded patient"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually determinable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A person lies reclined on a treatment table wearing a metallic eye shield, while a gloved hand holds a silver cylindrical device near their cheek and jaw area. A green towel and blue drape are visible around the person's neck and shoulders in what appears to be a clinical treatment setting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "162b99eb-d4d9-4143-a857-deb1af98d3ff",
+  "image_count": 1
+}

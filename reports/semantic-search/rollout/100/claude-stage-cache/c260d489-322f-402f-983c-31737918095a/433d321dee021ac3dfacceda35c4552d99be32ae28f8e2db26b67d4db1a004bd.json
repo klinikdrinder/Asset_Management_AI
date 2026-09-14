@@ -1,0 +1,175 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3415.MP4, 11.6s, 1280x720",
+      "evidence": [
+        "filename IMG_3415.MP4",
+        "duration_seconds 11.633333, width 1280, height 720, codec h264, decoded_locally true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical-setting video of a needle insertion at the neck/shoulder",
+      "evidence": [
+        "Two keyframes show a gloved hand holding a syringe with needle inserted into skin at the base of the neck/shoulder",
+        "single canonical scene covering the full clip"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, near-static framing",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "the two keyframes are described as near-identical"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One gloved provider and one seated patient",
+      "evidence": [
+        "gloved hands manipulating a syringe and stabilizing skin belong to a provider figure in dark clothing",
+        "a seated, dark-haired individual in a pink wrap is the person being treated"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient: dark hair in ponytail, pink wrap; provider: black attire, white gloves",
+      "evidence": [
+        "patient's dark hair is pulled back, ear and shoulder visible, wearing a pink wrap/garment",
+        "provider wears a black top and white/latex gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Neck, shoulder, ear, and upper chest visible",
+      "evidence": [
+        "keyframes show the patient's ear, neck, shoulder, and upper chest/back area in close-up"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure type not identifiable from visuals alone",
+      "evidence": [
+        "gloves, a syringe, and skin contact are visible but no named procedure appears in the supplied text, so the specific treatment cannot be established"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Needle insertion into skin with hand stabilization",
+      "evidence": [
+        "a gloved hand holds a syringe with the needle tip inserted into the skin at the neck/shoulder junction",
+        "the other gloved hand presses on the shoulder to steady the area"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Direct provider-patient physical contact",
+      "evidence": [
+        "provider's gloved hands are in direct contact with the patient's neck and shoulder while performing the needle action"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Small red marks on glove of uncertain clinical significance",
+      "evidence": [
+        "small red spots are visible on the provider's glove near the fingertips but their nature (e.g., blood vs. other marking) cannot be confirmed from the keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Plain indoor room, likely clinical setting",
+      "evidence": [
+        "background shows a plain white wall/door and indoor furnishings with no outdoor elements"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Camera technique not determinable",
+      "evidence": [
+        "only two near-identical keyframes are available, insufficient to assess camera movement, angle changes, or shot transitions"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up framing centered on injection site",
+      "evidence": [
+        "1280x720 frame tightly cropped on the neck/shoulder area with the syringe and hands as the visual focal point"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio track present but no meaningful speech",
+      "evidence": [
+        "audio_stream_present true and audio_state AUDIO_PRESENT, but transcript_state is NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent or usage not determinable",
+      "evidence": [
+        "no branding, captions, or promotional framing elements are present in the keyframes or metadata to assess marketing use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose not determinable",
+      "evidence": [
+        "available evidence only shows a single close-up action without context establishing a storyline or purpose"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this content type",
+      "evidence": []
+    }
+  ],
+  "narrative": "The video's keyframes show a gloved provider inserting a syringe needle into the skin at the base of a seated, dark-haired patient's neck/upper shoulder while the other gloved hand stabilizes the area. The patient, wearing a pink wrap, is filmed close-up from behind/side against a plain indoor background, with small red marks visible on the provider's glove.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "c260d489-322f-402f-983c-31737918095a",
+  "image_count": 1
+}

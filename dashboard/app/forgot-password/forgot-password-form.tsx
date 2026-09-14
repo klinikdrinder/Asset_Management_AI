@@ -1,1 +1,43 @@
-"use client";import Link from"next/link";import{FormEvent,useState}from"react";export function ForgotPasswordForm(){const[email,setEmail]=useState(""),[key,setKey]=useState(""),[password,setPassword]=useState(""),[confirm,setConfirm]=useState(""),[error,setError]=useState(""),[done,setDone]=useState(false);async function submit(e:FormEvent){e.preventDefault();if(password!==confirm){setError("Passwords do not match.");return}const r=await fetch("/api/admin-auth/recover",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email,recoveryKey:key,newPassword:password})});if(!r.ok){setError("Recovery details are invalid.");return}setDone(true)}return done?<div className="authSuccess">Password reset. <Link href="/login">Return to Login</Link></div>:<form className="authForm" onSubmit={submit}><label>Email<input type="email" required value={email} onChange={e=>setEmail(e.target.value)}/></label><label>Recovery Key<input type="password" required value={key} onChange={e=>setKey(e.target.value)}/></label><label>New Password<input type="password" minLength={12} required value={password} onChange={e=>setPassword(e.target.value)}/></label><label>Confirm New Password<input type="password" minLength={12} required value={confirm} onChange={e=>setConfirm(e.target.value)}/></label>{error&&<div className="authError">{error}</div>}<button className="authPrimary">Reset Password</button></form>}
+"use client";
+
+import Link from "next/link";
+import { FormEvent, useState } from "react";
+
+export function ForgotPasswordForm() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+  const [pending, setPending] = useState(false);
+
+  async function submit(event: FormEvent) {
+    event.preventDefault();
+    if (pending) return;
+    setPending(true);
+    setError("");
+    try {
+      const response = await fetch("/api/auth/forgot-password", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      const body = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        setError(body.message ?? "We couldn't send the reset email right now. Please try again.");
+        return;
+      }
+      setMessage(body.message ?? "We've sent password reset instructions to your email address.");
+    } catch {
+      setError("We couldn't send the reset email right now. Please try again.");
+    } finally {
+      setPending(false);
+    }
+  }
+
+  if (message) return <div className="authSuccess"><h2>Check your email</h2><p>{message}</p><Link href="/login">Back to Sign In</Link></div>;
+  return <form className="authForm" onSubmit={submit}>
+    <label>Email<input type="email" autoComplete="email" required value={email} onChange={(event) => setEmail(event.target.value)} /></label>
+    {error && <div className="authError" role="alert">{error}</div>}
+    <button className="authPrimary" disabled={pending}>{pending ? "Sending…" : "Send Reset Link"}</button>
+    <div className="authLinks"><Link href="/login">Back to Sign In</Link></div>
+  </form>;
+}

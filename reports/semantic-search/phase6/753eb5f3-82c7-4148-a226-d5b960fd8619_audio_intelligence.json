@@ -1,0 +1,771 @@
+{
+  "processor_version": "kdi_audio_intelligence_v1",
+  "configuration_version": "kdi_audio_intelligence_config_v1",
+  "configuration_fingerprint": "c90b3d1c7de34af15a93037b4e47229766306f2046de04fbcb89dea87396ba57",
+  "semantic_spec_version": "semantic_index_v1",
+  "semantic_spec_fingerprint": "ea74ef9c07f8341342817bc924d78fb6ae28049a8a29b6c571172a77c923308c",
+  "pilot_manifest_version": "kdi_semantic_pilot_v1",
+  "analysis_run_id": "aadcf848-f4ef-5e14-97aa-a006ea38d08e",
+  "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+  "filename": "IMG_1160.MP4",
+  "source_fingerprint": "f50bdfb62dd5c49b05f813ec8e3b16eb5b7b74269fce2065019c023df071c705",
+  "generated_at": "2026-08-24T04:32:16.361992+00:00",
+  "status": "COMPLETED",
+  "authorization": {
+    "external_ai_eligible": true,
+    "reason": "Live reviewed asset_access_control.external_ai_status=ALLOWED",
+    "provider_used": "local_faster_whisper",
+    "audio_transmitted_externally": false,
+    "external_attempt_outcome": null,
+    "separate_controls": {
+      "external_ai_status": "ALLOWED",
+      "review_status": "REVIEWED",
+      "classification_status": "UNCLASSIFIED",
+      "is_clinical": null,
+      "sensitivity_level": "GENERAL",
+      "consent_status": "UNKNOWN",
+      "marketing_usage_status": "UNKNOWN",
+      "requires_clinical_permission": null,
+      "reviewed_at": "2026-08-20T04:49:35.121618+00:00"
+    }
+  },
+  "audio": {
+    "source_codec": "aac",
+    "video_duration_seconds": 23.666667,
+    "duration_seconds": 23.64,
+    "sample_rate": 16000,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "frame_count": 378240,
+    "audio_fingerprint": "6f3efc5d0a381b00a9f0b15848562f84517f8f99c4e3a1ef7349a6d7c1df119f",
+    "duration_delta_seconds": 0.026667,
+    "duration_match": true,
+    "extraction_status": "COMPLETED",
+    "temporary_audio_retained": false
+  },
+  "speech_detection": {
+    "speech_present": "YES",
+    "segments": [
+      {
+        "start_time": 0.0,
+        "end_time": 0.78,
+        "state": "SPEECH_CANDIDATE"
+      },
+      {
+        "start_time": 4.26,
+        "end_time": 4.44,
+        "state": "SPEECH_CANDIDATE"
+      },
+      {
+        "start_time": 4.86,
+        "end_time": 5.1,
+        "state": "SPEECH_CANDIDATE"
+      },
+      {
+        "start_time": 5.52,
+        "end_time": 5.73,
+        "state": "SPEECH_CANDIDATE"
+      },
+      {
+        "start_time": 6.12,
+        "end_time": 6.33,
+        "state": "SPEECH_CANDIDATE"
+      },
+      {
+        "start_time": 7.08,
+        "end_time": 7.32,
+        "state": "SPEECH_CANDIDATE"
+      },
+      {
+        "start_time": 7.77,
+        "end_time": 7.98,
+        "state": "SPEECH_CANDIDATE"
+      },
+      {
+        "start_time": 8.4,
+        "end_time": 8.7,
+        "state": "SPEECH_CANDIDATE"
+      },
+      {
+        "start_time": 12.42,
+        "end_time": 12.63,
+        "state": "SPEECH_CANDIDATE"
+      },
+      {
+        "start_time": 13.2,
+        "end_time": 13.89,
+        "state": "SPEECH_CANDIDATE"
+      },
+      {
+        "start_time": 14.79,
+        "end_time": 15.3,
+        "state": "SPEECH_CANDIDATE"
+      },
+      {
+        "start_time": 19.89,
+        "end_time": 21.06,
+        "state": "SPEECH_CANDIDATE"
+      },
+      {
+        "start_time": 21.93,
+        "end_time": 22.5,
+        "state": "SPEECH_CANDIDATE"
+      }
+    ],
+    "speech_duration_seconds": 5.52,
+    "speech_ratio": 0.233503,
+    "confidence": 0.99,
+    "confidence_source": "HEURISTIC",
+    "threshold_dbfs": -39.33,
+    "noise_floor_dbfs": -47.33,
+    "peak_dbfs": -23.57
+  },
+  "language": {
+    "primary": "ms",
+    "secondary": null,
+    "mixed": false,
+    "confidence": 0.49863681197166443,
+    "confidence_source": "LOCAL_WHISPER_LANGUAGE_PROBABILITY"
+  },
+  "transcription": {
+    "status": "COMPLETED",
+    "raw_transcript": "Bagaimanapun. Jadi seperti yang ini, Fosting, White Dot, White Dot di sini, White Dot di sini. Ini adalah beberapa Fosting yang kita dapat melihat daripada dia. Bukan banyak Fosting. Fosting yang ini juga.",
+    "normalized_transcript": "Bagaimanapun. Jadi seperti yang ini, Fosting, White Dot, White Dot di sini, White Dot di sini. Ini adalah beberapa Fosting yang kita dapat melihat daripada dia. Bukan banyak Fosting. Fosting yang ini juga.",
+    "detected_speech_duration_seconds": 5.52,
+    "transcript_segment_span_seconds": 10.58,
+    "transcribed_speech_duration_seconds": 4.8,
+    "untranscribed_speech_duration_seconds": 0.72,
+    "transcribed_speech_coverage_percent": 86.96,
+    "coverage_method": "UNION_OVERLAP_OF_TRANSCRIPT_SEGMENTS_WITH_ENERGY_VAD_SEGMENTS",
+    "provider_raw": {
+      "whisper": {
+        "text": "Bagaimanapun. Jadi seperti yang ini, Fosting, White Dot, White Dot di sini, White Dot di sini. Ini adalah beberapa Fosting yang kita dapat melihat daripada dia. Bukan banyak Fosting. Fosting yang ini juga.",
+        "language": "ms",
+        "language_probability": 0.49863681197166443,
+        "duration": 23.64,
+        "duration_after_vad": 14.968,
+        "segments": [
+          {
+            "id": 0,
+            "start": 0.0,
+            "end": 0.64,
+            "text": " Bagaimanapun.",
+            "avg_logprob": -0.800081580113142,
+            "no_speech_prob": 0.25471848249435425,
+            "words": [
+              {
+                "start": 0.0,
+                "end": 0.64,
+                "word": " Bagaimanapun.",
+                "probability": 0.3700123643502593
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "start": 3.79,
+            "end": 4.85,
+            "text": " Jadi seperti yang ini,",
+            "avg_logprob": -0.800081580113142,
+            "no_speech_prob": 0.25471848249435425,
+            "words": [
+              {
+                "start": 3.79,
+                "end": 4.31,
+                "word": " Jadi",
+                "probability": 0.6540355682373047
+              },
+              {
+                "start": 4.31,
+                "end": 4.55,
+                "word": " seperti",
+                "probability": 0.24069693684577942
+              },
+              {
+                "start": 4.55,
+                "end": 4.77,
+                "word": " yang",
+                "probability": 0.3140869438648224
+              },
+              {
+                "start": 4.77,
+                "end": 4.85,
+                "word": " ini,",
+                "probability": 0.9704799056053162
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "start": 5.11,
+            "end": 5.67,
+            "text": " Fosting,",
+            "avg_logprob": -0.800081580113142,
+            "no_speech_prob": 0.25471848249435425,
+            "words": [
+              {
+                "start": 5.11,
+                "end": 5.67,
+                "word": " Fosting,",
+                "probability": 0.3259900303867956
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "start": 6.13,
+            "end": 6.55,
+            "text": " White Dot,",
+            "avg_logprob": -0.800081580113142,
+            "no_speech_prob": 0.25471848249435425,
+            "words": [
+              {
+                "start": 6.13,
+                "end": 6.33,
+                "word": " White",
+                "probability": 0.049656517803668976
+              },
+              {
+                "start": 6.33,
+                "end": 6.55,
+                "word": " Dot,",
+                "probability": 0.7602348327636719
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "start": 6.97,
+            "end": 7.95,
+            "text": " White Dot di sini,",
+            "avg_logprob": -0.800081580113142,
+            "no_speech_prob": 0.25471848249435425,
+            "words": [
+              {
+                "start": 6.97,
+                "end": 7.33,
+                "word": " White",
+                "probability": 0.8083323240280151
+              },
+              {
+                "start": 7.33,
+                "end": 7.59,
+                "word": " Dot",
+                "probability": 0.9843493103981018
+              },
+              {
+                "start": 7.59,
+                "end": 7.81,
+                "word": " di",
+                "probability": 0.47178468108177185
+              },
+              {
+                "start": 7.81,
+                "end": 7.95,
+                "word": " sini,",
+                "probability": 0.9685620069503784
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "start": 8.41,
+            "end": 9.31,
+            "text": " White Dot di sini.",
+            "avg_logprob": -0.800081580113142,
+            "no_speech_prob": 0.25471848249435425,
+            "words": [
+              {
+                "start": 8.41,
+                "end": 8.71,
+                "word": " White",
+                "probability": 0.1720949113368988
+              },
+              {
+                "start": 8.71,
+                "end": 8.95,
+                "word": " Dot",
+                "probability": 0.9890657663345337
+              },
+              {
+                "start": 8.95,
+                "end": 9.17,
+                "word": " di",
+                "probability": 0.9379384517669678
+              },
+              {
+                "start": 9.17,
+                "end": 9.31,
+                "word": " sini.",
+                "probability": 0.9932041168212891
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "start": 11.79,
+            "end": 15.23,
+            "text": " Ini adalah beberapa Fosting yang kita dapat melihat daripada dia.",
+            "avg_logprob": -0.800081580113142,
+            "no_speech_prob": 0.25471848249435425,
+            "words": [
+              {
+                "start": 11.79,
+                "end": 12.17,
+                "word": " Ini",
+                "probability": 0.6214163899421692
+              },
+              {
+                "start": 12.17,
+                "end": 12.35,
+                "word": " adalah",
+                "probability": 0.7494904398918152
+              },
+              {
+                "start": 12.35,
+                "end": 12.49,
+                "word": " beberapa",
+                "probability": 0.7923673093318939
+              },
+              {
+                "start": 12.49,
+                "end": 13.35,
+                "word": " Fosting",
+                "probability": 0.8024599949518839
+              },
+              {
+                "start": 13.35,
+                "end": 13.55,
+                "word": " yang",
+                "probability": 0.9369191527366638
+              },
+              {
+                "start": 13.55,
+                "end": 13.81,
+                "word": " kita",
+                "probability": 0.5932117700576782
+              },
+              {
+                "start": 13.81,
+                "end": 14.35,
+                "word": " dapat",
+                "probability": 0.754044771194458
+              },
+              {
+                "start": 14.35,
+                "end": 14.63,
+                "word": " melihat",
+                "probability": 0.737356424331665
+              },
+              {
+                "start": 14.63,
+                "end": 14.99,
+                "word": " daripada",
+                "probability": 0.7145397116740545
+              },
+              {
+                "start": 14.99,
+                "end": 15.23,
+                "word": " dia.",
+                "probability": 0.478484570980072
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "start": 20.05,
+            "end": 21.91,
+            "text": " Bukan banyak Fosting.",
+            "avg_logprob": -0.800081580113142,
+            "no_speech_prob": 0.25471848249435425,
+            "words": [
+              {
+                "start": 20.05,
+                "end": 20.33,
+                "word": " Bukan",
+                "probability": 0.36007753014564514
+              },
+              {
+                "start": 20.33,
+                "end": 20.47,
+                "word": " banyak",
+                "probability": 0.12570826709270477
+              },
+              {
+                "start": 20.47,
+                "end": 21.91,
+                "word": " Fosting.",
+                "probability": 0.843828022480011
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "start": 21.91,
+            "end": 22.63,
+            "text": " Fosting yang ini juga.",
+            "avg_logprob": -0.800081580113142,
+            "no_speech_prob": 0.25471848249435425,
+            "words": [
+              {
+                "start": 21.91,
+                "end": 22.03,
+                "word": " Fosting",
+                "probability": 0.764324963092804
+              },
+              {
+                "start": 22.03,
+                "end": 22.13,
+                "word": " yang",
+                "probability": 0.09707826375961304
+              },
+              {
+                "start": 22.13,
+                "end": 22.21,
+                "word": " ini",
+                "probability": 0.744551420211792
+              },
+              {
+                "start": 22.21,
+                "end": 22.63,
+                "word": " juga.",
+                "probability": 0.4645814895629883
+              }
+            ]
+          }
+        ]
+      },
+      "diarized": {
+        "segments": [],
+        "status": "UNAVAILABLE"
+      }
+    }
+  },
+  "transcript_chunks": [
+    {
+      "transcript_chunk_id": "e9401784-e19f-53e2-adda-4fd9db825cc6",
+      "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+      "start_time": 0.0,
+      "end_time": 0.64,
+      "raw_text": "Bagaimanapun.",
+      "normalized_text": "Bagaimanapun.",
+      "language": "ms",
+      "confidence": 0.37,
+      "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+      "quality_flags": [],
+      "accepted_for_search": false,
+      "speaker_id": "UNKNOWN_SPEAKER",
+      "speaker_role": "UNKNOWN_SPEAKER",
+      "speaker_role_confidence": null,
+      "analysis_run_id": "aadcf848-f4ef-5e14-97aa-a006ea38d08e",
+      "primary_scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "overlapping_scene_ids": [
+        "9885f819-8290-53ae-b430-e51d158de57f"
+      ],
+      "temporally_overlapping_event_ids": [],
+      "event_relationship": null,
+      "topics": [],
+      "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: ms\nTranscript: Bagaimanapun.",
+      "source_text_fingerprint": "0dccaa63e0c4743aa28d626aeb723ca6dd014e6fa7b77edea018b45801b5de62",
+      "embedding_id": null,
+      "embedding_state": "DEFERRED"
+    },
+    {
+      "transcript_chunk_id": "836b7dd7-a20b-587a-a6b3-002f29107475",
+      "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+      "start_time": 3.79,
+      "end_time": 4.85,
+      "raw_text": "Jadi seperti yang ini,",
+      "normalized_text": "Jadi seperti yang ini,",
+      "language": "ms",
+      "confidence": 0.545,
+      "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+      "quality_flags": [],
+      "accepted_for_search": false,
+      "speaker_id": "UNKNOWN_SPEAKER",
+      "speaker_role": "UNKNOWN_SPEAKER",
+      "speaker_role_confidence": null,
+      "analysis_run_id": "aadcf848-f4ef-5e14-97aa-a006ea38d08e",
+      "primary_scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "overlapping_scene_ids": [
+        "9885f819-8290-53ae-b430-e51d158de57f"
+      ],
+      "temporally_overlapping_event_ids": [],
+      "event_relationship": null,
+      "topics": [],
+      "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: ms\nTranscript: Jadi seperti yang ini,",
+      "source_text_fingerprint": "8245811132ce31bf2494c8f1812b797526155e3e0601dacdcbda1637bdab57a6",
+      "embedding_id": null,
+      "embedding_state": "DEFERRED"
+    },
+    {
+      "transcript_chunk_id": "cb942d8e-be14-518b-acdd-8642e6921a98",
+      "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+      "start_time": 5.11,
+      "end_time": 5.67,
+      "raw_text": "Fosting,",
+      "normalized_text": "Fosting,",
+      "language": "ms",
+      "confidence": 0.326,
+      "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+      "quality_flags": [],
+      "accepted_for_search": false,
+      "speaker_id": "UNKNOWN_SPEAKER",
+      "speaker_role": "UNKNOWN_SPEAKER",
+      "speaker_role_confidence": null,
+      "analysis_run_id": "aadcf848-f4ef-5e14-97aa-a006ea38d08e",
+      "primary_scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "overlapping_scene_ids": [
+        "9885f819-8290-53ae-b430-e51d158de57f"
+      ],
+      "temporally_overlapping_event_ids": [],
+      "event_relationship": null,
+      "topics": [],
+      "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: ms\nTranscript: Fosting,",
+      "source_text_fingerprint": "baf258dc5a3ac4368203fc654418e88387f2e31388be5797f74be9ea7eccd2ce",
+      "embedding_id": null,
+      "embedding_state": "DEFERRED"
+    },
+    {
+      "transcript_chunk_id": "cbfd6f36-9dcc-508d-b952-f3b977d3ea9c",
+      "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+      "start_time": 6.13,
+      "end_time": 6.55,
+      "raw_text": "White Dot,",
+      "normalized_text": "White Dot,",
+      "language": "ms",
+      "confidence": 0.405,
+      "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+      "quality_flags": [],
+      "accepted_for_search": false,
+      "speaker_id": "UNKNOWN_SPEAKER",
+      "speaker_role": "UNKNOWN_SPEAKER",
+      "speaker_role_confidence": null,
+      "analysis_run_id": "aadcf848-f4ef-5e14-97aa-a006ea38d08e",
+      "primary_scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "overlapping_scene_ids": [
+        "9885f819-8290-53ae-b430-e51d158de57f"
+      ],
+      "temporally_overlapping_event_ids": [
+        "0c27a088-1aa3-53b2-9274-38c2d89461fb"
+      ],
+      "event_relationship": "TEMPORAL_OVERLAP_ONLY",
+      "topics": [],
+      "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: ms\nTranscript: White Dot,",
+      "source_text_fingerprint": "6a998d320932e59b7f2ac9a5da0a98431d19dd4137e639bee39570d41e7df722",
+      "embedding_id": null,
+      "embedding_state": "DEFERRED"
+    },
+    {
+      "transcript_chunk_id": "89b0b9fb-180e-59b7-adea-88481f9f1ba0",
+      "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+      "start_time": 6.97,
+      "end_time": 7.95,
+      "raw_text": "White Dot di sini,",
+      "normalized_text": "White Dot di sini,",
+      "language": "ms",
+      "confidence": 0.808,
+      "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+      "quality_flags": [],
+      "accepted_for_search": true,
+      "speaker_id": "UNKNOWN_SPEAKER",
+      "speaker_role": "UNKNOWN_SPEAKER",
+      "speaker_role_confidence": null,
+      "analysis_run_id": "aadcf848-f4ef-5e14-97aa-a006ea38d08e",
+      "primary_scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "overlapping_scene_ids": [
+        "9885f819-8290-53ae-b430-e51d158de57f"
+      ],
+      "temporally_overlapping_event_ids": [
+        "0c27a088-1aa3-53b2-9274-38c2d89461fb",
+        "f0a1c0be-a888-5dce-a87c-2530aa480434"
+      ],
+      "event_relationship": "TEMPORAL_OVERLAP_ONLY",
+      "topics": [],
+      "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: ms\nTranscript: White Dot di sini,",
+      "source_text_fingerprint": "6ade1e3c09ed5eba9562375d74285b6786bfe5c7b0ed88b090eca4a65b6f2024",
+      "embedding_id": null,
+      "embedding_state": "DEFERRED"
+    },
+    {
+      "transcript_chunk_id": "3742a7a7-c2c1-5456-9540-3abb99273fa9",
+      "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+      "start_time": 8.41,
+      "end_time": 9.31,
+      "raw_text": "White Dot di sini.",
+      "normalized_text": "White Dot di sini.",
+      "language": "ms",
+      "confidence": 0.773,
+      "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+      "quality_flags": [],
+      "accepted_for_search": true,
+      "speaker_id": "UNKNOWN_SPEAKER",
+      "speaker_role": "UNKNOWN_SPEAKER",
+      "speaker_role_confidence": null,
+      "analysis_run_id": "aadcf848-f4ef-5e14-97aa-a006ea38d08e",
+      "primary_scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "overlapping_scene_ids": [
+        "9885f819-8290-53ae-b430-e51d158de57f"
+      ],
+      "temporally_overlapping_event_ids": [
+        "f0a1c0be-a888-5dce-a87c-2530aa480434"
+      ],
+      "event_relationship": "TEMPORAL_OVERLAP_ONLY",
+      "topics": [],
+      "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: ms\nTranscript: White Dot di sini.",
+      "source_text_fingerprint": "5ff1988d129a02f34d618c85ee97e9af351890fefb9bf48a0cafb4d897f25a9d",
+      "embedding_id": null,
+      "embedding_state": "DEFERRED"
+    },
+    {
+      "transcript_chunk_id": "96f863d6-d53f-5570-a3b7-56f911c939c8",
+      "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+      "start_time": 11.79,
+      "end_time": 15.23,
+      "raw_text": "Ini adalah beberapa Fosting yang kita dapat melihat daripada dia.",
+      "normalized_text": "Ini adalah beberapa Fosting yang kita dapat melihat daripada dia.",
+      "language": "ms",
+      "confidence": 0.718,
+      "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+      "quality_flags": [],
+      "accepted_for_search": true,
+      "speaker_id": "UNKNOWN_SPEAKER",
+      "speaker_role": "UNKNOWN_SPEAKER",
+      "speaker_role_confidence": null,
+      "analysis_run_id": "aadcf848-f4ef-5e14-97aa-a006ea38d08e",
+      "primary_scene_id": "9885f819-8290-53ae-b430-e51d158de57f",
+      "overlapping_scene_ids": [
+        "9885f819-8290-53ae-b430-e51d158de57f"
+      ],
+      "temporally_overlapping_event_ids": [
+        "766c1dc4-d6bf-5885-932b-819e696aed99",
+        "c9c75f60-b4fa-55ad-835c-95ede6ac4b20"
+      ],
+      "event_relationship": "TEMPORAL_OVERLAP_ONLY",
+      "topics": [],
+      "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: ms\nTranscript: Ini adalah beberapa Fosting yang kita dapat melihat daripada dia.",
+      "source_text_fingerprint": "99b24a976a232ab3f0320da1dfdb0fc503c563adbc4f2da662d6f6a9b2f12597",
+      "embedding_id": null,
+      "embedding_state": "DEFERRED"
+    },
+    {
+      "transcript_chunk_id": "da2879cd-e86b-56c9-a401-47275db0de1b",
+      "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+      "start_time": 20.05,
+      "end_time": 21.91,
+      "raw_text": "Bukan banyak Fosting.",
+      "normalized_text": "Bukan banyak Fosting.",
+      "language": "ms",
+      "confidence": 0.443,
+      "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+      "quality_flags": [],
+      "accepted_for_search": false,
+      "speaker_id": "UNKNOWN_SPEAKER",
+      "speaker_role": "UNKNOWN_SPEAKER",
+      "speaker_role_confidence": null,
+      "analysis_run_id": "aadcf848-f4ef-5e14-97aa-a006ea38d08e",
+      "primary_scene_id": "60def3df-0034-5db8-a205-912a2760818e",
+      "overlapping_scene_ids": [
+        "60def3df-0034-5db8-a205-912a2760818e"
+      ],
+      "temporally_overlapping_event_ids": [],
+      "event_relationship": null,
+      "topics": [],
+      "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: ms\nTranscript: Bukan banyak Fosting.",
+      "source_text_fingerprint": "661ff222a851b05b2eec4e5e390861f259a995b8b44b943a30c5a0b38207c39f",
+      "embedding_id": null,
+      "embedding_state": "DEFERRED"
+    },
+    {
+      "transcript_chunk_id": "9f640e43-eaba-56c3-8c79-1424669f32e0",
+      "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+      "start_time": 21.91,
+      "end_time": 22.63,
+      "raw_text": "Fosting yang ini juga.",
+      "normalized_text": "Fosting yang ini juga.",
+      "language": "ms",
+      "confidence": 0.518,
+      "confidence_source": "PROVIDER_WORD_PROBABILITY_MEAN",
+      "quality_flags": [],
+      "accepted_for_search": false,
+      "speaker_id": "UNKNOWN_SPEAKER",
+      "speaker_role": "UNKNOWN_SPEAKER",
+      "speaker_role_confidence": null,
+      "analysis_run_id": "aadcf848-f4ef-5e14-97aa-a006ea38d08e",
+      "primary_scene_id": "60def3df-0034-5db8-a205-912a2760818e",
+      "overlapping_scene_ids": [
+        "60def3df-0034-5db8-a205-912a2760818e"
+      ],
+      "temporally_overlapping_event_ids": [],
+      "event_relationship": null,
+      "topics": [],
+      "transcript_search_text": "Speaker role: UNKNOWN_SPEAKER\nLanguage: ms\nTranscript: Fosting yang ini juga.",
+      "source_text_fingerprint": "e25a5309b49452d619673f3178c699294de48963c2eab7b119d1c35ff022350d",
+      "embedding_id": null,
+      "embedding_state": "DEFERRED"
+    }
+  ],
+  "speakers": {
+    "anonymous_speaker_count": 1,
+    "speaker_ids": [
+      "UNKNOWN_SPEAKER"
+    ],
+    "roles_assigned": 0,
+    "unknown_roles": 1,
+    "diarization_status": "UNAVAILABLE",
+    "diarization_confidence": null,
+    "voice_biometric_identification": "NONE"
+  },
+  "spoken_topics": [],
+  "spoken_summary": "Bagaimanapun. Jadi seperti yang ini, Fosting, White Dot, White Dot di sini, White Dot di sini. Ini adalah beberapa Fosting yang kita dapat melihat daripada dia. Bukan banyak Fosting. Fosting yang ini juga.",
+  "reconciliation": [
+    {
+      "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+      "filename": "IMG_1160.MP4",
+      "spoken_concept": null,
+      "outcome": "UNRELATED",
+      "evidence_chunk_ids": [
+        "e9401784-e19f-53e2-adda-4fd9db825cc6",
+        "836b7dd7-a20b-587a-a6b3-002f29107475",
+        "cb942d8e-be14-518b-acdd-8642e6921a98",
+        "cbfd6f36-9dcc-508d-b952-f3b977d3ea9c",
+        "89b0b9fb-180e-59b7-adea-88481f9f1ba0",
+        "3742a7a7-c2c1-5456-9540-3abb99273fa9",
+        "96f863d6-d53f-5570-a3b7-56f911c939c8",
+        "da2879cd-e86b-56c9-a401-47275db0de1b",
+        "9f640e43-eaba-56c3-8c79-1424669f32e0"
+      ],
+      "phase5_modified": false
+    }
+  ],
+  "img_1238_segmentation": null,
+  "layer_14": {
+    "applicability": "APPLICABLE",
+    "semantic_state": "OBSERVED",
+    "speech_state": "YES",
+    "transcript_state": "OBSERVED",
+    "embedding_state": "DEFERRED",
+    "human_review_state": "REVIEW_NEEDED"
+  },
+  "performance": {
+    "audio_extraction_seconds": 0.07664329999533948,
+    "vad_seconds": 0.12364200000592973,
+    "transcription_seconds": 7.594021600001724,
+    "diarization_seconds": 0.0,
+    "embedding_seconds": 0.0,
+    "total_seconds": 7.922511500000837,
+    "provider_calls": 0,
+    "retries": 0,
+    "cost": "LOCAL_NO_API_COST"
+  },
+  "prohibitions": {
+    "ocr_performed": false,
+    "production_writes": false,
+    "search_documents_rebuilt": false,
+    "phase5_modified": false
+  },
+  "idempotency": {
+    "verified": true,
+    "functional_fingerprint": "85bea7c871cc10ed0f1bfd3d2b01a34b37f43f41a46ae0a2672f112ffc84636a"
+  }
+}

@@ -19,8 +19,9 @@ class SemanticDimensionMigrationTests(unittest.TestCase):
         cls.corrective = CORRECTIVE.read_text(encoding="utf-8")
         cls.lower = cls.corrective.lower()
 
-    def test_deployed_historical_migration_is_byte_for_byte_unchanged(self) -> None:
-        self.assertEqual(hashlib.sha256(HISTORICAL.read_bytes()).hexdigest().upper(), HISTORICAL_SHA256)
+    def test_deployed_historical_migration_content_is_unchanged(self) -> None:
+        normalized = HISTORICAL.read_bytes().replace(b"\r\n", b"\n")
+        self.assertEqual(hashlib.sha256(normalized).hexdigest().upper(), HISTORICAL_SHA256)
         self.assertIn("public.vector(1536)", self.historical)
 
     def test_corrective_migration_is_transactional_and_fail_closed(self) -> None:

@@ -1,0 +1,1 @@
+import {createHash} from "node:crypto";import {readFile} from "node:fs/promises";const sha=async(p:string)=>createHash("sha256").update(await readFile(p)).digest("hex");console.log(JSON.stringify({parser:await sha("dashboard/db/query-interpreter.ts"),expander:await sha("dashboard/db/query-expander.ts"),retriever:await sha("dashboard/db/candidate-retriever.ts")},null,2));

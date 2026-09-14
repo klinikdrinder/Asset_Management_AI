@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3418.MP4, single scene",
+      "evidence": [
+        "asset_id a1f5685e-e72a-4535-8ff9-2d11644060d1, filename IMG_3418.MP4, scene_index 0, duration 15.4s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical close-up clip of shoulder/neck area",
+      "evidence": [
+        "Two keyframes show a close-up of a person's upper back/shoulder with a gloved hand holding a syringe near marked skin"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene spanning 0.0-15.4 seconds",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 15.4"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A seated patient and a gloved clinician",
+      "evidence": [
+        "Person with black headband and pink garment facing away from camera; second person's arm/torso wearing dark scrub top labeled 'DR AS...' with gloves"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient wears black headband and pink top; clinician wears dark scrubs, white/latex gloves, smartwatch",
+      "evidence": [
+        "Black fabric headband and pink clothing visible on seated person",
+        "Dark scrub top with partial text 'DR AS', latex gloves, and a smartwatch on the other person's wrist"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Posterior neck, shoulder, and upper back skin visible",
+      "evidence": [
+        "Close-up view of the back of the neck, shoulder blade area, and upper back skin"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "No procedure name appears in readable_text_detected or spoken_content, and gloves/syringe/skin contact alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hand positioning a syringe near marked skin",
+      "evidence": [
+        "Second keyframe shows a gloved hand holding a syringe with needle close to the skin marks on the shoulder"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician working directly on patient's shoulder area",
+      "evidence": [
+        "Clinician's gloved hand and arm positioned directly over and touching the patient's shoulder/neck skin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small skin marks with dried brownish/reddish discharge on shoulder",
+      "evidence": [
+        "Cluster of small linear marks and orange/brown crusted material visible on the skin in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room with medical tray and equipment",
+      "evidence": [
+        "Blue medical drape/table, metal instrument tray, and medical equipment visible in the background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld vertical framing on the shoulder area",
+      "evidence": [
+        "Vertical 1280x720 frame tightly cropped on the shoulder/neck region in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject shoulder fills most of frame, clinician's arm enters from right",
+      "evidence": [
+        "Patient's back/shoulder occupies left and center of frame; clinician's gloved arm and hand enter from upper right"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is empty despite audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text on clinician's scrub top",
+      "evidence": [
+        "Scrub top shows partial embroidered text 'DR AS' in second keyframe",
+        "readable_text_detected list is empty in supplied metadata"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context indicated",
+      "evidence": [
+        "No text, branding, or usage context provided beyond the raw clinical clip metadata"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical care moment involving a marked skin area on the shoulder",
+      "evidence": [
+        "Combined visual evidence of gloved clinician handling a syringe near marked, discharging skin on a seated patient's shoulder"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to direct visual/text evidence review",
+      "evidence": []
+    }
+  ],
+  "narrative": "The images show the back of a person's shoulder/neck area with several small skin marks or puncture-like marks and some dried discharge, while a gloved clinician holds a syringe/needle near the area. A person wearing a black headband sits facing away from the camera in what appears to be a clinical treatment room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "a1f5685e-e72a-4535-8ff9-2d11644060d1",
+  "image_count": 2
+}

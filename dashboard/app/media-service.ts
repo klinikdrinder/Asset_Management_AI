@@ -1,12 +1,13 @@
 import "server-only";
 import { AuthenticationRequired, AuthorizationDenied, requireDownloadPermission, requireStaffOrAdmin } from "./auth";
 import { isLibraryDevBypassEnabled } from "./lib/library/dev-bypass";
+import { isLocalLibraryMediaConfigured } from "./lib/library/local-preview";
 import { liveRest } from "./lib/library/live-transport";
 import { DriveApiError, downloadDriveFile, fetchDriveThumbnailLinkBytes, getDriveFileMetadata } from "./lib/google/drive-client";
 import { GoogleServiceAccountError } from "./lib/google/service-account";
 import { isValidRangeHeader } from "./lib/media/range";
 import { resolveAssetMediaLocation, type MediaOperation, type ResolvableAssetRow, type ResolvedMediaLocation } from "./lib/media/resolve-location";
-import { readThumbnailCache, writeThumbnailCache } from "./lib/media/thumbnail-cache";
+import { readThumbnailCache, writeThumbnailCache, signedThumbnailUrl } from "./lib/media/thumbnail-cache";
 import { extractPosterFrame } from "./lib/media/video-poster";
 import { createServiceClient } from "./lib/supabase/service";
 
@@ -34,13 +35,41 @@ async function fetchDevAssetRow(assetId: string): Promise<ResolvableAssetRow | n
 
 export async function authorizedMedia(assetId: string, operation: MediaOperation, download = false) {
   const user = download ? await requireDownloadPermission() : await requireStaffOrAdmin();
+  // Authorize before resolving the Drive location. Some trusted server paths use
+  // service credentials and therefore cannot rely on caller RLS alone.
+  const service = createServiceClient();
+  const { data: decisions, error: authorizationError } = await service.rpc("phase18_authorize_candidates_for", {
+    p_user_id: user.userId,
+    p_asset_ids: [assetId],
+  });
+  const decision = Array.isArray(decisions) ? decisions[0] : null;
+  if (
+    authorizationError ||
+    decision?.discover !== true ||
+    decision?.view_metadata !== true ||
+    decision?.preview !== true
+  ) {
+    throw new AuthorizationDenied("Access denied");
+  }
+  if (download && decision.download !== true) {
+    throw new AuthorizationDenied("Access denied");
+  }
   const location = await resolveAssetMediaLocation(assetId, operation, fetchProductionAssetRow);
   if (!location) throw new Error("Not found");
+  if (download) {
+    // Retain the canonical single-asset check as defense in depth and to prove
+    // the batch contract stays equivalent to the established download policy.
+    const { data: allowed, error } = await service.rpc("can_user_download_asset_for", {
+      p_user_id: user.userId,
+      p_asset_id: assetId,
+    });
+    if (error || allowed !== true) throw new AuthorizationDenied("Access denied");
+  }
   return { location, user };
 }
 
 async function devAuthorizedMedia(assetId: string, operation: MediaOperation): Promise<ResolvedMediaLocation> {
-  if (!isLibraryDevBypassEnabled()) throw new Error("Not found");
+  if (!isLocalLibraryMediaConfigured()) throw new Error("Not found");
   const location = await resolveAssetMediaLocation(assetId, operation, fetchDevAssetRow);
   if (!location) throw new Error("Not found");
   return location;
@@ -142,6 +171,16 @@ export async function fetchDriveThumbnail(assetId: string, clientSignal?: AbortS
 export async function fetchDevDriveThumbnail(assetId: string, clientSignal?: AbortSignal, ifNoneMatch?: string | null) {
   const location = await devAuthorizedMedia(assetId, "thumbnail");
   return resolveThumbnailResult(location, ifNoneMatch, clientSignal);
+}
+
+// Authorize the viewer, then return a short-lived signed URL to the pre-generated WebP thumbnail
+// if one exists in Storage (populated by scripts/backfill-thumbnails.ts). Returns null when no
+// pre-generated thumbnail is available, so the caller falls back to the on-demand stream. Auth
+// errors propagate (the caller must not fall through on a denied viewer).
+export async function resolveThumbnailSignedUrl(assetId: string): Promise<string | null> {
+  const { location } = await authorizedMedia(assetId, "thumbnail");
+  if (!location.mime.startsWith("image/") && !location.mime.startsWith("video/")) return null;
+  return signedThumbnailUrl(location.assetId, location.driveFileId, location.versionTag, "webp");
 }
 
 // ---- Response helpers -------------------------------------------------------

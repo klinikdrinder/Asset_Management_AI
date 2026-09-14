@@ -1,0 +1,323 @@
+{
+  "generated_at": "2026-08-25T01:52:02.172Z",
+  "snapshot_contract": "pre_generation_row_count is the authoritative before-generation audit; current_row_count is included for preservation verification",
+  "tables": [
+    {
+      "table": "asset_visual_embeddings",
+      "status": "PRESENT",
+      "scope": "LEGACY",
+      "columns": [
+        "id",
+        "asset_id",
+        "model_provider",
+        "model_name",
+        "model_version",
+        "embedding_dimensions",
+        "embedding",
+        "source_fingerprint",
+        "source_method",
+        "frame_count",
+        "created_at",
+        "updated_at",
+        "indexed_at"
+      ],
+      "groups": [
+        {
+          "provider": "open_clip",
+          "model": "ViT-B-32",
+          "model_version": "laion2b_s34b_b79k",
+          "dimensions": 512,
+          "row_count": 875,
+          "active_count": 875,
+          "source_fingerprint_count": 875,
+          "analysis_run_count": 0
+        }
+      ],
+      "row_count": 875,
+      "current_row_count": 875,
+      "pre_generation_row_count": 875
+    },
+    {
+      "table": "asset_embeddings",
+      "status": "PRESENT",
+      "scope": "LEGACY",
+      "columns": [
+        "id",
+        "asset_id",
+        "embedding_provider",
+        "embedding_model",
+        "embedding_dimensions",
+        "embedding_version",
+        "embedding",
+        "searchable_text_hash",
+        "embedded_at",
+        "created_at",
+        "updated_at",
+        "embedding_type"
+      ],
+      "groups": [
+        {
+          "provider": "ollama",
+          "model": "qwen3-embedding:0.6b",
+          "model_version": "v1",
+          "dimensions": 1024,
+          "row_count": 20,
+          "active_count": 20,
+          "source_fingerprint_count": 20,
+          "analysis_run_count": 0
+        }
+      ],
+      "row_count": 20,
+      "current_row_count": 20,
+      "pre_generation_row_count": 20
+    },
+    {
+      "table": "scene_embeddings",
+      "status": "PRESENT",
+      "scope": "LEGACY",
+      "columns": [
+        "id",
+        "scene_id",
+        "asset_id",
+        "embedding_type",
+        "provider",
+        "model_name",
+        "model_version",
+        "embedding_dimensions",
+        "embedding",
+        "source_text_hash",
+        "source_fingerprint",
+        "analysis_run_id",
+        "is_active",
+        "embedded_at",
+        "created_at",
+        "updated_at"
+      ],
+      "groups": [
+        {
+          "provider": "open_clip",
+          "model": "ViT-B-32",
+          "model_version": "laion2b_s34b_b79k",
+          "dimensions": 512,
+          "row_count": 10,
+          "active_count": 10,
+          "source_fingerprint_count": 10,
+          "analysis_run_count": 8
+        }
+      ],
+      "row_count": 10,
+      "current_row_count": 10,
+      "pre_generation_row_count": 10
+    },
+    {
+      "table": "keyframe_embeddings",
+      "status": "PRESENT",
+      "scope": "LEGACY",
+      "columns": [
+        "id",
+        "keyframe_id",
+        "scene_id",
+        "asset_id",
+        "embedding_type",
+        "provider",
+        "model_name",
+        "model_version",
+        "embedding_dimensions",
+        "embedding",
+        "source_fingerprint",
+        "analysis_run_id",
+        "is_active",
+        "embedded_at",
+        "created_at",
+        "updated_at"
+      ],
+      "groups": [
+        {
+          "provider": "open_clip",
+          "model": "ViT-B-32",
+          "model_version": "laion2b_s34b_b79k",
+          "dimensions": 512,
+          "row_count": 10,
+          "active_count": 10,
+          "source_fingerprint_count": 10,
+          "analysis_run_count": 8
+        }
+      ],
+      "row_count": 10,
+      "current_row_count": 10,
+      "pre_generation_row_count": 10
+    },
+    {
+      "table": "transcript_embeddings",
+      "status": "PRESENT",
+      "scope": "LEGACY",
+      "columns": [
+        "id",
+        "transcript_chunk_id",
+        "asset_id",
+        "scene_id",
+        "embedding_type",
+        "provider",
+        "model_name",
+        "model_version",
+        "embedding_dimensions",
+        "embedding",
+        "source_text_hash",
+        "analysis_run_id",
+        "is_active",
+        "embedded_at",
+        "created_at",
+        "updated_at"
+      ],
+      "groups": [],
+      "row_count": 0,
+      "current_row_count": 0,
+      "pre_generation_row_count": 0
+    },
+    {
+      "table": "semantic_embeddings",
+      "status": "PRESENT",
+      "scope": "CANONICAL_VERSIONED",
+      "columns": [
+        "id",
+        "asset_id",
+        "scene_id",
+        "event_id",
+        "transcript_chunk_id",
+        "ocr_observation_id",
+        "narrative_id",
+        "embedding_scope",
+        "provider",
+        "model",
+        "version",
+        "dimensions",
+        "embedding",
+        "source_text_fingerprint",
+        "source_semantic_version",
+        "analysis_run_id",
+        "stale",
+        "created_at",
+        "keyframe_id",
+        "representation_type",
+        "model_version",
+        "source_fingerprint",
+        "source_document_fingerprint",
+        "semantic_spec_version",
+        "ontology_version",
+        "embedding_version",
+        "embedding_bundle_version",
+        "vector_fingerprint",
+        "preprocessing_version",
+        "text_normalization_version",
+        "generated_at",
+        "active",
+        "review_status",
+        "metadata"
+      ],
+      "groups": [
+        {
+          "provider": "open_clip",
+          "model": "ViT-B-32",
+          "model_version": "laion2b_s34b_b79k",
+          "dimensions": 512,
+          "row_count": 65,
+          "active_count": 65,
+          "source_fingerprint_count": 65,
+          "analysis_run_count": 65
+        },
+        {
+          "provider": "sentence_transformers",
+          "model": "intfloat/multilingual-e5-small",
+          "model_version": "hf-main-pinned-runtime-v1",
+          "dimensions": 384,
+          "row_count": 41,
+          "active_count": 41,
+          "source_fingerprint_count": 41,
+          "analysis_run_count": 41
+        }
+      ],
+      "row_count": 106,
+      "current_row_count": 106,
+      "pre_generation_row_count": 0
+    }
+  ],
+  "legacy_preservation_contract": true,
+  "pre_generation_counts": [
+    {
+      "table_name": "asset_access_control",
+      "row_count": 881
+    },
+    {
+      "table_name": "asset_destinations",
+      "row_count": 881
+    },
+    {
+      "table_name": "asset_embeddings",
+      "row_count": 20
+    },
+    {
+      "table_name": "asset_events",
+      "row_count": 22
+    },
+    {
+      "table_name": "asset_keyframes",
+      "row_count": 345
+    },
+    {
+      "table_name": "asset_scenes",
+      "row_count": 312
+    },
+    {
+      "table_name": "asset_search_concepts_v2",
+      "row_count": 270
+    },
+    {
+      "table_name": "asset_sources",
+      "row_count": 881
+    },
+    {
+      "table_name": "asset_transcript_chunks",
+      "row_count": 14
+    },
+    {
+      "table_name": "asset_visual_embeddings",
+      "row_count": 875
+    },
+    {
+      "table_name": "assets",
+      "row_count": 881
+    },
+    {
+      "table_name": "ocr_observations",
+      "row_count": 19
+    },
+    {
+      "table_name": "search_document_builds",
+      "row_count": 55
+    },
+    {
+      "table_name": "semantic_analysis_runs",
+      "row_count": 58
+    },
+    {
+      "table_name": "semantic_assertion_evidence",
+      "row_count": 270
+    },
+    {
+      "table_name": "semantic_assertions",
+      "row_count": 333
+    },
+    {
+      "table_name": "semantic_embeddings",
+      "row_count": 0
+    },
+    {
+      "table_name": "semantic_narratives",
+      "row_count": 37
+    },
+    {
+      "table_name": "source_files",
+      "row_count": 890
+    }
+  ]
+}

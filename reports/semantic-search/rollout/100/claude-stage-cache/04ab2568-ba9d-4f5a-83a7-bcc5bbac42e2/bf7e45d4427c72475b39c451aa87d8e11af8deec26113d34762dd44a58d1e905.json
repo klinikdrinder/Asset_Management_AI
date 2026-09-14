@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_4841.MP4",
+      "evidence": [
+        "Asset technical metadata: MP4, 1280x720, 30fps, h264, 22.23s duration"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall purpose of clip unclear",
+      "evidence": [
+        "Scene result lists GLOBAL_ASSET_UNDERSTANDING as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "Scene marked OBSERVED for TEMPORAL_SCENE_STRUCTURE"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining patient and gloved practitioner",
+      "evidence": [
+        "Image shows a person lying down with face covered in gel/mask",
+        "A second person in magenta scrubs with gloved hands holds a device near the patient's face"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient with tan gel mask, pink lipstick, purple headband",
+      "evidence": [
+        "Visible pink lip color, purple/lavender headband, tan gel/mask coating the face",
+        "Practitioner wearing magenta scrub top and white gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, eyes, lips, neck visible",
+      "evidence": [
+        "Facial region including forehead, eyes (covered by pads), nose, lips, and neck visible in frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not identifiable from evidence",
+      "evidence": [
+        "No named procedure present in supplied text",
+        "Gloves, a handheld device, and facial contact alone do not establish a named clinical procedure per rules"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner applies device near forehead",
+      "evidence": [
+        "Gloved hand holds a metal instrument emitting green-yellow light close to the patient's forehead",
+        "Other gloved hand steadies the patient's head near the temple"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned over reclining patient",
+      "evidence": [
+        "Practitioner's torso and arms are positioned above the patient's head, hands making direct contact with her face/head"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Tan gel/mask, eye pads, gloved hands, lit instrument",
+      "evidence": [
+        "Beige/tan gel coating the entire face",
+        "White rectangular pads over both closed eyes",
+        "White latex gloves on practitioner's hands",
+        "Handheld metal device with a glowing green-yellow tip"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Clinical setting details not confirmed",
+      "evidence": [
+        "Scene result lists ENVIRONMENT as UNKNOWN despite visible plain wall, treatment table, blue sheet, and green drape"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing of face",
+      "evidence": [
+        "Tight close-up composition centered on the patient's face and the practitioner's hands/instrument"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical frame, face centered, diagonal body placement",
+      "evidence": [
+        "Portrait-oriented 1280x720-derived vertical frame with the patient's face diagonally centered and practitioner occupying upper portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH",
+        "Scene layer SPEECH_TRANSCRIPT_AUDIO marked FALSE despite audio_stream_present being true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0",
+        "Scene layer OCR_VISIBLE_TEXT marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene result lists MARKETING_CONTENT_USAGE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative meaning not determinable",
+      "evidence": [
+        "Scene result lists SEMANTIC_NARRATIVE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual content review",
+      "evidence": [
+        "Scene result lists SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person lies on a treatment table with a tan gel or mask covering her face and white pads shielding her closed eyes, while a gloved practitioner in magenta scrubs holds a handheld metal device emitting a green-yellow light near her forehead. The setting shows a blue disposable sheet under the patient, a green drape over her shoulders, and a plain light-colored wall in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "04ab2568-ba9d-4f5a-83a7-bcc5bbac42e2",
+  "image_count": 1
+}

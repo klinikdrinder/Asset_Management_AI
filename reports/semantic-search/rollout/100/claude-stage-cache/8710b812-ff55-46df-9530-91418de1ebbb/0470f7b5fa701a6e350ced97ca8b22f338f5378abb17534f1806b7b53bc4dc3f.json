@@ -1,0 +1,177 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0987.MP4, 8 seconds, single scene",
+      "evidence": [
+        "Technical metadata lists filename IMG_0987.MP4, duration 8.066667s, resolution 1280x720"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clip showing device control panel operation",
+      "evidence": [
+        "Single canonical scene depicting a gloved hand interacting with a medical device touchscreen and handpiece"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across 2 keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Role of person unclear",
+      "evidence": [
+        "Only gloved hands visible, no face or identifying context to determine role"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, disposable white gloves",
+      "evidence": [
+        "Image shows two gloved hands, one pointing at screen, one holding handpiece"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No patient anatomy visible",
+      "evidence": [
+        "Per-scene ANATOMY marked FALSE",
+        "Image shows only device and hands, no body part being treated"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "No named procedure in supplied text",
+        "Device screen shows energy setting but no procedure name confirmed"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Hand pointing/adjusting screen setting, other hand holding handpiece",
+      "evidence": [
+        "Gloved finger touching touchscreen near '0.8' value and icon",
+        "Other hand grips a silver handpiece with blue light indicator"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person interacting with device controls and handpiece",
+      "evidence": [
+        "Two gloved hands simultaneously engaging different parts of the same machine"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clinical findings discernible",
+      "evidence": [
+        "Per-scene CLINICAL_VISUAL_OBSERVATIONS marked UNKNOWN",
+        "No skin or treatment area shown"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Treatment room with beige walls and wall-mounted remote",
+      "evidence": [
+        "Background shows beige wall, electrical outlets, and an AC remote holder"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld shot of device screen and hands",
+      "evidence": [
+        "Vertical framing centered on device display and hands, close camera distance"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device screen centered with hands in foreground",
+      "evidence": [
+        "Touchscreen panel occupies upper-middle frame, hands and handpiece lower frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "On-screen device text including '0.8' and brand name",
+      "evidence": [
+        "ocr_observations: 5",
+        "Visible text 'ULTRAFORMER III' and numeric value '0.8' with icons on touchscreen"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Purpose of clip unclear",
+      "evidence": [
+        "Per-scene MARKETING_CONTENT_USAGE marked UNKNOWN",
+        "No captions, branding overlay, or promotional context beyond device UI"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Operator adjusting settings on an aesthetic device",
+      "evidence": [
+        "Gloved hand pointing at screen while holding handpiece suggests device operation/setup"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Searchable as medical device interface, gloved hands, touchscreen settings",
+      "evidence": [
+        "Distinct visual elements: touchscreen with '0.8' value, handpieces, gloved hands, clinical room"
+      ]
+    }
+  ],
+  "narrative": "A gloved hand points to a touchscreen control panel on an Ultraformer III device showing a setting of '0.8' with icons and a START option, while another gloved hand holds a connected handpiece. The scene takes place in a clinical room with beige walls and a wall-mounted air conditioning remote visible in the background.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "8710b812-ff55-46df-9530-91418de1ebbb",
+  "image_count": 1
+}

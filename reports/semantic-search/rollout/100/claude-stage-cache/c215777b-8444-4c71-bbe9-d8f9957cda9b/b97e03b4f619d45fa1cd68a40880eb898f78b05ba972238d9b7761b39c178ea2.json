@@ -1,0 +1,186 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1385.MP4, scene 40",
+      "evidence": [
+        "filename IMG_1385.MP4",
+        "scene_index 40",
+        "asset_id c215777b-8444-4c71-bbe9-d8f9957cda9b"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single keyframe from an 18.5s clinical video clip",
+      "evidence": [
+        "duration_seconds 18.466667",
+        "keyframes_supplied 1",
+        "width 1280 height 720"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scene spans 16.2s to 16.367s of the video",
+      "evidence": [
+        "start_seconds 16.2",
+        "end_seconds 16.367",
+        "scene_index 40"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One gloved clinician and one reclined patient visible",
+      "evidence": [
+        "gloved hands manipulating instrument near face",
+        "reclined person's face and chin visible under the hands"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Fair-skinned person reclined, lower face and neck visible",
+      "evidence": [
+        "visible nose, lips, chin, and neck skin",
+        "no other clothing or identifying features visible beyond draping"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Lower face, chin, and neck region visible",
+      "evidence": [
+        "nose, lips, chin, and neck are visible in frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure supplied in text",
+      "evidence": [
+        "readable_text_detected is empty",
+        "spoken_content is empty",
+        "gloves and instrument alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician stabilizes chin while bringing instrument to face",
+      "evidence": [
+        "one gloved hand holds/stabilizes the chin",
+        "other gloved hand holds a metallic pen-shaped instrument approaching the lower face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician's hands in direct contact with patient's face",
+      "evidence": [
+        "gloved fingers touching chin",
+        "instrument positioned close to skin near chin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Skin appears moist/glistening near chin area",
+      "evidence": [
+        "visible sheen on the skin below the lips and chin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting with draping and towels",
+      "evidence": [
+        "blue/green cloth drape near hairline",
+        "green towel under neck",
+        "blue material visible in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up, vertically oriented handheld shot",
+      "evidence": [
+        "tight framing on lower face and hands",
+        "portrait aspect ratio of the image despite 1280x720 technical dimensions suggesting cropped/rotated framing"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face angled diagonally, hands and instrument dominate frame",
+      "evidence": [
+        "face tilted with chin pointing toward upper left",
+        "gloved hands and instrument occupy right and center of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context supplied",
+      "evidence": [
+        "no text or metadata indicating marketing use is present in supplied evidence"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical moment of hands-on care to the chin area",
+      "evidence": [
+        "gloved hand stabilizing chin",
+        "instrument being brought toward the skin"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A close-up shows a gloved clinician's hand holding a person's chin while another gloved hand brings a metallic pen-shaped instrument toward the lower face/chin area. The reclined person's face is draped with a blue and green cloth near the hairline, and a green towel is under the neck.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "c215777b-8444-4c71-bbe9-d8f9957cda9b",
+  "image_count": 1
+}

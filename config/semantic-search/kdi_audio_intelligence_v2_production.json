@@ -1,0 +1,89 @@
+{
+  "processor_version": "kdi_audio_intelligence_v2",
+  "configuration_version": "kdi_audio_intelligence_production_config_v1",
+  "derived_from": "kdi_audio_intelligence_v1",
+  "purpose": "Phase 11 production transcription backfill for Phase 10 audio-bearing videos. Identical signal chain to the certified v1 shadow configuration; the only change is that accepted results are written to production tables.",
+  "audio_extractor": {
+    "name": "ffmpeg",
+    "format": "wav_pcm_s16le",
+    "sample_rate": 16000,
+    "channels": 1
+  },
+  "vad": {
+    "name": "kdi_rms_energy_vad",
+    "version": "v1",
+    "window_ms": 30,
+    "absolute_floor_dbfs": -48.0,
+    "noise_margin_db": 8.0,
+    "minimum_speech_ms": 180,
+    "merge_gap_ms": 300,
+    "speech_candidate_ratio_floor": 0.002
+  },
+  "speech_to_text": {
+    "provider": "local_faster_whisper",
+    "model": "small",
+    "model_version": "faster-whisper-1.2.1_ct2",
+    "device": "cpu",
+    "compute_type": "int8",
+    "beam_size": 5,
+    "word_timestamps": true,
+    "temperature": 0
+  },
+  "language_detector": {
+    "provider": "local_faster_whisper",
+    "version": "small_language_probability"
+  },
+  "diarization": {
+    "enabled": false,
+    "provider": "UNAVAILABLE",
+    "model": "UNASSIGNED",
+    "model_version": "UNASSIGNED",
+    "identity_inference": false,
+    "reason": "No approved local diarization model is configured. Speaker identity must never be inferred from voice."
+  },
+  "chunking": {
+    "maximum_duration_seconds": 30,
+    "maximum_characters": 1200,
+    "split_on_speaker": true,
+    "split_on_scene": true
+  },
+  "topics": {
+    "version": "kdi_spoken_topic_rules_v1",
+    "confidence_threshold": 0.75
+  },
+  "acceptance": {
+    "minimum_confidence": 0.6,
+    "reject_repetition_hallucination": true,
+    "reject_empty_text": true,
+    "meaningful_speech": {
+      "minimum_language_probability": 0.7,
+      "minimum_word_count": 2,
+      "minimum_speech_span_seconds": 0.6,
+      "policy": "A short non-speech sound (a chime, a click, a breath) can be decoded into a plausible word. A chunk is meaningful speech only when the detected language is confident, the span is long enough to carry speech, and more than a single token was produced. Failing chunks are stored truthfully, withheld from search, and raised for review; the asset keeps SPEECH_PRESENT=UNKNOWN rather than a fabricated positive."
+    }
+  },
+  "clinical_specificity_gate": {
+    "enabled": true,
+    "applies_to": [
+      "search_document",
+      "e5_embedding_input"
+    ],
+    "policy": "A spoken clinical term is evidence of speech, not evidence that the procedure is depicted. Transcript chunks containing locked high-risk clinical terminology are stored truthfully but excluded from active search text and embedding input, and raised for human review."
+  },
+  "embedding": {
+    "status": "ACTIVE",
+    "provider": "sentence_transformers",
+    "model": "intfloat/multilingual-e5-small",
+    "model_version": "hf-main-pinned-runtime-v1",
+    "dimensions": 384
+  },
+  "translation": {
+    "enabled": false
+  },
+  "shadow_mode": false,
+  "production_database_writes": true,
+  "ocr_enabled": false,
+  "retain_raw_audio": false,
+  "external_speech_services": [],
+  "external_media_transmission": false
+}

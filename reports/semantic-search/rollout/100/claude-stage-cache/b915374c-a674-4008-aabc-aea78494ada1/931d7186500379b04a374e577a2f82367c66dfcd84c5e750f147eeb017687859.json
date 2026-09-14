@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_1946.MP4",
+      "evidence": [
+        "filename IMG_1946.MP4, duration 19.27s, 1280x720, h264, audio stream present"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall asset purpose not established",
+      "evidence": [
+        "scene-level GLOBAL_ASSET_UNDERSTANDING reported UNKNOWN with only one scene to synthesize from"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, duration 19.27 seconds"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "masked person in coral scrub with safety glasses positioned above a reclined person wearing a hairnet and eye shields"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in coral scrubs; patient in hairnet and eye shields",
+      "evidence": [
+        "clinician has dark hair in a bun, surgical mask, green-tinted goggles, coral scrub top, wristwatch",
+        "patient has dark hair, blue hairnet, white eye shields, black top, knit blanket covering torso"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face visible, eyes covered",
+      "evidence": [
+        "patient's forehead, nose, cheek, and chin are visible while eyes are covered by white protective shields"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied text",
+      "evidence": [
+        "handheld device connected to overhead arm is visible near the face but no procedure name appears in the supplied text, so per policy this cannot be inferred from device or contact alone"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holds device near patient's face",
+      "evidence": [
+        "clinician's hand stabilizes the patient's forehead while the other hand holds a handheld device close to the cheek area"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned over reclined patient",
+      "evidence": [
+        "clinician stands/leans above the reclined patient in direct physical proximity, one hand on patient's head"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective eyewear and mask visible on both individuals",
+      "evidence": [
+        "patient wears white eye shields, clinician wears green-tinted safety glasses and a surgical mask, overhead articulated equipment arm present"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Indoor room, specifics unclear",
+      "evidence": [
+        "plain tan wall visible but scene-level ENVIRONMENT reported UNKNOWN, indicating insufficient detail to characterize the setting further"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing from a low angle",
+      "evidence": [
+        "portrait-oriented shot framed tightly on the patient's face and clinician's upper body from a low, close vantage point"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient diagonal in frame with clinician centered above",
+      "evidence": [
+        "patient's reclined body runs diagonally across the lower frame while the clinician and device occupy the upper-center of the frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, but transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial branding and embroidered text visible",
+      "evidence": [
+        "partial text reading \"HELIA...\" on the overhead equipment arm",
+        "embroidered lettering visible on the clinician's scrub top",
+        "ocr_observations count of 2 reported for the scene"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing overlay or branding graphics",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE reported FALSE; no promotional graphics, logos overlays, or captions appear in the frame"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context not determinable",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE reported UNKNOWN and no supplied text clarifies the purpose beyond the visible moment"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this layer schema",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked clinician wearing a coral scrub top, green-tinted safety glasses, and a hairnet-covered patient recline in an indoor treatment room while the clinician holds a handheld device connected to an overhead articulated arm near the patient's face. The patient wears white protective eye shields, a blue hairnet, and is covered by a knit blanket over a blue disposable sheet.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "b915374c-a674-4008-aabc-aea78494ada1",
+  "image_count": 1
+}

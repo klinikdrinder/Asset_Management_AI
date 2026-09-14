@@ -1,0 +1,1 @@
+import assert from"node:assert/strict";import test from"node:test";import{interpretQuery}from"../db/query-interpreter";test("result-count grammar family",async()=>{for(const q of["surface eight images","show me five assets","give us 3 clips"]){const p=await interpretQuery(q);assert.ok(p.result_request.requested_count)}});

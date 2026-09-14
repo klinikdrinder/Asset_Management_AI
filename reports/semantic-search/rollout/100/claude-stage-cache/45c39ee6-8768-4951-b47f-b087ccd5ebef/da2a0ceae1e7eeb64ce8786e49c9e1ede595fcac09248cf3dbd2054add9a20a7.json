@@ -1,0 +1,182 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "IMG_1444.MP4, h264, 1280x720",
+      "evidence": [
+        "filename IMG_1444.MP4",
+        "technical metadata: 1280x720, 30/1 fps, h264 codec, duration 20.47s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clip of staff attending reclined patient",
+      "evidence": [
+        "canonical_scenes: 1",
+        "two keyframes both show staff member wiping patient's face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, two sampled keyframes across ~20s",
+      "evidence": [
+        "canonical_scenes: 1",
+        "canonical_keyframes: 2",
+        "duration_seconds: 20.466667"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked staff member and reclined patient",
+      "evidence": [
+        "staff member in mask, gloves, and dark scrub embroidered \"KLINIK DR LEW KAR MIN\"/\"DR LEW KAR MIN\"",
+        "patient reclined with eyes closed under drape and towel"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark uniform, mask, gloves; patient in headband and drape",
+      "evidence": [
+        "staff: dark hair, surgical mask, latex gloves, black scrub top",
+        "patient: black headband, hairnet, maroon towel, blue disposable drape"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's forehead and facial region visible",
+      "evidence": [
+        "patient's forehead, eyebrows, closed eyes, nose, and mouth visible in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "only a gloved hand wiping the forehead with cotton/gauze is visible; no procedure name appears in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff dabbing/wiping patient's forehead",
+      "evidence": [
+        "gloved hand holding cotton/gauze pad against patient's forehead in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider-patient interaction, staff leaning over reclined patient",
+      "evidence": [
+        "staff positioned above and in direct physical contact with reclined patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, cotton pads, metal tray, disposable drape",
+      "evidence": [
+        "latex gloves on staff hands",
+        "metal tray with cotton pads and gauze on cart",
+        "blue disposable drape over patient"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not confirmed",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible tray and drape"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical framing on face and hands",
+      "evidence": [
+        "tight vertical composition centered on patient's face and staff's hands across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient lower frame, staff upper frame, tray to the side",
+      "evidence": [
+        "patient reclined occupying lower/center frame",
+        "staff member leaning in from upper frame",
+        "tray with supplies positioned to the right"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Audio track with meaningful speech present",
+      "evidence": [
+        "audio_stream_present: true",
+        "audio_state: AUDIO_PRESENT",
+        "transcript_state: MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Embroidered clinic and doctor name on uniform",
+      "evidence": [
+        "text \"KLINIK DR LEW KAR MIN\" and \"DR LEW KAR MIN\" visible on staff's scrub top",
+        "ocr_observations: 3"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not established",
+      "evidence": [
+        "no supplied text indicates promotional or marketing context"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff cleaning/prepping patient's face in clinical setting",
+      "evidence": [
+        "narrative shows staff wiping patient's forehead/face with cotton amid clinic-style supplies and drape"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked, gloved staff member wearing a dark uniform embroidered \"KLINIK DR LEW KAR MIN\" leans over a reclined patient, dabbing the patient's forehead and face with a cotton or gauze pad. The patient lies with eyes closed, wearing a black headband and hairnet with a maroon towel at the neck under a blue disposable drape, next to a cart holding a metal tray with cotton pads and gauze.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "45c39ee6-8768-4951-b47f-b087ccd5ebef",
+  "image_count": 1
+}

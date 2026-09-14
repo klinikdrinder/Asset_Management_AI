@@ -1,0 +1,43 @@
+{
+  "bundle_version": "kdi_embedding_bundle_v1",
+  "families": [
+    {
+      "family": "VISUAL_ASSET",
+      "provider": "open_clip",
+      "model": "ViT-B-32",
+      "modelVersion": "laion2b_s34b_b79k",
+      "dimensions": 512,
+      "preprocessingVersion": "open_clip_preprocess_v1",
+      "normalizationVersion": "L2",
+      "activeForNewIndexing": true,
+      "metric": "cosine",
+      "sourceDocument": "canonical search document plus representative visual evidence"
+    },
+    {
+      "family": "TEXT_SEMANTIC",
+      "provider": "sentence_transformers",
+      "model": "intfloat/multilingual-e5-small",
+      "modelVersion": "hf-main-pinned-runtime-v1",
+      "dimensions": 384,
+      "preprocessingVersion": "search_text_v1",
+      "normalizationVersion": "Unicode NFKC + whitespace v1",
+      "activeForNewIndexing": true,
+      "metric": "cosine",
+      "sourceDocument": "kdi_search_document_v1 normalized search text"
+    },
+    {
+      "family": "TEXT_SEMANTIC",
+      "provider": "ollama",
+      "model": "qwen3-embedding:0.6b",
+      "modelVersion": "v1",
+      "dimensions": 1024,
+      "preprocessingVersion": "legacy",
+      "normalizationVersion": "legacy",
+      "activeForNewIndexing": false,
+      "metric": "cosine",
+      "sourceDocument": "historical asset_embeddings"
+    }
+  ],
+  "query_isolation": "family+provider+model+model_version+dimensions",
+  "historical_vectors_preserved": true
+}

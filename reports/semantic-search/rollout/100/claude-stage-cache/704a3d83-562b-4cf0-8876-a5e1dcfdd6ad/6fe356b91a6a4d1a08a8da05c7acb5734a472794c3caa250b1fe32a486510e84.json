@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1358.MP4, single scene, 9.4 seconds",
+      "evidence": [
+        "Technical metadata: duration 9.375s, 1280x720, h264 codec"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context of the clip beyond a single clinical moment unclear",
+      "evidence": [
+        "Scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene showing a device application near the patient's face",
+      "evidence": [
+        "canonical_scenes: 1",
+        "Two keyframes show progression of handheld instrument use"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles of individuals not confirmed beyond visual appearance",
+      "evidence": [
+        "Scene-level PEOPLE_ROLES marked UNKNOWN despite name tag on scrubs"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs, goggles, mask; patient with eye shields, hairnet, red garment",
+      "evidence": [
+        "Image shows teal scrub top with embroidered name, protective goggles, surgical mask",
+        "Patient visible with metal eye shields and blue hairnet"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, forehead, and eye area visible",
+      "evidence": [
+        "Close-up of patient's face with eye shields covering eyes",
+        "Laser beam directed toward forehead/brow area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific named procedure cannot be determined",
+      "evidence": [
+        "No procedure name given in supplied text",
+        "Handheld device with fiber optic cable and visible laser beam insufficient to name a specific treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applies handheld laser device near patient's face while gloved hand stabilizes skin",
+      "evidence": [
+        "Image shows one gloved hand holding device with visible beam, another gloved hand touching patient's face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned above reclining patient, performing hands-on application",
+      "evidence": [
+        "Spatial arrangement shows clinician leaning over patient's face with instrument"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Visible laser beam, protective eyewear, and gloved application on facial skin",
+      "evidence": [
+        "Yellow-green laser line visible crossing patient's face",
+        "Metal eye shields on patient, laser safety goggles on clinician"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader clinical setting details not confirmed",
+      "evidence": [
+        "Scene-level ENVIRONMENT marked UNKNOWN",
+        "Background shows plain wall and equipment but no full room context"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing focused on face and hands during procedure",
+      "evidence": [
+        "Vertical video format, tight framing on patient's face and clinician's hands"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered lower frame, clinician upper frame, device and cable diagonal across image",
+      "evidence": [
+        "Visual layout shows patient reclined in lower two-thirds, clinician standing behind in upper third"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected in audio track",
+      "evidence": [
+        "transcript_state: NO_SPEECH",
+        "audio_stream_present true but no dialogue transcribed"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on scrubs, mask, and clothing",
+      "evidence": [
+        "'DR LEW KAR MIN' embroidered on teal scrub top",
+        "'M-CURE' printed on surgical mask",
+        "Partial text 'RK' visible on red garment",
+        "ocr_observations: 8"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended use of footage not specified",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose of clip not established",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/audio content evaluation",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A clinician in teal scrubs labeled 'DR LEW KAR MIN', wearing protective goggles and a mask, uses a handheld device connected to an orange fiber optic cable emitting a visible laser beam near a patient's face. The patient lies on a treatment table wearing protective eye shields and a hairnet, with a blue surgical drape and red garment visible over their body.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "704a3d83-562b-4cf0-8876-a5e1dcfdd6ad",
+  "image_count": 1
+}

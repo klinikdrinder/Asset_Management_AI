@@ -1,0 +1,2486 @@
+{
+  "generated_at": "2026-08-19T05:44:47.848Z",
+  "project": {
+    "name": "asset_management_ai",
+    "id": "wcqqjpndlwsvatjuqnol"
+  },
+  "migrations": [
+    "20260819054255_ai_search_v3_job2_core_schema.sql",
+    "20260819054325_ai_search_v3_job2_ontology_seed.sql",
+    "20260819054605_ai_search_v3_job2_reviewed_by_index.sql"
+  ],
+  "tables": [
+    {
+      "name": "public.people",
+      "rls_enabled": true,
+      "rows": 0,
+      "columns": [
+        {
+          "name": "id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "gen_random_uuid()"
+        },
+        {
+          "name": "code",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable",
+            "unique"
+          ],
+          "check": "code ~ '^[A-Z][A-Z0-9_]*$'::text"
+        },
+        {
+          "name": "display_name",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "person_type",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "check": "person_type = ANY (ARRAY['DOCTOR'::text, 'STAFF'::text, 'PRESENTER'::text, 'OTHER'::text])"
+        },
+        {
+          "name": "role",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "organization",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "is_verified",
+          "data_type": "boolean",
+          "format": "bool",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "false"
+        },
+        {
+          "name": "verification_source",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "is_active",
+          "data_type": "boolean",
+          "format": "bool",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "true"
+        },
+        {
+          "name": "metadata",
+          "data_type": "jsonb",
+          "format": "jsonb",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'{}'::jsonb",
+          "check": "jsonb_typeof(metadata) = 'object'::text"
+        },
+        {
+          "name": "created_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        },
+        {
+          "name": "updated_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_key_constraints": [
+        {
+          "name": "asset_people_person_id_fkey",
+          "source_table": "public.asset_people",
+          "source_columns": [
+            "person_id"
+          ],
+          "target_table": "public.people",
+          "target_columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "public.treatments",
+      "rls_enabled": true,
+      "rows": 12,
+      "columns": [
+        {
+          "name": "id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "gen_random_uuid()"
+        },
+        {
+          "name": "code",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable",
+            "unique"
+          ],
+          "check": "code ~ '^[A-Z][A-Z0-9_]*$'::text"
+        },
+        {
+          "name": "name",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "parent_id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "level",
+          "data_type": "integer",
+          "format": "int4",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "0",
+          "check": "level >= 0"
+        },
+        {
+          "name": "category",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "description",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "is_active",
+          "data_type": "boolean",
+          "format": "bool",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "true"
+        },
+        {
+          "name": "metadata",
+          "data_type": "jsonb",
+          "format": "jsonb",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'{}'::jsonb",
+          "check": "jsonb_typeof(metadata) = 'object'::text"
+        },
+        {
+          "name": "created_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        },
+        {
+          "name": "updated_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_key_constraints": [
+        {
+          "name": "treatment_aliases_treatment_id_fkey",
+          "source_table": "public.treatment_aliases",
+          "source_columns": [
+            "treatment_id"
+          ],
+          "target_table": "public.treatments",
+          "target_columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "treatments_parent_id_fkey",
+          "source_table": "public.treatments",
+          "source_columns": [
+            "parent_id"
+          ],
+          "target_table": "public.treatments",
+          "target_columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "asset_ai_profiles_primary_treatment_id_fkey",
+          "source_table": "public.asset_ai_profiles",
+          "source_columns": [
+            "primary_treatment_id"
+          ],
+          "target_table": "public.treatments",
+          "target_columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "public.treatment_aliases",
+      "rls_enabled": true,
+      "rows": 6,
+      "columns": [
+        {
+          "name": "id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "gen_random_uuid()"
+        },
+        {
+          "name": "treatment_id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "alias",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "check": "btrim(alias) <> ''::text"
+        },
+        {
+          "name": "normalized_alias",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "alias_type",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'SYNONYM'::text"
+        },
+        {
+          "name": "language",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'en'::text",
+          "check": "language ~ '^[a-z]{2}(-[A-Z]{2})?$'::text"
+        },
+        {
+          "name": "is_active",
+          "data_type": "boolean",
+          "format": "bool",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "true"
+        },
+        {
+          "name": "created_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_key_constraints": [
+        {
+          "name": "treatment_aliases_treatment_id_fkey",
+          "source_table": "public.treatment_aliases",
+          "source_columns": [
+            "treatment_id"
+          ],
+          "target_table": "public.treatments",
+          "target_columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "public.anatomy_terms",
+      "rls_enabled": true,
+      "rows": 25,
+      "columns": [
+        {
+          "name": "id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "gen_random_uuid()"
+        },
+        {
+          "name": "code",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable",
+            "unique"
+          ],
+          "check": "code ~ '^[A-Z][A-Z0-9_]*$'::text"
+        },
+        {
+          "name": "name",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "parent_id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "domain",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "description",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "is_active",
+          "data_type": "boolean",
+          "format": "bool",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "true"
+        },
+        {
+          "name": "metadata",
+          "data_type": "jsonb",
+          "format": "jsonb",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'{}'::jsonb",
+          "check": "jsonb_typeof(metadata) = 'object'::text"
+        },
+        {
+          "name": "created_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        },
+        {
+          "name": "updated_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_key_constraints": [
+        {
+          "name": "asset_ai_profiles_primary_anatomy_id_fkey",
+          "source_table": "public.asset_ai_profiles",
+          "source_columns": [
+            "primary_anatomy_id"
+          ],
+          "target_table": "public.anatomy_terms",
+          "target_columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "anatomy_terms_parent_id_fkey",
+          "source_table": "public.anatomy_terms",
+          "source_columns": [
+            "parent_id"
+          ],
+          "target_table": "public.anatomy_terms",
+          "target_columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "public.actions",
+      "rls_enabled": true,
+      "rows": 22,
+      "columns": [
+        {
+          "name": "id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "gen_random_uuid()"
+        },
+        {
+          "name": "code",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable",
+            "unique"
+          ],
+          "check": "code ~ '^[A-Z][A-Z0-9_]*$'::text"
+        },
+        {
+          "name": "name",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "category",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "description",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "is_active",
+          "data_type": "boolean",
+          "format": "bool",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "true"
+        },
+        {
+          "name": "metadata",
+          "data_type": "jsonb",
+          "format": "jsonb",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'{}'::jsonb",
+          "check": "jsonb_typeof(metadata) = 'object'::text"
+        },
+        {
+          "name": "created_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        },
+        {
+          "name": "updated_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ]
+    },
+    {
+      "name": "public.locations",
+      "rls_enabled": true,
+      "rows": 11,
+      "columns": [
+        {
+          "name": "id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "gen_random_uuid()"
+        },
+        {
+          "name": "code",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable",
+            "unique"
+          ],
+          "check": "code ~ '^[A-Z][A-Z0-9_]*$'::text"
+        },
+        {
+          "name": "name",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "location_type",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "parent_id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "organization",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "country",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "region",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "city",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "is_verified",
+          "data_type": "boolean",
+          "format": "bool",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "false"
+        },
+        {
+          "name": "is_active",
+          "data_type": "boolean",
+          "format": "bool",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "true"
+        },
+        {
+          "name": "metadata",
+          "data_type": "jsonb",
+          "format": "jsonb",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'{}'::jsonb",
+          "check": "jsonb_typeof(metadata) = 'object'::text"
+        },
+        {
+          "name": "created_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        },
+        {
+          "name": "updated_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_key_constraints": [
+        {
+          "name": "locations_parent_id_fkey",
+          "source_table": "public.locations",
+          "source_columns": [
+            "parent_id"
+          ],
+          "target_table": "public.locations",
+          "target_columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "asset_ai_profiles_primary_location_id_fkey",
+          "source_table": "public.asset_ai_profiles",
+          "source_columns": [
+            "primary_location_id"
+          ],
+          "target_table": "public.locations",
+          "target_columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "public.ai_analysis_runs",
+      "rls_enabled": true,
+      "rows": 0,
+      "columns": [
+        {
+          "name": "id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "gen_random_uuid()"
+        },
+        {
+          "name": "asset_id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "analysis_type",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "check": "analysis_type = ANY (ARRAY['ASSET_PROFILE'::text, 'SCENE_DETECTION'::text, 'VISUAL_ANALYSIS'::text, 'TRANSCRIPTION'::text, 'OCR'::text, 'EMBEDDING'::text, 'SEARCH_DOCUMENT'::text])"
+        },
+        {
+          "name": "provider",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "model_name",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "model_version",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "pipeline_version",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "ontology_version",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "status",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'QUEUED'::text",
+          "check": "status = ANY (ARRAY['QUEUED'::text, 'PROCESSING'::text, 'COMPLETED'::text, 'FAILED'::text, 'CANCELLED'::text, 'SKIPPED'::text])"
+        },
+        {
+          "name": "started_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "completed_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "attempt_number",
+          "data_type": "integer",
+          "format": "int4",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "1",
+          "check": "attempt_number > 0"
+        },
+        {
+          "name": "frames_processed",
+          "data_type": "integer",
+          "format": "int4",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "input_units",
+          "data_type": "bigint",
+          "format": "int8",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "output_units",
+          "data_type": "bigint",
+          "format": "int8",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "cost_usd",
+          "data_type": "numeric",
+          "format": "numeric",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "error_code",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "error_message",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "metadata",
+          "data_type": "jsonb",
+          "format": "jsonb",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'{}'::jsonb",
+          "check": "jsonb_typeof(metadata) = 'object'::text"
+        },
+        {
+          "name": "created_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        },
+        {
+          "name": "updated_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_key_constraints": [
+        {
+          "name": "asset_derivatives_analysis_run_id_fkey",
+          "source_table": "public.asset_derivatives",
+          "source_columns": [
+            "analysis_run_id"
+          ],
+          "target_table": "public.ai_analysis_runs",
+          "target_columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "ai_analysis_runs_asset_id_fkey",
+          "source_table": "public.ai_analysis_runs",
+          "source_columns": [
+            "asset_id"
+          ],
+          "target_table": "public.assets",
+          "target_columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "public.asset_derivatives",
+      "rls_enabled": true,
+      "rows": 0,
+      "columns": [
+        {
+          "name": "id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "gen_random_uuid()"
+        },
+        {
+          "name": "asset_id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "derivative_type",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "check": "derivative_type = ANY (ARRAY['THUMBNAIL'::text, 'PREVIEW'::text, 'PROXY_VIDEO'::text, 'KEYFRAME_IMAGE'::text, 'AUDIO_EXTRACTION'::text, 'WAVEFORM'::text, 'TEMPORARY_PROCESSING'::text])"
+        },
+        {
+          "name": "storage_provider",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "storage_bucket",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "storage_path",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "mime_type",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "file_extension",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "file_size_bytes",
+          "data_type": "bigint",
+          "format": "int8",
+          "options": [
+            "nullable",
+            "updatable"
+          ],
+          "check": "file_size_bytes IS NULL OR file_size_bytes >= 0"
+        },
+        {
+          "name": "width",
+          "data_type": "integer",
+          "format": "int4",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "height",
+          "data_type": "integer",
+          "format": "int4",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "duration_seconds",
+          "data_type": "numeric",
+          "format": "numeric",
+          "options": [
+            "nullable",
+            "updatable"
+          ],
+          "check": "duration_seconds IS NULL OR duration_seconds >= 0::numeric"
+        },
+        {
+          "name": "content_hash",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ],
+          "check": "content_hash IS NULL OR content_hash ~ '^[0-9A-Fa-f]{64}$'::text"
+        },
+        {
+          "name": "generation_status",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'PENDING'::text",
+          "check": "generation_status = ANY (ARRAY['PENDING'::text, 'PROCESSING'::text, 'READY'::text, 'FAILED'::text, 'EXPIRED'::text])"
+        },
+        {
+          "name": "analysis_run_id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "metadata",
+          "data_type": "jsonb",
+          "format": "jsonb",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'{}'::jsonb",
+          "check": "jsonb_typeof(metadata) = 'object'::text"
+        },
+        {
+          "name": "created_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        },
+        {
+          "name": "updated_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_key_constraints": [
+        {
+          "name": "asset_derivatives_asset_id_fkey",
+          "source_table": "public.asset_derivatives",
+          "source_columns": [
+            "asset_id"
+          ],
+          "target_table": "public.assets",
+          "target_columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "asset_derivatives_analysis_run_id_fkey",
+          "source_table": "public.asset_derivatives",
+          "source_columns": [
+            "analysis_run_id"
+          ],
+          "target_table": "public.ai_analysis_runs",
+          "target_columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "public.asset_access_control",
+      "rls_enabled": true,
+      "rows": 881,
+      "columns": [
+        {
+          "name": "asset_id",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "updatable"
+          ]
+        },
+        {
+          "name": "classification_status",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'UNCLASSIFIED'::text",
+          "check": "classification_status = ANY (ARRAY['UNCLASSIFIED'::text, 'AI_SUGGESTED'::text, 'REVIEW_REQUIRED'::text, 'VERIFIED'::text])"
+        },
+        {
+          "name": "is_clinical",
+          "data_type": "boolean",
+          "format": "bool",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "sensitivity_level",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'GENERAL'::text",
+          "check": "sensitivity_level = ANY (ARRAY['GENERAL'::text, 'INTERNAL'::text, 'RESTRICTED'::text, 'CLINICAL'::text, 'HIGHLY_RESTRICTED'::text])"
+        },
+        {
+          "name": "consent_status",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'UNKNOWN'::text",
+          "check": "consent_status = ANY (ARRAY['UNKNOWN'::text, 'NOT_REQUIRED'::text, 'PENDING'::text, 'CONFIRMED'::text, 'RESTRICTED'::text, 'EXPIRED'::text, 'REVOKED'::text])"
+        },
+        {
+          "name": "consent_reference",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "internal_usage_status",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'UNKNOWN'::text",
+          "check": "internal_usage_status = ANY (ARRAY['UNKNOWN'::text, 'ALLOWED'::text, 'RESTRICTED'::text, 'NOT_ALLOWED'::text])"
+        },
+        {
+          "name": "marketing_usage_status",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'UNKNOWN'::text",
+          "check": "marketing_usage_status = ANY (ARRAY['UNKNOWN'::text, 'PENDING'::text, 'APPROVED'::text, 'RESTRICTED'::text, 'NOT_ALLOWED'::text])"
+        },
+        {
+          "name": "external_ai_status",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'NOT_REVIEWED'::text",
+          "check": "external_ai_status = ANY (ARRAY['NOT_REVIEWED'::text, 'ALLOWED'::text, 'RESTRICTED'::text, 'NOT_ALLOWED'::text])"
+        },
+        {
+          "name": "requires_clinical_permission",
+          "data_type": "boolean",
+          "format": "bool",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "download_allowed",
+          "data_type": "boolean",
+          "format": "bool",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "usage_restrictions",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "review_status",
+          "data_type": "text",
+          "format": "text",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'NOT_REVIEWED'::text",
+          "check": "review_status = ANY (ARRAY['NOT_REVIEWED'::text, 'PENDING'::text, 'REVIEWED'::text, 'REQUIRES_REVIEW'::text])"
+        },
+        {
+          "name": "reviewed_by",
+          "data_type": "uuid",
+          "format": "uuid",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "reviewed_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "nullable",
+            "updatable"
+          ]
+        },
+        {
+          "name": "metadata",
+          "data_type": "jsonb",
+          "format": "jsonb",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "'{}'::jsonb",
+          "check": "jsonb_typeof(metadata) = 'object'::text"
+        },
+        {
+          "name": "created_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        },
+        {
+          "name": "updated_at",
+          "data_type": "timestamp with time zone",
+          "format": "timestamptz",
+          "options": [
+            "updatable"
+          ],
+          "default_value": "now()"
+        }
+      ],
+      "primary_keys": [
+        "asset_id"
+      ],
+      "foreign_key_constraints": [
+        {
+          "name": "asset_access_control_asset_id_fkey",
+          "source_table": "public.asset_access_control",
+          "source_columns": [
+            "asset_id"
+          ],
+          "target_table": "public.assets",
+          "target_columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "asset_access_control_reviewed_by_fkey",
+          "source_table": "public.asset_access_control",
+          "source_columns": [
+            "reviewed_by"
+          ],
+          "target_table": "auth.users",
+          "target_columns": [
+            "id"
+          ]
+        }
+      ]
+    }
+  ],
+  "catalog": {
+    "seed": {
+      "actions": [
+        {
+          "code": "CHECKING_SYMMETRY",
+          "name": "Checking Symmetry",
+          "category": "CLINICAL"
+        },
+        {
+          "code": "CLEANSING",
+          "name": "Cleansing",
+          "category": "CLINICAL"
+        },
+        {
+          "code": "CONSULTING",
+          "name": "Consulting",
+          "category": "COMMUNICATION"
+        },
+        {
+          "code": "DISCUSSING",
+          "name": "Discussing",
+          "category": "COMMUNICATION"
+        },
+        {
+          "code": "DRAWING_HAIRLINE",
+          "name": "Drawing Hairline",
+          "category": "CLINICAL"
+        },
+        {
+          "code": "EXAMINING",
+          "name": "Examining",
+          "category": "CLINICAL"
+        },
+        {
+          "code": "EXPLAINING",
+          "name": "Explaining",
+          "category": "COMMUNICATION"
+        },
+        {
+          "code": "EXTRACTING_GRAFTS",
+          "name": "Extracting Grafts",
+          "category": "FUE_PROCEDURE"
+        },
+        {
+          "code": "HOLDING_SYRINGE",
+          "name": "Holding Syringe",
+          "category": "CLINICAL"
+        },
+        {
+          "code": "IMPLANTING_GRAFTS",
+          "name": "Implanting Grafts",
+          "category": "FUE_PROCEDURE"
+        },
+        {
+          "code": "INJECTING",
+          "name": "Injecting",
+          "category": "CLINICAL"
+        },
+        {
+          "code": "LISTENING",
+          "name": "Listening",
+          "category": "COMMUNICATION"
+        },
+        {
+          "code": "LOOKING_IN_MIRROR",
+          "name": "Looking in Mirror",
+          "category": "BEHAVIOUR"
+        },
+        {
+          "code": "LYING_DOWN",
+          "name": "Lying Down",
+          "category": "POSITION"
+        },
+        {
+          "code": "MARKING",
+          "name": "Marking",
+          "category": "CLINICAL"
+        },
+        {
+          "code": "POINTING",
+          "name": "Pointing",
+          "category": "GESTURE"
+        },
+        {
+          "code": "SMILING",
+          "name": "Smiling",
+          "category": "BEHAVIOUR"
+        },
+        {
+          "code": "SORTING_GRAFTS",
+          "name": "Sorting Grafts",
+          "category": "FUE_PROCEDURE"
+        },
+        {
+          "code": "TALKING",
+          "name": "Talking",
+          "category": "COMMUNICATION"
+        },
+        {
+          "code": "TOUCHING",
+          "name": "Touching",
+          "category": "GESTURE"
+        },
+        {
+          "code": "USING_DEVICE",
+          "name": "Using Device",
+          "category": "CLINICAL"
+        },
+        {
+          "code": "WALKING",
+          "name": "Walking",
+          "category": "MOVEMENT"
+        }
+      ],
+      "aliases": [
+        {
+          "alias": "follicular unit extraction",
+          "language": "en",
+          "treatment_code": "HAIR_TRANSPLANT_FUE",
+          "normalized_alias": "follicular unit extraction"
+        },
+        {
+          "alias": "frontal design",
+          "language": "en",
+          "treatment_code": "FUE_HAIRLINE_DESIGN",
+          "normalized_alias": "frontal design"
+        },
+        {
+          "alias": "frontal hairline planning",
+          "language": "en",
+          "treatment_code": "FUE_HAIRLINE_DESIGN",
+          "normalized_alias": "frontal hairline planning"
+        },
+        {
+          "alias": "FUE transplant",
+          "language": "en",
+          "treatment_code": "HAIR_TRANSPLANT_FUE",
+          "normalized_alias": "fue transplant"
+        },
+        {
+          "alias": "hairline drawing",
+          "language": "en",
+          "treatment_code": "FUE_HAIRLINE_DESIGN",
+          "normalized_alias": "hairline drawing"
+        },
+        {
+          "alias": "hairline planning",
+          "language": "en",
+          "treatment_code": "FUE_HAIRLINE_DESIGN",
+          "normalized_alias": "hairline planning"
+        }
+      ],
+      "anatomy": [
+        {
+          "code": "CHEEK",
+          "name": "Cheek",
+          "domain": "FACE",
+          "parent_code": "MIDFACE"
+        },
+        {
+          "code": "CHIN",
+          "name": "Chin",
+          "domain": "FACE",
+          "parent_code": "LOWER_FACE"
+        },
+        {
+          "code": "CROWS_FEET_REGION",
+          "name": "Crow's Feet Region",
+          "domain": "FACE",
+          "parent_code": "PERIOCULAR"
+        },
+        {
+          "code": "FACE",
+          "name": "Face",
+          "domain": "FACE",
+          "parent_code": null
+        },
+        {
+          "code": "FOREHEAD",
+          "name": "Forehead",
+          "domain": "FACE",
+          "parent_code": "UPPER_FACE"
+        },
+        {
+          "code": "GLABELLA",
+          "name": "Glabella",
+          "domain": "FACE",
+          "parent_code": "UPPER_FACE"
+        },
+        {
+          "code": "JAWLINE",
+          "name": "Jawline",
+          "domain": "FACE",
+          "parent_code": "LOWER_FACE"
+        },
+        {
+          "code": "LIPS",
+          "name": "Lips",
+          "domain": "FACE",
+          "parent_code": "LOWER_FACE"
+        },
+        {
+          "code": "LOWER_FACE",
+          "name": "Lower Face",
+          "domain": "FACE",
+          "parent_code": "FACE"
+        },
+        {
+          "code": "MIDFACE",
+          "name": "Midface",
+          "domain": "FACE",
+          "parent_code": "FACE"
+        },
+        {
+          "code": "NASOLABIAL_REGION",
+          "name": "Nasolabial Region",
+          "domain": "FACE",
+          "parent_code": "MIDFACE"
+        },
+        {
+          "code": "PERIOCULAR",
+          "name": "Periocular",
+          "domain": "FACE",
+          "parent_code": "FACE"
+        },
+        {
+          "code": "SUBMENTAL_REGION",
+          "name": "Submental Region",
+          "domain": "FACE",
+          "parent_code": "LOWER_FACE"
+        },
+        {
+          "code": "TEMPORAL_FACE",
+          "name": "Temporal Face",
+          "domain": "FACE",
+          "parent_code": "UPPER_FACE"
+        },
+        {
+          "code": "UNDER_EYE",
+          "name": "Under Eye",
+          "domain": "FACE",
+          "parent_code": "PERIOCULAR"
+        },
+        {
+          "code": "UPPER_FACE",
+          "name": "Upper Face",
+          "domain": "FACE",
+          "parent_code": "FACE"
+        },
+        {
+          "code": "CROWN",
+          "name": "Crown",
+          "domain": "HAIR_SCALP",
+          "parent_code": "SCALP"
+        },
+        {
+          "code": "DONOR_REGION",
+          "name": "Donor Region",
+          "domain": "HAIR_SCALP",
+          "parent_code": "SCALP"
+        },
+        {
+          "code": "FRONTAL_HAIRLINE",
+          "name": "Frontal Hairline",
+          "domain": "HAIR_SCALP",
+          "parent_code": "SCALP"
+        },
+        {
+          "code": "FRONTAL_SCALP",
+          "name": "Frontal Scalp",
+          "domain": "HAIR_SCALP",
+          "parent_code": "SCALP"
+        },
+        {
+          "code": "MIDSCALP",
+          "name": "Midscalp",
+          "domain": "HAIR_SCALP",
+          "parent_code": "SCALP"
+        },
+        {
+          "code": "RECIPIENT_REGION",
+          "name": "Recipient Region",
+          "domain": "HAIR_SCALP",
+          "parent_code": "SCALP"
+        },
+        {
+          "code": "SCALP",
+          "name": "Scalp",
+          "domain": "HAIR_SCALP",
+          "parent_code": null
+        },
+        {
+          "code": "TEMPORAL_REGION",
+          "name": "Temporal Region",
+          "domain": "HAIR_SCALP",
+          "parent_code": "SCALP"
+        },
+        {
+          "code": "NECK",
+          "name": "Neck",
+          "domain": "NECK",
+          "parent_code": null
+        }
+      ],
+      "locations": [
+        {
+          "code": "CLINIC",
+          "name": "Clinic",
+          "type": "GENERIC",
+          "verified": false,
+          "parent_code": null
+        },
+        {
+          "code": "CONSULTATION_ROOM",
+          "name": "Consultation Room",
+          "type": "GENERIC",
+          "verified": false,
+          "parent_code": "CLINIC"
+        },
+        {
+          "code": "CORRIDOR",
+          "name": "Corridor",
+          "type": "GENERIC",
+          "verified": false,
+          "parent_code": "CLINIC"
+        },
+        {
+          "code": "HOME",
+          "name": "Home",
+          "type": "GENERIC",
+          "verified": false,
+          "parent_code": null
+        },
+        {
+          "code": "HOTEL",
+          "name": "Hotel",
+          "type": "GENERIC",
+          "verified": false,
+          "parent_code": null
+        },
+        {
+          "code": "OFFICE",
+          "name": "Office",
+          "type": "GENERIC",
+          "verified": false,
+          "parent_code": "CLINIC"
+        },
+        {
+          "code": "OPERATING_ROOM",
+          "name": "Operating Room",
+          "type": "GENERIC",
+          "verified": false,
+          "parent_code": "CLINIC"
+        },
+        {
+          "code": "OUTDOOR",
+          "name": "Outdoor",
+          "type": "GENERIC",
+          "verified": false,
+          "parent_code": null
+        },
+        {
+          "code": "RECEPTION",
+          "name": "Reception",
+          "type": "GENERIC",
+          "verified": false,
+          "parent_code": "CLINIC"
+        },
+        {
+          "code": "TREATMENT_ROOM",
+          "name": "Treatment Room",
+          "type": "GENERIC",
+          "verified": false,
+          "parent_code": "CLINIC"
+        },
+        {
+          "code": "WAITING_AREA",
+          "name": "Waiting Area",
+          "type": "GENERIC",
+          "verified": false,
+          "parent_code": "CLINIC"
+        }
+      ],
+      "treatments": [
+        {
+          "code": "HAIR_RESTORATION",
+          "name": "Hair Restoration",
+          "level": 0,
+          "category": "HAIR",
+          "parent_code": null
+        },
+        {
+          "code": "HAIR_TRANSPLANT",
+          "name": "Hair Transplant",
+          "level": 1,
+          "category": "HAIR",
+          "parent_code": "HAIR_RESTORATION"
+        },
+        {
+          "code": "HAIR_TRANSPLANT_FUE",
+          "name": "FUE",
+          "level": 2,
+          "category": "HAIR_TRANSPLANT",
+          "parent_code": "HAIR_TRANSPLANT"
+        },
+        {
+          "code": "FUE_ANAESTHESIA",
+          "name": "Anaesthesia",
+          "level": 3,
+          "category": "FUE_WORKFLOW",
+          "parent_code": "HAIR_TRANSPLANT_FUE"
+        },
+        {
+          "code": "FUE_CONSULTATION",
+          "name": "Consultation",
+          "level": 3,
+          "category": "FUE_WORKFLOW",
+          "parent_code": "HAIR_TRANSPLANT_FUE"
+        },
+        {
+          "code": "FUE_DONOR_ASSESSMENT",
+          "name": "Donor Assessment",
+          "level": 3,
+          "category": "FUE_WORKFLOW",
+          "parent_code": "HAIR_TRANSPLANT_FUE"
+        },
+        {
+          "code": "FUE_EXTRACTION",
+          "name": "Extraction",
+          "level": 3,
+          "category": "FUE_WORKFLOW",
+          "parent_code": "HAIR_TRANSPLANT_FUE"
+        },
+        {
+          "code": "FUE_FOLLOW_UP",
+          "name": "Follow-up",
+          "level": 3,
+          "category": "FUE_WORKFLOW",
+          "parent_code": "HAIR_TRANSPLANT_FUE"
+        },
+        {
+          "code": "FUE_GRAFT_PREPARATION",
+          "name": "Graft Preparation",
+          "level": 3,
+          "category": "FUE_WORKFLOW",
+          "parent_code": "HAIR_TRANSPLANT_FUE"
+        },
+        {
+          "code": "FUE_HAIRLINE_DESIGN",
+          "name": "Hairline Design",
+          "level": 3,
+          "category": "FUE_WORKFLOW",
+          "parent_code": "HAIR_TRANSPLANT_FUE"
+        },
+        {
+          "code": "FUE_IMPLANTATION",
+          "name": "Implantation",
+          "level": 3,
+          "category": "FUE_WORKFLOW",
+          "parent_code": "HAIR_TRANSPLANT_FUE"
+        },
+        {
+          "code": "FUE_POST_OP",
+          "name": "Post-op",
+          "level": 3,
+          "category": "FUE_WORKFLOW",
+          "parent_code": "HAIR_TRANSPLANT_FUE"
+        }
+      ]
+    },
+    "grants": [
+      {
+        "table": "actions",
+        "grantee": "authenticated",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "actions",
+        "grantee": "service_role",
+        "privilege": "DELETE"
+      },
+      {
+        "table": "actions",
+        "grantee": "service_role",
+        "privilege": "INSERT"
+      },
+      {
+        "table": "actions",
+        "grantee": "service_role",
+        "privilege": "REFERENCES"
+      },
+      {
+        "table": "actions",
+        "grantee": "service_role",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "actions",
+        "grantee": "service_role",
+        "privilege": "TRIGGER"
+      },
+      {
+        "table": "actions",
+        "grantee": "service_role",
+        "privilege": "TRUNCATE"
+      },
+      {
+        "table": "actions",
+        "grantee": "service_role",
+        "privilege": "UPDATE"
+      },
+      {
+        "table": "ai_analysis_runs",
+        "grantee": "service_role",
+        "privilege": "DELETE"
+      },
+      {
+        "table": "ai_analysis_runs",
+        "grantee": "service_role",
+        "privilege": "INSERT"
+      },
+      {
+        "table": "ai_analysis_runs",
+        "grantee": "service_role",
+        "privilege": "REFERENCES"
+      },
+      {
+        "table": "ai_analysis_runs",
+        "grantee": "service_role",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "ai_analysis_runs",
+        "grantee": "service_role",
+        "privilege": "TRIGGER"
+      },
+      {
+        "table": "ai_analysis_runs",
+        "grantee": "service_role",
+        "privilege": "TRUNCATE"
+      },
+      {
+        "table": "ai_analysis_runs",
+        "grantee": "service_role",
+        "privilege": "UPDATE"
+      },
+      {
+        "table": "anatomy_terms",
+        "grantee": "authenticated",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "anatomy_terms",
+        "grantee": "service_role",
+        "privilege": "DELETE"
+      },
+      {
+        "table": "anatomy_terms",
+        "grantee": "service_role",
+        "privilege": "INSERT"
+      },
+      {
+        "table": "anatomy_terms",
+        "grantee": "service_role",
+        "privilege": "REFERENCES"
+      },
+      {
+        "table": "anatomy_terms",
+        "grantee": "service_role",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "anatomy_terms",
+        "grantee": "service_role",
+        "privilege": "TRIGGER"
+      },
+      {
+        "table": "anatomy_terms",
+        "grantee": "service_role",
+        "privilege": "TRUNCATE"
+      },
+      {
+        "table": "anatomy_terms",
+        "grantee": "service_role",
+        "privilege": "UPDATE"
+      },
+      {
+        "table": "asset_access_control",
+        "grantee": "service_role",
+        "privilege": "DELETE"
+      },
+      {
+        "table": "asset_access_control",
+        "grantee": "service_role",
+        "privilege": "INSERT"
+      },
+      {
+        "table": "asset_access_control",
+        "grantee": "service_role",
+        "privilege": "REFERENCES"
+      },
+      {
+        "table": "asset_access_control",
+        "grantee": "service_role",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "asset_access_control",
+        "grantee": "service_role",
+        "privilege": "TRIGGER"
+      },
+      {
+        "table": "asset_access_control",
+        "grantee": "service_role",
+        "privilege": "TRUNCATE"
+      },
+      {
+        "table": "asset_access_control",
+        "grantee": "service_role",
+        "privilege": "UPDATE"
+      },
+      {
+        "table": "asset_derivatives",
+        "grantee": "service_role",
+        "privilege": "DELETE"
+      },
+      {
+        "table": "asset_derivatives",
+        "grantee": "service_role",
+        "privilege": "INSERT"
+      },
+      {
+        "table": "asset_derivatives",
+        "grantee": "service_role",
+        "privilege": "REFERENCES"
+      },
+      {
+        "table": "asset_derivatives",
+        "grantee": "service_role",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "asset_derivatives",
+        "grantee": "service_role",
+        "privilege": "TRIGGER"
+      },
+      {
+        "table": "asset_derivatives",
+        "grantee": "service_role",
+        "privilege": "TRUNCATE"
+      },
+      {
+        "table": "asset_derivatives",
+        "grantee": "service_role",
+        "privilege": "UPDATE"
+      },
+      {
+        "table": "locations",
+        "grantee": "authenticated",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "locations",
+        "grantee": "service_role",
+        "privilege": "DELETE"
+      },
+      {
+        "table": "locations",
+        "grantee": "service_role",
+        "privilege": "INSERT"
+      },
+      {
+        "table": "locations",
+        "grantee": "service_role",
+        "privilege": "REFERENCES"
+      },
+      {
+        "table": "locations",
+        "grantee": "service_role",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "locations",
+        "grantee": "service_role",
+        "privilege": "TRIGGER"
+      },
+      {
+        "table": "locations",
+        "grantee": "service_role",
+        "privilege": "TRUNCATE"
+      },
+      {
+        "table": "locations",
+        "grantee": "service_role",
+        "privilege": "UPDATE"
+      },
+      {
+        "table": "people",
+        "grantee": "authenticated",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "people",
+        "grantee": "service_role",
+        "privilege": "DELETE"
+      },
+      {
+        "table": "people",
+        "grantee": "service_role",
+        "privilege": "INSERT"
+      },
+      {
+        "table": "people",
+        "grantee": "service_role",
+        "privilege": "REFERENCES"
+      },
+      {
+        "table": "people",
+        "grantee": "service_role",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "people",
+        "grantee": "service_role",
+        "privilege": "TRIGGER"
+      },
+      {
+        "table": "people",
+        "grantee": "service_role",
+        "privilege": "TRUNCATE"
+      },
+      {
+        "table": "people",
+        "grantee": "service_role",
+        "privilege": "UPDATE"
+      },
+      {
+        "table": "treatment_aliases",
+        "grantee": "authenticated",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "treatment_aliases",
+        "grantee": "service_role",
+        "privilege": "DELETE"
+      },
+      {
+        "table": "treatment_aliases",
+        "grantee": "service_role",
+        "privilege": "INSERT"
+      },
+      {
+        "table": "treatment_aliases",
+        "grantee": "service_role",
+        "privilege": "REFERENCES"
+      },
+      {
+        "table": "treatment_aliases",
+        "grantee": "service_role",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "treatment_aliases",
+        "grantee": "service_role",
+        "privilege": "TRIGGER"
+      },
+      {
+        "table": "treatment_aliases",
+        "grantee": "service_role",
+        "privilege": "TRUNCATE"
+      },
+      {
+        "table": "treatment_aliases",
+        "grantee": "service_role",
+        "privilege": "UPDATE"
+      },
+      {
+        "table": "treatments",
+        "grantee": "authenticated",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "treatments",
+        "grantee": "service_role",
+        "privilege": "DELETE"
+      },
+      {
+        "table": "treatments",
+        "grantee": "service_role",
+        "privilege": "INSERT"
+      },
+      {
+        "table": "treatments",
+        "grantee": "service_role",
+        "privilege": "REFERENCES"
+      },
+      {
+        "table": "treatments",
+        "grantee": "service_role",
+        "privilege": "SELECT"
+      },
+      {
+        "table": "treatments",
+        "grantee": "service_role",
+        "privilege": "TRIGGER"
+      },
+      {
+        "table": "treatments",
+        "grantee": "service_role",
+        "privilege": "TRUNCATE"
+      },
+      {
+        "table": "treatments",
+        "grantee": "service_role",
+        "privilege": "UPDATE"
+      }
+    ],
+    "indexes": [
+      {
+        "name": "actions_code_key",
+        "table": "actions",
+        "definition": "CREATE UNIQUE INDEX actions_code_key ON public.actions USING btree (code)"
+      },
+      {
+        "name": "actions_name_idx",
+        "table": "actions",
+        "definition": "CREATE INDEX actions_name_idx ON public.actions USING btree (lower(name))"
+      },
+      {
+        "name": "actions_pkey",
+        "table": "actions",
+        "definition": "CREATE UNIQUE INDEX actions_pkey ON public.actions USING btree (id)"
+      },
+      {
+        "name": "ai_analysis_runs_asset_created_idx",
+        "table": "ai_analysis_runs",
+        "definition": "CREATE INDEX ai_analysis_runs_asset_created_idx ON public.ai_analysis_runs USING btree (asset_id, created_at DESC)"
+      },
+      {
+        "name": "ai_analysis_runs_pkey",
+        "table": "ai_analysis_runs",
+        "definition": "CREATE UNIQUE INDEX ai_analysis_runs_pkey ON public.ai_analysis_runs USING btree (id)"
+      },
+      {
+        "name": "ai_analysis_runs_status_idx",
+        "table": "ai_analysis_runs",
+        "definition": "CREATE INDEX ai_analysis_runs_status_idx ON public.ai_analysis_runs USING btree (status)"
+      },
+      {
+        "name": "ai_analysis_runs_type_idx",
+        "table": "ai_analysis_runs",
+        "definition": "CREATE INDEX ai_analysis_runs_type_idx ON public.ai_analysis_runs USING btree (analysis_type)"
+      },
+      {
+        "name": "anatomy_terms_code_key",
+        "table": "anatomy_terms",
+        "definition": "CREATE UNIQUE INDEX anatomy_terms_code_key ON public.anatomy_terms USING btree (code)"
+      },
+      {
+        "name": "anatomy_terms_name_idx",
+        "table": "anatomy_terms",
+        "definition": "CREATE INDEX anatomy_terms_name_idx ON public.anatomy_terms USING btree (lower(name))"
+      },
+      {
+        "name": "anatomy_terms_parent_id_idx",
+        "table": "anatomy_terms",
+        "definition": "CREATE INDEX anatomy_terms_parent_id_idx ON public.anatomy_terms USING btree (parent_id) WHERE (parent_id IS NOT NULL)"
+      },
+      {
+        "name": "anatomy_terms_pkey",
+        "table": "anatomy_terms",
+        "definition": "CREATE UNIQUE INDEX anatomy_terms_pkey ON public.anatomy_terms USING btree (id)"
+      },
+      {
+        "name": "asset_access_control_classification_review_idx",
+        "table": "asset_access_control",
+        "definition": "CREATE INDEX asset_access_control_classification_review_idx ON public.asset_access_control USING btree (classification_status, review_status)"
+      },
+      {
+        "name": "asset_access_control_external_ai_idx",
+        "table": "asset_access_control",
+        "definition": "CREATE INDEX asset_access_control_external_ai_idx ON public.asset_access_control USING btree (external_ai_status)"
+      },
+      {
+        "name": "asset_access_control_reviewed_by_idx",
+        "table": "asset_access_control",
+        "definition": "CREATE INDEX asset_access_control_reviewed_by_idx ON public.asset_access_control USING btree (reviewed_by) WHERE (reviewed_by IS NOT NULL)"
+      },
+      {
+        "name": "asset_access_control_pkey",
+        "table": "asset_access_control",
+        "definition": "CREATE UNIQUE INDEX asset_access_control_pkey ON public.asset_access_control USING btree (asset_id)"
+      },
+      {
+        "name": "asset_derivatives_analysis_run_idx",
+        "table": "asset_derivatives",
+        "definition": "CREATE INDEX asset_derivatives_analysis_run_idx ON public.asset_derivatives USING btree (analysis_run_id) WHERE (analysis_run_id IS NOT NULL)"
+      },
+      {
+        "name": "asset_derivatives_asset_type_idx",
+        "table": "asset_derivatives",
+        "definition": "CREATE INDEX asset_derivatives_asset_type_idx ON public.asset_derivatives USING btree (asset_id, derivative_type)"
+      },
+      {
+        "name": "asset_derivatives_pkey",
+        "table": "asset_derivatives",
+        "definition": "CREATE UNIQUE INDEX asset_derivatives_pkey ON public.asset_derivatives USING btree (id)"
+      },
+      {
+        "name": "asset_derivatives_status_idx",
+        "table": "asset_derivatives",
+        "definition": "CREATE INDEX asset_derivatives_status_idx ON public.asset_derivatives USING btree (generation_status)"
+      },
+      {
+        "name": "locations_code_key",
+        "table": "locations",
+        "definition": "CREATE UNIQUE INDEX locations_code_key ON public.locations USING btree (code)"
+      },
+      {
+        "name": "locations_name_idx",
+        "table": "locations",
+        "definition": "CREATE INDEX locations_name_idx ON public.locations USING btree (lower(name))"
+      },
+      {
+        "name": "locations_parent_id_idx",
+        "table": "locations",
+        "definition": "CREATE INDEX locations_parent_id_idx ON public.locations USING btree (parent_id) WHERE (parent_id IS NOT NULL)"
+      },
+      {
+        "name": "locations_pkey",
+        "table": "locations",
+        "definition": "CREATE UNIQUE INDEX locations_pkey ON public.locations USING btree (id)"
+      },
+      {
+        "name": "people_code_key",
+        "table": "people",
+        "definition": "CREATE UNIQUE INDEX people_code_key ON public.people USING btree (code)"
+      },
+      {
+        "name": "people_display_name_idx",
+        "table": "people",
+        "definition": "CREATE INDEX people_display_name_idx ON public.people USING btree (lower(display_name))"
+      },
+      {
+        "name": "people_pkey",
+        "table": "people",
+        "definition": "CREATE UNIQUE INDEX people_pkey ON public.people USING btree (id)"
+      },
+      {
+        "name": "treatment_aliases_normalized_language_unique",
+        "table": "treatment_aliases",
+        "definition": "CREATE UNIQUE INDEX treatment_aliases_normalized_language_unique ON public.treatment_aliases USING btree (normalized_alias, language)"
+      },
+      {
+        "name": "treatment_aliases_pkey",
+        "table": "treatment_aliases",
+        "definition": "CREATE UNIQUE INDEX treatment_aliases_pkey ON public.treatment_aliases USING btree (id)"
+      },
+      {
+        "name": "treatment_aliases_treatment_id_idx",
+        "table": "treatment_aliases",
+        "definition": "CREATE INDEX treatment_aliases_treatment_id_idx ON public.treatment_aliases USING btree (treatment_id)"
+      },
+      {
+        "name": "treatments_code_key",
+        "table": "treatments",
+        "definition": "CREATE UNIQUE INDEX treatments_code_key ON public.treatments USING btree (code)"
+      },
+      {
+        "name": "treatments_name_idx",
+        "table": "treatments",
+        "definition": "CREATE INDEX treatments_name_idx ON public.treatments USING btree (lower(name))"
+      },
+      {
+        "name": "treatments_parent_id_idx",
+        "table": "treatments",
+        "definition": "CREATE INDEX treatments_parent_id_idx ON public.treatments USING btree (parent_id) WHERE (parent_id IS NOT NULL)"
+      },
+      {
+        "name": "treatments_pkey",
+        "table": "treatments",
+        "definition": "CREATE UNIQUE INDEX treatments_pkey ON public.treatments USING btree (id)"
+      }
+    ],
+    "policies": [
+      {
+        "name": "actions_active_app_read",
+        "check": null,
+        "roles": [
+          "authenticated"
+        ],
+        "table": "actions",
+        "using": "( SELECT private.is_active_app_user() AS is_active_app_user)",
+        "command": "SELECT"
+      },
+      {
+        "name": "anatomy_terms_active_app_read",
+        "check": null,
+        "roles": [
+          "authenticated"
+        ],
+        "table": "anatomy_terms",
+        "using": "( SELECT private.is_active_app_user() AS is_active_app_user)",
+        "command": "SELECT"
+      },
+      {
+        "name": "locations_active_app_read",
+        "check": null,
+        "roles": [
+          "authenticated"
+        ],
+        "table": "locations",
+        "using": "( SELECT private.is_active_app_user() AS is_active_app_user)",
+        "command": "SELECT"
+      },
+      {
+        "name": "people_active_app_read",
+        "check": null,
+        "roles": [
+          "authenticated"
+        ],
+        "table": "people",
+        "using": "( SELECT private.is_active_app_user() AS is_active_app_user)",
+        "command": "SELECT"
+      },
+      {
+        "name": "treatment_aliases_active_app_read",
+        "check": null,
+        "roles": [
+          "authenticated"
+        ],
+        "table": "treatment_aliases",
+        "using": "( SELECT private.is_active_app_user() AS is_active_app_user)",
+        "command": "SELECT"
+      },
+      {
+        "name": "treatments_active_app_read",
+        "check": null,
+        "roles": [
+          "authenticated"
+        ],
+        "table": "treatments",
+        "using": "( SELECT private.is_active_app_user() AS is_active_app_user)",
+        "command": "SELECT"
+      }
+    ],
+    "triggers": [
+      {
+        "name": "actions_set_updated_at",
+        "table": "actions",
+        "definition": "CREATE TRIGGER actions_set_updated_at BEFORE UPDATE ON actions FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+      },
+      {
+        "name": "ai_analysis_runs_set_updated_at",
+        "table": "ai_analysis_runs",
+        "definition": "CREATE TRIGGER ai_analysis_runs_set_updated_at BEFORE UPDATE ON ai_analysis_runs FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+      },
+      {
+        "name": "anatomy_terms_set_updated_at",
+        "table": "anatomy_terms",
+        "definition": "CREATE TRIGGER anatomy_terms_set_updated_at BEFORE UPDATE ON anatomy_terms FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+      },
+      {
+        "name": "asset_access_control_set_updated_at",
+        "table": "asset_access_control",
+        "definition": "CREATE TRIGGER asset_access_control_set_updated_at BEFORE UPDATE ON asset_access_control FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+      },
+      {
+        "name": "asset_derivatives_set_updated_at",
+        "table": "asset_derivatives",
+        "definition": "CREATE TRIGGER asset_derivatives_set_updated_at BEFORE UPDATE ON asset_derivatives FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+      },
+      {
+        "name": "locations_set_updated_at",
+        "table": "locations",
+        "definition": "CREATE TRIGGER locations_set_updated_at BEFORE UPDATE ON locations FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+      },
+      {
+        "name": "people_set_updated_at",
+        "table": "people",
+        "definition": "CREATE TRIGGER people_set_updated_at BEFORE UPDATE ON people FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+      },
+      {
+        "name": "treatments_set_updated_at",
+        "table": "treatments",
+        "definition": "CREATE TRIGGER treatments_set_updated_at BEFORE UPDATE ON treatments FOR EACH ROW EXECUTE FUNCTION set_updated_at()"
+      }
+    ]
+  },
+  "existing_table_changes": {
+    "asset_people": [
+      "person_id"
+    ],
+    "asset_ai_profiles": [
+      "primary_treatment_id",
+      "primary_anatomy_id",
+      "primary_location_id"
+    ]
+  }
+}

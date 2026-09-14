@@ -1,0 +1,178 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0546.MP4, 5.1s clip",
+      "evidence": [
+        "asset technical metadata: filename IMG_0546.MP4, duration 5.105s, h264 codec"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "scene_index 0 shows progression of device activation"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles not explicitly confirmed",
+      "evidence": [
+        "scene-level PEOPLE_ROLES marked UNKNOWN despite visible practitioner and patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in teal scrubs, goggles, mask, hair bun; patient reclined with mesh cap",
+      "evidence": [
+        "image shows teal scrub top, tinted safety glasses, surgical mask, gloved hands",
+        "patient wearing hairnet, purple towel draped on torso"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's facial/cheek area visible",
+      "evidence": [
+        "images show close contact with patient's cheek, jaw, and eye region"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not named",
+      "evidence": [
+        "no named clinical procedure in supplied text; device and gloves alone do not establish one",
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner applies handheld device to patient's face",
+      "evidence": [
+        "image shows gloved hand stabilizing face while device tip touches cheek",
+        "second keyframe shows visible light/emission from device tip"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned directly over reclined patient",
+      "evidence": [
+        "practitioner leaning over patient, hand on patient's face",
+        "close physical proximity in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Visible light emission near skin during treatment",
+      "evidence": [
+        "second keyframe shows light/glow at device tip near patient's cheek"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting context not confirmed",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible tray and equipment"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing of procedure",
+      "evidence": [
+        "tight vertical framing centered on practitioner and patient face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner fills left/center frame, patient reclined right/bottom",
+      "evidence": [
+        "image composition shows practitioner upper-left, patient lower-right with towel"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH",
+        "scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Text presence inconclusive",
+      "evidence": [
+        "ocr_observations: 1 but scene-level OCR_VISIBLE_TEXT marked UNKNOWN",
+        "partial name tag text on scrubs not fully legible"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose unclear",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual synthesis",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A practitioner wearing teal scrubs, protective goggles, and a face mask performs a facial skin treatment on a reclined patient using a handheld device connected by an orange cord, with a visible light emitted near the patient's cheek. The patient is draped with a mesh cap and purple towel, and a tray with supplies sits nearby in a clinical setting.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "c06fa600-7107-4470-8c75-c8ab2a330b13",
+  "image_count": 1
+}

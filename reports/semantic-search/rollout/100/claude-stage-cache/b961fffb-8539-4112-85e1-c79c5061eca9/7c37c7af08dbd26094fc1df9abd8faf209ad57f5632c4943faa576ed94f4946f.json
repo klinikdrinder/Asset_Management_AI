@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_2965.MP4",
+      "evidence": [
+        "filename IMG_2965.MP4, duration 12.5s, 1280x720 h264 video with audio stream, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical scalp procedure clip",
+      "evidence": [
+        "scene_results reports 1 canonical scene, 2 keyframes, all sampled from a single continuous setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across duration",
+      "evidence": [
+        "canonical_scenes: 1 covering the full 12.5 second clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two gowned clinicians plus one observer in scrubs",
+      "evidence": [
+        "two people in blue gowns, gloves, and lighted head loupes handling instruments near the scalp; a third person in gray scrubs and mask stands watching"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue gowns/caps/masks; gray scrub top with earring",
+      "evidence": [
+        "two figures wear blue surgical gowns, caps, masks, and head-mounted lighted loupes with gloved hands",
+        "standing person wears a gray scrub top, blue surgical cap, light blue mask, and an earring"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Exposed, reddened scalp region",
+      "evidence": [
+        "a rounded, reddened scalp area is exposed and draped with surgical towels at the center of the frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Named procedure not identified",
+      "evidence": [
+        "per-scene layer result lists TREATMENT_PROCEDURE as UNKNOWN; only gloves, instruments, and scalp contact are visible, which do not establish a specific named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instruments applied to scalp surface",
+      "evidence": [
+        "gloved hands hold pointed instruments touching/near the reddened scalp while illuminated by loupe lights"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Team working together over patient, observer nearby",
+      "evidence": [
+        "two gowned individuals positioned on either side of the draped patient's head working closely together; a third person stands directly behind them observing"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reddened scalp with fine linear markings",
+      "evidence": [
+        "the exposed scalp shows a reddened, mottled surface with thin dark linear marks and surrounding pale draping"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room setting not conclusively identified",
+      "evidence": [
+        "per-scene layer result lists ENVIRONMENT as UNKNOWN despite visible white cabinetry and sink-like fixtures"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld vertical framing",
+      "evidence": [
+        "vertical-orientation close shot centers on the scalp and surrounding hands with shallow depth emphasizing the illuminated work area"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp centered, observer framed above",
+      "evidence": [
+        "the illuminated scalp occupies the lower-center frame while the standing observer is framed upright in the background upper portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected in audio",
+      "evidence": [
+        "transcript_state: NO_SPEECH; per-scene SPEECH_TRANSCRIPT_AUDIO marked FALSE despite audio_state AUDIO_PRESENT"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "No legible on-screen text found",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations 0, indicating text presence was checked and none was found"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing elements present",
+      "evidence": [
+        "per-scene MARKETING_CONTENT_USAGE marked FALSE; no logos, captions, or promotional overlays visible in the images"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical scalp work scene with observer",
+      "evidence": [
+        "consistent depiction across keyframes of gowned staff handling instruments on an exposed scalp while a third person observes in a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual synthesis",
+      "evidence": [
+        "per-scene layer result lists SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "Two clinicians in blue surgical gowns, gloves, and head-mounted lighted loupes work with pointed instruments on the exposed, reddened scalp of a patient draped in surgical towels, while a third person in gray scrubs and a mask stands nearby watching. The room has white cabinetry and clinical equipment consistent with an operating or procedure room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "b961fffb-8539-4112-85e1-c79c5061eca9",
+  "image_count": 1
+}

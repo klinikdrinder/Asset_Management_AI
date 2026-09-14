@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3964.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_3964.MP4, duration 13.5s, 1280x720, 30fps, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical treatment room video",
+      "evidence": [
+        "Scene results show 1 canonical scene with 2 keyframes depicting a consistent indoor treatment setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, no cuts",
+      "evidence": [
+        "canonical_scenes: 1, scene_index: 0 only, 13.5 second duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "Image shows a masked, gloved person in scrubs standing over a reclined person draped in blue"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in olive scrubs, mask, gloves, earrings; patient with dark hair",
+      "evidence": [
+        "Image shows dark hair in a bun, surgical mask, pearl earrings, olive-green scrub top, white gloves on the clinician; patient has dark hair visible under a blue drape"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and upper forehead area visible",
+      "evidence": [
+        "Image shows the patient's nose, mouth, and forehead/upper face region near the device"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "Scene result lists TREATMENT_PROCEDURE as UNKNOWN; only gloves, a handheld device with hose, and facial contact are visible, which alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applying a handheld device to patient's face",
+      "evidence": [
+        "Image shows the clinician holding a device connected to a coiled hose against the patient's upper face"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned directly over patient in caregiving posture",
+      "evidence": [
+        "Image shows the clinician leaning close over the reclined patient, hands near patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, mask, handheld device with hose in a treatment setting",
+      "evidence": [
+        "Image shows white gloves, surgical mask, blue disposable drape, and a metal/hose-connected handheld device"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Indoor room, specific setting unconfirmed",
+      "evidence": [
+        "Scene result lists ENVIRONMENT as UNKNOWN despite visible shelf, bag, and equipment in background, insufficient to confirm exact facility type"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, handheld-style framing on the treatment area",
+      "evidence": [
+        "Keyframes show a tight vertical composition centered on the clinician and patient's face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient reclined lower-left, clinician upper-right of frame",
+      "evidence": [
+        "Image shows patient horizontally reclined across the lower portion of frame with clinician leaning in from the upper right"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present: true, audio_state: AUDIO_PRESENT, transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated: true, ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene result lists MARKETING_CONTENT_USAGE as UNKNOWN; no supplied text indicates promotional use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment moment in a care setting",
+      "evidence": [
+        "Combined visual evidence of gloved clinician, draped patient, and handheld device depicts a treatment interaction"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this asset",
+      "evidence": [
+        "Scene result lists SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked clinician in olive scrubs, gloves, and earrings leans over a reclined patient draped in blue and applies a handheld device connected to a coiled hose to the patient's upper face area. The setting is an indoor treatment room with a shelf, a bag, and other equipment visible in the background.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "b3bb38d1-a283-40f1-bb54-cfd48f0fdcb9",
+  "image_count": 1
+}

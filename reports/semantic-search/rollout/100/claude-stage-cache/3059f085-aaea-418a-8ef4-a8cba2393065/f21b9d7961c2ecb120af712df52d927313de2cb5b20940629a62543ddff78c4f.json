@@ -1,0 +1,183 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0621.MP4, single scene",
+      "evidence": [
+        "asset_id and filename IMG_0621.MP4 provided",
+        "scene_index 0 with start/end timestamps"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical setting video clip",
+      "evidence": [
+        "6.57 second duration video with two keyframes showing a clinic room scene"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, 0-6.567s",
+      "evidence": [
+        "scene start_seconds 0.0, end_seconds 6.567",
+        "two keyframes nearly identical showing continuity"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One worker in scrubs, one reclined individual",
+      "evidence": [
+        "figure wearing teal scrubs, mask, gloves standing",
+        "second person reclined in chair covered by drapes"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark-haired person in teal scrubs and surgical mask",
+      "evidence": [
+        "dark hair in bun with scrunchie",
+        "teal short-sleeve scrub top",
+        "white surgical mask and gloves visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp/hair area of reclined person visible",
+      "evidence": [
+        "dark hair and scalp region of reclined person visible near gloved hand"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from visual evidence",
+      "evidence": [
+        "gloved hand near scalp with a small purple-capped tool, but no named procedure in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hand working near reclined person's head",
+      "evidence": [
+        "gloved hand positioned at hairline/scalp of reclined person in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Standing worker attending to reclined individual",
+      "evidence": [
+        "standing figure leaning over seated/reclined person",
+        "physical proximity and hand contact near head"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, mask, disposable drapes present",
+      "evidence": [
+        "white gloves on hands",
+        "surgical mask on face",
+        "blue/white disposable protective sheet over reclined person"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinic-style room",
+      "evidence": [
+        "patterned wallpaper",
+        "wall-mounted AC remote control panel",
+        "wood-look wall paneling and pillow visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical framing, medium shot, static camera",
+      "evidence": [
+        "portrait/vertical aspect ratio 1280x720 rotated",
+        "two near-identical keyframes suggesting minimal camera movement"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subjects positioned center-right, side angle view",
+      "evidence": [
+        "standing figure occupies right/center of frame",
+        "reclined person lower left of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected field is empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators identifiable",
+      "evidence": [
+        "no text overlays, logos, or promotional cues present in keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical care scene between practitioner and patient",
+      "evidence": [
+        "gloved, masked worker attending to reclined person's head in a clinic-like setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "clinic, scrubs, gloves, mask, scalp, chair, drape",
+      "evidence": [
+        "visual elements: teal scrubs, surgical mask, gloves, disposable drape, reclined chair, patterned wall"
+      ]
+    }
+  ],
+  "narrative": "A person in teal medical scrubs, mask, and gloves stands over a seated individual reclined in a chair covered with blue and white disposable drapes. The gloved hand is positioned near the reclined person's head/hair area in a clinic-like room with a patterned wall and wall-mounted air conditioner control.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "3059f085-aaea-418a-8ef4-a8cba2393065",
+  "image_count": 2
+}

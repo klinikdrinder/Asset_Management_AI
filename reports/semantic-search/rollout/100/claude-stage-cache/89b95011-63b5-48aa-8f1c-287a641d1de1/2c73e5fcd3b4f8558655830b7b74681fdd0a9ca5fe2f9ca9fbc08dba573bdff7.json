@@ -1,0 +1,188 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3423.MP4, ~7.9s clip",
+      "evidence": [
+        "filename IMG_3423.MP4",
+        "duration_seconds 7.866667",
+        "codec h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short personal video of a woman post skincare treatment",
+      "evidence": [
+        "single canonical scene",
+        "two keyframes showing same subject and setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across the clip",
+      "evidence": [
+        "canonical_scenes: 1",
+        "scene_index 0 spans full duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One woman as the subject/patient",
+      "evidence": [
+        "woman facing camera in both keyframes",
+        "no other people visible"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman with dark hair in bun, black headband, blue towel wrap",
+      "evidence": [
+        "black spa headband visible",
+        "hair tied up in bun",
+        "blue towel covering shoulders"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, cheeks, forehead visible with skin marks",
+      "evidence": [
+        "close-up of face showing forehead, cheeks, chin"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN",
+        "no text naming a specific procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject sits still, slight facial expression change",
+      "evidence": [
+        "expression shifts from neutral to faint smile across keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "No interpersonal relationship depicted",
+      "evidence": [
+        "only one person present in frame",
+        "scene marked RELATIONSHIPS as NOT_APPLICABLE"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Red spots and dark marks scattered on face",
+      "evidence": [
+        "multiple small red spots on cheeks and forehead",
+        "dark pigmented marks visible on skin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Bathroom/clinic-like setting with cabinets and equipment",
+      "evidence": [
+        "white cabinetry in background",
+        "medical/device-like object on counter"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static handheld-style front-facing shot",
+      "evidence": [
+        "consistent framing across two keyframes",
+        "single stationary scene"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Centered close-up portrait framing",
+      "evidence": [
+        "subject centered facing camera in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true",
+        "transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No visible text detected",
+      "evidence": [
+        "ocr_observations: 0",
+        "OCR_VISIBLE_TEXT marked FALSE in scene"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Purpose of clip unclear",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN",
+        "no captions or branding present"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Personal skincare/spa moment being documented",
+      "evidence": [
+        "headband and towel suggest skincare routine",
+        "visible facial marks suggest before/after context"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indexable visual content for retrieval",
+      "evidence": [
+        "two keyframes provide distinct visual embeddings",
+        "consistent subject and setting across frames"
+      ]
+    }
+  ],
+  "narrative": "A woman wearing a black spa headband and blue towel wrap sits facing the camera, her face showing multiple small red spots and dark marks across her cheeks and forehead. Her expression shifts slightly between frames while a bathroom or clinic-like setting with cabinets and equipment is visible behind her.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "89b95011-63b5-48aa-8f1c-287a641d1de1",
+  "image_count": 1
+}

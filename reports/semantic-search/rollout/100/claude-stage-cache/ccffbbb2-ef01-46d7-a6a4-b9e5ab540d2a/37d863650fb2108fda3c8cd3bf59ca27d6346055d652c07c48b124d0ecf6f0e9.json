@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3426.MP4, scene 0, 0.0-11.5s",
+      "evidence": [
+        "filename IMG_3426.MP4",
+        "asset_id ccffbbb2-ef01-46d7-a6a4-b9e5ab540d2a",
+        "scene_index 0, start_seconds 0.0, end_seconds 11.5"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical close-up clip of face/neck being attended to",
+      "evidence": [
+        "2 keyframes showing a reclined patient with gloved hands near face and neck",
+        "duration_seconds 11.5, portrait-oriented handheld footage of a treatment setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, 0-11.5 seconds",
+      "evidence": [
+        "scene_index 0 spanning start_seconds 0.0 to end_seconds 11.5 with 2 representative keyframes"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined patient and a gloved attendant",
+      "evidence": [
+        "woman reclined with head back, mouth slightly open, wearing headband and towel drape",
+        "gloved hands of a second person visible manipulating a cotton-tipped applicator near her ear/neck"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman with dark hair in bun, black headband, blue towel drape, small dark marks on face",
+      "evidence": [
+        "dark hair pulled back under a black headband",
+        "blue towel wrapped around shoulders/chest",
+        "numerous small dark pinpoint spots scattered across forehead, cheeks, and chin"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, neck, ear, and shoulder area visible",
+      "evidence": [
+        "close-up framing of forehead, cheeks, chin, ear, and neck",
+        "shoulders and upper chest covered by towel"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure supplied in evidence",
+      "evidence": [
+        "gloved hands and a cotton-tipped applicator are visible near the face/ear but no procedure name appears in readable_text_detected or spoken_content",
+        "readable_text_detected and spoken_content arrays are both empty"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands touching/wiping face and neck",
+      "evidence": [
+        "gloved hand holding a cotton-tipped applicator near the ear in first keyframe",
+        "gloved hand positioned at the neck/jaw area in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Attendant working directly on the reclined patient",
+      "evidence": [
+        "gloved hands make direct contact with the patient's neck and near-ear region in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Multiple small dark pinpoint marks across facial skin",
+      "evidence": [
+        "dense scattering of small dark red/brown dots visible on forehead, cheeks, and chin in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "white cabinetry with a red vertical stripe in background",
+        "blue vinyl-covered headrest/chair surface"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld close-up, portrait orientation, top-down angle",
+      "evidence": [
+        "vertical 1280x720 portrait framing",
+        "close, slightly elevated angle looking down at the reclined subject's face"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face centered and filling most of frame",
+      "evidence": [
+        "subject's face and neck dominate the central frame in both keyframes with hands entering from the sides"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content captured",
+      "evidence": [
+        "spoken_content is an empty array despite audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected",
+      "evidence": [
+        "readable_text_detected is an empty array",
+        "no text visible on packaging, screens, or signage in either keyframe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing intent indicated",
+      "evidence": [
+        "no captions, branding, or promotional overlays present in readable_text_detected or the keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical skin-care attendance moment",
+      "evidence": [
+        "reclined patient with facial marks being tended to by gloved hands near ear and neck across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually derivable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A woman with headband and blue towel drape lies reclined on a treatment chair while a gloved person cleans or wipes her face and neck near the ear with a cotton-tipped applicator. Her face and forehead show numerous small dark pinpoint marks scattered across the skin.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "ccffbbb2-ef01-46d7-a6a4-b9e5ab540d2a",
+  "image_count": 2
+}

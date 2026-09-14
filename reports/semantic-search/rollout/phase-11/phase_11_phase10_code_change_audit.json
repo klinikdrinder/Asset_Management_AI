@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-09-02T06:47:55.440504+00:00",
+  "phase": 11,
+  "status": "PASS",
+  "method": "The search-v3 stack is untracked on this branch, so git cannot isolate the diff; changes were audited by inspection against the known Phase 10 edit set.",
+  "changes": [
+    {
+      "path": "dashboard/db/candidate-retriever.ts",
+      "classification": "REQUIRED_PRODUCTION_FIX",
+      "change": "FILENAME_LITERAL channel also probes the whole query as a filename literal and de-duplicates literals; exact/stem scoring chooses.",
+      "why": "The letter-initial token pattern returned no literal for \"25.01 (18).jpeg\" and latched onto the \"mp4\" fragment of \"3631150497-preview.mp4\", so 18 of 19 new assets were unreachable by filename.",
+      "certified_by": "phase_11_filename_regression.json"
+    },
+    {
+      "path": "scripts/phase10_controlled_batch.py",
+      "classification": "REQUIRED_PRODUCTION_FIX",
+      "change": "Restart-aware baseline gate plus truthful final batch counters.",
+      "why": "The fixed 11/869/11 gate could not resume after a genuine interruption; the replacement still blocks any drift that is not its own committed work.",
+      "certified_by": "phase_11_restart_safety.json"
+    },
+    {
+      "path": "dashboard/scripts/phase10-live-benchmark.ts",
+      "classification": "TEST_ONLY"
+    },
+    {
+      "path": "dashboard/scripts/phase10-phase09-regression.ts",
+      "classification": "TEST_ONLY"
+    },
+    {
+      "path": "dashboard/scripts/phase10-p2-displacement.ts",
+      "classification": "TEST_ONLY"
+    },
+    {
+      "path": "scripts/phase10_generate_artifacts.py",
+      "classification": "PHASE_10_ARTIFACT_ONLY"
+    },
+    {
+      "path": "scripts/phase10_final_report.py",
+      "classification": "PHASE_10_ARTIFACT_ONLY"
+    },
+    {
+      "path": "config/semantic-search/kdi_audio_intelligence_v2_production.json",
+      "classification": "REQUIRED_PRODUCTION_FIX",
+      "change": "Phase 11 production audio configuration.",
+      "why": "AudioConfig.load refuses any config without shadow_mode; the certified v1 file and its safety gate are untouched and a separate v2 file carries the production flags."
+    },
+    {
+      "path": "scripts/phase11_transcription_backfill.py",
+      "classification": "REQUIRED_PRODUCTION_FIX"
+    },
+    {
+      "path": "dashboard/scripts/phase11-acceptance-suite.ts",
+      "classification": "TEST_ONLY"
+    },
+    {
+      "path": "scripts/phase11_generate_artifacts.py",
+      "classification": "PHASE_11_ARTIFACT_ONLY"
+    }
+  ],
+  "verification": {
+    "phase_10_or_11_asset_ids_in_production_code": 0,
+    "debug_or_bypass_markers_in_search_chain": 0,
+    "external_providers_reachable_from_search_chain": 0,
+    "authorization_weakened": false,
+    "clinical_gate_bypassed": false,
+    "ranking_hack_introduced": false,
+    "architecture_drift": false,
+    "temporary_code_removed": "none required; no temporary or debug-only code was introduced"
+  },
+  "searched_production_paths": [
+    "dashboard/db",
+    "dashboard/app",
+    "dashboard/lib"
+  ]
+}

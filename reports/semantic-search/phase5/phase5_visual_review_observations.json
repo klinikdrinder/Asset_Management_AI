@@ -1,0 +1,95 @@
+{
+  "review_version": "phase5_evidence_review_v1",
+  "provider": "openai_codex_visual_review",
+  "model": "current_codex_model_identifier_unavailable",
+  "input_policy": "Only external-AI-eligible Phase 3/4 derived contact sheets were reviewed; no source media was transmitted.",
+  "assets": {
+    "7f72217d-3839-4920-86b4-ccc33e9e3d95": {
+      "summary": "An adult patient reclines while a gloved clinician performs an injectable procedure near the lower face.",
+      "roles": ["PATIENT", "CLINICIAN"], "appearance": ["ADULT_PRESENTATION", "PATIENT_RECLINING", "CLINICIAN_GLOVED"],
+      "anatomy": ["LOWER_FACE", "LIPS"], "treatments": ["INJECTABLES"], "actions": ["INJECTING"],
+      "relationships": ["CLINICIAN_TREATS_PATIENT", "CLINICIAN_WORKS_ON_ANATOMY", "PATIENT_POSITIONED_IN_TREATMENT_CHAIR"],
+      "clinical": ["VISIBLE_INJECTION_AT_LOWER_FACE"], "environment": ["TREATMENT_ROOM"],
+      "cinematography": ["MEDIUM_CLOSEUP", "VERTICAL", "STATIC"], "composition": ["PATIENT_FACE_PROMINENT", "CLINICIAN_HANDS_IN_FOREGROUND"],
+      "marketing_semantics": ["PROCEDURE_CONTENT", "CLINICAL_REFERENCE"], "scene_label": "INJECTABLE_TREATMENT", "event_action": "INJECTING", "reconciliation": "VERIFIED_EXISTING", "confidence": 0.9
+    },
+    "babae120-9372-42ad-b535-02a3276ea2be": {
+      "summary": "A masked clinician works on an adult patient's scalp while the patient reclines beneath clinical equipment.",
+      "roles": ["PATIENT", "CLINICIAN"], "appearance": ["ADULT_PRESENTATION", "PATIENT_RECLINING", "CLINICIAN_MASKED", "CLINICIAN_GLOVED"],
+      "anatomy": ["SCALP", "FRONTAL_SCALP"], "treatments": [], "actions": ["TOUCHING", "USING_DEVICE"],
+      "relationships": ["CLINICIAN_TREATS_PATIENT", "CLINICIAN_WORKS_ON_ANATOMY", "PATIENT_POSITIONED_IN_TREATMENT_CHAIR"],
+      "clinical": ["SCALP_UNDER_ACTIVE_CLINICAL_ATTENTION"], "environment": ["TREATMENT_ROOM"],
+      "cinematography": ["MEDIUM_CLOSEUP", "VERTICAL", "HANDHELD"], "composition": ["PATIENT_HEAD_PROMINENT", "CLINICIAN_AND_DEVICE_IN_FRAME"],
+      "marketing_semantics": ["PROCEDURE_CONTENT", "CLINICAL_REFERENCE"], "scene_label": null, "event_action": null, "reconciliation": "VERIFIED_EXISTING", "confidence": 0.82
+    },
+    "c86344e9-5b32-4d86-9205-67952d508651": {
+      "summary": "Gloved clinical hands administer an injectable procedure at the side of an adult patient's neck.",
+      "roles": ["PATIENT", "CLINICIAN"], "appearance": ["ADULT_PRESENTATION", "PATIENT_RECLINING", "CLINICIAN_GLOVED"],
+      "anatomy": ["NECK"], "treatments": ["INJECTABLES"], "actions": ["INJECTING", "HOLDING_SYRINGE"],
+      "relationships": ["CLINICIAN_TREATS_PATIENT", "CLINICIAN_WORKS_ON_ANATOMY"],
+      "clinical": ["VISIBLE_INJECTION_AT_NECK"], "environment": ["TREATMENT_ROOM"],
+      "cinematography": ["EXTREME_CLOSEUP", "VERTICAL", "HANDHELD"], "composition": ["NECK_TREATMENT_AREA_DOMINANT", "CLINICIAN_HANDS_IN_FOREGROUND"],
+      "marketing_semantics": ["PROCEDURE_CONTENT", "CLINICAL_REFERENCE"], "scene_label": "INJECTABLE_TREATMENT", "event_action": "INJECTING", "reconciliation": "VERIFIED_EXISTING", "confidence": 0.92
+    },
+    "444da390-0117-4380-8c87-d7c32f2903ff": {
+      "summary": "An adult subject records a close front-facing self-view in an indoor room.",
+      "roles": ["SUBJECT"], "appearance": ["ADULT_PRESENTATION", "FRONT_FACING", "SEATED_OR_STANDING_UNKNOWN"],
+      "anatomy": ["FACE"], "treatments": [], "actions": ["LOOKING_AT_CAMERA", "RECORDING_VIDEO"],
+      "relationships": ["PERSON_LOOKS_AT_CAMERA"], "clinical": [], "environment": [],
+      "cinematography": ["CLOSEUP", "VERTICAL", "HANDHELD", "SELF_RECORDED"], "composition": ["SINGLE_CENTRAL_FACE", "FACE_PROMINENT"],
+      "marketing_semantics": ["SELF_RECORDED_CONTENT", "PORTRAIT_CONTENT"], "scene_label": "PORTRAIT_SELF_RECORDING", "event_action": "LOOKING_AT_CAMERA", "reconciliation": "VERIFIED_EXISTING", "confidence": 0.88
+    },
+    "64712c6a-c02c-46e9-9f73-16786109468b": {
+      "summary": "An adult patient reclines while a clinician works near the side of the face in a treatment room.",
+      "roles": ["PATIENT", "CLINICIAN"], "appearance": ["ADULT_PRESENTATION", "PATIENT_RECLINING", "CLINICIAN_MASKED"],
+      "anatomy": ["FACE", "LOWER_FACE", "CHEEK"], "treatments": [], "actions": ["TOUCHING"],
+      "relationships": ["CLINICIAN_TREATS_PATIENT", "CLINICIAN_WORKS_ON_ANATOMY", "PATIENT_POSITIONED_IN_TREATMENT_CHAIR"],
+      "clinical": ["FACE_UNDER_ACTIVE_CLINICAL_ATTENTION"], "environment": ["TREATMENT_ROOM"],
+      "cinematography": ["MEDIUM", "VERTICAL", "STATIC"], "composition": ["PATIENT_AND_CLINICIAN_VISIBLE", "TREATMENT_AREA_PARTIALLY_VISIBLE"],
+      "marketing_semantics": ["PROCEDURE_CONTENT", "CLINICAL_REFERENCE"], "scene_label": "CLINICAL_FACE_TREATMENT", "event_action": null, "reconciliation": "VERIFIED_EXISTING", "confidence": 0.78
+    },
+    "47611c6d-7923-42a4-87b6-c2a416a90f5c": {
+      "summary": "A masked clinician uses a handheld tool near the frontal scalp of a reclining adult patient wearing eye protection.",
+      "roles": ["PATIENT", "CLINICIAN"], "appearance": ["ADULT_PRESENTATION", "PATIENT_RECLINING", "EYE_PROTECTION_VISIBLE", "CLINICIAN_MASKED"],
+      "anatomy": ["SCALP", "FRONTAL_SCALP"], "treatments": [], "actions": ["USING_DEVICE", "TOUCHING"],
+      "relationships": ["CLINICIAN_TREATS_PATIENT", "CLINICIAN_WORKS_ON_ANATOMY", "PATIENT_POSITIONED_IN_TREATMENT_CHAIR"],
+      "clinical": ["SCALP_UNDER_ACTIVE_CLINICAL_ATTENTION"], "environment": ["TREATMENT_ROOM"],
+      "cinematography": ["MEDIUM", "VERTICAL", "HANDHELD"], "composition": ["PATIENT_HEAD_AND_CLINICIAN_DOMINANT", "TOOL_VISIBLE_NEAR_TREATMENT_AREA"],
+      "marketing_semantics": ["PROCEDURE_CONTENT", "CLINICAL_REFERENCE"], "scene_label": "SCALP_TREATMENT", "event_action": "USING_DEVICE", "reconciliation": "VERIFIED_EXISTING", "confidence": 0.84
+    },
+    "bfae6c51-5d71-47ae-a3e1-6d07092b8896": {
+      "summary": "A clinician using magnification works on a prepared frontal recipient scalp while staff support a hair-transplant procedure.",
+      "roles": ["PATIENT", "CLINICIAN", "STAFF"], "appearance": ["ADULT_PRESENTATION", "PATIENT_RECLINING", "CLINICAL_PPE_VISIBLE", "SCALP_PREPARED"],
+      "anatomy": ["SCALP", "FRONTAL_SCALP", "RECIPIENT_REGION"], "treatments": ["HAIR_TRANSPLANT", "HAIR_TRANSPLANT_FUE", "FUE_IMPLANTATION"], "actions": ["IMPLANTING_GRAFTS"],
+      "relationships": ["CLINICIAN_TREATS_PATIENT", "CLINICIAN_WORKS_ON_ANATOMY", "PATIENT_POSITIONED_IN_TREATMENT_CHAIR"],
+      "clinical": ["PREPARED_FRONTAL_SCALP", "VISIBLE_RECIPIENT_AREA_PROCEDURE"], "environment": ["OPERATING_ROOM"],
+      "cinematography": ["MEDIUM_CLOSEUP", "VERTICAL", "HANDHELD"], "composition": ["FRONTAL_SCALP_CENTRAL", "MULTIPLE_CLINICAL_HANDS_VISIBLE"],
+      "marketing_semantics": ["HAIR_TRANSPLANT_PROCEDURE_CONTENT", "CLINICAL_REFERENCE", "EDUCATIONAL_CANDIDATE"], "scene_label": "HAIR_TRANSPLANT_PROCEDURE", "event_action": "IMPLANTING_GRAFTS", "reconciliation": "VERIFIED_EXISTING", "confidence": 0.9
+    },
+    "753eb5f3-82c7-4148-a226-d5b960fd8619": {
+      "summary": "A clinician cleanses the cheek and lower-face skin of a reclining adult patient using a swab.",
+      "roles": ["PATIENT", "CLINICIAN"], "appearance": ["ADULT_PRESENTATION", "PATIENT_RECLINING", "EYE_PROTECTION_VISIBLE", "CLINICIAN_GLOVED"],
+      "anatomy": ["FACE", "CHEEK", "LOWER_FACE"], "treatments": [], "actions": ["CLEANSING", "TOUCHING"],
+      "relationships": ["CLINICIAN_TREATS_PATIENT", "CLINICIAN_WORKS_ON_ANATOMY", "PATIENT_POSITIONED_IN_TREATMENT_CHAIR"],
+      "clinical": ["SKIN_CLEANSING_IN_PROGRESS"], "environment": ["TREATMENT_ROOM"],
+      "cinematography": ["EXTREME_CLOSEUP", "VERTICAL", "HANDHELD"], "composition": ["CHEEK_AND_LOWER_FACE_DOMINANT", "SWAB_IN_FOREGROUND"],
+      "marketing_semantics": ["PROCEDURE_PREPARATION_CONTENT", "CLINICAL_REFERENCE"], "scene_label": "FACE_CLEANSING", "event_action": "CLEANSING", "reconciliation": "VERIFIED_EXISTING", "confidence": 0.92
+    },
+    "37838d30-a0ce-4f90-8cc3-c986db0aaa65": {
+      "summary": "A single adult subject poses front-facing against a plain light background with the frontal scalp and hairline clearly visible.",
+      "roles": ["SUBJECT"], "appearance": ["ADULT_PRESENTATION", "FRONT_FACING", "SHORT_DARK_HAIR", "WHITE_COLLARED_SHIRT"],
+      "anatomy": ["FACE", "FRONTAL_SCALP", "FRONTAL_HAIRLINE"], "treatments": [], "actions": ["POSING_FOR_CAMERA"],
+      "relationships": ["PERSON_LOOKS_AT_CAMERA"], "clinical": ["VISIBLE_FRONTAL_HAIR_THINNING"], "environment": [],
+      "cinematography": ["MEDIUM_CLOSEUP", "LANDSCAPE", "STATIC", "FRONT_ANGLE"], "composition": ["SINGLE_CENTRAL_SUBJECT", "FACE_AND_FRONTAL_SCALP_PROMINENT", "PLAIN_LIGHT_BACKGROUND"],
+      "marketing_semantics": ["PORTRAIT_CONTENT", "CLINICAL_DOCUMENTATION_CANDIDATE"], "scene_label": null, "event_action": null, "reconciliation": "VERIFIED_EXISTING", "confidence": 0.92
+    },
+    "6215ad8b-12be-4a8e-bc49-f6b3dcf55c21": {
+      "summary": "A single adult subject poses front-facing against a dark neutral background.",
+      "roles": ["SUBJECT"], "appearance": ["ADULT_PRESENTATION", "FRONT_FACING", "DARK_HEAD_COVERING", "DARK_CLOTHING"],
+      "anatomy": ["FACE"], "treatments": [], "actions": ["POSING_FOR_CAMERA", "LOOKING_AT_CAMERA"],
+      "relationships": ["PERSON_LOOKS_AT_CAMERA"], "clinical": [], "environment": [],
+      "cinematography": ["CLOSEUP", "LANDSCAPE", "STATIC", "FRONT_ANGLE"], "composition": ["SINGLE_CENTRAL_SUBJECT", "FACE_PROMINENT", "DARK_NEUTRAL_BACKGROUND"],
+      "marketing_semantics": ["PORTRAIT_CONTENT", "PROMOTIONAL_CANDIDATE"], "scene_label": null, "event_action": null, "reconciliation": "VERIFIED_EXISTING", "confidence": 0.92
+    }
+  }
+}

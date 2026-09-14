@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-09-01T01:12:25.950Z",
+  "status": "PASS",
+  "implementation_version": "kdi_scale_readiness_v1",
+  "pipeline_version": "kdi_semantic_indexing_pipeline_v1",
+  "spec_version": "kdi_semantic_18_layer_v1",
+  "spec_fingerprint": "6da50e2153f6fcb6c9ef27c308ad44d0d2024e702e3faad47586b0068ba64fd7",
+  "external_ai_enabled": false,
+  "protected_writes": {
+    "production_assets_added": 0,
+    "semantic_facts_modified": false,
+    "descriptions_modified": false,
+    "narratives_modified": false,
+    "gold_modified": false,
+    "benchmark_modified": false,
+    "spec_modified": false,
+    "production_acl_modified": false,
+    "openai_api_calls": 0,
+    "other_external_ai_calls": 0,
+    "media_reanalysis": 0,
+    "new_embeddings_generated": 0
+  },
+  "foundation": {
+    "phase28_acceptance": "PASS",
+    "pilot_assets": 10,
+    "semantic_layers": 180,
+    "complete": 180,
+    "partial": 0
+  },
+  "lifecycle": {
+    "canonical_state_machine": "PASS",
+    "job_model": "PASS",
+    "legal_transitions": "PASS",
+    "illegal_transition_protection": "PASS",
+    "idempotency": "PASS",
+    "content_hash_dedupe": "PASS",
+    "retry_policy": "PASS",
+    "failure_isolation": "PASS",
+    "checkpoint_resume": "PASS",
+    "stage_resumability": "PASS"
+  },
+  "versioning_lineage": {
+    "spec_guard": "PASS",
+    "pipeline_version": "kdi_semantic_indexing_pipeline_v1",
+    "semantic_lineage": "PASS",
+    "description_lineage": "PASS",
+    "search_document_lineage": "PASS",
+    "embedding_lineage": "PASS",
+    "stale_detection": "PASS",
+    "supersession": "PASS",
+    "atomic_activation": "PASS"
+  },
+  "workers": {
+    "batch_model": "PASS",
+    "queue_contract": "PASS",
+    "concurrency_protection": "PASS",
+    "duplicate_active_processing": 0,
+    "stale_job_recovery": "PASS",
+    "worker_failure_recovery": "PASS"
+  },
+  "gates": {
+    "completeness": "PASS",
+    "search_ready": "PASS",
+    "acl_conservative_default": "PASS",
+    "consent_auto_approval": 0,
+    "external_ai_enabled": "NO"
+  },
+  "observability": {
+    "real_timing": "PASS",
+    "provider_model_lineage_ready": "PASS",
+    "token_tracking_ready": "PASS",
+    "cost_tracking_ready": "PASS",
+    "failure_history": "PASS",
+    "batch_progress": "PASS"
+  },
+  "recovery": {
+    "dependency_graph": "PASS",
+    "partial_rebuild": "PASS",
+    "reindex_contract": "PASS",
+    "rollback": "PASS",
+    "migration_safety": "PASS"
+  },
+  "simulations": [
+    {
+      "count": 30,
+      "durationMs": 1,
+      "duplicatePrevented": true,
+      "retryIsolated": true,
+      "permanentFailureIsolated": true,
+      "resumed": true,
+      "accountingCorrect": true,
+      "productionWrites": 0
+    },
+    {
+      "count": 100,
+      "durationMs": 4,
+      "duplicatePrevented": true,
+      "retryIsolated": true,
+      "permanentFailureIsolated": true,
+      "resumed": true,
+      "accountingCorrect": true,
+      "productionWrites": 0
+    },
+    {
+      "count": 881,
+      "durationMs": 34,
+      "duplicatePrevented": true,
+      "retryIsolated": true,
+      "permanentFailureIsolated": true,
+      "resumed": true,
+      "accountingCorrect": true,
+      "productionWrites": 0
+    }
+  ],
+  "targeted_tests": {
+    "passed": 40,
+    "total": 40,
+    "checks": [
+      {
+        "name": "canonical_state_machine",
+        "passed": true
+      },
+      {
+        "name": "illegal_transition_rejected",
+        "passed": true
+      },
+      {
+        "name": "durable_job_model",
+        "passed": true
+      },
+      {
+        "name": "idempotent_duplicate_request",
+        "passed": true
+      },
+      {
+        "name": "content_hash_dedupe",
+        "passed": true
+      },
+      {
+        "name": "retryable_failure",
+        "passed": true
+      },
+      {
+        "name": "bounded_retry",
+        "passed": true
+      },
+      {
+        "name": "failure_isolation",
+        "passed": true
+      },
+      {
+        "name": "checkpoint_resume",
+        "passed": true
+      },
+      {
+        "name": "stage_resumability",
+        "passed": true
+      },
+      {
+        "name": "spec_fingerprint_guard",
+        "passed": true
+      },
+      {
+        "name": "pipeline_versioning",
+        "passed": true
+      },
+      {
+        "name": "stale_detection",
+        "passed": true
+      },
+      {
+        "name": "supersession",
+        "passed": true
+      },
+      {
+        "name": "atomic_activation",
+        "passed": true
+      },
+      {
+        "name": "old_version_survives_failure",
+        "passed": true
+      },
+      {
+        "name": "batch_model",
+        "passed": true
+      },
+      {
+        "name": "batch_checkpointing",
+        "passed": true
+      },
+      {
+        "name": "queue_contract",
+        "passed": true
+      },
+      {
+        "name": "concurrency_protection",
+        "passed": true
+      },
+      {
+        "name": "duplicate_active_processing_zero",
+        "passed": true
+      },
+      {
+        "name": "stale_job_recovery",
+        "passed": true
+      },
+      {
+        "name": "worker_failure_recovery",
+        "passed": true
+      },
+      {
+        "name": "completeness_gate",
+        "passed": true
+      },
+      {
+        "name": "search_ready_gate",
+        "passed": true
+      },
+      {
+        "name": "acl_conservative_default",
+        "passed": true
+      },
+      {
+        "name": "consent_not_auto_approved",
+        "passed": true
+      },
+      {
+        "name": "real_timing",
+        "passed": true
+      },
+      {
+        "name": "provider_model_nullable",
+        "passed": true
+      },
+      {
+        "name": "token_cost_nullable",
+        "passed": true
+      },
+      {
+        "name": "external_ai_disabled",
+        "passed": true
+      },
+      {
+        "name": "modality_tolerance",
+        "passed": true
+      },
+      {
+        "name": "dependency_graph",
+        "passed": true
+      },
+      {
+        "name": "partial_rebuild_contract",
+        "passed": true
+      },
+      {
+        "name": "reindex_contract",
+        "passed": true
+      },
+      {
+        "name": "rollback_contract",
+        "passed": true
+      },
+      {
+        "name": "migration_safety",
+        "passed": true
+      },
+      {
+        "name": "orphan_prevention",
+        "passed": true
+      },
+      {
+        "name": "reviewer_auditability",
+        "passed": true
+      },
+      {
+        "name": "dry_run_no_production_write",
+        "passed": true
+      }
+    ]
+  },
+  "reviewer_readiness": {
+    "auditable_processing_state": "PASS",
+    "auditable_completeness": "PASS",
+    "auditable_lineage": "PASS",
+    "auditable_failure_retry_history": "PASS",
+    "auditable_cost_model_fields": "PASS"
+  },
+  "technical_debt": [
+    "Phase 20 real-model/API activation deferred",
+    "legacy run metadata may be incomplete",
+    "conservative UNKNOWN ACL remains fail-closed",
+    "Phase 30 will add automatic orchestration/production queue operations"
+  ]
+}

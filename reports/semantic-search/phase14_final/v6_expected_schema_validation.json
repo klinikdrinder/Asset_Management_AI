@@ -1,0 +1,34 @@
+{
+  "status": "FAIL",
+  "structurally_valid": 180,
+  "semantically_valid": 178,
+  "invalid": 0,
+  "ambiguous": 2,
+  "evaluator_shape_mismatches": 0,
+  "ambiguous_cases": [
+    {
+      "case_id": "QP14V6-042",
+      "query": "Material taken in 2017",
+      "differences": [
+        {
+          "field": "media_type",
+          "expected": "VIDEO",
+          "actual": "ANY",
+          "critical": true
+        }
+      ]
+    },
+    {
+      "case_id": "QP14V6-046",
+      "query": "Material taken in 2021",
+      "differences": [
+        {
+          "field": "media_type",
+          "expected": "VIDEO",
+          "actual": "ANY",
+          "critical": true
+        }
+      ]
+    }
+  ]
+}

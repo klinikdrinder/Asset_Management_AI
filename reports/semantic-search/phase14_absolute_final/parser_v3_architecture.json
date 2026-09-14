@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "pipeline": [
+    "RAW_QUERY",
+    "TEXT_NORMALIZATION",
+    "CLAUSE_PHRASE_SEGMENTATION",
+    "TOKEN_SPAN_ANNOTATION",
+    "TYPED_NUMERIC_OCCURRENCES",
+    "MEDIA_EXTENSION_EXTRACTION",
+    "TEMPORAL_EXTRACTION",
+    "POLARITY_MODIFIERS",
+    "SEMANTIC_PHRASE_COMPOSITION",
+    "ONTOLOGY_NORMALIZATION",
+    "SAFE_TYPO_RECOVERY",
+    "UNKNOWN_PRESERVATION",
+    "CONTRADICTION_DETECTION",
+    "CANONICAL_QUERY_PLAN",
+    "STRICT_SCHEMA_VALIDATION",
+    "DEEP_FREEZE"
+  ],
+  "runtime": "dashboard/db/query-interpreter.ts",
+  "intermediate_occurrences": [
+    "raw_text",
+    "normalized_text",
+    "start/end offsets",
+    "clause_id",
+    "category",
+    "subtype",
+    "polarity",
+    "operator",
+    "value",
+    "canonical_code",
+    "confidence",
+    "source",
+    "status"
+  ]
+}

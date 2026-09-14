@@ -1,0 +1,175 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0478.MP4, 18.4s scene",
+      "evidence": [
+        "asset_id 7a256df1-16ac-4e78-92aa-7ad9f33f6e09, filename IMG_0478.MP4, scene 0, 0.0-18.4s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single clinical close-contact scene, two keyframes",
+      "evidence": [
+        "2 keyframes supplied showing consistent setup: gloved clinician working near patient's face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene spanning 0-18.4s",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 18.4"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "one person in green scrubs, mask, gloves, standing and performing an action",
+        "one person reclined, eyes closed, wearing surgical cap, in passive/patient position"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician: dark hair, mask, earrings, teal scrubs, gloves; patient: surgical cap, marked face",
+      "evidence": [
+        "clinician has dark hair in bun/bangs, blue surgical mask, pearl earrings, teal/green scrub top",
+        "patient wears light blue surgical cap, has dark marker lines on cheek/jaw, eyes closed, draped in blue towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, forehead, and nose visible with marker lines",
+      "evidence": [
+        "marker/pen lines visible on cheek, jaw, and near forehead in both images",
+        "clinician's gloved hand positioned near patient's forehead/nose"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied evidence",
+      "evidence": [
+        "no spoken_content or readable_text_detected naming any procedure",
+        "gloves, marker lines, and hand contact alone do not establish a named procedure per rules"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician dabs/handles patient's forehead and nose area",
+      "evidence": [
+        "gloved hand holding a small object positioned at patient's forehead in first image and near nose in second image"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician actively attending to reclined patient",
+      "evidence": [
+        "clinician stands directly over patient, hand in close contact with patient's face across both frames"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Surgical marker lines on patient's face, gloved clinical handling",
+      "evidence": [
+        "dark marker lines on cheek and jaw visible in both keyframes",
+        "clinician wears disposable gloves and surgical mask, indicating clinical/sterile context"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Plain white clinical room with wall switches and equipment",
+      "evidence": [
+        "white walls, visible light switches/intercom panel, reclining chair, dark equipment in background of both images"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical handheld framing, medium-close shot",
+      "evidence": [
+        "1280x720 technical metadata but images are vertical-oriented compositions",
+        "camera positioned at patient's side/head level, static medium-close angle in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient in lower frame, clinician upper frame, centered subjects",
+      "evidence": [
+        "patient reclined occupies lower half of frame, clinician standing occupies upper half in both images"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content: [] in supplied evidence despite audio_stream true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable on-screen text detected",
+      "evidence": [
+        "readable_text_detected: [] in supplied evidence"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators identifiable",
+      "evidence": [
+        "no logos, captions, or promotional text present in readable_text_detected or images"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close clinical interaction between clinician and marked, reclined patient",
+      "evidence": [
+        "gloved, masked clinician working on marked facial area of reclined, eyes-closed patient across both frames"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked, gloved clinician in green scrubs leans over a reclined patient whose scalp is draped with a blue surgical cap and whose face bears faint marker lines, dabbing at the patient's forehead/nose area with a gloved hand. The patient lies back with eyes closed under a blue towel draped over the chest, in a plain white clinical room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "7a256df1-16ac-4e78-92aa-7ad9f33f6e09",
+  "image_count": 2
+}

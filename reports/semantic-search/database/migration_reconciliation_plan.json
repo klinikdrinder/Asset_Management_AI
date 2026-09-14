@@ -1,0 +1,97 @@
+{
+  "generated_at": "2026-08-24T07:29:58.961Z",
+  "status": "EXECUTED_AND_VERIFIED",
+  "zero_destructive_data": true,
+  "operations": [
+    {
+      "operation": "MARK_EXISTING_SCHEMA_MIGRATION_APPLIED",
+      "version": "202608130001",
+      "status": "COMPLETED",
+      "risk": "LOW",
+      "expected_schema_change": "NONE",
+      "expected_data_change": "NONE",
+      "rollback_strategy": "supabase migration repair --status reverted for this version",
+      "verification_step": "migration list plus unchanged schema fingerprint/counts"
+    },
+    {
+      "operation": "MARK_EXISTING_SCHEMA_MIGRATION_APPLIED",
+      "version": "202608130002",
+      "status": "COMPLETED",
+      "risk": "LOW",
+      "expected_schema_change": "NONE",
+      "expected_data_change": "NONE",
+      "rollback_strategy": "supabase migration repair --status reverted for this version",
+      "verification_step": "migration list plus unchanged schema fingerprint/counts"
+    },
+    {
+      "operation": "MARK_EXISTING_SCHEMA_MIGRATION_APPLIED",
+      "version": "202608130003",
+      "status": "COMPLETED",
+      "risk": "LOW",
+      "expected_schema_change": "NONE",
+      "expected_data_change": "NONE",
+      "rollback_strategy": "supabase migration repair --status reverted for this version",
+      "verification_step": "migration list plus unchanged schema fingerprint/counts"
+    },
+    {
+      "operation": "MARK_EXISTING_SCHEMA_MIGRATION_APPLIED",
+      "version": "202608130004",
+      "status": "COMPLETED",
+      "risk": "LOW",
+      "expected_schema_change": "NONE",
+      "expected_data_change": "NONE",
+      "rollback_strategy": "supabase migration repair --status reverted for this version",
+      "verification_step": "migration list plus unchanged schema fingerprint/counts"
+    },
+    {
+      "operation": "MARK_EXISTING_SCHEMA_MIGRATION_APPLIED",
+      "version": "202608170001",
+      "status": "COMPLETED",
+      "risk": "LOW",
+      "expected_schema_change": "NONE",
+      "expected_data_change": "NONE",
+      "rollback_strategy": "supabase migration repair --status reverted for this version",
+      "verification_step": "migration list plus unchanged schema fingerprint/counts"
+    },
+    {
+      "operation": "MARK_EXISTING_SCHEMA_MIGRATION_APPLIED",
+      "version": "202608190001",
+      "status": "COMPLETED",
+      "risk": "LOW",
+      "expected_schema_change": "NONE",
+      "expected_data_change": "NONE",
+      "rollback_strategy": "supabase migration repair --status reverted for this version",
+      "verification_step": "migration list plus unchanged schema fingerprint/counts"
+    },
+    {
+      "operation": "APPLY_GENUINELY_UNAPPLIED_MIGRATION",
+      "version": "20260824064838",
+      "status": "COMPLETED",
+      "risk": "MEDIUM",
+      "expected_schema_change": "Create Phase 10 semantic schema only",
+      "expected_data_change": "Insert exactly 18 canonical layer definitions; no asset/human/gold rows",
+      "rollback_strategy": "Forward corrective migration; production data tables are not dropped",
+      "verification_step": "live schema contract, RLS, 18 layers, transactional tests"
+    },
+    {
+      "operation": "APPLY_FORWARD_CORRECTION",
+      "version": "20260824071927",
+      "status": "COMPLETED",
+      "risk": "LOW",
+      "expected_schema_change": "Correct signed-gold child immutability trigger",
+      "expected_data_change": "NONE",
+      "rollback_strategy": "Forward correction",
+      "verification_step": "rolled-back gold immutability test"
+    },
+    {
+      "operation": "APPLY_FORWARD_CORRECTION",
+      "version": "20260824072321",
+      "status": "COMPLETED",
+      "risk": "LOW",
+      "expected_schema_change": "Add canonical lineage FKs and evidence-based indexes",
+      "expected_data_change": "NONE",
+      "rollback_strategy": "Forward correction",
+      "verification_step": "catalog and relational tests"
+    }
+  ]
+}

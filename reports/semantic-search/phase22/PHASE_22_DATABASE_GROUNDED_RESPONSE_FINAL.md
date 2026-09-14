@@ -1,0 +1,101 @@
+# KDI SEMANTIC SEARCH V3
+
+## PHASE 22 DATABASE-GROUNDED RESPONSE — FINAL
+
+STATUS:
+PASS
+
+IMPLEMENTATION VERSION:
+kdi_database_grounded_response_v1
+
+RESPONSE SCHEMA VERSION:
+kdi_search_response_v1
+
+GROUNDING MODE:
+DATABASE_REQUIRED
+
+STORED SHORT DESCRIPTION:
+PASS
+
+STORED DETAILED DESCRIPTION:
+PASS
+
+RANK PRESERVATION:
+PASS
+
+COUNT METADATA:
+PASS
+
+MATCH REASON GROUNDING:
+PASS
+
+PROVENANCE:
+PASS
+
+UNKNOWN HANDLING:
+PASS
+
+FALSE HANDLING:
+PASS
+
+NOT_APPLICABLE HANDLING:
+PASS
+
+NOT_STORED HANDLING:
+PASS
+
+ZERO RESULT:
+PASS
+
+FEWER-AVAILABLE RESULTS:
+PASS
+
+AUTHORIZATION SAFE:
+PASS
+
+TRANSCRIPT GROUNDING:
+PASS
+
+OCR GROUNDING:
+PASS
+
+DATABASE FAILURE SAFE:
+PASS
+
+GENERATED FACT FALLBACKS:
+0
+
+QUERY-TIME VISION CALLS:
+0
+
+QUERY-TIME OCR CALLS:
+0
+
+QUERY-TIME TRANSCRIPTION CALLS:
+0
+
+OPENAI API CALLS:
+0
+
+TARGETED TESTS:
+14 / 14
+
+PILOT SMOKE TESTS:
+10 / 10 stored-source grounding checks
+
+SEMANTIC DATA CHANGED:
+0
+
+ACL CHANGED:
+0
+
+PHASE 22:
+PASS
+
+SAFE TO START PHASE 23:
+YES
+
+REMAINING BLOCKERS:
+NONE
+
+Implementation note: the V3 endpoint now returns a canonical grounded response in addition to existing UI result fields. It rechecks Phase 18 authorization before hydration, reads stored profiles/assertions/evidence/current search-document lineage and accepted transcript/OCR only, and returns a structured `DATABASE_UNAVAILABLE` failure with no generated fallback. IMG_3429 retains stored generic `INJECTABLES`; its NULL exact treatment is exposed as `NOT_STORED`, not guessed.

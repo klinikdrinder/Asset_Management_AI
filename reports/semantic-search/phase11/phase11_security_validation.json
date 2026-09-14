@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-08-24T08:32:38.808Z",
+  "rls_policies": [
+    {
+      "tablename": "search_document_build_runs",
+      "policyname": "search_document_runs_no_client_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT"
+    },
+    {
+      "tablename": "search_document_builds",
+      "policyname": "search_document_builds_asset_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT"
+    },
+    {
+      "tablename": "search_document_concepts",
+      "policyname": "search_document_concepts_asset_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT"
+    },
+    {
+      "tablename": "search_document_evidence",
+      "policyname": "search_document_evidence_asset_read",
+      "roles": "{authenticated}",
+      "cmd": "SELECT"
+    }
+  ],
+  "unauthorized": {
+    "document_rows": 0,
+    "fulltext_rows": 0,
+    "concept_rows": 0,
+    "evidence_rows": 0
+  },
+  "checks": {
+    "rls_enabled": true,
+    "unauthorized_document_exposure": true,
+    "unauthorized_fulltext_leakage": true,
+    "unauthorized_concept_leakage": true,
+    "unauthorized_evidence_leakage": true
+  }
+}

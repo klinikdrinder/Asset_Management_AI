@@ -1,0 +1,2440 @@
+{
+  "generated_at": "2026-09-02T06:47:55.440504+00:00",
+  "phase": 11,
+  "status": "PASS",
+  "phase_10_correction": "dashboard/db/candidate-retriever.ts FILENAME_LITERAL channel",
+  "correction_certified": true,
+  "requirements": {
+    "letter_initial_filenames": true,
+    "number_initial_filenames": true,
+    "punctuation_containing": true,
+    "spaces": true,
+    "parentheses": true,
+    "extension_present": true,
+    "extension_omitted": true,
+    "case_insensitive": true,
+    "extension_not_a_precise_literal": [
+      {
+        "query": "mp4",
+        "returned": 1,
+        "filename_literal_hits": 50
+      },
+      {
+        "query": "jpeg",
+        "returned": 0,
+        "filename_literal_hits": 0
+      },
+      {
+        "query": "JPG",
+        "returned": 0,
+        "filename_literal_hits": 0
+      },
+      {
+        "query": "mov",
+        "returned": 0,
+        "filename_literal_hits": 0
+      }
+    ],
+    "absent_filenames_return_nothing": true
+  },
+  "exact_full_filename": "30/30",
+  "stem": "30/30",
+  "case_variants": "60/60",
+  "exact_rank_1": 30,
+  "tests": [
+    {
+      "id": "fn-exact:1 MONTH 22.02 (9).jpeg",
+      "category": "filename-exact",
+      "query": "1 MONTH 22.02 (9).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 132.44569999999658
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:1 MONTH 22.02 (9).jpeg",
+      "category": "filename-stem",
+      "query": "1 MONTH 22.02 (9)",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 79.73880000000645
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:1 MONTH 22.02 (9).jpeg",
+      "category": "filename-case",
+      "query": "1 month 22.02 (9).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 86.15920000000915
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:1 MONTH 22.02 (9).jpeg",
+      "category": "filename-case",
+      "query": "1 MONTH 22.02 (9).JPEG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 76.8414000000048
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:2 MONTH 22.03 (11).jpeg",
+      "category": "filename-exact",
+      "query": "2 MONTH 22.03 (11).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 87.68630000000121
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:2 MONTH 22.03 (11).jpeg",
+      "category": "filename-stem",
+      "query": "2 MONTH 22.03 (11)",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 66.22019999999611
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:2 MONTH 22.03 (11).jpeg",
+      "category": "filename-case",
+      "query": "2 month 22.03 (11).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 71.88090000000375
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:2 MONTH 22.03 (11).jpeg",
+      "category": "filename-case",
+      "query": "2 MONTH 22.03 (11).JPEG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 79.63499999999476
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:25.01 (1).jpeg",
+      "category": "filename-exact",
+      "query": "25.01 (1).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 85.75189999998838
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:25.01 (1).jpeg",
+      "category": "filename-stem",
+      "query": "25.01 (1)",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 86.82869999999821
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:25.01 (1).jpeg",
+      "category": "filename-case",
+      "query": "25.01 (1).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 91.6875999999902
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:25.01 (1).jpeg",
+      "category": "filename-case",
+      "query": "25.01 (1).JPEG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 45.212100000004284
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:25.01 (15).jpeg",
+      "category": "filename-exact",
+      "query": "25.01 (15).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 110.98140000000421
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:25.01 (15).jpeg",
+      "category": "filename-stem",
+      "query": "25.01 (15)",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 82.78800000000047
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:25.01 (15).jpeg",
+      "category": "filename-case",
+      "query": "25.01 (15).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 84.14849999999569
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:25.01 (15).jpeg",
+      "category": "filename-case",
+      "query": "25.01 (15).JPEG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 81.20940000000701
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:25.01 (17).jpeg",
+      "category": "filename-exact",
+      "query": "25.01 (17).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 31.649600000004284
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:25.01 (17).jpeg",
+      "category": "filename-stem",
+      "query": "25.01 (17)",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 55.77939999999944
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:25.01 (17).jpeg",
+      "category": "filename-case",
+      "query": "25.01 (17).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 77.92639999999665
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:25.01 (17).jpeg",
+      "category": "filename-case",
+      "query": "25.01 (17).JPEG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 83.17329999999492
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:25.01 (18).jpeg",
+      "category": "filename-exact",
+      "query": "25.01 (18).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 74.66930000000866
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:25.01 (18).jpeg",
+      "category": "filename-stem",
+      "query": "25.01 (18)",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 133.08279999998922
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:25.01 (18).jpeg",
+      "category": "filename-case",
+      "query": "25.01 (18).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 71.2161000000051
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:25.01 (18).jpeg",
+      "category": "filename-case",
+      "query": "25.01 (18).JPEG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 63.444699999992736
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:25.01 (21).jpeg",
+      "category": "filename-exact",
+      "query": "25.01 (21).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 73.15119999999297
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:25.01 (21).jpeg",
+      "category": "filename-stem",
+      "query": "25.01 (21)",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 78.87820000000647
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:25.01 (21).jpeg",
+      "category": "filename-case",
+      "query": "25.01 (21).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 76.65480000000389
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:25.01 (21).jpeg",
+      "category": "filename-case",
+      "query": "25.01 (21).JPEG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 111.1189000000013
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:25.01 (7).jpeg",
+      "category": "filename-exact",
+      "query": "25.01 (7).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 74.38459999999031
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:25.01 (7).jpeg",
+      "category": "filename-stem",
+      "query": "25.01 (7)",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 42.57629999998608
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:25.01 (7).jpeg",
+      "category": "filename-case",
+      "query": "25.01 (7).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 99.00019999999495
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:25.01 (7).jpeg",
+      "category": "filename-case",
+      "query": "25.01 (7).JPEG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 47.48649999999907
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:26.01 (13).jpeg",
+      "category": "filename-exact",
+      "query": "26.01 (13).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 78.79759999999078
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:26.01 (13).jpeg",
+      "category": "filename-stem",
+      "query": "26.01 (13)",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 75.49319999999716
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:26.01 (13).jpeg",
+      "category": "filename-case",
+      "query": "26.01 (13).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 76.46859999999288
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:26.01 (13).jpeg",
+      "category": "filename-case",
+      "query": "26.01 (13).JPEG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 43.45440000000235
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:26.01 (8).jpeg",
+      "category": "filename-exact",
+      "query": "26.01 (8).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 64.80379999999423
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:26.01 (8).jpeg",
+      "category": "filename-stem",
+      "query": "26.01 (8)",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 55.08999999999651
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:26.01 (8).jpeg",
+      "category": "filename-case",
+      "query": "26.01 (8).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 75.34290000000328
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:26.01 (8).jpeg",
+      "category": "filename-case",
+      "query": "26.01 (8).JPEG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 79.3862999999983
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:3631150497-preview.mp4",
+      "category": "filename-exact",
+      "query": "3631150497-preview.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 2,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 51,
+        "elapsed_ms": 109.68589999999676
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:3631150497-preview.mp4",
+      "category": "filename-stem",
+      "query": "3631150497-preview",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 43.489199999996345
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:3631150497-preview.mp4",
+      "category": "filename-case",
+      "query": "3631150497-preview.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 2,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 51,
+        "elapsed_ms": 119.0112000000081
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:3631150497-preview.mp4",
+      "category": "filename-case",
+      "query": "3631150497-PREVIEW.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 2,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 51,
+        "elapsed_ms": 127.97269999998389
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:DSC03753.JPG",
+      "category": "filename-exact",
+      "query": "DSC03753.JPG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 113.83400000000256
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:DSC03753.JPG",
+      "category": "filename-stem",
+      "query": "DSC03753",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 75.47889999998733
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:DSC03753.JPG",
+      "category": "filename-case",
+      "query": "dsc03753.jpg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 72.58290000000852
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:DSC03753.JPG",
+      "category": "filename-case",
+      "query": "DSC03753.JPG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 75.59089999998105
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:DSC08097.JPG",
+      "category": "filename-exact",
+      "query": "DSC08097.JPG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 72.1591999999946
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:DSC08097.JPG",
+      "category": "filename-stem",
+      "query": "DSC08097",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 92.0678000000189
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:DSC08097.JPG",
+      "category": "filename-case",
+      "query": "dsc08097.jpg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 72.35449999998673
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:DSC08097.JPG",
+      "category": "filename-case",
+      "query": "DSC08097.JPG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 73.22019999998156
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_0493.MP4",
+      "category": "filename-exact",
+      "query": "IMG_0493.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 83.50370000000112
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_0493.MP4",
+      "category": "filename-stem",
+      "query": "IMG_0493",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 117.01840000000084
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_0493.MP4",
+      "category": "filename-case",
+      "query": "img_0493.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 150.9103999999934
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_0493.MP4",
+      "category": "filename-case",
+      "query": "IMG_0493.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 74.31239999999525
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_0531.MP4",
+      "category": "filename-exact",
+      "query": "IMG_0531.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 73.87679999999818
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_0531.MP4",
+      "category": "filename-stem",
+      "query": "IMG_0531",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 75.00310000000172
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_0531.MP4",
+      "category": "filename-case",
+      "query": "img_0531.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 72.62049999998999
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_0531.MP4",
+      "category": "filename-case",
+      "query": "IMG_0531.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 71.70780000000377
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_0534.MP4",
+      "category": "filename-exact",
+      "query": "IMG_0534.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 80.48019999999087
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_0534.MP4",
+      "category": "filename-stem",
+      "query": "IMG_0534",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 69.19460000001709
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_0534.MP4",
+      "category": "filename-case",
+      "query": "img_0534.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 78.95100000000093
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_0534.MP4",
+      "category": "filename-case",
+      "query": "IMG_0534.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 49.69229999999516
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_1148.MP4",
+      "category": "filename-exact",
+      "query": "IMG_1148.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 84.29079999998794
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_1148.MP4",
+      "category": "filename-stem",
+      "query": "IMG_1148",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 77.56479999999283
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_1148.MP4",
+      "category": "filename-case",
+      "query": "img_1148.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 128.07060000000638
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_1148.MP4",
+      "category": "filename-case",
+      "query": "IMG_1148.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 74.11759999999776
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_1160.MP4",
+      "category": "filename-exact",
+      "query": "IMG_1160.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 73.74280000000726
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_1160.MP4",
+      "category": "filename-stem",
+      "query": "IMG_1160",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 76.90150000000722
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_1160.MP4",
+      "category": "filename-case",
+      "query": "img_1160.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 29.691099999996368
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_1160.MP4",
+      "category": "filename-case",
+      "query": "IMG_1160.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 41.62610000002314
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_1238.MP4",
+      "category": "filename-exact",
+      "query": "IMG_1238.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 76.51819999999134
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_1238.MP4",
+      "category": "filename-stem",
+      "query": "IMG_1238",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 86.96230000001378
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_1238.MP4",
+      "category": "filename-case",
+      "query": "img_1238.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 56.024800000013784
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_1238.MP4",
+      "category": "filename-case",
+      "query": "IMG_1238.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 80.40690000000177
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_1461.MP4",
+      "category": "filename-exact",
+      "query": "IMG_1461.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 41.945100000011735
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_1461.MP4",
+      "category": "filename-stem",
+      "query": "IMG_1461",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 69.02499999999418
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_1461.MP4",
+      "category": "filename-case",
+      "query": "img_1461.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 73.7265999999945
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_1461.MP4",
+      "category": "filename-case",
+      "query": "IMG_1461.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 97.26189999998314
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_2933.MP4",
+      "category": "filename-exact",
+      "query": "IMG_2933.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 90.38779999999679
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_2933.MP4",
+      "category": "filename-stem",
+      "query": "IMG_2933",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 72.40260000000126
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_2933.MP4",
+      "category": "filename-case",
+      "query": "img_2933.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 84.63899999999558
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_2933.MP4",
+      "category": "filename-case",
+      "query": "IMG_2933.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 103.09150000000955
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_2951.MP4",
+      "category": "filename-exact",
+      "query": "IMG_2951.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 72.86100000000442
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_2951.MP4",
+      "category": "filename-stem",
+      "query": "IMG_2951",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 76.93969999998808
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_2951.MP4",
+      "category": "filename-case",
+      "query": "img_2951.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 78.37669999999343
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_2951.MP4",
+      "category": "filename-case",
+      "query": "IMG_2951.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 67.54420000000391
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_2963.MP4",
+      "category": "filename-exact",
+      "query": "IMG_2963.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 71.23600000000442
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_2963.MP4",
+      "category": "filename-stem",
+      "query": "IMG_2963",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 76.94860000000335
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_2963.MP4",
+      "category": "filename-case",
+      "query": "img_2963.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 75.3974000000162
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_2963.MP4",
+      "category": "filename-case",
+      "query": "IMG_2963.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 98.62570000000414
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_3429.MP4",
+      "category": "filename-exact",
+      "query": "IMG_3429.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 74.48630000001867
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_3429.MP4",
+      "category": "filename-stem",
+      "query": "IMG_3429",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 77.3698999999906
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_3429.MP4",
+      "category": "filename-case",
+      "query": "img_3429.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 69.7446999999811
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_3429.MP4",
+      "category": "filename-case",
+      "query": "IMG_3429.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 90.5170999999973
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_3564.MP4",
+      "category": "filename-exact",
+      "query": "IMG_3564.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 49.24519999997574
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_3564.MP4",
+      "category": "filename-stem",
+      "query": "IMG_3564",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 85.45769999999902
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_3564.MP4",
+      "category": "filename-case",
+      "query": "img_3564.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 78.31080000000657
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_3564.MP4",
+      "category": "filename-case",
+      "query": "IMG_3564.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 73.85090000001946
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_3568.MP4",
+      "category": "filename-exact",
+      "query": "IMG_3568.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 71.66969999999856
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_3568.MP4",
+      "category": "filename-stem",
+      "query": "IMG_3568",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 68.29570000001695
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_3568.MP4",
+      "category": "filename-case",
+      "query": "img_3568.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 51.632199999992736
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_3568.MP4",
+      "category": "filename-case",
+      "query": "IMG_3568.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 80.76810000001569
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_3575.MP4",
+      "category": "filename-exact",
+      "query": "IMG_3575.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 90.40189999999711
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_3575.MP4",
+      "category": "filename-stem",
+      "query": "IMG_3575",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 78.5219999999972
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_3575.MP4",
+      "category": "filename-case",
+      "query": "img_3575.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 99.49290000001201
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_3575.MP4",
+      "category": "filename-case",
+      "query": "IMG_3575.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 106.40429999999469
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_3587.MP4",
+      "category": "filename-exact",
+      "query": "IMG_3587.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 76.97879999998258
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_3587.MP4",
+      "category": "filename-stem",
+      "query": "IMG_3587",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 71.01050000000396
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_3587.MP4",
+      "category": "filename-case",
+      "query": "img_3587.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 106.18110000001616
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_3587.MP4",
+      "category": "filename-case",
+      "query": "IMG_3587.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 73.67339999999967
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_3592.MP4",
+      "category": "filename-exact",
+      "query": "IMG_3592.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 77.48519999999553
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_3592.MP4",
+      "category": "filename-stem",
+      "query": "IMG_3592",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 77.63990000000922
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_3592.MP4",
+      "category": "filename-case",
+      "query": "img_3592.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 75.01840000000084
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_3592.MP4",
+      "category": "filename-case",
+      "query": "IMG_3592.MP4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 75.93129999999655
+      },
+      "note": null
+    },
+    {
+      "id": "fn-exact:IMG_9871.MOV",
+      "category": "filename-exact",
+      "query": "IMG_9871.MOV",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 76.7096999999776
+      },
+      "note": null
+    },
+    {
+      "id": "fn-stem:IMG_9871.MOV",
+      "category": "filename-stem",
+      "query": "IMG_9871",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 89.62269999997807
+      },
+      "note": null
+    },
+    {
+      "id": "fn-lower:IMG_9871.MOV",
+      "category": "filename-case",
+      "query": "img_9871.mov",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 85.44270000001416
+      },
+      "note": null
+    },
+    {
+      "id": "fn-upper:IMG_9871.MOV",
+      "category": "filename-case",
+      "query": "IMG_9871.MOV",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": true,
+      "target_rank": 1,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 1,
+        "elapsed_ms": 141.4535999999789
+      },
+      "note": null
+    },
+    {
+      "id": "fn-ext:mp4",
+      "category": "filename-extension-guard",
+      "query": "mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 1,
+      "target_returned": null,
+      "target_rank": null,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_WITH_HITS",
+        "hits": 50,
+        "elapsed_ms": 32.81140000000596
+      },
+      "note": "a bare extension must not behave as a precise filename literal"
+    },
+    {
+      "id": "fn-ext:jpeg",
+      "category": "filename-extension-guard",
+      "query": "jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 0,
+      "target_returned": null,
+      "target_rank": null,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_NO_HITS",
+        "hits": 0,
+        "elapsed_ms": 0.014000000024680048
+      },
+      "note": "a bare extension must not behave as a precise filename literal"
+    },
+    {
+      "id": "fn-ext:JPG",
+      "category": "filename-extension-guard",
+      "query": "JPG",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 0,
+      "target_returned": null,
+      "target_rank": null,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_NO_HITS",
+        "hits": 0,
+        "elapsed_ms": 0.014200000005075708
+      },
+      "note": "a bare extension must not behave as a precise filename literal"
+    },
+    {
+      "id": "fn-ext:mov",
+      "category": "filename-extension-guard",
+      "query": "mov",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 0,
+      "target_returned": null,
+      "target_rank": null,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_NO_HITS",
+        "hits": 0,
+        "elapsed_ms": 0.013899999990826473
+      },
+      "note": "a bare extension must not behave as a precise filename literal"
+    },
+    {
+      "id": "fn-absent:ZZQQ_9999.mp4",
+      "category": "filename-absent",
+      "query": "ZZQQ_9999.mp4",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 0,
+      "target_returned": null,
+      "target_rank": null,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_NO_HITS",
+        "hits": 0,
+        "elapsed_ms": 72.27129999999306
+      },
+      "note": null
+    },
+    {
+      "id": "fn-absent:99.99 (99).jpeg",
+      "category": "filename-absent",
+      "query": "99.99 (99).jpeg",
+      "pass": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 0,
+      "target_returned": null,
+      "target_rank": null,
+      "metrics": null,
+      "filename_literal": {
+        "status": "AVAILABLE_NO_HITS",
+        "hits": 0,
+        "elapsed_ms": 75.46980000002077
+      },
+      "note": null
+    }
+  ]
+}

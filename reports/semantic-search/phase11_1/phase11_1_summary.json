@@ -1,0 +1,461 @@
+{
+  "generated_at": "2026-08-25T01:16:53.254Z",
+  "status": "PASS",
+  "gates": {
+    "pilots": true,
+    "fingerprints": true,
+    "layers": true,
+    "assertions": true,
+    "critical_evidence": true,
+    "scenes": true,
+    "events": true,
+    "keyframes": true,
+    "transcripts": true,
+    "ocr": true,
+    "narratives": true,
+    "claim_evidence": true,
+    "documents": true,
+    "concepts": true,
+    "document_lineage": true,
+    "unauthorized": true,
+    "no_embeddings": true,
+    "no_human": true,
+    "idempotent": true
+  },
+  "assertions": {
+    "FALSE": 2,
+    "OBSERVED": 268,
+    "UNKNOWN": 43,
+    "search_critical": 172,
+    "search_critical_with_evidence": 172,
+    "coverage": 1
+  },
+  "layers": 180,
+  "scenes": {
+    "canonical_count": 11,
+    "expected_version": 11,
+    "legacy_count": 0,
+    "img1238_count": 1,
+    "img1238_warning": true
+  },
+  "events": {
+    "technical_windows": 22,
+    "semantic_events": 16,
+    "technical_only": 6,
+    "review_required": 6,
+    "img1238_technical_only": 6
+  },
+  "keyframes": {
+    "canonical_count": 44
+  },
+  "transcripts": {
+    "imported": 14,
+    "searchable": 3,
+    "review_excluded": 11,
+    "excluded": 11
+  },
+  "ocr": {
+    "imported": 19,
+    "accepted": 1,
+    "review": 3,
+    "rejected": 15,
+    "mcure_ocr_only": 1
+  },
+  "narratives": {
+    "asset": 10,
+    "scene": 11,
+    "event": 16,
+    "claims": 38,
+    "accepted_claims": 37,
+    "review_claims": 1,
+    "accepted_without_evidence": 0
+  },
+  "documents": {
+    "asset_docs": 10,
+    "scene_docs": 11,
+    "event_docs": 16,
+    "active_docs": 37,
+    "stale_docs": 18,
+    "concepts": 520,
+    "evidence_rows": 520,
+    "critical_without_lineage": 0
+  },
+  "concepts_by_type": [
+    {
+      "concept_type": "ACTION",
+      "count": 16
+    },
+    {
+      "concept_type": "ANATOMY",
+      "count": 21
+    },
+    {
+      "concept_type": "CLINICAL_OBSERVATION",
+      "count": 9
+    },
+    {
+      "concept_type": "CONTENT_TYPE",
+      "count": 21
+    },
+    {
+      "concept_type": "ENVIRONMENT",
+      "count": 7
+    },
+    {
+      "concept_type": "OCR",
+      "count": 3
+    },
+    {
+      "concept_type": "RELATIONSHIP",
+      "count": 23
+    },
+    {
+      "concept_type": "ROLE",
+      "count": 18
+    },
+    {
+      "concept_type": "SEMANTIC_CONCEPT",
+      "count": 139
+    },
+    {
+      "concept_type": "SPOKEN_CONCEPT",
+      "count": 8
+    },
+    {
+      "concept_type": "TREATMENT",
+      "count": 5
+    }
+  ],
+  "security": {
+    "service_rows": 37,
+    "authorized_rows": 37,
+    "unauthorized_rows": 0,
+    "policy_count": 11
+  },
+  "sanity": [
+    {
+      "filename": "DSC03753.JPG",
+      "layer_id": "ACTIONS_EVENTS",
+      "semantic_state": "OBSERVED",
+      "predicate": "POSING_FOR_CAMERA",
+      "canonical_concept_code": "POSING_FOR_CAMERA",
+      "evidence": true
+    },
+    {
+      "filename": "DSC03753.JPG",
+      "layer_id": "ANATOMY",
+      "semantic_state": "OBSERVED",
+      "predicate": "FACE",
+      "canonical_concept_code": "FACE",
+      "evidence": true
+    },
+    {
+      "filename": "DSC03753.JPG",
+      "layer_id": "ANATOMY",
+      "semantic_state": "OBSERVED",
+      "predicate": "FRONTAL_HAIRLINE",
+      "canonical_concept_code": "FRONTAL_HAIRLINE",
+      "evidence": true
+    },
+    {
+      "filename": "DSC03753.JPG",
+      "layer_id": "ANATOMY",
+      "semantic_state": "OBSERVED",
+      "predicate": "FRONTAL_SCALP",
+      "canonical_concept_code": "FRONTAL_SCALP",
+      "evidence": true
+    },
+    {
+      "filename": "DSC03753.JPG",
+      "layer_id": "ENVIRONMENT",
+      "semantic_state": "UNKNOWN",
+      "predicate": "ENVIRONMENT",
+      "canonical_concept_code": "ENVIRONMENT",
+      "evidence": false
+    },
+    {
+      "filename": "DSC03753.JPG",
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "semantic_state": "FALSE",
+      "predicate": "VISIBLE_TEXT",
+      "canonical_concept_code": "VISIBLE_TEXT",
+      "evidence": true
+    },
+    {
+      "filename": "DSC03753.JPG",
+      "layer_id": "PEOPLE_ROLES",
+      "semantic_state": "OBSERVED",
+      "predicate": "SUBJECT",
+      "canonical_concept_code": "SUBJECT",
+      "evidence": true
+    },
+    {
+      "filename": "DSC03753.JPG",
+      "layer_id": "TREATMENT_PROCEDURE",
+      "semantic_state": "UNKNOWN",
+      "predicate": "TREATMENT_PROCEDURE",
+      "canonical_concept_code": "TREATMENT_PROCEDURE",
+      "evidence": false
+    },
+    {
+      "filename": "DSC08097.JPG",
+      "layer_id": "ACTIONS_EVENTS",
+      "semantic_state": "OBSERVED",
+      "predicate": "LOOKING_AT_CAMERA",
+      "canonical_concept_code": "LOOKING_AT_CAMERA",
+      "evidence": true
+    },
+    {
+      "filename": "DSC08097.JPG",
+      "layer_id": "ACTIONS_EVENTS",
+      "semantic_state": "OBSERVED",
+      "predicate": "POSING_FOR_CAMERA",
+      "canonical_concept_code": "POSING_FOR_CAMERA",
+      "evidence": true
+    },
+    {
+      "filename": "DSC08097.JPG",
+      "layer_id": "ANATOMY",
+      "semantic_state": "OBSERVED",
+      "predicate": "FACE",
+      "canonical_concept_code": "FACE",
+      "evidence": true
+    },
+    {
+      "filename": "DSC08097.JPG",
+      "layer_id": "ENVIRONMENT",
+      "semantic_state": "UNKNOWN",
+      "predicate": "ENVIRONMENT",
+      "canonical_concept_code": "ENVIRONMENT",
+      "evidence": false
+    },
+    {
+      "filename": "DSC08097.JPG",
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "semantic_state": "FALSE",
+      "predicate": "VISIBLE_TEXT",
+      "canonical_concept_code": "VISIBLE_TEXT",
+      "evidence": true
+    },
+    {
+      "filename": "DSC08097.JPG",
+      "layer_id": "PEOPLE_ROLES",
+      "semantic_state": "OBSERVED",
+      "predicate": "SUBJECT",
+      "canonical_concept_code": "SUBJECT",
+      "evidence": true
+    },
+    {
+      "filename": "DSC08097.JPG",
+      "layer_id": "TREATMENT_PROCEDURE",
+      "semantic_state": "UNKNOWN",
+      "predicate": "TREATMENT_PROCEDURE",
+      "canonical_concept_code": "TREATMENT_PROCEDURE",
+      "evidence": false
+    },
+    {
+      "filename": "IMG_1238.MP4",
+      "layer_id": "ACTIONS_EVENTS",
+      "semantic_state": "OBSERVED",
+      "predicate": "TOUCHING",
+      "canonical_concept_code": "TOUCHING",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_1238.MP4",
+      "layer_id": "ACTIONS_EVENTS",
+      "semantic_state": "OBSERVED",
+      "predicate": "USING_DEVICE",
+      "canonical_concept_code": "USING_DEVICE",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_1238.MP4",
+      "layer_id": "ANATOMY",
+      "semantic_state": "OBSERVED",
+      "predicate": "FRONTAL_SCALP",
+      "canonical_concept_code": "FRONTAL_SCALP",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_1238.MP4",
+      "layer_id": "ANATOMY",
+      "semantic_state": "OBSERVED",
+      "predicate": "SCALP",
+      "canonical_concept_code": "SCALP",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_1238.MP4",
+      "layer_id": "ENVIRONMENT",
+      "semantic_state": "OBSERVED",
+      "predicate": "TREATMENT_ROOM",
+      "canonical_concept_code": "TREATMENT_ROOM",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_1238.MP4",
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "semantic_state": "OBSERVED",
+      "predicate": "VISIBLE_TEXT",
+      "canonical_concept_code": "VISIBLE_TEXT",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_1238.MP4",
+      "layer_id": "PEOPLE_ROLES",
+      "semantic_state": "OBSERVED",
+      "predicate": "CLINICIAN",
+      "canonical_concept_code": "CLINICIAN",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_1238.MP4",
+      "layer_id": "PEOPLE_ROLES",
+      "semantic_state": "OBSERVED",
+      "predicate": "PATIENT",
+      "canonical_concept_code": "PATIENT",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_1238.MP4",
+      "layer_id": "TREATMENT_PROCEDURE",
+      "semantic_state": "UNKNOWN",
+      "predicate": "TREATMENT_PROCEDURE",
+      "canonical_concept_code": "TREATMENT_PROCEDURE",
+      "evidence": false
+    },
+    {
+      "filename": "IMG_2963.MP4",
+      "layer_id": "ACTIONS_EVENTS",
+      "semantic_state": "OBSERVED",
+      "predicate": "IMPLANTING_GRAFTS",
+      "canonical_concept_code": "IMPLANTING_GRAFTS",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_2963.MP4",
+      "layer_id": "ANATOMY",
+      "semantic_state": "OBSERVED",
+      "predicate": "FRONTAL_SCALP",
+      "canonical_concept_code": "FRONTAL_SCALP",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_2963.MP4",
+      "layer_id": "ANATOMY",
+      "semantic_state": "OBSERVED",
+      "predicate": "RECIPIENT_REGION",
+      "canonical_concept_code": "RECIPIENT_REGION",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_2963.MP4",
+      "layer_id": "ANATOMY",
+      "semantic_state": "OBSERVED",
+      "predicate": "SCALP",
+      "canonical_concept_code": "SCALP",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_2963.MP4",
+      "layer_id": "ENVIRONMENT",
+      "semantic_state": "OBSERVED",
+      "predicate": "OPERATING_ROOM",
+      "canonical_concept_code": "OPERATING_ROOM",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_2963.MP4",
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "semantic_state": "UNKNOWN",
+      "predicate": "VISIBLE_TEXT",
+      "canonical_concept_code": "VISIBLE_TEXT",
+      "evidence": false
+    },
+    {
+      "filename": "IMG_2963.MP4",
+      "layer_id": "PEOPLE_ROLES",
+      "semantic_state": "OBSERVED",
+      "predicate": "CLINICIAN",
+      "canonical_concept_code": "CLINICIAN",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_2963.MP4",
+      "layer_id": "PEOPLE_ROLES",
+      "semantic_state": "OBSERVED",
+      "predicate": "PATIENT",
+      "canonical_concept_code": "PATIENT",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_2963.MP4",
+      "layer_id": "PEOPLE_ROLES",
+      "semantic_state": "OBSERVED",
+      "predicate": "STAFF",
+      "canonical_concept_code": "STAFF",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_2963.MP4",
+      "layer_id": "TREATMENT_PROCEDURE",
+      "semantic_state": "OBSERVED",
+      "predicate": "FUE_IMPLANTATION",
+      "canonical_concept_code": "FUE_IMPLANTATION",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_2963.MP4",
+      "layer_id": "TREATMENT_PROCEDURE",
+      "semantic_state": "OBSERVED",
+      "predicate": "HAIR_TRANSPLANT",
+      "canonical_concept_code": "HAIR_TRANSPLANT",
+      "evidence": true
+    },
+    {
+      "filename": "IMG_2963.MP4",
+      "layer_id": "TREATMENT_PROCEDURE",
+      "semantic_state": "OBSERVED",
+      "predicate": "HAIR_TRANSPLANT_FUE",
+      "canonical_concept_code": "HAIR_TRANSPLANT_FUE",
+      "evidence": true
+    }
+  ],
+  "counts": {
+    "app_users": 2,
+    "asset_access_control": 881,
+    "asset_ai_profiles": 16,
+    "asset_destinations": 881,
+    "asset_embeddings": 20,
+    "asset_events": 22,
+    "asset_keyframes": 345,
+    "asset_scenes": 312,
+    "asset_search_concepts_v2": 270,
+    "asset_search_documents": 10,
+    "asset_semantic_layers": 180,
+    "asset_sources": 881,
+    "asset_transcript_chunks": 14,
+    "asset_visual_embeddings": 875,
+    "assets": 881,
+    "gold_standard_assets": 0,
+    "narrative_claim_evidence": 53,
+    "narrative_claims": 38,
+    "ocr_observations": 19,
+    "scene_search_documents": 10,
+    "search_document_builds": 55,
+    "search_document_concepts": 520,
+    "search_document_evidence": 520,
+    "semantic_analysis_runs": 58,
+    "semantic_assertion_evidence": 270,
+    "semantic_assertions": 333,
+    "semantic_embeddings": 0,
+    "semantic_narratives": 37,
+    "semantic_review_decisions": 0,
+    "source_files": 890
+  },
+  "phase12_started": false,
+  "frontend_work": false,
+  "human_gold": "DEFERRED",
+  "idempotency": "PASS"
+}

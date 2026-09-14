@@ -1,0 +1,170 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1237.MP4, 18.9s scene",
+      "evidence": [
+        "filename IMG_1237.MP4, asset_id f29e992c-8072-4b9a-b4c7-fddfc6efbcd9, scene 0, 0.0-18.9s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clinic scene, two keyframes",
+      "evidence": [
+        "720x1280 vertical video, h264, 30fps, 18.9s duration, 2 representative keyframes supplied"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene spanning full clip",
+      "evidence": [
+        "scene_index 0 covering start_seconds 0.0 to end_seconds 18.9"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Masked staff member and reclined male client",
+      "evidence": [
+        "one person in navy scrubs, mask, gloves and smartwatch positioned behind/beside a reclined man with eyes closed wearing an Adidas shirt"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff in scrubs/mask/gloves; client in white Adidas shirt",
+      "evidence": [
+        "staff member has dark hair tied back, surgical mask, navy blue scrub top, white gloves, white smartwatch, dark boots visible in frame 1",
+        "reclined man has short dark hair, facial hair, eyes closed, wearing white t-shirt with red/black striped sleeve trim"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Man's scalp, hairline and face visible",
+      "evidence": [
+        "close-up views of the man's head, hair and hairline with the staff member's gloved hand near the scalp"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied evidence",
+      "evidence": [
+        "no readable_text_detected or spoken_content naming any procedure; gloves, a handheld device and scalp contact alone do not establish a specific named treatment per instructions"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member handling device near client's scalp",
+      "evidence": [
+        "gloved hand holding a small handheld tool positioned close to the man's hair/scalp in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member attending to reclined client",
+      "evidence": [
+        "staff member stands directly behind/over the reclined client, hand engaged near his head, indicating a caregiver-client interaction"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hand contact with scalp area, no visible bleeding or marks noted",
+      "evidence": [
+        "white gloves in direct contact with the man's hair/scalp region; no wounds, redness, or markings are discernible in the images"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinic room with blinds and reclining chair",
+      "evidence": [
+        "beige horizontal window blinds in background, marble-pattern flooring, blue reclining treatment chair with disposable coverings"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical handheld shots, close-up framing",
+      "evidence": [
+        "720x1280 portrait aspect ratio typical of handheld phone recording; two close-range framings of the same subjects from slightly different angles"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Client in foreground, staff member positioned behind/above",
+      "evidence": [
+        "reclined man occupies lower/right portion of frame while staff member is upright in background/upper frame in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content captured",
+      "evidence": [
+        "spoken_content field is an empty array despite audio_stream being present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context supplied",
+      "evidence": [
+        "no branding, captions, or promotional text present in readable_text_detected or images to indicate marketing usage"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinic setting with staff attending to reclined client",
+      "evidence": [
+        "masked, gloved staff member working near the head of a relaxed, eyes-closed client in a treatment chair within an indoor clinical-style room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual descriptor layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked clinician in navy scrubs, wearing gloves and a smartwatch, uses a handheld device near the scalp of a reclined man resting on a blue draped headrest. A large piece of dark equipment with red-lit panels is positioned above the man's head as he lies with eyes closed.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "f29e992c-8072-4b9a-b4c7-fddfc6efbcd9",
+  "image_count": 2
+}

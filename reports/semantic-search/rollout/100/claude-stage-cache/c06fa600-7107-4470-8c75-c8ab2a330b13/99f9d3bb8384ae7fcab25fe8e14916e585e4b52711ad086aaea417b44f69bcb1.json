@@ -1,0 +1,182 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0546.MP4, scene 0",
+      "evidence": [
+        "filename IMG_0546.MP4, asset_id provided, duration 5.105s"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical/cosmetic treatment clip",
+      "evidence": [
+        "Two keyframes show a medical/aesthetic setting with practitioner and patient"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene, 5.1 seconds, two keyframes showing progression of device activation",
+      "evidence": [
+        "scene_index 0, start 0.0, end 5.105",
+        "second keyframe shows illuminated device tip not present in first"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One practitioner performing treatment, one patient receiving it",
+      "evidence": [
+        "Person in teal scrubs with mask, goggles, gloves holding device",
+        "Reclined person with towel draped, face covered in white substance"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner in teal scrub top with name tag, dark hair in bun, laser safety glasses, surgical mask, white gloves, smartwatch; patient wearing hairnet, purple towel, striped clothing",
+      "evidence": [
+        "Visible teal scrub top with embroidered text",
+        "Orange-tinted safety glasses",
+        "White glove and black smartwatch on wrist",
+        "Purple towel over patient's chest, striped garment visible"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, particularly cheek and jaw area, is visible and coated in a light-colored substance",
+      "evidence": [
+        "Face covered with pale/white substance in both keyframes",
+        "Practitioner's hand positioned near patient's cheek and mouth area"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed facial treatment using handheld device",
+      "evidence": [
+        "No text label naming a specific procedure",
+        "Device tip with light emission visible but procedure not identified in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner holds device tip to patient's face; device emits visible light in second frame",
+      "evidence": [
+        "Metallic tip near patient's cheek in first image",
+        "Yellow-green glow at device tip near cheek in second image"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner is actively treating the reclined patient in a hands-on manner",
+      "evidence": [
+        "Practitioner's gloved hand stabilizes patient's face while operating device"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Pale/white coating on patient's facial skin, illuminated device tip against skin",
+      "evidence": [
+        "Face appears coated with a light substance in both frames",
+        "Glowing yellow-green light at contact point in second frame"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical/treatment room with medical tray, instruments, and white walls",
+      "evidence": [
+        "Metal tray with instruments and dishes in background",
+        "Black case and white wall with red vertical stripe visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical video, close medium shot focused on practitioner and patient's upper body/face",
+      "evidence": [
+        "Image dimensions suggest vertical framing",
+        "Composition centers on practitioner leaning over patient"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned upper-left, patient reclined lower-right, device connecting them centrally",
+      "evidence": [
+        "Practitioner's body occupies upper portion of frame",
+        "Patient's face and towel occupy lower right portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Name tag text on scrub top partially visible but illegible",
+      "evidence": [
+        "readable_text_detected is empty array",
+        "Embroidered text on scrub top visible but not clearly readable in image"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Purpose of video unclear from visual evidence alone",
+      "evidence": [
+        "No marketing text, branding, or promotional overlay detected in keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A short clip depicting a facial skin treatment session in a clinical setting",
+      "evidence": [
+        "Consistent depiction of practitioner performing a facial procedure on a reclined patient across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable for descriptive evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A practitioner in teal scrubs, protective eyewear, and a face mask performs a facial skin treatment on a reclined patient using a handheld device connected by an orange cord. In the second keyframe, a visible light or laser is emitted from the device near the patient's cheek area while the practitioner's gloved hand stabilizes the face.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "c06fa600-7107-4470-8c75-c8ab2a330b13",
+  "image_count": 2
+}

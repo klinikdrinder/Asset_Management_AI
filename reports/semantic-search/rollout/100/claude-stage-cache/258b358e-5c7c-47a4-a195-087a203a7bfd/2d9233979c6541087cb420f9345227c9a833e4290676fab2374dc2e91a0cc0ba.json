@@ -1,0 +1,177 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video file with decoded technical metadata",
+      "evidence": [
+        "filename IMG_1956.MP4",
+        "1280x720, 30fps, h264, duration 10.57s, decoded_locally true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall asset purpose not determinable",
+      "evidence": [
+        "scene-level GLOBAL_ASSET_UNDERSTANDING was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "keyframes show near-identical framing indicating one continuous shot"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined patient and masked provider present",
+      "evidence": [
+        "patient lying back with eyes closed under a drape",
+        "provider in pink scrubs wearing mask, goggles and hairnet holding a handpiece"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient with dark hair and jewelry; provider in protective gear",
+      "evidence": [
+        "patient has dark hair, pearl stud earrings and a bracelet",
+        "provider wears green-tinted goggles, surgical mask, hairnet, and pink scrub top labeled 'DR LEW...'"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, nose and upper lip visible",
+      "evidence": [
+        "handpiece positioned near patient's nose and upper lip",
+        "patient's face, neck and ear visible in frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable from evidence",
+      "evidence": [
+        "only a handpiece, instrument cart and physical contact near the face are visible, with no named procedure in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider positions handpiece near patient's face",
+      "evidence": [
+        "provider holds a metal handpiece connected to an instrument cart close to the patient's nose/upper lip area"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider actively attending to reclined patient",
+      "evidence": [
+        "provider leans over patient, hand positioned at patient's face while patient lies still with eyes closed"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Protective equipment and clinical instruments visible",
+      "evidence": [
+        "blue disposable drape over patient",
+        "provider wears mask, tinted goggles, hairnet",
+        "metal handpiece and instrument cart with screen present"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting context not confirmed",
+      "evidence": [
+        "scene-level ENVIRONMENT was UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close handheld vertical shot",
+      "evidence": [
+        "vertical 720-width frame with close, handheld angle consistent across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Tight close-up framing on patient's face and provider's hands",
+      "evidence": [
+        "both keyframes show near-identical close composition centered on the handpiece and patient's face"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state is NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "On-screen text detected in frame",
+      "evidence": [
+        "ocr_observations: 3",
+        "partial text 'DR LEW...' visible on provider's scrub top"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing usage indicators present",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE was FALSE"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment-room scene with provider and patient",
+      "evidence": [
+        "consistent depiction across keyframes of a provider handling equipment near a reclined patient's face"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually assessable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A patient reclines in a treatment chair with eyes closed under a blue disposable drape while a masked, goggled provider in pink scrubs holds a metal handpiece connected to an equipment cart near her nose and upper lip. The single-scene, two-keyframe video shows near-identical close, handheld vertical framing with no spoken audio and some on-screen text visible on nearby equipment.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "258b358e-5c7c-47a4-a195-087a203a7bfd",
+  "image_count": 1
+}

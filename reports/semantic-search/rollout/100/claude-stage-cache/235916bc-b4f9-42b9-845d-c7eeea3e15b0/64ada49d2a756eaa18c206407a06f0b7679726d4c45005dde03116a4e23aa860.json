@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_3484.MP4",
+      "evidence": [
+        "filename IMG_3484.MP4, duration 15.0s, 1280x720, h264, decoded_locally true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical device video",
+      "evidence": [
+        "canonical_scenes 1, canonical_keyframes 2, scene-level narrative of a gloved hand holding a device over an arm"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene",
+      "evidence": [
+        "scene_results contains a single scene_index 0 spanning the 15s clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved clinician and a patient",
+      "evidence": [
+        "gloved hand operating the device (clinician role) and a bare arm resting on a pillow (patient role)"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Latex-gloved hand, patient in dark clothing",
+      "evidence": [
+        "white/latex glove visible on the operating hand",
+        "patient wearing dark pants/clothing with visible skin on the forearm"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient forearm and elbow visible",
+      "evidence": [
+        "bare forearm and elbow of the patient resting on the blue pillow in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable",
+      "evidence": [
+        "gloves, a handheld device, and contact with the arm are visible but no named procedure appears in the supplied text, so per rules this cannot be labeled a specific treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held steady above arm",
+      "evidence": [
+        "scene narrative describes the device being held steady above the arm across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician's hand interacting with patient's arm",
+      "evidence": [
+        "gloved hand positioned directly over/near the patient's forearm holding the device"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clear clinical findings discernible",
+      "evidence": [
+        "scene-level CLINICAL_VISUAL_OBSERVATIONS marked UNKNOWN; skin appears largely unremarkable in the visible keyframes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite visible medical pillow and drape, room context is not established"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, static handheld POV shot",
+      "evidence": [
+        "tight vertical framing centered on the device and arm, consistent across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device and arm centered in frame",
+      "evidence": [
+        "device and gloved hand occupy the upper-center frame with the arm and blue pillow filling the lower portion"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "transcript_state NO_SPEECH",
+        "scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No legible on-screen text",
+      "evidence": [
+        "scene-level OCR_VISIBLE_TEXT marked FALSE despite ocr_observations count of 1"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN, no branding or promotional cues visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose unclear",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN, only generic device-over-arm imagery available"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual review",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A gloved hand holds a handheld device with an attached cable positioned above a patient's forearm, which rests on a blue medical pillow. The two sampled keyframes show near-identical framing of the device being held steady over the arm in a clinical setting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "235916bc-b4f9-42b9-845d-c7eeea3e15b0",
+  "image_count": 1
+}

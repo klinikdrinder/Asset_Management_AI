@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-09-02T06:47:55.440504+00:00",
+  "phase": 11,
+  "status": "PASS",
+  "gemini_calls": 0,
+  "openai_semantic_indexing_calls": 0,
+  "ollama_calls": 0,
+  "qwen_calls": 0,
+  "external_speech_api_calls": 0,
+  "external_media_inference": 0,
+  "external_media_transmission": false,
+  "speech_provider": "local_faster_whisper (Systran/faster-whisper-small, CTranslate2, CPU int8, local_files_only)",
+  "text_embedding_provider": "local sentence-transformers intfloat/multilingual-e5-small",
+  "visual_embedding_provider": "local OpenCLIP ViT-B-32 (no new vectors created)",
+  "offline_runtime": "HF_HUB_OFFLINE=1, TRANSFORMERS_OFFLINE=1",
+  "reported_network_use": [
+    "Supabase \u2014 the project's own database",
+    "Google Drive \u2014 authorized read-only master media retrieval"
+  ],
+  "search_chain_external_providers": "none reachable from query-interpreter, requirement-classifier, query-expander, candidate-retriever, candidate-authorizer, deterministic-reranker or result-count-controller"
+}

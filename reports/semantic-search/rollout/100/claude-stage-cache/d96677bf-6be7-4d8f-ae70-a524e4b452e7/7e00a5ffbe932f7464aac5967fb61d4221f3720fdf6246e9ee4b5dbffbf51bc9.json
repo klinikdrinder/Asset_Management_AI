@@ -1,0 +1,174 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_3202.MP4",
+      "evidence": [
+        "asset_id d96677bf-6be7-4d8f-ae70-a524e4b452e7",
+        "filename IMG_3202.MP4"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical scalp session clip",
+      "evidence": [
+        "Two keyframes show a continuous scalp-directed device application in a clinic setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene spanning 0.0-12.9s",
+      "evidence": [
+        "scene_index 0, start_seconds 0.0, end_seconds 12.9, keyframes_supplied 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined patient and masked practitioner",
+      "evidence": [
+        "One person reclined with eyes closed under a blue drape",
+        "Second person wearing mask, gloves, and scrubs actively handling a device near the first person's head"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short-haired patient; masked, gloved practitioner in navy scrubs",
+      "evidence": [
+        "Patient has closely buzzed dark hair and visible ear",
+        "Practitioner has dark hair, wears a light blue surgical mask labeled M-CURE, white gloves, and dark navy scrub top"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp, hairline, and ear visible",
+      "evidence": [
+        "Top and frontal scalp region with short hair and hairline exposed under the light source",
+        "Patient's ear and profile visible in both frames"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied text",
+      "evidence": [
+        "readable_text_detected and spoken_content are both empty",
+        "Gloves, a handheld device, and scalp contact are visible but no procedure name is present in the supplied evidence"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held against scalp emitting red light",
+      "evidence": [
+        "Practitioner's gloved hand holds a corded handheld device with a glowing red tip directly against the patient's scalp in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner administering care to reclined patient",
+      "evidence": [
+        "Practitioner positioned above and beside the reclined patient, one hand stabilizing the head area while the other operates the device"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Red glow on scalp during device contact",
+      "evidence": [
+        "Visible red illumination and reflected glow on the scalp surface where the device tip touches"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinic room with wall-mounted AC unit",
+      "evidence": [
+        "Cream-colored wall, wall-mounted split air conditioning unit, and what appears to be a whiteboard or cabinet in the background of both frames"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up framing, static angle",
+      "evidence": [
+        "Both keyframes are vertical (portrait) 720x1280-oriented crops with a close, similar camera angle on the patient's head and practitioner's upper body"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient lower-left, practitioner upper-right, device centered",
+      "evidence": [
+        "Patient's head occupies the lower-left of frame, practitioner and device occupy the right and upper-center in both images"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Audio track present but no transcript supplied",
+      "evidence": [
+        "technical.audio_stream is true but spoken_content array is empty"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Mask brand text visible",
+      "evidence": [
+        "Text reading 'M-CURE' is visible printed on the practitioner's surgical mask in both frames"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing context supplied",
+      "evidence": [
+        "readable_text_detected list is empty and no captions, logos, or promotional overlays are indicated in the supplied evidence"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical scalp light-device session",
+      "evidence": [
+        "Consistent depiction across both keyframes of a practitioner applying a light-emitting handheld device to a reclined patient's scalp in a clinic room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A reclined patient with short-buzzed hair and a blue drape has a handheld red-light emitting device held against his scalp by a gloved, masked practitioner in navy scrubs. The setting is a small clinic room with cream walls and a wall-mounted air conditioning unit.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "d96677bf-6be7-4d8f-ae70-a524e4b452e7",
+  "image_count": 2
+}

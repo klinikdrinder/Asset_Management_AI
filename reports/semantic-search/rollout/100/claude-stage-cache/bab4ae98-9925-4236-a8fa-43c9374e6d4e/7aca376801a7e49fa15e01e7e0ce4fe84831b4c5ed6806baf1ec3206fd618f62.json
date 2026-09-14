@@ -1,0 +1,176 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_0506.MP4",
+      "evidence": [
+        "filename IMG_0506.MP4 and asset_id bab4ae98-9925-4236-a8fa-43c9374e6d4e supplied in metadata",
+        "single scene spanning 0.0-24.533 seconds"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical/spa room recording",
+      "evidence": [
+        "1280x720 h264 video, 24.5s duration with audio track",
+        "two keyframes show a reclined person and gloved hands working near her face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, two moments sampled",
+      "evidence": [
+        "scene_index 0 spanning start 0.0s to end 24.533s",
+        "keyframe 1 shows pen-like tool near ear/jaw, keyframe 2 shows a phone held near the face, indicating progression within the same scene"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined individual and a gloved attendant",
+      "evidence": [
+        "one person reclined with eyes closed wearing a hairnet and towel",
+        "a second person's gloved hands and forearm are visible performing actions near the reclined person's face"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Woman with dark hair, hairnet, nose stud",
+      "evidence": [
+        "dark hair partially covered by a blue mesh hairnet",
+        "small nose stud visible",
+        "tan/olive skin tone, eyes closed in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, ear, jaw, and neck visible",
+      "evidence": [
+        "cheek, nose, closed eyes, lips, jawline, ear, and neck are visible in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure indicated",
+      "evidence": []
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Marking near ear/jaw, then phone held to face",
+      "evidence": [
+        "gloved hand holds a dark pen-like tool near the reclined person's ear and jaw in the first keyframe",
+        "gloved hands hold a phone close to the face in the second keyframe while a hand rests near the forehead"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close attendant-to-client proximity",
+      "evidence": [
+        "gloved hands are in direct, close contact with the reclined person's face and jaw across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands and a marking implement",
+      "evidence": [
+        "white/beige disposable gloves worn on the hands interacting with the face",
+        "a slim dark pen-like implement held against the skin near the ear in the first keyframe"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical/treatment room",
+      "evidence": [
+        "white wall with a mounted electrical socket panel",
+        "vertical signboard with partial text visible in the background",
+        "purple towel draped over the reclined person's shoulder, blue disposable sheet beneath"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld vertical framing",
+      "evidence": [
+        "tight close-up angle on the face and hands in both keyframes",
+        "vertical 9:16-style framing typical of handheld phone capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face-centered close-up composition",
+      "evidence": [
+        "the reclined person's face occupies the central-right frame with gloved hands entering from the left in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No transcribed speech despite audio track",
+      "evidence": [
+        "technical metadata lists audio_stream: true but spoken_content is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text on background signboard",
+      "evidence": [
+        "a vertical panel behind the subject shows partial lettering ending in \"ONIC\" in the first keyframe, though readable_text_detected list is empty"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No confirmed marketing indicators",
+      "evidence": []
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Attendant working closely on reclined client's face",
+      "evidence": [
+        "gloved hands consistently engaged near the reclined, eyes-closed person's face across both keyframes in a treatment-room setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually observable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A woman with a blue hairnet lies reclined with a purple towel draped over her shoulder while a gloved practitioner holds a dark pen-like marking tool near her ear and jawline. In a second moment the gloved hands hold a phone close to her face while she keeps her eyes closed in a white-walled clinical room with a wall-mounted electrical outlet and a partially visible signboard.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "bab4ae98-9925-4236-a8fa-43c9374e6d4e",
+  "image_count": 2
+}

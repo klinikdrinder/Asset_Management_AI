@@ -1,0 +1,184 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video asset IMG_2315.MP4, two keyframes supplied",
+      "evidence": [
+        "filename IMG_2315.MP4",
+        "asset_id 002b0eda-e519-44d9-97f4-0792fa989c35",
+        "keyframes_supplied: 2"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical close-up video, ~24 seconds",
+      "evidence": [
+        "duration_seconds 23.635",
+        "two keyframes showing close-up medical scenes"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene spanning full clip, 0 to 23.6s",
+      "evidence": [
+        "scene_index 0",
+        "start_seconds 0.0, end_seconds 23.635"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One masked, gowned individual with loupes performing close work; a patient present",
+      "evidence": [
+        "person wearing blue surgical gown, mask, surgical cap, and head-mounted loupes with light in first image",
+        "gloved hands working over a bandaged arm and a bandaged scalp belonging to another individual"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue gown, black mask, surgical cap, white gloves with blood staining",
+      "evidence": [
+        "blue surgical gown and cap",
+        "black face mask",
+        "white latex gloves with red staining on fingers in both images"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forearm/hand and scalp visible as anatomical sites",
+      "evidence": [
+        "bandaged forearm with visible skin and small blood spots in image 1",
+        "scalp with short hair, blood, and small red puncture-like marks in image 2"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Named procedure not identifiable from evidence",
+      "evidence": [
+        "no readable_text_detected or spoken_content provided",
+        "gloves, instruments, and scalp contact alone do not establish a named procedure per instructions"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands manipulating tissue with a fine instrument",
+      "evidence": [
+        "hand holding a forceps-like tool near small bleeding points on the scalp in image 2",
+        "fingers positioned near a syringe-like object over the bandaged arm in image 1"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned directly over patient's body part",
+      "evidence": [
+        "gowned person's hands and instrument directly contacting/near the bandaged arm and scalp of another person"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Visible blood, gauze dressings, and small red puncture marks",
+      "evidence": [
+        "red blood staining on gloves and skin in both images",
+        "white gauze bandaging around the arm and scalp",
+        "small red punctate marks scattered on the scalp in image 2"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical setting with draped surfaces",
+      "evidence": [
+        "green surgical drapes/cloth in background of image 1",
+        "plain wall and neutral clinical background in both images"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing on subject's hands and work area",
+      "evidence": [
+        "tight vertical framing centered on hands and body part in both images",
+        "portrait 1280x720 orientation suggesting mobile video capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject and instrument centered, patient body part fills lower frame",
+      "evidence": [
+        "practitioner's head/loupes upper portion of image 1, hands and arm lower portion",
+        "scalp fills majority of frame in image 2 with hands entering from top and left"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content: []"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No readable text detected in frames",
+      "evidence": [
+        "readable_text_detected: []"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended use not determinable from visual evidence",
+      "evidence": [
+        "no supplied text or metadata indicating marketing purpose or usage context"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close medical documentation of hands-on care with visible blood",
+      "evidence": [
+        "gowned, masked figure with loupes actively working near bleeding tissue on arm and scalp across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually or textually assessable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "The images show a person in blue surgical attire, mask, and loupes with a headlight, wearing gloved hands with blood on the fingers, working closely over a patient's bandaged forearm and separately over a patient's scalp. Fine forceps-like instruments are used near small bleeding puncture points on the scalp, which is bordered by gauze dressings.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "002b0eda-e519-44d9-97f4-0792fa989c35",
+  "image_count": 2
+}

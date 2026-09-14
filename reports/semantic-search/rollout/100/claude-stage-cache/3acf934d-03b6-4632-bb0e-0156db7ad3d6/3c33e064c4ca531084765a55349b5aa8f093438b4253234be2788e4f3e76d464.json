@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0985.MP4",
+      "evidence": [
+        "filename: IMG_0985.MP4",
+        "asset_id provided in metadata"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical device clip",
+      "evidence": [
+        "4.9 second scene duration",
+        "single stationary device shown across two keyframes"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single scene, two keyframes",
+      "evidence": [
+        "scene_index 0, start 0.0 end 4.9 seconds",
+        "two keyframes supplied showing slightly different hand/handpiece positions"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Gloved hand only, role unclear",
+      "evidence": [
+        "only a gloved forearm and hand visible, no face or uniform to confirm role"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Forearm with white glove",
+      "evidence": [
+        "light-skinned forearm visible",
+        "white disposable glove on hand holding handpiece"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No patient anatomy shown",
+      "evidence": [
+        "only the operator's own gloved arm is visible",
+        "no patient body part or treatment area present in frame"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Device handpiece held, procedure not specified",
+      "evidence": [
+        "gloved hand holds handpiece of Ultraformer III device",
+        "no supplied text names a specific procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Hand grips handpiece",
+      "evidence": [
+        "gloved hand holding and adjusting the handpiece across the two keyframes"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Hand interacting with device",
+      "evidence": [
+        "gloved hand in direct contact with handpiece on the machine"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No clinical findings visible",
+      "evidence": [
+        "no skin or treatment area shown to assess clinical state"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room",
+      "evidence": [
+        "beige walls with light switches",
+        "tiled marble-like floor",
+        "medical cart and supplies visible in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Static handheld shot",
+      "evidence": [
+        "consistent framing of device across both keyframes",
+        "slight camera position shift between frames"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device centered in frame",
+      "evidence": [
+        "Ultraformer III device occupies center and majority of frame",
+        "screen and handpieces prominently visible"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "spoken_content field is empty list"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device screen and label text",
+      "evidence": [
+        "screen displays '0.4J' and 'START'",
+        "device body labeled 'ULTRAFORMER III'",
+        "'CLASSYS' brand logo on screen bezel"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Purpose of clip unclear",
+      "evidence": [
+        "no overlay text, branding graphics, or marketing captions present beyond device's own labeling"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device setup or handling moment",
+      "evidence": [
+        "gloved hand adjusting handpiece suggests preparation or operation of the device"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable for this evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A gloved hand holds a handpiece attachment of an Ultraformer III device, a medical aesthetic machine displaying '0.4J' and 'START' on its touchscreen. The device is stationary in a clinical room with beige walls, a tiled floor, and various cables and accessories visible.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "3acf934d-03b6-4632-bb0e-0156db7ad3d6",
+  "image_count": 2
+}

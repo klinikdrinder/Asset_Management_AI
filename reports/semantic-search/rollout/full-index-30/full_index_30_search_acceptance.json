@@ -1,0 +1,2275 @@
+{
+  "generated_at": "2026-09-03T06:40:52.387827+00:00",
+  "phase": "FULL_INDEX_30",
+  "status": "PASS",
+  "total_cases": 134,
+  "passed": 134,
+  "blocking_failures": [],
+  "informational_failures": [],
+  "cohort": 30,
+  "canonical_scenes": 21,
+  "scene_specific_retrieval": {
+    "cases": 17,
+    "passed": 17,
+    "scene_channels_observed": [
+      "TEXT_SCENE",
+      "VISUAL_KEYFRAME",
+      "VISUAL_SCENE"
+    ]
+  },
+  "authorization_leakage": 0,
+  "clinical_false_positives": 0,
+  "determinism_stable": true,
+  "categories": {
+    "clinical": {
+      "total": 7,
+      "passed": 7
+    },
+    "count-parsing": {
+      "total": 4,
+      "passed": 4
+    },
+    "exact-n": {
+      "total": 5,
+      "passed": 5
+    },
+    "exclusion": {
+      "total": 2,
+      "passed": 2
+    },
+    "filename": {
+      "total": 30,
+      "passed": 30
+    },
+    "filename-stem": {
+      "total": 30,
+      "passed": 30
+    },
+    "grounded": {
+      "total": 28,
+      "passed": 28
+    },
+    "media-filter": {
+      "total": 2,
+      "passed": 2
+    },
+    "multi-concept": {
+      "total": 2,
+      "passed": 2
+    },
+    "paraphrase": {
+      "total": 3,
+      "passed": 3
+    },
+    "scene-specific": {
+      "total": 17,
+      "passed": 17
+    },
+    "zero-result": {
+      "total": 4,
+      "passed": 4
+    }
+  },
+  "query_vocabulary_expanded_this_phase": false,
+  "tests": [
+    {
+      "id": "fn:1 MONTH 22.02 (9).jpeg",
+      "category": "filename",
+      "query": "1 MONTH 22.02 (9).jpeg",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "stem:1 MONTH 22.02 (9).jpeg",
+      "category": "filename-stem",
+      "query": "1 MONTH 22.02 (9)",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:2 MONTH 22.03 (11).jpeg",
+      "category": "filename",
+      "query": "2 MONTH 22.03 (11).jpeg",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "stem:2 MONTH 22.03 (11).jpeg",
+      "category": "filename-stem",
+      "query": "2 MONTH 22.03 (11)",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:25.01 (1).jpeg",
+      "category": "filename",
+      "query": "25.01 (1).jpeg",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "stem:25.01 (1).jpeg",
+      "category": "filename-stem",
+      "query": "25.01 (1)",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:25.01 (15).jpeg",
+      "category": "filename",
+      "query": "25.01 (15).jpeg",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "stem:25.01 (15).jpeg",
+      "category": "filename-stem",
+      "query": "25.01 (15)",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:25.01 (17).jpeg",
+      "category": "filename",
+      "query": "25.01 (17).jpeg",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "stem:25.01 (17).jpeg",
+      "category": "filename-stem",
+      "query": "25.01 (17)",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:25.01 (18).jpeg",
+      "category": "filename",
+      "query": "25.01 (18).jpeg",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "stem:25.01 (18).jpeg",
+      "category": "filename-stem",
+      "query": "25.01 (18)",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:25.01 (21).jpeg",
+      "category": "filename",
+      "query": "25.01 (21).jpeg",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "stem:25.01 (21).jpeg",
+      "category": "filename-stem",
+      "query": "25.01 (21)",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:25.01 (7).jpeg",
+      "category": "filename",
+      "query": "25.01 (7).jpeg",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "stem:25.01 (7).jpeg",
+      "category": "filename-stem",
+      "query": "25.01 (7)",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:26.01 (13).jpeg",
+      "category": "filename",
+      "query": "26.01 (13).jpeg",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "stem:26.01 (13).jpeg",
+      "category": "filename-stem",
+      "query": "26.01 (13)",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:26.01 (8).jpeg",
+      "category": "filename",
+      "query": "26.01 (8).jpeg",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "stem:26.01 (8).jpeg",
+      "category": "filename-stem",
+      "query": "26.01 (8)",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:3631150497-preview.mp4",
+      "category": "filename",
+      "query": "3631150497-preview.mp4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:3631150497-preview.mp4",
+      "category": "filename-stem",
+      "query": "3631150497-preview",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:DSC03753.JPG",
+      "category": "filename",
+      "query": "DSC03753.JPG",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "stem:DSC03753.JPG",
+      "category": "filename-stem",
+      "query": "DSC03753",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:DSC08097.JPG",
+      "category": "filename",
+      "query": "DSC08097.JPG",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "stem:DSC08097.JPG",
+      "category": "filename-stem",
+      "query": "DSC08097",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_0493.MP4",
+      "category": "filename",
+      "query": "IMG_0493.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_0493.MP4",
+      "category": "filename-stem",
+      "query": "IMG_0493",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_0531.MP4",
+      "category": "filename",
+      "query": "IMG_0531.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_0531.MP4",
+      "category": "filename-stem",
+      "query": "IMG_0531",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_0534.MP4",
+      "category": "filename",
+      "query": "IMG_0534.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_0534.MP4",
+      "category": "filename-stem",
+      "query": "IMG_0534",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_1148.MP4",
+      "category": "filename",
+      "query": "IMG_1148.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_1148.MP4",
+      "category": "filename-stem",
+      "query": "IMG_1148",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_1160.MP4",
+      "category": "filename",
+      "query": "IMG_1160.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_1160.MP4",
+      "category": "filename-stem",
+      "query": "IMG_1160",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_1238.MP4",
+      "category": "filename",
+      "query": "IMG_1238.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_1238.MP4",
+      "category": "filename-stem",
+      "query": "IMG_1238",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_1461.MP4",
+      "category": "filename",
+      "query": "IMG_1461.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_1461.MP4",
+      "category": "filename-stem",
+      "query": "IMG_1461",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_2933.MP4",
+      "category": "filename",
+      "query": "IMG_2933.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_2933.MP4",
+      "category": "filename-stem",
+      "query": "IMG_2933",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_2951.MP4",
+      "category": "filename",
+      "query": "IMG_2951.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_2951.MP4",
+      "category": "filename-stem",
+      "query": "IMG_2951",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_2963.MP4",
+      "category": "filename",
+      "query": "IMG_2963.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_2963.MP4",
+      "category": "filename-stem",
+      "query": "IMG_2963",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_3429.MP4",
+      "category": "filename",
+      "query": "IMG_3429.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_3429.MP4",
+      "category": "filename-stem",
+      "query": "IMG_3429",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_3564.MP4",
+      "category": "filename",
+      "query": "IMG_3564.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_3564.MP4",
+      "category": "filename-stem",
+      "query": "IMG_3564",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_3568.MP4",
+      "category": "filename",
+      "query": "IMG_3568.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_3568.MP4",
+      "category": "filename-stem",
+      "query": "IMG_3568",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_3575.MP4",
+      "category": "filename",
+      "query": "IMG_3575.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_3575.MP4",
+      "category": "filename-stem",
+      "query": "IMG_3575",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_3587.MP4",
+      "category": "filename",
+      "query": "IMG_3587.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_3587.MP4",
+      "category": "filename-stem",
+      "query": "IMG_3587",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_3592.MP4",
+      "category": "filename",
+      "query": "IMG_3592.MP4",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_3592.MP4",
+      "category": "filename-stem",
+      "query": "IMG_3592",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "fn:IMG_9871.MOV",
+      "category": "filename",
+      "query": "IMG_9871.MOV",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "stem:IMG_9871.MOV",
+      "category": "filename-stem",
+      "query": "IMG_9871",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": 1,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:1 MONTH 22.02 (9).jpeg",
+      "category": "grounded",
+      "query": "give me 30 files with an exposed body region",
+      "pass": true,
+      "returned_count": 30,
+      "target_rank": 5,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 11,
+        "hits": 11,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:2 MONTH 22.03 (11).jpeg",
+      "category": "grounded",
+      "query": "give me 30 files with an exposed body region",
+      "pass": true,
+      "returned_count": 30,
+      "target_rank": 6,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 11,
+        "hits": 11,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:25.01 (15).jpeg",
+      "category": "grounded",
+      "query": "give me 30 files with a visible person",
+      "pass": true,
+      "returned_count": 30,
+      "target_rank": 13,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 16,
+        "hits": 16,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:25.01 (17).jpeg",
+      "category": "grounded",
+      "query": "give me 30 files with a visible person",
+      "pass": true,
+      "returned_count": 30,
+      "target_rank": 5,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 16,
+        "hits": 16,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:25.01 (18).jpeg",
+      "category": "grounded",
+      "query": "give me 30 files with an exposed body region",
+      "pass": true,
+      "returned_count": 30,
+      "target_rank": 9,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 11,
+        "hits": 11,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:25.01 (21).jpeg",
+      "category": "grounded",
+      "query": "give me 30 files with an exposed body region",
+      "pass": true,
+      "returned_count": 30,
+      "target_rank": 7,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 11,
+        "hits": 11,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:25.01 (7).jpeg",
+      "category": "grounded",
+      "query": "give me 30 files with an exposed body region",
+      "pass": true,
+      "returned_count": 30,
+      "target_rank": 10,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 11,
+        "hits": 11,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:26.01 (13).jpeg",
+      "category": "grounded",
+      "query": "give me 30 files with an exposed body region",
+      "pass": true,
+      "returned_count": 30,
+      "target_rank": 11,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 11,
+        "hits": 11,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:26.01 (8).jpeg",
+      "category": "grounded",
+      "query": "give me 30 files with an exposed body region",
+      "pass": true,
+      "returned_count": 30,
+      "target_rank": 8,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 11,
+        "hits": 11,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:DSC03753.JPG",
+      "category": "grounded",
+      "query": "give me 30 files with a frontal scalp",
+      "pass": true,
+      "returned_count": 29,
+      "target_rank": 4,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 4,
+        "hits": 4,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:DSC08097.JPG",
+      "category": "grounded",
+      "query": "give me 30 files with a face",
+      "pass": true,
+      "returned_count": 9,
+      "target_rank": 5,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 5,
+        "hits": 5,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_KEYFRAME",
+        "VISUAL_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_0493.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with a face",
+      "pass": true,
+      "returned_count": 9,
+      "target_rank": 3,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 5,
+        "hits": 5,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_KEYFRAME",
+        "VISUAL_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_0531.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with injecting",
+      "pass": true,
+      "returned_count": 3,
+      "target_rank": 2,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 2,
+        "hits": 2,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_0534.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 7,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_1148.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with a scalp",
+      "pass": true,
+      "returned_count": 25,
+      "target_rank": 2,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 3,
+        "hits": 3,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_1160.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with a gloved clinician",
+      "pass": true,
+      "returned_count": 20,
+      "target_rank": 2,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 4,
+        "hits": 4,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 0.9349366583346498
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_1238.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with a scalp",
+      "pass": true,
+      "returned_count": 25,
+      "target_rank": 3,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 3,
+        "hits": 3,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_1461.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with gloved hands holding an instrument",
+      "pass": true,
+      "returned_count": 15,
+      "target_rank": 9,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 9,
+        "hits": 9,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_2933.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 6,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_2951.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 8,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_2963.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with a scalp",
+      "pass": true,
+      "returned_count": 25,
+      "target_rank": 1,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 3,
+        "hits": 3,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_3429.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with a neck",
+      "pass": true,
+      "returned_count": 11,
+      "target_rank": 1,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 1,
+        "hits": 1,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_3564.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 5,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_3568.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 4,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_3575.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 1,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_3587.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 2,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_3592.MP4",
+      "category": "grounded",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 3,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "grounded:IMG_9871.MOV",
+      "category": "grounded",
+      "query": "give me 30 files with a face",
+      "pass": true,
+      "returned_count": 9,
+      "target_rank": 2,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 5,
+        "hits": 5,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_KEYFRAME",
+        "VISUAL_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "scene:IMG_3564.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 5,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": "scene 0 0-1.033s"
+    },
+    {
+      "id": "scene:IMG_2933.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 6,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": "scene 0 0-0.133s"
+    },
+    {
+      "id": "scene:IMG_9871.MOV#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with a face",
+      "pass": true,
+      "returned_count": 9,
+      "target_rank": 2,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 5,
+        "hits": 5,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_KEYFRAME",
+        "VISUAL_SCENE"
+      ],
+      "note": "scene 0 0-7.648s"
+    },
+    {
+      "id": "scene:IMG_1148.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with a scalp",
+      "pass": true,
+      "returned_count": 25,
+      "target_rank": 2,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 3,
+        "hits": 3,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": "scene 0 0-7.7s"
+    },
+    {
+      "id": "scene:IMG_3592.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 3,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": "scene 0 0-1.5s"
+    },
+    {
+      "id": "scene:IMG_0493.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with a face",
+      "pass": true,
+      "returned_count": 9,
+      "target_rank": 3,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 5,
+        "hits": 5,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_KEYFRAME",
+        "VISUAL_SCENE"
+      ],
+      "note": "scene 0 0-3.767s"
+    },
+    {
+      "id": "scene:IMG_1160.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with a gloved clinician",
+      "pass": true,
+      "returned_count": 20,
+      "target_rank": 2,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 4,
+        "hits": 4,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 0.9349366583346498
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": "scene 0 0-17.033s"
+    },
+    {
+      "id": "scene:IMG_0531.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with injecting",
+      "pass": true,
+      "returned_count": 3,
+      "target_rank": 2,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 2,
+        "hits": 2,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE"
+      ],
+      "note": "scene 0 0-4.9s"
+    },
+    {
+      "id": "scene:IMG_0534.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 7,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": "scene 0 0-0.967s"
+    },
+    {
+      "id": "scene:IMG_2951.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with gloved hands holding an instrument",
+      "pass": true,
+      "returned_count": 15,
+      "target_rank": 5,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 9,
+        "hits": 9,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": "scene 0 0-0.117s"
+    },
+    {
+      "id": "scene:IMG_3587.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 2,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": "scene 0 0-1.3s"
+    },
+    {
+      "id": "scene:IMG_3575.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 1,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": "scene 0 0-1.798s"
+    },
+    {
+      "id": "scene:IMG_3568.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with physical contact",
+      "pass": true,
+      "returned_count": 14,
+      "target_rank": 4,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 8,
+        "hits": 8,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": "scene 0 0-1.833s"
+    },
+    {
+      "id": "scene:IMG_1238.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with a scalp",
+      "pass": true,
+      "returned_count": 25,
+      "target_rank": 3,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 3,
+        "hits": 3,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": "scene 0 0-38.6s"
+    },
+    {
+      "id": "scene:IMG_2963.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with a scalp",
+      "pass": true,
+      "returned_count": 25,
+      "target_rank": 1,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 3,
+        "hits": 3,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": "scene 0 0-12.9s"
+    },
+    {
+      "id": "scene:IMG_3429.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with a neck",
+      "pass": true,
+      "returned_count": 11,
+      "target_rank": 1,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 1,
+        "hits": 1,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": "scene 0 0-11s"
+    },
+    {
+      "id": "scene:IMG_1461.MP4#0",
+      "category": "scene-specific",
+      "query": "give me 30 files with gloved hands holding an instrument",
+      "pass": true,
+      "returned_count": 15,
+      "target_rank": 9,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 9,
+        "hits": 9,
+        "recall_at_k": 1,
+        "mrr": 1,
+        "ndcg_at_10": 1
+      },
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": "scene 0 0-1.067s"
+    },
+    {
+      "id": "para-person",
+      "category": "paraphrase",
+      "query": "give me 30 files showing somebody",
+      "pass": true,
+      "returned_count": 0,
+      "target_rank": null,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 16,
+        "hits": 0,
+        "recall_at_k": 0,
+        "mrr": 0,
+        "ndcg_at_10": null
+      },
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "para-gloves",
+      "category": "paraphrase",
+      "query": "give me 30 files with hands in surgical gloves",
+      "pass": true,
+      "returned_count": 0,
+      "target_rank": null,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 9,
+        "hits": 0,
+        "recall_at_k": 0,
+        "mrr": 0,
+        "ndcg_at_10": null
+      },
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "para-skin",
+      "category": "paraphrase",
+      "query": "give me 30 files where skin is uncovered",
+      "pass": true,
+      "returned_count": 0,
+      "target_rank": null,
+      "effective_count": 30,
+      "metrics": {
+        "relevant_total": 11,
+        "hits": 0,
+        "recall_at_k": 0,
+        "mrr": 0,
+        "ndcg_at_10": null
+      },
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "multi-1",
+      "category": "multi-concept",
+      "query": "give me 30 files with a visible person and physical contact",
+      "pass": true,
+      "returned_count": 30,
+      "target_rank": null,
+      "effective_count": 30,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "multi-2",
+      "category": "multi-concept",
+      "query": "give me 30 files with an exposed body region and gloved hands holding an instrument",
+      "pass": true,
+      "returned_count": 26,
+      "target_rank": null,
+      "effective_count": 30,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "media-video",
+      "category": "media-filter",
+      "query": "show me 30 videos with a visible person",
+      "pass": true,
+      "returned_count": 18,
+      "target_rank": null,
+      "effective_count": 30,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "media-image",
+      "category": "media-filter",
+      "query": "show me 30 images with a visible person",
+      "pass": true,
+      "returned_count": 12,
+      "target_rank": null,
+      "effective_count": 30,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "excl-1",
+      "category": "exclusion",
+      "query": "give me 30 files with a visible person but without gloved hands",
+      "pass": true,
+      "returned_count": 21,
+      "target_rank": null,
+      "effective_count": 30,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "excl-2",
+      "category": "exclusion",
+      "query": "give me 30 files with an exposed body region but not physical contact",
+      "pass": true,
+      "returned_count": 22,
+      "target_rank": null,
+      "effective_count": 30,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "count-1",
+      "category": "exact-n",
+      "query": "give me 1 files with a visible person",
+      "pass": true,
+      "returned_count": 1,
+      "target_rank": null,
+      "effective_count": 1,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "count-3",
+      "category": "exact-n",
+      "query": "give me 3 files with a visible person",
+      "pass": true,
+      "returned_count": 3,
+      "target_rank": null,
+      "effective_count": 3,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "count-5",
+      "category": "exact-n",
+      "query": "give me 5 files with a visible person",
+      "pass": true,
+      "returned_count": 5,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "count-7",
+      "category": "exact-n",
+      "query": "give me 7 files with a visible person",
+      "pass": true,
+      "returned_count": 7,
+      "target_rank": null,
+      "effective_count": 7,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "count-10",
+      "category": "exact-n",
+      "query": "give me 10 files with a visible person",
+      "pass": true,
+      "returned_count": 10,
+      "target_rank": null,
+      "effective_count": 10,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "num-1",
+      "category": "count-parsing",
+      "query": "man around 30",
+      "pass": true,
+      "returned_count": 0,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "num-2",
+      "category": "count-parsing",
+      "query": "person in his 30s",
+      "pass": true,
+      "returned_count": 5,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "num-3",
+      "category": "count-parsing",
+      "query": "30-year-old",
+      "pass": true,
+      "returned_count": 5,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "num-4",
+      "category": "count-parsing",
+      "query": "give me 30 results",
+      "pass": true,
+      "returned_count": 30,
+      "target_rank": null,
+      "effective_count": 30,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME",
+        "TEXT_SCENE"
+      ],
+      "note": null
+    },
+    {
+      "id": "clin-surgery",
+      "category": "clinical",
+      "query": "surgery",
+      "pass": true,
+      "returned_count": 0,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "clin-procedure",
+      "category": "clinical",
+      "query": "procedure",
+      "pass": true,
+      "returned_count": 0,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "clin-treatment",
+      "category": "clinical",
+      "query": "treatment",
+      "pass": true,
+      "returned_count": 0,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "clin-hair-transplant",
+      "category": "clinical",
+      "query": "hair transplant",
+      "pass": true,
+      "returned_count": 5,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "TEXT_SCENE",
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "clin-FUE",
+      "category": "clinical",
+      "query": "FUE",
+      "pass": true,
+      "returned_count": 5,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [
+        "VISUAL_SCENE",
+        "VISUAL_KEYFRAME"
+      ],
+      "note": null
+    },
+    {
+      "id": "clin-implantation",
+      "category": "clinical",
+      "query": "implantation",
+      "pass": true,
+      "returned_count": 0,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "clin-extraction",
+      "category": "clinical",
+      "query": "extraction",
+      "pass": true,
+      "returned_count": 0,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "zero-food",
+      "category": "zero-result",
+      "query": "food",
+      "pass": true,
+      "returned_count": 0,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "zero-car",
+      "category": "zero-result",
+      "query": "car",
+      "pass": true,
+      "returned_count": 0,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "zero-animal",
+      "category": "zero-result",
+      "query": "animal",
+      "pass": true,
+      "returned_count": 0,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    },
+    {
+      "id": "zero-airplane",
+      "category": "zero-result",
+      "query": "airplane",
+      "pass": true,
+      "returned_count": 0,
+      "target_rank": null,
+      "effective_count": 5,
+      "metrics": null,
+      "scene_channels_contributing": [],
+      "note": null
+    }
+  ]
+}

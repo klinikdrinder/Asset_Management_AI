@@ -1,0 +1,177 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_7171.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_7171.MP4, duration 15.77s, h264, 1280x720"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinic interaction clip",
+      "evidence": [
+        "1 canonical scene, 2 canonical keyframes across a 15.77s video"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene",
+      "evidence": [
+        "scene_results lists a single scene_index 0 spanning the asset"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient and masked clinical staff member",
+      "evidence": [
+        "Person in plaid shirt lying draped on table; person in teal scrubs with surgical mask leaning over them"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Plaid shirt patient; dark-haired masked staff in teal scrubs",
+      "evidence": [
+        "Patient wears a green plaid button-down shirt",
+        "Staff member has dark hair, wears a teal scrub top and white/blue disposable face mask",
+        "Patient's forearm shows a visible tattoo"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Head/ear region and forearm visible",
+      "evidence": [
+        "Staff member's hand and a device are positioned near the patient's ear and head",
+        "Patient's forearm with tattoo is visible resting near the staff member's face"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "Per-scene TREATMENT_PROCEDURE is UNKNOWN; a handheld device and hand contact near the head do not establish any named clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member examines/positions device near patient's head",
+      "evidence": [
+        "Masked person holds a corded handheld device close to the patient's ear/head area while patient lies still"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Direct caregiver-to-patient physical proximity",
+      "evidence": [
+        "Staff member's hands are in direct contact/near-contact with the patient's head and arm"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting with drape and instrument",
+      "evidence": [
+        "Patient covered by a textured cloth drape typical of clinical settings",
+        "Handheld corded device held near patient's head"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Clinic room, specific facility unclear",
+      "evidence": [
+        "Per-scene ENVIRONMENT marked UNKNOWN despite visible exam lamp, stool, and slatted wall background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical handheld close-up framing",
+      "evidence": [
+        "Vertical 720x1280-oriented frame with close, tightly cropped composition on the two subjects"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient and staff fill frame diagonally",
+      "evidence": [
+        "Patient's draped body occupies upper/left frame while staff member's head and shoulders occupy lower/right frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state is NO_SPEECH",
+        "Per-scene SPEECH_TRANSCRIPT_AUDIO is FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text found",
+      "evidence": [
+        "ocr_evaluated true with 2 observations but per-scene OCR_VISIBLE_TEXT is FALSE",
+        "No legible text visible in the keyframes"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing intent determinable",
+      "evidence": [
+        "Per-scene MARKETING_CONTENT_USAGE is UNKNOWN with no branding or promotional elements visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close clinical interaction moment",
+      "evidence": [
+        "Scene depicts a quiet, close-proximity clinical interaction between a masked staff member and a reclining patient"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this medium",
+      "evidence": [
+        "Per-scene SEARCH_EMBEDDINGS is NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A patient reclines on a treatment table draped with cloth, wearing a plaid shirt, while a person in teal scrubs and a face mask leans close to the patient's ear/neck area holding a handheld device. The room contains an exam lamp, a rolling stool, and blue disposable sheeting typical of a clinic setting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "0142e25c-f4d6-4c37-87dd-b09aab2c8cc4",
+  "image_count": 1
+}

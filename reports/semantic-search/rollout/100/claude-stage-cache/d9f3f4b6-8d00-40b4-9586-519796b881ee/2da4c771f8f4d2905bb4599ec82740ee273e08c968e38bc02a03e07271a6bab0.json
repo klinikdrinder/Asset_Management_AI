@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset with technical metadata",
+      "evidence": [
+        "filename IMG_1951.MP4, duration 15.23s, 1280x720, h264, fps 30/1, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall purpose of asset not determinable",
+      "evidence": [
+        "Scene-level result for GLOBAL_ASSET_UNDERSTANDING is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, scene_index 0 marked OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A reclining client and a gloved practitioner",
+      "evidence": [
+        "Practitioner in coral scrubs with gloved hands operating a device; a person reclining with eyes closed receiving the application"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining woman with dark hair, earrings, necklace; practitioner in coral scrub top",
+      "evidence": [
+        "Reclining person has dark hair, pearl earring and necklace, eyes closed, blue disposable head cap visible",
+        "Practitioner wears coral/salmon scrub top with visible partial text"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, including nose, cheek, and forehead area visible",
+      "evidence": [
+        "Device applied near nose/cheek in one keyframe and to forehead in another"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Named procedure not established by evidence",
+      "evidence": [
+        "Only gloves, a handheld metal device, and physical contact with the face are visible; no procedure name is present in supplied text, so per rules this remains UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device applied to facial skin at two locations",
+      "evidence": [
+        "First keyframe shows device tip near nose/cheek; second shows white pad-like attachment applied to forehead"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner positioned above and interacting directly with reclining person's face",
+      "evidence": [
+        "Practitioner's gloved hands stabilize the face while the other hand holds the device against the skin"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, handheld device, disposable coverings in a treatment setting",
+      "evidence": [
+        "Gloved hand contact, metal handheld device with blue/silver components, disposable blue sheet on headrest, blue head cap"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Room context not clearly established",
+      "evidence": [
+        "Scene-level result for ENVIRONMENT is UNKNOWN; only headrest and sheet visible, no wider room context"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing on the face and hands",
+      "evidence": [
+        "Vertical 720-width orientation with tight close-up composition on face and practitioner's hands across both keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face centered with hands and device occupying upper frame",
+      "evidence": [
+        "Reclining person's face centered lower-middle frame, practitioner's hands and device fill upper portion in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT, transcript_state NO_SPEECH",
+        "Scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Partial text on scrub top not legible enough to confirm content",
+      "evidence": [
+        "ocr_evaluated true with 4 ocr_observations noted but scene-level OCR_VISIBLE_TEXT is UNKNOWN, and only partial lettering ('...LEW KAR MIN'-like text) is visible on clothing"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "Scene-level result for MARKETING_CONTENT_USAGE is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative meaning not determinable",
+      "evidence": [
+        "Scene-level result for SEMANTIC_NARRATIVE is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to descriptive evaluation",
+      "evidence": [
+        "Scene-level result for SEARCH_EMBEDDINGS is NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "Two vertical keyframes show a person reclining with eyes closed while a gloved practitioner in coral scrubs applies a handheld metal device to her face, first near the nose/cheek and then to the forehead with white pad-like attachments. The setting appears to be a clinical or spa treatment room with a disposable blue sheet on the headrest and a gray knit wrap covering the reclining person's chest.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "d9f3f4b6-8d00-40b4-9586-519796b881ee",
+  "image_count": 1
+}

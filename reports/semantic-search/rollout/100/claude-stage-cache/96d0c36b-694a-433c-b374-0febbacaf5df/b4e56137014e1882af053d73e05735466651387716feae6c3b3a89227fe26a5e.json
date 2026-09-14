@@ -1,0 +1,183 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 asset IMG_2339.MP4, 1280x720, 10.27s",
+      "evidence": [
+        "filename IMG_2339.MP4, asset_id 96d0c36b-694a-433c-b374-0febbacaf5df",
+        "technical metadata: 1280x720, 30fps, h264, duration 10.266667s, decoded_locally true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "scene 0 GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, ~10 seconds",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2",
+        "scene 0 TEMPORAL_SCENE_STRUCTURE OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One reclining individual and a gloved provider",
+      "evidence": [
+        "keyframes show a person lying supine wearing eye shields",
+        "gloved hands of a second individual holding a device and stabilizing the face"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark-haired individual wearing black eye shields",
+      "evidence": [
+        "visible dark hair",
+        "black protective eye shields covering eyes",
+        "supine positioning on blue drape"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, nose, cheek, under-eye area visible",
+      "evidence": [
+        "close-up framing shows nose, cheek, lips, chin, and under-eye region"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied evidence",
+      "evidence": [
+        "no procedure name present in supplied text",
+        "gloved hand and handheld device alone do not establish a named procedure per rules",
+        "scene 0 TREATMENT_PROCEDURE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held near nose/eye while cheek is stabilized",
+      "evidence": [
+        "silver handheld device positioned near nose and under-eye area",
+        "second gloved hand pressing/stabilizing the cheek"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider hands interacting with reclining person's face",
+      "evidence": [
+        "gloved hands directly contacting and stabilizing the patient's face while operating a device"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, protective eyewear, handheld instrument present",
+      "evidence": [
+        "white surgical/exam gloves visible on both hands",
+        "black protective eye shields on the reclining person",
+        "silver handheld device near the face"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not conclusively determinable",
+      "evidence": [
+        "scene 0 ENVIRONMENT marked UNKNOWN despite visible blue drape and red vertical object in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical close-up shot",
+      "evidence": [
+        "1280x720 frame cropped/composed as tight close-up on face",
+        "keyframes show consistent close-range camera angle"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face and device centered in frame",
+      "evidence": [
+        "device and treated area occupy the central/upper frame",
+        "gloved hand fingers frame the lower left of the shot"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio track present but no speech detected",
+      "evidence": [
+        "audio_stream_present true, audio_state AUDIO_PRESENT",
+        "transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_evaluated true, ocr_observations 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing content indicators",
+      "evidence": [
+        "scene 0 MARKETING_CONTENT_USAGE marked FALSE",
+        "no overlays, branding, or promotional text present"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative intent not determinable",
+      "evidence": [
+        "scene 0 SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually assessable layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A single 10-second clip shows a person lying supine wearing black protective eye shields while a gloved hand holds a silver handheld device near the nose and under-eye area, with a second gloved hand stabilizing the cheek. The setting appears to be a clinical treatment room with blue drape material and a red vertical object visible in the background, and no speech or on-screen text is present.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "96d0c36b-694a-433c-b374-0febbacaf5df",
+  "image_count": 1
+}

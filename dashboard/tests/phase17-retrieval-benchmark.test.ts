@@ -1,0 +1,2 @@
+import assert from "node:assert/strict"; import test from "node:test"; import benchmark from "../../config/semantic-search/benchmarks/kdi_candidate_retrieval_benchmark_v1.json";
+test("retrieval benchmark manifest is fixed",()=>{assert.equal(benchmark.cases.length,150);assert.deepEqual(benchmark.splits,{dev:90,validation:30,blind:30});assert.equal(benchmark.language,"ENGLISH");assert.equal(benchmark.gold_source,"CANONICAL_INDEX_RETRIEVAL_GOLD")});

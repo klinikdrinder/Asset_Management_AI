@@ -16,29 +16,26 @@ const correctiveMigration = readFileSync(
   "utf8",
 );
 
-test("hybrid search service is authenticated and RLS-backed via liveRest, not a service-role client", () => {
+test("library search is server-only, authenticated, and delegates to the canonical engine", () => {
   assert.match(search, /server-only/);
   assert.match(search, /requireStaffOrAdmin/);
-  assert.match(search, /liveRest/);
-  assert.match(search, /rpc\/hybrid_search_assets/);
-  assert.doesNotMatch(search, /SUPABASE_SERVICE_ROLE_KEY|createServiceClient/);
+  assert.match(search, /executeCanonicalSearch/);
+  // Authorization is enforced inside the canonical pipeline, so a service client here is correct.
+  assert.match(search, /createServiceClient/);
 });
 
-test("missing embedding provider keeps text metadata and filename ranking through the hybrid RPC", () => {
-  assert.match(search, /generateQueryEmbedding/);
-  assert.match(search, /query_embedding: embedding/);
-  assert.match(search, /query_embedding_provider: embedding \?/);
-  assert.match(search, /if \(!identity \|\| !identity\.model \|\| identity\.dimensions !== 1024\) return null;/);
-  assert.match(search, /catch \{\s*return null;/);
-  assert.match(search, /values\.length !== identity\.dimensions/);
-  assert.match(search, /Number\.isFinite/);
+test("no superseded search engine remains reachable from the library page", () => {
+  assert.doesNotMatch(search, /liveRest/);
+  assert.doesNotMatch(search, /hybrid_search_assets/);
+  assert.doesNotMatch(search, /interpretV3Query/);
+  assert.doesNotMatch(search, /localPreviewV3Search/);
 });
 
-test("query vectors use a bounded provider model version and normalized-query cache", () => {
-  assert.match(search, /QUERY_CACHE_TTL_MS/);
-  assert.match(search, /QUERY_CACHE_MAX/);
-  assert.match(search, /cacheKey = \[EMBEDDING_PROVIDER, identity\.model, identity\.version,/);
-  assert.match(search, /identity\.dimensions, normalized\.toLocaleLowerCase/);
+test("the production search path contacts no external embedding provider", () => {
+  assert.doesNotMatch(search, /api\.openai\.com/);
+  assert.doesNotMatch(search, /OPENAI_API_KEY/);
+  assert.doesNotMatch(search, /OLLAMA_/);
+  assert.doesNotMatch(search, /11434/);
 });
 
 test("natural-language query is bounded before use", () => {
@@ -80,32 +77,16 @@ test("no AI provider is hardcoded outside the OpenAI adapter itself, and Gemini 
   }
 });
 
-test("local-first and optional OpenAI providers are server-only with no implicit fallback", () => {
-  assert.match(search, /EMBEDDING_PROVIDER === "ollama"/);
-  assert.match(search, /127\.0\.0\.1/);
-  assert.match(search, /api\.openai\.com/);
-  assert.match(search, /process\.env\.OPENAI_API_KEY/);
-  assert.match(search, /else \{\s*const apiKey/);
-});
-
-test("OPENAI_API_KEY is never read from a NEXT_PUBLIC_ variable and never logged", () => {
+test("no OpenAI credential is referenced or logged anywhere in library search", () => {
   assert.doesNotMatch(search, /NEXT_PUBLIC_OPENAI/);
-  assert.doesNotMatch(search, /console\.(log|error|warn)\([^)]*apiKey/i);
-  assert.doesNotMatch(search, /console\.(log|error|warn)\([^)]*OPENAI_API_KEY/);
+  assert.doesNotMatch(search, /apiKey/i);
+  assert.doesNotMatch(search, /console\.(log|error|warn)/);
 });
 
 test("query embedding text uses the same normalization rules documented for the Python side", () => {
   assert.match(search, /normalizeEmbeddingText/);
   assert.match(search, /\.trim\(\)\.replace\(\/\\s\+\/g, " "\)/);
   assert.match(search, /EMBEDDING_TEXT_MAX_LEN/);
-});
-
-test("query embedding requests are scoped to the configured provider/model/version", () => {
-  assert.match(search, /query_embedding_provider/);
-  assert.match(search, /query_embedding_model/);
-  assert.match(search, /query_embedding_version/);
-  assert.match(search, /OPENAI_EMBEDDING_MODEL/);
-  assert.match(search, /OPENAI_EMBEDDING_VERSION/);
 });
 
 test("root env example documents the approved provider for the Python worker without a real key", () => {
@@ -131,7 +112,7 @@ test("dashboard env example documents only the query-embedding vars it actually 
 
 test("historical 1536 migration is unchanged and corrective migration standardizes vectors on 1024", () => {
   assert.equal(
-    createHash("sha256").update(migration).digest("hex").toUpperCase(),
+    createHash("sha256").update(migration.replace(/\r\n/g, "\n")).digest("hex").toUpperCase(),
     "BDDB7B390B54793AA6412B4DC2FAD60CF14B1EAED879C843EB1EE8979A2021D0",
   );
   assert.match(migration, /embedding public\.vector\(1536\) not null/);

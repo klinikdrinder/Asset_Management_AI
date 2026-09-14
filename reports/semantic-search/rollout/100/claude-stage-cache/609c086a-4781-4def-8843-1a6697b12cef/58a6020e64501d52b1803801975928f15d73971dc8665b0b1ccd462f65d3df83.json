@@ -1,0 +1,176 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1466.MP4, 9.6s, 1280x720",
+      "evidence": [
+        "technical metadata: filename IMG_1466.MP4, duration 9.566667s, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clip of a facial procedure being performed on a reclining patient",
+      "evidence": [
+        "single scene showing practitioner with syringe near patient's face on treatment bed"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two sampled keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Roles of the two individuals not confirmed",
+      "evidence": [
+        "scene-level PEOPLE_ROLES marked UNKNOWN despite visible practitioner/patient dynamic"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining person with headband, eye patches, maroon towel; practitioner in dark scrub top with mask and gloves",
+      "evidence": [
+        "image shows black headband, white eye patches, maroon towel",
+        "practitioner wears surgical mask, gloves, dark top with 'LEW KAR MIN' text"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial area including cheeks, under-eye region, and mouth visible",
+      "evidence": [
+        "visible facial skin with redness on cheeks, lips, and periorbital area covered by patches"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not named in supplied text",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN",
+        "syringe and gloves visible but no named procedure provided in text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Practitioner holding syringe near patient's face",
+      "evidence": [
+        "gloved hand holding syringe positioned close to cheek/under-eye area in image"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Relationship between practitioner and patient not specified",
+      "evidence": [
+        "scene-level RELATIONSHIPS marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial redness/blemishes visible on patient's skin, eye patches in place",
+      "evidence": [
+        "visible skin redness on cheeks and around mouth",
+        "white rectangular eye patches covering eyes"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting appears clinical but not confirmed",
+      "evidence": [
+        "scene-level ENVIRONMENT marked UNKNOWN despite blue medical-style bedding visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close, overhead angle focused on patient's face and practitioner's hands",
+      "evidence": [
+        "top-down close framing capturing patient face and practitioner leaning in"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered horizontally, practitioner occupying upper frame",
+      "evidence": [
+        "patient's face fills lower/center frame, practitioner's torso and hands fill upper frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track present",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT",
+        "transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on practitioner's clothing",
+      "evidence": [
+        "ocr_observations: 3",
+        "'LEW KAR MIN' and partial clinic name text visible on dark top"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not confirmed",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose unclear",
+      "evidence": [
+        "scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this asset",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person wearing a headband and under-eye patches lies on a treatment bed with a maroon towel over their chest, while a masked, gloved practitioner leans over holding a syringe near the person's cheek/under-eye area. The close-up framing focuses on the gloved hand positioning the needle close to the reclining person's face.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "609c086a-4781-4def-8843-1a6697b12cef",
+  "image_count": 1
+}

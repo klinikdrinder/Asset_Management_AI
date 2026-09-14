@@ -1,0 +1,174 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_1955.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_1955.MP4, duration 22.67s, 1280x720, h264, one canonical scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical close-up video",
+      "evidence": [
+        "One canonical scene with two sampled keyframes showing a consistent close-up setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, ~22.7 seconds",
+      "evidence": [
+        "canonical_scenes: 1, duration_seconds: 22.666667"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclining individual and masked attendant(s)",
+      "evidence": [
+        "Keyframe shows a reclining person with eyes closed and a masked, gloved individual leaning over them; a second masked person stands in the background"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Dark hair, pearl earring, black top; attendant in pink top with mask and tinted glasses",
+      "evidence": [
+        "Reclining person has dark hair, a pearl stud earring, and wears a black knit top",
+        "Attendant wears a pink/salmon top, surgical mask, and green-tinted safety glasses"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, nose, and upper lip region visible",
+      "evidence": [
+        "Close-up framing shows the reclining person's nose, upper lip, and closed eyes near the instrument tip"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "Only gloves, a handheld instrument, and physical proximity to the face are visible; no named procedure appears in supplied text, so it cannot be determined"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instrument held near the person's nose/face",
+      "evidence": [
+        "Attendant's gloved hand holds a metal instrument tip positioned near the reclining person's nose"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician-attendant positioned over reclining individual",
+      "evidence": [
+        "Attendant leans directly over the reclining person, hand near their face, indicating a caregiver-patient spatial relationship"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue sterile drape, gloves, safety glasses, medical device",
+      "evidence": [
+        "Blue disposable drape covers the reclining person",
+        "Attendant wears gloves and green-tinted protective eyewear",
+        "Equipment with a display screen and dial visible in background"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "Equipment and drape suggest an indoor clinical-type setting, but the per-scene result lists ENVIRONMENT as UNKNOWN and no signage confirms location"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld close-up, vertical framing",
+      "evidence": [
+        "Tight close-up composition on the face and instrument, vertical (portrait) orientation typical of mobile capture"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face and instrument centered, attendant filling upper frame",
+      "evidence": [
+        "Reclining person's face occupies lower-center frame while attendant's arm and instrument dominate upper frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true but transcript_state NO_SPEECH; scene-level SPEECH_TRANSCRIPT_AUDIO marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0; scene-level OCR_VISIBLE_TEXT marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "No captions, branding, or promotional text present; scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative context unclear",
+      "evidence": [
+        "Only a single close-up clinical moment is shown without additional context; scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/narrative evaluation",
+      "evidence": [
+        "Scene-level result lists SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A seated person reclines with eyes closed under a blue drape while a masked clinician wearing green-tinted safety glasses holds a metal instrument near the person's nose and upper face. A second masked person stands in the background beside equipment with a display screen.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "55b13ea7-5c8b-4d34-b85f-7c10e4246322",
+  "image_count": 1
+}

@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_7167.MP4",
+      "evidence": [
+        "Asset filename IMG_7167.MP4, duration 18.47s, 1280x720 h264 video with audio stream"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical setting clip",
+      "evidence": [
+        "One canonical scene sampled by two keyframes showing a consistent treatment-room setup throughout"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "scene_results reports canonical_scenes: 1 with one scene_index (0) spanning the clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient and masked clinician",
+      "evidence": [
+        "A person lies face down on the table; a second person in teal scrubs and a surgical mask handles a device near them"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Plaid shirt patient, teal-scrub clinician",
+      "evidence": [
+        "Patient wears a green plaid shirt pulled down off the shoulder; clinician has dark hair tied back, wears teal scrubs and a white surgical mask"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Upper arm with tattoo exposed",
+      "evidence": [
+        "The patient's upper arm/shoulder area is exposed and bears a visible floral tattoo"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "A handheld device on an articulated arm is held near the skin, but no named procedure appears in the supplied text or scene data"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positions device near arm",
+      "evidence": [
+        "The clinician holds a silver handheld device connected to an articulated mount close to the tattooed skin on the patient's arm"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician attending to reclined patient",
+      "evidence": [
+        "The masked clinician leans over the reclined patient, one hand steadying the arm near the device, indicating a caregiver-patient interaction"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No specific clinical findings determinable",
+      "evidence": [
+        "Scene data marks CLINICAL_VISUAL_OBSERVATIONS as UNKNOWN with no described skin findings beyond the tattoo"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Treatment room with medical furniture",
+      "evidence": [
+        "Background shows a rolling stool, an articulated lamp, wall paneling, and a treatment table with blue and white linens"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical handheld close-up shot",
+      "evidence": [
+        "Portrait-oriented 1280x720 frame with close-up framing on the arm and device"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Arm and device centered in frame",
+      "evidence": [
+        "The tattooed arm and handheld device occupy the center of the frame, with the clinician's head and shoulders in the lower right"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite an audio stream being present"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text found",
+      "evidence": [
+        "ocr_evaluated true with ocr_observations: 0"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "No captions, branding, or usage context supplied to indicate promotional purpose"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall narrative purpose unclear",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN with no supplied context beyond the visual setup"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this layer set",
+      "evidence": [
+        "Scene data marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person lies face down on a treatment table with a green plaid shirt pulled down to expose the upper arm, which bears a floral tattoo. A masked clinician in teal scrubs holds a silver handheld device connected to an articulated arm near the tattooed skin.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "eaca1b07-60f8-464f-b973-c12f9d478737",
+  "image_count": 1
+}

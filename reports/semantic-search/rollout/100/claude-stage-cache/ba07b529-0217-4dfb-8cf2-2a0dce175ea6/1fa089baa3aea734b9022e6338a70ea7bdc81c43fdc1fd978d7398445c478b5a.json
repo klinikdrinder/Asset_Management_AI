@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_0567.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_0567.MP4, duration 10.73s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical close-up video",
+      "evidence": [
+        "1 canonical scene, 2 canonical keyframes across the 10.7s clip"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, no cuts detected",
+      "evidence": [
+        "canonical_scenes: 1 with scene_index 0 spanning the clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclining patient",
+      "evidence": [
+        "Person in teal scrubs, mask, laser goggles, and gloves holding equipment near a reclining person wearing protective eye shields and a hair cap"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs; patient with metal eye shields",
+      "evidence": [
+        "Clinician: dark hair tied back, mask, dark laser safety glasses, teal scrub top labeled 'DR LEWARS M.'",
+        "Patient: glasses with metal eye shields over eyes, blue disposable hair cap, purple towel around shoulders"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, cheek, and temple area visible",
+      "evidence": [
+        "Close-up frames show patient's cheek, nose, and temple region near the handpiece"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure name not established",
+      "evidence": [
+        "Handheld device with orange fiber-optic cable near face is visible, but no procedure is named in the supplied text; gloves and instruments alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positions handpiece near patient's face",
+      "evidence": [
+        "Frames show the clinician holding and guiding the cable-connected handpiece toward the patient's cheek/temple"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing hands-on care on reclining patient",
+      "evidence": [
+        "Spatial proximity and direct hand contact/positioning of equipment by clinician over the patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Skin appears textured/glossy on patient's cheek area",
+      "evidence": [
+        "Close-up frame shows sheen and texture on the patient's cheek and forehead skin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Indoor room, setting not further specified",
+      "evidence": [
+        "White wall, red vertical element, and a small cart with glasses case visible, but no signage confirms a specific facility type"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing, vertical orientation",
+      "evidence": [
+        "Tight close-up composition on faces and hands across both keyframes, portrait aspect ratio"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered lower frame, clinician above",
+      "evidence": [
+        "Patient's reclined face fills lower-center of frame; clinician leans in from upper frame in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no meaningful speech",
+      "evidence": [
+        "audio_stream_present true, transcript_state NO_MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on clinician's scrub top",
+      "evidence": [
+        "Embroidered text reading 'DR LEWARS M.' on teal scrub top",
+        "ocr_observations count of 4 reported for this asset"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "No caption, branding overlay, or usage context supplied beyond the raw clinical clip"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose not established",
+      "evidence": [
+        "Only a short clinical close-up clip is provided without surrounding context to determine intent"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual/narrative evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A clinician in teal scrubs, mask, laser safety glasses, and gloves holds an orange fiber-optic cable connected to a handheld device near the face of a reclining patient wearing protective metal eye shields, a blue hair cap, and a purple towel. Two close-up frames show the clinician positioning the handpiece near the patient's cheek and temple area under indoor clinical lighting.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "ba07b529-0217-4dfb-8cf2-2a0dce175ea6",
+  "image_count": 1
+}

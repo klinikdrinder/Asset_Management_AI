@@ -1,0 +1,169 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset",
+      "evidence": [
+        "asset_id f41969d7-7dac-43d3-b655-6c49977143ab, filename IMG_2125.MP4, 12.98s h264 video with audio stream, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result reports GLOBAL_ASSET_UNDERSTANDING as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, one scene_index (0) spanning the 12.98s clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "A masked person in scrubs with gloves handles an instrument near the face of a second, reclined person in a gown"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scrubs, mask, gloves; patient in gown",
+      "evidence": [
+        "Clinician wears reddish-brown scrubs, a surgical mask labeled 'M-CURE', hair in a bun, and white gloves; patient wears a blue gown and has a visible ear piercing and neck tattoo"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's nose and upper lip area",
+      "evidence": [
+        "The instrument tip is positioned at the patient's nose/upper lip region while reclined"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "Only gloves, a handheld device on an articulated arm, and close facial contact are visible; no procedure name appears in the supplied text, so per rules this cannot be named"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician operates handheld device on patient's face",
+      "evidence": [
+        "Clinician's gloved hands hold and position the instrument tip at the patient's nose/lip area"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician working directly on reclined patient",
+      "evidence": [
+        "Spatial proximity and direct hand-to-face contact between the masked clinician and the reclined patient"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, mask, medical instrument in use",
+      "evidence": [
+        "Visible white nitrile gloves, surgical mask, articulated instrument arm, and supply boxes consistent with a clinical setting"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not confirmed",
+      "evidence": [
+        "Scene-level result reports ENVIRONMENT as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld vertical framing",
+      "evidence": [
+        "Tight vertical framing centered on the patient's face and clinician's hands, consistent with a phone-shot close-up video"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient reclined, clinician leaning in from above",
+      "evidence": [
+        "Patient positioned diagonally lower-left, clinician and instrument arm occupy upper-right of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech",
+      "evidence": [
+        "audio_stream_present true and audio_state AUDIO_PRESENT, but transcript_state is NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text visible on mask and supply box",
+      "evidence": [
+        "ocr_observations: 3; 'M-CURE' text visible on the surgical mask and 'SPC' text visible on a box near the sink"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "No text or metadata indicates promotional context; scene-level result reports UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative meaning not determinable",
+      "evidence": [
+        "Scene-level result reports SEMANTIC_NARRATIVE as UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked clinician in reddish-brown scrubs uses a handheld device attached to an articulated arm near the nose/upper lip area of a reclined person wearing a blue gown, working in a room with a sink and wall cabinet. The clinician wears white gloves and leans in close, performing a hands-on task while the patient remains still with eyes closed.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "f41969d7-7dac-43d3-b655-6c49977143ab",
+  "image_count": 1
+}

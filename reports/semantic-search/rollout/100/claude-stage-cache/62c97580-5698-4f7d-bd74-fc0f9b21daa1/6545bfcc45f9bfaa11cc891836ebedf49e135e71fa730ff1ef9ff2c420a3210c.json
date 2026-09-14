@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_3584.MP4, 5.67s, 1280x720",
+      "evidence": [
+        "technical metadata: filename IMG_3584.MP4, duration 5.666667s, 1280x720, h264 codec"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene clinical setting clip",
+      "evidence": [
+        "scene_results shows one canonical scene with consistent clinical room and person"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene across the clip",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 indicating a single continuous scene"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "A gloved clinician and a seated patient/client",
+      "evidence": [
+        "gloved hand holding device near a reclined person's head",
+        "person wearing floral covering and blue sleeve protector suggesting patient role"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Long dark-haired individual reclined in chair",
+      "evidence": [
+        "visible long dark hair, floral-patterned garment, blue sleeve protector on the seated individual"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp and hairline visible near crown area",
+      "evidence": [
+        "gloved hand and device positioned near the crown/hairline of the person's head"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure type not identifiable from visuals",
+      "evidence": [
+        "scene_results marks TREATMENT_PROCEDURE as UNKNOWN despite visible gloves and instrument"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician holding device near scalp",
+      "evidence": [
+        "gloved hand gripping cylindrical device positioned close to the head/hairline"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician interacting directly with seated person's head",
+      "evidence": [
+        "spatial proximity of gloved hand and instrument to the person's scalp"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hand, instrument, and scalp contact visible",
+      "evidence": [
+        "latex glove, metallic/plastic handheld device, small clip/comb-like object near hair part"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room with equipment",
+      "evidence": [
+        "background shows medical-style devices with blue accents, cords, and a metal cart/stand"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld shot focused on head and device",
+      "evidence": [
+        "tight framing centered on gloved hand, device, and person's head/hair"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Foreground hand/device, midground head, background equipment",
+      "evidence": [
+        "layered visual arrangement with hand and device dominating foreground, person's head in midground, equipment blurred in background"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "ocr_observations: 0, OCR_VISIBLE_TEXT marked FALSE in scene_results"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene_results lists MARKETING_CONTENT_USAGE as UNKNOWN with no supporting branding or context"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative purpose unclear",
+      "evidence": [
+        "scene_results marks SEMANTIC_NARRATIVE as UNKNOWN due to lack of contextual/text cues"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": [
+        "scene_results explicitly marks SEARCH_EMBEDDINGS as NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A gloved clinician holds a handheld cylindrical device near the scalp and hairline of a seated person with long dark hair, who is reclined in a chair wearing a floral-patterned covering and a blue sleeve protector. Additional equipment, including devices with blue accents and cords, is visible in the background of what appears to be a clinical treatment room.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "62c97580-5698-4f7d-bd74-fc0f9b21daa1",
+  "image_count": 1
+}

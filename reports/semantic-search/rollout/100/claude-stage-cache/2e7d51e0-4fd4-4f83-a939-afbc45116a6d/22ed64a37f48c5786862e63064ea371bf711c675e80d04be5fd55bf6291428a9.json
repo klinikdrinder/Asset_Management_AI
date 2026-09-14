@@ -1,0 +1,181 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "IMG_2929.MP4, single scene, 13.38s",
+      "evidence": [
+        "filename IMG_2929.MP4",
+        "scene_index 0, start_seconds 0.0, end_seconds 13.38"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short close-up clinical video clip",
+      "evidence": [
+        "duration_seconds 13.38, width 1280, height 720, fps 30/1",
+        "two similar keyframes showing a close-up medical/surgical scene"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene, no cuts detected",
+      "evidence": [
+        "scene_index 0 covering full 0.0-13.38s span",
+        "keyframes_supplied 2 showing near-identical framing consistent with one continuous shot"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Gloved individual(s) present, roles not specified",
+      "evidence": [
+        "gloved hands operating instruments in both keyframes",
+        "person in surgical cap and mask visible at frame edge, no identifying role text supplied"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, surgical cap and mask visible",
+      "evidence": [
+        "white/latex gloves on hands holding instruments in both keyframes",
+        "blue surgical cap and perforated mask strap visible at right edge of frame"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Small tissue-like material of unclear anatomical origin",
+      "evidence": [
+        "small pale fragments visible under bright light on the tray in both keyframes, not clearly identifiable as a specific body part"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in supplied evidence",
+      "evidence": [
+        "no readable_text_detected or spoken_content naming any procedure",
+        "instruments and gloved hands alone do not establish a named procedure per rules"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Manipulating tissue-like material with forceps and a bladed tool",
+      "evidence": [
+        "forceps holding a fragment while a scalpel-like tool touches the same area in both keyframes",
+        "hand positions shift slightly between the two keyframes, indicating ongoing manipulation"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Relationship between individuals not determinable",
+      "evidence": [
+        "only hands and a partial masked face are visible, no interaction between distinct people is shown"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Small pale/tan fragments under bright focused light",
+      "evidence": [
+        "small granular pale-tan material illuminated at the center of both keyframes",
+        "bright white surgical light concentrated on the work area"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical setting with sterile drapes and tray",
+      "evidence": [
+        "blue surgical drape covering the background surface in both keyframes",
+        "white gauze and light-colored tray beneath the work area",
+        "bright overhead surgical light"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up, top-down handheld framing with vertical aspect",
+      "evidence": [
+        "vertical 720x1280-oriented composition in both keyframes",
+        "tight close-up angle focused on hands and instruments"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Centered bright focal point surrounded by hands and equipment",
+      "evidence": [
+        "illuminated work area centered in frame with hands entering from left and right",
+        "light fixture visible in upper right of both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No on-screen text detected",
+      "evidence": [
+        "readable_text_detected field is an empty array"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Intended usage not indicated",
+      "evidence": [
+        "no supplied text or metadata indicates marketing purpose or usage context"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up clinical instrument work on small tissue fragments",
+      "evidence": [
+        "consistent visual theme across both keyframes of gloved hands using instruments on illuminated material in a sterile setting"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual evidence review",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two close-up keyframes show gloved hands using surgical instruments (forceps and a scalpel-like tool) to manipulate small tissue-like fragments under a bright surgical light. The scene is set on a light-colored tray covered with sterile gauze against a blue surgical drape background, with a person wearing a surgical cap and mask visible at the frame edge.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "2e7d51e0-4fd4-4f83-a939-afbc45116a6d",
+  "image_count": 2
+}

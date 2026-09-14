@@ -1,0 +1,187 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "MP4 video file IMG_2974.MP4",
+      "evidence": [
+        "filename IMG_2974.MP4",
+        "asset_id 09138b71-a578-4f20-9e77-446aebab9473"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical scene, single setting, two keyframes",
+      "evidence": [
+        "duration_seconds 10.966667",
+        "scene_index 0 of a single scene",
+        "keyframes_supplied: 2"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene spanning 0 to ~11 seconds",
+      "evidence": [
+        "start_seconds 0.0, end_seconds 10.967",
+        "two keyframes show nearly identical framing, suggesting continuous action"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two masked, gowned medical personnel visible",
+      "evidence": [
+        "person in foreground with back to camera wearing blue cap, mask, gown, holding an instrument near the scalp",
+        "second person in background wearing blue cap, mask, gown, and surgical loupes with headlight, holding a device with a green handle"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Both wear blue scrub caps, surgical masks, and blue gowns",
+      "evidence": [
+        "blue surgical caps with straps visible on both individuals",
+        "light blue surgical masks covering nose and mouth",
+        "blue gowns with sleeves and gloves"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Exposed human scalp region under surgical drape",
+      "evidence": [
+        "a rounded, skin-toned surface consistent with a scalp is visible under bright light",
+        "surrounding area covered with blue/clear surgical draping"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed clinical procedure on scalp",
+      "evidence": [
+        "no procedure name appears in readable_text_detected or spoken_content",
+        "gloves, instruments, and scalp contact alone do not establish a named procedure per policy"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instrument manipulation on scalp under illumination",
+      "evidence": [
+        "foreground person holds a pointed tool near the illuminated scalp area",
+        "second person holds a green-handled device near the same site"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two staff collaborating over one patient",
+      "evidence": [
+        "both individuals' hands and instruments converge on the same illuminated scalp area",
+        "close physical proximity of both figures around the patient"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp shows redness and small blood spots under bright light",
+      "evidence": [
+        "reddish discoloration and small red marks visible on the scalp surface in both keyframes",
+        "bright focal light illuminating the treated area"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical treatment room",
+      "evidence": [
+        "wall-mounted cabinet with electrical outlets and taped paper sheet in background",
+        "counter surface with cables/equipment visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld vertical video framing",
+      "evidence": [
+        "vertical 1280x720 aspect suggests mobile/handheld framing",
+        "tight close-up composition on the procedure site"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Subject centered with bright light as focal point",
+      "evidence": [
+        "illuminated scalp area positioned centrally in frame in both keyframes",
+        "two figures flank the central lit subject"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content: []"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unreadable paper sheet on wall",
+      "evidence": [
+        "a printed sheet with text is visible taped to the cabinet but readable_text_detected is empty",
+        "text on the sheet is too small/blurred to transcribe"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators present",
+      "evidence": [
+        "no logos, captions, or promotional overlays visible in the keyframes",
+        "no supplied text indicating intended usage"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical staff performing close instrument work on a patient's scalp",
+      "evidence": [
+        "two gowned, masked individuals with surgical instruments and loupes focused on an illuminated scalp area",
+        "setting consistent with a clinical treatment room"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a distinct visual layer",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two medical staff in blue surgical gowns, caps, and masks work over a patient's exposed scalp under a bright surgical light, one using tweezer-like instruments while another wears loupes and holds a device with a green handle. A printed sheet with text is taped to a wall-mounted cabinet in the background near electrical outlets.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "09138b71-a578-4f20-9e77-446aebab9473",
+  "image_count": 2
+}

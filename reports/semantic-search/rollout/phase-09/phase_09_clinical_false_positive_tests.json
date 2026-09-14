@@ -1,0 +1,879 @@
+{
+  "generated_at": "2026-09-02T02:19:30.184Z",
+  "status": "PASS",
+  "phase": 9,
+  "tests": [
+    {
+      "query": "surgery",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 0,
+      "canary_returned": false,
+      "canary_rank": null,
+      "canary_score": null,
+      "channels": [],
+      "ranking": [],
+      "latency_ms": {
+        "parser": 1.5917000000044936,
+        "retrieval": 675.2932999999975,
+        "authorization": 167.72869999999966,
+        "ranking": 3.016799999997602,
+        "total": 929.1342999999979
+      }
+    },
+    {
+      "query": "show me surgery videos",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 0,
+      "canary_returned": false,
+      "canary_rank": null,
+      "canary_score": null,
+      "channels": [],
+      "ranking": [],
+      "latency_ms": {
+        "parser": 2.128499999998894,
+        "retrieval": 791.4316000000035,
+        "authorization": 137.6027000000031,
+        "ranking": 3.830499999996391,
+        "total": 993.9504000000015
+      }
+    },
+    {
+      "query": "procedure",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 0,
+      "canary_returned": false,
+      "canary_rank": null,
+      "canary_score": null,
+      "channels": [],
+      "ranking": [],
+      "latency_ms": {
+        "parser": 1.6102999999930034,
+        "retrieval": 761.9383000000016,
+        "authorization": 173.2288000000044,
+        "ranking": 1.8013999999966472,
+        "total": 1027.8147000000026
+      }
+    },
+    {
+      "query": "show me a procedure",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 0,
+      "canary_returned": false,
+      "canary_rank": null,
+      "canary_score": null,
+      "channels": [],
+      "ranking": [],
+      "latency_ms": {
+        "parser": 0.9153999999980442,
+        "retrieval": 717.7364000000016,
+        "authorization": 133.3280999999988,
+        "ranking": 2.957699999999022,
+        "total": 933.4993000000031
+      }
+    },
+    {
+      "query": "treatment",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 0,
+      "canary_returned": false,
+      "canary_rank": null,
+      "canary_score": null,
+      "channels": [],
+      "ranking": [],
+      "latency_ms": {
+        "parser": 0.9117999999944004,
+        "retrieval": 821.677300000003,
+        "authorization": 175.48150000000896,
+        "ranking": 2.9351999999926193,
+        "total": 1120.2869999999966
+      }
+    },
+    {
+      "query": "hair transplant",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 5,
+      "canary_returned": false,
+      "canary_rank": null,
+      "canary_score": null,
+      "channels": [],
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "filename": "IMG_2963.MP4",
+          "score": 31.07272,
+          "eligible": true,
+          "components": {
+            "assetId": "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 1,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 12.6,
+            "literalScore": 2.8875,
+            "semanticTextScore": 4.39159,
+            "visualScore": 0.59363,
+            "specificityScore": 3.6,
+            "contradictionPenalty": 0,
+            "rawScore": 31.07272,
+            "normalizedScore": 31.07272,
+            "strongRequirementsSatisfied": 1,
+            "exactCanonicalMatches": 1,
+            "meanEvidenceConfidence": 0.9,
+            "coherentRequirementGroups": 1,
+            "evidenceContributions": [
+              {
+                "requirementId": "4f7cc1f032709a6dc5b36cc902596841ca205db5540474e959824bb8fdb5824b",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": "HAIR_TRANSPLANT",
+                "matchType": "EXACT_CANONICAL",
+                "sourceLayer": "DIRECT_STRUCTURED_OBSERVATION",
+                "evidenceIds": [
+                  "0ba3a75a-c2d0-5243-872e-c7c208047acf"
+                ],
+                "state": "OBSERVED",
+                "confidence": 0.9,
+                "baseContribution": 0.9,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 12.6
+              }
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+          "filename": "DSC03753.JPG",
+          "score": 7.552164,
+          "eligible": true,
+          "components": {
+            "assetId": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 0,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 0,
+            "literalScore": 2.8875,
+            "semanticTextScore": 4.05818,
+            "visualScore": 0.606484,
+            "specificityScore": 0,
+            "contradictionPenalty": 0,
+            "rawScore": 7.552164,
+            "normalizedScore": 7.552164,
+            "strongRequirementsSatisfied": 0,
+            "exactCanonicalMatches": 0,
+            "meanEvidenceConfidence": 0,
+            "coherentRequirementGroups": 0,
+            "evidenceContributions": [
+              {
+                "requirementId": "4f7cc1f032709a6dc5b36cc902596841ca205db5540474e959824bb8fdb5824b",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": null,
+                "matchType": null,
+                "sourceLayer": null,
+                "evidenceIds": [],
+                "state": "UNKNOWN",
+                "confidence": 0,
+                "baseContribution": 0,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 0
+              }
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "asset_id": "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "filename": "IMG_0531.MP4",
+          "score": 7.358719,
+          "eligible": true,
+          "components": {
+            "assetId": "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 0,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 0,
+            "literalScore": 2.8875,
+            "semanticTextScore": 4.011125,
+            "visualScore": 0.460094,
+            "specificityScore": 0,
+            "contradictionPenalty": 0,
+            "rawScore": 7.358719,
+            "normalizedScore": 7.358719,
+            "strongRequirementsSatisfied": 0,
+            "exactCanonicalMatches": 0,
+            "meanEvidenceConfidence": 0,
+            "coherentRequirementGroups": 0,
+            "evidenceContributions": [
+              {
+                "requirementId": "4f7cc1f032709a6dc5b36cc902596841ca205db5540474e959824bb8fdb5824b",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": null,
+                "matchType": null,
+                "sourceLayer": null,
+                "evidenceIds": [],
+                "state": "UNKNOWN",
+                "confidence": 0,
+                "baseContribution": 0,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 0
+              }
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "asset_id": "babae120-9372-42ad-b535-02a3276ea2be",
+          "filename": "IMG_1238.MP4",
+          "score": 4.621176,
+          "eligible": true,
+          "components": {
+            "assetId": "babae120-9372-42ad-b535-02a3276ea2be",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 0,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 0,
+            "literalScore": 0,
+            "semanticTextScore": 4.06098,
+            "visualScore": 0.560196,
+            "specificityScore": 0,
+            "contradictionPenalty": 0,
+            "rawScore": 4.621176,
+            "normalizedScore": 4.621176,
+            "strongRequirementsSatisfied": 0,
+            "exactCanonicalMatches": 0,
+            "meanEvidenceConfidence": 0,
+            "coherentRequirementGroups": 0,
+            "evidenceContributions": [
+              {
+                "requirementId": "4f7cc1f032709a6dc5b36cc902596841ca205db5540474e959824bb8fdb5824b",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": null,
+                "matchType": null,
+                "sourceLayer": null,
+                "evidenceIds": [],
+                "state": "UNKNOWN",
+                "confidence": 0,
+                "baseContribution": 0,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 0
+              }
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "asset_id": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+          "filename": "IMG_1148.MP4",
+          "score": 4.543096,
+          "eligible": true,
+          "components": {
+            "assetId": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 0,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 0,
+            "literalScore": 0,
+            "semanticTextScore": 4.01657,
+            "visualScore": 0.526526,
+            "specificityScore": 0,
+            "contradictionPenalty": 0,
+            "rawScore": 4.543096,
+            "normalizedScore": 4.543096,
+            "strongRequirementsSatisfied": 0,
+            "exactCanonicalMatches": 0,
+            "meanEvidenceConfidence": 0,
+            "coherentRequirementGroups": 0,
+            "evidenceContributions": [
+              {
+                "requirementId": "4f7cc1f032709a6dc5b36cc902596841ca205db5540474e959824bb8fdb5824b",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": null,
+                "matchType": null,
+                "sourceLayer": null,
+                "evidenceIds": [],
+                "state": "UNKNOWN",
+                "confidence": 0,
+                "baseContribution": 0,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 0
+              }
+            ]
+          }
+        }
+      ],
+      "latency_ms": {
+        "parser": 1.0164000000077067,
+        "retrieval": 1363.7808000000077,
+        "authorization": 91.31500000000233,
+        "ranking": 2.838000000003376,
+        "total": 1979.681899999996
+      }
+    },
+    {
+      "query": "FUE",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 5,
+      "canary_returned": false,
+      "canary_rank": null,
+      "canary_score": null,
+      "channels": [],
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "filename": "IMG_2963.MP4",
+          "score": 27.758024,
+          "eligible": true,
+          "components": {
+            "assetId": "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 1,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 12.6,
+            "literalScore": 0,
+            "semanticTextScore": 4.06433,
+            "visualScore": 0.493694,
+            "specificityScore": 3.6,
+            "contradictionPenalty": 0,
+            "rawScore": 27.758024,
+            "normalizedScore": 27.758024,
+            "strongRequirementsSatisfied": 1,
+            "exactCanonicalMatches": 1,
+            "meanEvidenceConfidence": 0.9,
+            "coherentRequirementGroups": 1,
+            "evidenceContributions": [
+              {
+                "requirementId": "0e828204e8eb5943ec00abe8146b12a9042825271f0f8e07cbe664e9b6e7bb47",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": "HAIR_TRANSPLANT_FUE",
+                "matchType": "EXACT_CANONICAL",
+                "sourceLayer": "DIRECT_STRUCTURED_OBSERVATION",
+                "evidenceIds": [
+                  "d77aa30d-1de7-5e4f-b1fe-e712f461b01a"
+                ],
+                "state": "OBSERVED",
+                "confidence": 0.9,
+                "baseContribution": 0.9,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 12.6
+              }
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "filename": "IMG_1160.MP4",
+          "score": 4.53356,
+          "eligible": true,
+          "components": {
+            "assetId": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 0,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 0,
+            "literalScore": 0,
+            "semanticTextScore": 4.0128,
+            "visualScore": 0.52076,
+            "specificityScore": 0,
+            "contradictionPenalty": 0,
+            "rawScore": 4.53356,
+            "normalizedScore": 4.53356,
+            "strongRequirementsSatisfied": 0,
+            "exactCanonicalMatches": 0,
+            "meanEvidenceConfidence": 0,
+            "coherentRequirementGroups": 0,
+            "evidenceContributions": [
+              {
+                "requirementId": "0e828204e8eb5943ec00abe8146b12a9042825271f0f8e07cbe664e9b6e7bb47",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": null,
+                "matchType": null,
+                "sourceLayer": null,
+                "evidenceIds": [],
+                "state": "UNKNOWN",
+                "confidence": 0,
+                "baseContribution": 0,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 0
+              }
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "asset_id": "babae120-9372-42ad-b535-02a3276ea2be",
+          "filename": "IMG_1238.MP4",
+          "score": 4.521606,
+          "eligible": true,
+          "components": {
+            "assetId": "babae120-9372-42ad-b535-02a3276ea2be",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 0,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 0,
+            "literalScore": 0,
+            "semanticTextScore": 4.06575,
+            "visualScore": 0.455856,
+            "specificityScore": 0,
+            "contradictionPenalty": 0,
+            "rawScore": 4.521606,
+            "normalizedScore": 4.521606,
+            "strongRequirementsSatisfied": 0,
+            "exactCanonicalMatches": 0,
+            "meanEvidenceConfidence": 0,
+            "coherentRequirementGroups": 0,
+            "evidenceContributions": [
+              {
+                "requirementId": "0e828204e8eb5943ec00abe8146b12a9042825271f0f8e07cbe664e9b6e7bb47",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": null,
+                "matchType": null,
+                "sourceLayer": null,
+                "evidenceIds": [],
+                "state": "UNKNOWN",
+                "confidence": 0,
+                "baseContribution": 0,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 0
+              }
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "asset_id": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+          "filename": "DSC03753.JPG",
+          "score": 0.505426,
+          "eligible": true,
+          "components": {
+            "assetId": "37838d30-a0ce-4f90-8cc3-c986db0aaa65",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 0,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 0,
+            "literalScore": 0,
+            "semanticTextScore": 0,
+            "visualScore": 0.505426,
+            "specificityScore": 0,
+            "contradictionPenalty": 0,
+            "rawScore": 0.505426,
+            "normalizedScore": 0.505426,
+            "strongRequirementsSatisfied": 0,
+            "exactCanonicalMatches": 0,
+            "meanEvidenceConfidence": 0,
+            "coherentRequirementGroups": 0,
+            "evidenceContributions": [
+              {
+                "requirementId": "0e828204e8eb5943ec00abe8146b12a9042825271f0f8e07cbe664e9b6e7bb47",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": null,
+                "matchType": null,
+                "sourceLayer": null,
+                "evidenceIds": [],
+                "state": "UNKNOWN",
+                "confidence": 0,
+                "baseContribution": 0,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 0
+              }
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "asset_id": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+          "filename": "IMG_1148.MP4",
+          "score": 0.481716,
+          "eligible": true,
+          "components": {
+            "assetId": "47611c6d-7923-42a4-87b6-c2a416a90f5c",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 0,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 0,
+            "literalScore": 0,
+            "semanticTextScore": 0,
+            "visualScore": 0.481716,
+            "specificityScore": 0,
+            "contradictionPenalty": 0,
+            "rawScore": 0.481716,
+            "normalizedScore": 0.481716,
+            "strongRequirementsSatisfied": 0,
+            "exactCanonicalMatches": 0,
+            "meanEvidenceConfidence": 0,
+            "coherentRequirementGroups": 0,
+            "evidenceContributions": [
+              {
+                "requirementId": "0e828204e8eb5943ec00abe8146b12a9042825271f0f8e07cbe664e9b6e7bb47",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": null,
+                "matchType": null,
+                "sourceLayer": null,
+                "evidenceIds": [],
+                "state": "UNKNOWN",
+                "confidence": 0,
+                "baseContribution": 0,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 0
+              }
+            ]
+          }
+        }
+      ],
+      "latency_ms": {
+        "parser": 0.9637000000075204,
+        "retrieval": 730.7899000000034,
+        "authorization": 124.93989999999758,
+        "ranking": 4.21929999999702,
+        "total": 1225.457899999994
+      }
+    },
+    {
+      "query": "follicular unit extraction",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 5,
+      "canary_returned": false,
+      "canary_rank": null,
+      "canary_score": null,
+      "channels": [],
+      "ranking": [
+        {
+          "rank": 1,
+          "asset_id": "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+          "filename": "IMG_2963.MP4",
+          "score": 27.883547,
+          "eligible": true,
+          "components": {
+            "assetId": "bfae6c51-5d71-47ae-a3e1-6d07092b8896",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 1,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 12.6,
+            "literalScore": 0,
+            "semanticTextScore": 4.104615,
+            "visualScore": 0.578932,
+            "specificityScore": 3.6,
+            "contradictionPenalty": 0,
+            "rawScore": 27.883547,
+            "normalizedScore": 27.883547,
+            "strongRequirementsSatisfied": 1,
+            "exactCanonicalMatches": 1,
+            "meanEvidenceConfidence": 0.9,
+            "coherentRequirementGroups": 1,
+            "evidenceContributions": [
+              {
+                "requirementId": "92c1636da48680bbfc25ff048cc017b1c256b7ee75e85a242c5448e771618049",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": "HAIR_TRANSPLANT_FUE",
+                "matchType": "EXACT_CANONICAL",
+                "sourceLayer": "DIRECT_STRUCTURED_OBSERVATION",
+                "evidenceIds": [
+                  "d77aa30d-1de7-5e4f-b1fe-e712f461b01a"
+                ],
+                "state": "OBSERVED",
+                "confidence": 0.9,
+                "baseContribution": 0.9,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 12.6
+              }
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "asset_id": "c86344e9-5b32-4d86-9205-67952d508651",
+          "filename": "IMG_3429.MP4",
+          "score": 4.644607,
+          "eligible": true,
+          "components": {
+            "assetId": "c86344e9-5b32-4d86-9205-67952d508651",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 0,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 0,
+            "literalScore": 0,
+            "semanticTextScore": 4.072585,
+            "visualScore": 0.572022,
+            "specificityScore": 0,
+            "contradictionPenalty": 0,
+            "rawScore": 4.644607,
+            "normalizedScore": 4.644607,
+            "strongRequirementsSatisfied": 0,
+            "exactCanonicalMatches": 0,
+            "meanEvidenceConfidence": 0,
+            "coherentRequirementGroups": 0,
+            "evidenceContributions": [
+              {
+                "requirementId": "92c1636da48680bbfc25ff048cc017b1c256b7ee75e85a242c5448e771618049",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": null,
+                "matchType": null,
+                "sourceLayer": null,
+                "evidenceIds": [],
+                "state": "UNKNOWN",
+                "confidence": 0,
+                "baseContribution": 0,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 0
+              }
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "asset_id": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+          "filename": "IMG_1160.MP4",
+          "score": 4.622881,
+          "eligible": true,
+          "components": {
+            "assetId": "753eb5f3-82c7-4148-a226-d5b960fd8619",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 0,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 0,
+            "literalScore": 0,
+            "semanticTextScore": 4.089465,
+            "visualScore": 0.533416,
+            "specificityScore": 0,
+            "contradictionPenalty": 0,
+            "rawScore": 4.622881,
+            "normalizedScore": 4.622881,
+            "strongRequirementsSatisfied": 0,
+            "exactCanonicalMatches": 0,
+            "meanEvidenceConfidence": 0,
+            "coherentRequirementGroups": 0,
+            "evidenceContributions": [
+              {
+                "requirementId": "92c1636da48680bbfc25ff048cc017b1c256b7ee75e85a242c5448e771618049",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": null,
+                "matchType": null,
+                "sourceLayer": null,
+                "evidenceIds": [],
+                "state": "UNKNOWN",
+                "confidence": 0,
+                "baseContribution": 0,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 0
+              }
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "asset_id": "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+          "filename": "IMG_0531.MP4",
+          "score": 4.59767,
+          "eligible": true,
+          "components": {
+            "assetId": "7f72217d-3839-4920-86b4-ccc33e9e3d95",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 0,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 0,
+            "literalScore": 0,
+            "semanticTextScore": 4.0815,
+            "visualScore": 0.51617,
+            "specificityScore": 0,
+            "contradictionPenalty": 0,
+            "rawScore": 4.59767,
+            "normalizedScore": 4.59767,
+            "strongRequirementsSatisfied": 0,
+            "exactCanonicalMatches": 0,
+            "meanEvidenceConfidence": 0,
+            "coherentRequirementGroups": 0,
+            "evidenceContributions": [
+              {
+                "requirementId": "92c1636da48680bbfc25ff048cc017b1c256b7ee75e85a242c5448e771618049",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": null,
+                "matchType": null,
+                "sourceLayer": null,
+                "evidenceIds": [],
+                "state": "UNKNOWN",
+                "confidence": 0,
+                "baseContribution": 0,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 0
+              }
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "asset_id": "444da390-0117-4380-8c87-d7c32f2903ff",
+          "filename": "IMG_9871.MOV",
+          "score": 4.532214,
+          "eligible": true,
+          "components": {
+            "assetId": "444da390-0117-4380-8c87-d7c32f2903ff",
+            "eligible": true,
+            "hardConstraintStatus": "SATISFIED",
+            "hardExclusionStatus": "CLEAR",
+            "strongRequirementCoverage": 0,
+            "preferenceScore": 0,
+            "negativePreferencePenalty": 0,
+            "evidenceScore": 0,
+            "literalScore": 0,
+            "semanticTextScore": 4.00916,
+            "visualScore": 0.523054,
+            "specificityScore": 0,
+            "contradictionPenalty": 0,
+            "rawScore": 4.532214,
+            "normalizedScore": 4.532214,
+            "strongRequirementsSatisfied": 0,
+            "exactCanonicalMatches": 0,
+            "meanEvidenceConfidence": 0,
+            "coherentRequirementGroups": 0,
+            "evidenceContributions": [
+              {
+                "requirementId": "92c1636da48680bbfc25ff048cc017b1c256b7ee75e85a242c5448e771618049",
+                "requirementClass": "STRONG_REQUIREMENT",
+                "matchedConcept": null,
+                "matchType": null,
+                "sourceLayer": null,
+                "evidenceIds": [],
+                "state": "UNKNOWN",
+                "confidence": 0,
+                "baseContribution": 0,
+                "weight": 14,
+                "penalty": 0,
+                "finalContribution": 0
+              }
+            ]
+          }
+        }
+      ],
+      "latency_ms": {
+        "parser": 2.694199999998091,
+        "retrieval": 947.8717000000033,
+        "authorization": 120.83229999999458,
+        "ranking": 3.882400000002235,
+        "total": 1518.5262999999977
+      }
+    },
+    {
+      "query": "implantation",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 0,
+      "canary_returned": false,
+      "canary_rank": null,
+      "canary_score": null,
+      "channels": [],
+      "ranking": [],
+      "latency_ms": {
+        "parser": 1.0181000000011409,
+        "retrieval": 1013.4949000000051,
+        "authorization": 119.11119999999937,
+        "ranking": 3.7690999999904307,
+        "total": 1220.8163000000059
+      }
+    },
+    {
+      "query": "graft extraction",
+      "passed": true,
+      "parsed_intent": "FIND_MEDIA",
+      "requested_count": null,
+      "effective_count": 5,
+      "returned_count": 0,
+      "canary_returned": false,
+      "canary_rank": null,
+      "canary_score": null,
+      "channels": [],
+      "ranking": [],
+      "latency_ms": {
+        "parser": 3.628599999996368,
+        "retrieval": 877.3142999999982,
+        "authorization": 168.6296000000002,
+        "ranking": 3.6912999999913154,
+        "total": 1181.9927000000025
+      }
+    }
+  ],
+  "grounded_canary_matches": 0,
+  "vector_only_promoted": 0,
+  "unsupported_factual_claims": 0
+}

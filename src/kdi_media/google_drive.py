@@ -391,9 +391,42 @@ def create_service_account_readonly_drive_service(
     credentials_path: str | Path | None = None,
 ) -> Resource:
     """Create the permanent KDI Master reader from a service-account key."""
-    configured = credentials_path or os.environ.get(
-        "GOOGLE_DRIVE_SERVICE_ACCOUNT_CREDENTIALS_PATH",
-        r"C:\Users\Public\Asset_Management_AI\.secrets\kdi-media-reader.json",
+    return create_service_account_drive_service(credentials_path, DRIVE_READONLY_SCOPES)
+
+
+# Repository root derived from this module's location
+# (src/kdi_media/google_drive.py -> src -> repository root), so credential
+# resolution stays valid regardless of where the project is cloned.
+_PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+
+def default_service_account_credentials_path() -> Path:
+    """Portable repository-relative default for the read-only Drive key.
+
+    Resolved from this module's location rather than a machine-specific absolute
+    path. An explicit ``credentials_path`` argument or the
+    ``GOOGLE_DRIVE_SERVICE_ACCOUNT_CREDENTIALS_PATH`` environment variable always
+    takes precedence over this default.
+    """
+    return _PROJECT_ROOT / ".secrets" / "kdi-media-reader.json"
+
+
+def create_service_account_write_drive_service(
+    credentials_path: str | Path | None = None,
+) -> Resource:
+    """Create the backend destination writer from the service-account key."""
+    return create_service_account_drive_service(credentials_path, DRIVE_DESTINATION_WRITE_SCOPES)
+
+
+def create_service_account_drive_service(
+    credentials_path: str | Path | None = None,
+    scopes: tuple[str, ...] = DRIVE_READONLY_SCOPES,
+) -> Resource:
+    """Create a non-interactive backend Drive service for explicit scopes."""
+    configured = (
+        credentials_path
+        or os.environ.get("GOOGLE_DRIVE_SERVICE_ACCOUNT_CREDENTIALS_PATH")
+        or default_service_account_credentials_path()
     )
     path = Path(configured).expanduser()
     if not path.is_file():
@@ -401,9 +434,7 @@ def create_service_account_readonly_drive_service(
             "Google Drive service-account credentials file is missing"
         )
     try:
-        credentials = service_account.Credentials.from_service_account_file(
-            str(path), scopes=list(DRIVE_READONLY_SCOPES)
-        )
+        credentials = service_account.Credentials.from_service_account_file(str(path), scopes=list(scopes))
         return build("drive", "v3", credentials=credentials, cache_discovery=False)
     except Exception as exc:
         raise GoogleDriveAuthenticationError(

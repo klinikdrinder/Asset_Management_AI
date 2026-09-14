@@ -1,0 +1,187 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "IMG_0923.MP4, 9.1s clip",
+      "evidence": [
+        "filename IMG_0923.MP4",
+        "duration_seconds 9.133333"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical examination scene, single continuous shot",
+      "evidence": [
+        "single canonical scene",
+        "consistent setting across two keyframes"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene spanning full clip duration",
+      "evidence": [
+        "canonical_scenes: 1",
+        "canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Medical staff member and reclined patient",
+      "evidence": [
+        "masked, gloved figure in olive scrubs standing over patient",
+        "patient reclined in chair with drape"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff in olive scrubs with mask, gloves, smartwatch; patient with dark hair, eyes closed",
+      "evidence": [
+        "olive scrub uniform with embroidered name",
+        "surgical mask and white gloves",
+        "patient's face and hair visible, eyes closed"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, chin, jaw, and hairline visible",
+      "evidence": [
+        "close view of patient's face and hairline in image",
+        "chin/jaw area near staff's gloved hand"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from visuals",
+      "evidence": [
+        "no named procedure in supplied text",
+        "gloved hand near face alone does not confirm a specific treatment"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member leaning over and touching patient's chin/jaw area",
+      "evidence": [
+        "scene narrative: touching his chin and jaw area",
+        "staff bent posture over reclined patient"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider-patient interaction in clinical setting",
+      "evidence": [
+        "staff positioned directly beside and over patient",
+        "gloved hand contact near patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, mask, metal tray, blue medical drapes present",
+      "evidence": [
+        "white gloves and mask on staff",
+        "blue surgical drapes and metal tray table visible"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinic room with blinds and medical furniture",
+      "evidence": [
+        "large window blinds in background",
+        "medical chair, tray table, stool visible"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Handheld vertical video, close framing on subjects",
+      "evidence": [
+        "1280x720 resolution with vertical crop framing",
+        "single continuous shot with slight angle"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff positioned upper-left, patient reclined lower-right",
+      "evidence": [
+        "staff member's head and torso in upper portion of frame",
+        "patient's face and body occupy lower right of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Audio track contains meaningful speech",
+      "evidence": [
+        "audio_stream_present: true",
+        "transcript_state: MEANINGFUL_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No legible on-screen text detected",
+      "evidence": [
+        "OCR_VISIBLE_TEXT marked FALSE in scene results"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical examination narrative in medical office",
+      "evidence": [
+        "staff examining patient's face/jaw in clinic room",
+        "medical attire and equipment present"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this asset",
+      "evidence": [
+        "scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A masked, gloved medical staff member wearing olive scrubs leans over a reclined male patient in a clinic setting, appearing to examine or touch his chin and jaw area. The room contains blinds, a metal tray table, and other medical equipment in the background.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "812f63b7-153a-44b7-ba68-d63b5bdec1a5",
+  "image_count": 1
+}

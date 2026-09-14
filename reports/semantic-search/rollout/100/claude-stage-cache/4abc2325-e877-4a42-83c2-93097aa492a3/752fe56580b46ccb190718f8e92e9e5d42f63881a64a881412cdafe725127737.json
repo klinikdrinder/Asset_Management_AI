@@ -1,0 +1,170 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset",
+      "evidence": [
+        "filename IMG_2131.MP4, duration 16.07s, 1280x720, h264, single canonical scene"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical facial-mask application clip",
+      "evidence": [
+        "Single scene showing staff member applying a sheet mask to a reclined patient"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, two keyframes",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2 spanning a 16.07s clip"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member and reclined patient",
+      "evidence": [
+        "One person in scrubs, mask, and gloves actively applying mask; one reclined person receiving it"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Rust scrubs, surgical mask, gloves, smartwatch",
+      "evidence": [
+        "Staff member has dark hair in a bun, wears blue surgical mask, rust-colored scrub top and pants, latex gloves, and a black smartwatch"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face, nose, forehead visible",
+      "evidence": [
+        "Patient's face, nose, mouth area, and forehead are visible with a sheet mask being placed over them"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure in evidence",
+      "evidence": [
+        "Per-scene result lists TREATMENT_PROCEDURE as UNKNOWN; only a sheet mask application is visible, no named procedure supplied in text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Applying and adjusting facial sheet mask",
+      "evidence": [
+        "Staff member holds mask with both gloved hands and positions it over patient's nose and forehead"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Caregiver-patient interaction",
+      "evidence": [
+        "Staff member leans over reclined patient directly applying the mask to their face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reddened facial skin, sheet mask with cutouts",
+      "evidence": [
+        "Patient's visible skin around cheeks/forehead appears reddened; white sheet mask has eye and mouth cutouts"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "Per-scene result marks ENVIRONMENT as UNKNOWN; plain wall and reclined chair visible but no clear clinic signage or identifying context"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close vertical handheld framing",
+      "evidence": [
+        "Vertical 1280x720 orientation implied by portrait framing, close-up on subjects' upper bodies and faces"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff member centered above reclined patient",
+      "evidence": [
+        "Staff member fills upper frame leaning over patient who occupies lower frame, red vertical line visible in background"
+      ]
+    },
+    {
+      "layer_reflection": null,
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio present but no speech detected",
+      "evidence": [
+        "audio_stream_present true, transcript_state NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No legible on-screen text identified",
+      "evidence": [
+        "ocr_observations: 0, ocr_evaluated true but no text detected in keyframes"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "No branding, captions, or promotional text present in supplied evidence to indicate marketing use"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Post-treatment skincare/mask application moment",
+      "evidence": [
+        "Scene shows staff member applying a soothing sheet mask to a reclined patient's face"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual synthesis",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked clinical staff member in rust-colored scrubs and gloves applies a white sheet facial mask with eye and mouth cutouts to a reclined patient's face. The patient lies under a blue and white blanket while the staff member positions and adjusts the mask over the nose and forehead area.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "4abc2325-e877-4a42-83c2-93097aa492a3",
+  "image_count": 1
+}

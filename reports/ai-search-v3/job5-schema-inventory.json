@@ -1,0 +1,16 @@
+{
+  "job": "KDI AI Search V3 Job 5",
+  "project_id": "wcqqjpndlwsvatjuqnol",
+  "migrations": [
+    "20260819064546_ai_search_v3_job5_permission_functions.sql",
+    "20260819064623_ai_search_v3_job5_rls_permission_enforcement.sql",
+    "20260819064631_ai_search_v3_job5_permission_indexes.sql",
+    "20260819065221_ai_search_v3_job5_advisor_fk_indexes.sql"
+  ],
+  "new_tables": [],
+  "central_functions": ["can_user_view_asset", "can_user_download_asset", "can_asset_use_external_ai", "authorized_asset_ids"],
+  "counts_changed": false,
+  "production_rows_generated": 0,
+  "external_ai_allowed_assets": 0,
+  "security": {"public_security_definer_added":false,"anon_truncate":false,"authenticated_truncate":false,"relevant_unindexed_foreign_keys":0}
+}

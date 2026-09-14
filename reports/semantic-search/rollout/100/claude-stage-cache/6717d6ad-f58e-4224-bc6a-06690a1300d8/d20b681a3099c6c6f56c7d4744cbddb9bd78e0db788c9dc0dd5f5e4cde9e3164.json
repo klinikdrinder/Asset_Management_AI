@@ -1,0 +1,173 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0995.MP4",
+      "evidence": [
+        "filename IMG_0995.MP4, duration 12.93s, 1280x720, h264, decoded locally"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single-scene close-up treatment clip",
+      "evidence": [
+        "scene_results indicates 1 canonical scene, 2 keyframes showing a consistent close-up setup"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, no cuts",
+      "evidence": [
+        "canonical_scenes: 1 with a single scene_index 0 entry"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reclined client and gloved practitioner",
+      "evidence": [
+        "image shows a person reclined with eyes closed and a gloved hand/arm holding a device near their face"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Person with dark hair, headband, pearl earring",
+      "evidence": [
+        "image shows dark hair pulled back under a black headband, closed eyes, a pearl stud earring, gel sheen on face and neck"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Face, forehead, cheek, and neck visible",
+      "evidence": [
+        "image shows forehead, closed eyes, nose, lips, cheek, chin, and neck of the reclined person"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in evidence",
+      "evidence": [
+        "only a gloved hand holding a device labeled ULTRAFORMER MF2 against skin is visible; no procedure name is given in supplied text, so the specific treatment cannot be established"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device applied to forehead/cheek area",
+      "evidence": [
+        "gloved hand positions a handheld device against the person's forehead near the eyebrow"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Practitioner-client relationship not confirmed",
+      "evidence": [
+        "scene_results lists RELATIONSHIPS as UNKNOWN; only a gloved arm and reclined person are visible, no interaction context beyond proximity"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gel-coated skin, gloved application of device",
+      "evidence": [
+        "clear gel or coupling medium visible on face and neck",
+        "gloved hand holding device against skin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "scene_results lists ENVIRONMENT as UNKNOWN; background shows only a plain wall and a partial device/cart, insufficient to confirm setting type"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Camera technique not determinable",
+      "evidence": [
+        "scene_results lists CINEMATOGRAPHY as UNKNOWN from the sampled keyframes"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up vertical framing on face",
+      "evidence": [
+        "image is a tight vertical close-up centered on the reclined person's face with the practitioner's hand and device in frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No meaningful speech detected",
+      "evidence": [
+        "transcript_state: NO_MEANINGFUL_SPEECH despite audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device text 'ULTRAFORMER MF2' visible",
+      "evidence": [
+        "ocr_observations: 2",
+        "text 'ULTRAFORMER MF2' visible on the handheld device in the image"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing use not determinable",
+      "evidence": [
+        "scene_results lists MARKETING_CONTENT_USAGE as UNKNOWN; no captions, branding overlays, or usage context provided"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial skin treatment session depicted",
+      "evidence": [
+        "image depicts a reclined person undergoing a gel-assisted device application to the face by a gloved practitioner"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visual observation layer",
+      "evidence": [
+        "SEARCH_EMBEDDINGS is a backend indexing layer, not derivable from visual evidence"
+      ]
+    }
+  ],
+  "narrative": "A person lies reclined with eyes closed on a treatment bed, head resting on a blue pillow with a black headband, face and neck coated in a clear gel or coupling medium. A gloved practitioner holds a handheld device labeled 'ULTRAFORMER MF2' against the person's forehead and cheek area.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "6717d6ad-f58e-4224-bc6a-06690a1300d8",
+  "image_count": 1
+}

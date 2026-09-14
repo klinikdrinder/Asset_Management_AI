@@ -1,0 +1,34 @@
+{
+  "title": "KDI SEMANTIC SEARCH — PHASE 19 ABSOLUTE FINAL",
+  "status": "PASS",
+  "phase_20_allowed": true,
+  "configuration": {
+    "reranker": "KDI deterministic multi-evidence reranker",
+    "version": "kdi_deterministic_reranker_v1",
+    "stored_fingerprint": "33c8d6d4271b2c7bd818c6ed3366fe1e5a64c96ced42d3c8949a566f4bbd0125",
+    "recalculated_fingerprint": "33c8d6d4271b2c7bd818c6ed3366fe1e5a64c96ced42d3c8949a566f4bbd0125",
+    "match": true,
+    "llm_used": false
+  },
+  "gold_independence": {"dev": true, "validation": true, "blind": true, "blind_hidden": true, "generated_by_reranker": false},
+  "benchmark": {
+    "dev": {"cases": 100, "correct": 100, "pairwise_accuracy": 1, "violations": 0},
+    "validation": {"cases": 40, "correct": 40, "pairwise_accuracy": 1, "top1": 1, "top3": 1, "mrr": 1, "ndcg_at_2": 1, "violations": 0},
+    "blind": {"cases": 40, "correct": 40, "pairwise_accuracy": 1, "top1": 1, "top3": 1, "mrr": 1, "ndcg_at_2": 1, "violations": 0}
+  },
+  "performance_ms": {
+    "10": {"mean": 0.20063, "p50": 0.1653, "p95": 0.4188, "p99": 0.6176},
+    "50": {"mean": 0.700014, "p50": 0.6, "p95": 1.3986, "p99": 1.9669},
+    "100": {"mean": 1.505028, "p50": 1.3475, "p95": 2.5084, "p99": 2.6958},
+    "database_evidence_query_count": 3,
+    "n_plus_one": false
+  },
+  "live": {"pilot_cases": 14, "pilot_passed": 14, "phase17_passed": true, "phase18_passed": true, "acl_restored": true, "unauthorized_leakage": 0},
+  "database_before_after": {
+    "assets": [881, 881], "asset_sources": [881, 881], "asset_access_control": [881, 881], "semantic_embeddings": [106, 106], "asset_search_concepts_v2": [270, 270], "semantic_assertions": [333, 333], "semantic_assertion_evidence": [270, 270], "asset_search_documents": [10, 10], "scene_search_documents": [10, 10], "app_users": [2, 2], "unknown_acl_rows": [881, 881]
+  },
+  "temporary_state": {"auth_users": 0, "app_users": 0, "fixtures": 0, "acl_rows": 0},
+  "acceptance_gates": {"passed": 60, "failed": 0},
+  "root_findings": ["Authorization fingerprint runtime validation hardened from any string to exactly 64 hexadecimal characters."],
+  "remaining_blockers": []
+}

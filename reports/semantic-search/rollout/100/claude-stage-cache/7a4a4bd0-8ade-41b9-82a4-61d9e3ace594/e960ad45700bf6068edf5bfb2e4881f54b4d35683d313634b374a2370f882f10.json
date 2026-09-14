@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single video asset, IMG_1367.MP4",
+      "evidence": [
+        "Asset metadata: filename IMG_1367.MP4, duration 10.2s, 1280x720, h264, decoded_locally true"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context not determinable",
+      "evidence": [
+        "Scene-level result for GLOBAL_ASSET_UNDERSTANDING is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene",
+      "evidence": [
+        "canonical_scenes: 1, canonical_keyframes: 2, scene_index 0 marked OBSERVED"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician and reclined patient",
+      "evidence": [
+        "Masked, gloved person in teal scrubs handling device near a reclined person draped in blue with towel at neck"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Teal scrubs, mask, gloves, watch; patient draped",
+      "evidence": [
+        "Clinician wears teal scrub top, blue surgical mask, white gloves, a smartwatch; patient's face and neck visible under green towel"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Jaw, cheek, neck, scalp edge visible",
+      "evidence": [
+        "Image shows patient's jawline, cheek, chin, and neck area, with hairline/scalp area near where device tip is positioned"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in evidence",
+      "evidence": [
+        "Only a handheld device with red light spot and gloved contact are visible; no procedure name is present in supplied text, so per rule this stays UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Device held near patient's face",
+      "evidence": [
+        "Clinician's gloved hand steadies patient's head while the other hand holds the device tip near the jawline, red spot visible on cheek"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned over patient",
+      "evidence": [
+        "Clinician leans over reclined patient, one hand stabilizing patient's head, the other operating the device"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloved hands, mask, device tip near skin",
+      "evidence": [
+        "White gloves, surgical mask, articulated device with red light spot contacting/near cheek and jaw skin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "Scene-level result for ENVIRONMENT is UNKNOWN despite a white wall and door edge visible in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing",
+      "evidence": [
+        "Tight close-up composition on face/device across both keyframes, vertical aspect video"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Centered close shot of hands, device, and face",
+      "evidence": [
+        "Frame centers on the device, clinician's hands, and patient's lower face filling most of the vertical frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected",
+      "evidence": [
+        "audio_stream_present true but transcript_state is NO_SPEECH; layer marked FALSE"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No legible on-screen text confirmed",
+      "evidence": [
+        "ocr_evaluated true with 1 ocr_observations but scene-level OCR_VISIBLE_TEXT result is UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No marketing content indicated",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE is FALSE; no logos, captions, or promotional overlays visible"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical care moment in close-up",
+      "evidence": [
+        "Visuals depict a gloved, masked clinician attending closely to a reclined patient's face/jaw with a handheld device"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to media content",
+      "evidence": [
+        "Scene-level result for SEARCH_EMBEDDINGS is NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A clinician in teal scrubs, a surgical mask, and white gloves holds an articulated handheld device that emits a small red light spot onto the cheek/jaw area of a reclined patient draped in blue with a towel around the neck. The clinician's other gloved hand steadies the patient's head while the device tip is positioned near the jawline and lower face.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "7a4a4bd0-8ade-41b9-82a4-61d9e3ace594",
+  "image_count": 1
+}

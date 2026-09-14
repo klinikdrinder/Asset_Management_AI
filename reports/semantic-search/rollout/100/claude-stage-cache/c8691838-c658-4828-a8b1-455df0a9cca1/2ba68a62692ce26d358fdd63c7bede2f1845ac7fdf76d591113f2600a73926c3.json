@@ -1,0 +1,182 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_2961.MP4, ~16.6s scene",
+      "evidence": [
+        "filename IMG_2961.MP4",
+        "asset_id c8691838-c658-4828-a8b1-455df0a9cca1",
+        "duration_seconds 16.566667"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous clinical scene, two keyframes",
+      "evidence": [
+        "scene_index 0 spanning 0.0 to 16.567 seconds",
+        "keyframes_supplied: 2 showing consistent setting and personnel"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One scene, near-identical consecutive keyframes",
+      "evidence": [
+        "start_seconds 0.0, end_seconds 16.567 for a single scene",
+        "both keyframes show the same framing and pose with minor hand position differences"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Three gowned/masked staff and one draped patient",
+      "evidence": [
+        "two women wearing surgical loupes, caps, masks, and blue gowns positioned over the patient",
+        "a third person in scrubs and cap standing behind",
+        "a draped head resting on a towel consistent with a patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Blue surgical gowns, caps, masks, magnifying loupes",
+      "evidence": [
+        "staff wear blue surgical caps, gowns, surgical masks, and head-mounted magnifying loupes with lights",
+        "gloved hands visible on two individuals"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Scalp/top of head exposed and illuminated",
+      "evidence": [
+        "a reddened, illuminated scalp area is visible at the center of the frame surrounded by draping"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not named in supplied text",
+      "evidence": [
+        "no procedure name appears in readable_text_detected or spoken_content",
+        "gloves, instruments, and scalp contact alone cannot establish a named procedure per instructions"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Instrument held near illuminated scalp area",
+      "evidence": [
+        "a gloved hand holds a thin instrument close to the lit spot on the scalp in both keyframes",
+        "another gloved hand holds a small metal container"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Staff clustered around patient's head performing coordinated task",
+      "evidence": [
+        "multiple staff positioned closely around the draped patient's head, one actively using an instrument while others observe/assist"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Reddened scalp with focal bright light spot",
+      "evidence": [
+        "visible redness/erythema across the exposed scalp area",
+        "a bright focused light illuminates a specific spot being worked on"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical room with cabinetry and utility sink",
+      "evidence": [
+        "white overhead cabinets and a wall-mounted sign reading 'UTILITY SINK' visible in background",
+        "sink fixture and storage containers on counter"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical handheld framing, close-up on procedure site",
+      "evidence": [
+        "portrait-oriented 720x1280-style vertical framing typical of handheld phone video",
+        "close medium shot centered on the patient's head and surrounding staff"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient head centered low, staff filling upper frame",
+      "evidence": [
+        "draped head positioned in lower-center of frame with staff and equipment filling the upper two-thirds"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content provided",
+      "evidence": [
+        "spoken_content: [] in supplied data despite audio_stream: true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Wall sign reading utility sink text",
+      "evidence": [
+        "a printed sign is visible on the wall near the sink, though readable_text_detected is empty",
+        "text on sign is legible in image as related to sink usage"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators supplied",
+      "evidence": [
+        "no captions, branding, or usage metadata present in the supplied text or images"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close clinical teamwork scene around patient's head",
+      "evidence": [
+        "consistent framing across both keyframes of a focused, hands-on clinical activity involving multiple staff"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a visually derivable attribute",
+      "evidence": []
+    }
+  ],
+  "narrative": "Two keyframes show a patient's scalp draped and exposed under bright surgical lighting, with three gowned, masked, and gloved staff wearing surgical loupes gathered around the head. A gloved hand holds a small instrument near an illuminated area of the scalp while another hand holds a small metal container, in what appears to be a clinical treatment room.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "c8691838-c658-4828-a8b1-455df0a9cca1",
+  "image_count": 2
+}

@@ -1,0 +1,186 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_1159.MP4, ~4.5 seconds",
+      "evidence": [
+        "filename IMG_1159.MP4",
+        "duration_seconds 4.566667"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical/medical setting clip",
+      "evidence": [
+        "single canonical scene showing patient and clinician in medical setting"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across 2 keyframes",
+      "evidence": [
+        "canonical_scenes: 1",
+        "canonical_keyframes: 2"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient lying down; clinician leaning over",
+      "evidence": [
+        "person in surgical cap under drape on bed",
+        "masked person in scrubs positioned above patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient in green surgical cap; clinician with dark hair, mask, teal scrubs",
+      "evidence": [
+        "visible surgical cap on patient",
+        "clinician wearing surgical mask and light teal scrub top"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Visible face, ear, and eye area of patient",
+      "evidence": [
+        "patient's face, ear, nose visible",
+        "gauze placed over eye region"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No named procedure identifiable",
+      "evidence": [
+        "scene-level TREATMENT_PROCEDURE marked UNKNOWN",
+        "no text names a specific clinical procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician leaning over and observing patient's face",
+      "evidence": [
+        "clinician's head positioned close above patient's face, looking down"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician attending to reclining patient",
+      "evidence": [
+        "spatial closeness of clinician to patient's face",
+        "patient passive, clinician active observer"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gauze/tape over eye area, sheen on patient's skin",
+      "evidence": [
+        "white square patch over eye visible",
+        "skin appears moist/shiny under lighting"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Indoor clinical room with medical bed",
+      "evidence": [
+        "white walls, red vertical accent panel",
+        "blue surgical drape and pillow"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld framing, vertical orientation",
+      "evidence": [
+        "tight vertical framing of faces",
+        "portrait aspect ratio typical of handheld phone video"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient centered lower frame, clinician upper frame",
+      "evidence": [
+        "patient's face fills lower half",
+        "clinician's face and torso occupy upper half"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "audio_stream_present true",
+        "transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Possible small text on mask, unclear content",
+      "evidence": [
+        "ocr_observations: 1",
+        "ocr_evaluated true but no confirmed legible text"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unclear if intended for marketing use",
+      "evidence": [
+        "no branding or promotional text confirmed",
+        "context insufficient to determine usage"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Depicts a clinical care moment between patient and provider",
+      "evidence": [
+        "patient reclined in medical setting with attending clinician",
+        "gauze application suggests medical attention to eye area"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable for this asset type",
+      "evidence": [
+        "scene-level marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A person lies on a medical bed wearing a surgical cap, with a dark blue drape covering their body and a piece of gauze taped over one eye. A masked clinician in light teal scrubs leans over, closely observing the person's face.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "4f0b48b3-81a4-4887-af57-eef3d8de7891",
+  "image_count": 1
+}

@@ -1,0 +1,171 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_0557.MP4, 8.7s clip",
+      "evidence": [
+        "Technical metadata lists filename IMG_0557.MP4, duration 8.733s, 1280x720, h264"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Overall context beyond single scene unclear",
+      "evidence": [
+        "Scene-level GLOBAL_ASSET_UNDERSTANDING marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single continuous scene across two keyframes",
+      "evidence": [
+        "canonical_scenes:1, canonical_keyframes:2, scene_index 0 covers full duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing procedure on reclined patient",
+      "evidence": [
+        "Person in teal scrubs and goggles handling device near face of person lying down with towel and hairnet"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician in teal scrubs, mask, orange goggles; patient with glasses, hairnet",
+      "evidence": [
+        "Image shows dark-haired clinician wearing teal scrub top labeled 'DR. LE...', surgical mask, orange-lensed glasses; patient has glasses and hairnet"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Facial region including cheek, eye area, forehead visible",
+      "evidence": [
+        "Patient's face shown with skin texture visible around eyes and cheeks in image"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Specific procedure not named",
+      "evidence": [
+        "No named clinical procedure text supplied; handpiece and gloves alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician applies handpiece near patient's eye/face",
+      "evidence": [
+        "Image shows gloved hand holding metallic tipped device near patient's face with orange cable attached"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician actively treating a reclined patient",
+      "evidence": [
+        "Physical proximity and hand contact between clinician and patient's face in image"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Skin appears shiny/glistening, possible gel or product on face",
+      "evidence": [
+        "Patient's facial skin shows a glossy/wet texture in image consistent with a topical substance"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting appears to be a clinical room but details unclear",
+      "evidence": [
+        "Scene-level ENVIRONMENT marked UNKNOWN despite visible tray and plain wall in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld vertical video framing",
+      "evidence": [
+        "Vertical 720-width frame with close framing on clinician and patient in image"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician positioned above, patient reclined below filling frame",
+      "evidence": [
+        "Image shows clinician leaning over patient who occupies lower half of frame"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No speech detected despite audio track",
+      "evidence": [
+        "transcript_state: NO_SPEECH, audio_stream_present true"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Partial text visible on scrub top",
+      "evidence": [
+        "ocr_evaluated true with 3 observations; image shows partial text 'DR. LE...' on clothing"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Purpose of video (marketing vs documentation) unclear",
+      "evidence": [
+        "Scene-level MARKETING_CONTENT_USAGE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Broader narrative intent not determinable",
+      "evidence": [
+        "Scene-level SEMANTIC_NARRATIVE marked UNKNOWN"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to visual narrative synthesis",
+      "evidence": [
+        "Scene-level SEARCH_EMBEDDINGS marked NOT_APPLICABLE"
+      ]
+    }
+  ],
+  "narrative": "A clinician in teal scrubs and orange-lensed protective goggles applies a fiber-optic handpiece connected by an orange cable to a reclined patient's face, with a visible beam near the eye area. The patient wears a hairnet and eye shields with a purple towel around the neck, while a gloved hand steadies the face and a metal instrument tray is visible in the background.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "2c6487ea-371c-4c44-9fb5-4c61b2739840",
+  "image_count": 1
+}

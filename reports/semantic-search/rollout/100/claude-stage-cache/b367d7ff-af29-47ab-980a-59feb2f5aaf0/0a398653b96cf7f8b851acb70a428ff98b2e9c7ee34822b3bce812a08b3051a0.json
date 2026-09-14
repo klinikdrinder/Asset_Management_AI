@@ -1,0 +1,178 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single MP4 video asset, IMG_3393.MP4",
+      "evidence": [
+        "filename IMG_3393.MP4",
+        "duration 13.7s, 1280x720, h264, 30fps, locally decoded"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Short clinical close-up clip of a facial procedure moment",
+      "evidence": [
+        "single canonical scene with 2 keyframes showing syringe near patient's face"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One continuous scene, no cuts detected",
+      "evidence": [
+        "canonical_scenes: 1",
+        "scene_index 0 covers full 13.7s duration"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "One provider and one reclined patient",
+      "evidence": [
+        "masked, gloved individual in scrubs handling syringe near a reclined, eyes-closed patient"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider in black scrubs, glasses, mask; patient with dark hair, headband",
+      "evidence": [
+        "curly-haired man wearing glasses and black face mask",
+        "patient with closed eyes, dark headband, blue towel drape"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's nose, upper lip, and forehead visible",
+      "evidence": [
+        "syringe positioned near nose/upper lip",
+        "blue device pressed against forehead"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Procedure not identifiable from evidence",
+      "evidence": [
+        "no named procedure present in supplied text; gloves, syringe, and facial contact alone do not establish a named procedure"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider holding syringe near patient's face while device rests on forehead",
+      "evidence": [
+        "gloved hand grips syringe close to nose/lip area",
+        "second gloved hand holds a blue massage-style device on the forehead"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Provider positioned directly over reclined patient in caregiving posture",
+      "evidence": [
+        "provider leans over patient, hands engaged at patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, syringe, and skin-contact device visible in a clinical setting",
+      "evidence": [
+        "latex/nitrile gloves on provider's hands",
+        "syringe with visible plunger and fluid",
+        "blue handheld device contacting forehead skin"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Setting not clearly identifiable",
+      "evidence": [
+        "background shows plain wall and door but no signage or context confirming location type"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Close-up handheld-style framing on face and hands",
+      "evidence": [
+        "tight vertical framing centered on patient's face and provider's hands"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical composition centering syringe and faces",
+      "evidence": [
+        "portrait aspect keyframes with subject faces and syringe centrally placed"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "Audio track present but no speech detected",
+      "evidence": [
+        "audio_state: AUDIO_PRESENT",
+        "transcript_state: NO_SPEECH"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Name text visible on scrub top",
+      "evidence": [
+        "text reading 'DR ASHRUL IKHMAL' printed on provider's scrub jacket",
+        "ocr_observations: 5"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Marketing intent not determinable",
+      "evidence": [
+        "no captions, branding overlays, or calls-to-action present in evidence beyond scrub text"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical close-up moment of provider attending to reclined patient's face",
+      "evidence": [
+        "overall visual narrative of masked provider handling syringe near patient's nose/lip while patient reclines calmly"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not applicable to this evaluation",
+      "evidence": []
+    }
+  ],
+  "narrative": "A masked, gloved provider in dark scrubs labeled 'DR ASHRUL IKHMAL' holds a syringe near the nose and upper lip of a reclined patient whose eyes are closed. The patient wears a dark headband with a blue massage-style device pressed to her forehead and is draped with a blue towel and clear plastic barrier at the neckline.",
+  "provider": "claude_code",
+  "model": "sonnet",
+  "asset_id": "b367d7ff-af29-47ab-980a-59feb2f5aaf0",
+  "image_count": 1
+}

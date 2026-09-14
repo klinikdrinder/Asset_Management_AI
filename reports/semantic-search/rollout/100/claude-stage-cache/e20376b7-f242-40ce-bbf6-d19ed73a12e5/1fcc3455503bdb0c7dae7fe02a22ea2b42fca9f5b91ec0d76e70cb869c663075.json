@@ -1,0 +1,172 @@
+{
+  "layers": [
+    {
+      "layer_id": "ASSET_IDENTITY_PROVENANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Video file IMG_9740.MP4",
+      "evidence": [
+        "filename IMG_9740.MP4, asset_id provided"
+      ]
+    },
+    {
+      "layer_id": "GLOBAL_ASSET_UNDERSTANDING",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Single clinical scene, short clip",
+      "evidence": [
+        "duration 5.77s, one scene index 0"
+      ]
+    },
+    {
+      "layer_id": "TEMPORAL_SCENE_STRUCTURE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Two nearly identical keyframes from same short scene",
+      "evidence": [
+        "start_seconds 0.0, end_seconds 5.767, 2 keyframes supplied showing same pose"
+      ]
+    },
+    {
+      "layer_id": "PEOPLE_ROLES",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician performing procedure on reclined patient",
+      "evidence": [
+        "one person in scrubs, mask and gloves actively working on a second person lying back in treatment chair"
+      ]
+    },
+    {
+      "layer_id": "PERSON_APPEARANCE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician has dark hair in bun with bangs, lavender scrub top; patient has dark hair, brown skin tone",
+      "evidence": [
+        "visible hair, mask, scrub top on standing person",
+        "patient's hair and skin visible in reclined position"
+      ]
+    },
+    {
+      "layer_id": "ANATOMY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient's face and forehead area visible",
+      "evidence": [
+        "patient's face, forehead, and area near eyes visible with a small pad over one eye"
+      ]
+    },
+    {
+      "layer_id": "TREATMENT_PROCEDURE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "Unnamed facial procedure being performed",
+      "evidence": [
+        "gloved hand holding a small tool near patient's face, no procedure name given in supplied text"
+      ]
+    },
+    {
+      "layer_id": "ACTIONS_EVENTS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician leaning over, using tool near patient's face",
+      "evidence": [
+        "clinician's arm extended holding a thin tool close to patient's forehead/eye area in both frames"
+      ]
+    },
+    {
+      "layer_id": "RELATIONSHIPS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinician directly attending to patient",
+      "evidence": [
+        "physical proximity and hand contact between clinician's gloved hand and patient's face"
+      ]
+    },
+    {
+      "layer_id": "CLINICAL_VISUAL_OBSERVATIONS",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Gloves, mask, small pad on patient's eye area",
+      "evidence": [
+        "white gloves, blue surgical mask, small white pad taped near patient's eye"
+      ]
+    },
+    {
+      "layer_id": "ENVIRONMENT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Clinical treatment room with sink and supplies",
+      "evidence": [
+        "sink, soap dispensers, tissue box labeled 'PREMIER', mirror, cabinetry visible in background"
+      ]
+    },
+    {
+      "layer_id": "CINEMATOGRAPHY",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Vertical handheld-style shot, slightly elevated angle",
+      "evidence": [
+        "portrait 720x1280 aspect implied by framing, static camera angle over the scene"
+      ]
+    },
+    {
+      "layer_id": "COMPOSITION",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Patient reclined in foreground, clinician upright leaning in from right",
+      "evidence": [
+        "patient horizontal across lower frame, clinician vertical figure on right side in both keyframes"
+      ]
+    },
+    {
+      "layer_id": "SPEECH_TRANSCRIPT_AUDIO",
+      "state": "FALSE",
+      "evaluated": true,
+      "display_text": "No spoken content detected",
+      "evidence": [
+        "spoken_content: [] in supplied data"
+      ]
+    },
+    {
+      "layer_id": "OCR_VISIBLE_TEXT",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Text 'PREMIER' visible on box",
+      "evidence": [
+        "blue box labeled 'PREMIER' on counter in background"
+      ]
+    },
+    {
+      "layer_id": "MARKETING_CONTENT_USAGE",
+      "state": "UNKNOWN",
+      "evaluated": true,
+      "display_text": "No marketing indicators present",
+      "evidence": [
+        "no logos, captions, or promotional overlays visible in the frames"
+      ]
+    },
+    {
+      "layer_id": "SEMANTIC_NARRATIVE",
+      "state": "OBSERVED",
+      "evaluated": true,
+      "display_text": "Routine clinical skincare/treatment session",
+      "evidence": [
+        "setting and actions consistent with a spa or clinic treatment scenario"
+      ]
+    },
+    {
+      "layer_id": "SEARCH_EMBEDDINGS",
+      "state": "NOT_APPLICABLE",
+      "evaluated": true,
+      "display_text": "Not a user-facing descriptive layer",
+      "evidence": [
+        "technical/embedding layer not derivable from visual description alone"
+      ]
+    }
+  ],
+  "narrative": "A gloved clinician wearing a mask and lavender scrubs performs a facial procedure on a reclined patient with dark hair pulled back and eye protection in place. The setting is a clinical treatment room with a sink, dispensers, and supply boxes visible in the background.",
+  "provider": "claude",
+  "model": "claude-sonnet-5",
+  "asset_id": "e20376b7-f242-40ce-bbf6-d19ed73a12e5",
+  "image_count": 2
+}
